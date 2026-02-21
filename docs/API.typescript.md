@@ -6,6 +6,7 @@ The following submodules are available:
 
 - [accountManagement](./accountManagement.typescript.md)
 - [alertChannel](./alertChannel.typescript.md)
+- [alertCompoundCondition](./alertCompoundCondition.typescript.md)
 - [alertCondition](./alertCondition.typescript.md)
 - [alertMutingRule](./alertMutingRule.typescript.md)
 - [alertPolicy](./alertPolicy.typescript.md)
@@ -13,6 +14,8 @@ The following submodules are available:
 - [apiAccessKey](./apiAccessKey.typescript.md)
 - [applicationSettings](./applicationSettings.typescript.md)
 - [browserApplication](./browserApplication.typescript.md)
+- [cloudAwsEuSovereignIntegrations](./cloudAwsEuSovereignIntegrations.typescript.md)
+- [cloudAwsEuSovereignLinkAccount](./cloudAwsEuSovereignLinkAccount.typescript.md)
 - [cloudAwsGovcloudIntegrations](./cloudAwsGovcloudIntegrations.typescript.md)
 - [cloudAwsGovcloudLinkAccount](./cloudAwsGovcloudLinkAccount.typescript.md)
 - [cloudAwsIntegrations](./cloudAwsIntegrations.typescript.md)

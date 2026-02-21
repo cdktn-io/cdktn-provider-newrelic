@@ -1,28 +1,28 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-newrelic.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-newrelic.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### NewrelicProvider <a name="NewrelicProvider" id="@cdktf/provider-newrelic.provider.NewrelicProvider"></a>
+### NewrelicProvider <a name="NewrelicProvider" id="@cdktn/provider-newrelic.provider.NewrelicProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs newrelic}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs newrelic}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-newrelic'
+import { provider } from '@cdktn/provider-newrelic'
 
 new provider.NewrelicProvider(scope: Construct, id: string, config: NewrelicProviderConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig">NewrelicProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig">NewrelicProviderConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig">NewrelicProviderConfig</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig">NewrelicProviderConfig</a>
 
 ---
 
@@ -50,29 +50,29 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetAdminApiKey">resetAdminApiKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetAlias">resetAlias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetApiUrl">resetApiUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetCacertFile">resetCacertFile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetInfrastructureApiUrl">resetInfrastructureApiUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsecureSkipVerify">resetInsecureSkipVerify</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertKey">resetInsightsInsertKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertUrl">resetInsightsInsertUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsightsQueryUrl">resetInsightsQueryUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetNerdgraphApiUrl">resetNerdgraphApiUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetRegion">resetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetSyntheticsApiUrl">resetSyntheticsApiUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetAdminApiKey">resetAdminApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetAlias">resetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetApiUrl">resetApiUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetCacertFile">resetCacertFile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetInfrastructureApiUrl">resetInfrastructureApiUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsecureSkipVerify">resetInsecureSkipVerify</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertKey">resetInsightsInsertKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertUrl">resetInsightsInsertUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsightsQueryUrl">resetInsightsQueryUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetNerdgraphApiUrl">resetNerdgraphApiUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetSyntheticsApiUrl">resetSyntheticsApiUrl</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-newrelic.provider.NewrelicProvider.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-newrelic.provider.NewrelicProvider.toString"></a>
 
 ```typescript
 public toString(): string
@@ -80,25 +80,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-newrelic.provider.NewrelicProvider.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-newrelic.provider.NewrelicProvider.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-newrelic.provider.NewrelicProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-newrelic.provider.NewrelicProvider.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.provider.NewrelicProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-newrelic.provider.NewrelicProvider.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-newrelic.provider.NewrelicProvider.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-newrelic.provider.NewrelicProvider.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -106,7 +106,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-newrelic.provider.NewrelicProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-newrelic.provider.NewrelicProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -114,7 +114,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -122,19 +122,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-newrelic.provider.NewrelicProvider.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-newrelic.provider.NewrelicProvider.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-newrelic.provider.NewrelicProvider.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-newrelic.provider.NewrelicProvider.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-newrelic.provider.NewrelicProvider.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-newrelic.provider.NewrelicProvider.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -142,73 +142,73 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `resetAdminApiKey` <a name="resetAdminApiKey" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetAdminApiKey"></a>
+##### `resetAdminApiKey` <a name="resetAdminApiKey" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetAdminApiKey"></a>
 
 ```typescript
 public resetAdminApiKey(): void
 ```
 
-##### `resetAlias` <a name="resetAlias" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetAlias"></a>
+##### `resetAlias` <a name="resetAlias" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetAlias"></a>
 
 ```typescript
 public resetAlias(): void
 ```
 
-##### `resetApiUrl` <a name="resetApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetApiUrl"></a>
+##### `resetApiUrl` <a name="resetApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetApiUrl"></a>
 
 ```typescript
 public resetApiUrl(): void
 ```
 
-##### `resetCacertFile` <a name="resetCacertFile" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetCacertFile"></a>
+##### `resetCacertFile` <a name="resetCacertFile" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetCacertFile"></a>
 
 ```typescript
 public resetCacertFile(): void
 ```
 
-##### `resetInfrastructureApiUrl` <a name="resetInfrastructureApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetInfrastructureApiUrl"></a>
+##### `resetInfrastructureApiUrl` <a name="resetInfrastructureApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetInfrastructureApiUrl"></a>
 
 ```typescript
 public resetInfrastructureApiUrl(): void
 ```
 
-##### `resetInsecureSkipVerify` <a name="resetInsecureSkipVerify" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsecureSkipVerify"></a>
+##### `resetInsecureSkipVerify` <a name="resetInsecureSkipVerify" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsecureSkipVerify"></a>
 
 ```typescript
 public resetInsecureSkipVerify(): void
 ```
 
-##### `resetInsightsInsertKey` <a name="resetInsightsInsertKey" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertKey"></a>
+##### `resetInsightsInsertKey` <a name="resetInsightsInsertKey" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertKey"></a>
 
 ```typescript
 public resetInsightsInsertKey(): void
 ```
 
-##### `resetInsightsInsertUrl` <a name="resetInsightsInsertUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertUrl"></a>
+##### `resetInsightsInsertUrl` <a name="resetInsightsInsertUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertUrl"></a>
 
 ```typescript
 public resetInsightsInsertUrl(): void
 ```
 
-##### `resetInsightsQueryUrl` <a name="resetInsightsQueryUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsightsQueryUrl"></a>
+##### `resetInsightsQueryUrl` <a name="resetInsightsQueryUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsightsQueryUrl"></a>
 
 ```typescript
 public resetInsightsQueryUrl(): void
 ```
 
-##### `resetNerdgraphApiUrl` <a name="resetNerdgraphApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetNerdgraphApiUrl"></a>
+##### `resetNerdgraphApiUrl` <a name="resetNerdgraphApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetNerdgraphApiUrl"></a>
 
 ```typescript
 public resetNerdgraphApiUrl(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
 ```
 
-##### `resetSyntheticsApiUrl` <a name="resetSyntheticsApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetSyntheticsApiUrl"></a>
+##### `resetSyntheticsApiUrl` <a name="resetSyntheticsApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetSyntheticsApiUrl"></a>
 
 ```typescript
 public resetSyntheticsApiUrl(): void
@@ -218,17 +218,17 @@ public resetSyntheticsApiUrl(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a NewrelicProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a NewrelicProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-newrelic.provider.NewrelicProvider.isConstruct"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-newrelic'
+import { provider } from '@cdktn/provider-newrelic'
 
 provider.NewrelicProvider.isConstruct(x: any)
 ```
@@ -249,7 +249,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-newrelic.provider.NewrelicProvider.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -257,45 +257,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-newrelic.provider.NewrelicProvider.isTerraformElement"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-newrelic'
+import { provider } from '@cdktn/provider-newrelic'
 
 provider.NewrelicProvider.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-newrelic.provider.NewrelicProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformProvider"></a>
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktn/provider-newrelic.provider.NewrelicProvider.isTerraformProvider"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-newrelic'
+import { provider } from '@cdktn/provider-newrelic'
 
 provider.NewrelicProvider.isTerraformProvider(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-newrelic.provider.NewrelicProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-newrelic.provider.NewrelicProvider.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-newrelic.provider.NewrelicProvider.generateConfigForImport"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-newrelic'
+import { provider } from '@cdktn/provider-newrelic'
 
 provider.NewrelicProvider.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a NewrelicProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a NewrelicProvider resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -303,7 +303,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -311,19 +311,19 @@ The construct id used in the generated config for the NewrelicProvider to import
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing NewrelicProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the NewrelicProvider to import is found.
 
@@ -333,46 +333,46 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.accountIdInput">accountIdInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.adminApiKeyInput">adminApiKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiKeyInput">apiKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiUrlInput">apiUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.cacertFileInput">cacertFileInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrlInput">infrastructureApiUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerifyInput">insecureSkipVerifyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKeyInput">insightsInsertKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrlInput">insightsInsertUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrlInput">insightsQueryUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrlInput">nerdgraphApiUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrlInput">syntheticsApiUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.accountId">accountId</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.adminApiKey">adminApiKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiKey">apiKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiUrl">apiUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.cacertFile">cacertFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrl">infrastructureApiUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerify">insecureSkipVerify</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKey">insightsInsertKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrl">insightsInsertUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrl">insightsQueryUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrl">nerdgraphApiUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrl">syntheticsApiUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.accountIdInput">accountIdInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.adminApiKeyInput">adminApiKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiKeyInput">apiKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiUrlInput">apiUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.cacertFileInput">cacertFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrlInput">infrastructureApiUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerifyInput">insecureSkipVerifyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKeyInput">insightsInsertKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrlInput">insightsInsertUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrlInput">insightsQueryUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrlInput">nerdgraphApiUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrlInput">syntheticsApiUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.accountId">accountId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.adminApiKey">adminApiKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiKey">apiKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiUrl">apiUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.cacertFile">cacertFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrl">infrastructureApiUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerify">insecureSkipVerify</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKey">insightsInsertKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrl">insightsInsertUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrl">insightsQueryUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrl">nerdgraphApiUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrl">syntheticsApiUrl</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -384,17 +384,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -404,7 +404,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -414,7 +414,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `metaAttributes`<sup>Required</sup> <a name="metaAttributes" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.metaAttributes"></a>
+##### `metaAttributes`<sup>Required</sup> <a name="metaAttributes" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.metaAttributes"></a>
 
 ```typescript
 public readonly metaAttributes: {[ key: string ]: any};
@@ -424,7 +424,7 @@ public readonly metaAttributes: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -434,17 +434,17 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `terraformProviderSource`<sup>Optional</sup> <a name="terraformProviderSource" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.terraformProviderSource"></a>
+##### `terraformProviderSource`<sup>Optional</sup> <a name="terraformProviderSource" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.terraformProviderSource"></a>
 
 ```typescript
 public readonly terraformProviderSource: string;
@@ -454,7 +454,7 @@ public readonly terraformProviderSource: string;
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.alias"></a>
 
 ```typescript
 public readonly alias: string;
@@ -464,7 +464,7 @@ public readonly alias: string;
 
 ---
 
-##### `accountIdInput`<sup>Optional</sup> <a name="accountIdInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.accountIdInput"></a>
+##### `accountIdInput`<sup>Optional</sup> <a name="accountIdInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.accountIdInput"></a>
 
 ```typescript
 public readonly accountIdInput: number;
@@ -474,7 +474,7 @@ public readonly accountIdInput: number;
 
 ---
 
-##### `adminApiKeyInput`<sup>Optional</sup> <a name="adminApiKeyInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.adminApiKeyInput"></a>
+##### `adminApiKeyInput`<sup>Optional</sup> <a name="adminApiKeyInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.adminApiKeyInput"></a>
 
 ```typescript
 public readonly adminApiKeyInput: string;
@@ -484,7 +484,7 @@ public readonly adminApiKeyInput: string;
 
 ---
 
-##### `aliasInput`<sup>Optional</sup> <a name="aliasInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.aliasInput"></a>
+##### `aliasInput`<sup>Optional</sup> <a name="aliasInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.aliasInput"></a>
 
 ```typescript
 public readonly aliasInput: string;
@@ -494,7 +494,7 @@ public readonly aliasInput: string;
 
 ---
 
-##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiKeyInput"></a>
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiKeyInput"></a>
 
 ```typescript
 public readonly apiKeyInput: string;
@@ -504,7 +504,7 @@ public readonly apiKeyInput: string;
 
 ---
 
-##### `apiUrlInput`<sup>Optional</sup> <a name="apiUrlInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiUrlInput"></a>
+##### `apiUrlInput`<sup>Optional</sup> <a name="apiUrlInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiUrlInput"></a>
 
 ```typescript
 public readonly apiUrlInput: string;
@@ -514,7 +514,7 @@ public readonly apiUrlInput: string;
 
 ---
 
-##### `cacertFileInput`<sup>Optional</sup> <a name="cacertFileInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.cacertFileInput"></a>
+##### `cacertFileInput`<sup>Optional</sup> <a name="cacertFileInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.cacertFileInput"></a>
 
 ```typescript
 public readonly cacertFileInput: string;
@@ -524,7 +524,7 @@ public readonly cacertFileInput: string;
 
 ---
 
-##### `infrastructureApiUrlInput`<sup>Optional</sup> <a name="infrastructureApiUrlInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrlInput"></a>
+##### `infrastructureApiUrlInput`<sup>Optional</sup> <a name="infrastructureApiUrlInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrlInput"></a>
 
 ```typescript
 public readonly infrastructureApiUrlInput: string;
@@ -534,17 +534,17 @@ public readonly infrastructureApiUrlInput: string;
 
 ---
 
-##### `insecureSkipVerifyInput`<sup>Optional</sup> <a name="insecureSkipVerifyInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerifyInput"></a>
+##### `insecureSkipVerifyInput`<sup>Optional</sup> <a name="insecureSkipVerifyInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerifyInput"></a>
 
 ```typescript
 public readonly insecureSkipVerifyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `insightsInsertKeyInput`<sup>Optional</sup> <a name="insightsInsertKeyInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKeyInput"></a>
+##### `insightsInsertKeyInput`<sup>Optional</sup> <a name="insightsInsertKeyInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKeyInput"></a>
 
 ```typescript
 public readonly insightsInsertKeyInput: string;
@@ -554,7 +554,7 @@ public readonly insightsInsertKeyInput: string;
 
 ---
 
-##### `insightsInsertUrlInput`<sup>Optional</sup> <a name="insightsInsertUrlInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrlInput"></a>
+##### `insightsInsertUrlInput`<sup>Optional</sup> <a name="insightsInsertUrlInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrlInput"></a>
 
 ```typescript
 public readonly insightsInsertUrlInput: string;
@@ -564,7 +564,7 @@ public readonly insightsInsertUrlInput: string;
 
 ---
 
-##### `insightsQueryUrlInput`<sup>Optional</sup> <a name="insightsQueryUrlInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrlInput"></a>
+##### `insightsQueryUrlInput`<sup>Optional</sup> <a name="insightsQueryUrlInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrlInput"></a>
 
 ```typescript
 public readonly insightsQueryUrlInput: string;
@@ -574,7 +574,7 @@ public readonly insightsQueryUrlInput: string;
 
 ---
 
-##### `nerdgraphApiUrlInput`<sup>Optional</sup> <a name="nerdgraphApiUrlInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrlInput"></a>
+##### `nerdgraphApiUrlInput`<sup>Optional</sup> <a name="nerdgraphApiUrlInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrlInput"></a>
 
 ```typescript
 public readonly nerdgraphApiUrlInput: string;
@@ -584,7 +584,7 @@ public readonly nerdgraphApiUrlInput: string;
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -594,7 +594,7 @@ public readonly regionInput: string;
 
 ---
 
-##### `syntheticsApiUrlInput`<sup>Optional</sup> <a name="syntheticsApiUrlInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrlInput"></a>
+##### `syntheticsApiUrlInput`<sup>Optional</sup> <a name="syntheticsApiUrlInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrlInput"></a>
 
 ```typescript
 public readonly syntheticsApiUrlInput: string;
@@ -604,7 +604,7 @@ public readonly syntheticsApiUrlInput: string;
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.accountId"></a>
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.accountId"></a>
 
 ```typescript
 public readonly accountId: number;
@@ -614,7 +614,7 @@ public readonly accountId: number;
 
 ---
 
-##### `adminApiKey`<sup>Optional</sup> <a name="adminApiKey" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.adminApiKey"></a>
+##### `adminApiKey`<sup>Optional</sup> <a name="adminApiKey" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.adminApiKey"></a>
 
 ```typescript
 public readonly adminApiKey: string;
@@ -624,7 +624,7 @@ public readonly adminApiKey: string;
 
 ---
 
-##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiKey"></a>
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiKey"></a>
 
 ```typescript
 public readonly apiKey: string;
@@ -634,7 +634,7 @@ public readonly apiKey: string;
 
 ---
 
-##### `apiUrl`<sup>Optional</sup> <a name="apiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiUrl"></a>
+##### `apiUrl`<sup>Optional</sup> <a name="apiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiUrl"></a>
 
 ```typescript
 public readonly apiUrl: string;
@@ -644,7 +644,7 @@ public readonly apiUrl: string;
 
 ---
 
-##### `cacertFile`<sup>Optional</sup> <a name="cacertFile" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.cacertFile"></a>
+##### `cacertFile`<sup>Optional</sup> <a name="cacertFile" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.cacertFile"></a>
 
 ```typescript
 public readonly cacertFile: string;
@@ -654,7 +654,7 @@ public readonly cacertFile: string;
 
 ---
 
-##### `infrastructureApiUrl`<sup>Optional</sup> <a name="infrastructureApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrl"></a>
+##### `infrastructureApiUrl`<sup>Optional</sup> <a name="infrastructureApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrl"></a>
 
 ```typescript
 public readonly infrastructureApiUrl: string;
@@ -664,17 +664,17 @@ public readonly infrastructureApiUrl: string;
 
 ---
 
-##### `insecureSkipVerify`<sup>Optional</sup> <a name="insecureSkipVerify" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerify"></a>
+##### `insecureSkipVerify`<sup>Optional</sup> <a name="insecureSkipVerify" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerify"></a>
 
 ```typescript
 public readonly insecureSkipVerify: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `insightsInsertKey`<sup>Optional</sup> <a name="insightsInsertKey" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKey"></a>
+##### `insightsInsertKey`<sup>Optional</sup> <a name="insightsInsertKey" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKey"></a>
 
 ```typescript
 public readonly insightsInsertKey: string;
@@ -684,7 +684,7 @@ public readonly insightsInsertKey: string;
 
 ---
 
-##### `insightsInsertUrl`<sup>Optional</sup> <a name="insightsInsertUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrl"></a>
+##### `insightsInsertUrl`<sup>Optional</sup> <a name="insightsInsertUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrl"></a>
 
 ```typescript
 public readonly insightsInsertUrl: string;
@@ -694,7 +694,7 @@ public readonly insightsInsertUrl: string;
 
 ---
 
-##### `insightsQueryUrl`<sup>Optional</sup> <a name="insightsQueryUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrl"></a>
+##### `insightsQueryUrl`<sup>Optional</sup> <a name="insightsQueryUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrl"></a>
 
 ```typescript
 public readonly insightsQueryUrl: string;
@@ -704,7 +704,7 @@ public readonly insightsQueryUrl: string;
 
 ---
 
-##### `nerdgraphApiUrl`<sup>Optional</sup> <a name="nerdgraphApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrl"></a>
+##### `nerdgraphApiUrl`<sup>Optional</sup> <a name="nerdgraphApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrl"></a>
 
 ```typescript
 public readonly nerdgraphApiUrl: string;
@@ -714,7 +714,7 @@ public readonly nerdgraphApiUrl: string;
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -724,7 +724,7 @@ public readonly region: string;
 
 ---
 
-##### `syntheticsApiUrl`<sup>Optional</sup> <a name="syntheticsApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrl"></a>
+##### `syntheticsApiUrl`<sup>Optional</sup> <a name="syntheticsApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrl"></a>
 
 ```typescript
 public readonly syntheticsApiUrl: string;
@@ -738,11 +738,11 @@ public readonly syntheticsApiUrl: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -754,12 +754,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### NewrelicProviderConfig <a name="NewrelicProviderConfig" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig"></a>
+### NewrelicProviderConfig <a name="NewrelicProviderConfig" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-newrelic'
+import { provider } from '@cdktn/provider-newrelic'
 
 const newrelicProviderConfig: provider.NewrelicProviderConfig = { ... }
 ```
@@ -768,24 +768,24 @@ const newrelicProviderConfig: provider.NewrelicProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.accountId">accountId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#account_id NewrelicProvider#account_id}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.apiKey">apiKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#api_key NewrelicProvider#api_key}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.adminApiKey">adminApiKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#admin_api_key NewrelicProvider#admin_api_key}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.apiUrl">apiUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#api_url NewrelicProvider#api_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.cacertFile">cacertFile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#cacert_file NewrelicProvider#cacert_file}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.infrastructureApiUrl">infrastructureApiUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify">insecureSkipVerify</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertKey">insightsInsertKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_insert_key NewrelicProvider#insights_insert_key}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertUrl">insightsInsertUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_insert_url NewrelicProvider#insights_insert_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsQueryUrl">insightsQueryUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_query_url NewrelicProvider#insights_query_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.nerdgraphApiUrl">nerdgraphApiUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.region">region</a></code> | <code>string</code> | The data center for which your New Relic account is configured. Only one region per provider block is permitted. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.syntheticsApiUrl">syntheticsApiUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.accountId">accountId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#account_id NewrelicProvider#account_id}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.apiKey">apiKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#api_key NewrelicProvider#api_key}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.adminApiKey">adminApiKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#admin_api_key NewrelicProvider#admin_api_key}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.apiUrl">apiUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#api_url NewrelicProvider#api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.cacertFile">cacertFile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#cacert_file NewrelicProvider#cacert_file}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.infrastructureApiUrl">infrastructureApiUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify">insecureSkipVerify</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertKey">insightsInsertKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_insert_key NewrelicProvider#insights_insert_key}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertUrl">insightsInsertUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_insert_url NewrelicProvider#insights_insert_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsQueryUrl">insightsQueryUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_query_url NewrelicProvider#insights_query_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.nerdgraphApiUrl">nerdgraphApiUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.region">region</a></code> | <code>string</code> | The data center for which your New Relic account is configured. Only one region per provider block is permitted. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.syntheticsApiUrl">syntheticsApiUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}. |
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.accountId"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: number;
@@ -793,11 +793,11 @@ public readonly accountId: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#account_id NewrelicProvider#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#account_id NewrelicProvider#account_id}.
 
 ---
 
-##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.apiKey"></a>
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.apiKey"></a>
 
 ```typescript
 public readonly apiKey: string;
@@ -805,11 +805,11 @@ public readonly apiKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#api_key NewrelicProvider#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#api_key NewrelicProvider#api_key}.
 
 ---
 
-##### `adminApiKey`<sup>Optional</sup> <a name="adminApiKey" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.adminApiKey"></a>
+##### `adminApiKey`<sup>Optional</sup> <a name="adminApiKey" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.adminApiKey"></a>
 
 ```typescript
 public readonly adminApiKey: string;
@@ -817,11 +817,11 @@ public readonly adminApiKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#admin_api_key NewrelicProvider#admin_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#admin_api_key NewrelicProvider#admin_api_key}.
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.alias"></a>
 
 ```typescript
 public readonly alias: string;
@@ -831,11 +831,11 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#alias NewrelicProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#alias NewrelicProvider#alias}
 
 ---
 
-##### `apiUrl`<sup>Optional</sup> <a name="apiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.apiUrl"></a>
+##### `apiUrl`<sup>Optional</sup> <a name="apiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.apiUrl"></a>
 
 ```typescript
 public readonly apiUrl: string;
@@ -843,11 +843,11 @@ public readonly apiUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#api_url NewrelicProvider#api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#api_url NewrelicProvider#api_url}.
 
 ---
 
-##### `cacertFile`<sup>Optional</sup> <a name="cacertFile" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.cacertFile"></a>
+##### `cacertFile`<sup>Optional</sup> <a name="cacertFile" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.cacertFile"></a>
 
 ```typescript
 public readonly cacertFile: string;
@@ -855,11 +855,11 @@ public readonly cacertFile: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#cacert_file NewrelicProvider#cacert_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#cacert_file NewrelicProvider#cacert_file}.
 
 ---
 
-##### `infrastructureApiUrl`<sup>Optional</sup> <a name="infrastructureApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.infrastructureApiUrl"></a>
+##### `infrastructureApiUrl`<sup>Optional</sup> <a name="infrastructureApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.infrastructureApiUrl"></a>
 
 ```typescript
 public readonly infrastructureApiUrl: string;
@@ -867,23 +867,23 @@ public readonly infrastructureApiUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}.
 
 ---
 
-##### `insecureSkipVerify`<sup>Optional</sup> <a name="insecureSkipVerify" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify"></a>
+##### `insecureSkipVerify`<sup>Optional</sup> <a name="insecureSkipVerify" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify"></a>
 
 ```typescript
 public readonly insecureSkipVerify: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}.
 
 ---
 
-##### `insightsInsertKey`<sup>Optional</sup> <a name="insightsInsertKey" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertKey"></a>
+##### `insightsInsertKey`<sup>Optional</sup> <a name="insightsInsertKey" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertKey"></a>
 
 ```typescript
 public readonly insightsInsertKey: string;
@@ -891,11 +891,11 @@ public readonly insightsInsertKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_insert_key NewrelicProvider#insights_insert_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_insert_key NewrelicProvider#insights_insert_key}.
 
 ---
 
-##### `insightsInsertUrl`<sup>Optional</sup> <a name="insightsInsertUrl" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertUrl"></a>
+##### `insightsInsertUrl`<sup>Optional</sup> <a name="insightsInsertUrl" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertUrl"></a>
 
 ```typescript
 public readonly insightsInsertUrl: string;
@@ -903,11 +903,11 @@ public readonly insightsInsertUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_insert_url NewrelicProvider#insights_insert_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_insert_url NewrelicProvider#insights_insert_url}.
 
 ---
 
-##### `insightsQueryUrl`<sup>Optional</sup> <a name="insightsQueryUrl" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsQueryUrl"></a>
+##### `insightsQueryUrl`<sup>Optional</sup> <a name="insightsQueryUrl" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsQueryUrl"></a>
 
 ```typescript
 public readonly insightsQueryUrl: string;
@@ -915,11 +915,11 @@ public readonly insightsQueryUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_query_url NewrelicProvider#insights_query_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_query_url NewrelicProvider#insights_query_url}.
 
 ---
 
-##### `nerdgraphApiUrl`<sup>Optional</sup> <a name="nerdgraphApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.nerdgraphApiUrl"></a>
+##### `nerdgraphApiUrl`<sup>Optional</sup> <a name="nerdgraphApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.nerdgraphApiUrl"></a>
 
 ```typescript
 public readonly nerdgraphApiUrl: string;
@@ -927,11 +927,11 @@ public readonly nerdgraphApiUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -941,11 +941,11 @@ public readonly region: string;
 
 The data center for which your New Relic account is configured. Only one region per provider block is permitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#region NewrelicProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#region NewrelicProvider#region}
 
 ---
 
-##### `syntheticsApiUrl`<sup>Optional</sup> <a name="syntheticsApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.syntheticsApiUrl"></a>
+##### `syntheticsApiUrl`<sup>Optional</sup> <a name="syntheticsApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.syntheticsApiUrl"></a>
 
 ```typescript
 public readonly syntheticsApiUrl: string;
@@ -953,7 +953,7 @@ public readonly syntheticsApiUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}.
 
 ---
 

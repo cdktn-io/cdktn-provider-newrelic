@@ -1,28 +1,28 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-newrelic.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-newrelic.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### NewrelicProvider <a name="NewrelicProvider" id="@cdktf/provider-newrelic.provider.NewrelicProvider"></a>
+### NewrelicProvider <a name="NewrelicProvider" id="@cdktn/provider-newrelic.provider.NewrelicProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs newrelic}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs newrelic}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/provider"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/provider"
 
 provider.NewNewrelicProvider(scope Construct, id *string, config NewrelicProviderConfig) NewrelicProvider
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig">NewrelicProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig">NewrelicProviderConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig">NewrelicProviderConfig</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig">NewrelicProviderConfig</a>
 
 ---
 
@@ -50,29 +50,29 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetAdminApiKey">ResetAdminApiKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetAlias">ResetAlias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetApiUrl">ResetApiUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetCacertFile">ResetCacertFile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetInfrastructureApiUrl">ResetInfrastructureApiUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsecureSkipVerify">ResetInsecureSkipVerify</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertKey">ResetInsightsInsertKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertUrl">ResetInsightsInsertUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsightsQueryUrl">ResetInsightsQueryUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetNerdgraphApiUrl">ResetNerdgraphApiUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetRegion">ResetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.resetSyntheticsApiUrl">ResetSyntheticsApiUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetAdminApiKey">ResetAdminApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetAlias">ResetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetApiUrl">ResetApiUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetCacertFile">ResetCacertFile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetInfrastructureApiUrl">ResetInfrastructureApiUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsecureSkipVerify">ResetInsecureSkipVerify</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertKey">ResetInsightsInsertKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertUrl">ResetInsightsInsertUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsightsQueryUrl">ResetInsightsQueryUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetNerdgraphApiUrl">ResetNerdgraphApiUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.resetSyntheticsApiUrl">ResetSyntheticsApiUrl</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-newrelic.provider.NewrelicProvider.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-newrelic.provider.NewrelicProvider.toString"></a>
 
 ```go
 func ToString() *string
@@ -80,25 +80,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-newrelic.provider.NewrelicProvider.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-newrelic.provider.NewrelicProvider.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-newrelic.provider.NewrelicProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-newrelic.provider.NewrelicProvider.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.provider.NewrelicProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-newrelic.provider.NewrelicProvider.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-newrelic.provider.NewrelicProvider.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-newrelic.provider.NewrelicProvider.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -106,7 +106,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-newrelic.provider.NewrelicProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-newrelic.provider.NewrelicProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -114,7 +114,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -122,19 +122,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-newrelic.provider.NewrelicProvider.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-newrelic.provider.NewrelicProvider.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-newrelic.provider.NewrelicProvider.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-newrelic.provider.NewrelicProvider.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-newrelic.provider.NewrelicProvider.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-newrelic.provider.NewrelicProvider.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -142,73 +142,73 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ResetAdminApiKey` <a name="ResetAdminApiKey" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetAdminApiKey"></a>
+##### `ResetAdminApiKey` <a name="ResetAdminApiKey" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetAdminApiKey"></a>
 
 ```go
 func ResetAdminApiKey()
 ```
 
-##### `ResetAlias` <a name="ResetAlias" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetAlias"></a>
+##### `ResetAlias` <a name="ResetAlias" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetAlias"></a>
 
 ```go
 func ResetAlias()
 ```
 
-##### `ResetApiUrl` <a name="ResetApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetApiUrl"></a>
+##### `ResetApiUrl` <a name="ResetApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetApiUrl"></a>
 
 ```go
 func ResetApiUrl()
 ```
 
-##### `ResetCacertFile` <a name="ResetCacertFile" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetCacertFile"></a>
+##### `ResetCacertFile` <a name="ResetCacertFile" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetCacertFile"></a>
 
 ```go
 func ResetCacertFile()
 ```
 
-##### `ResetInfrastructureApiUrl` <a name="ResetInfrastructureApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetInfrastructureApiUrl"></a>
+##### `ResetInfrastructureApiUrl` <a name="ResetInfrastructureApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetInfrastructureApiUrl"></a>
 
 ```go
 func ResetInfrastructureApiUrl()
 ```
 
-##### `ResetInsecureSkipVerify` <a name="ResetInsecureSkipVerify" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsecureSkipVerify"></a>
+##### `ResetInsecureSkipVerify` <a name="ResetInsecureSkipVerify" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsecureSkipVerify"></a>
 
 ```go
 func ResetInsecureSkipVerify()
 ```
 
-##### `ResetInsightsInsertKey` <a name="ResetInsightsInsertKey" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertKey"></a>
+##### `ResetInsightsInsertKey` <a name="ResetInsightsInsertKey" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertKey"></a>
 
 ```go
 func ResetInsightsInsertKey()
 ```
 
-##### `ResetInsightsInsertUrl` <a name="ResetInsightsInsertUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertUrl"></a>
+##### `ResetInsightsInsertUrl` <a name="ResetInsightsInsertUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsightsInsertUrl"></a>
 
 ```go
 func ResetInsightsInsertUrl()
 ```
 
-##### `ResetInsightsQueryUrl` <a name="ResetInsightsQueryUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetInsightsQueryUrl"></a>
+##### `ResetInsightsQueryUrl` <a name="ResetInsightsQueryUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetInsightsQueryUrl"></a>
 
 ```go
 func ResetInsightsQueryUrl()
 ```
 
-##### `ResetNerdgraphApiUrl` <a name="ResetNerdgraphApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetNerdgraphApiUrl"></a>
+##### `ResetNerdgraphApiUrl` <a name="ResetNerdgraphApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetNerdgraphApiUrl"></a>
 
 ```go
 func ResetNerdgraphApiUrl()
 ```
 
-##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetRegion"></a>
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetRegion"></a>
 
 ```go
 func ResetRegion()
 ```
 
-##### `ResetSyntheticsApiUrl` <a name="ResetSyntheticsApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.resetSyntheticsApiUrl"></a>
+##### `ResetSyntheticsApiUrl` <a name="ResetSyntheticsApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.resetSyntheticsApiUrl"></a>
 
 ```go
 func ResetSyntheticsApiUrl()
@@ -218,17 +218,17 @@ func ResetSyntheticsApiUrl()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a NewrelicProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a NewrelicProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.provider.NewrelicProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/provider"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/provider"
 
 provider.NewrelicProvider_IsConstruct(x interface{}) *bool
 ```
@@ -249,7 +249,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-newrelic.provider.NewrelicProvider.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -257,45 +257,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.provider.NewrelicProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/provider"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/provider"
 
 provider.NewrelicProvider_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-newrelic.provider.NewrelicProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformProvider"></a>
+##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktn/provider-newrelic.provider.NewrelicProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/provider"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/provider"
 
 provider.NewrelicProvider_IsTerraformProvider(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-newrelic.provider.NewrelicProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.provider.NewrelicProvider.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.provider.NewrelicProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/provider"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/provider"
 
 provider.NewrelicProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a NewrelicProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a NewrelicProvider resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -303,7 +303,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -311,19 +311,19 @@ The construct id used in the generated config for the NewrelicProvider to import
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing NewrelicProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-newrelic.provider.NewrelicProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the NewrelicProvider to import is found.
 
@@ -333,46 +333,46 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.metaAttributes">MetaAttributes</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.accountIdInput">AccountIdInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.adminApiKeyInput">AdminApiKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiKeyInput">ApiKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiUrlInput">ApiUrlInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.cacertFileInput">CacertFileInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrlInput">InfrastructureApiUrlInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerifyInput">InsecureSkipVerifyInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKeyInput">InsightsInsertKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrlInput">InsightsInsertUrlInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrlInput">InsightsQueryUrlInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrlInput">NerdgraphApiUrlInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrlInput">SyntheticsApiUrlInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.accountId">AccountId</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.adminApiKey">AdminApiKey</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiKey">ApiKey</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiUrl">ApiUrl</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.cacertFile">CacertFile</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrl">InfrastructureApiUrl</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerify">InsecureSkipVerify</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKey">InsightsInsertKey</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrl">InsightsInsertUrl</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrl">InsightsQueryUrl</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrl">NerdgraphApiUrl</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.region">Region</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrl">SyntheticsApiUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.metaAttributes">MetaAttributes</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.accountIdInput">AccountIdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.adminApiKeyInput">AdminApiKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiKeyInput">ApiKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiUrlInput">ApiUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.cacertFileInput">CacertFileInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrlInput">InfrastructureApiUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerifyInput">InsecureSkipVerifyInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKeyInput">InsightsInsertKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrlInput">InsightsInsertUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrlInput">InsightsQueryUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrlInput">NerdgraphApiUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrlInput">SyntheticsApiUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.accountId">AccountId</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.adminApiKey">AdminApiKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiKey">ApiKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiUrl">ApiUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.cacertFile">CacertFile</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrl">InfrastructureApiUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerify">InsecureSkipVerify</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKey">InsightsInsertKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrl">InsightsInsertUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrl">InsightsQueryUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrl">NerdgraphApiUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrl">SyntheticsApiUrl</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.node"></a>
 
 ```go
 func Node() Node
@@ -384,17 +384,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -404,7 +404,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -414,7 +414,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `MetaAttributes`<sup>Required</sup> <a name="MetaAttributes" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.metaAttributes"></a>
+##### `MetaAttributes`<sup>Required</sup> <a name="MetaAttributes" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.metaAttributes"></a>
 
 ```go
 func MetaAttributes() *map[string]interface{}
@@ -424,7 +424,7 @@ func MetaAttributes() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -434,17 +434,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `TerraformProviderSource`<sup>Optional</sup> <a name="TerraformProviderSource" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.terraformProviderSource"></a>
+##### `TerraformProviderSource`<sup>Optional</sup> <a name="TerraformProviderSource" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.terraformProviderSource"></a>
 
 ```go
 func TerraformProviderSource() *string
@@ -454,7 +454,7 @@ func TerraformProviderSource() *string
 
 ---
 
-##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.alias"></a>
+##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.alias"></a>
 
 ```go
 func Alias() *string
@@ -464,7 +464,7 @@ func Alias() *string
 
 ---
 
-##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.accountIdInput"></a>
+##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.accountIdInput"></a>
 
 ```go
 func AccountIdInput() *f64
@@ -474,7 +474,7 @@ func AccountIdInput() *f64
 
 ---
 
-##### `AdminApiKeyInput`<sup>Optional</sup> <a name="AdminApiKeyInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.adminApiKeyInput"></a>
+##### `AdminApiKeyInput`<sup>Optional</sup> <a name="AdminApiKeyInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.adminApiKeyInput"></a>
 
 ```go
 func AdminApiKeyInput() *string
@@ -484,7 +484,7 @@ func AdminApiKeyInput() *string
 
 ---
 
-##### `AliasInput`<sup>Optional</sup> <a name="AliasInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.aliasInput"></a>
+##### `AliasInput`<sup>Optional</sup> <a name="AliasInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.aliasInput"></a>
 
 ```go
 func AliasInput() *string
@@ -494,7 +494,7 @@ func AliasInput() *string
 
 ---
 
-##### `ApiKeyInput`<sup>Optional</sup> <a name="ApiKeyInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiKeyInput"></a>
+##### `ApiKeyInput`<sup>Optional</sup> <a name="ApiKeyInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiKeyInput"></a>
 
 ```go
 func ApiKeyInput() *string
@@ -504,7 +504,7 @@ func ApiKeyInput() *string
 
 ---
 
-##### `ApiUrlInput`<sup>Optional</sup> <a name="ApiUrlInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiUrlInput"></a>
+##### `ApiUrlInput`<sup>Optional</sup> <a name="ApiUrlInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiUrlInput"></a>
 
 ```go
 func ApiUrlInput() *string
@@ -514,7 +514,7 @@ func ApiUrlInput() *string
 
 ---
 
-##### `CacertFileInput`<sup>Optional</sup> <a name="CacertFileInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.cacertFileInput"></a>
+##### `CacertFileInput`<sup>Optional</sup> <a name="CacertFileInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.cacertFileInput"></a>
 
 ```go
 func CacertFileInput() *string
@@ -524,7 +524,7 @@ func CacertFileInput() *string
 
 ---
 
-##### `InfrastructureApiUrlInput`<sup>Optional</sup> <a name="InfrastructureApiUrlInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrlInput"></a>
+##### `InfrastructureApiUrlInput`<sup>Optional</sup> <a name="InfrastructureApiUrlInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrlInput"></a>
 
 ```go
 func InfrastructureApiUrlInput() *string
@@ -534,7 +534,7 @@ func InfrastructureApiUrlInput() *string
 
 ---
 
-##### `InsecureSkipVerifyInput`<sup>Optional</sup> <a name="InsecureSkipVerifyInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerifyInput"></a>
+##### `InsecureSkipVerifyInput`<sup>Optional</sup> <a name="InsecureSkipVerifyInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerifyInput"></a>
 
 ```go
 func InsecureSkipVerifyInput() interface{}
@@ -544,7 +544,7 @@ func InsecureSkipVerifyInput() interface{}
 
 ---
 
-##### `InsightsInsertKeyInput`<sup>Optional</sup> <a name="InsightsInsertKeyInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKeyInput"></a>
+##### `InsightsInsertKeyInput`<sup>Optional</sup> <a name="InsightsInsertKeyInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKeyInput"></a>
 
 ```go
 func InsightsInsertKeyInput() *string
@@ -554,7 +554,7 @@ func InsightsInsertKeyInput() *string
 
 ---
 
-##### `InsightsInsertUrlInput`<sup>Optional</sup> <a name="InsightsInsertUrlInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrlInput"></a>
+##### `InsightsInsertUrlInput`<sup>Optional</sup> <a name="InsightsInsertUrlInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrlInput"></a>
 
 ```go
 func InsightsInsertUrlInput() *string
@@ -564,7 +564,7 @@ func InsightsInsertUrlInput() *string
 
 ---
 
-##### `InsightsQueryUrlInput`<sup>Optional</sup> <a name="InsightsQueryUrlInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrlInput"></a>
+##### `InsightsQueryUrlInput`<sup>Optional</sup> <a name="InsightsQueryUrlInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrlInput"></a>
 
 ```go
 func InsightsQueryUrlInput() *string
@@ -574,7 +574,7 @@ func InsightsQueryUrlInput() *string
 
 ---
 
-##### `NerdgraphApiUrlInput`<sup>Optional</sup> <a name="NerdgraphApiUrlInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrlInput"></a>
+##### `NerdgraphApiUrlInput`<sup>Optional</sup> <a name="NerdgraphApiUrlInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrlInput"></a>
 
 ```go
 func NerdgraphApiUrlInput() *string
@@ -584,7 +584,7 @@ func NerdgraphApiUrlInput() *string
 
 ---
 
-##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.regionInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.regionInput"></a>
 
 ```go
 func RegionInput() *string
@@ -594,7 +594,7 @@ func RegionInput() *string
 
 ---
 
-##### `SyntheticsApiUrlInput`<sup>Optional</sup> <a name="SyntheticsApiUrlInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrlInput"></a>
+##### `SyntheticsApiUrlInput`<sup>Optional</sup> <a name="SyntheticsApiUrlInput" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrlInput"></a>
 
 ```go
 func SyntheticsApiUrlInput() *string
@@ -604,7 +604,7 @@ func SyntheticsApiUrlInput() *string
 
 ---
 
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.accountId"></a>
+##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.accountId"></a>
 
 ```go
 func AccountId() *f64
@@ -614,7 +614,7 @@ func AccountId() *f64
 
 ---
 
-##### `AdminApiKey`<sup>Optional</sup> <a name="AdminApiKey" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.adminApiKey"></a>
+##### `AdminApiKey`<sup>Optional</sup> <a name="AdminApiKey" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.adminApiKey"></a>
 
 ```go
 func AdminApiKey() *string
@@ -624,7 +624,7 @@ func AdminApiKey() *string
 
 ---
 
-##### `ApiKey`<sup>Optional</sup> <a name="ApiKey" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiKey"></a>
+##### `ApiKey`<sup>Optional</sup> <a name="ApiKey" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiKey"></a>
 
 ```go
 func ApiKey() *string
@@ -634,7 +634,7 @@ func ApiKey() *string
 
 ---
 
-##### `ApiUrl`<sup>Optional</sup> <a name="ApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiUrl"></a>
+##### `ApiUrl`<sup>Optional</sup> <a name="ApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.apiUrl"></a>
 
 ```go
 func ApiUrl() *string
@@ -644,7 +644,7 @@ func ApiUrl() *string
 
 ---
 
-##### `CacertFile`<sup>Optional</sup> <a name="CacertFile" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.cacertFile"></a>
+##### `CacertFile`<sup>Optional</sup> <a name="CacertFile" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.cacertFile"></a>
 
 ```go
 func CacertFile() *string
@@ -654,7 +654,7 @@ func CacertFile() *string
 
 ---
 
-##### `InfrastructureApiUrl`<sup>Optional</sup> <a name="InfrastructureApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrl"></a>
+##### `InfrastructureApiUrl`<sup>Optional</sup> <a name="InfrastructureApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrl"></a>
 
 ```go
 func InfrastructureApiUrl() *string
@@ -664,7 +664,7 @@ func InfrastructureApiUrl() *string
 
 ---
 
-##### `InsecureSkipVerify`<sup>Optional</sup> <a name="InsecureSkipVerify" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerify"></a>
+##### `InsecureSkipVerify`<sup>Optional</sup> <a name="InsecureSkipVerify" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerify"></a>
 
 ```go
 func InsecureSkipVerify() interface{}
@@ -674,7 +674,7 @@ func InsecureSkipVerify() interface{}
 
 ---
 
-##### `InsightsInsertKey`<sup>Optional</sup> <a name="InsightsInsertKey" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKey"></a>
+##### `InsightsInsertKey`<sup>Optional</sup> <a name="InsightsInsertKey" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKey"></a>
 
 ```go
 func InsightsInsertKey() *string
@@ -684,7 +684,7 @@ func InsightsInsertKey() *string
 
 ---
 
-##### `InsightsInsertUrl`<sup>Optional</sup> <a name="InsightsInsertUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrl"></a>
+##### `InsightsInsertUrl`<sup>Optional</sup> <a name="InsightsInsertUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrl"></a>
 
 ```go
 func InsightsInsertUrl() *string
@@ -694,7 +694,7 @@ func InsightsInsertUrl() *string
 
 ---
 
-##### `InsightsQueryUrl`<sup>Optional</sup> <a name="InsightsQueryUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrl"></a>
+##### `InsightsQueryUrl`<sup>Optional</sup> <a name="InsightsQueryUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrl"></a>
 
 ```go
 func InsightsQueryUrl() *string
@@ -704,7 +704,7 @@ func InsightsQueryUrl() *string
 
 ---
 
-##### `NerdgraphApiUrl`<sup>Optional</sup> <a name="NerdgraphApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrl"></a>
+##### `NerdgraphApiUrl`<sup>Optional</sup> <a name="NerdgraphApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.nerdgraphApiUrl"></a>
 
 ```go
 func NerdgraphApiUrl() *string
@@ -714,7 +714,7 @@ func NerdgraphApiUrl() *string
 
 ---
 
-##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.region"></a>
 
 ```go
 func Region() *string
@@ -724,7 +724,7 @@ func Region() *string
 
 ---
 
-##### `SyntheticsApiUrl`<sup>Optional</sup> <a name="SyntheticsApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrl"></a>
+##### `SyntheticsApiUrl`<sup>Optional</sup> <a name="SyntheticsApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.syntheticsApiUrl"></a>
 
 ```go
 func SyntheticsApiUrl() *string
@@ -738,11 +738,11 @@ func SyntheticsApiUrl() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-newrelic.provider.NewrelicProvider.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -754,12 +754,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### NewrelicProviderConfig <a name="NewrelicProviderConfig" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig"></a>
+### NewrelicProviderConfig <a name="NewrelicProviderConfig" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/provider"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/provider"
 
 &provider.NewrelicProviderConfig {
 	AccountId: *f64,
@@ -783,24 +783,24 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/provider"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#account_id NewrelicProvider#account_id}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.apiKey">ApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#api_key NewrelicProvider#api_key}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.adminApiKey">AdminApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#admin_api_key NewrelicProvider#admin_api_key}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.apiUrl">ApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#api_url NewrelicProvider#api_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.cacertFile">CacertFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#cacert_file NewrelicProvider#cacert_file}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.infrastructureApiUrl">InfrastructureApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify">InsecureSkipVerify</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertKey">InsightsInsertKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_insert_key NewrelicProvider#insights_insert_key}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertUrl">InsightsInsertUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_insert_url NewrelicProvider#insights_insert_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsQueryUrl">InsightsQueryUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_query_url NewrelicProvider#insights_query_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.nerdgraphApiUrl">NerdgraphApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.region">Region</a></code> | <code>*string</code> | The data center for which your New Relic account is configured. Only one region per provider block is permitted. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.syntheticsApiUrl">SyntheticsApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#account_id NewrelicProvider#account_id}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.apiKey">ApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#api_key NewrelicProvider#api_key}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.adminApiKey">AdminApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#admin_api_key NewrelicProvider#admin_api_key}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.apiUrl">ApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#api_url NewrelicProvider#api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.cacertFile">CacertFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#cacert_file NewrelicProvider#cacert_file}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.infrastructureApiUrl">InfrastructureApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify">InsecureSkipVerify</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertKey">InsightsInsertKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_insert_key NewrelicProvider#insights_insert_key}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertUrl">InsightsInsertUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_insert_url NewrelicProvider#insights_insert_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsQueryUrl">InsightsQueryUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_query_url NewrelicProvider#insights_query_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.nerdgraphApiUrl">NerdgraphApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.region">Region</a></code> | <code>*string</code> | The data center for which your New Relic account is configured. Only one region per provider block is permitted. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.syntheticsApiUrl">SyntheticsApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}. |
 
 ---
 
-##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.accountId"></a>
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.accountId"></a>
 
 ```go
 AccountId *f64
@@ -808,11 +808,11 @@ AccountId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#account_id NewrelicProvider#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#account_id NewrelicProvider#account_id}.
 
 ---
 
-##### `ApiKey`<sup>Required</sup> <a name="ApiKey" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.apiKey"></a>
+##### `ApiKey`<sup>Required</sup> <a name="ApiKey" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.apiKey"></a>
 
 ```go
 ApiKey *string
@@ -820,11 +820,11 @@ ApiKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#api_key NewrelicProvider#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#api_key NewrelicProvider#api_key}.
 
 ---
 
-##### `AdminApiKey`<sup>Optional</sup> <a name="AdminApiKey" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.adminApiKey"></a>
+##### `AdminApiKey`<sup>Optional</sup> <a name="AdminApiKey" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.adminApiKey"></a>
 
 ```go
 AdminApiKey *string
@@ -832,11 +832,11 @@ AdminApiKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#admin_api_key NewrelicProvider#admin_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#admin_api_key NewrelicProvider#admin_api_key}.
 
 ---
 
-##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.alias"></a>
+##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.alias"></a>
 
 ```go
 Alias *string
@@ -846,11 +846,11 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#alias NewrelicProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#alias NewrelicProvider#alias}
 
 ---
 
-##### `ApiUrl`<sup>Optional</sup> <a name="ApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.apiUrl"></a>
+##### `ApiUrl`<sup>Optional</sup> <a name="ApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.apiUrl"></a>
 
 ```go
 ApiUrl *string
@@ -858,11 +858,11 @@ ApiUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#api_url NewrelicProvider#api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#api_url NewrelicProvider#api_url}.
 
 ---
 
-##### `CacertFile`<sup>Optional</sup> <a name="CacertFile" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.cacertFile"></a>
+##### `CacertFile`<sup>Optional</sup> <a name="CacertFile" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.cacertFile"></a>
 
 ```go
 CacertFile *string
@@ -870,11 +870,11 @@ CacertFile *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#cacert_file NewrelicProvider#cacert_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#cacert_file NewrelicProvider#cacert_file}.
 
 ---
 
-##### `InfrastructureApiUrl`<sup>Optional</sup> <a name="InfrastructureApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.infrastructureApiUrl"></a>
+##### `InfrastructureApiUrl`<sup>Optional</sup> <a name="InfrastructureApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.infrastructureApiUrl"></a>
 
 ```go
 InfrastructureApiUrl *string
@@ -882,11 +882,11 @@ InfrastructureApiUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}.
 
 ---
 
-##### `InsecureSkipVerify`<sup>Optional</sup> <a name="InsecureSkipVerify" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify"></a>
+##### `InsecureSkipVerify`<sup>Optional</sup> <a name="InsecureSkipVerify" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify"></a>
 
 ```go
 InsecureSkipVerify interface{}
@@ -894,11 +894,11 @@ InsecureSkipVerify interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}.
 
 ---
 
-##### `InsightsInsertKey`<sup>Optional</sup> <a name="InsightsInsertKey" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertKey"></a>
+##### `InsightsInsertKey`<sup>Optional</sup> <a name="InsightsInsertKey" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertKey"></a>
 
 ```go
 InsightsInsertKey *string
@@ -906,11 +906,11 @@ InsightsInsertKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_insert_key NewrelicProvider#insights_insert_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_insert_key NewrelicProvider#insights_insert_key}.
 
 ---
 
-##### `InsightsInsertUrl`<sup>Optional</sup> <a name="InsightsInsertUrl" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertUrl"></a>
+##### `InsightsInsertUrl`<sup>Optional</sup> <a name="InsightsInsertUrl" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertUrl"></a>
 
 ```go
 InsightsInsertUrl *string
@@ -918,11 +918,11 @@ InsightsInsertUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_insert_url NewrelicProvider#insights_insert_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_insert_url NewrelicProvider#insights_insert_url}.
 
 ---
 
-##### `InsightsQueryUrl`<sup>Optional</sup> <a name="InsightsQueryUrl" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsQueryUrl"></a>
+##### `InsightsQueryUrl`<sup>Optional</sup> <a name="InsightsQueryUrl" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsQueryUrl"></a>
 
 ```go
 InsightsQueryUrl *string
@@ -930,11 +930,11 @@ InsightsQueryUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_query_url NewrelicProvider#insights_query_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_query_url NewrelicProvider#insights_query_url}.
 
 ---
 
-##### `NerdgraphApiUrl`<sup>Optional</sup> <a name="NerdgraphApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.nerdgraphApiUrl"></a>
+##### `NerdgraphApiUrl`<sup>Optional</sup> <a name="NerdgraphApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.nerdgraphApiUrl"></a>
 
 ```go
 NerdgraphApiUrl *string
@@ -942,11 +942,11 @@ NerdgraphApiUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}.
 
 ---
 
-##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.region"></a>
 
 ```go
 Region *string
@@ -956,11 +956,11 @@ Region *string
 
 The data center for which your New Relic account is configured. Only one region per provider block is permitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#region NewrelicProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#region NewrelicProvider#region}
 
 ---
 
-##### `SyntheticsApiUrl`<sup>Optional</sup> <a name="SyntheticsApiUrl" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.syntheticsApiUrl"></a>
+##### `SyntheticsApiUrl`<sup>Optional</sup> <a name="SyntheticsApiUrl" id="@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.syntheticsApiUrl"></a>
 
 ```go
 SyntheticsApiUrl *string
@@ -968,7 +968,7 @@ SyntheticsApiUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}.
 
 ---
 

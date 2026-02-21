@@ -6,6 +6,7 @@ The following submodules are available:
 
 - [accountManagement](./accountManagement.python.md)
 - [alertChannel](./alertChannel.python.md)
+- [alertCompoundCondition](./alertCompoundCondition.python.md)
 - [alertCondition](./alertCondition.python.md)
 - [alertMutingRule](./alertMutingRule.python.md)
 - [alertPolicy](./alertPolicy.python.md)
@@ -13,6 +14,8 @@ The following submodules are available:
 - [apiAccessKey](./apiAccessKey.python.md)
 - [applicationSettings](./applicationSettings.python.md)
 - [browserApplication](./browserApplication.python.md)
+- [cloudAwsEuSovereignIntegrations](./cloudAwsEuSovereignIntegrations.python.md)
+- [cloudAwsEuSovereignLinkAccount](./cloudAwsEuSovereignLinkAccount.python.md)
 - [cloudAwsGovcloudIntegrations](./cloudAwsGovcloudIntegrations.python.md)
 - [cloudAwsGovcloudLinkAccount](./cloudAwsGovcloudLinkAccount.python.md)
 - [cloudAwsIntegrations](./cloudAwsIntegrations.python.md)
