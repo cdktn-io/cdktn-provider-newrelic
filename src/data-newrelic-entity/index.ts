@@ -1,35 +1,35 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataNewrelicEntityConfig extends cdktf.TerraformMetaArguments {
+export interface DataNewrelicEntityConfig extends cdktn.TerraformMetaArguments {
   /**
   * The New Relic account ID; if specified, constrains the data source to return an entity belonging to the account with this ID, of all matching entities retrieved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity#account_id DataNewrelicEntity#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity#account_id DataNewrelicEntity#account_id}
   */
   readonly accountId?: number;
   /**
   * The entity's domain. Valid values are APM, BROWSER, INFRA, MOBILE, SYNTH, and EXT. If not specified, all domains are searched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity#domain DataNewrelicEntity#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity#domain DataNewrelicEntity#domain}
   */
   readonly domain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity#entity_tags DataNewrelicEntity#entity_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity#entity_tags DataNewrelicEntity#entity_tags}
   */
   readonly entityTags?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity#id DataNewrelicEntity#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity#id DataNewrelicEntity#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,75 +38,75 @@ export interface DataNewrelicEntityConfig extends cdktf.TerraformMetaArguments {
   /**
   * Ignore case when searching the entity name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity#ignore_case DataNewrelicEntity#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity#ignore_case DataNewrelicEntity#ignore_case}
   */
-  readonly ignoreCase?: boolean | cdktf.IResolvable;
+  readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
   * A boolean attribute which when set to true, does not throw an error if the queried entity is not found.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity#ignore_not_found DataNewrelicEntity#ignore_not_found}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity#ignore_not_found DataNewrelicEntity#ignore_not_found}
   */
-  readonly ignoreNotFound?: boolean | cdktf.IResolvable;
+  readonly ignoreNotFound?: boolean | cdktn.IResolvable;
   /**
   * The name of the entity in New Relic One. The first entity matching this name for the given search parameters will be returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity#name DataNewrelicEntity#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity#name DataNewrelicEntity#name}
   */
   readonly name: string;
   /**
   * The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, SERVICE and WORKLOAD.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity#type DataNewrelicEntity#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity#type DataNewrelicEntity#type}
   */
   readonly type?: string;
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity#tag DataNewrelicEntity#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity#tag DataNewrelicEntity#tag}
   */
-  readonly tag?: DataNewrelicEntityTag[] | cdktf.IResolvable;
+  readonly tag?: DataNewrelicEntityTag[] | cdktn.IResolvable;
 }
 export interface DataNewrelicEntityTag {
   /**
   * The tag key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity#key DataNewrelicEntity#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity#key DataNewrelicEntity#key}
   */
   readonly key: string;
   /**
   * The tag value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity#value DataNewrelicEntity#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity#value DataNewrelicEntity#value}
   */
   readonly value: string;
 }
 
-export function dataNewrelicEntityTagToTerraform(struct?: DataNewrelicEntityTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataNewrelicEntityTagToTerraform(struct?: DataNewrelicEntityTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dataNewrelicEntityTagToHclTerraform(struct?: DataNewrelicEntityTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataNewrelicEntityTagToHclTerraform(struct?: DataNewrelicEntityTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,9 +117,9 @@ export function dataNewrelicEntityTagToHclTerraform(struct?: DataNewrelicEntityT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
+export class DataNewrelicEntityTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -127,11 +127,11 @@ export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataNewrelicEntityTag | cdktf.IResolvable | undefined {
+  public get internalValue(): DataNewrelicEntityTag | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,14 +148,14 @@ export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataNewrelicEntityTag | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataNewrelicEntityTag | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -194,15 +194,15 @@ export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DataNewrelicEntityTagList extends cdktf.ComplexList {
-  public internalValue? : DataNewrelicEntityTag[] | cdktf.IResolvable
+export class DataNewrelicEntityTagList extends cdktn.ComplexList {
+  public internalValue? : DataNewrelicEntityTag[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -215,9 +215,9 @@ export class DataNewrelicEntityTagList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity newrelic_entity}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity newrelic_entity}
 */
-export class DataNewrelicEntity extends cdktf.TerraformDataSource {
+export class DataNewrelicEntity extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -228,14 +228,14 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataNewrelicEntity resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataNewrelicEntity resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicEntity to import
-  * @param importFromId The id of the existing DataNewrelicEntity that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicEntity that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicEntity to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_entity", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_entity", importId: importFromId, provider });
       }
 
   // ===========
@@ -243,7 +243,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/entity newrelic_entity} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/entity newrelic_entity} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -254,7 +254,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_entity',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -355,11 +355,11 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   }
 
   // ignore_case - computed: false, optional: true, required: false
-  private _ignoreCase?: boolean | cdktf.IResolvable; 
+  private _ignoreCase?: boolean | cdktn.IResolvable; 
   public get ignoreCase() {
     return this.getBooleanAttribute('ignore_case');
   }
-  public set ignoreCase(value: boolean | cdktf.IResolvable) {
+  public set ignoreCase(value: boolean | cdktn.IResolvable) {
     this._ignoreCase = value;
   }
   public resetIgnoreCase() {
@@ -371,11 +371,11 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   }
 
   // ignore_not_found - computed: false, optional: true, required: false
-  private _ignoreNotFound?: boolean | cdktf.IResolvable; 
+  private _ignoreNotFound?: boolean | cdktn.IResolvable; 
   public get ignoreNotFound() {
     return this.getBooleanAttribute('ignore_not_found');
   }
-  public set ignoreNotFound(value: boolean | cdktf.IResolvable) {
+  public set ignoreNotFound(value: boolean | cdktn.IResolvable) {
     this._ignoreNotFound = value;
   }
   public resetIgnoreNotFound() {
@@ -425,7 +425,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   public get tag() {
     return this._tag;
   }
-  public putTag(value: DataNewrelicEntityTag[] | cdktf.IResolvable) {
+  public putTag(value: DataNewrelicEntityTag[] | cdktn.IResolvable) {
     this._tag.internalValue = value;
   }
   public resetTag() {
@@ -442,70 +442,70 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      domain: cdktf.stringToTerraform(this._domain),
-      entity_tags: cdktf.stringToTerraform(this._entityTags),
-      id: cdktf.stringToTerraform(this._id),
-      ignore_case: cdktf.booleanToTerraform(this._ignoreCase),
-      ignore_not_found: cdktf.booleanToTerraform(this._ignoreNotFound),
-      name: cdktf.stringToTerraform(this._name),
-      type: cdktf.stringToTerraform(this._type),
-      tag: cdktf.listMapper(dataNewrelicEntityTagToTerraform, true)(this._tag.internalValue),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      domain: cdktn.stringToTerraform(this._domain),
+      entity_tags: cdktn.stringToTerraform(this._entityTags),
+      id: cdktn.stringToTerraform(this._id),
+      ignore_case: cdktn.booleanToTerraform(this._ignoreCase),
+      ignore_not_found: cdktn.booleanToTerraform(this._ignoreNotFound),
+      name: cdktn.stringToTerraform(this._name),
+      type: cdktn.stringToTerraform(this._type),
+      tag: cdktn.listMapper(dataNewrelicEntityTagToTerraform, true)(this._tag.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       domain: {
-        value: cdktf.stringToHclTerraform(this._domain),
+        value: cdktn.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       entity_tags: {
-        value: cdktf.stringToHclTerraform(this._entityTags),
+        value: cdktn.stringToHclTerraform(this._entityTags),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ignore_case: {
-        value: cdktf.booleanToHclTerraform(this._ignoreCase),
+        value: cdktn.booleanToHclTerraform(this._ignoreCase),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ignore_not_found: {
-        value: cdktf.booleanToHclTerraform(this._ignoreNotFound),
+        value: cdktn.booleanToHclTerraform(this._ignoreNotFound),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tag: {
-        value: cdktf.listMapperHcl(dataNewrelicEntityTagToHclTerraform, true)(this._tag.internalValue),
+        value: cdktn.listMapperHcl(dataNewrelicEntityTagToHclTerraform, true)(this._tag.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataNewrelicEntityTagList",

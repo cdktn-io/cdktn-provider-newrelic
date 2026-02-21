@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudAwsGovcloudIntegrationsConfig extends cdktf.TerraformMetaArguments {
+export interface CloudAwsGovcloudIntegrationsConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the account in New Relic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#account_id CloudAwsGovcloudIntegrations#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#account_id CloudAwsGovcloudIntegrations#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#id CloudAwsGovcloudIntegrations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#id CloudAwsGovcloudIntegrations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,127 +28,127 @@ export interface CloudAwsGovcloudIntegrationsConfig extends cdktf.TerraformMetaA
   /**
   * The ID of the linked AwsGovCloud account in New Relic
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#linked_account_id CloudAwsGovcloudIntegrations#linked_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#linked_account_id CloudAwsGovcloudIntegrations#linked_account_id}
   */
   readonly linkedAccountId: number;
   /**
   * alb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#alb CloudAwsGovcloudIntegrations#alb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#alb CloudAwsGovcloudIntegrations#alb}
   */
   readonly alb?: CloudAwsGovcloudIntegrationsAlb;
   /**
   * api_gateway block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#api_gateway CloudAwsGovcloudIntegrations#api_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#api_gateway CloudAwsGovcloudIntegrations#api_gateway}
   */
   readonly apiGateway?: CloudAwsGovcloudIntegrationsApiGateway;
   /**
   * auto_scaling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#auto_scaling CloudAwsGovcloudIntegrations#auto_scaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#auto_scaling CloudAwsGovcloudIntegrations#auto_scaling}
   */
   readonly autoScaling?: CloudAwsGovcloudIntegrationsAutoScaling;
   /**
   * aws_direct_connect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_direct_connect CloudAwsGovcloudIntegrations#aws_direct_connect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_direct_connect CloudAwsGovcloudIntegrations#aws_direct_connect}
   */
   readonly awsDirectConnect?: CloudAwsGovcloudIntegrationsAwsDirectConnect;
   /**
   * aws_states block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_states CloudAwsGovcloudIntegrations#aws_states}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_states CloudAwsGovcloudIntegrations#aws_states}
   */
   readonly awsStates?: CloudAwsGovcloudIntegrationsAwsStates;
   /**
   * cloudtrail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#cloudtrail CloudAwsGovcloudIntegrations#cloudtrail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#cloudtrail CloudAwsGovcloudIntegrations#cloudtrail}
   */
   readonly cloudtrail?: CloudAwsGovcloudIntegrationsCloudtrail;
   /**
   * dynamo_db block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#dynamo_db CloudAwsGovcloudIntegrations#dynamo_db}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#dynamo_db CloudAwsGovcloudIntegrations#dynamo_db}
   */
   readonly dynamoDb?: CloudAwsGovcloudIntegrationsDynamoDb;
   /**
   * ebs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#ebs CloudAwsGovcloudIntegrations#ebs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#ebs CloudAwsGovcloudIntegrations#ebs}
   */
   readonly ebs?: CloudAwsGovcloudIntegrationsEbs;
   /**
   * ec2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#ec2 CloudAwsGovcloudIntegrations#ec2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#ec2 CloudAwsGovcloudIntegrations#ec2}
   */
   readonly ec2?: CloudAwsGovcloudIntegrationsEc2;
   /**
   * elastic_search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#elastic_search CloudAwsGovcloudIntegrations#elastic_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#elastic_search CloudAwsGovcloudIntegrations#elastic_search}
   */
   readonly elasticSearch?: CloudAwsGovcloudIntegrationsElasticSearch;
   /**
   * elb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#elb CloudAwsGovcloudIntegrations#elb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#elb CloudAwsGovcloudIntegrations#elb}
   */
   readonly elb?: CloudAwsGovcloudIntegrationsElb;
   /**
   * emr block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#emr CloudAwsGovcloudIntegrations#emr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#emr CloudAwsGovcloudIntegrations#emr}
   */
   readonly emr?: CloudAwsGovcloudIntegrationsEmr;
   /**
   * iam block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#iam CloudAwsGovcloudIntegrations#iam}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#iam CloudAwsGovcloudIntegrations#iam}
   */
   readonly iam?: CloudAwsGovcloudIntegrationsIam;
   /**
   * lambda block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#lambda CloudAwsGovcloudIntegrations#lambda}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#lambda CloudAwsGovcloudIntegrations#lambda}
   */
   readonly lambda?: CloudAwsGovcloudIntegrationsLambda;
   /**
   * rds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#rds CloudAwsGovcloudIntegrations#rds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#rds CloudAwsGovcloudIntegrations#rds}
   */
   readonly rds?: CloudAwsGovcloudIntegrationsRds;
   /**
   * red_shift block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#red_shift CloudAwsGovcloudIntegrations#red_shift}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#red_shift CloudAwsGovcloudIntegrations#red_shift}
   */
   readonly redShift?: CloudAwsGovcloudIntegrationsRedShift;
   /**
   * route53 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#route53 CloudAwsGovcloudIntegrations#route53}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#route53 CloudAwsGovcloudIntegrations#route53}
   */
   readonly route53?: CloudAwsGovcloudIntegrationsRoute53;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#s3 CloudAwsGovcloudIntegrations#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#s3 CloudAwsGovcloudIntegrations#s3}
   */
   readonly s3?: CloudAwsGovcloudIntegrationsS3;
   /**
   * sns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#sns CloudAwsGovcloudIntegrations#sns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#sns CloudAwsGovcloudIntegrations#sns}
   */
   readonly sns?: CloudAwsGovcloudIntegrationsSns;
   /**
   * sqs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#sqs CloudAwsGovcloudIntegrations#sqs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#sqs CloudAwsGovcloudIntegrations#sqs}
   */
   readonly sqs?: CloudAwsGovcloudIntegrationsSqs;
 }
@@ -156,37 +156,37 @@ export interface CloudAwsGovcloudIntegrationsAlb {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * Specify if tags should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * Specify each name or prefix for the LBs that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#load_balancer_prefixes CloudAwsGovcloudIntegrations#load_balancer_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#load_balancer_prefixes CloudAwsGovcloudIntegrations#load_balancer_prefixes}
   */
   readonly loadBalancerPrefixes?: string[];
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -194,72 +194,72 @@ export interface CloudAwsGovcloudIntegrationsAlb {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsGovcloudIntegrationsAlbToTerraform(struct?: CloudAwsGovcloudIntegrationsAlbOutputReference | CloudAwsGovcloudIntegrationsAlb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    load_balancer_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loadBalancerPrefixes),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    load_balancer_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.loadBalancerPrefixes),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsAlbToHclTerraform(struct?: CloudAwsGovcloudIntegrationsAlbOutputReference | CloudAwsGovcloudIntegrationsAlb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     load_balancer_prefixes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.loadBalancerPrefixes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.loadBalancerPrefixes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -270,14 +270,14 @@ export function cloudAwsGovcloudIntegrationsAlbToHclTerraform(struct?: CloudAwsG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsAlbOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsAlbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -355,11 +355,11 @@ export class CloudAwsGovcloudIntegrationsAlbOutputReference extends cdktf.Comple
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -371,11 +371,11 @@ export class CloudAwsGovcloudIntegrationsAlbOutputReference extends cdktf.Comple
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -454,25 +454,25 @@ export interface CloudAwsGovcloudIntegrationsApiGateway {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#stage_prefixes CloudAwsGovcloudIntegrations#stage_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#stage_prefixes CloudAwsGovcloudIntegrations#stage_prefixes}
   */
   readonly stagePrefixes?: string[];
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -480,58 +480,58 @@ export interface CloudAwsGovcloudIntegrationsApiGateway {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsGovcloudIntegrationsApiGatewayToTerraform(struct?: CloudAwsGovcloudIntegrationsApiGatewayOutputReference | CloudAwsGovcloudIntegrationsApiGateway): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    stage_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.stagePrefixes),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    stage_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.stagePrefixes),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsApiGatewayToHclTerraform(struct?: CloudAwsGovcloudIntegrationsApiGatewayOutputReference | CloudAwsGovcloudIntegrationsApiGateway): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     stage_prefixes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.stagePrefixes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.stagePrefixes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -542,14 +542,14 @@ export function cloudAwsGovcloudIntegrationsApiGatewayToHclTerraform(struct?: Cl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsApiGatewayOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsApiGatewayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -682,43 +682,43 @@ export interface CloudAwsGovcloudIntegrationsAutoScaling {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsGovcloudIntegrationsAutoScalingToTerraform(struct?: CloudAwsGovcloudIntegrationsAutoScalingOutputReference | CloudAwsGovcloudIntegrationsAutoScaling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsAutoScalingToHclTerraform(struct?: CloudAwsGovcloudIntegrationsAutoScalingOutputReference | CloudAwsGovcloudIntegrationsAutoScaling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -729,14 +729,14 @@ export function cloudAwsGovcloudIntegrationsAutoScalingToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsAutoScalingOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsAutoScalingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -803,43 +803,43 @@ export interface CloudAwsGovcloudIntegrationsAwsDirectConnect {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsGovcloudIntegrationsAwsDirectConnectToTerraform(struct?: CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference | CloudAwsGovcloudIntegrationsAwsDirectConnect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsAwsDirectConnectToHclTerraform(struct?: CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference | CloudAwsGovcloudIntegrationsAwsDirectConnect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -850,14 +850,14 @@ export function cloudAwsGovcloudIntegrationsAwsDirectConnectToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -924,43 +924,43 @@ export interface CloudAwsGovcloudIntegrationsAwsStates {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsGovcloudIntegrationsAwsStatesToTerraform(struct?: CloudAwsGovcloudIntegrationsAwsStatesOutputReference | CloudAwsGovcloudIntegrationsAwsStates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsAwsStatesToHclTerraform(struct?: CloudAwsGovcloudIntegrationsAwsStatesOutputReference | CloudAwsGovcloudIntegrationsAwsStates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -971,14 +971,14 @@ export function cloudAwsGovcloudIntegrationsAwsStatesToHclTerraform(struct?: Clo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsAwsStatesOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsAwsStatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1045,43 +1045,43 @@ export interface CloudAwsGovcloudIntegrationsCloudtrail {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsGovcloudIntegrationsCloudtrailToTerraform(struct?: CloudAwsGovcloudIntegrationsCloudtrailOutputReference | CloudAwsGovcloudIntegrationsCloudtrail): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsCloudtrailToHclTerraform(struct?: CloudAwsGovcloudIntegrationsCloudtrailOutputReference | CloudAwsGovcloudIntegrationsCloudtrail): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1092,14 +1092,14 @@ export function cloudAwsGovcloudIntegrationsCloudtrailToHclTerraform(struct?: Cl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsCloudtrailOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsCloudtrailOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1166,31 +1166,31 @@ export interface CloudAwsGovcloudIntegrationsDynamoDb {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * Specify if tags should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -1198,65 +1198,65 @@ export interface CloudAwsGovcloudIntegrationsDynamoDb {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsGovcloudIntegrationsDynamoDbToTerraform(struct?: CloudAwsGovcloudIntegrationsDynamoDbOutputReference | CloudAwsGovcloudIntegrationsDynamoDb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsDynamoDbToHclTerraform(struct?: CloudAwsGovcloudIntegrationsDynamoDbOutputReference | CloudAwsGovcloudIntegrationsDynamoDb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1267,14 +1267,14 @@ export function cloudAwsGovcloudIntegrationsDynamoDbToHclTerraform(struct?: Clou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsDynamoDbOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsDynamoDbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1346,11 +1346,11 @@ export class CloudAwsGovcloudIntegrationsDynamoDbOutputReference extends cdktf.C
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -1362,11 +1362,11 @@ export class CloudAwsGovcloudIntegrationsDynamoDbOutputReference extends cdktf.C
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -1429,25 +1429,25 @@ export interface CloudAwsGovcloudIntegrationsEbs {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -1455,58 +1455,58 @@ export interface CloudAwsGovcloudIntegrationsEbs {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsGovcloudIntegrationsEbsToTerraform(struct?: CloudAwsGovcloudIntegrationsEbsOutputReference | CloudAwsGovcloudIntegrationsEbs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsEbsToHclTerraform(struct?: CloudAwsGovcloudIntegrationsEbsOutputReference | CloudAwsGovcloudIntegrationsEbs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1517,14 +1517,14 @@ export function cloudAwsGovcloudIntegrationsEbsToHclTerraform(struct?: CloudAwsG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsEbsOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsEbsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1590,11 +1590,11 @@ export class CloudAwsGovcloudIntegrationsEbsOutputReference extends cdktf.Comple
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -1657,25 +1657,25 @@ export interface CloudAwsGovcloudIntegrationsEc2 {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Specify if IP addresses of ec2 instance should be collected
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_ip_addresses CloudAwsGovcloudIntegrations#fetch_ip_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_ip_addresses CloudAwsGovcloudIntegrations#fetch_ip_addresses}
   */
-  readonly fetchIpAddresses?: boolean | cdktf.IResolvable;
+  readonly fetchIpAddresses?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -1683,58 +1683,58 @@ export interface CloudAwsGovcloudIntegrationsEc2 {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsGovcloudIntegrationsEc2ToTerraform(struct?: CloudAwsGovcloudIntegrationsEc2OutputReference | CloudAwsGovcloudIntegrationsEc2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_ip_addresses: cdktf.booleanToTerraform(struct!.fetchIpAddresses),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_ip_addresses: cdktn.booleanToTerraform(struct!.fetchIpAddresses),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsEc2ToHclTerraform(struct?: CloudAwsGovcloudIntegrationsEc2OutputReference | CloudAwsGovcloudIntegrationsEc2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_ip_addresses: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchIpAddresses),
+      value: cdktn.booleanToHclTerraform(struct!.fetchIpAddresses),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1745,14 +1745,14 @@ export function cloudAwsGovcloudIntegrationsEc2ToHclTerraform(struct?: CloudAwsG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsEc2OutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsEc2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1818,11 +1818,11 @@ export class CloudAwsGovcloudIntegrationsEc2OutputReference extends cdktf.Comple
   }
 
   // fetch_ip_addresses - computed: false, optional: true, required: false
-  private _fetchIpAddresses?: boolean | cdktf.IResolvable; 
+  private _fetchIpAddresses?: boolean | cdktn.IResolvable; 
   public get fetchIpAddresses() {
     return this.getBooleanAttribute('fetch_ip_addresses');
   }
-  public set fetchIpAddresses(value: boolean | cdktf.IResolvable) {
+  public set fetchIpAddresses(value: boolean | cdktn.IResolvable) {
     this._fetchIpAddresses = value;
   }
   public resetFetchIpAddresses() {
@@ -1885,25 +1885,25 @@ export interface CloudAwsGovcloudIntegrationsElasticSearch {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Specify if IP addresses of ec2 instance should be collected
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_nodes CloudAwsGovcloudIntegrations#fetch_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_nodes CloudAwsGovcloudIntegrations#fetch_nodes}
   */
-  readonly fetchNodes?: boolean | cdktf.IResolvable;
+  readonly fetchNodes?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -1911,58 +1911,58 @@ export interface CloudAwsGovcloudIntegrationsElasticSearch {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsGovcloudIntegrationsElasticSearchToTerraform(struct?: CloudAwsGovcloudIntegrationsElasticSearchOutputReference | CloudAwsGovcloudIntegrationsElasticSearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_nodes: cdktf.booleanToTerraform(struct!.fetchNodes),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_nodes: cdktn.booleanToTerraform(struct!.fetchNodes),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsElasticSearchToHclTerraform(struct?: CloudAwsGovcloudIntegrationsElasticSearchOutputReference | CloudAwsGovcloudIntegrationsElasticSearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_nodes: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchNodes),
+      value: cdktn.booleanToHclTerraform(struct!.fetchNodes),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1973,14 +1973,14 @@ export function cloudAwsGovcloudIntegrationsElasticSearchToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsElasticSearchOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsElasticSearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2046,11 +2046,11 @@ export class CloudAwsGovcloudIntegrationsElasticSearchOutputReference extends cd
   }
 
   // fetch_nodes - computed: false, optional: true, required: false
-  private _fetchNodes?: boolean | cdktf.IResolvable; 
+  private _fetchNodes?: boolean | cdktn.IResolvable; 
   public get fetchNodes() {
     return this.getBooleanAttribute('fetch_nodes');
   }
-  public set fetchNodes(value: boolean | cdktf.IResolvable) {
+  public set fetchNodes(value: boolean | cdktn.IResolvable) {
     this._fetchNodes = value;
   }
   public resetFetchNodes() {
@@ -2113,69 +2113,69 @@ export interface CloudAwsGovcloudIntegrationsElb {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * Specify if tags should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsGovcloudIntegrationsElbToTerraform(struct?: CloudAwsGovcloudIntegrationsElbOutputReference | CloudAwsGovcloudIntegrationsElb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsElbToHclTerraform(struct?: CloudAwsGovcloudIntegrationsElbOutputReference | CloudAwsGovcloudIntegrationsElb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2186,14 +2186,14 @@ export function cloudAwsGovcloudIntegrationsElbToHclTerraform(struct?: CloudAwsG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsElbOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsElbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2253,11 +2253,11 @@ export class CloudAwsGovcloudIntegrationsElbOutputReference extends cdktf.Comple
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -2269,11 +2269,11 @@ export class CloudAwsGovcloudIntegrationsElbOutputReference extends cdktf.Comple
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -2304,7 +2304,7 @@ export interface CloudAwsGovcloudIntegrationsEmr {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string;
   /**
@@ -2312,19 +2312,19 @@ export interface CloudAwsGovcloudIntegrationsEmr {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -2332,58 +2332,58 @@ export interface CloudAwsGovcloudIntegrationsEmr {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsGovcloudIntegrationsEmrToTerraform(struct?: CloudAwsGovcloudIntegrationsEmrOutputReference | CloudAwsGovcloudIntegrationsEmr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.stringToTerraform(struct!.awsRegions),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.stringToTerraform(struct!.awsRegions),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsEmrToHclTerraform(struct?: CloudAwsGovcloudIntegrationsEmrOutputReference | CloudAwsGovcloudIntegrationsEmr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.stringToHclTerraform(struct!.awsRegions),
+      value: cdktn.stringToHclTerraform(struct!.awsRegions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2394,14 +2394,14 @@ export function cloudAwsGovcloudIntegrationsEmrToHclTerraform(struct?: CloudAwsG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsEmrOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsEmrOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2467,11 +2467,11 @@ export class CloudAwsGovcloudIntegrationsEmrOutputReference extends cdktf.Comple
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -2534,13 +2534,13 @@ export interface CloudAwsGovcloudIntegrationsIam {
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -2548,44 +2548,44 @@ export interface CloudAwsGovcloudIntegrationsIam {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsGovcloudIntegrationsIamToTerraform(struct?: CloudAwsGovcloudIntegrationsIamOutputReference | CloudAwsGovcloudIntegrationsIam): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsIamToHclTerraform(struct?: CloudAwsGovcloudIntegrationsIamOutputReference | CloudAwsGovcloudIntegrationsIam): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2596,14 +2596,14 @@ export function cloudAwsGovcloudIntegrationsIamToHclTerraform(struct?: CloudAwsG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsIamOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsIamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2692,7 +2692,7 @@ export interface CloudAwsGovcloudIntegrationsLambda {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
@@ -2700,19 +2700,19 @@ export interface CloudAwsGovcloudIntegrationsLambda {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -2720,58 +2720,58 @@ export interface CloudAwsGovcloudIntegrationsLambda {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsGovcloudIntegrationsLambdaToTerraform(struct?: CloudAwsGovcloudIntegrationsLambdaOutputReference | CloudAwsGovcloudIntegrationsLambda): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsLambdaToHclTerraform(struct?: CloudAwsGovcloudIntegrationsLambdaOutputReference | CloudAwsGovcloudIntegrationsLambda): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2782,14 +2782,14 @@ export function cloudAwsGovcloudIntegrationsLambdaToHclTerraform(struct?: CloudA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsLambdaOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsLambdaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2855,11 +2855,11 @@ export class CloudAwsGovcloudIntegrationsLambdaOutputReference extends cdktf.Com
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -2922,25 +2922,25 @@ export interface CloudAwsGovcloudIntegrationsRds {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Specify if tags should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -2948,58 +2948,58 @@ export interface CloudAwsGovcloudIntegrationsRds {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsGovcloudIntegrationsRdsToTerraform(struct?: CloudAwsGovcloudIntegrationsRdsOutputReference | CloudAwsGovcloudIntegrationsRds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsRdsToHclTerraform(struct?: CloudAwsGovcloudIntegrationsRdsOutputReference | CloudAwsGovcloudIntegrationsRds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3010,14 +3010,14 @@ export function cloudAwsGovcloudIntegrationsRdsToHclTerraform(struct?: CloudAwsG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsRdsOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsRdsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3083,11 +3083,11 @@ export class CloudAwsGovcloudIntegrationsRdsOutputReference extends cdktf.Comple
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -3150,19 +3150,19 @@ export interface CloudAwsGovcloudIntegrationsRedShift {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -3170,51 +3170,51 @@ export interface CloudAwsGovcloudIntegrationsRedShift {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsGovcloudIntegrationsRedShiftToTerraform(struct?: CloudAwsGovcloudIntegrationsRedShiftOutputReference | CloudAwsGovcloudIntegrationsRedShift): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsRedShiftToHclTerraform(struct?: CloudAwsGovcloudIntegrationsRedShiftOutputReference | CloudAwsGovcloudIntegrationsRedShift): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3225,14 +3225,14 @@ export function cloudAwsGovcloudIntegrationsRedShiftToHclTerraform(struct?: Clou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsRedShiftOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsRedShiftOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3343,43 +3343,43 @@ export interface CloudAwsGovcloudIntegrationsRoute53 {
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsGovcloudIntegrationsRoute53ToTerraform(struct?: CloudAwsGovcloudIntegrationsRoute53OutputReference | CloudAwsGovcloudIntegrationsRoute53): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsRoute53ToHclTerraform(struct?: CloudAwsGovcloudIntegrationsRoute53OutputReference | CloudAwsGovcloudIntegrationsRoute53): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3390,14 +3390,14 @@ export function cloudAwsGovcloudIntegrationsRoute53ToHclTerraform(struct?: Cloud
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsRoute53OutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsRoute53OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3429,11 +3429,11 @@ export class CloudAwsGovcloudIntegrationsRoute53OutputReference extends cdktf.Co
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -3464,25 +3464,25 @@ export interface CloudAwsGovcloudIntegrationsS3 {
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * Specify if tags should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -3490,58 +3490,58 @@ export interface CloudAwsGovcloudIntegrationsS3 {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsGovcloudIntegrationsS3ToTerraform(struct?: CloudAwsGovcloudIntegrationsS3OutputReference | CloudAwsGovcloudIntegrationsS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsS3ToHclTerraform(struct?: CloudAwsGovcloudIntegrationsS3OutputReference | CloudAwsGovcloudIntegrationsS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3552,14 +3552,14 @@ export function cloudAwsGovcloudIntegrationsS3ToHclTerraform(struct?: CloudAwsGo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsS3OutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3609,11 +3609,11 @@ export class CloudAwsGovcloudIntegrationsS3OutputReference extends cdktf.Complex
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -3625,11 +3625,11 @@ export class CloudAwsGovcloudIntegrationsS3OutputReference extends cdktf.Complex
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -3692,56 +3692,56 @@ export interface CloudAwsGovcloudIntegrationsSns {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsGovcloudIntegrationsSnsToTerraform(struct?: CloudAwsGovcloudIntegrationsSnsOutputReference | CloudAwsGovcloudIntegrationsSns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsSnsToHclTerraform(struct?: CloudAwsGovcloudIntegrationsSnsOutputReference | CloudAwsGovcloudIntegrationsSns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3752,14 +3752,14 @@ export function cloudAwsGovcloudIntegrationsSnsToHclTerraform(struct?: CloudAwsG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsSnsOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsSnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3813,11 +3813,11 @@ export class CloudAwsGovcloudIntegrationsSnsOutputReference extends cdktf.Comple
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -3848,37 +3848,37 @@ export interface CloudAwsGovcloudIntegrationsSqs {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * Specify if tags should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify each name or prefix for the Queues that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#queue_prefixes CloudAwsGovcloudIntegrations#queue_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#queue_prefixes CloudAwsGovcloudIntegrations#queue_prefixes}
   */
   readonly queuePrefixes?: string[];
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -3886,72 +3886,72 @@ export interface CloudAwsGovcloudIntegrationsSqs {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsGovcloudIntegrationsSqsToTerraform(struct?: CloudAwsGovcloudIntegrationsSqsOutputReference | CloudAwsGovcloudIntegrationsSqs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    queue_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queuePrefixes),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    queue_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.queuePrefixes),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsGovcloudIntegrationsSqsToHclTerraform(struct?: CloudAwsGovcloudIntegrationsSqsOutputReference | CloudAwsGovcloudIntegrationsSqs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     queue_prefixes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queuePrefixes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.queuePrefixes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3962,14 +3962,14 @@ export function cloudAwsGovcloudIntegrationsSqsToHclTerraform(struct?: CloudAwsG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsGovcloudIntegrationsSqsOutputReference extends cdktf.ComplexObject {
+export class CloudAwsGovcloudIntegrationsSqsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4047,11 +4047,11 @@ export class CloudAwsGovcloudIntegrationsSqsOutputReference extends cdktf.Comple
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -4063,11 +4063,11 @@ export class CloudAwsGovcloudIntegrationsSqsOutputReference extends cdktf.Comple
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -4144,9 +4144,9 @@ export class CloudAwsGovcloudIntegrationsSqsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations newrelic_cloud_aws_govcloud_integrations}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations newrelic_cloud_aws_govcloud_integrations}
 */
-export class CloudAwsGovcloudIntegrations extends cdktf.TerraformResource {
+export class CloudAwsGovcloudIntegrations extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -4157,14 +4157,14 @@ export class CloudAwsGovcloudIntegrations extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudAwsGovcloudIntegrations resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudAwsGovcloudIntegrations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudAwsGovcloudIntegrations to import
-  * @param importFromId The id of the existing CloudAwsGovcloudIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudAwsGovcloudIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudAwsGovcloudIntegrations to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_cloud_aws_govcloud_integrations", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_cloud_aws_govcloud_integrations", importId: importFromId, provider });
       }
 
   // ===========
@@ -4172,7 +4172,7 @@ export class CloudAwsGovcloudIntegrations extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_govcloud_integrations newrelic_cloud_aws_govcloud_integrations} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_govcloud_integrations newrelic_cloud_aws_govcloud_integrations} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4183,7 +4183,7 @@ export class CloudAwsGovcloudIntegrations extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_aws_govcloud_integrations',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -4594,9 +4594,9 @@ export class CloudAwsGovcloudIntegrations extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      linked_account_id: cdktf.numberToTerraform(this._linkedAccountId),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      linked_account_id: cdktn.numberToTerraform(this._linkedAccountId),
       alb: cloudAwsGovcloudIntegrationsAlbToTerraform(this._alb.internalValue),
       api_gateway: cloudAwsGovcloudIntegrationsApiGatewayToTerraform(this._apiGateway.internalValue),
       auto_scaling: cloudAwsGovcloudIntegrationsAutoScalingToTerraform(this._autoScaling.internalValue),
@@ -4623,19 +4623,19 @@ export class CloudAwsGovcloudIntegrations extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       linked_account_id: {
-        value: cdktf.numberToHclTerraform(this._linkedAccountId),
+        value: cdktn.numberToHclTerraform(this._linkedAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

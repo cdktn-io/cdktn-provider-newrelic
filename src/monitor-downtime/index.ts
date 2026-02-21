@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MonitorDowntimeConfig extends cdktf.TerraformMetaArguments {
+export interface MonitorDowntimeConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the New Relic account in which the Monitor Downtime shall be created. Defaults to the `account_id` in the provider{} configuration if not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#account_id MonitorDowntime#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#account_id MonitorDowntime#account_id}
   */
   readonly accountId?: number;
   /**
   * A datetime stamp signifying the end of the Monitor Downtime.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#end_time MonitorDowntime#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#end_time MonitorDowntime#end_time}
   */
   readonly endTime: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#id MonitorDowntime#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#id MonitorDowntime#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,49 +34,49 @@ export interface MonitorDowntimeConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of maintenance days to be included with the created weekly Monitor Downtime.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#maintenance_days MonitorDowntime#maintenance_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#maintenance_days MonitorDowntime#maintenance_days}
   */
   readonly maintenanceDays?: string[];
   /**
   * An identifier of the type of Monitor Downtime to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#mode MonitorDowntime#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#mode MonitorDowntime#mode}
   */
   readonly mode: string;
   /**
   * A list of GUIDs of monitors, to which the created Monitor Downtime shall be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#monitor_guids MonitorDowntime#monitor_guids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#monitor_guids MonitorDowntime#monitor_guids}
   */
   readonly monitorGuids?: string[];
   /**
   * A name to identify the Monitor Downtime to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#name MonitorDowntime#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#name MonitorDowntime#name}
   */
   readonly name: string;
   /**
   * A datetime stamp signifying the start of the Monitor Downtime.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#start_time MonitorDowntime#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#start_time MonitorDowntime#start_time}
   */
   readonly startTime: string;
   /**
   * The timezone that applies to the Monitor Downtime schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#time_zone MonitorDowntime#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#time_zone MonitorDowntime#time_zone}
   */
   readonly timeZone: string;
   /**
   * end_repeat block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#end_repeat MonitorDowntime#end_repeat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#end_repeat MonitorDowntime#end_repeat}
   */
   readonly endRepeat?: MonitorDowntimeEndRepeat;
   /**
   * frequency block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#frequency MonitorDowntime#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#frequency MonitorDowntime#frequency}
   */
   readonly frequency?: MonitorDowntimeFrequency;
 }
@@ -84,43 +84,43 @@ export interface MonitorDowntimeEndRepeat {
   /**
   * A date, on which the Monitor Downtime's repeat cycle is expected to end.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#on_date MonitorDowntime#on_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#on_date MonitorDowntime#on_date}
   */
   readonly onDate?: string;
   /**
   * Number of repetitions after which the Monitor Downtime's repeat cycle is expected to end.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#on_repeat MonitorDowntime#on_repeat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#on_repeat MonitorDowntime#on_repeat}
   */
   readonly onRepeat?: number;
 }
 
 export function monitorDowntimeEndRepeatToTerraform(struct?: MonitorDowntimeEndRepeatOutputReference | MonitorDowntimeEndRepeat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    on_date: cdktf.stringToTerraform(struct!.onDate),
-    on_repeat: cdktf.numberToTerraform(struct!.onRepeat),
+    on_date: cdktn.stringToTerraform(struct!.onDate),
+    on_repeat: cdktn.numberToTerraform(struct!.onRepeat),
   }
 }
 
 
 export function monitorDowntimeEndRepeatToHclTerraform(struct?: MonitorDowntimeEndRepeatOutputReference | MonitorDowntimeEndRepeat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     on_date: {
-      value: cdktf.stringToHclTerraform(struct!.onDate),
+      value: cdktn.stringToHclTerraform(struct!.onDate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     on_repeat: {
-      value: cdktf.numberToHclTerraform(struct!.onRepeat),
+      value: cdktn.numberToHclTerraform(struct!.onRepeat),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -131,14 +131,14 @@ export function monitorDowntimeEndRepeatToHclTerraform(struct?: MonitorDowntimeE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDowntimeEndRepeatOutputReference extends cdktf.ComplexObject {
+export class MonitorDowntimeEndRepeatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -205,43 +205,43 @@ export interface MonitorDowntimeFrequencyDaysOfWeek {
   /**
   * An occurrence of the day selected within the month.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#ordinal_day_of_month MonitorDowntime#ordinal_day_of_month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#ordinal_day_of_month MonitorDowntime#ordinal_day_of_month}
   */
   readonly ordinalDayOfMonth: string;
   /**
   * The day of the week on which the Monitor Downtime would run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#week_day MonitorDowntime#week_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#week_day MonitorDowntime#week_day}
   */
   readonly weekDay: string;
 }
 
 export function monitorDowntimeFrequencyDaysOfWeekToTerraform(struct?: MonitorDowntimeFrequencyDaysOfWeekOutputReference | MonitorDowntimeFrequencyDaysOfWeek): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ordinal_day_of_month: cdktf.stringToTerraform(struct!.ordinalDayOfMonth),
-    week_day: cdktf.stringToTerraform(struct!.weekDay),
+    ordinal_day_of_month: cdktn.stringToTerraform(struct!.ordinalDayOfMonth),
+    week_day: cdktn.stringToTerraform(struct!.weekDay),
   }
 }
 
 
 export function monitorDowntimeFrequencyDaysOfWeekToHclTerraform(struct?: MonitorDowntimeFrequencyDaysOfWeekOutputReference | MonitorDowntimeFrequencyDaysOfWeek): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ordinal_day_of_month: {
-      value: cdktf.stringToHclTerraform(struct!.ordinalDayOfMonth),
+      value: cdktn.stringToHclTerraform(struct!.ordinalDayOfMonth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     week_day: {
-      value: cdktf.stringToHclTerraform(struct!.weekDay),
+      value: cdktn.stringToHclTerraform(struct!.weekDay),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -252,14 +252,14 @@ export function monitorDowntimeFrequencyDaysOfWeekToHclTerraform(struct?: Monito
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDowntimeFrequencyDaysOfWeekOutputReference extends cdktf.ComplexObject {
+export class MonitorDowntimeFrequencyDaysOfWeekOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -320,37 +320,37 @@ export interface MonitorDowntimeFrequency {
   /**
   * A numerical list of days of a month on which the Monitor Downtime is scheduled to run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#days_of_month MonitorDowntime#days_of_month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#days_of_month MonitorDowntime#days_of_month}
   */
   readonly daysOfMonth?: number[];
   /**
   * days_of_week block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#days_of_week MonitorDowntime#days_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#days_of_week MonitorDowntime#days_of_week}
   */
   readonly daysOfWeek?: MonitorDowntimeFrequencyDaysOfWeek;
 }
 
 export function monitorDowntimeFrequencyToTerraform(struct?: MonitorDowntimeFrequencyOutputReference | MonitorDowntimeFrequency): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days_of_month: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.daysOfMonth),
+    days_of_month: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.daysOfMonth),
     days_of_week: monitorDowntimeFrequencyDaysOfWeekToTerraform(struct!.daysOfWeek),
   }
 }
 
 
 export function monitorDowntimeFrequencyToHclTerraform(struct?: MonitorDowntimeFrequencyOutputReference | MonitorDowntimeFrequency): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days_of_month: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.daysOfMonth),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.daysOfMonth),
       isBlock: false,
       type: "set",
       storageClassType: "numberList",
@@ -367,14 +367,14 @@ export function monitorDowntimeFrequencyToHclTerraform(struct?: MonitorDowntimeF
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDowntimeFrequencyOutputReference extends cdktf.ComplexObject {
+export class MonitorDowntimeFrequencyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -408,7 +408,7 @@ export class MonitorDowntimeFrequencyOutputReference extends cdktf.ComplexObject
   // days_of_month - computed: false, optional: true, required: false
   private _daysOfMonth?: number[]; 
   public get daysOfMonth() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('days_of_month')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('days_of_month')));
   }
   public set daysOfMonth(value: number[]) {
     this._daysOfMonth = value;
@@ -439,9 +439,9 @@ export class MonitorDowntimeFrequencyOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime newrelic_monitor_downtime}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime newrelic_monitor_downtime}
 */
-export class MonitorDowntime extends cdktf.TerraformResource {
+export class MonitorDowntime extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -452,14 +452,14 @@ export class MonitorDowntime extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MonitorDowntime resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MonitorDowntime resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorDowntime to import
-  * @param importFromId The id of the existing MonitorDowntime that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MonitorDowntime that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorDowntime to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_monitor_downtime", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_monitor_downtime", importId: importFromId, provider });
       }
 
   // ===========
@@ -467,7 +467,7 @@ export class MonitorDowntime extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/monitor_downtime newrelic_monitor_downtime} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/monitor_downtime newrelic_monitor_downtime} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -478,7 +478,7 @@ export class MonitorDowntime extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_monitor_downtime',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -554,7 +554,7 @@ export class MonitorDowntime extends cdktf.TerraformResource {
   // maintenance_days - computed: false, optional: true, required: false
   private _maintenanceDays?: string[]; 
   public get maintenanceDays() {
-    return cdktf.Fn.tolist(this.getListAttribute('maintenance_days'));
+    return cdktn.Fn.tolist(this.getListAttribute('maintenance_days'));
   }
   public set maintenanceDays(value: string[]) {
     this._maintenanceDays = value;
@@ -583,7 +583,7 @@ export class MonitorDowntime extends cdktf.TerraformResource {
   // monitor_guids - computed: false, optional: true, required: false
   private _monitorGuids?: string[]; 
   public get monitorGuids() {
-    return cdktf.Fn.tolist(this.getListAttribute('monitor_guids'));
+    return cdktn.Fn.tolist(this.getListAttribute('monitor_guids'));
   }
   public set monitorGuids(value: string[]) {
     this._monitorGuids = value;
@@ -673,15 +673,15 @@ export class MonitorDowntime extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      end_time: cdktf.stringToTerraform(this._endTime),
-      id: cdktf.stringToTerraform(this._id),
-      maintenance_days: cdktf.listMapper(cdktf.stringToTerraform, false)(this._maintenanceDays),
-      mode: cdktf.stringToTerraform(this._mode),
-      monitor_guids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._monitorGuids),
-      name: cdktf.stringToTerraform(this._name),
-      start_time: cdktf.stringToTerraform(this._startTime),
-      time_zone: cdktf.stringToTerraform(this._timeZone),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      end_time: cdktn.stringToTerraform(this._endTime),
+      id: cdktn.stringToTerraform(this._id),
+      maintenance_days: cdktn.listMapper(cdktn.stringToTerraform, false)(this._maintenanceDays),
+      mode: cdktn.stringToTerraform(this._mode),
+      monitor_guids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._monitorGuids),
+      name: cdktn.stringToTerraform(this._name),
+      start_time: cdktn.stringToTerraform(this._startTime),
+      time_zone: cdktn.stringToTerraform(this._timeZone),
       end_repeat: monitorDowntimeEndRepeatToTerraform(this._endRepeat.internalValue),
       frequency: monitorDowntimeFrequencyToTerraform(this._frequency.internalValue),
     };
@@ -690,55 +690,55 @@ export class MonitorDowntime extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       end_time: {
-        value: cdktf.stringToHclTerraform(this._endTime),
+        value: cdktn.stringToHclTerraform(this._endTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       maintenance_days: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._maintenanceDays),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._maintenanceDays),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       mode: {
-        value: cdktf.stringToHclTerraform(this._mode),
+        value: cdktn.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       monitor_guids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._monitorGuids),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._monitorGuids),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_time: {
-        value: cdktf.stringToHclTerraform(this._startTime),
+        value: cdktn.stringToHclTerraform(this._startTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       time_zone: {
-        value: cdktf.stringToHclTerraform(this._timeZone),
+        value: cdktn.stringToHclTerraform(this._timeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

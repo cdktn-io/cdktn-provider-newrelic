@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkflowConfig extends cdktf.TerraformMetaArguments {
+export interface WorkflowConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account id of the workflow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#account_id Workflow#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#account_id Workflow#account_id}
   */
   readonly accountId?: number;
   /**
   * Indicates whether the destinations are enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#destinations_enabled Workflow#destinations_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#destinations_enabled Workflow#destinations_enabled}
   */
-  readonly destinationsEnabled?: boolean | cdktf.IResolvable;
+  readonly destinationsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether the workflow is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#enabled Workflow#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#enabled Workflow#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether the enrichments are enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#enrichments_enabled Workflow#enrichments_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#enrichments_enabled Workflow#enrichments_enabled}
   */
-  readonly enrichmentsEnabled?: boolean | cdktf.IResolvable;
+  readonly enrichmentsEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#id Workflow#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#id Workflow#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,31 +46,31 @@ export interface WorkflowConfig extends cdktf.TerraformMetaArguments {
   /**
   * The type of the muting rule handling. One of: (NOTIFY_ALL_ISSUES, DONT_NOTIFY_FULLY_MUTED_ISSUES, DONT_NOTIFY_FULLY_OR_PARTIALLY_MUTED_ISSUES).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#muting_rules_handling Workflow#muting_rules_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#muting_rules_handling Workflow#muting_rules_handling}
   */
   readonly mutingRulesHandling: string;
   /**
   * (Required) The name of the workflow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#name Workflow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#name Workflow#name}
   */
   readonly name: string;
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#destination Workflow#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#destination Workflow#destination}
   */
-  readonly destination: WorkflowDestination[] | cdktf.IResolvable;
+  readonly destination: WorkflowDestination[] | cdktn.IResolvable;
   /**
   * enrichments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#enrichments Workflow#enrichments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#enrichments Workflow#enrichments}
   */
   readonly enrichments?: WorkflowEnrichments;
   /**
   * issues_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#issues_filter Workflow#issues_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#issues_filter Workflow#issues_filter}
   */
   readonly issuesFilter: WorkflowIssuesFilter;
 }
@@ -78,56 +78,56 @@ export interface WorkflowDestination {
   /**
   * (Required) Destination's channel id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#channel_id Workflow#channel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#channel_id Workflow#channel_id}
   */
   readonly channelId: string;
   /**
   * List of triggers to notify about in this destination configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#notification_triggers Workflow#notification_triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#notification_triggers Workflow#notification_triggers}
   */
   readonly notificationTriggers?: string[];
   /**
   * Update original notification message (Slack channels only)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#update_original_message Workflow#update_original_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#update_original_message Workflow#update_original_message}
   */
-  readonly updateOriginalMessage?: boolean | cdktf.IResolvable;
+  readonly updateOriginalMessage?: boolean | cdktn.IResolvable;
 }
 
-export function workflowDestinationToTerraform(struct?: WorkflowDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workflowDestinationToTerraform(struct?: WorkflowDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    channel_id: cdktf.stringToTerraform(struct!.channelId),
-    notification_triggers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notificationTriggers),
-    update_original_message: cdktf.booleanToTerraform(struct!.updateOriginalMessage),
+    channel_id: cdktn.stringToTerraform(struct!.channelId),
+    notification_triggers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.notificationTriggers),
+    update_original_message: cdktn.booleanToTerraform(struct!.updateOriginalMessage),
   }
 }
 
 
-export function workflowDestinationToHclTerraform(struct?: WorkflowDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workflowDestinationToHclTerraform(struct?: WorkflowDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     channel_id: {
-      value: cdktf.stringToHclTerraform(struct!.channelId),
+      value: cdktn.stringToHclTerraform(struct!.channelId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     notification_triggers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notificationTriggers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.notificationTriggers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     update_original_message: {
-      value: cdktf.booleanToHclTerraform(struct!.updateOriginalMessage),
+      value: cdktn.booleanToHclTerraform(struct!.updateOriginalMessage),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -138,9 +138,9 @@ export function workflowDestinationToHclTerraform(struct?: WorkflowDestination |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
+export class WorkflowDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -148,11 +148,11 @@ export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkflowDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkflowDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -173,7 +173,7 @@ export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkflowDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkflowDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -181,7 +181,7 @@ export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
       this._notificationTriggers = undefined;
       this._updateOriginalMessage = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -234,11 +234,11 @@ export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
   }
 
   // update_original_message - computed: true, optional: true, required: false
-  private _updateOriginalMessage?: boolean | cdktf.IResolvable; 
+  private _updateOriginalMessage?: boolean | cdktn.IResolvable; 
   public get updateOriginalMessage() {
     return this.getBooleanAttribute('update_original_message');
   }
-  public set updateOriginalMessage(value: boolean | cdktf.IResolvable) {
+  public set updateOriginalMessage(value: boolean | cdktn.IResolvable) {
     this._updateOriginalMessage = value;
   }
   public resetUpdateOriginalMessage() {
@@ -250,15 +250,15 @@ export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class WorkflowDestinationList extends cdktf.ComplexList {
-  public internalValue? : WorkflowDestination[] | cdktf.IResolvable
+export class WorkflowDestinationList extends cdktn.ComplexList {
+  public internalValue? : WorkflowDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -273,30 +273,30 @@ export interface WorkflowEnrichmentsNrqlConfiguration {
   /**
   * enrichment's NRQL query
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#query Workflow#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#query Workflow#query}
   */
   readonly query: string;
 }
 
-export function workflowEnrichmentsNrqlConfigurationToTerraform(struct?: WorkflowEnrichmentsNrqlConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workflowEnrichmentsNrqlConfigurationToTerraform(struct?: WorkflowEnrichmentsNrqlConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
-export function workflowEnrichmentsNrqlConfigurationToHclTerraform(struct?: WorkflowEnrichmentsNrqlConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workflowEnrichmentsNrqlConfigurationToHclTerraform(struct?: WorkflowEnrichmentsNrqlConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -307,9 +307,9 @@ export function workflowEnrichmentsNrqlConfigurationToHclTerraform(struct?: Work
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkflowEnrichmentsNrqlConfigurationOutputReference extends cdktf.ComplexObject {
+export class WorkflowEnrichmentsNrqlConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -317,11 +317,11 @@ export class WorkflowEnrichmentsNrqlConfigurationOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkflowEnrichmentsNrqlConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkflowEnrichmentsNrqlConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -334,13 +334,13 @@ export class WorkflowEnrichmentsNrqlConfigurationOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkflowEnrichmentsNrqlConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkflowEnrichmentsNrqlConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._query = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -365,15 +365,15 @@ export class WorkflowEnrichmentsNrqlConfigurationOutputReference extends cdktf.C
   }
 }
 
-export class WorkflowEnrichmentsNrqlConfigurationList extends cdktf.ComplexList {
-  public internalValue? : WorkflowEnrichmentsNrqlConfiguration[] | cdktf.IResolvable
+export class WorkflowEnrichmentsNrqlConfigurationList extends cdktn.ComplexList {
+  public internalValue? : WorkflowEnrichmentsNrqlConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -388,43 +388,43 @@ export interface WorkflowEnrichmentsNrql {
   /**
   * (Required) Enrichment's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#name Workflow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#name Workflow#name}
   */
   readonly name: string;
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#configuration Workflow#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#configuration Workflow#configuration}
   */
-  readonly configuration: WorkflowEnrichmentsNrqlConfiguration[] | cdktf.IResolvable;
+  readonly configuration: WorkflowEnrichmentsNrqlConfiguration[] | cdktn.IResolvable;
 }
 
-export function workflowEnrichmentsNrqlToTerraform(struct?: WorkflowEnrichmentsNrql | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workflowEnrichmentsNrqlToTerraform(struct?: WorkflowEnrichmentsNrql | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    configuration: cdktf.listMapper(workflowEnrichmentsNrqlConfigurationToTerraform, true)(struct!.configuration),
+    name: cdktn.stringToTerraform(struct!.name),
+    configuration: cdktn.listMapper(workflowEnrichmentsNrqlConfigurationToTerraform, true)(struct!.configuration),
   }
 }
 
 
-export function workflowEnrichmentsNrqlToHclTerraform(struct?: WorkflowEnrichmentsNrql | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workflowEnrichmentsNrqlToHclTerraform(struct?: WorkflowEnrichmentsNrql | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     configuration: {
-      value: cdktf.listMapperHcl(workflowEnrichmentsNrqlConfigurationToHclTerraform, true)(struct!.configuration),
+      value: cdktn.listMapperHcl(workflowEnrichmentsNrqlConfigurationToHclTerraform, true)(struct!.configuration),
       isBlock: true,
       type: "list",
       storageClassType: "WorkflowEnrichmentsNrqlConfigurationList",
@@ -435,9 +435,9 @@ export function workflowEnrichmentsNrqlToHclTerraform(struct?: WorkflowEnrichmen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkflowEnrichmentsNrqlOutputReference extends cdktf.ComplexObject {
+export class WorkflowEnrichmentsNrqlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -445,11 +445,11 @@ export class WorkflowEnrichmentsNrqlOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkflowEnrichmentsNrql | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkflowEnrichmentsNrql | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -466,14 +466,14 @@ export class WorkflowEnrichmentsNrqlOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkflowEnrichmentsNrql | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkflowEnrichmentsNrql | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._configuration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -518,7 +518,7 @@ export class WorkflowEnrichmentsNrqlOutputReference extends cdktf.ComplexObject 
   public get configuration() {
     return this._configuration;
   }
-  public putConfiguration(value: WorkflowEnrichmentsNrqlConfiguration[] | cdktf.IResolvable) {
+  public putConfiguration(value: WorkflowEnrichmentsNrqlConfiguration[] | cdktn.IResolvable) {
     this._configuration.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -527,15 +527,15 @@ export class WorkflowEnrichmentsNrqlOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class WorkflowEnrichmentsNrqlList extends cdktf.ComplexList {
-  public internalValue? : WorkflowEnrichmentsNrql[] | cdktf.IResolvable
+export class WorkflowEnrichmentsNrqlList extends cdktn.ComplexList {
+  public internalValue? : WorkflowEnrichmentsNrql[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -550,30 +550,30 @@ export interface WorkflowEnrichments {
   /**
   * nrql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#nrql Workflow#nrql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#nrql Workflow#nrql}
   */
-  readonly nrql: WorkflowEnrichmentsNrql[] | cdktf.IResolvable;
+  readonly nrql: WorkflowEnrichmentsNrql[] | cdktn.IResolvable;
 }
 
 export function workflowEnrichmentsToTerraform(struct?: WorkflowEnrichmentsOutputReference | WorkflowEnrichments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nrql: cdktf.listMapper(workflowEnrichmentsNrqlToTerraform, true)(struct!.nrql),
+    nrql: cdktn.listMapper(workflowEnrichmentsNrqlToTerraform, true)(struct!.nrql),
   }
 }
 
 
 export function workflowEnrichmentsToHclTerraform(struct?: WorkflowEnrichmentsOutputReference | WorkflowEnrichments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nrql: {
-      value: cdktf.listMapperHcl(workflowEnrichmentsNrqlToHclTerraform, true)(struct!.nrql),
+      value: cdktn.listMapperHcl(workflowEnrichmentsNrqlToHclTerraform, true)(struct!.nrql),
       isBlock: true,
       type: "list",
       storageClassType: "WorkflowEnrichmentsNrqlList",
@@ -584,14 +584,14 @@ export function workflowEnrichmentsToHclTerraform(struct?: WorkflowEnrichmentsOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkflowEnrichmentsOutputReference extends cdktf.ComplexObject {
+export class WorkflowEnrichmentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -621,7 +621,7 @@ export class WorkflowEnrichmentsOutputReference extends cdktf.ComplexObject {
   public get nrql() {
     return this._nrql;
   }
-  public putNrql(value: WorkflowEnrichmentsNrql[] | cdktf.IResolvable) {
+  public putNrql(value: WorkflowEnrichmentsNrql[] | cdktn.IResolvable) {
     this._nrql.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -633,56 +633,56 @@ export interface WorkflowIssuesFilterPredicate {
   /**
   * (Required) predicate's attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#attribute Workflow#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#attribute Workflow#attribute}
   */
   readonly attribute: string;
   /**
   * The type of the operator. One of: (CONTAINS, DOES_NOT_CONTAIN, DOES_NOT_EQUAL, DOES_NOT_EXACTLY_MATCH, ENDS_WITH, EQUAL, EXACTLY_MATCHES, GREATER_OR_EQUAL, GREATER_THAN, IS, IS_NOT, LESS_OR_EQUAL, LESS_THAN, STARTS_WITH).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#operator Workflow#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#operator Workflow#operator}
   */
   readonly operator: string;
   /**
   * List of predicate values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#values Workflow#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#values Workflow#values}
   */
   readonly values: string[];
 }
 
-export function workflowIssuesFilterPredicateToTerraform(struct?: WorkflowIssuesFilterPredicate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workflowIssuesFilterPredicateToTerraform(struct?: WorkflowIssuesFilterPredicate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attribute: cdktf.stringToTerraform(struct!.attribute),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    attribute: cdktn.stringToTerraform(struct!.attribute),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function workflowIssuesFilterPredicateToHclTerraform(struct?: WorkflowIssuesFilterPredicate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workflowIssuesFilterPredicateToHclTerraform(struct?: WorkflowIssuesFilterPredicate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attribute: {
-      value: cdktf.stringToHclTerraform(struct!.attribute),
+      value: cdktn.stringToHclTerraform(struct!.attribute),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -693,9 +693,9 @@ export function workflowIssuesFilterPredicateToHclTerraform(struct?: WorkflowIss
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkflowIssuesFilterPredicateOutputReference extends cdktf.ComplexObject {
+export class WorkflowIssuesFilterPredicateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -703,11 +703,11 @@ export class WorkflowIssuesFilterPredicateOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkflowIssuesFilterPredicate | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkflowIssuesFilterPredicate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -728,7 +728,7 @@ export class WorkflowIssuesFilterPredicateOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkflowIssuesFilterPredicate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkflowIssuesFilterPredicate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -736,7 +736,7 @@ export class WorkflowIssuesFilterPredicateOutputReference extends cdktf.ComplexO
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -789,15 +789,15 @@ export class WorkflowIssuesFilterPredicateOutputReference extends cdktf.ComplexO
   }
 }
 
-export class WorkflowIssuesFilterPredicateList extends cdktf.ComplexList {
-  public internalValue? : WorkflowIssuesFilterPredicate[] | cdktf.IResolvable
+export class WorkflowIssuesFilterPredicateList extends cdktn.ComplexList {
+  public internalValue? : WorkflowIssuesFilterPredicate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -812,56 +812,56 @@ export interface WorkflowIssuesFilter {
   /**
   * (Required) Filter's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#name Workflow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#name Workflow#name}
   */
   readonly name: string;
   /**
   * (Required) The type of the filter. One of: (FILTER, VIEW).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#type Workflow#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#type Workflow#type}
   */
   readonly type: string;
   /**
   * predicate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#predicate Workflow#predicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#predicate Workflow#predicate}
   */
-  readonly predicate?: WorkflowIssuesFilterPredicate[] | cdktf.IResolvable;
+  readonly predicate?: WorkflowIssuesFilterPredicate[] | cdktn.IResolvable;
 }
 
 export function workflowIssuesFilterToTerraform(struct?: WorkflowIssuesFilterOutputReference | WorkflowIssuesFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
-    predicate: cdktf.listMapper(workflowIssuesFilterPredicateToTerraform, true)(struct!.predicate),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
+    predicate: cdktn.listMapper(workflowIssuesFilterPredicateToTerraform, true)(struct!.predicate),
   }
 }
 
 
 export function workflowIssuesFilterToHclTerraform(struct?: WorkflowIssuesFilterOutputReference | WorkflowIssuesFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     predicate: {
-      value: cdktf.listMapperHcl(workflowIssuesFilterPredicateToHclTerraform, true)(struct!.predicate),
+      value: cdktn.listMapperHcl(workflowIssuesFilterPredicateToHclTerraform, true)(struct!.predicate),
       isBlock: true,
       type: "list",
       storageClassType: "WorkflowIssuesFilterPredicateList",
@@ -872,14 +872,14 @@ export function workflowIssuesFilterToHclTerraform(struct?: WorkflowIssuesFilter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkflowIssuesFilterOutputReference extends cdktf.ComplexObject {
+export class WorkflowIssuesFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -952,7 +952,7 @@ export class WorkflowIssuesFilterOutputReference extends cdktf.ComplexObject {
   public get predicate() {
     return this._predicate;
   }
-  public putPredicate(value: WorkflowIssuesFilterPredicate[] | cdktf.IResolvable) {
+  public putPredicate(value: WorkflowIssuesFilterPredicate[] | cdktn.IResolvable) {
     this._predicate.internalValue = value;
   }
   public resetPredicate() {
@@ -965,9 +965,9 @@ export class WorkflowIssuesFilterOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow newrelic_workflow}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow newrelic_workflow}
 */
-export class Workflow extends cdktf.TerraformResource {
+export class Workflow extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -978,14 +978,14 @@ export class Workflow extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Workflow resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Workflow resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Workflow to import
-  * @param importFromId The id of the existing Workflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Workflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Workflow to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_workflow", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_workflow", importId: importFromId, provider });
       }
 
   // ===========
@@ -993,7 +993,7 @@ export class Workflow extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow newrelic_workflow} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workflow newrelic_workflow} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1004,7 +1004,7 @@ export class Workflow extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_workflow',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -1048,11 +1048,11 @@ export class Workflow extends cdktf.TerraformResource {
   }
 
   // destinations_enabled - computed: false, optional: true, required: false
-  private _destinationsEnabled?: boolean | cdktf.IResolvable; 
+  private _destinationsEnabled?: boolean | cdktn.IResolvable; 
   public get destinationsEnabled() {
     return this.getBooleanAttribute('destinations_enabled');
   }
-  public set destinationsEnabled(value: boolean | cdktf.IResolvable) {
+  public set destinationsEnabled(value: boolean | cdktn.IResolvable) {
     this._destinationsEnabled = value;
   }
   public resetDestinationsEnabled() {
@@ -1064,11 +1064,11 @@ export class Workflow extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1080,11 +1080,11 @@ export class Workflow extends cdktf.TerraformResource {
   }
 
   // enrichments_enabled - computed: false, optional: true, required: false
-  private _enrichmentsEnabled?: boolean | cdktf.IResolvable; 
+  private _enrichmentsEnabled?: boolean | cdktn.IResolvable; 
   public get enrichmentsEnabled() {
     return this.getBooleanAttribute('enrichments_enabled');
   }
-  public set enrichmentsEnabled(value: boolean | cdktf.IResolvable) {
+  public set enrichmentsEnabled(value: boolean | cdktn.IResolvable) {
     this._enrichmentsEnabled = value;
   }
   public resetEnrichmentsEnabled() {
@@ -1157,7 +1157,7 @@ export class Workflow extends cdktf.TerraformResource {
   public get destination() {
     return this._destination;
   }
-  public putDestination(value: WorkflowDestination[] | cdktf.IResolvable) {
+  public putDestination(value: WorkflowDestination[] | cdktn.IResolvable) {
     this._destination.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1200,14 +1200,14 @@ export class Workflow extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      destinations_enabled: cdktf.booleanToTerraform(this._destinationsEnabled),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      enrichments_enabled: cdktf.booleanToTerraform(this._enrichmentsEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      muting_rules_handling: cdktf.stringToTerraform(this._mutingRulesHandling),
-      name: cdktf.stringToTerraform(this._name),
-      destination: cdktf.listMapper(workflowDestinationToTerraform, true)(this._destination.internalValue),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      destinations_enabled: cdktn.booleanToTerraform(this._destinationsEnabled),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      enrichments_enabled: cdktn.booleanToTerraform(this._enrichmentsEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      muting_rules_handling: cdktn.stringToTerraform(this._mutingRulesHandling),
+      name: cdktn.stringToTerraform(this._name),
+      destination: cdktn.listMapper(workflowDestinationToTerraform, true)(this._destination.internalValue),
       enrichments: workflowEnrichmentsToTerraform(this._enrichments.internalValue),
       issues_filter: workflowIssuesFilterToTerraform(this._issuesFilter.internalValue),
     };
@@ -1216,49 +1216,49 @@ export class Workflow extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       destinations_enabled: {
-        value: cdktf.booleanToHclTerraform(this._destinationsEnabled),
+        value: cdktn.booleanToHclTerraform(this._destinationsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enrichments_enabled: {
-        value: cdktf.booleanToHclTerraform(this._enrichmentsEnabled),
+        value: cdktn.booleanToHclTerraform(this._enrichmentsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       muting_rules_handling: {
-        value: cdktf.stringToHclTerraform(this._mutingRulesHandling),
+        value: cdktn.stringToHclTerraform(this._mutingRulesHandling),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination: {
-        value: cdktf.listMapperHcl(workflowDestinationToHclTerraform, true)(this._destination.internalValue),
+        value: cdktn.listMapperHcl(workflowDestinationToHclTerraform, true)(this._destination.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WorkflowDestinationList",

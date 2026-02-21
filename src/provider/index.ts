@@ -1,83 +1,83 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
 export interface NewrelicProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#account_id NewrelicProvider#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#account_id NewrelicProvider#account_id}
   */
   readonly accountId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#admin_api_key NewrelicProvider#admin_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#admin_api_key NewrelicProvider#admin_api_key}
   */
   readonly adminApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#api_key NewrelicProvider#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#api_key NewrelicProvider#api_key}
   */
   readonly apiKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#api_url NewrelicProvider#api_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#api_url NewrelicProvider#api_url}
   */
   readonly apiUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#cacert_file NewrelicProvider#cacert_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#cacert_file NewrelicProvider#cacert_file}
   */
   readonly cacertFile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}
   */
   readonly infrastructureApiUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}
   */
-  readonly insecureSkipVerify?: boolean | cdktf.IResolvable;
+  readonly insecureSkipVerify?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_insert_key NewrelicProvider#insights_insert_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_insert_key NewrelicProvider#insights_insert_key}
   */
   readonly insightsInsertKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_insert_url NewrelicProvider#insights_insert_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_insert_url NewrelicProvider#insights_insert_url}
   */
   readonly insightsInsertUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#insights_query_url NewrelicProvider#insights_query_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#insights_query_url NewrelicProvider#insights_query_url}
   */
   readonly insightsQueryUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}
   */
   readonly nerdgraphApiUrl?: string;
   /**
   * The data center for which your New Relic account is configured. Only one region per provider block is permitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#region NewrelicProvider#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#region NewrelicProvider#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}
   */
   readonly syntheticsApiUrl?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#alias NewrelicProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#alias NewrelicProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs newrelic}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs newrelic}
 */
-export class NewrelicProvider extends cdktf.TerraformProvider {
+export class NewrelicProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -88,14 +88,14 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NewrelicProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NewrelicProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NewrelicProvider to import
-  * @param importFromId The id of the existing NewrelicProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NewrelicProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NewrelicProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic", importId: importFromId, provider });
       }
 
   // ===========
@@ -103,7 +103,7 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs newrelic} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs newrelic} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -114,7 +114,7 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'newrelic',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       terraformProviderSource: 'newrelic/newrelic'
@@ -230,11 +230,11 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   }
 
   // insecure_skip_verify - computed: false, optional: true, required: false
-  private _insecureSkipVerify?: boolean | cdktf.IResolvable; 
+  private _insecureSkipVerify?: boolean | cdktn.IResolvable; 
   public get insecureSkipVerify() {
     return this._insecureSkipVerify;
   }
-  public set insecureSkipVerify(value: boolean | cdktf.IResolvable | undefined) {
+  public set insecureSkipVerify(value: boolean | cdktn.IResolvable | undefined) {
     this._insecureSkipVerify = value;
   }
   public resetInsecureSkipVerify() {
@@ -363,105 +363,105 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      admin_api_key: cdktf.stringToTerraform(this._adminApiKey),
-      api_key: cdktf.stringToTerraform(this._apiKey),
-      api_url: cdktf.stringToTerraform(this._apiUrl),
-      cacert_file: cdktf.stringToTerraform(this._cacertFile),
-      infrastructure_api_url: cdktf.stringToTerraform(this._infrastructureApiUrl),
-      insecure_skip_verify: cdktf.booleanToTerraform(this._insecureSkipVerify),
-      insights_insert_key: cdktf.stringToTerraform(this._insightsInsertKey),
-      insights_insert_url: cdktf.stringToTerraform(this._insightsInsertUrl),
-      insights_query_url: cdktf.stringToTerraform(this._insightsQueryUrl),
-      nerdgraph_api_url: cdktf.stringToTerraform(this._nerdgraphApiUrl),
-      region: cdktf.stringToTerraform(this._region),
-      synthetics_api_url: cdktf.stringToTerraform(this._syntheticsApiUrl),
-      alias: cdktf.stringToTerraform(this._alias),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      admin_api_key: cdktn.stringToTerraform(this._adminApiKey),
+      api_key: cdktn.stringToTerraform(this._apiKey),
+      api_url: cdktn.stringToTerraform(this._apiUrl),
+      cacert_file: cdktn.stringToTerraform(this._cacertFile),
+      infrastructure_api_url: cdktn.stringToTerraform(this._infrastructureApiUrl),
+      insecure_skip_verify: cdktn.booleanToTerraform(this._insecureSkipVerify),
+      insights_insert_key: cdktn.stringToTerraform(this._insightsInsertKey),
+      insights_insert_url: cdktn.stringToTerraform(this._insightsInsertUrl),
+      insights_query_url: cdktn.stringToTerraform(this._insightsQueryUrl),
+      nerdgraph_api_url: cdktn.stringToTerraform(this._nerdgraphApiUrl),
+      region: cdktn.stringToTerraform(this._region),
+      synthetics_api_url: cdktn.stringToTerraform(this._syntheticsApiUrl),
+      alias: cdktn.stringToTerraform(this._alias),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       admin_api_key: {
-        value: cdktf.stringToHclTerraform(this._adminApiKey),
+        value: cdktn.stringToHclTerraform(this._adminApiKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       api_key: {
-        value: cdktf.stringToHclTerraform(this._apiKey),
+        value: cdktn.stringToHclTerraform(this._apiKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       api_url: {
-        value: cdktf.stringToHclTerraform(this._apiUrl),
+        value: cdktn.stringToHclTerraform(this._apiUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cacert_file: {
-        value: cdktf.stringToHclTerraform(this._cacertFile),
+        value: cdktn.stringToHclTerraform(this._cacertFile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       infrastructure_api_url: {
-        value: cdktf.stringToHclTerraform(this._infrastructureApiUrl),
+        value: cdktn.stringToHclTerraform(this._infrastructureApiUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       insecure_skip_verify: {
-        value: cdktf.booleanToHclTerraform(this._insecureSkipVerify),
+        value: cdktn.booleanToHclTerraform(this._insecureSkipVerify),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       insights_insert_key: {
-        value: cdktf.stringToHclTerraform(this._insightsInsertKey),
+        value: cdktn.stringToHclTerraform(this._insightsInsertKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       insights_insert_url: {
-        value: cdktf.stringToHclTerraform(this._insightsInsertUrl),
+        value: cdktn.stringToHclTerraform(this._insightsInsertUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       insights_query_url: {
-        value: cdktf.stringToHclTerraform(this._insightsQueryUrl),
+        value: cdktn.stringToHclTerraform(this._insightsQueryUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nerdgraph_api_url: {
-        value: cdktf.stringToHclTerraform(this._nerdgraphApiUrl),
+        value: cdktn.stringToHclTerraform(this._nerdgraphApiUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       synthetics_api_url: {
-        value: cdktf.stringToHclTerraform(this._syntheticsApiUrl),
+        value: cdktn.stringToHclTerraform(this._syntheticsApiUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

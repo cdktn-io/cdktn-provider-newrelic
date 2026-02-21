@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/insights_event
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface InsightsEventConfig extends cdktf.TerraformMetaArguments {
+export interface InsightsEventConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/insights_event#id InsightsEvent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#id InsightsEvent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,64 +22,64 @@ export interface InsightsEventConfig extends cdktf.TerraformMetaArguments {
   /**
   * event block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/insights_event#event InsightsEvent#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#event InsightsEvent#event}
   */
-  readonly event: InsightsEventEvent[] | cdktf.IResolvable;
+  readonly event: InsightsEventEvent[] | cdktn.IResolvable;
 }
 export interface InsightsEventEventAttribute {
   /**
   * The name of the attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/insights_event#key InsightsEvent#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#key InsightsEvent#key}
   */
   readonly key: string;
   /**
   * Specify the type for the attribute value. This is useful when passing integer or float values to Insights. Allowed values are string, int, or float. Defaults to string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/insights_event#type InsightsEvent#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#type InsightsEvent#type}
   */
   readonly type?: string;
   /**
   * The value of the attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/insights_event#value InsightsEvent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#value InsightsEvent#value}
   */
   readonly value: string;
 }
 
-export function insightsEventEventAttributeToTerraform(struct?: InsightsEventEventAttribute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function insightsEventEventAttributeToTerraform(struct?: InsightsEventEventAttribute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function insightsEventEventAttributeToHclTerraform(struct?: InsightsEventEventAttribute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function insightsEventEventAttributeToHclTerraform(struct?: InsightsEventEventAttribute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -90,9 +90,9 @@ export function insightsEventEventAttributeToHclTerraform(struct?: InsightsEvent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InsightsEventEventAttributeOutputReference extends cdktf.ComplexObject {
+export class InsightsEventEventAttributeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -100,11 +100,11 @@ export class InsightsEventEventAttributeOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): InsightsEventEventAttribute | cdktf.IResolvable | undefined {
+  public get internalValue(): InsightsEventEventAttribute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -125,7 +125,7 @@ export class InsightsEventEventAttributeOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: InsightsEventEventAttribute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: InsightsEventEventAttribute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -133,7 +133,7 @@ export class InsightsEventEventAttributeOutputReference extends cdktf.ComplexObj
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -189,15 +189,15 @@ export class InsightsEventEventAttributeOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class InsightsEventEventAttributeList extends cdktf.ComplexList {
-  public internalValue? : InsightsEventEventAttribute[] | cdktf.IResolvable
+export class InsightsEventEventAttributeList extends cdktn.ComplexList {
+  public internalValue? : InsightsEventEventAttribute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -212,56 +212,56 @@ export interface InsightsEventEvent {
   /**
   * Must be a Unix epoch timestamp. You can define timestamps either in seconds or in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/insights_event#timestamp InsightsEvent#timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#timestamp InsightsEvent#timestamp}
   */
   readonly timestamp?: number;
   /**
   * The event's name. Can be a combination of alphanumeric characters, underscores, and colons.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/insights_event#type InsightsEvent#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#type InsightsEvent#type}
   */
   readonly type: string;
   /**
   * attribute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/insights_event#attribute InsightsEvent#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#attribute InsightsEvent#attribute}
   */
-  readonly attribute: InsightsEventEventAttribute[] | cdktf.IResolvable;
+  readonly attribute: InsightsEventEventAttribute[] | cdktn.IResolvable;
 }
 
-export function insightsEventEventToTerraform(struct?: InsightsEventEvent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function insightsEventEventToTerraform(struct?: InsightsEventEvent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    timestamp: cdktf.numberToTerraform(struct!.timestamp),
-    type: cdktf.stringToTerraform(struct!.type),
-    attribute: cdktf.listMapper(insightsEventEventAttributeToTerraform, true)(struct!.attribute),
+    timestamp: cdktn.numberToTerraform(struct!.timestamp),
+    type: cdktn.stringToTerraform(struct!.type),
+    attribute: cdktn.listMapper(insightsEventEventAttributeToTerraform, true)(struct!.attribute),
   }
 }
 
 
-export function insightsEventEventToHclTerraform(struct?: InsightsEventEvent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function insightsEventEventToHclTerraform(struct?: InsightsEventEvent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     timestamp: {
-      value: cdktf.numberToHclTerraform(struct!.timestamp),
+      value: cdktn.numberToHclTerraform(struct!.timestamp),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     attribute: {
-      value: cdktf.listMapperHcl(insightsEventEventAttributeToHclTerraform, true)(struct!.attribute),
+      value: cdktn.listMapperHcl(insightsEventEventAttributeToHclTerraform, true)(struct!.attribute),
       isBlock: true,
       type: "set",
       storageClassType: "InsightsEventEventAttributeList",
@@ -272,9 +272,9 @@ export function insightsEventEventToHclTerraform(struct?: InsightsEventEvent | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InsightsEventEventOutputReference extends cdktf.ComplexObject {
+export class InsightsEventEventOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -282,11 +282,11 @@ export class InsightsEventEventOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): InsightsEventEvent | cdktf.IResolvable | undefined {
+  public get internalValue(): InsightsEventEvent | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -307,7 +307,7 @@ export class InsightsEventEventOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: InsightsEventEvent | cdktf.IResolvable | undefined) {
+  public set internalValue(value: InsightsEventEvent | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -315,7 +315,7 @@ export class InsightsEventEventOutputReference extends cdktf.ComplexObject {
       this._type = undefined;
       this._attribute.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -362,7 +362,7 @@ export class InsightsEventEventOutputReference extends cdktf.ComplexObject {
   public get attribute() {
     return this._attribute;
   }
-  public putAttribute(value: InsightsEventEventAttribute[] | cdktf.IResolvable) {
+  public putAttribute(value: InsightsEventEventAttribute[] | cdktn.IResolvable) {
     this._attribute.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -371,15 +371,15 @@ export class InsightsEventEventOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class InsightsEventEventList extends cdktf.ComplexList {
-  public internalValue? : InsightsEventEvent[] | cdktf.IResolvable
+export class InsightsEventEventList extends cdktn.ComplexList {
+  public internalValue? : InsightsEventEvent[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -392,9 +392,9 @@ export class InsightsEventEventList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/insights_event newrelic_insights_event}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event newrelic_insights_event}
 */
-export class InsightsEvent extends cdktf.TerraformResource {
+export class InsightsEvent extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -405,14 +405,14 @@ export class InsightsEvent extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a InsightsEvent resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a InsightsEvent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the InsightsEvent to import
-  * @param importFromId The id of the existing InsightsEvent that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/insights_event#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing InsightsEvent that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the InsightsEvent to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_insights_event", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_insights_event", importId: importFromId, provider });
       }
 
   // ===========
@@ -420,7 +420,7 @@ export class InsightsEvent extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/insights_event newrelic_insights_event} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event newrelic_insights_event} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -431,7 +431,7 @@ export class InsightsEvent extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_insights_event',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -471,7 +471,7 @@ export class InsightsEvent extends cdktf.TerraformResource {
   public get event() {
     return this._event;
   }
-  public putEvent(value: InsightsEventEvent[] | cdktf.IResolvable) {
+  public putEvent(value: InsightsEventEvent[] | cdktn.IResolvable) {
     this._event.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -485,21 +485,21 @@ export class InsightsEvent extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      event: cdktf.listMapper(insightsEventEventToTerraform, true)(this._event.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      event: cdktn.listMapper(insightsEventEventToTerraform, true)(this._event.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event: {
-        value: cdktf.listMapperHcl(insightsEventEventToHclTerraform, true)(this._event.internalValue),
+        value: cdktn.listMapperHcl(insightsEventEventToHclTerraform, true)(this._event.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "InsightsEventEventList",

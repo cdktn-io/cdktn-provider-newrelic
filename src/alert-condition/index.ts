@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AlertConditionConfig extends cdktf.TerraformMetaArguments {
+export interface AlertConditionConfig extends cdktn.TerraformMetaArguments {
   /**
   * One of (application, instance). Choose application for most scenarios. If you are using the JVM plugin in New Relic, the instance setting allows your condition to trigger for specific app instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#condition_scope AlertCondition#condition_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#condition_scope AlertCondition#condition_scope}
   */
   readonly conditionScope?: string;
   /**
   * Whether the condition is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#enabled AlertCondition#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#enabled AlertCondition#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The instance IDs associated with this condition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#entities AlertCondition#entities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#entities AlertCondition#entities}
   */
   readonly entities: number[];
   /**
   * A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#gc_metric AlertCondition#gc_metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#gc_metric AlertCondition#gc_metric}
   */
   readonly gcMetric?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#id AlertCondition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#id AlertCondition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,138 +46,138 @@ export interface AlertConditionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The metric field accepts parameters based on the type set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#metric AlertCondition#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#metric AlertCondition#metric}
   */
   readonly metric: string;
   /**
   * The title of the condition. Must be between 1 and 128 characters, inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#name AlertCondition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#name AlertCondition#name}
   */
   readonly name: string;
   /**
   * The ID of the policy where this condition should be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#policy_id AlertCondition#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#policy_id AlertCondition#policy_id}
   */
   readonly policyId: number;
   /**
   * Runbook URL to display in notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#runbook_url AlertCondition#runbook_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#runbook_url AlertCondition#runbook_url}
   */
   readonly runbookUrl?: string;
   /**
-  * The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric).
+  * The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#type AlertCondition#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#type AlertCondition#type}
   */
   readonly type: string;
   /**
   * A custom metric to be evaluated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#user_defined_metric AlertCondition#user_defined_metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#user_defined_metric AlertCondition#user_defined_metric}
   */
   readonly userDefinedMetric?: string;
   /**
   * One of: (average, min, max, total, sample_size, percent, rate).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#user_defined_value_function AlertCondition#user_defined_value_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#user_defined_value_function AlertCondition#user_defined_value_function}
   */
   readonly userDefinedValueFunction?: string;
   /**
   * Automatically close instance-based incidents, including JVM health metric incidents, after the number of hours specified. Must be between 1 and 720 hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#violation_close_timer AlertCondition#violation_close_timer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#violation_close_timer AlertCondition#violation_close_timer}
   */
   readonly violationCloseTimer?: number;
   /**
   * term block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#term AlertCondition#term}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#term AlertCondition#term}
   */
-  readonly term: AlertConditionTerm[] | cdktf.IResolvable;
+  readonly term: AlertConditionTerm[] | cdktn.IResolvable;
 }
 export interface AlertConditionTerm {
   /**
   * In minutes, must be in the range of 5 to 120, inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#duration AlertCondition#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#duration AlertCondition#duration}
   */
   readonly duration: number;
   /**
   * One of (above, below, equal). Defaults to equal.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#operator AlertCondition#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#operator AlertCondition#operator}
   */
   readonly operator?: string;
   /**
   * One of (critical, warning). Defaults to critical.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#priority AlertCondition#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#priority AlertCondition#priority}
   */
   readonly priority?: string;
   /**
   * Must be 0 or greater.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#threshold AlertCondition#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#threshold AlertCondition#threshold}
   */
   readonly threshold: number;
   /**
   * One of (all, any).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#time_function AlertCondition#time_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#time_function AlertCondition#time_function}
   */
   readonly timeFunction: string;
 }
 
-export function alertConditionTermToTerraform(struct?: AlertConditionTerm | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertConditionTermToTerraform(struct?: AlertConditionTerm | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    duration: cdktf.numberToTerraform(struct!.duration),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    priority: cdktf.stringToTerraform(struct!.priority),
-    threshold: cdktf.numberToTerraform(struct!.threshold),
-    time_function: cdktf.stringToTerraform(struct!.timeFunction),
+    duration: cdktn.numberToTerraform(struct!.duration),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    priority: cdktn.stringToTerraform(struct!.priority),
+    threshold: cdktn.numberToTerraform(struct!.threshold),
+    time_function: cdktn.stringToTerraform(struct!.timeFunction),
   }
 }
 
 
-export function alertConditionTermToHclTerraform(struct?: AlertConditionTerm | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertConditionTermToHclTerraform(struct?: AlertConditionTerm | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     duration: {
-      value: cdktf.numberToHclTerraform(struct!.duration),
+      value: cdktn.numberToHclTerraform(struct!.duration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.stringToHclTerraform(struct!.priority),
+      value: cdktn.stringToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     threshold: {
-      value: cdktf.numberToHclTerraform(struct!.threshold),
+      value: cdktn.numberToHclTerraform(struct!.threshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     time_function: {
-      value: cdktf.stringToHclTerraform(struct!.timeFunction),
+      value: cdktn.stringToHclTerraform(struct!.timeFunction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -188,9 +188,9 @@ export function alertConditionTermToHclTerraform(struct?: AlertConditionTerm | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertConditionTermOutputReference extends cdktf.ComplexObject {
+export class AlertConditionTermOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -198,11 +198,11 @@ export class AlertConditionTermOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlertConditionTerm | cdktf.IResolvable | undefined {
+  public get internalValue(): AlertConditionTerm | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -231,7 +231,7 @@ export class AlertConditionTermOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertConditionTerm | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlertConditionTerm | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -241,7 +241,7 @@ export class AlertConditionTermOutputReference extends cdktf.ComplexObject {
       this._threshold = undefined;
       this._timeFunction = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -328,15 +328,15 @@ export class AlertConditionTermOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class AlertConditionTermList extends cdktf.ComplexList {
-  public internalValue? : AlertConditionTerm[] | cdktf.IResolvable
+export class AlertConditionTermList extends cdktn.ComplexList {
+  public internalValue? : AlertConditionTerm[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -349,9 +349,9 @@ export class AlertConditionTermList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition newrelic_alert_condition}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition newrelic_alert_condition}
 */
-export class AlertCondition extends cdktf.TerraformResource {
+export class AlertCondition extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -362,14 +362,14 @@ export class AlertCondition extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AlertCondition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AlertCondition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlertCondition to import
-  * @param importFromId The id of the existing AlertCondition that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AlertCondition that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlertCondition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_alert_condition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_alert_condition", importId: importFromId, provider });
       }
 
   // ===========
@@ -377,7 +377,7 @@ export class AlertCondition extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_condition newrelic_alert_condition} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_condition newrelic_alert_condition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -388,7 +388,7 @@ export class AlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -436,11 +436,11 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -454,7 +454,7 @@ export class AlertCondition extends cdktf.TerraformResource {
   // entities - computed: false, optional: false, required: true
   private _entities?: number[]; 
   public get entities() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('entities')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('entities')));
   }
   public set entities(value: number[]) {
     this._entities = value;
@@ -622,7 +622,7 @@ export class AlertCondition extends cdktf.TerraformResource {
   public get term() {
     return this._term;
   }
-  public putTerm(value: AlertConditionTerm[] | cdktf.IResolvable) {
+  public putTerm(value: AlertConditionTerm[] | cdktn.IResolvable) {
     this._term.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -636,105 +636,105 @@ export class AlertCondition extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      condition_scope: cdktf.stringToTerraform(this._conditionScope),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      entities: cdktf.listMapper(cdktf.numberToTerraform, false)(this._entities),
-      gc_metric: cdktf.stringToTerraform(this._gcMetric),
-      id: cdktf.stringToTerraform(this._id),
-      metric: cdktf.stringToTerraform(this._metric),
-      name: cdktf.stringToTerraform(this._name),
-      policy_id: cdktf.numberToTerraform(this._policyId),
-      runbook_url: cdktf.stringToTerraform(this._runbookUrl),
-      type: cdktf.stringToTerraform(this._type),
-      user_defined_metric: cdktf.stringToTerraform(this._userDefinedMetric),
-      user_defined_value_function: cdktf.stringToTerraform(this._userDefinedValueFunction),
-      violation_close_timer: cdktf.numberToTerraform(this._violationCloseTimer),
-      term: cdktf.listMapper(alertConditionTermToTerraform, true)(this._term.internalValue),
+      condition_scope: cdktn.stringToTerraform(this._conditionScope),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      entities: cdktn.listMapper(cdktn.numberToTerraform, false)(this._entities),
+      gc_metric: cdktn.stringToTerraform(this._gcMetric),
+      id: cdktn.stringToTerraform(this._id),
+      metric: cdktn.stringToTerraform(this._metric),
+      name: cdktn.stringToTerraform(this._name),
+      policy_id: cdktn.numberToTerraform(this._policyId),
+      runbook_url: cdktn.stringToTerraform(this._runbookUrl),
+      type: cdktn.stringToTerraform(this._type),
+      user_defined_metric: cdktn.stringToTerraform(this._userDefinedMetric),
+      user_defined_value_function: cdktn.stringToTerraform(this._userDefinedValueFunction),
+      violation_close_timer: cdktn.numberToTerraform(this._violationCloseTimer),
+      term: cdktn.listMapper(alertConditionTermToTerraform, true)(this._term.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       condition_scope: {
-        value: cdktf.stringToHclTerraform(this._conditionScope),
+        value: cdktn.stringToHclTerraform(this._conditionScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       entities: {
-        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._entities),
+        value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(this._entities),
         isBlock: false,
         type: "set",
         storageClassType: "numberList",
       },
       gc_metric: {
-        value: cdktf.stringToHclTerraform(this._gcMetric),
+        value: cdktn.stringToHclTerraform(this._gcMetric),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metric: {
-        value: cdktf.stringToHclTerraform(this._metric),
+        value: cdktn.stringToHclTerraform(this._metric),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_id: {
-        value: cdktf.numberToHclTerraform(this._policyId),
+        value: cdktn.numberToHclTerraform(this._policyId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       runbook_url: {
-        value: cdktf.stringToHclTerraform(this._runbookUrl),
+        value: cdktn.stringToHclTerraform(this._runbookUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_defined_metric: {
-        value: cdktf.stringToHclTerraform(this._userDefinedMetric),
+        value: cdktn.stringToHclTerraform(this._userDefinedMetric),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_defined_value_function: {
-        value: cdktf.stringToHclTerraform(this._userDefinedValueFunction),
+        value: cdktn.stringToHclTerraform(this._userDefinedValueFunction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       violation_close_timer: {
-        value: cdktf.numberToHclTerraform(this._violationCloseTimer),
+        value: cdktn.numberToHclTerraform(this._violationCloseTimer),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       term: {
-        value: cdktf.listMapperHcl(alertConditionTermToHclTerraform, true)(this._term.internalValue),
+        value: cdktn.listMapperHcl(alertConditionTermToHclTerraform, true)(this._term.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AlertConditionTermList",

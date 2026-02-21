@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudGcpIntegrationsConfig extends cdktf.TerraformMetaArguments {
+export interface CloudGcpIntegrationsConfig extends cdktn.TerraformMetaArguments {
   /**
   * ID of the newrelic account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#account_id CloudGcpIntegrations#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#account_id CloudGcpIntegrations#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#id CloudGcpIntegrations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#id CloudGcpIntegrations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,163 +28,163 @@ export interface CloudGcpIntegrationsConfig extends cdktf.TerraformMetaArguments
   /**
   * Id of the linked gcp account in New Relic
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#linked_account_id CloudGcpIntegrations#linked_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#linked_account_id CloudGcpIntegrations#linked_account_id}
   */
   readonly linkedAccountId: number;
   /**
   * alloy_db block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#alloy_db CloudGcpIntegrations#alloy_db}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#alloy_db CloudGcpIntegrations#alloy_db}
   */
   readonly alloyDb?: CloudGcpIntegrationsAlloyDb;
   /**
   * app_engine block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#app_engine CloudGcpIntegrations#app_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#app_engine CloudGcpIntegrations#app_engine}
   */
   readonly appEngine?: CloudGcpIntegrationsAppEngine;
   /**
   * big_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#big_query CloudGcpIntegrations#big_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#big_query CloudGcpIntegrations#big_query}
   */
   readonly bigQuery?: CloudGcpIntegrationsBigQuery;
   /**
   * big_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#big_table CloudGcpIntegrations#big_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#big_table CloudGcpIntegrations#big_table}
   */
   readonly bigTable?: CloudGcpIntegrationsBigTable;
   /**
   * composer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#composer CloudGcpIntegrations#composer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#composer CloudGcpIntegrations#composer}
   */
   readonly composer?: CloudGcpIntegrationsComposer;
   /**
   * data_flow block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#data_flow CloudGcpIntegrations#data_flow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#data_flow CloudGcpIntegrations#data_flow}
   */
   readonly dataFlow?: CloudGcpIntegrationsDataFlow;
   /**
   * data_proc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#data_proc CloudGcpIntegrations#data_proc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#data_proc CloudGcpIntegrations#data_proc}
   */
   readonly dataProc?: CloudGcpIntegrationsDataProc;
   /**
   * data_store block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#data_store CloudGcpIntegrations#data_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#data_store CloudGcpIntegrations#data_store}
   */
   readonly dataStore?: CloudGcpIntegrationsDataStore;
   /**
   * fire_base_database block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#fire_base_database CloudGcpIntegrations#fire_base_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#fire_base_database CloudGcpIntegrations#fire_base_database}
   */
   readonly fireBaseDatabase?: CloudGcpIntegrationsFireBaseDatabase;
   /**
   * fire_base_hosting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#fire_base_hosting CloudGcpIntegrations#fire_base_hosting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#fire_base_hosting CloudGcpIntegrations#fire_base_hosting}
   */
   readonly fireBaseHosting?: CloudGcpIntegrationsFireBaseHosting;
   /**
   * fire_base_storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#fire_base_storage CloudGcpIntegrations#fire_base_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#fire_base_storage CloudGcpIntegrations#fire_base_storage}
   */
   readonly fireBaseStorage?: CloudGcpIntegrationsFireBaseStorage;
   /**
   * fire_store block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#fire_store CloudGcpIntegrations#fire_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#fire_store CloudGcpIntegrations#fire_store}
   */
   readonly fireStore?: CloudGcpIntegrationsFireStore;
   /**
   * functions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#functions CloudGcpIntegrations#functions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#functions CloudGcpIntegrations#functions}
   */
   readonly functions?: CloudGcpIntegrationsFunctions;
   /**
   * interconnect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#interconnect CloudGcpIntegrations#interconnect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#interconnect CloudGcpIntegrations#interconnect}
   */
   readonly interconnect?: CloudGcpIntegrationsInterconnect;
   /**
   * kubernetes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#kubernetes CloudGcpIntegrations#kubernetes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#kubernetes CloudGcpIntegrations#kubernetes}
   */
   readonly kubernetes?: CloudGcpIntegrationsKubernetes;
   /**
   * load_balancing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#load_balancing CloudGcpIntegrations#load_balancing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#load_balancing CloudGcpIntegrations#load_balancing}
   */
   readonly loadBalancing?: CloudGcpIntegrationsLoadBalancing;
   /**
   * mem_cache block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#mem_cache CloudGcpIntegrations#mem_cache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#mem_cache CloudGcpIntegrations#mem_cache}
   */
   readonly memCache?: CloudGcpIntegrationsMemCache;
   /**
   * pub_sub block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#pub_sub CloudGcpIntegrations#pub_sub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#pub_sub CloudGcpIntegrations#pub_sub}
   */
   readonly pubSub?: CloudGcpIntegrationsPubSub;
   /**
   * redis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#redis CloudGcpIntegrations#redis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#redis CloudGcpIntegrations#redis}
   */
   readonly redis?: CloudGcpIntegrationsRedis;
   /**
   * router block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#router CloudGcpIntegrations#router}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#router CloudGcpIntegrations#router}
   */
   readonly router?: CloudGcpIntegrationsRouter;
   /**
   * run block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#run CloudGcpIntegrations#run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#run CloudGcpIntegrations#run}
   */
   readonly run?: CloudGcpIntegrationsRun;
   /**
   * spanner block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#spanner CloudGcpIntegrations#spanner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#spanner CloudGcpIntegrations#spanner}
   */
   readonly spanner?: CloudGcpIntegrationsSpanner;
   /**
   * sql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#sql CloudGcpIntegrations#sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#sql CloudGcpIntegrations#sql}
   */
   readonly sql?: CloudGcpIntegrationsSql;
   /**
   * storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#storage CloudGcpIntegrations#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#storage CloudGcpIntegrations#storage}
   */
   readonly storage?: CloudGcpIntegrationsStorage;
   /**
   * virtual_machines block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#virtual_machines CloudGcpIntegrations#virtual_machines}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#virtual_machines CloudGcpIntegrations#virtual_machines}
   */
   readonly virtualMachines?: CloudGcpIntegrationsVirtualMachines;
   /**
   * vpc_access block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#vpc_access CloudGcpIntegrations#vpc_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#vpc_access CloudGcpIntegrations#vpc_access}
   */
   readonly vpcAccess?: CloudGcpIntegrationsVpcAccess;
 }
@@ -192,30 +192,30 @@ export interface CloudGcpIntegrationsAlloyDb {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsAlloyDbToTerraform(struct?: CloudGcpIntegrationsAlloyDbOutputReference | CloudGcpIntegrationsAlloyDb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsAlloyDbToHclTerraform(struct?: CloudGcpIntegrationsAlloyDbOutputReference | CloudGcpIntegrationsAlloyDb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -226,14 +226,14 @@ export function cloudGcpIntegrationsAlloyDbToHclTerraform(struct?: CloudGcpInteg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsAlloyDbOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsAlloyDbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -278,30 +278,30 @@ export interface CloudGcpIntegrationsAppEngine {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsAppEngineToTerraform(struct?: CloudGcpIntegrationsAppEngineOutputReference | CloudGcpIntegrationsAppEngine): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsAppEngineToHclTerraform(struct?: CloudGcpIntegrationsAppEngineOutputReference | CloudGcpIntegrationsAppEngine): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -312,14 +312,14 @@ export function cloudGcpIntegrationsAppEngineToHclTerraform(struct?: CloudGcpInt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsAppEngineOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsAppEngineOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -364,43 +364,43 @@ export interface CloudGcpIntegrationsBigQuery {
   /**
   * to fetch tags of the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsBigQueryToTerraform(struct?: CloudGcpIntegrationsBigQueryOutputReference | CloudGcpIntegrationsBigQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsBigQueryToHclTerraform(struct?: CloudGcpIntegrationsBigQueryOutputReference | CloudGcpIntegrationsBigQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -411,14 +411,14 @@ export function cloudGcpIntegrationsBigQueryToHclTerraform(struct?: CloudGcpInte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsBigQueryOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsBigQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -450,11 +450,11 @@ export class CloudGcpIntegrationsBigQueryOutputReference extends cdktf.ComplexOb
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -485,30 +485,30 @@ export interface CloudGcpIntegrationsBigTable {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsBigTableToTerraform(struct?: CloudGcpIntegrationsBigTableOutputReference | CloudGcpIntegrationsBigTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsBigTableToHclTerraform(struct?: CloudGcpIntegrationsBigTableOutputReference | CloudGcpIntegrationsBigTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -519,14 +519,14 @@ export function cloudGcpIntegrationsBigTableToHclTerraform(struct?: CloudGcpInte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsBigTableOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsBigTableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -571,30 +571,30 @@ export interface CloudGcpIntegrationsComposer {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsComposerToTerraform(struct?: CloudGcpIntegrationsComposerOutputReference | CloudGcpIntegrationsComposer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsComposerToHclTerraform(struct?: CloudGcpIntegrationsComposerOutputReference | CloudGcpIntegrationsComposer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -605,14 +605,14 @@ export function cloudGcpIntegrationsComposerToHclTerraform(struct?: CloudGcpInte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsComposerOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsComposerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -657,30 +657,30 @@ export interface CloudGcpIntegrationsDataFlow {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsDataFlowToTerraform(struct?: CloudGcpIntegrationsDataFlowOutputReference | CloudGcpIntegrationsDataFlow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsDataFlowToHclTerraform(struct?: CloudGcpIntegrationsDataFlowOutputReference | CloudGcpIntegrationsDataFlow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -691,14 +691,14 @@ export function cloudGcpIntegrationsDataFlowToHclTerraform(struct?: CloudGcpInte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsDataFlowOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsDataFlowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -743,30 +743,30 @@ export interface CloudGcpIntegrationsDataProc {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsDataProcToTerraform(struct?: CloudGcpIntegrationsDataProcOutputReference | CloudGcpIntegrationsDataProc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsDataProcToHclTerraform(struct?: CloudGcpIntegrationsDataProcOutputReference | CloudGcpIntegrationsDataProc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -777,14 +777,14 @@ export function cloudGcpIntegrationsDataProcToHclTerraform(struct?: CloudGcpInte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsDataProcOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsDataProcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -829,30 +829,30 @@ export interface CloudGcpIntegrationsDataStore {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsDataStoreToTerraform(struct?: CloudGcpIntegrationsDataStoreOutputReference | CloudGcpIntegrationsDataStore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsDataStoreToHclTerraform(struct?: CloudGcpIntegrationsDataStoreOutputReference | CloudGcpIntegrationsDataStore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -863,14 +863,14 @@ export function cloudGcpIntegrationsDataStoreToHclTerraform(struct?: CloudGcpInt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsDataStoreOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsDataStoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -915,30 +915,30 @@ export interface CloudGcpIntegrationsFireBaseDatabase {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsFireBaseDatabaseToTerraform(struct?: CloudGcpIntegrationsFireBaseDatabaseOutputReference | CloudGcpIntegrationsFireBaseDatabase): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsFireBaseDatabaseToHclTerraform(struct?: CloudGcpIntegrationsFireBaseDatabaseOutputReference | CloudGcpIntegrationsFireBaseDatabase): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -949,14 +949,14 @@ export function cloudGcpIntegrationsFireBaseDatabaseToHclTerraform(struct?: Clou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsFireBaseDatabaseOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsFireBaseDatabaseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1001,30 +1001,30 @@ export interface CloudGcpIntegrationsFireBaseHosting {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsFireBaseHostingToTerraform(struct?: CloudGcpIntegrationsFireBaseHostingOutputReference | CloudGcpIntegrationsFireBaseHosting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsFireBaseHostingToHclTerraform(struct?: CloudGcpIntegrationsFireBaseHostingOutputReference | CloudGcpIntegrationsFireBaseHosting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1035,14 +1035,14 @@ export function cloudGcpIntegrationsFireBaseHostingToHclTerraform(struct?: Cloud
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsFireBaseHostingOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsFireBaseHostingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1087,30 +1087,30 @@ export interface CloudGcpIntegrationsFireBaseStorage {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsFireBaseStorageToTerraform(struct?: CloudGcpIntegrationsFireBaseStorageOutputReference | CloudGcpIntegrationsFireBaseStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsFireBaseStorageToHclTerraform(struct?: CloudGcpIntegrationsFireBaseStorageOutputReference | CloudGcpIntegrationsFireBaseStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1121,14 +1121,14 @@ export function cloudGcpIntegrationsFireBaseStorageToHclTerraform(struct?: Cloud
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsFireBaseStorageOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsFireBaseStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1173,30 +1173,30 @@ export interface CloudGcpIntegrationsFireStore {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsFireStoreToTerraform(struct?: CloudGcpIntegrationsFireStoreOutputReference | CloudGcpIntegrationsFireStore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsFireStoreToHclTerraform(struct?: CloudGcpIntegrationsFireStoreOutputReference | CloudGcpIntegrationsFireStore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1207,14 +1207,14 @@ export function cloudGcpIntegrationsFireStoreToHclTerraform(struct?: CloudGcpInt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsFireStoreOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsFireStoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1259,30 +1259,30 @@ export interface CloudGcpIntegrationsFunctions {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsFunctionsToTerraform(struct?: CloudGcpIntegrationsFunctionsOutputReference | CloudGcpIntegrationsFunctions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsFunctionsToHclTerraform(struct?: CloudGcpIntegrationsFunctionsOutputReference | CloudGcpIntegrationsFunctions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1293,14 +1293,14 @@ export function cloudGcpIntegrationsFunctionsToHclTerraform(struct?: CloudGcpInt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsFunctionsOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsFunctionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1345,30 +1345,30 @@ export interface CloudGcpIntegrationsInterconnect {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsInterconnectToTerraform(struct?: CloudGcpIntegrationsInterconnectOutputReference | CloudGcpIntegrationsInterconnect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsInterconnectToHclTerraform(struct?: CloudGcpIntegrationsInterconnectOutputReference | CloudGcpIntegrationsInterconnect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1379,14 +1379,14 @@ export function cloudGcpIntegrationsInterconnectToHclTerraform(struct?: CloudGcp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsInterconnectOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsInterconnectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1431,30 +1431,30 @@ export interface CloudGcpIntegrationsKubernetes {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsKubernetesToTerraform(struct?: CloudGcpIntegrationsKubernetesOutputReference | CloudGcpIntegrationsKubernetes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsKubernetesToHclTerraform(struct?: CloudGcpIntegrationsKubernetesOutputReference | CloudGcpIntegrationsKubernetes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1465,14 +1465,14 @@ export function cloudGcpIntegrationsKubernetesToHclTerraform(struct?: CloudGcpIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsKubernetesOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsKubernetesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1517,30 +1517,30 @@ export interface CloudGcpIntegrationsLoadBalancing {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsLoadBalancingToTerraform(struct?: CloudGcpIntegrationsLoadBalancingOutputReference | CloudGcpIntegrationsLoadBalancing): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsLoadBalancingToHclTerraform(struct?: CloudGcpIntegrationsLoadBalancingOutputReference | CloudGcpIntegrationsLoadBalancing): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1551,14 +1551,14 @@ export function cloudGcpIntegrationsLoadBalancingToHclTerraform(struct?: CloudGc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsLoadBalancingOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsLoadBalancingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1603,30 +1603,30 @@ export interface CloudGcpIntegrationsMemCache {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsMemCacheToTerraform(struct?: CloudGcpIntegrationsMemCacheOutputReference | CloudGcpIntegrationsMemCache): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsMemCacheToHclTerraform(struct?: CloudGcpIntegrationsMemCacheOutputReference | CloudGcpIntegrationsMemCache): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1637,14 +1637,14 @@ export function cloudGcpIntegrationsMemCacheToHclTerraform(struct?: CloudGcpInte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsMemCacheOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsMemCacheOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1689,43 +1689,43 @@ export interface CloudGcpIntegrationsPubSub {
   /**
   * to fetch tags of the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsPubSubToTerraform(struct?: CloudGcpIntegrationsPubSubOutputReference | CloudGcpIntegrationsPubSub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsPubSubToHclTerraform(struct?: CloudGcpIntegrationsPubSubOutputReference | CloudGcpIntegrationsPubSub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1736,14 +1736,14 @@ export function cloudGcpIntegrationsPubSubToHclTerraform(struct?: CloudGcpIntegr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsPubSubOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsPubSubOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1775,11 +1775,11 @@ export class CloudGcpIntegrationsPubSubOutputReference extends cdktf.ComplexObje
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -1810,30 +1810,30 @@ export interface CloudGcpIntegrationsRedis {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsRedisToTerraform(struct?: CloudGcpIntegrationsRedisOutputReference | CloudGcpIntegrationsRedis): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsRedisToHclTerraform(struct?: CloudGcpIntegrationsRedisOutputReference | CloudGcpIntegrationsRedis): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1844,14 +1844,14 @@ export function cloudGcpIntegrationsRedisToHclTerraform(struct?: CloudGcpIntegra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsRedisOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsRedisOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1896,30 +1896,30 @@ export interface CloudGcpIntegrationsRouter {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsRouterToTerraform(struct?: CloudGcpIntegrationsRouterOutputReference | CloudGcpIntegrationsRouter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsRouterToHclTerraform(struct?: CloudGcpIntegrationsRouterOutputReference | CloudGcpIntegrationsRouter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1930,14 +1930,14 @@ export function cloudGcpIntegrationsRouterToHclTerraform(struct?: CloudGcpIntegr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsRouterOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsRouterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1982,30 +1982,30 @@ export interface CloudGcpIntegrationsRun {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsRunToTerraform(struct?: CloudGcpIntegrationsRunOutputReference | CloudGcpIntegrationsRun): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsRunToHclTerraform(struct?: CloudGcpIntegrationsRunOutputReference | CloudGcpIntegrationsRun): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2016,14 +2016,14 @@ export function cloudGcpIntegrationsRunToHclTerraform(struct?: CloudGcpIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsRunOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsRunOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2068,43 +2068,43 @@ export interface CloudGcpIntegrationsSpanner {
   /**
   * to fetch tags of the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsSpannerToTerraform(struct?: CloudGcpIntegrationsSpannerOutputReference | CloudGcpIntegrationsSpanner): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsSpannerToHclTerraform(struct?: CloudGcpIntegrationsSpannerOutputReference | CloudGcpIntegrationsSpanner): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2115,14 +2115,14 @@ export function cloudGcpIntegrationsSpannerToHclTerraform(struct?: CloudGcpInteg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsSpannerOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsSpannerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2154,11 +2154,11 @@ export class CloudGcpIntegrationsSpannerOutputReference extends cdktf.ComplexObj
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -2189,30 +2189,30 @@ export interface CloudGcpIntegrationsSql {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsSqlToTerraform(struct?: CloudGcpIntegrationsSqlOutputReference | CloudGcpIntegrationsSql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsSqlToHclTerraform(struct?: CloudGcpIntegrationsSqlOutputReference | CloudGcpIntegrationsSql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2223,14 +2223,14 @@ export function cloudGcpIntegrationsSqlToHclTerraform(struct?: CloudGcpIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsSqlOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsSqlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2275,43 +2275,43 @@ export interface CloudGcpIntegrationsStorage {
   /**
   * to fetch tags of the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsStorageToTerraform(struct?: CloudGcpIntegrationsStorageOutputReference | CloudGcpIntegrationsStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsStorageToHclTerraform(struct?: CloudGcpIntegrationsStorageOutputReference | CloudGcpIntegrationsStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2322,14 +2322,14 @@ export function cloudGcpIntegrationsStorageToHclTerraform(struct?: CloudGcpInteg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsStorageOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2361,11 +2361,11 @@ export class CloudGcpIntegrationsStorageOutputReference extends cdktf.ComplexObj
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -2396,30 +2396,30 @@ export interface CloudGcpIntegrationsVirtualMachines {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsVirtualMachinesToTerraform(struct?: CloudGcpIntegrationsVirtualMachinesOutputReference | CloudGcpIntegrationsVirtualMachines): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsVirtualMachinesToHclTerraform(struct?: CloudGcpIntegrationsVirtualMachinesOutputReference | CloudGcpIntegrationsVirtualMachines): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2430,14 +2430,14 @@ export function cloudGcpIntegrationsVirtualMachinesToHclTerraform(struct?: Cloud
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsVirtualMachinesOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsVirtualMachinesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2482,30 +2482,30 @@ export interface CloudGcpIntegrationsVpcAccess {
   /**
   * the data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudGcpIntegrationsVpcAccessToTerraform(struct?: CloudGcpIntegrationsVpcAccessOutputReference | CloudGcpIntegrationsVpcAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudGcpIntegrationsVpcAccessToHclTerraform(struct?: CloudGcpIntegrationsVpcAccessOutputReference | CloudGcpIntegrationsVpcAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2516,14 +2516,14 @@ export function cloudGcpIntegrationsVpcAccessToHclTerraform(struct?: CloudGcpInt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudGcpIntegrationsVpcAccessOutputReference extends cdktf.ComplexObject {
+export class CloudGcpIntegrationsVpcAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2566,9 +2566,9 @@ export class CloudGcpIntegrationsVpcAccessOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations newrelic_cloud_gcp_integrations}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations newrelic_cloud_gcp_integrations}
 */
-export class CloudGcpIntegrations extends cdktf.TerraformResource {
+export class CloudGcpIntegrations extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2579,14 +2579,14 @@ export class CloudGcpIntegrations extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudGcpIntegrations resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudGcpIntegrations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudGcpIntegrations to import
-  * @param importFromId The id of the existing CloudGcpIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudGcpIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudGcpIntegrations to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_cloud_gcp_integrations", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_cloud_gcp_integrations", importId: importFromId, provider });
       }
 
   // ===========
@@ -2594,7 +2594,7 @@ export class CloudGcpIntegrations extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_integrations newrelic_cloud_gcp_integrations} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_integrations newrelic_cloud_gcp_integrations} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2605,7 +2605,7 @@ export class CloudGcpIntegrations extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_gcp_integrations',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -3118,9 +3118,9 @@ export class CloudGcpIntegrations extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      linked_account_id: cdktf.numberToTerraform(this._linkedAccountId),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      linked_account_id: cdktn.numberToTerraform(this._linkedAccountId),
       alloy_db: cloudGcpIntegrationsAlloyDbToTerraform(this._alloyDb.internalValue),
       app_engine: cloudGcpIntegrationsAppEngineToTerraform(this._appEngine.internalValue),
       big_query: cloudGcpIntegrationsBigQueryToTerraform(this._bigQuery.internalValue),
@@ -3153,19 +3153,19 @@ export class CloudGcpIntegrations extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       linked_account_id: {
-        value: cdktf.numberToHclTerraform(this._linkedAccountId),
+        value: cdktn.numberToHclTerraform(this._linkedAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

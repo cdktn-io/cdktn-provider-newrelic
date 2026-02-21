@@ -1,27 +1,27 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/notification_destination
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataNewrelicNotificationDestinationConfig extends cdktf.TerraformMetaArguments {
+export interface DataNewrelicNotificationDestinationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account ID under which to put the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
   */
   readonly accountId?: number;
   /**
   * The ID of the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,22 +30,22 @@ export interface DataNewrelicNotificationDestinationConfig extends cdktf.Terrafo
   /**
   * The name of the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
   */
   readonly name?: string;
   /**
   * secure_url block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/notification_destination#secure_url DataNewrelicNotificationDestination#secure_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination#secure_url DataNewrelicNotificationDestination#secure_url}
   */
-  readonly secureUrl?: DataNewrelicNotificationDestinationSecureUrl[] | cdktf.IResolvable;
+  readonly secureUrl?: DataNewrelicNotificationDestinationSecureUrl[] | cdktn.IResolvable;
 }
 export interface DataNewrelicNotificationDestinationProperty {
 }
 
 export function dataNewrelicNotificationDestinationPropertyToTerraform(struct?: DataNewrelicNotificationDestinationProperty): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -54,8 +54,8 @@ export function dataNewrelicNotificationDestinationPropertyToTerraform(struct?: 
 
 
 export function dataNewrelicNotificationDestinationPropertyToHclTerraform(struct?: DataNewrelicNotificationDestinationProperty): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -63,7 +63,7 @@ export function dataNewrelicNotificationDestinationPropertyToHclTerraform(struct
   return attrs;
 }
 
-export class DataNewrelicNotificationDestinationPropertyOutputReference extends cdktf.ComplexObject {
+export class DataNewrelicNotificationDestinationPropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -72,7 +72,7 @@ export class DataNewrelicNotificationDestinationPropertyOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -112,14 +112,14 @@ export class DataNewrelicNotificationDestinationPropertyOutputReference extends 
   }
 }
 
-export class DataNewrelicNotificationDestinationPropertyList extends cdktf.ComplexList {
+export class DataNewrelicNotificationDestinationPropertyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -132,30 +132,30 @@ export class DataNewrelicNotificationDestinationPropertyList extends cdktf.Compl
 }
 export interface DataNewrelicNotificationDestinationSecureUrl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}
   */
   readonly prefix: string;
 }
 
-export function dataNewrelicNotificationDestinationSecureUrlToTerraform(struct?: DataNewrelicNotificationDestinationSecureUrl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataNewrelicNotificationDestinationSecureUrlToTerraform(struct?: DataNewrelicNotificationDestinationSecureUrl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    prefix: cdktf.stringToTerraform(struct!.prefix),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
   }
 }
 
 
-export function dataNewrelicNotificationDestinationSecureUrlToHclTerraform(struct?: DataNewrelicNotificationDestinationSecureUrl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataNewrelicNotificationDestinationSecureUrlToHclTerraform(struct?: DataNewrelicNotificationDestinationSecureUrl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -166,9 +166,9 @@ export function dataNewrelicNotificationDestinationSecureUrlToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataNewrelicNotificationDestinationSecureUrlOutputReference extends cdktf.ComplexObject {
+export class DataNewrelicNotificationDestinationSecureUrlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -176,11 +176,11 @@ export class DataNewrelicNotificationDestinationSecureUrlOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataNewrelicNotificationDestinationSecureUrl | cdktf.IResolvable | undefined {
+  public get internalValue(): DataNewrelicNotificationDestinationSecureUrl | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -193,13 +193,13 @@ export class DataNewrelicNotificationDestinationSecureUrlOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataNewrelicNotificationDestinationSecureUrl | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataNewrelicNotificationDestinationSecureUrl | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._prefix = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -224,15 +224,15 @@ export class DataNewrelicNotificationDestinationSecureUrlOutputReference extends
   }
 }
 
-export class DataNewrelicNotificationDestinationSecureUrlList extends cdktf.ComplexList {
-  public internalValue? : DataNewrelicNotificationDestinationSecureUrl[] | cdktf.IResolvable
+export class DataNewrelicNotificationDestinationSecureUrlList extends cdktn.ComplexList {
+  public internalValue? : DataNewrelicNotificationDestinationSecureUrl[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -245,9 +245,9 @@ export class DataNewrelicNotificationDestinationSecureUrlList extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/notification_destination newrelic_notification_destination}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination newrelic_notification_destination}
 */
-export class DataNewrelicNotificationDestination extends cdktf.TerraformDataSource {
+export class DataNewrelicNotificationDestination extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -258,14 +258,14 @@ export class DataNewrelicNotificationDestination extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataNewrelicNotificationDestination resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataNewrelicNotificationDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicNotificationDestination to import
-  * @param importFromId The id of the existing DataNewrelicNotificationDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/notification_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicNotificationDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicNotificationDestination to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_notification_destination", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_notification_destination", importId: importFromId, provider });
       }
 
   // ===========
@@ -273,7 +273,7 @@ export class DataNewrelicNotificationDestination extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/notification_destination newrelic_notification_destination} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination newrelic_notification_destination} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -284,7 +284,7 @@ export class DataNewrelicNotificationDestination extends cdktf.TerraformDataSour
       terraformResourceType: 'newrelic_notification_destination',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -384,7 +384,7 @@ export class DataNewrelicNotificationDestination extends cdktf.TerraformDataSour
   public get secureUrl() {
     return this._secureUrl;
   }
-  public putSecureUrl(value: DataNewrelicNotificationDestinationSecureUrl[] | cdktf.IResolvable) {
+  public putSecureUrl(value: DataNewrelicNotificationDestinationSecureUrl[] | cdktn.IResolvable) {
     this._secureUrl.internalValue = value;
   }
   public resetSecureUrl() {
@@ -401,35 +401,35 @@ export class DataNewrelicNotificationDestination extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      secure_url: cdktf.listMapper(dataNewrelicNotificationDestinationSecureUrlToTerraform, true)(this._secureUrl.internalValue),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      secure_url: cdktn.listMapper(dataNewrelicNotificationDestinationSecureUrlToTerraform, true)(this._secureUrl.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secure_url: {
-        value: cdktf.listMapperHcl(dataNewrelicNotificationDestinationSecureUrlToHclTerraform, true)(this._secureUrl.internalValue),
+        value: cdktn.listMapperHcl(dataNewrelicNotificationDestinationSecureUrlToHclTerraform, true)(this._secureUrl.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataNewrelicNotificationDestinationSecureUrlList",

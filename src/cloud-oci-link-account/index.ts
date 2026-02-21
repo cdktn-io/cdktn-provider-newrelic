@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudOciLinkAccountConfig extends cdktf.TerraformMetaArguments {
+export interface CloudOciLinkAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to link the OCI account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#account_id CloudOciLinkAccount#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#account_id CloudOciLinkAccount#account_id}
   */
   readonly accountId?: number;
   /**
   * The New Relic compartment OCID in OCI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#compartment_ocid CloudOciLinkAccount#compartment_ocid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#compartment_ocid CloudOciLinkAccount#compartment_ocid}
   */
   readonly compartmentOcid: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#id CloudOciLinkAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#id CloudOciLinkAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,81 +34,81 @@ export interface CloudOciLinkAccountConfig extends cdktf.TerraformMetaArguments 
   /**
   * The OCI ingest secret OCID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#ingest_vault_ocid CloudOciLinkAccount#ingest_vault_ocid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#ingest_vault_ocid CloudOciLinkAccount#ingest_vault_ocid}
   */
   readonly ingestVaultOcid?: string;
   /**
   * Specifies the type of integration, such as metrics, logs, or a combination of logs and metrics.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#instrumentation_type CloudOciLinkAccount#instrumentation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#instrumentation_type CloudOciLinkAccount#instrumentation_type}
   */
   readonly instrumentationType?: string;
   /**
   * The Logging stack identifier for the OCI account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#logging_stack_ocid CloudOciLinkAccount#logging_stack_ocid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#logging_stack_ocid CloudOciLinkAccount#logging_stack_ocid}
   */
   readonly loggingStackOcid?: string;
   /**
   * The metric stack identifier for the OCI account. This field is only used for updates, not during initial creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#metric_stack_ocid CloudOciLinkAccount#metric_stack_ocid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#metric_stack_ocid CloudOciLinkAccount#metric_stack_ocid}
   */
   readonly metricStackOcid?: string;
   /**
   * The linked account name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#name CloudOciLinkAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#name CloudOciLinkAccount#name}
   */
   readonly name: string;
   /**
   * The client ID for OCI WIF.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#oci_client_id CloudOciLinkAccount#oci_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#oci_client_id CloudOciLinkAccount#oci_client_id}
   */
   readonly ociClientId: string;
   /**
   * The client secret for OCI WIF.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#oci_client_secret CloudOciLinkAccount#oci_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#oci_client_secret CloudOciLinkAccount#oci_client_secret}
   */
   readonly ociClientSecret: string;
   /**
   * The OCI domain URL for WIF.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#oci_domain_url CloudOciLinkAccount#oci_domain_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#oci_domain_url CloudOciLinkAccount#oci_domain_url}
   */
   readonly ociDomainUrl: string;
   /**
   * The home region of the tenancy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#oci_home_region CloudOciLinkAccount#oci_home_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#oci_home_region CloudOciLinkAccount#oci_home_region}
   */
   readonly ociHomeRegion: string;
   /**
   * The OCI region for the account. This field is only used for updates, not during initial creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#oci_region CloudOciLinkAccount#oci_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#oci_region CloudOciLinkAccount#oci_region}
   */
   readonly ociRegion?: string;
   /**
   * The OCI tenant identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#tenant_id CloudOciLinkAccount#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#tenant_id CloudOciLinkAccount#tenant_id}
   */
   readonly tenantId: string;
   /**
   * The user secret OCID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#user_vault_ocid CloudOciLinkAccount#user_vault_ocid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#user_vault_ocid CloudOciLinkAccount#user_vault_ocid}
   */
   readonly userVaultOcid?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account newrelic_cloud_oci_link_account}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account newrelic_cloud_oci_link_account}
 */
-export class CloudOciLinkAccount extends cdktf.TerraformResource {
+export class CloudOciLinkAccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -119,14 +119,14 @@ export class CloudOciLinkAccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudOciLinkAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudOciLinkAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudOciLinkAccount to import
-  * @param importFromId The id of the existing CloudOciLinkAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudOciLinkAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudOciLinkAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_cloud_oci_link_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_cloud_oci_link_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -134,7 +134,7 @@ export class CloudOciLinkAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_oci_link_account newrelic_cloud_oci_link_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_oci_link_account newrelic_cloud_oci_link_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -145,7 +145,7 @@ export class CloudOciLinkAccount extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_oci_link_account',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -402,112 +402,112 @@ export class CloudOciLinkAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      compartment_ocid: cdktf.stringToTerraform(this._compartmentOcid),
-      id: cdktf.stringToTerraform(this._id),
-      ingest_vault_ocid: cdktf.stringToTerraform(this._ingestVaultOcid),
-      instrumentation_type: cdktf.stringToTerraform(this._instrumentationType),
-      logging_stack_ocid: cdktf.stringToTerraform(this._loggingStackOcid),
-      metric_stack_ocid: cdktf.stringToTerraform(this._metricStackOcid),
-      name: cdktf.stringToTerraform(this._name),
-      oci_client_id: cdktf.stringToTerraform(this._ociClientId),
-      oci_client_secret: cdktf.stringToTerraform(this._ociClientSecret),
-      oci_domain_url: cdktf.stringToTerraform(this._ociDomainUrl),
-      oci_home_region: cdktf.stringToTerraform(this._ociHomeRegion),
-      oci_region: cdktf.stringToTerraform(this._ociRegion),
-      tenant_id: cdktf.stringToTerraform(this._tenantId),
-      user_vault_ocid: cdktf.stringToTerraform(this._userVaultOcid),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      compartment_ocid: cdktn.stringToTerraform(this._compartmentOcid),
+      id: cdktn.stringToTerraform(this._id),
+      ingest_vault_ocid: cdktn.stringToTerraform(this._ingestVaultOcid),
+      instrumentation_type: cdktn.stringToTerraform(this._instrumentationType),
+      logging_stack_ocid: cdktn.stringToTerraform(this._loggingStackOcid),
+      metric_stack_ocid: cdktn.stringToTerraform(this._metricStackOcid),
+      name: cdktn.stringToTerraform(this._name),
+      oci_client_id: cdktn.stringToTerraform(this._ociClientId),
+      oci_client_secret: cdktn.stringToTerraform(this._ociClientSecret),
+      oci_domain_url: cdktn.stringToTerraform(this._ociDomainUrl),
+      oci_home_region: cdktn.stringToTerraform(this._ociHomeRegion),
+      oci_region: cdktn.stringToTerraform(this._ociRegion),
+      tenant_id: cdktn.stringToTerraform(this._tenantId),
+      user_vault_ocid: cdktn.stringToTerraform(this._userVaultOcid),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       compartment_ocid: {
-        value: cdktf.stringToHclTerraform(this._compartmentOcid),
+        value: cdktn.stringToHclTerraform(this._compartmentOcid),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ingest_vault_ocid: {
-        value: cdktf.stringToHclTerraform(this._ingestVaultOcid),
+        value: cdktn.stringToHclTerraform(this._ingestVaultOcid),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instrumentation_type: {
-        value: cdktf.stringToHclTerraform(this._instrumentationType),
+        value: cdktn.stringToHclTerraform(this._instrumentationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       logging_stack_ocid: {
-        value: cdktf.stringToHclTerraform(this._loggingStackOcid),
+        value: cdktn.stringToHclTerraform(this._loggingStackOcid),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metric_stack_ocid: {
-        value: cdktf.stringToHclTerraform(this._metricStackOcid),
+        value: cdktn.stringToHclTerraform(this._metricStackOcid),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oci_client_id: {
-        value: cdktf.stringToHclTerraform(this._ociClientId),
+        value: cdktn.stringToHclTerraform(this._ociClientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oci_client_secret: {
-        value: cdktf.stringToHclTerraform(this._ociClientSecret),
+        value: cdktn.stringToHclTerraform(this._ociClientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oci_domain_url: {
-        value: cdktf.stringToHclTerraform(this._ociDomainUrl),
+        value: cdktn.stringToHclTerraform(this._ociDomainUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oci_home_region: {
-        value: cdktf.stringToHclTerraform(this._ociHomeRegion),
+        value: cdktn.stringToHclTerraform(this._ociHomeRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oci_region: {
-        value: cdktf.stringToHclTerraform(this._ociRegion),
+        value: cdktn.stringToHclTerraform(this._ociRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tenant_id: {
-        value: cdktf.stringToHclTerraform(this._tenantId),
+        value: cdktn.stringToHclTerraform(this._tenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_vault_ocid: {
-        value: cdktf.stringToHclTerraform(this._userVaultOcid),
+        value: cdktn.stringToHclTerraform(this._userVaultOcid),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

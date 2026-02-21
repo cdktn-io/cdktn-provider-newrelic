@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/data_partition_rule
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/data_partition_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataPartitionRuleConfig extends cdktf.TerraformMetaArguments {
+export interface DataPartitionRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account id associated with the data partition rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/data_partition_rule#account_id DataPartitionRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/data_partition_rule#account_id DataPartitionRule#account_id}
   */
   readonly accountId?: number;
   /**
   * The description of the data partition rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/data_partition_rule#description DataPartitionRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/data_partition_rule#description DataPartitionRule#description}
   */
   readonly description?: string;
   /**
   * Whether or not this data partition rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/data_partition_rule#enabled DataPartitionRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/data_partition_rule#enabled DataPartitionRule#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/data_partition_rule#id DataPartitionRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/data_partition_rule#id DataPartitionRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,54 +40,54 @@ export interface DataPartitionRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The NRQL to match events for this data partition rule. Logs matching this criteria will be routed to the specified data partition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/data_partition_rule#nrql DataPartitionRule#nrql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/data_partition_rule#nrql DataPartitionRule#nrql}
   */
   readonly nrql: string;
   /**
   * The retention policy of the data partition data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/data_partition_rule#retention_policy DataPartitionRule#retention_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/data_partition_rule#retention_policy DataPartitionRule#retention_policy}
   */
   readonly retentionPolicy: string;
   /**
   * The name of the data partition where logs will be allocated once the rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/data_partition_rule#target_data_partition DataPartitionRule#target_data_partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/data_partition_rule#target_data_partition DataPartitionRule#target_data_partition}
   */
   readonly targetDataPartition: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/data_partition_rule#timeouts DataPartitionRule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/data_partition_rule#timeouts DataPartitionRule#timeouts}
   */
   readonly timeouts?: DataPartitionRuleTimeouts;
 }
 export interface DataPartitionRuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/data_partition_rule#create DataPartitionRule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/data_partition_rule#create DataPartitionRule#create}
   */
   readonly create?: string;
 }
 
-export function dataPartitionRuleTimeoutsToTerraform(struct?: DataPartitionRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataPartitionRuleTimeoutsToTerraform(struct?: DataPartitionRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function dataPartitionRuleTimeoutsToHclTerraform(struct?: DataPartitionRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataPartitionRuleTimeoutsToHclTerraform(struct?: DataPartitionRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -98,19 +98,19 @@ export function dataPartitionRuleTimeoutsToHclTerraform(struct?: DataPartitionRu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataPartitionRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataPartitionRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataPartitionRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataPartitionRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -123,13 +123,13 @@ export class DataPartitionRuleTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataPartitionRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataPartitionRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -158,9 +158,9 @@ export class DataPartitionRuleTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/data_partition_rule newrelic_data_partition_rule}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/data_partition_rule newrelic_data_partition_rule}
 */
-export class DataPartitionRule extends cdktf.TerraformResource {
+export class DataPartitionRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -171,14 +171,14 @@ export class DataPartitionRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataPartitionRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataPartitionRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPartitionRule to import
-  * @param importFromId The id of the existing DataPartitionRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/data_partition_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPartitionRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/data_partition_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPartitionRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_data_partition_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_data_partition_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -186,7 +186,7 @@ export class DataPartitionRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/data_partition_rule newrelic_data_partition_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/data_partition_rule newrelic_data_partition_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -197,7 +197,7 @@ export class DataPartitionRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_data_partition_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -260,11 +260,11 @@ export class DataPartitionRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -349,13 +349,13 @@ export class DataPartitionRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      nrql: cdktf.stringToTerraform(this._nrql),
-      retention_policy: cdktf.stringToTerraform(this._retentionPolicy),
-      target_data_partition: cdktf.stringToTerraform(this._targetDataPartition),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      nrql: cdktn.stringToTerraform(this._nrql),
+      retention_policy: cdktn.stringToTerraform(this._retentionPolicy),
+      target_data_partition: cdktn.stringToTerraform(this._targetDataPartition),
       timeouts: dataPartitionRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -363,43 +363,43 @@ export class DataPartitionRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nrql: {
-        value: cdktf.stringToHclTerraform(this._nrql),
+        value: cdktn.stringToHclTerraform(this._nrql),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_policy: {
-        value: cdktf.stringToHclTerraform(this._retentionPolicy),
+        value: cdktn.stringToHclTerraform(this._retentionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_data_partition: {
-        value: cdktf.stringToHclTerraform(this._targetDataPartition),
+        value: cdktn.stringToHclTerraform(this._targetDataPartition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

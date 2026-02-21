@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudAwsIntegrationsConfig extends cdktf.TerraformMetaArguments {
+export interface CloudAwsIntegrationsConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the account in New Relic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#account_id CloudAwsIntegrations#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#account_id CloudAwsIntegrations#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#id CloudAwsIntegrations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#id CloudAwsIntegrations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,325 +28,331 @@ export interface CloudAwsIntegrationsConfig extends cdktf.TerraformMetaArguments
   /**
   * The ID of the linked AWS account in New Relic
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#linked_account_id CloudAwsIntegrations#linked_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#linked_account_id CloudAwsIntegrations#linked_account_id}
   */
   readonly linkedAccountId: number;
   /**
   * alb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#alb CloudAwsIntegrations#alb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#alb CloudAwsIntegrations#alb}
   */
   readonly alb?: CloudAwsIntegrationsAlb;
   /**
   * api_gateway block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#api_gateway CloudAwsIntegrations#api_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#api_gateway CloudAwsIntegrations#api_gateway}
   */
   readonly apiGateway?: CloudAwsIntegrationsApiGateway;
   /**
   * auto_scaling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#auto_scaling CloudAwsIntegrations#auto_scaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#auto_scaling CloudAwsIntegrations#auto_scaling}
   */
   readonly autoScaling?: CloudAwsIntegrationsAutoScaling;
   /**
   * aws_app_sync block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_app_sync CloudAwsIntegrations#aws_app_sync}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_app_sync CloudAwsIntegrations#aws_app_sync}
   */
   readonly awsAppSync?: CloudAwsIntegrationsAwsAppSync;
   /**
   * aws_athena block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_athena CloudAwsIntegrations#aws_athena}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_athena CloudAwsIntegrations#aws_athena}
   */
   readonly awsAthena?: CloudAwsIntegrationsAwsAthena;
   /**
   * aws_auto_discovery block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_auto_discovery CloudAwsIntegrations#aws_auto_discovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_auto_discovery CloudAwsIntegrations#aws_auto_discovery}
   */
   readonly awsAutoDiscovery?: CloudAwsIntegrationsAwsAutoDiscovery;
   /**
   * aws_cognito block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_cognito CloudAwsIntegrations#aws_cognito}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_cognito CloudAwsIntegrations#aws_cognito}
   */
   readonly awsCognito?: CloudAwsIntegrationsAwsCognito;
   /**
   * aws_connect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_connect CloudAwsIntegrations#aws_connect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_connect CloudAwsIntegrations#aws_connect}
   */
   readonly awsConnect?: CloudAwsIntegrationsAwsConnect;
   /**
   * aws_direct_connect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_direct_connect CloudAwsIntegrations#aws_direct_connect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_direct_connect CloudAwsIntegrations#aws_direct_connect}
   */
   readonly awsDirectConnect?: CloudAwsIntegrationsAwsDirectConnect;
   /**
   * aws_fsx block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_fsx CloudAwsIntegrations#aws_fsx}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_fsx CloudAwsIntegrations#aws_fsx}
   */
   readonly awsFsx?: CloudAwsIntegrationsAwsFsx;
   /**
   * aws_glue block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_glue CloudAwsIntegrations#aws_glue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_glue CloudAwsIntegrations#aws_glue}
   */
   readonly awsGlue?: CloudAwsIntegrationsAwsGlue;
   /**
   * aws_kinesis_analytics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_kinesis_analytics CloudAwsIntegrations#aws_kinesis_analytics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_kinesis_analytics CloudAwsIntegrations#aws_kinesis_analytics}
   */
   readonly awsKinesisAnalytics?: CloudAwsIntegrationsAwsKinesisAnalytics;
   /**
   * aws_media_convert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_media_convert CloudAwsIntegrations#aws_media_convert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_media_convert CloudAwsIntegrations#aws_media_convert}
   */
   readonly awsMediaConvert?: CloudAwsIntegrationsAwsMediaConvert;
   /**
   * aws_media_package_vod block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_media_package_vod CloudAwsIntegrations#aws_media_package_vod}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_media_package_vod CloudAwsIntegrations#aws_media_package_vod}
   */
   readonly awsMediaPackageVod?: CloudAwsIntegrationsAwsMediaPackageVod;
   /**
   * aws_mq block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_mq CloudAwsIntegrations#aws_mq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_mq CloudAwsIntegrations#aws_mq}
   */
   readonly awsMq?: CloudAwsIntegrationsAwsMq;
   /**
   * aws_msk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_msk CloudAwsIntegrations#aws_msk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_msk CloudAwsIntegrations#aws_msk}
   */
   readonly awsMsk?: CloudAwsIntegrationsAwsMsk;
   /**
   * aws_neptune block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_neptune CloudAwsIntegrations#aws_neptune}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_neptune CloudAwsIntegrations#aws_neptune}
   */
   readonly awsNeptune?: CloudAwsIntegrationsAwsNeptune;
   /**
   * aws_qldb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_qldb CloudAwsIntegrations#aws_qldb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_qldb CloudAwsIntegrations#aws_qldb}
   */
   readonly awsQldb?: CloudAwsIntegrationsAwsQldb;
   /**
   * aws_route53resolver block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_route53resolver CloudAwsIntegrations#aws_route53resolver}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_route53resolver CloudAwsIntegrations#aws_route53resolver}
   */
   readonly awsRoute53Resolver?: CloudAwsIntegrationsAwsRoute53Resolver;
   /**
   * aws_states block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_states CloudAwsIntegrations#aws_states}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_states CloudAwsIntegrations#aws_states}
   */
   readonly awsStates?: CloudAwsIntegrationsAwsStates;
   /**
   * aws_transit_gateway block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_transit_gateway CloudAwsIntegrations#aws_transit_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_transit_gateway CloudAwsIntegrations#aws_transit_gateway}
   */
   readonly awsTransitGateway?: CloudAwsIntegrationsAwsTransitGateway;
   /**
   * aws_waf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_waf CloudAwsIntegrations#aws_waf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_waf CloudAwsIntegrations#aws_waf}
   */
   readonly awsWaf?: CloudAwsIntegrationsAwsWaf;
   /**
   * aws_wafv2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_wafv2 CloudAwsIntegrations#aws_wafv2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_wafv2 CloudAwsIntegrations#aws_wafv2}
   */
   readonly awsWafv2?: CloudAwsIntegrationsAwsWafv2;
   /**
   * billing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#billing CloudAwsIntegrations#billing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#billing CloudAwsIntegrations#billing}
   */
   readonly billing?: CloudAwsIntegrationsBilling;
   /**
   * cloudfront block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#cloudfront CloudAwsIntegrations#cloudfront}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#cloudfront CloudAwsIntegrations#cloudfront}
   */
   readonly cloudfront?: CloudAwsIntegrationsCloudfront;
   /**
   * cloudtrail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#cloudtrail CloudAwsIntegrations#cloudtrail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#cloudtrail CloudAwsIntegrations#cloudtrail}
   */
   readonly cloudtrail?: CloudAwsIntegrationsCloudtrail;
   /**
   * doc_db block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#doc_db CloudAwsIntegrations#doc_db}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#doc_db CloudAwsIntegrations#doc_db}
   */
   readonly docDb?: CloudAwsIntegrationsDocDb;
   /**
   * dynamodb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#dynamodb CloudAwsIntegrations#dynamodb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#dynamodb CloudAwsIntegrations#dynamodb}
   */
   readonly dynamodb?: CloudAwsIntegrationsDynamodb;
   /**
   * ebs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#ebs CloudAwsIntegrations#ebs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#ebs CloudAwsIntegrations#ebs}
   */
   readonly ebs?: CloudAwsIntegrationsEbs;
   /**
   * ec2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#ec2 CloudAwsIntegrations#ec2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#ec2 CloudAwsIntegrations#ec2}
   */
   readonly ec2?: CloudAwsIntegrationsEc2;
   /**
   * ecs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#ecs CloudAwsIntegrations#ecs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#ecs CloudAwsIntegrations#ecs}
   */
   readonly ecs?: CloudAwsIntegrationsEcs;
   /**
   * efs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#efs CloudAwsIntegrations#efs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#efs CloudAwsIntegrations#efs}
   */
   readonly efs?: CloudAwsIntegrationsEfs;
   /**
   * elasticache block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#elasticache CloudAwsIntegrations#elasticache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#elasticache CloudAwsIntegrations#elasticache}
   */
   readonly elasticache?: CloudAwsIntegrationsElasticache;
   /**
   * elasticbeanstalk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#elasticbeanstalk CloudAwsIntegrations#elasticbeanstalk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#elasticbeanstalk CloudAwsIntegrations#elasticbeanstalk}
   */
   readonly elasticbeanstalk?: CloudAwsIntegrationsElasticbeanstalk;
   /**
   * elasticsearch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#elasticsearch CloudAwsIntegrations#elasticsearch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#elasticsearch CloudAwsIntegrations#elasticsearch}
   */
   readonly elasticsearch?: CloudAwsIntegrationsElasticsearch;
   /**
   * elb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#elb CloudAwsIntegrations#elb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#elb CloudAwsIntegrations#elb}
   */
   readonly elb?: CloudAwsIntegrationsElb;
   /**
   * emr block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#emr CloudAwsIntegrations#emr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#emr CloudAwsIntegrations#emr}
   */
   readonly emr?: CloudAwsIntegrationsEmr;
   /**
   * health block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#health CloudAwsIntegrations#health}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#health CloudAwsIntegrations#health}
   */
   readonly health?: CloudAwsIntegrationsHealth;
   /**
   * iam block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#iam CloudAwsIntegrations#iam}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#iam CloudAwsIntegrations#iam}
   */
   readonly iam?: CloudAwsIntegrationsIam;
   /**
   * iot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#iot CloudAwsIntegrations#iot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#iot CloudAwsIntegrations#iot}
   */
   readonly iot?: CloudAwsIntegrationsIot;
   /**
   * kinesis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#kinesis CloudAwsIntegrations#kinesis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#kinesis CloudAwsIntegrations#kinesis}
   */
   readonly kinesis?: CloudAwsIntegrationsKinesis;
   /**
   * kinesis_firehose block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#kinesis_firehose CloudAwsIntegrations#kinesis_firehose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#kinesis_firehose CloudAwsIntegrations#kinesis_firehose}
   */
   readonly kinesisFirehose?: CloudAwsIntegrationsKinesisFirehose;
   /**
   * lambda block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#lambda CloudAwsIntegrations#lambda}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#lambda CloudAwsIntegrations#lambda}
   */
   readonly lambda?: CloudAwsIntegrationsLambda;
   /**
   * rds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#rds CloudAwsIntegrations#rds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#rds CloudAwsIntegrations#rds}
   */
   readonly rds?: CloudAwsIntegrationsRds;
   /**
   * redshift block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#redshift CloudAwsIntegrations#redshift}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#redshift CloudAwsIntegrations#redshift}
   */
   readonly redshift?: CloudAwsIntegrationsRedshift;
   /**
   * route53 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#route53 CloudAwsIntegrations#route53}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#route53 CloudAwsIntegrations#route53}
   */
   readonly route53?: CloudAwsIntegrationsRoute53;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#s3 CloudAwsIntegrations#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#s3 CloudAwsIntegrations#s3}
   */
   readonly s3?: CloudAwsIntegrationsS3;
   /**
+  * security_hub block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#security_hub CloudAwsIntegrations#security_hub}
+  */
+  readonly securityHub?: CloudAwsIntegrationsSecurityHub;
+  /**
   * ses block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#ses CloudAwsIntegrations#ses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#ses CloudAwsIntegrations#ses}
   */
   readonly ses?: CloudAwsIntegrationsSes;
   /**
   * sns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#sns CloudAwsIntegrations#sns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#sns CloudAwsIntegrations#sns}
   */
   readonly sns?: CloudAwsIntegrationsSns;
   /**
   * sqs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#sqs CloudAwsIntegrations#sqs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#sqs CloudAwsIntegrations#sqs}
   */
   readonly sqs?: CloudAwsIntegrationsSqs;
   /**
   * trusted_advisor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#trusted_advisor CloudAwsIntegrations#trusted_advisor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#trusted_advisor CloudAwsIntegrations#trusted_advisor}
   */
   readonly trustedAdvisor?: CloudAwsIntegrationsTrustedAdvisor;
   /**
   * vpc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#vpc CloudAwsIntegrations#vpc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#vpc CloudAwsIntegrations#vpc}
   */
   readonly vpc?: CloudAwsIntegrationsVpc;
   /**
   * x_ray block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#x_ray CloudAwsIntegrations#x_ray}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#x_ray CloudAwsIntegrations#x_ray}
   */
   readonly xRay?: CloudAwsIntegrationsXRay;
 }
@@ -354,37 +360,37 @@ export interface CloudAwsIntegrationsAlb {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * Specify if tags should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * Specify each name or prefix for the LBs that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#load_balancer_prefixes CloudAwsIntegrations#load_balancer_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#load_balancer_prefixes CloudAwsIntegrations#load_balancer_prefixes}
   */
   readonly loadBalancerPrefixes?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -392,72 +398,72 @@ export interface CloudAwsIntegrationsAlb {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsAlbToTerraform(struct?: CloudAwsIntegrationsAlbOutputReference | CloudAwsIntegrationsAlb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    load_balancer_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loadBalancerPrefixes),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    load_balancer_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.loadBalancerPrefixes),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsAlbToHclTerraform(struct?: CloudAwsIntegrationsAlbOutputReference | CloudAwsIntegrationsAlb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     load_balancer_prefixes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.loadBalancerPrefixes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.loadBalancerPrefixes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -468,14 +474,14 @@ export function cloudAwsIntegrationsAlbToHclTerraform(struct?: CloudAwsIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAlbOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAlbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -553,11 +559,11 @@ export class CloudAwsIntegrationsAlbOutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -569,11 +575,11 @@ export class CloudAwsIntegrationsAlbOutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -652,25 +658,25 @@ export interface CloudAwsIntegrationsApiGateway {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#stage_prefixes CloudAwsIntegrations#stage_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#stage_prefixes CloudAwsIntegrations#stage_prefixes}
   */
   readonly stagePrefixes?: string[];
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -678,58 +684,58 @@ export interface CloudAwsIntegrationsApiGateway {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsApiGatewayToTerraform(struct?: CloudAwsIntegrationsApiGatewayOutputReference | CloudAwsIntegrationsApiGateway): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    stage_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.stagePrefixes),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    stage_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.stagePrefixes),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsApiGatewayToHclTerraform(struct?: CloudAwsIntegrationsApiGatewayOutputReference | CloudAwsIntegrationsApiGateway): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     stage_prefixes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.stagePrefixes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.stagePrefixes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -740,14 +746,14 @@ export function cloudAwsIntegrationsApiGatewayToHclTerraform(struct?: CloudAwsIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsApiGatewayOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsApiGatewayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -880,43 +886,43 @@ export interface CloudAwsIntegrationsAutoScaling {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAutoScalingToTerraform(struct?: CloudAwsIntegrationsAutoScalingOutputReference | CloudAwsIntegrationsAutoScaling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAutoScalingToHclTerraform(struct?: CloudAwsIntegrationsAutoScalingOutputReference | CloudAwsIntegrationsAutoScaling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -927,14 +933,14 @@ export function cloudAwsIntegrationsAutoScalingToHclTerraform(struct?: CloudAwsI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAutoScalingOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAutoScalingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1001,43 +1007,43 @@ export interface CloudAwsIntegrationsAwsAppSync {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsAppSyncToTerraform(struct?: CloudAwsIntegrationsAwsAppSyncOutputReference | CloudAwsIntegrationsAwsAppSync): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsAppSyncToHclTerraform(struct?: CloudAwsIntegrationsAwsAppSyncOutputReference | CloudAwsIntegrationsAwsAppSync): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1048,14 +1054,14 @@ export function cloudAwsIntegrationsAwsAppSyncToHclTerraform(struct?: CloudAwsIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsAppSyncOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsAppSyncOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1122,43 +1128,43 @@ export interface CloudAwsIntegrationsAwsAthena {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsAthenaToTerraform(struct?: CloudAwsIntegrationsAwsAthenaOutputReference | CloudAwsIntegrationsAwsAthena): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsAthenaToHclTerraform(struct?: CloudAwsIntegrationsAwsAthenaOutputReference | CloudAwsIntegrationsAwsAthena): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1169,14 +1175,14 @@ export function cloudAwsIntegrationsAwsAthenaToHclTerraform(struct?: CloudAwsInt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsAthenaOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsAthenaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1243,43 +1249,43 @@ export interface CloudAwsIntegrationsAwsAutoDiscovery {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsAutoDiscoveryToTerraform(struct?: CloudAwsIntegrationsAwsAutoDiscoveryOutputReference | CloudAwsIntegrationsAwsAutoDiscovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsAutoDiscoveryToHclTerraform(struct?: CloudAwsIntegrationsAwsAutoDiscoveryOutputReference | CloudAwsIntegrationsAwsAutoDiscovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1290,14 +1296,14 @@ export function cloudAwsIntegrationsAwsAutoDiscoveryToHclTerraform(struct?: Clou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsAutoDiscoveryOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsAutoDiscoveryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1364,43 +1370,43 @@ export interface CloudAwsIntegrationsAwsCognito {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsCognitoToTerraform(struct?: CloudAwsIntegrationsAwsCognitoOutputReference | CloudAwsIntegrationsAwsCognito): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsCognitoToHclTerraform(struct?: CloudAwsIntegrationsAwsCognitoOutputReference | CloudAwsIntegrationsAwsCognito): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1411,14 +1417,14 @@ export function cloudAwsIntegrationsAwsCognitoToHclTerraform(struct?: CloudAwsIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsCognitoOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsCognitoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1485,43 +1491,43 @@ export interface CloudAwsIntegrationsAwsConnect {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsConnectToTerraform(struct?: CloudAwsIntegrationsAwsConnectOutputReference | CloudAwsIntegrationsAwsConnect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsConnectToHclTerraform(struct?: CloudAwsIntegrationsAwsConnectOutputReference | CloudAwsIntegrationsAwsConnect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1532,14 +1538,14 @@ export function cloudAwsIntegrationsAwsConnectToHclTerraform(struct?: CloudAwsIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsConnectOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsConnectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1606,43 +1612,43 @@ export interface CloudAwsIntegrationsAwsDirectConnect {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsDirectConnectToTerraform(struct?: CloudAwsIntegrationsAwsDirectConnectOutputReference | CloudAwsIntegrationsAwsDirectConnect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsDirectConnectToHclTerraform(struct?: CloudAwsIntegrationsAwsDirectConnectOutputReference | CloudAwsIntegrationsAwsDirectConnect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1653,14 +1659,14 @@ export function cloudAwsIntegrationsAwsDirectConnectToHclTerraform(struct?: Clou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsDirectConnectOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsDirectConnectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1727,43 +1733,43 @@ export interface CloudAwsIntegrationsAwsFsx {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsFsxToTerraform(struct?: CloudAwsIntegrationsAwsFsxOutputReference | CloudAwsIntegrationsAwsFsx): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsFsxToHclTerraform(struct?: CloudAwsIntegrationsAwsFsxOutputReference | CloudAwsIntegrationsAwsFsx): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1774,14 +1780,14 @@ export function cloudAwsIntegrationsAwsFsxToHclTerraform(struct?: CloudAwsIntegr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsFsxOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsFsxOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1848,43 +1854,43 @@ export interface CloudAwsIntegrationsAwsGlue {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsGlueToTerraform(struct?: CloudAwsIntegrationsAwsGlueOutputReference | CloudAwsIntegrationsAwsGlue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsGlueToHclTerraform(struct?: CloudAwsIntegrationsAwsGlueOutputReference | CloudAwsIntegrationsAwsGlue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1895,14 +1901,14 @@ export function cloudAwsIntegrationsAwsGlueToHclTerraform(struct?: CloudAwsInteg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsGlueOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsGlueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1969,43 +1975,43 @@ export interface CloudAwsIntegrationsAwsKinesisAnalytics {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsKinesisAnalyticsToTerraform(struct?: CloudAwsIntegrationsAwsKinesisAnalyticsOutputReference | CloudAwsIntegrationsAwsKinesisAnalytics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsKinesisAnalyticsToHclTerraform(struct?: CloudAwsIntegrationsAwsKinesisAnalyticsOutputReference | CloudAwsIntegrationsAwsKinesisAnalytics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2016,14 +2022,14 @@ export function cloudAwsIntegrationsAwsKinesisAnalyticsToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsKinesisAnalyticsOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsKinesisAnalyticsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2090,43 +2096,43 @@ export interface CloudAwsIntegrationsAwsMediaConvert {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsMediaConvertToTerraform(struct?: CloudAwsIntegrationsAwsMediaConvertOutputReference | CloudAwsIntegrationsAwsMediaConvert): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsMediaConvertToHclTerraform(struct?: CloudAwsIntegrationsAwsMediaConvertOutputReference | CloudAwsIntegrationsAwsMediaConvert): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2137,14 +2143,14 @@ export function cloudAwsIntegrationsAwsMediaConvertToHclTerraform(struct?: Cloud
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsMediaConvertOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsMediaConvertOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2211,43 +2217,43 @@ export interface CloudAwsIntegrationsAwsMediaPackageVod {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsMediaPackageVodToTerraform(struct?: CloudAwsIntegrationsAwsMediaPackageVodOutputReference | CloudAwsIntegrationsAwsMediaPackageVod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsMediaPackageVodToHclTerraform(struct?: CloudAwsIntegrationsAwsMediaPackageVodOutputReference | CloudAwsIntegrationsAwsMediaPackageVod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2258,14 +2264,14 @@ export function cloudAwsIntegrationsAwsMediaPackageVodToHclTerraform(struct?: Cl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsMediaPackageVodOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsMediaPackageVodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2332,43 +2338,43 @@ export interface CloudAwsIntegrationsAwsMq {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsMqToTerraform(struct?: CloudAwsIntegrationsAwsMqOutputReference | CloudAwsIntegrationsAwsMq): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsMqToHclTerraform(struct?: CloudAwsIntegrationsAwsMqOutputReference | CloudAwsIntegrationsAwsMq): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2379,14 +2385,14 @@ export function cloudAwsIntegrationsAwsMqToHclTerraform(struct?: CloudAwsIntegra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsMqOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsMqOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2453,43 +2459,43 @@ export interface CloudAwsIntegrationsAwsMsk {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsMskToTerraform(struct?: CloudAwsIntegrationsAwsMskOutputReference | CloudAwsIntegrationsAwsMsk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsMskToHclTerraform(struct?: CloudAwsIntegrationsAwsMskOutputReference | CloudAwsIntegrationsAwsMsk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2500,14 +2506,14 @@ export function cloudAwsIntegrationsAwsMskToHclTerraform(struct?: CloudAwsIntegr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsMskOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsMskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2574,43 +2580,43 @@ export interface CloudAwsIntegrationsAwsNeptune {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsNeptuneToTerraform(struct?: CloudAwsIntegrationsAwsNeptuneOutputReference | CloudAwsIntegrationsAwsNeptune): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsNeptuneToHclTerraform(struct?: CloudAwsIntegrationsAwsNeptuneOutputReference | CloudAwsIntegrationsAwsNeptune): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2621,14 +2627,14 @@ export function cloudAwsIntegrationsAwsNeptuneToHclTerraform(struct?: CloudAwsIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsNeptuneOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsNeptuneOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2695,43 +2701,43 @@ export interface CloudAwsIntegrationsAwsQldb {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsQldbToTerraform(struct?: CloudAwsIntegrationsAwsQldbOutputReference | CloudAwsIntegrationsAwsQldb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsQldbToHclTerraform(struct?: CloudAwsIntegrationsAwsQldbOutputReference | CloudAwsIntegrationsAwsQldb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2742,14 +2748,14 @@ export function cloudAwsIntegrationsAwsQldbToHclTerraform(struct?: CloudAwsInteg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsQldbOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsQldbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2816,43 +2822,43 @@ export interface CloudAwsIntegrationsAwsRoute53Resolver {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsRoute53ResolverToTerraform(struct?: CloudAwsIntegrationsAwsRoute53ResolverOutputReference | CloudAwsIntegrationsAwsRoute53Resolver): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsRoute53ResolverToHclTerraform(struct?: CloudAwsIntegrationsAwsRoute53ResolverOutputReference | CloudAwsIntegrationsAwsRoute53Resolver): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2863,14 +2869,14 @@ export function cloudAwsIntegrationsAwsRoute53ResolverToHclTerraform(struct?: Cl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsRoute53ResolverOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsRoute53ResolverOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2937,43 +2943,43 @@ export interface CloudAwsIntegrationsAwsStates {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsStatesToTerraform(struct?: CloudAwsIntegrationsAwsStatesOutputReference | CloudAwsIntegrationsAwsStates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsStatesToHclTerraform(struct?: CloudAwsIntegrationsAwsStatesOutputReference | CloudAwsIntegrationsAwsStates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2984,14 +2990,14 @@ export function cloudAwsIntegrationsAwsStatesToHclTerraform(struct?: CloudAwsInt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsStatesOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsStatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3058,43 +3064,43 @@ export interface CloudAwsIntegrationsAwsTransitGateway {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsTransitGatewayToTerraform(struct?: CloudAwsIntegrationsAwsTransitGatewayOutputReference | CloudAwsIntegrationsAwsTransitGateway): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsTransitGatewayToHclTerraform(struct?: CloudAwsIntegrationsAwsTransitGatewayOutputReference | CloudAwsIntegrationsAwsTransitGateway): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3105,14 +3111,14 @@ export function cloudAwsIntegrationsAwsTransitGatewayToHclTerraform(struct?: Clo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsTransitGatewayOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsTransitGatewayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3179,43 +3185,43 @@ export interface CloudAwsIntegrationsAwsWaf {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsWafToTerraform(struct?: CloudAwsIntegrationsAwsWafOutputReference | CloudAwsIntegrationsAwsWaf): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsWafToHclTerraform(struct?: CloudAwsIntegrationsAwsWafOutputReference | CloudAwsIntegrationsAwsWaf): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3226,14 +3232,14 @@ export function cloudAwsIntegrationsAwsWafToHclTerraform(struct?: CloudAwsIntegr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsWafOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsWafOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3300,43 +3306,43 @@ export interface CloudAwsIntegrationsAwsWafv2 {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsAwsWafv2ToTerraform(struct?: CloudAwsIntegrationsAwsWafv2OutputReference | CloudAwsIntegrationsAwsWafv2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsAwsWafv2ToHclTerraform(struct?: CloudAwsIntegrationsAwsWafv2OutputReference | CloudAwsIntegrationsAwsWafv2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3347,14 +3353,14 @@ export function cloudAwsIntegrationsAwsWafv2ToHclTerraform(struct?: CloudAwsInte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsAwsWafv2OutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsAwsWafv2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3421,30 +3427,30 @@ export interface CloudAwsIntegrationsBilling {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsBillingToTerraform(struct?: CloudAwsIntegrationsBillingOutputReference | CloudAwsIntegrationsBilling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsBillingToHclTerraform(struct?: CloudAwsIntegrationsBillingOutputReference | CloudAwsIntegrationsBilling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3455,14 +3461,14 @@ export function cloudAwsIntegrationsBillingToHclTerraform(struct?: CloudAwsInteg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsBillingOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsBillingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3507,25 +3513,25 @@ export interface CloudAwsIntegrationsCloudfront {
   /**
   * Specify if Lambdas@Edge should be monitored. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_lambdas_at_edge CloudAwsIntegrations#fetch_lambdas_at_edge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_lambdas_at_edge CloudAwsIntegrations#fetch_lambdas_at_edge}
   */
-  readonly fetchLambdasAtEdge?: boolean | cdktf.IResolvable;
+  readonly fetchLambdasAtEdge?: boolean | cdktn.IResolvable;
   /**
   * Specify if tags should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -3533,58 +3539,58 @@ export interface CloudAwsIntegrationsCloudfront {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsCloudfrontToTerraform(struct?: CloudAwsIntegrationsCloudfrontOutputReference | CloudAwsIntegrationsCloudfront): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fetch_lambdas_at_edge: cdktf.booleanToTerraform(struct!.fetchLambdasAtEdge),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    fetch_lambdas_at_edge: cdktn.booleanToTerraform(struct!.fetchLambdasAtEdge),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsCloudfrontToHclTerraform(struct?: CloudAwsIntegrationsCloudfrontOutputReference | CloudAwsIntegrationsCloudfront): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fetch_lambdas_at_edge: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchLambdasAtEdge),
+      value: cdktn.booleanToHclTerraform(struct!.fetchLambdasAtEdge),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3595,14 +3601,14 @@ export function cloudAwsIntegrationsCloudfrontToHclTerraform(struct?: CloudAwsIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsCloudfrontOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsCloudfrontOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3652,11 +3658,11 @@ export class CloudAwsIntegrationsCloudfrontOutputReference extends cdktf.Complex
   }
 
   // fetch_lambdas_at_edge - computed: false, optional: true, required: false
-  private _fetchLambdasAtEdge?: boolean | cdktf.IResolvable; 
+  private _fetchLambdasAtEdge?: boolean | cdktn.IResolvable; 
   public get fetchLambdasAtEdge() {
     return this.getBooleanAttribute('fetch_lambdas_at_edge');
   }
-  public set fetchLambdasAtEdge(value: boolean | cdktf.IResolvable) {
+  public set fetchLambdasAtEdge(value: boolean | cdktn.IResolvable) {
     this._fetchLambdasAtEdge = value;
   }
   public resetFetchLambdasAtEdge() {
@@ -3668,11 +3674,11 @@ export class CloudAwsIntegrationsCloudfrontOutputReference extends cdktf.Complex
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -3735,43 +3741,43 @@ export interface CloudAwsIntegrationsCloudtrail {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsCloudtrailToTerraform(struct?: CloudAwsIntegrationsCloudtrailOutputReference | CloudAwsIntegrationsCloudtrail): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsCloudtrailToHclTerraform(struct?: CloudAwsIntegrationsCloudtrailOutputReference | CloudAwsIntegrationsCloudtrail): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3782,14 +3788,14 @@ export function cloudAwsIntegrationsCloudtrailToHclTerraform(struct?: CloudAwsIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsCloudtrailOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsCloudtrailOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3856,43 +3862,43 @@ export interface CloudAwsIntegrationsDocDb {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsDocDbToTerraform(struct?: CloudAwsIntegrationsDocDbOutputReference | CloudAwsIntegrationsDocDb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsDocDbToHclTerraform(struct?: CloudAwsIntegrationsDocDbOutputReference | CloudAwsIntegrationsDocDb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3903,14 +3909,14 @@ export function cloudAwsIntegrationsDocDbToHclTerraform(struct?: CloudAwsIntegra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsDocDbOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsDocDbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3977,95 +3983,95 @@ export interface CloudAwsIntegrationsDynamodb {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * Specify if tags and the extended inventory should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
   * Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsDynamodbToTerraform(struct?: CloudAwsIntegrationsDynamodbOutputReference | CloudAwsIntegrationsDynamodb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsDynamodbToHclTerraform(struct?: CloudAwsIntegrationsDynamodbOutputReference | CloudAwsIntegrationsDynamodb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4076,14 +4082,14 @@ export function cloudAwsIntegrationsDynamodbToHclTerraform(struct?: CloudAwsInte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsDynamodbOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsDynamodbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4155,11 +4161,11 @@ export class CloudAwsIntegrationsDynamodbOutputReference extends cdktf.ComplexOb
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -4171,11 +4177,11 @@ export class CloudAwsIntegrationsDynamodbOutputReference extends cdktf.ComplexOb
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -4238,82 +4244,82 @@ export interface CloudAwsIntegrationsEbs {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
   * Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsEbsToTerraform(struct?: CloudAwsIntegrationsEbsOutputReference | CloudAwsIntegrationsEbs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsEbsToHclTerraform(struct?: CloudAwsIntegrationsEbsOutputReference | CloudAwsIntegrationsEbs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4324,14 +4330,14 @@ export function cloudAwsIntegrationsEbsToHclTerraform(struct?: CloudAwsIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsEbsOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsEbsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4397,11 +4403,11 @@ export class CloudAwsIntegrationsEbsOutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -4464,31 +4470,31 @@ export interface CloudAwsIntegrationsEc2 {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Specify if the old legacy metadata and tag names have to be kept, it will consume more ingest data size
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#duplicate_ec2_tags CloudAwsIntegrations#duplicate_ec2_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#duplicate_ec2_tags CloudAwsIntegrations#duplicate_ec2_tags}
   */
-  readonly duplicateEc2Tags?: boolean | cdktf.IResolvable;
+  readonly duplicateEc2Tags?: boolean | cdktn.IResolvable;
   /**
   * Specify if IP addresses of ec2 instance should be collected
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_ip_addresses CloudAwsIntegrations#fetch_ip_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_ip_addresses CloudAwsIntegrations#fetch_ip_addresses}
   */
-  readonly fetchIpAddresses?: boolean | cdktf.IResolvable;
+  readonly fetchIpAddresses?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -4496,65 +4502,65 @@ export interface CloudAwsIntegrationsEc2 {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsEc2ToTerraform(struct?: CloudAwsIntegrationsEc2OutputReference | CloudAwsIntegrationsEc2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    duplicate_ec2_tags: cdktf.booleanToTerraform(struct!.duplicateEc2Tags),
-    fetch_ip_addresses: cdktf.booleanToTerraform(struct!.fetchIpAddresses),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    duplicate_ec2_tags: cdktn.booleanToTerraform(struct!.duplicateEc2Tags),
+    fetch_ip_addresses: cdktn.booleanToTerraform(struct!.fetchIpAddresses),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsEc2ToHclTerraform(struct?: CloudAwsIntegrationsEc2OutputReference | CloudAwsIntegrationsEc2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     duplicate_ec2_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.duplicateEc2Tags),
+      value: cdktn.booleanToHclTerraform(struct!.duplicateEc2Tags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_ip_addresses: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchIpAddresses),
+      value: cdktn.booleanToHclTerraform(struct!.fetchIpAddresses),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4565,14 +4571,14 @@ export function cloudAwsIntegrationsEc2ToHclTerraform(struct?: CloudAwsIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsEc2OutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsEc2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4644,11 +4650,11 @@ export class CloudAwsIntegrationsEc2OutputReference extends cdktf.ComplexObject 
   }
 
   // duplicate_ec2_tags - computed: false, optional: true, required: false
-  private _duplicateEc2Tags?: boolean | cdktf.IResolvable; 
+  private _duplicateEc2Tags?: boolean | cdktn.IResolvable; 
   public get duplicateEc2Tags() {
     return this.getBooleanAttribute('duplicate_ec2_tags');
   }
-  public set duplicateEc2Tags(value: boolean | cdktf.IResolvable) {
+  public set duplicateEc2Tags(value: boolean | cdktn.IResolvable) {
     this._duplicateEc2Tags = value;
   }
   public resetDuplicateEc2Tags() {
@@ -4660,11 +4666,11 @@ export class CloudAwsIntegrationsEc2OutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_ip_addresses - computed: false, optional: true, required: false
-  private _fetchIpAddresses?: boolean | cdktf.IResolvable; 
+  private _fetchIpAddresses?: boolean | cdktn.IResolvable; 
   public get fetchIpAddresses() {
     return this.getBooleanAttribute('fetch_ip_addresses');
   }
-  public set fetchIpAddresses(value: boolean | cdktf.IResolvable) {
+  public set fetchIpAddresses(value: boolean | cdktn.IResolvable) {
     this._fetchIpAddresses = value;
   }
   public resetFetchIpAddresses() {
@@ -4727,82 +4733,82 @@ export interface CloudAwsIntegrationsEcs {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Specify if tags and the extended inventory should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
   * Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsEcsToTerraform(struct?: CloudAwsIntegrationsEcsOutputReference | CloudAwsIntegrationsEcs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsEcsToHclTerraform(struct?: CloudAwsIntegrationsEcsOutputReference | CloudAwsIntegrationsEcs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4813,14 +4819,14 @@ export function cloudAwsIntegrationsEcsToHclTerraform(struct?: CloudAwsIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsEcsOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsEcsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4886,11 +4892,11 @@ export class CloudAwsIntegrationsEcsOutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -4953,82 +4959,82 @@ export interface CloudAwsIntegrationsEfs {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Specify if tags and the extended inventory should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
   * Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsEfsToTerraform(struct?: CloudAwsIntegrationsEfsOutputReference | CloudAwsIntegrationsEfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsEfsToHclTerraform(struct?: CloudAwsIntegrationsEfsOutputReference | CloudAwsIntegrationsEfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5039,14 +5045,14 @@ export function cloudAwsIntegrationsEfsToHclTerraform(struct?: CloudAwsIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsEfsOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsEfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5112,11 +5118,11 @@ export class CloudAwsIntegrationsEfsOutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -5179,25 +5185,25 @@ export interface CloudAwsIntegrationsElasticache {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Specify if tags should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -5205,58 +5211,58 @@ export interface CloudAwsIntegrationsElasticache {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsElasticacheToTerraform(struct?: CloudAwsIntegrationsElasticacheOutputReference | CloudAwsIntegrationsElasticache): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsElasticacheToHclTerraform(struct?: CloudAwsIntegrationsElasticacheOutputReference | CloudAwsIntegrationsElasticache): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5267,14 +5273,14 @@ export function cloudAwsIntegrationsElasticacheToHclTerraform(struct?: CloudAwsI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsElasticacheOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsElasticacheOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5340,11 +5346,11 @@ export class CloudAwsIntegrationsElasticacheOutputReference extends cdktf.Comple
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -5407,95 +5413,95 @@ export interface CloudAwsIntegrationsElasticbeanstalk {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * Specify if tags and the extended inventory should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
   * Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsElasticbeanstalkToTerraform(struct?: CloudAwsIntegrationsElasticbeanstalkOutputReference | CloudAwsIntegrationsElasticbeanstalk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsElasticbeanstalkToHclTerraform(struct?: CloudAwsIntegrationsElasticbeanstalkOutputReference | CloudAwsIntegrationsElasticbeanstalk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5506,14 +5512,14 @@ export function cloudAwsIntegrationsElasticbeanstalkToHclTerraform(struct?: Clou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsElasticbeanstalkOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsElasticbeanstalkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5585,11 +5591,11 @@ export class CloudAwsIntegrationsElasticbeanstalkOutputReference extends cdktf.C
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -5601,11 +5607,11 @@ export class CloudAwsIntegrationsElasticbeanstalkOutputReference extends cdktf.C
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -5668,25 +5674,25 @@ export interface CloudAwsIntegrationsElasticsearch {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Specify if metrics should be collected for nodes. Turning it on will increase the number of API calls made to CloudWatch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_nodes CloudAwsIntegrations#fetch_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_nodes CloudAwsIntegrations#fetch_nodes}
   */
-  readonly fetchNodes?: boolean | cdktf.IResolvable;
+  readonly fetchNodes?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
@@ -5694,58 +5700,58 @@ export interface CloudAwsIntegrationsElasticsearch {
   * 
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsElasticsearchToTerraform(struct?: CloudAwsIntegrationsElasticsearchOutputReference | CloudAwsIntegrationsElasticsearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_nodes: cdktf.booleanToTerraform(struct!.fetchNodes),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_nodes: cdktn.booleanToTerraform(struct!.fetchNodes),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsElasticsearchToHclTerraform(struct?: CloudAwsIntegrationsElasticsearchOutputReference | CloudAwsIntegrationsElasticsearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_nodes: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchNodes),
+      value: cdktn.booleanToHclTerraform(struct!.fetchNodes),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5756,14 +5762,14 @@ export function cloudAwsIntegrationsElasticsearchToHclTerraform(struct?: CloudAw
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsElasticsearchOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsElasticsearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5829,11 +5835,11 @@ export class CloudAwsIntegrationsElasticsearchOutputReference extends cdktf.Comp
   }
 
   // fetch_nodes - computed: false, optional: true, required: false
-  private _fetchNodes?: boolean | cdktf.IResolvable; 
+  private _fetchNodes?: boolean | cdktn.IResolvable; 
   public get fetchNodes() {
     return this.getBooleanAttribute('fetch_nodes');
   }
-  public set fetchNodes(value: boolean | cdktf.IResolvable) {
+  public set fetchNodes(value: boolean | cdktn.IResolvable) {
     this._fetchNodes = value;
   }
   public resetFetchNodes() {
@@ -5896,69 +5902,69 @@ export interface CloudAwsIntegrationsElb {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * Specify if tags should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsElbToTerraform(struct?: CloudAwsIntegrationsElbOutputReference | CloudAwsIntegrationsElb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsElbToHclTerraform(struct?: CloudAwsIntegrationsElbOutputReference | CloudAwsIntegrationsElb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -5969,14 +5975,14 @@ export function cloudAwsIntegrationsElbToHclTerraform(struct?: CloudAwsIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsElbOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsElbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6036,11 +6042,11 @@ export class CloudAwsIntegrationsElbOutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -6052,11 +6058,11 @@ export class CloudAwsIntegrationsElbOutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -6087,82 +6093,82 @@ export interface CloudAwsIntegrationsEmr {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Specify if tags and the extended inventory should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
   * Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsEmrToTerraform(struct?: CloudAwsIntegrationsEmrOutputReference | CloudAwsIntegrationsEmr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsEmrToHclTerraform(struct?: CloudAwsIntegrationsEmrOutputReference | CloudAwsIntegrationsEmr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6173,14 +6179,14 @@ export function cloudAwsIntegrationsEmrToHclTerraform(struct?: CloudAwsIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsEmrOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsEmrOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6246,11 +6252,11 @@ export class CloudAwsIntegrationsEmrOutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -6313,30 +6319,30 @@ export interface CloudAwsIntegrationsHealth {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsHealthToTerraform(struct?: CloudAwsIntegrationsHealthOutputReference | CloudAwsIntegrationsHealth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsHealthToHclTerraform(struct?: CloudAwsIntegrationsHealthOutputReference | CloudAwsIntegrationsHealth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -6347,14 +6353,14 @@ export function cloudAwsIntegrationsHealthToHclTerraform(struct?: CloudAwsIntegr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsHealthOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsHealthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6399,56 +6405,56 @@ export interface CloudAwsIntegrationsIam {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
   * Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsIamToTerraform(struct?: CloudAwsIntegrationsIamOutputReference | CloudAwsIntegrationsIam): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsIamToHclTerraform(struct?: CloudAwsIntegrationsIamOutputReference | CloudAwsIntegrationsIam): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6459,14 +6465,14 @@ export function cloudAwsIntegrationsIamToHclTerraform(struct?: CloudAwsIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsIamOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsIamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6555,43 +6561,43 @@ export interface CloudAwsIntegrationsIot {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsIotToTerraform(struct?: CloudAwsIntegrationsIotOutputReference | CloudAwsIntegrationsIot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsIotToHclTerraform(struct?: CloudAwsIntegrationsIotOutputReference | CloudAwsIntegrationsIot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -6602,14 +6608,14 @@ export function cloudAwsIntegrationsIotToHclTerraform(struct?: CloudAwsIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsIotOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsIotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6676,95 +6682,95 @@ export interface CloudAwsIntegrationsKinesis {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Specify if Shards should be monitored. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_shards CloudAwsIntegrations#fetch_shards}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_shards CloudAwsIntegrations#fetch_shards}
   */
-  readonly fetchShards?: boolean | cdktf.IResolvable;
+  readonly fetchShards?: boolean | cdktn.IResolvable;
   /**
   * Specify if tags and the extended inventory should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
   * Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsKinesisToTerraform(struct?: CloudAwsIntegrationsKinesisOutputReference | CloudAwsIntegrationsKinesis): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_shards: cdktf.booleanToTerraform(struct!.fetchShards),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_shards: cdktn.booleanToTerraform(struct!.fetchShards),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsKinesisToHclTerraform(struct?: CloudAwsIntegrationsKinesisOutputReference | CloudAwsIntegrationsKinesis): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_shards: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchShards),
+      value: cdktn.booleanToHclTerraform(struct!.fetchShards),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6775,14 +6781,14 @@ export function cloudAwsIntegrationsKinesisToHclTerraform(struct?: CloudAwsInteg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsKinesisOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsKinesisOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6854,11 +6860,11 @@ export class CloudAwsIntegrationsKinesisOutputReference extends cdktf.ComplexObj
   }
 
   // fetch_shards - computed: false, optional: true, required: false
-  private _fetchShards?: boolean | cdktf.IResolvable; 
+  private _fetchShards?: boolean | cdktn.IResolvable; 
   public get fetchShards() {
     return this.getBooleanAttribute('fetch_shards');
   }
-  public set fetchShards(value: boolean | cdktf.IResolvable) {
+  public set fetchShards(value: boolean | cdktn.IResolvable) {
     this._fetchShards = value;
   }
   public resetFetchShards() {
@@ -6870,11 +6876,11 @@ export class CloudAwsIntegrationsKinesisOutputReference extends cdktf.ComplexObj
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -6937,43 +6943,43 @@ export interface CloudAwsIntegrationsKinesisFirehose {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsKinesisFirehoseToTerraform(struct?: CloudAwsIntegrationsKinesisFirehoseOutputReference | CloudAwsIntegrationsKinesisFirehose): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsKinesisFirehoseToHclTerraform(struct?: CloudAwsIntegrationsKinesisFirehoseOutputReference | CloudAwsIntegrationsKinesisFirehose): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -6984,14 +6990,14 @@ export function cloudAwsIntegrationsKinesisFirehoseToHclTerraform(struct?: Cloud
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsKinesisFirehoseOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsKinesisFirehoseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7058,82 +7064,82 @@ export interface CloudAwsIntegrationsLambda {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Specify if tags and the extended inventory should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
   * Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsLambdaToTerraform(struct?: CloudAwsIntegrationsLambdaOutputReference | CloudAwsIntegrationsLambda): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsLambdaToHclTerraform(struct?: CloudAwsIntegrationsLambdaOutputReference | CloudAwsIntegrationsLambda): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7144,14 +7150,14 @@ export function cloudAwsIntegrationsLambdaToHclTerraform(struct?: CloudAwsIntegr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsLambdaOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsLambdaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7217,11 +7223,11 @@ export class CloudAwsIntegrationsLambdaOutputReference extends cdktf.ComplexObje
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -7284,82 +7290,82 @@ export interface CloudAwsIntegrationsRds {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Specify if tags and the extended inventory should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
   * Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsRdsToTerraform(struct?: CloudAwsIntegrationsRdsOutputReference | CloudAwsIntegrationsRds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsRdsToHclTerraform(struct?: CloudAwsIntegrationsRdsOutputReference | CloudAwsIntegrationsRds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7370,14 +7376,14 @@ export function cloudAwsIntegrationsRdsToHclTerraform(struct?: CloudAwsIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsRdsOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsRdsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7443,11 +7449,11 @@ export class CloudAwsIntegrationsRdsOutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -7510,69 +7516,69 @@ export interface CloudAwsIntegrationsRedshift {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
   * Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsRedshiftToTerraform(struct?: CloudAwsIntegrationsRedshiftOutputReference | CloudAwsIntegrationsRedshift): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsRedshiftToHclTerraform(struct?: CloudAwsIntegrationsRedshiftOutputReference | CloudAwsIntegrationsRedshift): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7583,14 +7589,14 @@ export function cloudAwsIntegrationsRedshiftToHclTerraform(struct?: CloudAwsInte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsRedshiftOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsRedshiftOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7701,43 +7707,43 @@ export interface CloudAwsIntegrationsRoute53 {
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsRoute53ToTerraform(struct?: CloudAwsIntegrationsRoute53OutputReference | CloudAwsIntegrationsRoute53): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsRoute53ToHclTerraform(struct?: CloudAwsIntegrationsRoute53OutputReference | CloudAwsIntegrationsRoute53): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -7748,14 +7754,14 @@ export function cloudAwsIntegrationsRoute53ToHclTerraform(struct?: CloudAwsInteg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsRoute53OutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsRoute53OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7787,11 +7793,11 @@ export class CloudAwsIntegrationsRoute53OutputReference extends cdktf.ComplexObj
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -7822,82 +7828,82 @@ export interface CloudAwsIntegrationsS3 {
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * Specify if tags should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
   * Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsS3ToTerraform(struct?: CloudAwsIntegrationsS3OutputReference | CloudAwsIntegrationsS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsS3ToHclTerraform(struct?: CloudAwsIntegrationsS3OutputReference | CloudAwsIntegrationsS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7908,14 +7914,14 @@ export function cloudAwsIntegrationsS3ToHclTerraform(struct?: CloudAwsIntegratio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsS3OutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7965,11 +7971,11 @@ export class CloudAwsIntegrationsS3OutputReference extends cdktf.ComplexObject {
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -7981,11 +7987,11 @@ export class CloudAwsIntegrationsS3OutputReference extends cdktf.ComplexObject {
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -8044,47 +8050,47 @@ export class CloudAwsIntegrationsS3OutputReference extends cdktf.ComplexObject {
     return this._tagValue;
   }
 }
-export interface CloudAwsIntegrationsSes {
+export interface CloudAwsIntegrationsSecurityHub {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
-export function cloudAwsIntegrationsSesToTerraform(struct?: CloudAwsIntegrationsSesOutputReference | CloudAwsIntegrationsSes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudAwsIntegrationsSecurityHubToTerraform(struct?: CloudAwsIntegrationsSecurityHubOutputReference | CloudAwsIntegrationsSecurityHub): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
-export function cloudAwsIntegrationsSesToHclTerraform(struct?: CloudAwsIntegrationsSesOutputReference | CloudAwsIntegrationsSes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudAwsIntegrationsSecurityHubToHclTerraform(struct?: CloudAwsIntegrationsSecurityHubOutputReference | CloudAwsIntegrationsSecurityHub): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -8095,14 +8101,135 @@ export function cloudAwsIntegrationsSesToHclTerraform(struct?: CloudAwsIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsSesOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsSecurityHubOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudAwsIntegrationsSecurityHub | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._awsRegions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.awsRegions = this._awsRegions;
+    }
+    if (this._metricsPollingInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricsPollingInterval = this._metricsPollingInterval;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudAwsIntegrationsSecurityHub | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._awsRegions = undefined;
+      this._metricsPollingInterval = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._awsRegions = value.awsRegions;
+      this._metricsPollingInterval = value.metricsPollingInterval;
+    }
+  }
+
+  // aws_regions - computed: false, optional: true, required: false
+  private _awsRegions?: string[]; 
+  public get awsRegions() {
+    return this.getListAttribute('aws_regions');
+  }
+  public set awsRegions(value: string[]) {
+    this._awsRegions = value;
+  }
+  public resetAwsRegions() {
+    this._awsRegions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsRegionsInput() {
+    return this._awsRegions;
+  }
+
+  // metrics_polling_interval - computed: false, optional: true, required: false
+  private _metricsPollingInterval?: number; 
+  public get metricsPollingInterval() {
+    return this.getNumberAttribute('metrics_polling_interval');
+  }
+  public set metricsPollingInterval(value: number) {
+    this._metricsPollingInterval = value;
+  }
+  public resetMetricsPollingInterval() {
+    this._metricsPollingInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsPollingIntervalInput() {
+    return this._metricsPollingInterval;
+  }
+}
+export interface CloudAwsIntegrationsSes {
+  /**
+  * Specify each AWS region that includes the resources that you want to monitor.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  */
+  readonly awsRegions?: string[];
+  /**
+  * The data polling interval in seconds.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  */
+  readonly metricsPollingInterval?: number;
+}
+
+export function cloudAwsIntegrationsSesToTerraform(struct?: CloudAwsIntegrationsSesOutputReference | CloudAwsIntegrationsSes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+  }
+}
+
+
+export function cloudAwsIntegrationsSesToHclTerraform(struct?: CloudAwsIntegrationsSesOutputReference | CloudAwsIntegrationsSes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    metrics_polling_interval: {
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudAwsIntegrationsSesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8169,56 +8296,56 @@ export interface CloudAwsIntegrationsSns {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsSnsToTerraform(struct?: CloudAwsIntegrationsSnsOutputReference | CloudAwsIntegrationsSns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsSnsToHclTerraform(struct?: CloudAwsIntegrationsSnsOutputReference | CloudAwsIntegrationsSns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -8229,14 +8356,14 @@ export function cloudAwsIntegrationsSnsToHclTerraform(struct?: CloudAwsIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsSnsOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsSnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8290,11 +8417,11 @@ export class CloudAwsIntegrationsSnsOutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -8325,108 +8452,108 @@ export interface CloudAwsIntegrationsSqs {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Determine if extra inventory data be collected or not. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
   */
-  readonly fetchExtendedInventory?: boolean | cdktf.IResolvable;
+  readonly fetchExtendedInventory?: boolean | cdktn.IResolvable;
   /**
   * Specify if tags should be collected. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
   */
-  readonly fetchTags?: boolean | cdktf.IResolvable;
+  readonly fetchTags?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify each name or prefix for the Queues that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#queue_prefixes CloudAwsIntegrations#queue_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#queue_prefixes CloudAwsIntegrations#queue_prefixes}
   */
   readonly queuePrefixes?: string[];
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
   * Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsSqsToTerraform(struct?: CloudAwsIntegrationsSqsOutputReference | CloudAwsIntegrationsSqs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
-    fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    queue_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queuePrefixes),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_extended_inventory: cdktn.booleanToTerraform(struct!.fetchExtendedInventory),
+    fetch_tags: cdktn.booleanToTerraform(struct!.fetchTags),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    queue_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.queuePrefixes),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsSqsToHclTerraform(struct?: CloudAwsIntegrationsSqsOutputReference | CloudAwsIntegrationsSqs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_extended_inventory: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      value: cdktn.booleanToHclTerraform(struct!.fetchExtendedInventory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      value: cdktn.booleanToHclTerraform(struct!.fetchTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     queue_prefixes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queuePrefixes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.queuePrefixes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8437,14 +8564,14 @@ export function cloudAwsIntegrationsSqsToHclTerraform(struct?: CloudAwsIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsSqsOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsSqsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8522,11 +8649,11 @@ export class CloudAwsIntegrationsSqsOutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_extended_inventory - computed: false, optional: true, required: false
-  private _fetchExtendedInventory?: boolean | cdktf.IResolvable; 
+  private _fetchExtendedInventory?: boolean | cdktn.IResolvable; 
   public get fetchExtendedInventory() {
     return this.getBooleanAttribute('fetch_extended_inventory');
   }
-  public set fetchExtendedInventory(value: boolean | cdktf.IResolvable) {
+  public set fetchExtendedInventory(value: boolean | cdktn.IResolvable) {
     this._fetchExtendedInventory = value;
   }
   public resetFetchExtendedInventory() {
@@ -8538,11 +8665,11 @@ export class CloudAwsIntegrationsSqsOutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_tags - computed: false, optional: true, required: false
-  private _fetchTags?: boolean | cdktf.IResolvable; 
+  private _fetchTags?: boolean | cdktn.IResolvable; 
   public get fetchTags() {
     return this.getBooleanAttribute('fetch_tags');
   }
-  public set fetchTags(value: boolean | cdktf.IResolvable) {
+  public set fetchTags(value: boolean | cdktn.IResolvable) {
     this._fetchTags = value;
   }
   public resetFetchTags() {
@@ -8621,30 +8748,30 @@ export interface CloudAwsIntegrationsTrustedAdvisor {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsTrustedAdvisorToTerraform(struct?: CloudAwsIntegrationsTrustedAdvisorOutputReference | CloudAwsIntegrationsTrustedAdvisor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsTrustedAdvisorToHclTerraform(struct?: CloudAwsIntegrationsTrustedAdvisorOutputReference | CloudAwsIntegrationsTrustedAdvisor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -8655,14 +8782,14 @@ export function cloudAwsIntegrationsTrustedAdvisorToHclTerraform(struct?: CloudA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsTrustedAdvisorOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsTrustedAdvisorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8707,95 +8834,95 @@ export interface CloudAwsIntegrationsVpc {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * Specify if NAT gateway should be monitored. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_nat_gateway CloudAwsIntegrations#fetch_nat_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_nat_gateway CloudAwsIntegrations#fetch_nat_gateway}
   */
-  readonly fetchNatGateway?: boolean | cdktf.IResolvable;
+  readonly fetchNatGateway?: boolean | cdktn.IResolvable;
   /**
   * Specify if VPN should be monitored. May affect total data collection time and contribute to the Cloud provider API rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#fetch_vpn CloudAwsIntegrations#fetch_vpn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#fetch_vpn CloudAwsIntegrations#fetch_vpn}
   */
-  readonly fetchVpn?: boolean | cdktf.IResolvable;
+  readonly fetchVpn?: boolean | cdktn.IResolvable;
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
   /**
   * Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
   */
   readonly tagKey?: string;
   /**
   * Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
   */
   readonly tagValue?: string;
 }
 
 export function cloudAwsIntegrationsVpcToTerraform(struct?: CloudAwsIntegrationsVpcOutputReference | CloudAwsIntegrationsVpc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    fetch_nat_gateway: cdktf.booleanToTerraform(struct!.fetchNatGateway),
-    fetch_vpn: cdktf.booleanToTerraform(struct!.fetchVpn),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    fetch_nat_gateway: cdktn.booleanToTerraform(struct!.fetchNatGateway),
+    fetch_vpn: cdktn.booleanToTerraform(struct!.fetchVpn),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
   }
 }
 
 
 export function cloudAwsIntegrationsVpcToHclTerraform(struct?: CloudAwsIntegrationsVpcOutputReference | CloudAwsIntegrationsVpc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fetch_nat_gateway: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchNatGateway),
+      value: cdktn.booleanToHclTerraform(struct!.fetchNatGateway),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fetch_vpn: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchVpn),
+      value: cdktn.booleanToHclTerraform(struct!.fetchVpn),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8806,14 +8933,14 @@ export function cloudAwsIntegrationsVpcToHclTerraform(struct?: CloudAwsIntegrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsVpcOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsVpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8885,11 +9012,11 @@ export class CloudAwsIntegrationsVpcOutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_nat_gateway - computed: false, optional: true, required: false
-  private _fetchNatGateway?: boolean | cdktf.IResolvable; 
+  private _fetchNatGateway?: boolean | cdktn.IResolvable; 
   public get fetchNatGateway() {
     return this.getBooleanAttribute('fetch_nat_gateway');
   }
-  public set fetchNatGateway(value: boolean | cdktf.IResolvable) {
+  public set fetchNatGateway(value: boolean | cdktn.IResolvable) {
     this._fetchNatGateway = value;
   }
   public resetFetchNatGateway() {
@@ -8901,11 +9028,11 @@ export class CloudAwsIntegrationsVpcOutputReference extends cdktf.ComplexObject 
   }
 
   // fetch_vpn - computed: false, optional: true, required: false
-  private _fetchVpn?: boolean | cdktf.IResolvable; 
+  private _fetchVpn?: boolean | cdktn.IResolvable; 
   public get fetchVpn() {
     return this.getBooleanAttribute('fetch_vpn');
   }
-  public set fetchVpn(value: boolean | cdktf.IResolvable) {
+  public set fetchVpn(value: boolean | cdktn.IResolvable) {
     this._fetchVpn = value;
   }
   public resetFetchVpn() {
@@ -8968,43 +9095,43 @@ export interface CloudAwsIntegrationsXRay {
   /**
   * Specify each AWS region that includes the resources that you want to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
 
 export function cloudAwsIntegrationsXRayToTerraform(struct?: CloudAwsIntegrationsXRayOutputReference | CloudAwsIntegrationsXRay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
+    metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
 
 
 export function cloudAwsIntegrationsXRayToHclTerraform(struct?: CloudAwsIntegrationsXRayOutputReference | CloudAwsIntegrationsXRay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.awsRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     metrics_polling_interval: {
-      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      value: cdktn.numberToHclTerraform(struct!.metricsPollingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -9015,14 +9142,14 @@ export function cloudAwsIntegrationsXRayToHclTerraform(struct?: CloudAwsIntegrat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAwsIntegrationsXRayOutputReference extends cdktf.ComplexObject {
+export class CloudAwsIntegrationsXRayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9087,9 +9214,9 @@ export class CloudAwsIntegrationsXRayOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations}
 */
-export class CloudAwsIntegrations extends cdktf.TerraformResource {
+export class CloudAwsIntegrations extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -9100,14 +9227,14 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudAwsIntegrations resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudAwsIntegrations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudAwsIntegrations to import
-  * @param importFromId The id of the existing CloudAwsIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudAwsIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudAwsIntegrations to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_cloud_aws_integrations", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_cloud_aws_integrations", importId: importFromId, provider });
       }
 
   // ===========
@@ -9115,7 +9242,7 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -9126,7 +9253,7 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_aws_integrations',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -9187,6 +9314,7 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
     this._redshift.internalValue = config.redshift;
     this._route53.internalValue = config.route53;
     this._s3.internalValue = config.s3;
+    this._securityHub.internalValue = config.securityHub;
     this._ses.internalValue = config.ses;
     this._sns.internalValue = config.sns;
     this._sqs.internalValue = config.sqs;
@@ -9996,6 +10124,22 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
     return this._s3.internalValue;
   }
 
+  // security_hub - computed: false, optional: true, required: false
+  private _securityHub = new CloudAwsIntegrationsSecurityHubOutputReference(this, "security_hub");
+  public get securityHub() {
+    return this._securityHub;
+  }
+  public putSecurityHub(value: CloudAwsIntegrationsSecurityHub) {
+    this._securityHub.internalValue = value;
+  }
+  public resetSecurityHub() {
+    this._securityHub.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityHubInput() {
+    return this._securityHub.internalValue;
+  }
+
   // ses - computed: false, optional: true, required: false
   private _ses = new CloudAwsIntegrationsSesOutputReference(this, "ses");
   public get ses() {
@@ -10098,9 +10242,9 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      linked_account_id: cdktf.numberToTerraform(this._linkedAccountId),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      linked_account_id: cdktn.numberToTerraform(this._linkedAccountId),
       alb: cloudAwsIntegrationsAlbToTerraform(this._alb.internalValue),
       api_gateway: cloudAwsIntegrationsApiGatewayToTerraform(this._apiGateway.internalValue),
       auto_scaling: cloudAwsIntegrationsAutoScalingToTerraform(this._autoScaling.internalValue),
@@ -10148,6 +10292,7 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
       redshift: cloudAwsIntegrationsRedshiftToTerraform(this._redshift.internalValue),
       route53: cloudAwsIntegrationsRoute53ToTerraform(this._route53.internalValue),
       s3: cloudAwsIntegrationsS3ToTerraform(this._s3.internalValue),
+      security_hub: cloudAwsIntegrationsSecurityHubToTerraform(this._securityHub.internalValue),
       ses: cloudAwsIntegrationsSesToTerraform(this._ses.internalValue),
       sns: cloudAwsIntegrationsSnsToTerraform(this._sns.internalValue),
       sqs: cloudAwsIntegrationsSqsToTerraform(this._sqs.internalValue),
@@ -10160,19 +10305,19 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       linked_account_id: {
-        value: cdktf.numberToHclTerraform(this._linkedAccountId),
+        value: cdktn.numberToHclTerraform(this._linkedAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
@@ -10458,6 +10603,12 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "CloudAwsIntegrationsS3List",
+      },
+      security_hub: {
+        value: cloudAwsIntegrationsSecurityHubToHclTerraform(this._securityHub.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsIntegrationsSecurityHubList",
       },
       ses: {
         value: cloudAwsIntegrationsSesToHclTerraform(this._ses.internalValue),

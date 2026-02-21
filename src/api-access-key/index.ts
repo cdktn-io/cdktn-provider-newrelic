@@ -1,54 +1,54 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/api_access_key
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/api_access_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiAccessKeyConfig extends cdktf.TerraformMetaArguments {
+export interface ApiAccessKeyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/api_access_key#account_id ApiAccessKey#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/api_access_key#account_id ApiAccessKey#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/api_access_key#id ApiAccessKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/api_access_key#id ApiAccessKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/api_access_key#ingest_type ApiAccessKey#ingest_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/api_access_key#ingest_type ApiAccessKey#ingest_type}
   */
   readonly ingestType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/api_access_key#key_type ApiAccessKey#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/api_access_key#key_type ApiAccessKey#key_type}
   */
   readonly keyType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/api_access_key#name ApiAccessKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/api_access_key#name ApiAccessKey#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/api_access_key#notes ApiAccessKey#notes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/api_access_key#notes ApiAccessKey#notes}
   */
   readonly notes?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/api_access_key#user_id ApiAccessKey#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/api_access_key#user_id ApiAccessKey#user_id}
   */
   readonly userId?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/api_access_key newrelic_api_access_key}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/api_access_key newrelic_api_access_key}
 */
-export class ApiAccessKey extends cdktf.TerraformResource {
+export class ApiAccessKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class ApiAccessKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiAccessKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiAccessKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiAccessKey to import
-  * @param importFromId The id of the existing ApiAccessKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/api_access_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiAccessKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/api_access_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiAccessKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_api_access_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_api_access_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -74,7 +74,7 @@ export class ApiAccessKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/api_access_key newrelic_api_access_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/api_access_key newrelic_api_access_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class ApiAccessKey extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_api_access_key',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -229,56 +229,56 @@ export class ApiAccessKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      ingest_type: cdktf.stringToTerraform(this._ingestType),
-      key_type: cdktf.stringToTerraform(this._keyType),
-      name: cdktf.stringToTerraform(this._name),
-      notes: cdktf.stringToTerraform(this._notes),
-      user_id: cdktf.numberToTerraform(this._userId),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      ingest_type: cdktn.stringToTerraform(this._ingestType),
+      key_type: cdktn.stringToTerraform(this._keyType),
+      name: cdktn.stringToTerraform(this._name),
+      notes: cdktn.stringToTerraform(this._notes),
+      user_id: cdktn.numberToTerraform(this._userId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ingest_type: {
-        value: cdktf.stringToHclTerraform(this._ingestType),
+        value: cdktn.stringToHclTerraform(this._ingestType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_type: {
-        value: cdktf.stringToHclTerraform(this._keyType),
+        value: cdktn.stringToHclTerraform(this._keyType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notes: {
-        value: cdktf.stringToHclTerraform(this._notes),
+        value: cdktn.stringToHclTerraform(this._notes),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_id: {
-        value: cdktf.numberToHclTerraform(this._userId),
+        value: cdktn.numberToHclTerraform(this._userId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

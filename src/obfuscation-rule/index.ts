@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/obfuscation_rule
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/obfuscation_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ObfuscationRuleConfig extends cdktf.TerraformMetaArguments {
+export interface ObfuscationRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account id associated with the obfuscation rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/obfuscation_rule#account_id ObfuscationRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/obfuscation_rule#account_id ObfuscationRule#account_id}
   */
   readonly accountId?: number;
   /**
   * Description of rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/obfuscation_rule#description ObfuscationRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/obfuscation_rule#description ObfuscationRule#description}
   */
   readonly description?: string;
   /**
   * Whether the rule should be applied or not to incoming data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/obfuscation_rule#enabled ObfuscationRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/obfuscation_rule#enabled ObfuscationRule#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * NRQL for determining whether a given log record should have obfuscation actions applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/obfuscation_rule#filter ObfuscationRule#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/obfuscation_rule#filter ObfuscationRule#filter}
   */
   readonly filter: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/obfuscation_rule#id ObfuscationRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/obfuscation_rule#id ObfuscationRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,70 +46,70 @@ export interface ObfuscationRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/obfuscation_rule#name ObfuscationRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/obfuscation_rule#name ObfuscationRule#name}
   */
   readonly name: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/obfuscation_rule#action ObfuscationRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/obfuscation_rule#action ObfuscationRule#action}
   */
-  readonly action: ObfuscationRuleAction[] | cdktf.IResolvable;
+  readonly action: ObfuscationRuleAction[] | cdktn.IResolvable;
 }
 export interface ObfuscationRuleAction {
   /**
   * Attribute names for action. An empty list applies the action to all the attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/obfuscation_rule#attribute ObfuscationRule#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/obfuscation_rule#attribute ObfuscationRule#attribute}
   */
   readonly attribute: string[];
   /**
   * Expression Id for action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/obfuscation_rule#expression_id ObfuscationRule#expression_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/obfuscation_rule#expression_id ObfuscationRule#expression_id}
   */
   readonly expressionId: string;
   /**
   * Obfuscation method to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/obfuscation_rule#method ObfuscationRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/obfuscation_rule#method ObfuscationRule#method}
   */
   readonly method: string;
 }
 
-export function obfuscationRuleActionToTerraform(struct?: ObfuscationRuleAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function obfuscationRuleActionToTerraform(struct?: ObfuscationRuleAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attribute: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.attribute),
-    expression_id: cdktf.stringToTerraform(struct!.expressionId),
-    method: cdktf.stringToTerraform(struct!.method),
+    attribute: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.attribute),
+    expression_id: cdktn.stringToTerraform(struct!.expressionId),
+    method: cdktn.stringToTerraform(struct!.method),
   }
 }
 
 
-export function obfuscationRuleActionToHclTerraform(struct?: ObfuscationRuleAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function obfuscationRuleActionToHclTerraform(struct?: ObfuscationRuleAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attribute: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.attribute),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.attribute),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     expression_id: {
-      value: cdktf.stringToHclTerraform(struct!.expressionId),
+      value: cdktn.stringToHclTerraform(struct!.expressionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     method: {
-      value: cdktf.stringToHclTerraform(struct!.method),
+      value: cdktn.stringToHclTerraform(struct!.method),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,9 +120,9 @@ export function obfuscationRuleActionToHclTerraform(struct?: ObfuscationRuleActi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ObfuscationRuleActionOutputReference extends cdktf.ComplexObject {
+export class ObfuscationRuleActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -130,11 +130,11 @@ export class ObfuscationRuleActionOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ObfuscationRuleAction | cdktf.IResolvable | undefined {
+  public get internalValue(): ObfuscationRuleAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -155,7 +155,7 @@ export class ObfuscationRuleActionOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ObfuscationRuleAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ObfuscationRuleAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -163,7 +163,7 @@ export class ObfuscationRuleActionOutputReference extends cdktf.ComplexObject {
       this._expressionId = undefined;
       this._method = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -179,7 +179,7 @@ export class ObfuscationRuleActionOutputReference extends cdktf.ComplexObject {
   // attribute - computed: false, optional: false, required: true
   private _attribute?: string[]; 
   public get attribute() {
-    return cdktf.Fn.tolist(this.getListAttribute('attribute'));
+    return cdktn.Fn.tolist(this.getListAttribute('attribute'));
   }
   public set attribute(value: string[]) {
     this._attribute = value;
@@ -216,15 +216,15 @@ export class ObfuscationRuleActionOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ObfuscationRuleActionList extends cdktf.ComplexList {
-  public internalValue? : ObfuscationRuleAction[] | cdktf.IResolvable
+export class ObfuscationRuleActionList extends cdktn.ComplexList {
+  public internalValue? : ObfuscationRuleAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -237,9 +237,9 @@ export class ObfuscationRuleActionList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/obfuscation_rule newrelic_obfuscation_rule}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/obfuscation_rule newrelic_obfuscation_rule}
 */
-export class ObfuscationRule extends cdktf.TerraformResource {
+export class ObfuscationRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -250,14 +250,14 @@ export class ObfuscationRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ObfuscationRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ObfuscationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObfuscationRule to import
-  * @param importFromId The id of the existing ObfuscationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/obfuscation_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObfuscationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/obfuscation_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObfuscationRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_obfuscation_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_obfuscation_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -265,7 +265,7 @@ export class ObfuscationRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/obfuscation_rule newrelic_obfuscation_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/obfuscation_rule newrelic_obfuscation_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -276,7 +276,7 @@ export class ObfuscationRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_obfuscation_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -333,11 +333,11 @@ export class ObfuscationRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -392,7 +392,7 @@ export class ObfuscationRule extends cdktf.TerraformResource {
   public get action() {
     return this._action;
   }
-  public putAction(value: ObfuscationRuleAction[] | cdktf.IResolvable) {
+  public putAction(value: ObfuscationRuleAction[] | cdktn.IResolvable) {
     this._action.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -406,56 +406,56 @@ export class ObfuscationRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      filter: cdktf.stringToTerraform(this._filter),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      action: cdktf.listMapper(obfuscationRuleActionToTerraform, true)(this._action.internalValue),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      filter: cdktn.stringToTerraform(this._filter),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      action: cdktn.listMapper(obfuscationRuleActionToTerraform, true)(this._action.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       filter: {
-        value: cdktf.stringToHclTerraform(this._filter),
+        value: cdktn.stringToHclTerraform(this._filter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       action: {
-        value: cdktf.listMapperHcl(obfuscationRuleActionToHclTerraform, true)(this._action.internalValue),
+        value: cdktn.listMapperHcl(obfuscationRuleActionToHclTerraform, true)(this._action.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ObfuscationRuleActionList",

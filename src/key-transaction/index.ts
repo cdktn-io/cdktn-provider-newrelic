@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/key_transaction
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KeyTransactionConfig extends cdktf.TerraformMetaArguments {
+export interface KeyTransactionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The acceptable amount of the time spent in the backend before customers get frustrated (Apdex target)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#apdex_index KeyTransaction#apdex_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/key_transaction#apdex_index KeyTransaction#apdex_index}
   */
   readonly apdexIndex: number;
   /**
   * The GUID of the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#application_guid KeyTransaction#application_guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/key_transaction#application_guid KeyTransaction#application_guid}
   */
   readonly applicationGuid: string;
   /**
   * The acceptable amount of time for rendering a page in a browser before customers get frustrated (browser Apdex target).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#browser_apdex_target KeyTransaction#browser_apdex_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/key_transaction#browser_apdex_target KeyTransaction#browser_apdex_target}
   */
   readonly browserApdexTarget: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#id KeyTransaction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/key_transaction#id KeyTransaction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,21 +40,21 @@ export interface KeyTransactionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the metric underlying this key transaction
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#metric_name KeyTransaction#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/key_transaction#metric_name KeyTransaction#metric_name}
   */
   readonly metricName: string;
   /**
   * The name of the key transaction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#name KeyTransaction#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/key_transaction#name KeyTransaction#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction newrelic_key_transaction}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/key_transaction newrelic_key_transaction}
 */
-export class KeyTransaction extends cdktf.TerraformResource {
+export class KeyTransaction extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class KeyTransaction extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KeyTransaction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KeyTransaction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeyTransaction to import
-  * @param importFromId The id of the existing KeyTransaction that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KeyTransaction that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/key_transaction#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeyTransaction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_key_transaction", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_key_transaction", importId: importFromId, provider });
       }
 
   // ===========
@@ -80,7 +80,7 @@ export class KeyTransaction extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction newrelic_key_transaction} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/key_transaction newrelic_key_transaction} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,7 @@ export class KeyTransaction extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_key_transaction',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -211,49 +211,49 @@ export class KeyTransaction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apdex_index: cdktf.numberToTerraform(this._apdexIndex),
-      application_guid: cdktf.stringToTerraform(this._applicationGuid),
-      browser_apdex_target: cdktf.numberToTerraform(this._browserApdexTarget),
-      id: cdktf.stringToTerraform(this._id),
-      metric_name: cdktf.stringToTerraform(this._metricName),
-      name: cdktf.stringToTerraform(this._name),
+      apdex_index: cdktn.numberToTerraform(this._apdexIndex),
+      application_guid: cdktn.stringToTerraform(this._applicationGuid),
+      browser_apdex_target: cdktn.numberToTerraform(this._browserApdexTarget),
+      id: cdktn.stringToTerraform(this._id),
+      metric_name: cdktn.stringToTerraform(this._metricName),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apdex_index: {
-        value: cdktf.numberToHclTerraform(this._apdexIndex),
+        value: cdktn.numberToHclTerraform(this._apdexIndex),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       application_guid: {
-        value: cdktf.stringToHclTerraform(this._applicationGuid),
+        value: cdktn.stringToHclTerraform(this._applicationGuid),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       browser_apdex_target: {
-        value: cdktf.numberToHclTerraform(this._browserApdexTarget),
+        value: cdktn.numberToHclTerraform(this._browserApdexTarget),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metric_name: {
-        value: cdktf.stringToHclTerraform(this._metricName),
+        value: cdktn.stringToHclTerraform(this._metricName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

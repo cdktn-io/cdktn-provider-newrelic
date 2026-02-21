@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/log_parsing_rule
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/log_parsing_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogParsingRuleConfig extends cdktf.TerraformMetaArguments {
+export interface LogParsingRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account id associated with the obfuscation expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/log_parsing_rule#account_id LogParsingRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/log_parsing_rule#account_id LogParsingRule#account_id}
   */
   readonly accountId?: number;
   /**
   * The parsing rule will apply to value of this attribute. If field is not provided, value will default to message.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/log_parsing_rule#attribute LogParsingRule#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/log_parsing_rule#attribute LogParsingRule#attribute}
   */
   readonly attribute?: string;
   /**
   * Whether or not this rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/log_parsing_rule#enabled LogParsingRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/log_parsing_rule#enabled LogParsingRule#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The Grok of what to parse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/log_parsing_rule#grok LogParsingRule#grok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/log_parsing_rule#grok LogParsingRule#grok}
   */
   readonly grok: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/log_parsing_rule#id LogParsingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/log_parsing_rule#id LogParsingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,33 +46,33 @@ export interface LogParsingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Lucene to match events to the parsing rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/log_parsing_rule#lucene LogParsingRule#lucene}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/log_parsing_rule#lucene LogParsingRule#lucene}
   */
   readonly lucene: string;
   /**
   * Whether the Grok pattern matched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/log_parsing_rule#matched LogParsingRule#matched}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/log_parsing_rule#matched LogParsingRule#matched}
   */
-  readonly matched?: boolean | cdktf.IResolvable;
+  readonly matched?: boolean | cdktn.IResolvable;
   /**
   * A description of what this parsing rule represents.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/log_parsing_rule#name LogParsingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/log_parsing_rule#name LogParsingRule#name}
   */
   readonly name: string;
   /**
   * The NRQL to match events to the parsing rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/log_parsing_rule#nrql LogParsingRule#nrql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/log_parsing_rule#nrql LogParsingRule#nrql}
   */
   readonly nrql: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/log_parsing_rule newrelic_log_parsing_rule}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/log_parsing_rule newrelic_log_parsing_rule}
 */
-export class LogParsingRule extends cdktf.TerraformResource {
+export class LogParsingRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -83,14 +83,14 @@ export class LogParsingRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogParsingRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogParsingRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogParsingRule to import
-  * @param importFromId The id of the existing LogParsingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/log_parsing_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogParsingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/log_parsing_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogParsingRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_log_parsing_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_log_parsing_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -98,7 +98,7 @@ export class LogParsingRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/log_parsing_rule newrelic_log_parsing_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/log_parsing_rule newrelic_log_parsing_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +109,7 @@ export class LogParsingRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_log_parsing_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -173,11 +173,11 @@ export class LogParsingRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -228,11 +228,11 @@ export class LogParsingRule extends cdktf.TerraformResource {
   }
 
   // matched - computed: true, optional: true, required: false
-  private _matched?: boolean | cdktf.IResolvable; 
+  private _matched?: boolean | cdktn.IResolvable; 
   public get matched() {
     return this.getBooleanAttribute('matched');
   }
-  public set matched(value: boolean | cdktf.IResolvable) {
+  public set matched(value: boolean | cdktn.IResolvable) {
     this._matched = value;
   }
   public resetMatched() {
@@ -275,70 +275,70 @@ export class LogParsingRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      attribute: cdktf.stringToTerraform(this._attribute),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      grok: cdktf.stringToTerraform(this._grok),
-      id: cdktf.stringToTerraform(this._id),
-      lucene: cdktf.stringToTerraform(this._lucene),
-      matched: cdktf.booleanToTerraform(this._matched),
-      name: cdktf.stringToTerraform(this._name),
-      nrql: cdktf.stringToTerraform(this._nrql),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      attribute: cdktn.stringToTerraform(this._attribute),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      grok: cdktn.stringToTerraform(this._grok),
+      id: cdktn.stringToTerraform(this._id),
+      lucene: cdktn.stringToTerraform(this._lucene),
+      matched: cdktn.booleanToTerraform(this._matched),
+      name: cdktn.stringToTerraform(this._name),
+      nrql: cdktn.stringToTerraform(this._nrql),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       attribute: {
-        value: cdktf.stringToHclTerraform(this._attribute),
+        value: cdktn.stringToHclTerraform(this._attribute),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       grok: {
-        value: cdktf.stringToHclTerraform(this._grok),
+        value: cdktn.stringToHclTerraform(this._grok),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lucene: {
-        value: cdktf.stringToHclTerraform(this._lucene),
+        value: cdktn.stringToHclTerraform(this._lucene),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       matched: {
-        value: cdktf.booleanToHclTerraform(this._matched),
+        value: cdktn.booleanToHclTerraform(this._matched),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nrql: {
-        value: cdktf.stringToHclTerraform(this._nrql),
+        value: cdktn.stringToHclTerraform(this._nrql),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

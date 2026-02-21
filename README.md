@@ -1,54 +1,48 @@
 
-# CDKTF prebuilt bindings for newrelic/newrelic provider version 3.76.3
+# CDKTN prebuilt bindings for newrelic/newrelic provider version 3.80.2
 
-HashiCorp made the decision to stop publishing new versions of prebuilt [Terraform newrelic provider](https://registry.terraform.io/providers/newrelic/newrelic/3.76.3) bindings for [CDK for Terraform](https://cdk.tf) on December 10, 2025. As such, this repository has been archived and is no longer supported in any way by HashiCorp. Previously-published versions of this prebuilt provider will still continue to be available on their respective package managers (e.g. npm, PyPi, Maven, NuGet), but these will not be compatible with new releases of `cdktf` past `0.21.0` and are no longer eligible for commercial support.
+This repo builds and publishes the [Terraform newrelic provider](https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs) bindings for [CDK Terrain](https://cdktn.io).
 
-As a reminder, you can continue to use the `newrelic/newrelic` provider in your CDK for Terraform (CDKTF) projects, even with newer versions of CDKTF, but you will need to generate the bindings locally. The easiest way to do so is to use the [`provider add` command](https://developer.hashicorp.com/terraform/cdktf/cli-reference/commands#provider-add), optionally with the `--force-local` flag enabled:
-
-`cdktf provider add newrelic/newrelic --force-local`
-
-For more information and additional examples, check out our documentation on [generating provider bindings manually](https://cdk.tf/imports).
-
-## Deprecated Packages
+## Available Packages
 
 ### NPM
 
-The npm package is available at [https://www.npmjs.com/package/@cdktf/provider-newrelic](https://www.npmjs.com/package/@cdktf/provider-newrelic).
+The npm package is available at [https://www.npmjs.com/package/@cdktn/provider-newrelic](https://www.npmjs.com/package/@cdktn/provider-newrelic).
 
-`npm install @cdktf/provider-newrelic`
+`npm install @cdktn/provider-newrelic`
 
 ### PyPI
 
-The PyPI package is available at [https://pypi.org/project/cdktf-cdktf-provider-newrelic](https://pypi.org/project/cdktf-cdktf-provider-newrelic).
+The PyPI package is available at [https://pypi.org/project/cdktn-provider-newrelic](https://pypi.org/project/cdktn-provider-newrelic).
 
-`pipenv install cdktf-cdktf-provider-newrelic`
+`pipenv install cdktn-provider-newrelic`
 
 ### Nuget
 
-The Nuget package is available at [https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.Newrelic](https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.Newrelic).
+The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Providers.Newrelic](https://www.nuget.org/packages/Io.Cdktn.Providers.Newrelic).
 
-`dotnet add package HashiCorp.Cdktf.Providers.Newrelic`
+`dotnet add package Io.Cdktn.Providers.Newrelic`
 
 ### Maven
 
-The Maven package is available at [https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-newrelic](https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-newrelic).
+The Maven package is available at [https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-newrelic](https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-newrelic).
 
 ```
 <dependency>
-    <groupId>com.hashicorp</groupId>
-    <artifactId>cdktf-provider-newrelic</artifactId>
+    <groupId>io.cdktn</groupId>
+    <artifactId>cdktn-provider-newrelic</artifactId>
     <version>[REPLACE WITH DESIRED VERSION]</version>
 </dependency>
 ```
 
 ### Go
 
-The go package is generated into the [`github.com/cdktf/cdktf-provider-newrelic-go`](https://github.com/cdktf/cdktf-provider-newrelic-go) package.
+The go package is generated into the [`github.com/cdktn-io/cdktn-provider-newrelic-go`](https://github.com/cdktn-io/cdktn-provider-newrelic-go) package.
 
-`go get github.com/cdktf/cdktf-provider-newrelic-go/newrelic/<version>`
+`go get github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/<version>`
 
 Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
-within the [go.mod](https://github.com/cdktf/cdktf-provider-newrelic-go/blob/main/newrelic/go.mod#L1) file.
+within the [go.mod](https://github.com/cdktn-io/cdktn-provider-newrelic-go/blob/main/newrelic/go.mod#L1) file.
 
 ## Docs
 
@@ -60,4 +54,41 @@ Find auto-generated docs for this provider here:
 - [C#](./docs/API.csharp.md)
 - [Go](./docs/API.go.md)
 
-You can also visit a hosted version of the documentation on [constructs.dev](https://constructs.dev/packages/@cdktf/provider-newrelic).
+You can also visit a hosted version of the documentation on [constructs.dev](https://constructs.dev/packages/@cdktn/provider-newrelic).
+
+## Versioning
+
+This project is explicitly not tracking the Terraform newrelic provider version 1:1. In fact, it always tracks `latest` of `~> 3.7` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdktn.io/docs/concepts/providers#import-providers).
+
+These are the upstream dependencies:
+
+- [CDK Terrain](https://cdktn.io) - Last official release
+- [Terraform newrelic provider](https://registry.terraform.io/providers/newrelic/newrelic/3.80.2)
+- [Terraform Engine](https://terraform.io)
+
+If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
+
+## Features / Issues / Bugs
+
+Please report bugs and issues to the [CDK Terrain](https://cdktn.io) project:
+
+- [Create bug report](https://github.com/open-constructs/cdk-terrain/issues)
+- [Create feature request](https://github.com/open-constructs/cdk-terrain/issues)
+
+## Contributing
+
+### Projen
+
+This is mostly based on [Projen](https://projen.io), which takes care of generating the entire repository.
+
+### cdktn-provider-project based on Projen
+
+There's a custom [project builder](https://github.com/cdktn-io/cdktn-provider-project) which encapsulate the common settings for all `cdktn` prebuilt providers.
+
+### Provider Version
+
+The provider version can be adjusted in [./.projenrc.js](./.projenrc.js).
+
+### Repository Management
+
+The repository is managed by [CDKTN Repository Manager](https://github.com/cdktn-io/cdktn-repository-manager/).
