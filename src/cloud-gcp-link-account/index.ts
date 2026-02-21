@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_link_account
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_link_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudGcpLinkAccountConfig extends cdktf.TerraformMetaArguments {
+export interface CloudGcpLinkAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * accountID of newrelic account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,21 +28,21 @@ export interface CloudGcpLinkAccountConfig extends cdktf.TerraformMetaArguments 
   /**
   * name of the linked account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
   */
   readonly name: string;
   /**
   * project id of the Gcp account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
   */
   readonly projectId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account}
 */
-export class CloudGcpLinkAccount extends cdktf.TerraformResource {
+export class CloudGcpLinkAccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class CloudGcpLinkAccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudGcpLinkAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudGcpLinkAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudGcpLinkAccount to import
-  * @param importFromId The id of the existing CloudGcpLinkAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_link_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudGcpLinkAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_link_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudGcpLinkAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_cloud_gcp_link_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_cloud_gcp_link_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -68,7 +68,7 @@ export class CloudGcpLinkAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class CloudGcpLinkAccount extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_gcp_link_account',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -164,35 +164,35 @@ export class CloudGcpLinkAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project_id: cdktn.stringToTerraform(this._projectId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,58 +1,58 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/service_level_alert_helper
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/service_level_alert_helper
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataNewrelicServiceLevelAlertHelperConfig extends cdktf.TerraformMetaArguments {
+export interface DataNewrelicServiceLevelAlertHelperConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/service_level_alert_helper#alert_type DataNewrelicServiceLevelAlertHelper#alert_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/service_level_alert_helper#alert_type DataNewrelicServiceLevelAlertHelper#alert_type}
   */
   readonly alertType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/service_level_alert_helper#custom_evaluation_period DataNewrelicServiceLevelAlertHelper#custom_evaluation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/service_level_alert_helper#custom_evaluation_period DataNewrelicServiceLevelAlertHelper#custom_evaluation_period}
   */
   readonly customEvaluationPeriod?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/service_level_alert_helper#custom_tolerated_budget_consumption DataNewrelicServiceLevelAlertHelper#custom_tolerated_budget_consumption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/service_level_alert_helper#custom_tolerated_budget_consumption DataNewrelicServiceLevelAlertHelper#custom_tolerated_budget_consumption}
   */
   readonly customToleratedBudgetConsumption?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/service_level_alert_helper#id DataNewrelicServiceLevelAlertHelper#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/service_level_alert_helper#id DataNewrelicServiceLevelAlertHelper#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/service_level_alert_helper#is_bad_events DataNewrelicServiceLevelAlertHelper#is_bad_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/service_level_alert_helper#is_bad_events DataNewrelicServiceLevelAlertHelper#is_bad_events}
   */
-  readonly isBadEvents?: boolean | cdktf.IResolvable;
+  readonly isBadEvents?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/service_level_alert_helper#sli_guid DataNewrelicServiceLevelAlertHelper#sli_guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/service_level_alert_helper#sli_guid DataNewrelicServiceLevelAlertHelper#sli_guid}
   */
   readonly sliGuid: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/service_level_alert_helper#slo_period DataNewrelicServiceLevelAlertHelper#slo_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/service_level_alert_helper#slo_period DataNewrelicServiceLevelAlertHelper#slo_period}
   */
   readonly sloPeriod: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/service_level_alert_helper#slo_target DataNewrelicServiceLevelAlertHelper#slo_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/service_level_alert_helper#slo_target DataNewrelicServiceLevelAlertHelper#slo_target}
   */
   readonly sloTarget: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/service_level_alert_helper newrelic_service_level_alert_helper}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/service_level_alert_helper newrelic_service_level_alert_helper}
 */
-export class DataNewrelicServiceLevelAlertHelper extends cdktf.TerraformDataSource {
+export class DataNewrelicServiceLevelAlertHelper extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -63,14 +63,14 @@ export class DataNewrelicServiceLevelAlertHelper extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataNewrelicServiceLevelAlertHelper resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataNewrelicServiceLevelAlertHelper resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicServiceLevelAlertHelper to import
-  * @param importFromId The id of the existing DataNewrelicServiceLevelAlertHelper that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/service_level_alert_helper#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicServiceLevelAlertHelper that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/service_level_alert_helper#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicServiceLevelAlertHelper to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_service_level_alert_helper", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_service_level_alert_helper", importId: importFromId, provider });
       }
 
   // ===========
@@ -78,7 +78,7 @@ export class DataNewrelicServiceLevelAlertHelper extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/service_level_alert_helper newrelic_service_level_alert_helper} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/service_level_alert_helper newrelic_service_level_alert_helper} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,7 @@ export class DataNewrelicServiceLevelAlertHelper extends cdktf.TerraformDataSour
       terraformResourceType: 'newrelic_service_level_alert_helper',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -181,11 +181,11 @@ export class DataNewrelicServiceLevelAlertHelper extends cdktf.TerraformDataSour
   }
 
   // is_bad_events - computed: false, optional: true, required: false
-  private _isBadEvents?: boolean | cdktf.IResolvable; 
+  private _isBadEvents?: boolean | cdktn.IResolvable; 
   public get isBadEvents() {
     return this.getBooleanAttribute('is_bad_events');
   }
-  public set isBadEvents(value: boolean | cdktf.IResolvable) {
+  public set isBadEvents(value: boolean | cdktn.IResolvable) {
     this._isBadEvents = value;
   }
   public resetIsBadEvents() {
@@ -256,63 +256,63 @@ export class DataNewrelicServiceLevelAlertHelper extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alert_type: cdktf.stringToTerraform(this._alertType),
-      custom_evaluation_period: cdktf.numberToTerraform(this._customEvaluationPeriod),
-      custom_tolerated_budget_consumption: cdktf.numberToTerraform(this._customToleratedBudgetConsumption),
-      id: cdktf.stringToTerraform(this._id),
-      is_bad_events: cdktf.booleanToTerraform(this._isBadEvents),
-      sli_guid: cdktf.stringToTerraform(this._sliGuid),
-      slo_period: cdktf.numberToTerraform(this._sloPeriod),
-      slo_target: cdktf.numberToTerraform(this._sloTarget),
+      alert_type: cdktn.stringToTerraform(this._alertType),
+      custom_evaluation_period: cdktn.numberToTerraform(this._customEvaluationPeriod),
+      custom_tolerated_budget_consumption: cdktn.numberToTerraform(this._customToleratedBudgetConsumption),
+      id: cdktn.stringToTerraform(this._id),
+      is_bad_events: cdktn.booleanToTerraform(this._isBadEvents),
+      sli_guid: cdktn.stringToTerraform(this._sliGuid),
+      slo_period: cdktn.numberToTerraform(this._sloPeriod),
+      slo_target: cdktn.numberToTerraform(this._sloTarget),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alert_type: {
-        value: cdktf.stringToHclTerraform(this._alertType),
+        value: cdktn.stringToHclTerraform(this._alertType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_evaluation_period: {
-        value: cdktf.numberToHclTerraform(this._customEvaluationPeriod),
+        value: cdktn.numberToHclTerraform(this._customEvaluationPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       custom_tolerated_budget_consumption: {
-        value: cdktf.numberToHclTerraform(this._customToleratedBudgetConsumption),
+        value: cdktn.numberToHclTerraform(this._customToleratedBudgetConsumption),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_bad_events: {
-        value: cdktf.booleanToHclTerraform(this._isBadEvents),
+        value: cdktn.booleanToHclTerraform(this._isBadEvents),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       sli_guid: {
-        value: cdktf.stringToHclTerraform(this._sliGuid),
+        value: cdktn.stringToHclTerraform(this._sliGuid),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       slo_period: {
-        value: cdktf.numberToHclTerraform(this._sloPeriod),
+        value: cdktn.numberToHclTerraform(this._sloPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       slo_target: {
-        value: cdktf.numberToHclTerraform(this._sloTarget),
+        value: cdktn.numberToHclTerraform(this._sloTarget),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

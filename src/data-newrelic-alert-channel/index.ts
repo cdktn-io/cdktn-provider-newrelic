@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/alert_channel
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/alert_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataNewrelicAlertChannelConfig extends cdktf.TerraformMetaArguments {
+export interface DataNewrelicAlertChannelConfig extends cdktn.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to retrieve the alert channel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/alert_channel#account_id DataNewrelicAlertChannel#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/alert_channel#account_id DataNewrelicAlertChannel#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/alert_channel#id DataNewrelicAlertChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/alert_channel#id DataNewrelicAlertChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +28,7 @@ export interface DataNewrelicAlertChannelConfig extends cdktf.TerraformMetaArgum
   /**
   * The name of the alert channel in New Relic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/alert_channel#name DataNewrelicAlertChannel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/alert_channel#name DataNewrelicAlertChannel#name}
   */
   readonly name: string;
 }
@@ -36,8 +36,8 @@ export interface DataNewrelicAlertChannelConfigA {
 }
 
 export function dataNewrelicAlertChannelConfigAToTerraform(struct?: DataNewrelicAlertChannelConfigA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -46,8 +46,8 @@ export function dataNewrelicAlertChannelConfigAToTerraform(struct?: DataNewrelic
 
 
 export function dataNewrelicAlertChannelConfigAToHclTerraform(struct?: DataNewrelicAlertChannelConfigA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -55,7 +55,7 @@ export function dataNewrelicAlertChannelConfigAToHclTerraform(struct?: DataNewre
   return attrs;
 }
 
-export class DataNewrelicAlertChannelConfigAOutputReference extends cdktf.ComplexObject {
+export class DataNewrelicAlertChannelConfigAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -64,7 +64,7 @@ export class DataNewrelicAlertChannelConfigAOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -114,7 +114,7 @@ export class DataNewrelicAlertChannelConfigAOutputReference extends cdktf.Comple
   }
 
   // headers - computed: true, optional: false, required: false
-  private _headers = new cdktf.StringMap(this, "headers");
+  private _headers = new cdktn.StringMap(this, "headers");
   public get headers() {
     return this._headers;
   }
@@ -130,7 +130,7 @@ export class DataNewrelicAlertChannelConfigAOutputReference extends cdktf.Comple
   }
 
   // payload - computed: true, optional: false, required: false
-  private _payload = new cdktf.StringMap(this, "payload");
+  private _payload = new cdktn.StringMap(this, "payload");
   public get payload() {
     return this._payload;
   }
@@ -186,14 +186,14 @@ export class DataNewrelicAlertChannelConfigAOutputReference extends cdktf.Comple
   }
 }
 
-export class DataNewrelicAlertChannelConfigAList extends cdktf.ComplexList {
+export class DataNewrelicAlertChannelConfigAList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -206,9 +206,9 @@ export class DataNewrelicAlertChannelConfigAList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/alert_channel newrelic_alert_channel}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/alert_channel newrelic_alert_channel}
 */
-export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
+export class DataNewrelicAlertChannel extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -219,14 +219,14 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataNewrelicAlertChannel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataNewrelicAlertChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicAlertChannel to import
-  * @param importFromId The id of the existing DataNewrelicAlertChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/alert_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicAlertChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/alert_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicAlertChannel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_alert_channel", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_alert_channel", importId: importFromId, provider });
       }
 
   // ===========
@@ -234,7 +234,7 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/alert_channel newrelic_alert_channel} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/alert_channel newrelic_alert_channel} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -245,7 +245,7 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_alert_channel',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -332,28 +332,28 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

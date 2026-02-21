@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AlertMutingRuleConfig extends cdktf.TerraformMetaArguments {
+export interface AlertMutingRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account id of the MutingRule..
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#account_id AlertMutingRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#account_id AlertMutingRule#account_id}
   */
   readonly accountId?: number;
   /**
   * The action when the muting rule window is ended or disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#action_on_muting_rule_window_ended AlertMutingRule#action_on_muting_rule_window_ended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#action_on_muting_rule_window_ended AlertMutingRule#action_on_muting_rule_window_ended}
   */
   readonly actionOnMutingRuleWindowEnded?: string;
   /**
   * The description of the MutingRule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#description AlertMutingRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#description AlertMutingRule#description}
   */
   readonly description?: string;
   /**
   * Whether the MutingRule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#enabled AlertMutingRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#enabled AlertMutingRule#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#id AlertMutingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#id AlertMutingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,19 +46,19 @@ export interface AlertMutingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the MutingRule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#name AlertMutingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#name AlertMutingRule#name}
   */
   readonly name: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#condition AlertMutingRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#condition AlertMutingRule#condition}
   */
   readonly condition: AlertMutingRuleCondition;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#schedule AlertMutingRule#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#schedule AlertMutingRule#schedule}
   */
   readonly schedule?: AlertMutingRuleSchedule;
 }
@@ -66,56 +66,56 @@ export interface AlertMutingRuleConditionConditions {
   /**
   * The attribute on an incident.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#attribute AlertMutingRule#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#attribute AlertMutingRule#attribute}
   */
   readonly attribute: string;
   /**
   * The operator used to compare the attribute's value with the supplied value(s).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
   */
   readonly operator: string;
   /**
   * The value(s) to compare against the attribute's value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#values AlertMutingRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#values AlertMutingRule#values}
   */
   readonly values: string[];
 }
 
-export function alertMutingRuleConditionConditionsToTerraform(struct?: AlertMutingRuleConditionConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertMutingRuleConditionConditionsToTerraform(struct?: AlertMutingRuleConditionConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attribute: cdktf.stringToTerraform(struct!.attribute),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    attribute: cdktn.stringToTerraform(struct!.attribute),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function alertMutingRuleConditionConditionsToHclTerraform(struct?: AlertMutingRuleConditionConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertMutingRuleConditionConditionsToHclTerraform(struct?: AlertMutingRuleConditionConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attribute: {
-      value: cdktf.stringToHclTerraform(struct!.attribute),
+      value: cdktn.stringToHclTerraform(struct!.attribute),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -126,9 +126,9 @@ export function alertMutingRuleConditionConditionsToHclTerraform(struct?: AlertM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertMutingRuleConditionConditionsOutputReference extends cdktf.ComplexObject {
+export class AlertMutingRuleConditionConditionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -136,11 +136,11 @@ export class AlertMutingRuleConditionConditionsOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlertMutingRuleConditionConditions | cdktf.IResolvable | undefined {
+  public get internalValue(): AlertMutingRuleConditionConditions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -161,7 +161,7 @@ export class AlertMutingRuleConditionConditionsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertMutingRuleConditionConditions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlertMutingRuleConditionConditions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class AlertMutingRuleConditionConditionsOutputReference extends cdktf.Com
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -222,15 +222,15 @@ export class AlertMutingRuleConditionConditionsOutputReference extends cdktf.Com
   }
 }
 
-export class AlertMutingRuleConditionConditionsList extends cdktf.ComplexList {
-  public internalValue? : AlertMutingRuleConditionConditions[] | cdktf.IResolvable
+export class AlertMutingRuleConditionConditionsList extends cdktn.ComplexList {
+  public internalValue? : AlertMutingRuleConditionConditions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -245,43 +245,43 @@ export interface AlertMutingRuleCondition {
   /**
   * The operator used to combine all the MutingRuleConditions within the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
   */
   readonly operator: string;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#conditions AlertMutingRule#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#conditions AlertMutingRule#conditions}
   */
-  readonly conditions: AlertMutingRuleConditionConditions[] | cdktf.IResolvable;
+  readonly conditions: AlertMutingRuleConditionConditions[] | cdktn.IResolvable;
 }
 
 export function alertMutingRuleConditionToTerraform(struct?: AlertMutingRuleConditionOutputReference | AlertMutingRuleCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    conditions: cdktf.listMapper(alertMutingRuleConditionConditionsToTerraform, true)(struct!.conditions),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    conditions: cdktn.listMapper(alertMutingRuleConditionConditionsToTerraform, true)(struct!.conditions),
   }
 }
 
 
 export function alertMutingRuleConditionToHclTerraform(struct?: AlertMutingRuleConditionOutputReference | AlertMutingRuleCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     conditions: {
-      value: cdktf.listMapperHcl(alertMutingRuleConditionConditionsToHclTerraform, true)(struct!.conditions),
+      value: cdktn.listMapperHcl(alertMutingRuleConditionConditionsToHclTerraform, true)(struct!.conditions),
       isBlock: true,
       type: "list",
       storageClassType: "AlertMutingRuleConditionConditionsList",
@@ -292,14 +292,14 @@ export function alertMutingRuleConditionToHclTerraform(struct?: AlertMutingRuleC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertMutingRuleConditionOutputReference extends cdktf.ComplexObject {
+export class AlertMutingRuleConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -348,7 +348,7 @@ export class AlertMutingRuleConditionOutputReference extends cdktf.ComplexObject
   public get conditions() {
     return this._conditions;
   }
-  public putConditions(value: AlertMutingRuleConditionConditions[] | cdktf.IResolvable) {
+  public putConditions(value: AlertMutingRuleConditionConditions[] | cdktn.IResolvable) {
     this._conditions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -360,108 +360,108 @@ export interface AlertMutingRuleSchedule {
   /**
   * The datetime stamp when the MutingRule schedule should stop repeating.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#end_repeat AlertMutingRule#end_repeat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#end_repeat AlertMutingRule#end_repeat}
   */
   readonly endRepeat?: string;
   /**
   * The datetime stamp representing when the MutingRule should end.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#end_time AlertMutingRule#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#end_time AlertMutingRule#end_time}
   */
   readonly endTime?: string;
   /**
   * The frequency the MutingRule schedule repeats. One of [DAILY, WEEKLY, MONTHLY]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#repeat AlertMutingRule#repeat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#repeat AlertMutingRule#repeat}
   */
   readonly repeat?: string;
   /**
   * The number of times the MutingRule schedule should repeat.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#repeat_count AlertMutingRule#repeat_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#repeat_count AlertMutingRule#repeat_count}
   */
   readonly repeatCount?: number;
   /**
   * The datetime stamp representing when the MutingRule should start.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#start_time AlertMutingRule#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#start_time AlertMutingRule#start_time}
   */
   readonly startTime?: string;
   /**
   * The time zone that applies to the MutingRule schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#time_zone AlertMutingRule#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#time_zone AlertMutingRule#time_zone}
   */
   readonly timeZone: string;
   /**
   * The day(s) of the week that a MutingRule should repeat when the repeat field is set to WEEKLY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#weekly_repeat_days AlertMutingRule#weekly_repeat_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#weekly_repeat_days AlertMutingRule#weekly_repeat_days}
   */
   readonly weeklyRepeatDays?: string[];
 }
 
 export function alertMutingRuleScheduleToTerraform(struct?: AlertMutingRuleScheduleOutputReference | AlertMutingRuleSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_repeat: cdktf.stringToTerraform(struct!.endRepeat),
-    end_time: cdktf.stringToTerraform(struct!.endTime),
-    repeat: cdktf.stringToTerraform(struct!.repeat),
-    repeat_count: cdktf.numberToTerraform(struct!.repeatCount),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
-    time_zone: cdktf.stringToTerraform(struct!.timeZone),
-    weekly_repeat_days: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.weeklyRepeatDays),
+    end_repeat: cdktn.stringToTerraform(struct!.endRepeat),
+    end_time: cdktn.stringToTerraform(struct!.endTime),
+    repeat: cdktn.stringToTerraform(struct!.repeat),
+    repeat_count: cdktn.numberToTerraform(struct!.repeatCount),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
+    time_zone: cdktn.stringToTerraform(struct!.timeZone),
+    weekly_repeat_days: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.weeklyRepeatDays),
   }
 }
 
 
 export function alertMutingRuleScheduleToHclTerraform(struct?: AlertMutingRuleScheduleOutputReference | AlertMutingRuleSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_repeat: {
-      value: cdktf.stringToHclTerraform(struct!.endRepeat),
+      value: cdktn.stringToHclTerraform(struct!.endRepeat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     end_time: {
-      value: cdktf.stringToHclTerraform(struct!.endTime),
+      value: cdktn.stringToHclTerraform(struct!.endTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repeat: {
-      value: cdktf.stringToHclTerraform(struct!.repeat),
+      value: cdktn.stringToHclTerraform(struct!.repeat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repeat_count: {
-      value: cdktf.numberToHclTerraform(struct!.repeatCount),
+      value: cdktn.numberToHclTerraform(struct!.repeatCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_zone: {
-      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      value: cdktn.stringToHclTerraform(struct!.timeZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weekly_repeat_days: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.weeklyRepeatDays),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.weeklyRepeatDays),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -472,14 +472,14 @@ export function alertMutingRuleScheduleToHclTerraform(struct?: AlertMutingRuleSc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject {
+export class AlertMutingRuleScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -636,7 +636,7 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
   // weekly_repeat_days - computed: false, optional: true, required: false
   private _weeklyRepeatDays?: string[]; 
   public get weeklyRepeatDays() {
-    return cdktf.Fn.tolist(this.getListAttribute('weekly_repeat_days'));
+    return cdktn.Fn.tolist(this.getListAttribute('weekly_repeat_days'));
   }
   public set weeklyRepeatDays(value: string[]) {
     this._weeklyRepeatDays = value;
@@ -651,9 +651,9 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule newrelic_alert_muting_rule}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule newrelic_alert_muting_rule}
 */
-export class AlertMutingRule extends cdktf.TerraformResource {
+export class AlertMutingRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -664,14 +664,14 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AlertMutingRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AlertMutingRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlertMutingRule to import
-  * @param importFromId The id of the existing AlertMutingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AlertMutingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlertMutingRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_alert_muting_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_alert_muting_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -679,7 +679,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -690,7 +690,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_alert_muting_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -764,11 +764,11 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -840,12 +840,12 @@ export class AlertMutingRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      action_on_muting_rule_window_ended: cdktf.stringToTerraform(this._actionOnMutingRuleWindowEnded),
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      action_on_muting_rule_window_ended: cdktn.stringToTerraform(this._actionOnMutingRuleWindowEnded),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
       condition: alertMutingRuleConditionToTerraform(this._condition.internalValue),
       schedule: alertMutingRuleScheduleToTerraform(this._schedule.internalValue),
     };
@@ -854,37 +854,37 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       action_on_muting_rule_window_ended: {
-        value: cdktf.stringToHclTerraform(this._actionOnMutingRuleWindowEnded),
+        value: cdktn.stringToHclTerraform(this._actionOnMutingRuleWindowEnded),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/user
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface UserConfig extends cdktf.TerraformMetaArguments {
+export interface UserConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the authentication domain the user will belong to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/user#authentication_domain_id User#authentication_domain_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/user#authentication_domain_id User#authentication_domain_id}
   */
   readonly authenticationDomainId: string;
   /**
   * The email ID of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/user#email_id User#email_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/user#email_id User#email_id}
   */
   readonly emailId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/user#id User#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/user#id User#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,21 +34,21 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/user#name User#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/user#name User#name}
   */
   readonly name: string;
   /**
   * The type of the user to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/user#user_type User#user_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/user#user_type User#user_type}
   */
   readonly userType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/user newrelic_user}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/user newrelic_user}
 */
-export class User extends cdktf.TerraformResource {
+export class User extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class User extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a User resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a User resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the User to import
-  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the User to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -74,7 +74,7 @@ export class User extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/user newrelic_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/user newrelic_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_user',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -184,42 +184,42 @@ export class User extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authentication_domain_id: cdktf.stringToTerraform(this._authenticationDomainId),
-      email_id: cdktf.stringToTerraform(this._emailId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      user_type: cdktf.stringToTerraform(this._userType),
+      authentication_domain_id: cdktn.stringToTerraform(this._authenticationDomainId),
+      email_id: cdktn.stringToTerraform(this._emailId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      user_type: cdktn.stringToTerraform(this._userType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authentication_domain_id: {
-        value: cdktf.stringToHclTerraform(this._authenticationDomainId),
+        value: cdktn.stringToHclTerraform(this._authenticationDomainId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email_id: {
-        value: cdktf.stringToHclTerraform(this._emailId),
+        value: cdktn.stringToHclTerraform(this._emailId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_type: {
-        value: cdktf.stringToHclTerraform(this._userType),
+        value: cdktn.stringToHclTerraform(this._userType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

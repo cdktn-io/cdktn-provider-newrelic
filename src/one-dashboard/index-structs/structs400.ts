@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 import { OneDashboardPageWidgetLogTableNullValuesSeriesOverrides,
 oneDashboardPageWidgetLogTableNullValuesSeriesOverridesToTerraform,
 oneDashboardPageWidgetLogTableNullValuesSeriesOverridesToHclTerraform,
@@ -62,43 +62,43 @@ oneDashboardPageWidgetLineToHclTerraform,
 OneDashboardPageWidgetLineList } from './structs0'
 export interface OneDashboardPageWidgetLogTableNullValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#null_value OneDashboard#null_value}
   */
   readonly nullValue?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
-  readonly seriesOverrides?: OneDashboardPageWidgetLogTableNullValuesSeriesOverrides[] | cdktf.IResolvable;
+  readonly seriesOverrides?: OneDashboardPageWidgetLogTableNullValuesSeriesOverrides[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetLogTableNullValuesToTerraform(struct?: OneDashboardPageWidgetLogTableNullValues | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetLogTableNullValuesToTerraform(struct?: OneDashboardPageWidgetLogTableNullValues | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    null_value: cdktf.stringToTerraform(struct!.nullValue),
-    series_overrides: cdktf.listMapper(oneDashboardPageWidgetLogTableNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
+    null_value: cdktn.stringToTerraform(struct!.nullValue),
+    series_overrides: cdktn.listMapper(oneDashboardPageWidgetLogTableNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
 }
 
 
-export function oneDashboardPageWidgetLogTableNullValuesToHclTerraform(struct?: OneDashboardPageWidgetLogTableNullValues | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetLogTableNullValuesToHclTerraform(struct?: OneDashboardPageWidgetLogTableNullValues | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     null_value: {
-      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      value: cdktn.stringToHclTerraform(struct!.nullValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_overrides: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetLogTableNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetLogTableNullValuesSeriesOverridesList",
@@ -109,9 +109,9 @@ export function oneDashboardPageWidgetLogTableNullValuesToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetLogTableNullValuesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetLogTableNullValuesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -119,11 +119,11 @@ export class OneDashboardPageWidgetLogTableNullValuesOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetLogTableNullValues | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetLogTableNullValues | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -140,14 +140,14 @@ export class OneDashboardPageWidgetLogTableNullValuesOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetLogTableNullValues | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetLogTableNullValues | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._nullValue = undefined;
       this._seriesOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -180,7 +180,7 @@ export class OneDashboardPageWidgetLogTableNullValuesOutputReference extends cdk
   public get seriesOverrides() {
     return this._seriesOverrides;
   }
-  public putSeriesOverrides(value: OneDashboardPageWidgetLogTableNullValuesSeriesOverrides[] | cdktf.IResolvable) {
+  public putSeriesOverrides(value: OneDashboardPageWidgetLogTableNullValuesSeriesOverrides[] | cdktn.IResolvable) {
     this._seriesOverrides.internalValue = value;
   }
   public resetSeriesOverrides() {
@@ -192,15 +192,15 @@ export class OneDashboardPageWidgetLogTableNullValuesOutputReference extends cdk
   }
 }
 
-export class OneDashboardPageWidgetLogTableNullValuesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetLogTableNullValues[] | cdktf.IResolvable
+export class OneDashboardPageWidgetLogTableNullValuesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetLogTableNullValues[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -215,43 +215,43 @@ export interface OneDashboardPageWidgetLogTableUnitsSeriesOverrides {
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
   /**
   * Unit name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#unit OneDashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#unit OneDashboard#unit}
   */
   readonly unit?: string;
 }
 
-export function oneDashboardPageWidgetLogTableUnitsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetLogTableUnitsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetLogTableUnitsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetLogTableUnitsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    series_name: cdktf.stringToTerraform(struct!.seriesName),
-    unit: cdktf.stringToTerraform(struct!.unit),
+    series_name: cdktn.stringToTerraform(struct!.seriesName),
+    unit: cdktn.stringToTerraform(struct!.unit),
   }
 }
 
 
-export function oneDashboardPageWidgetLogTableUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetLogTableUnitsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetLogTableUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetLogTableUnitsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     series_name: {
-      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      value: cdktn.stringToHclTerraform(struct!.seriesName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -262,9 +262,9 @@ export function oneDashboardPageWidgetLogTableUnitsSeriesOverridesToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -272,11 +272,11 @@ export class OneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetLogTableUnitsSeriesOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetLogTableUnitsSeriesOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -293,14 +293,14 @@ export class OneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetLogTableUnitsSeriesOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetLogTableUnitsSeriesOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._seriesName = undefined;
       this._unit = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -345,15 +345,15 @@ export class OneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference e
   }
 }
 
-export class OneDashboardPageWidgetLogTableUnitsSeriesOverridesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetLogTableUnitsSeriesOverrides[] | cdktf.IResolvable
+export class OneDashboardPageWidgetLogTableUnitsSeriesOverridesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetLogTableUnitsSeriesOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -366,43 +366,43 @@ export class OneDashboardPageWidgetLogTableUnitsSeriesOverridesList extends cdkt
 }
 export interface OneDashboardPageWidgetLogTableUnits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#unit OneDashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#unit OneDashboard#unit}
   */
   readonly unit?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
-  readonly seriesOverrides?: OneDashboardPageWidgetLogTableUnitsSeriesOverrides[] | cdktf.IResolvable;
+  readonly seriesOverrides?: OneDashboardPageWidgetLogTableUnitsSeriesOverrides[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetLogTableUnitsToTerraform(struct?: OneDashboardPageWidgetLogTableUnits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetLogTableUnitsToTerraform(struct?: OneDashboardPageWidgetLogTableUnits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit: cdktf.stringToTerraform(struct!.unit),
-    series_overrides: cdktf.listMapper(oneDashboardPageWidgetLogTableUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    series_overrides: cdktn.listMapper(oneDashboardPageWidgetLogTableUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
 }
 
 
-export function oneDashboardPageWidgetLogTableUnitsToHclTerraform(struct?: OneDashboardPageWidgetLogTableUnits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetLogTableUnitsToHclTerraform(struct?: OneDashboardPageWidgetLogTableUnits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_overrides: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetLogTableUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetLogTableUnitsSeriesOverridesList",
@@ -413,9 +413,9 @@ export function oneDashboardPageWidgetLogTableUnitsToHclTerraform(struct?: OneDa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetLogTableUnitsOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetLogTableUnitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -423,11 +423,11 @@ export class OneDashboardPageWidgetLogTableUnitsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetLogTableUnits | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetLogTableUnits | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -444,14 +444,14 @@ export class OneDashboardPageWidgetLogTableUnitsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetLogTableUnits | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetLogTableUnits | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._unit = undefined;
       this._seriesOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -484,7 +484,7 @@ export class OneDashboardPageWidgetLogTableUnitsOutputReference extends cdktf.Co
   public get seriesOverrides() {
     return this._seriesOverrides;
   }
-  public putSeriesOverrides(value: OneDashboardPageWidgetLogTableUnitsSeriesOverrides[] | cdktf.IResolvable) {
+  public putSeriesOverrides(value: OneDashboardPageWidgetLogTableUnitsSeriesOverrides[] | cdktn.IResolvable) {
     this._seriesOverrides.internalValue = value;
   }
   public resetSeriesOverrides() {
@@ -496,15 +496,15 @@ export class OneDashboardPageWidgetLogTableUnitsOutputReference extends cdktf.Co
   }
 }
 
-export class OneDashboardPageWidgetLogTableUnitsList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetLogTableUnits[] | cdktf.IResolvable
+export class OneDashboardPageWidgetLogTableUnitsList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetLogTableUnits[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -517,196 +517,196 @@ export class OneDashboardPageWidgetLogTableUnitsList extends cdktf.ComplexList {
 }
 export interface OneDashboardPageWidgetLogTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#column OneDashboard#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#column OneDashboard#column}
   */
   readonly column: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}
   */
-  readonly facetShowOtherSeries?: boolean | cdktf.IResolvable;
+  readonly facetShowOtherSeries?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#height OneDashboard#height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#height OneDashboard#height}
   */
   readonly height?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
   */
-  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  readonly ignoreTimeRange?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}
   */
-  readonly legendEnabled?: boolean | cdktf.IResolvable;
+  readonly legendEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}
   */
   readonly refreshRate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#row OneDashboard#row}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
   /**
   * A title for the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#title OneDashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#title OneDashboard#title}
   */
   readonly title: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#width OneDashboard#width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#width OneDashboard#width}
   */
   readonly width?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}
   */
   readonly yAxisLeftMax?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}
   */
   readonly yAxisLeftMin?: number;
   /**
   * colors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#colors OneDashboard#colors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#colors OneDashboard#colors}
   */
-  readonly colors?: OneDashboardPageWidgetLogTableColors[] | cdktf.IResolvable;
+  readonly colors?: OneDashboardPageWidgetLogTableColors[] | cdktn.IResolvable;
   /**
   * data_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#data_format OneDashboard#data_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#data_format OneDashboard#data_format}
   */
-  readonly dataFormat?: OneDashboardPageWidgetLogTableDataFormat[] | cdktf.IResolvable;
+  readonly dataFormat?: OneDashboardPageWidgetLogTableDataFormat[] | cdktn.IResolvable;
   /**
   * initial_sorting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
   */
   readonly initialSorting?: OneDashboardPageWidgetLogTableInitialSorting;
   /**
   * nrql_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetLogTableNrqlQuery[] | cdktf.IResolvable;
+  readonly nrqlQuery: OneDashboardPageWidgetLogTableNrqlQuery[] | cdktn.IResolvable;
   /**
   * null_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#null_values OneDashboard#null_values}
   */
-  readonly nullValues?: OneDashboardPageWidgetLogTableNullValues[] | cdktf.IResolvable;
+  readonly nullValues?: OneDashboardPageWidgetLogTableNullValues[] | cdktn.IResolvable;
   /**
   * units block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#units OneDashboard#units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#units OneDashboard#units}
   */
-  readonly units?: OneDashboardPageWidgetLogTableUnits[] | cdktf.IResolvable;
+  readonly units?: OneDashboardPageWidgetLogTableUnits[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetLogTableToTerraform(struct?: OneDashboardPageWidgetLogTable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetLogTableToTerraform(struct?: OneDashboardPageWidgetLogTable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column: cdktf.numberToTerraform(struct!.column),
-    facet_show_other_series: cdktf.booleanToTerraform(struct!.facetShowOtherSeries),
-    height: cdktf.numberToTerraform(struct!.height),
-    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
-    legend_enabled: cdktf.booleanToTerraform(struct!.legendEnabled),
-    refresh_rate: cdktf.stringToTerraform(struct!.refreshRate),
-    row: cdktf.numberToTerraform(struct!.row),
-    title: cdktf.stringToTerraform(struct!.title),
-    width: cdktf.numberToTerraform(struct!.width),
-    y_axis_left_max: cdktf.numberToTerraform(struct!.yAxisLeftMax),
-    y_axis_left_min: cdktf.numberToTerraform(struct!.yAxisLeftMin),
-    colors: cdktf.listMapper(oneDashboardPageWidgetLogTableColorsToTerraform, true)(struct!.colors),
-    data_format: cdktf.listMapper(oneDashboardPageWidgetLogTableDataFormatToTerraform, true)(struct!.dataFormat),
+    column: cdktn.numberToTerraform(struct!.column),
+    facet_show_other_series: cdktn.booleanToTerraform(struct!.facetShowOtherSeries),
+    height: cdktn.numberToTerraform(struct!.height),
+    ignore_time_range: cdktn.booleanToTerraform(struct!.ignoreTimeRange),
+    legend_enabled: cdktn.booleanToTerraform(struct!.legendEnabled),
+    refresh_rate: cdktn.stringToTerraform(struct!.refreshRate),
+    row: cdktn.numberToTerraform(struct!.row),
+    title: cdktn.stringToTerraform(struct!.title),
+    width: cdktn.numberToTerraform(struct!.width),
+    y_axis_left_max: cdktn.numberToTerraform(struct!.yAxisLeftMax),
+    y_axis_left_min: cdktn.numberToTerraform(struct!.yAxisLeftMin),
+    colors: cdktn.listMapper(oneDashboardPageWidgetLogTableColorsToTerraform, true)(struct!.colors),
+    data_format: cdktn.listMapper(oneDashboardPageWidgetLogTableDataFormatToTerraform, true)(struct!.dataFormat),
     initial_sorting: oneDashboardPageWidgetLogTableInitialSortingToTerraform(struct!.initialSorting),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetLogTableNrqlQueryToTerraform, true)(struct!.nrqlQuery),
-    null_values: cdktf.listMapper(oneDashboardPageWidgetLogTableNullValuesToTerraform, true)(struct!.nullValues),
-    units: cdktf.listMapper(oneDashboardPageWidgetLogTableUnitsToTerraform, true)(struct!.units),
+    nrql_query: cdktn.listMapper(oneDashboardPageWidgetLogTableNrqlQueryToTerraform, true)(struct!.nrqlQuery),
+    null_values: cdktn.listMapper(oneDashboardPageWidgetLogTableNullValuesToTerraform, true)(struct!.nullValues),
+    units: cdktn.listMapper(oneDashboardPageWidgetLogTableUnitsToTerraform, true)(struct!.units),
   }
 }
 
 
-export function oneDashboardPageWidgetLogTableToHclTerraform(struct?: OneDashboardPageWidgetLogTable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetLogTableToHclTerraform(struct?: OneDashboardPageWidgetLogTable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column: {
-      value: cdktf.numberToHclTerraform(struct!.column),
+      value: cdktn.numberToHclTerraform(struct!.column),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     facet_show_other_series: {
-      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      value: cdktn.booleanToHclTerraform(struct!.facetShowOtherSeries),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     height: {
-      value: cdktf.numberToHclTerraform(struct!.height),
+      value: cdktn.numberToHclTerraform(struct!.height),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ignore_time_range: {
-      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      value: cdktn.booleanToHclTerraform(struct!.ignoreTimeRange),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     legend_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.legendEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     refresh_rate: {
-      value: cdktf.stringToHclTerraform(struct!.refreshRate),
+      value: cdktn.stringToHclTerraform(struct!.refreshRate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     row: {
-      value: cdktf.numberToHclTerraform(struct!.row),
+      value: cdktn.numberToHclTerraform(struct!.row),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     width: {
-      value: cdktf.numberToHclTerraform(struct!.width),
+      value: cdktn.numberToHclTerraform(struct!.width),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     y_axis_left_max: {
-      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      value: cdktn.numberToHclTerraform(struct!.yAxisLeftMax),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     y_axis_left_min: {
-      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      value: cdktn.numberToHclTerraform(struct!.yAxisLeftMin),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     colors: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableColorsToHclTerraform, true)(struct!.colors),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetLogTableColorsToHclTerraform, true)(struct!.colors),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetLogTableColorsList",
     },
     data_format: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableDataFormatToHclTerraform, true)(struct!.dataFormat),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetLogTableDataFormatToHclTerraform, true)(struct!.dataFormat),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetLogTableDataFormatList",
@@ -718,19 +718,19 @@ export function oneDashboardPageWidgetLogTableToHclTerraform(struct?: OneDashboa
       storageClassType: "OneDashboardPageWidgetLogTableInitialSortingList",
     },
     nrql_query: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetLogTableNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetLogTableNrqlQueryList",
     },
     null_values: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableNullValuesToHclTerraform, true)(struct!.nullValues),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetLogTableNullValuesToHclTerraform, true)(struct!.nullValues),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetLogTableNullValuesList",
     },
     units: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableUnitsToHclTerraform, true)(struct!.units),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetLogTableUnitsToHclTerraform, true)(struct!.units),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetLogTableUnitsList",
@@ -741,9 +741,9 @@ export function oneDashboardPageWidgetLogTableToHclTerraform(struct?: OneDashboa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetLogTableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -751,11 +751,11 @@ export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetLogTable | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetLogTable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -832,7 +832,7 @@ export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetLogTable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetLogTable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -854,7 +854,7 @@ export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.Complex
       this._nullValues.internalValue = undefined;
       this._units.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -895,11 +895,11 @@ export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.Complex
   }
 
   // facet_show_other_series - computed: false, optional: true, required: false
-  private _facetShowOtherSeries?: boolean | cdktf.IResolvable; 
+  private _facetShowOtherSeries?: boolean | cdktn.IResolvable; 
   public get facetShowOtherSeries() {
     return this.getBooleanAttribute('facet_show_other_series');
   }
-  public set facetShowOtherSeries(value: boolean | cdktf.IResolvable) {
+  public set facetShowOtherSeries(value: boolean | cdktn.IResolvable) {
     this._facetShowOtherSeries = value;
   }
   public resetFacetShowOtherSeries() {
@@ -932,11 +932,11 @@ export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.Complex
   }
 
   // ignore_time_range - computed: false, optional: true, required: false
-  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  private _ignoreTimeRange?: boolean | cdktn.IResolvable; 
   public get ignoreTimeRange() {
     return this.getBooleanAttribute('ignore_time_range');
   }
-  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+  public set ignoreTimeRange(value: boolean | cdktn.IResolvable) {
     this._ignoreTimeRange = value;
   }
   public resetIgnoreTimeRange() {
@@ -948,11 +948,11 @@ export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.Complex
   }
 
   // legend_enabled - computed: false, optional: true, required: false
-  private _legendEnabled?: boolean | cdktf.IResolvable; 
+  private _legendEnabled?: boolean | cdktn.IResolvable; 
   public get legendEnabled() {
     return this.getBooleanAttribute('legend_enabled');
   }
-  public set legendEnabled(value: boolean | cdktf.IResolvable) {
+  public set legendEnabled(value: boolean | cdktn.IResolvable) {
     this._legendEnabled = value;
   }
   public resetLegendEnabled() {
@@ -1058,7 +1058,7 @@ export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.Complex
   public get colors() {
     return this._colors;
   }
-  public putColors(value: OneDashboardPageWidgetLogTableColors[] | cdktf.IResolvable) {
+  public putColors(value: OneDashboardPageWidgetLogTableColors[] | cdktn.IResolvable) {
     this._colors.internalValue = value;
   }
   public resetColors() {
@@ -1074,7 +1074,7 @@ export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.Complex
   public get dataFormat() {
     return this._dataFormat;
   }
-  public putDataFormat(value: OneDashboardPageWidgetLogTableDataFormat[] | cdktf.IResolvable) {
+  public putDataFormat(value: OneDashboardPageWidgetLogTableDataFormat[] | cdktn.IResolvable) {
     this._dataFormat.internalValue = value;
   }
   public resetDataFormat() {
@@ -1106,7 +1106,7 @@ export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.Complex
   public get nrqlQuery() {
     return this._nrqlQuery;
   }
-  public putNrqlQuery(value: OneDashboardPageWidgetLogTableNrqlQuery[] | cdktf.IResolvable) {
+  public putNrqlQuery(value: OneDashboardPageWidgetLogTableNrqlQuery[] | cdktn.IResolvable) {
     this._nrqlQuery.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1119,7 +1119,7 @@ export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.Complex
   public get nullValues() {
     return this._nullValues;
   }
-  public putNullValues(value: OneDashboardPageWidgetLogTableNullValues[] | cdktf.IResolvable) {
+  public putNullValues(value: OneDashboardPageWidgetLogTableNullValues[] | cdktn.IResolvable) {
     this._nullValues.internalValue = value;
   }
   public resetNullValues() {
@@ -1135,7 +1135,7 @@ export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.Complex
   public get units() {
     return this._units;
   }
-  public putUnits(value: OneDashboardPageWidgetLogTableUnits[] | cdktf.IResolvable) {
+  public putUnits(value: OneDashboardPageWidgetLogTableUnits[] | cdktn.IResolvable) {
     this._units.internalValue = value;
   }
   public resetUnits() {
@@ -1147,15 +1147,15 @@ export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.Complex
   }
 }
 
-export class OneDashboardPageWidgetLogTableList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetLogTable[] | cdktf.IResolvable
+export class OneDashboardPageWidgetLogTableList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetLogTable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1170,43 +1170,43 @@ export interface OneDashboardPageWidgetMarkdownColorsSeriesOverrides {
   /**
   * Color code
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#color OneDashboard#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#color OneDashboard#color}
   */
   readonly color?: string;
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
 }
 
-export function oneDashboardPageWidgetMarkdownColorsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetMarkdownColorsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownColorsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetMarkdownColorsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    color: cdktf.stringToTerraform(struct!.color),
-    series_name: cdktf.stringToTerraform(struct!.seriesName),
+    color: cdktn.stringToTerraform(struct!.color),
+    series_name: cdktn.stringToTerraform(struct!.seriesName),
   }
 }
 
 
-export function oneDashboardPageWidgetMarkdownColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetMarkdownColorsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetMarkdownColorsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     color: {
-      value: cdktf.stringToHclTerraform(struct!.color),
+      value: cdktn.stringToHclTerraform(struct!.color),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_name: {
-      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      value: cdktn.stringToHclTerraform(struct!.seriesName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1217,9 +1217,9 @@ export function oneDashboardPageWidgetMarkdownColorsSeriesOverridesToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1227,11 +1227,11 @@ export class OneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetMarkdownColorsSeriesOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetMarkdownColorsSeriesOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1248,14 +1248,14 @@ export class OneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetMarkdownColorsSeriesOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetMarkdownColorsSeriesOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._color = undefined;
       this._seriesName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1300,15 +1300,15 @@ export class OneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference 
   }
 }
 
-export class OneDashboardPageWidgetMarkdownColorsSeriesOverridesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetMarkdownColorsSeriesOverrides[] | cdktf.IResolvable
+export class OneDashboardPageWidgetMarkdownColorsSeriesOverridesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetMarkdownColorsSeriesOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1321,43 +1321,43 @@ export class OneDashboardPageWidgetMarkdownColorsSeriesOverridesList extends cdk
 }
 export interface OneDashboardPageWidgetMarkdownColors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#color OneDashboard#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#color OneDashboard#color}
   */
   readonly color?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
-  readonly seriesOverrides?: OneDashboardPageWidgetMarkdownColorsSeriesOverrides[] | cdktf.IResolvable;
+  readonly seriesOverrides?: OneDashboardPageWidgetMarkdownColorsSeriesOverrides[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetMarkdownColorsToTerraform(struct?: OneDashboardPageWidgetMarkdownColors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownColorsToTerraform(struct?: OneDashboardPageWidgetMarkdownColors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    color: cdktf.stringToTerraform(struct!.color),
-    series_overrides: cdktf.listMapper(oneDashboardPageWidgetMarkdownColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
+    color: cdktn.stringToTerraform(struct!.color),
+    series_overrides: cdktn.listMapper(oneDashboardPageWidgetMarkdownColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
 }
 
 
-export function oneDashboardPageWidgetMarkdownColorsToHclTerraform(struct?: OneDashboardPageWidgetMarkdownColors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownColorsToHclTerraform(struct?: OneDashboardPageWidgetMarkdownColors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     color: {
-      value: cdktf.stringToHclTerraform(struct!.color),
+      value: cdktn.stringToHclTerraform(struct!.color),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_overrides: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetMarkdownColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetMarkdownColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetMarkdownColorsSeriesOverridesList",
@@ -1368,9 +1368,9 @@ export function oneDashboardPageWidgetMarkdownColorsToHclTerraform(struct?: OneD
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetMarkdownColorsOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetMarkdownColorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1378,11 +1378,11 @@ export class OneDashboardPageWidgetMarkdownColorsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetMarkdownColors | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetMarkdownColors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1399,14 +1399,14 @@ export class OneDashboardPageWidgetMarkdownColorsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetMarkdownColors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetMarkdownColors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._color = undefined;
       this._seriesOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1439,7 +1439,7 @@ export class OneDashboardPageWidgetMarkdownColorsOutputReference extends cdktf.C
   public get seriesOverrides() {
     return this._seriesOverrides;
   }
-  public putSeriesOverrides(value: OneDashboardPageWidgetMarkdownColorsSeriesOverrides[] | cdktf.IResolvable) {
+  public putSeriesOverrides(value: OneDashboardPageWidgetMarkdownColorsSeriesOverrides[] | cdktn.IResolvable) {
     this._seriesOverrides.internalValue = value;
   }
   public resetSeriesOverrides() {
@@ -1451,15 +1451,15 @@ export class OneDashboardPageWidgetMarkdownColorsOutputReference extends cdktf.C
   }
 }
 
-export class OneDashboardPageWidgetMarkdownColorsList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetMarkdownColors[] | cdktf.IResolvable
+export class OneDashboardPageWidgetMarkdownColorsList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetMarkdownColors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1474,69 +1474,69 @@ export interface OneDashboardPageWidgetMarkdownDataFormat {
   /**
   * Defines the format of the mentioned type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#format OneDashboard#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#format OneDashboard#format}
   */
   readonly format?: string;
   /**
   * The column name to be sorted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#name OneDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#name OneDashboard#name}
   */
   readonly name: string;
   /**
   * The precision of the type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#precision OneDashboard#precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#precision OneDashboard#precision}
   */
   readonly precision?: number;
   /**
   * Defines the type of the mentioned column
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#type OneDashboard#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#type OneDashboard#type}
   */
   readonly type: string;
 }
 
-export function oneDashboardPageWidgetMarkdownDataFormatToTerraform(struct?: OneDashboardPageWidgetMarkdownDataFormat | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownDataFormatToTerraform(struct?: OneDashboardPageWidgetMarkdownDataFormat | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    format: cdktf.stringToTerraform(struct!.format),
-    name: cdktf.stringToTerraform(struct!.name),
-    precision: cdktf.numberToTerraform(struct!.precision),
-    type: cdktf.stringToTerraform(struct!.type),
+    format: cdktn.stringToTerraform(struct!.format),
+    name: cdktn.stringToTerraform(struct!.name),
+    precision: cdktn.numberToTerraform(struct!.precision),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function oneDashboardPageWidgetMarkdownDataFormatToHclTerraform(struct?: OneDashboardPageWidgetMarkdownDataFormat | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownDataFormatToHclTerraform(struct?: OneDashboardPageWidgetMarkdownDataFormat | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     precision: {
-      value: cdktf.numberToHclTerraform(struct!.precision),
+      value: cdktn.numberToHclTerraform(struct!.precision),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1547,9 +1547,9 @@ export function oneDashboardPageWidgetMarkdownDataFormatToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetMarkdownDataFormatOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetMarkdownDataFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1557,11 +1557,11 @@ export class OneDashboardPageWidgetMarkdownDataFormatOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetMarkdownDataFormat | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetMarkdownDataFormat | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1586,7 +1586,7 @@ export class OneDashboardPageWidgetMarkdownDataFormatOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetMarkdownDataFormat | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetMarkdownDataFormat | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1595,7 +1595,7 @@ export class OneDashboardPageWidgetMarkdownDataFormatOutputReference extends cdk
       this._precision = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1668,15 +1668,15 @@ export class OneDashboardPageWidgetMarkdownDataFormatOutputReference extends cdk
   }
 }
 
-export class OneDashboardPageWidgetMarkdownDataFormatList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetMarkdownDataFormat[] | cdktf.IResolvable
+export class OneDashboardPageWidgetMarkdownDataFormatList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetMarkdownDataFormat[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1691,43 +1691,43 @@ export interface OneDashboardPageWidgetMarkdownInitialSorting {
   /**
   * Defines the sort order. Either ascending or descending.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#direction OneDashboard#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#direction OneDashboard#direction}
   */
   readonly direction: string;
   /**
   * The column name to be sorted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#name OneDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#name OneDashboard#name}
   */
   readonly name: string;
 }
 
 export function oneDashboardPageWidgetMarkdownInitialSortingToTerraform(struct?: OneDashboardPageWidgetMarkdownInitialSortingOutputReference | OneDashboardPageWidgetMarkdownInitialSorting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    direction: cdktf.stringToTerraform(struct!.direction),
-    name: cdktf.stringToTerraform(struct!.name),
+    direction: cdktn.stringToTerraform(struct!.direction),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function oneDashboardPageWidgetMarkdownInitialSortingToHclTerraform(struct?: OneDashboardPageWidgetMarkdownInitialSortingOutputReference | OneDashboardPageWidgetMarkdownInitialSorting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     direction: {
-      value: cdktf.stringToHclTerraform(struct!.direction),
+      value: cdktn.stringToHclTerraform(struct!.direction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1738,14 +1738,14 @@ export function oneDashboardPageWidgetMarkdownInitialSortingToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetMarkdownInitialSortingOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetMarkdownInitialSortingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1806,43 +1806,43 @@ export interface OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides {
   /**
   * Null value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#null_value OneDashboard#null_value}
   */
   readonly nullValue?: string;
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
 }
 
-export function oneDashboardPageWidgetMarkdownNullValuesSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownNullValuesSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    null_value: cdktf.stringToTerraform(struct!.nullValue),
-    series_name: cdktf.stringToTerraform(struct!.seriesName),
+    null_value: cdktn.stringToTerraform(struct!.nullValue),
+    series_name: cdktn.stringToTerraform(struct!.seriesName),
   }
 }
 
 
-export function oneDashboardPageWidgetMarkdownNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     null_value: {
-      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      value: cdktn.stringToHclTerraform(struct!.nullValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_name: {
-      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      value: cdktn.stringToHclTerraform(struct!.seriesName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1853,9 +1853,9 @@ export function oneDashboardPageWidgetMarkdownNullValuesSeriesOverridesToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1863,11 +1863,11 @@ export class OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1884,14 +1884,14 @@ export class OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._nullValue = undefined;
       this._seriesName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1936,15 +1936,15 @@ export class OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputRefere
   }
 }
 
-export class OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides[] | cdktf.IResolvable
+export class OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1957,43 +1957,43 @@ export class OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesList extends
 }
 export interface OneDashboardPageWidgetMarkdownNullValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#null_value OneDashboard#null_value}
   */
   readonly nullValue?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
-  readonly seriesOverrides?: OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides[] | cdktf.IResolvable;
+  readonly seriesOverrides?: OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetMarkdownNullValuesToTerraform(struct?: OneDashboardPageWidgetMarkdownNullValues | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownNullValuesToTerraform(struct?: OneDashboardPageWidgetMarkdownNullValues | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    null_value: cdktf.stringToTerraform(struct!.nullValue),
-    series_overrides: cdktf.listMapper(oneDashboardPageWidgetMarkdownNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
+    null_value: cdktn.stringToTerraform(struct!.nullValue),
+    series_overrides: cdktn.listMapper(oneDashboardPageWidgetMarkdownNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
 }
 
 
-export function oneDashboardPageWidgetMarkdownNullValuesToHclTerraform(struct?: OneDashboardPageWidgetMarkdownNullValues | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownNullValuesToHclTerraform(struct?: OneDashboardPageWidgetMarkdownNullValues | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     null_value: {
-      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      value: cdktn.stringToHclTerraform(struct!.nullValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_overrides: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetMarkdownNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetMarkdownNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesList",
@@ -2004,9 +2004,9 @@ export function oneDashboardPageWidgetMarkdownNullValuesToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetMarkdownNullValuesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetMarkdownNullValuesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2014,11 +2014,11 @@ export class OneDashboardPageWidgetMarkdownNullValuesOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetMarkdownNullValues | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetMarkdownNullValues | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2035,14 +2035,14 @@ export class OneDashboardPageWidgetMarkdownNullValuesOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetMarkdownNullValues | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetMarkdownNullValues | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._nullValue = undefined;
       this._seriesOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2075,7 +2075,7 @@ export class OneDashboardPageWidgetMarkdownNullValuesOutputReference extends cdk
   public get seriesOverrides() {
     return this._seriesOverrides;
   }
-  public putSeriesOverrides(value: OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides[] | cdktf.IResolvable) {
+  public putSeriesOverrides(value: OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides[] | cdktn.IResolvable) {
     this._seriesOverrides.internalValue = value;
   }
   public resetSeriesOverrides() {
@@ -2087,15 +2087,15 @@ export class OneDashboardPageWidgetMarkdownNullValuesOutputReference extends cdk
   }
 }
 
-export class OneDashboardPageWidgetMarkdownNullValuesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetMarkdownNullValues[] | cdktf.IResolvable
+export class OneDashboardPageWidgetMarkdownNullValuesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetMarkdownNullValues[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2110,43 +2110,43 @@ export interface OneDashboardPageWidgetMarkdownUnitsSeriesOverrides {
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
   /**
   * Unit name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#unit OneDashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#unit OneDashboard#unit}
   */
   readonly unit?: string;
 }
 
-export function oneDashboardPageWidgetMarkdownUnitsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetMarkdownUnitsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownUnitsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetMarkdownUnitsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    series_name: cdktf.stringToTerraform(struct!.seriesName),
-    unit: cdktf.stringToTerraform(struct!.unit),
+    series_name: cdktn.stringToTerraform(struct!.seriesName),
+    unit: cdktn.stringToTerraform(struct!.unit),
   }
 }
 
 
-export function oneDashboardPageWidgetMarkdownUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetMarkdownUnitsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetMarkdownUnitsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     series_name: {
-      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      value: cdktn.stringToHclTerraform(struct!.seriesName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2157,9 +2157,9 @@ export function oneDashboardPageWidgetMarkdownUnitsSeriesOverridesToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2167,11 +2167,11 @@ export class OneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetMarkdownUnitsSeriesOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetMarkdownUnitsSeriesOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2188,14 +2188,14 @@ export class OneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetMarkdownUnitsSeriesOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetMarkdownUnitsSeriesOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._seriesName = undefined;
       this._unit = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2240,15 +2240,15 @@ export class OneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference e
   }
 }
 
-export class OneDashboardPageWidgetMarkdownUnitsSeriesOverridesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetMarkdownUnitsSeriesOverrides[] | cdktf.IResolvable
+export class OneDashboardPageWidgetMarkdownUnitsSeriesOverridesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetMarkdownUnitsSeriesOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2261,43 +2261,43 @@ export class OneDashboardPageWidgetMarkdownUnitsSeriesOverridesList extends cdkt
 }
 export interface OneDashboardPageWidgetMarkdownUnits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#unit OneDashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#unit OneDashboard#unit}
   */
   readonly unit?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
-  readonly seriesOverrides?: OneDashboardPageWidgetMarkdownUnitsSeriesOverrides[] | cdktf.IResolvable;
+  readonly seriesOverrides?: OneDashboardPageWidgetMarkdownUnitsSeriesOverrides[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetMarkdownUnitsToTerraform(struct?: OneDashboardPageWidgetMarkdownUnits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownUnitsToTerraform(struct?: OneDashboardPageWidgetMarkdownUnits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit: cdktf.stringToTerraform(struct!.unit),
-    series_overrides: cdktf.listMapper(oneDashboardPageWidgetMarkdownUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    series_overrides: cdktn.listMapper(oneDashboardPageWidgetMarkdownUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
 }
 
 
-export function oneDashboardPageWidgetMarkdownUnitsToHclTerraform(struct?: OneDashboardPageWidgetMarkdownUnits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownUnitsToHclTerraform(struct?: OneDashboardPageWidgetMarkdownUnits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_overrides: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetMarkdownUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetMarkdownUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetMarkdownUnitsSeriesOverridesList",
@@ -2308,9 +2308,9 @@ export function oneDashboardPageWidgetMarkdownUnitsToHclTerraform(struct?: OneDa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetMarkdownUnitsOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetMarkdownUnitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2318,11 +2318,11 @@ export class OneDashboardPageWidgetMarkdownUnitsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetMarkdownUnits | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetMarkdownUnits | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2339,14 +2339,14 @@ export class OneDashboardPageWidgetMarkdownUnitsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetMarkdownUnits | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetMarkdownUnits | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._unit = undefined;
       this._seriesOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2379,7 +2379,7 @@ export class OneDashboardPageWidgetMarkdownUnitsOutputReference extends cdktf.Co
   public get seriesOverrides() {
     return this._seriesOverrides;
   }
-  public putSeriesOverrides(value: OneDashboardPageWidgetMarkdownUnitsSeriesOverrides[] | cdktf.IResolvable) {
+  public putSeriesOverrides(value: OneDashboardPageWidgetMarkdownUnitsSeriesOverrides[] | cdktn.IResolvable) {
     this._seriesOverrides.internalValue = value;
   }
   public resetSeriesOverrides() {
@@ -2391,15 +2391,15 @@ export class OneDashboardPageWidgetMarkdownUnitsOutputReference extends cdktf.Co
   }
 }
 
-export class OneDashboardPageWidgetMarkdownUnitsList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetMarkdownUnits[] | cdktf.IResolvable
+export class OneDashboardPageWidgetMarkdownUnitsList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetMarkdownUnits[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2412,200 +2412,200 @@ export class OneDashboardPageWidgetMarkdownUnitsList extends cdktf.ComplexList {
 }
 export interface OneDashboardPageWidgetMarkdown {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#column OneDashboard#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#column OneDashboard#column}
   */
   readonly column: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}
   */
-  readonly facetShowOtherSeries?: boolean | cdktf.IResolvable;
+  readonly facetShowOtherSeries?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#height OneDashboard#height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#height OneDashboard#height}
   */
   readonly height?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
   */
-  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  readonly ignoreTimeRange?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}
   */
-  readonly legendEnabled?: boolean | cdktf.IResolvable;
+  readonly legendEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}
   */
   readonly refreshRate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#row OneDashboard#row}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#text OneDashboard#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#text OneDashboard#text}
   */
   readonly text: string;
   /**
   * A title for the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#title OneDashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#title OneDashboard#title}
   */
   readonly title: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#width OneDashboard#width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#width OneDashboard#width}
   */
   readonly width?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}
   */
   readonly yAxisLeftMax?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}
   */
   readonly yAxisLeftMin?: number;
   /**
   * colors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#colors OneDashboard#colors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#colors OneDashboard#colors}
   */
-  readonly colors?: OneDashboardPageWidgetMarkdownColors[] | cdktf.IResolvable;
+  readonly colors?: OneDashboardPageWidgetMarkdownColors[] | cdktn.IResolvable;
   /**
   * data_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#data_format OneDashboard#data_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#data_format OneDashboard#data_format}
   */
-  readonly dataFormat?: OneDashboardPageWidgetMarkdownDataFormat[] | cdktf.IResolvable;
+  readonly dataFormat?: OneDashboardPageWidgetMarkdownDataFormat[] | cdktn.IResolvable;
   /**
   * initial_sorting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
   */
   readonly initialSorting?: OneDashboardPageWidgetMarkdownInitialSorting;
   /**
   * null_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#null_values OneDashboard#null_values}
   */
-  readonly nullValues?: OneDashboardPageWidgetMarkdownNullValues[] | cdktf.IResolvable;
+  readonly nullValues?: OneDashboardPageWidgetMarkdownNullValues[] | cdktn.IResolvable;
   /**
   * units block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#units OneDashboard#units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#units OneDashboard#units}
   */
-  readonly units?: OneDashboardPageWidgetMarkdownUnits[] | cdktf.IResolvable;
+  readonly units?: OneDashboardPageWidgetMarkdownUnits[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetMarkdownToTerraform(struct?: OneDashboardPageWidgetMarkdown | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownToTerraform(struct?: OneDashboardPageWidgetMarkdown | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column: cdktf.numberToTerraform(struct!.column),
-    facet_show_other_series: cdktf.booleanToTerraform(struct!.facetShowOtherSeries),
-    height: cdktf.numberToTerraform(struct!.height),
-    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
-    legend_enabled: cdktf.booleanToTerraform(struct!.legendEnabled),
-    refresh_rate: cdktf.stringToTerraform(struct!.refreshRate),
-    row: cdktf.numberToTerraform(struct!.row),
-    text: cdktf.stringToTerraform(struct!.text),
-    title: cdktf.stringToTerraform(struct!.title),
-    width: cdktf.numberToTerraform(struct!.width),
-    y_axis_left_max: cdktf.numberToTerraform(struct!.yAxisLeftMax),
-    y_axis_left_min: cdktf.numberToTerraform(struct!.yAxisLeftMin),
-    colors: cdktf.listMapper(oneDashboardPageWidgetMarkdownColorsToTerraform, true)(struct!.colors),
-    data_format: cdktf.listMapper(oneDashboardPageWidgetMarkdownDataFormatToTerraform, true)(struct!.dataFormat),
+    column: cdktn.numberToTerraform(struct!.column),
+    facet_show_other_series: cdktn.booleanToTerraform(struct!.facetShowOtherSeries),
+    height: cdktn.numberToTerraform(struct!.height),
+    ignore_time_range: cdktn.booleanToTerraform(struct!.ignoreTimeRange),
+    legend_enabled: cdktn.booleanToTerraform(struct!.legendEnabled),
+    refresh_rate: cdktn.stringToTerraform(struct!.refreshRate),
+    row: cdktn.numberToTerraform(struct!.row),
+    text: cdktn.stringToTerraform(struct!.text),
+    title: cdktn.stringToTerraform(struct!.title),
+    width: cdktn.numberToTerraform(struct!.width),
+    y_axis_left_max: cdktn.numberToTerraform(struct!.yAxisLeftMax),
+    y_axis_left_min: cdktn.numberToTerraform(struct!.yAxisLeftMin),
+    colors: cdktn.listMapper(oneDashboardPageWidgetMarkdownColorsToTerraform, true)(struct!.colors),
+    data_format: cdktn.listMapper(oneDashboardPageWidgetMarkdownDataFormatToTerraform, true)(struct!.dataFormat),
     initial_sorting: oneDashboardPageWidgetMarkdownInitialSortingToTerraform(struct!.initialSorting),
-    null_values: cdktf.listMapper(oneDashboardPageWidgetMarkdownNullValuesToTerraform, true)(struct!.nullValues),
-    units: cdktf.listMapper(oneDashboardPageWidgetMarkdownUnitsToTerraform, true)(struct!.units),
+    null_values: cdktn.listMapper(oneDashboardPageWidgetMarkdownNullValuesToTerraform, true)(struct!.nullValues),
+    units: cdktn.listMapper(oneDashboardPageWidgetMarkdownUnitsToTerraform, true)(struct!.units),
   }
 }
 
 
-export function oneDashboardPageWidgetMarkdownToHclTerraform(struct?: OneDashboardPageWidgetMarkdown | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetMarkdownToHclTerraform(struct?: OneDashboardPageWidgetMarkdown | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column: {
-      value: cdktf.numberToHclTerraform(struct!.column),
+      value: cdktn.numberToHclTerraform(struct!.column),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     facet_show_other_series: {
-      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      value: cdktn.booleanToHclTerraform(struct!.facetShowOtherSeries),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     height: {
-      value: cdktf.numberToHclTerraform(struct!.height),
+      value: cdktn.numberToHclTerraform(struct!.height),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ignore_time_range: {
-      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      value: cdktn.booleanToHclTerraform(struct!.ignoreTimeRange),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     legend_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.legendEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     refresh_rate: {
-      value: cdktf.stringToHclTerraform(struct!.refreshRate),
+      value: cdktn.stringToHclTerraform(struct!.refreshRate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     row: {
-      value: cdktf.numberToHclTerraform(struct!.row),
+      value: cdktn.numberToHclTerraform(struct!.row),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     text: {
-      value: cdktf.stringToHclTerraform(struct!.text),
+      value: cdktn.stringToHclTerraform(struct!.text),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     width: {
-      value: cdktf.numberToHclTerraform(struct!.width),
+      value: cdktn.numberToHclTerraform(struct!.width),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     y_axis_left_max: {
-      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      value: cdktn.numberToHclTerraform(struct!.yAxisLeftMax),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     y_axis_left_min: {
-      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      value: cdktn.numberToHclTerraform(struct!.yAxisLeftMin),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     colors: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetMarkdownColorsToHclTerraform, true)(struct!.colors),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetMarkdownColorsToHclTerraform, true)(struct!.colors),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetMarkdownColorsList",
     },
     data_format: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetMarkdownDataFormatToHclTerraform, true)(struct!.dataFormat),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetMarkdownDataFormatToHclTerraform, true)(struct!.dataFormat),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetMarkdownDataFormatList",
@@ -2617,13 +2617,13 @@ export function oneDashboardPageWidgetMarkdownToHclTerraform(struct?: OneDashboa
       storageClassType: "OneDashboardPageWidgetMarkdownInitialSortingList",
     },
     null_values: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetMarkdownNullValuesToHclTerraform, true)(struct!.nullValues),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetMarkdownNullValuesToHclTerraform, true)(struct!.nullValues),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetMarkdownNullValuesList",
     },
     units: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetMarkdownUnitsToHclTerraform, true)(struct!.units),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetMarkdownUnitsToHclTerraform, true)(struct!.units),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetMarkdownUnitsList",
@@ -2634,9 +2634,9 @@ export function oneDashboardPageWidgetMarkdownToHclTerraform(struct?: OneDashboa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetMarkdownOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2644,11 +2644,11 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetMarkdown | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetMarkdown | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2725,7 +2725,7 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetMarkdown | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetMarkdown | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2747,7 +2747,7 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
       this._nullValues.internalValue = undefined;
       this._units.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2788,11 +2788,11 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
   }
 
   // facet_show_other_series - computed: false, optional: true, required: false
-  private _facetShowOtherSeries?: boolean | cdktf.IResolvable; 
+  private _facetShowOtherSeries?: boolean | cdktn.IResolvable; 
   public get facetShowOtherSeries() {
     return this.getBooleanAttribute('facet_show_other_series');
   }
-  public set facetShowOtherSeries(value: boolean | cdktf.IResolvable) {
+  public set facetShowOtherSeries(value: boolean | cdktn.IResolvable) {
     this._facetShowOtherSeries = value;
   }
   public resetFacetShowOtherSeries() {
@@ -2825,11 +2825,11 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
   }
 
   // ignore_time_range - computed: false, optional: true, required: false
-  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  private _ignoreTimeRange?: boolean | cdktn.IResolvable; 
   public get ignoreTimeRange() {
     return this.getBooleanAttribute('ignore_time_range');
   }
-  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+  public set ignoreTimeRange(value: boolean | cdktn.IResolvable) {
     this._ignoreTimeRange = value;
   }
   public resetIgnoreTimeRange() {
@@ -2841,11 +2841,11 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
   }
 
   // legend_enabled - computed: false, optional: true, required: false
-  private _legendEnabled?: boolean | cdktf.IResolvable; 
+  private _legendEnabled?: boolean | cdktn.IResolvable; 
   public get legendEnabled() {
     return this.getBooleanAttribute('legend_enabled');
   }
-  public set legendEnabled(value: boolean | cdktf.IResolvable) {
+  public set legendEnabled(value: boolean | cdktn.IResolvable) {
     this._legendEnabled = value;
   }
   public resetLegendEnabled() {
@@ -2964,7 +2964,7 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
   public get colors() {
     return this._colors;
   }
-  public putColors(value: OneDashboardPageWidgetMarkdownColors[] | cdktf.IResolvable) {
+  public putColors(value: OneDashboardPageWidgetMarkdownColors[] | cdktn.IResolvable) {
     this._colors.internalValue = value;
   }
   public resetColors() {
@@ -2980,7 +2980,7 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
   public get dataFormat() {
     return this._dataFormat;
   }
-  public putDataFormat(value: OneDashboardPageWidgetMarkdownDataFormat[] | cdktf.IResolvable) {
+  public putDataFormat(value: OneDashboardPageWidgetMarkdownDataFormat[] | cdktn.IResolvable) {
     this._dataFormat.internalValue = value;
   }
   public resetDataFormat() {
@@ -3012,7 +3012,7 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
   public get nullValues() {
     return this._nullValues;
   }
-  public putNullValues(value: OneDashboardPageWidgetMarkdownNullValues[] | cdktf.IResolvable) {
+  public putNullValues(value: OneDashboardPageWidgetMarkdownNullValues[] | cdktn.IResolvable) {
     this._nullValues.internalValue = value;
   }
   public resetNullValues() {
@@ -3028,7 +3028,7 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
   public get units() {
     return this._units;
   }
-  public putUnits(value: OneDashboardPageWidgetMarkdownUnits[] | cdktf.IResolvable) {
+  public putUnits(value: OneDashboardPageWidgetMarkdownUnits[] | cdktn.IResolvable) {
     this._units.internalValue = value;
   }
   public resetUnits() {
@@ -3040,15 +3040,15 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
   }
 }
 
-export class OneDashboardPageWidgetMarkdownList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetMarkdown[] | cdktf.IResolvable
+export class OneDashboardPageWidgetMarkdownList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetMarkdown[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3063,43 +3063,43 @@ export interface OneDashboardPageWidgetPieColorsSeriesOverrides {
   /**
   * Color code
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#color OneDashboard#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#color OneDashboard#color}
   */
   readonly color?: string;
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
 }
 
-export function oneDashboardPageWidgetPieColorsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetPieColorsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieColorsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetPieColorsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    color: cdktf.stringToTerraform(struct!.color),
-    series_name: cdktf.stringToTerraform(struct!.seriesName),
+    color: cdktn.stringToTerraform(struct!.color),
+    series_name: cdktn.stringToTerraform(struct!.seriesName),
   }
 }
 
 
-export function oneDashboardPageWidgetPieColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetPieColorsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetPieColorsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     color: {
-      value: cdktf.stringToHclTerraform(struct!.color),
+      value: cdktn.stringToHclTerraform(struct!.color),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_name: {
-      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      value: cdktn.stringToHclTerraform(struct!.seriesName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3110,9 +3110,9 @@ export function oneDashboardPageWidgetPieColorsSeriesOverridesToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetPieColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetPieColorsSeriesOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3120,11 +3120,11 @@ export class OneDashboardPageWidgetPieColorsSeriesOverridesOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetPieColorsSeriesOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetPieColorsSeriesOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3141,14 +3141,14 @@ export class OneDashboardPageWidgetPieColorsSeriesOverridesOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetPieColorsSeriesOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetPieColorsSeriesOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._color = undefined;
       this._seriesName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3193,15 +3193,15 @@ export class OneDashboardPageWidgetPieColorsSeriesOverridesOutputReference exten
   }
 }
 
-export class OneDashboardPageWidgetPieColorsSeriesOverridesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetPieColorsSeriesOverrides[] | cdktf.IResolvable
+export class OneDashboardPageWidgetPieColorsSeriesOverridesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetPieColorsSeriesOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3214,43 +3214,43 @@ export class OneDashboardPageWidgetPieColorsSeriesOverridesList extends cdktf.Co
 }
 export interface OneDashboardPageWidgetPieColors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#color OneDashboard#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#color OneDashboard#color}
   */
   readonly color?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
-  readonly seriesOverrides?: OneDashboardPageWidgetPieColorsSeriesOverrides[] | cdktf.IResolvable;
+  readonly seriesOverrides?: OneDashboardPageWidgetPieColorsSeriesOverrides[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetPieColorsToTerraform(struct?: OneDashboardPageWidgetPieColors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieColorsToTerraform(struct?: OneDashboardPageWidgetPieColors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    color: cdktf.stringToTerraform(struct!.color),
-    series_overrides: cdktf.listMapper(oneDashboardPageWidgetPieColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
+    color: cdktn.stringToTerraform(struct!.color),
+    series_overrides: cdktn.listMapper(oneDashboardPageWidgetPieColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
 }
 
 
-export function oneDashboardPageWidgetPieColorsToHclTerraform(struct?: OneDashboardPageWidgetPieColors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieColorsToHclTerraform(struct?: OneDashboardPageWidgetPieColors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     color: {
-      value: cdktf.stringToHclTerraform(struct!.color),
+      value: cdktn.stringToHclTerraform(struct!.color),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_overrides: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetPieColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetPieColorsSeriesOverridesList",
@@ -3261,9 +3261,9 @@ export function oneDashboardPageWidgetPieColorsToHclTerraform(struct?: OneDashbo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetPieColorsOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetPieColorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3271,11 +3271,11 @@ export class OneDashboardPageWidgetPieColorsOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetPieColors | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetPieColors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3292,14 +3292,14 @@ export class OneDashboardPageWidgetPieColorsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetPieColors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetPieColors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._color = undefined;
       this._seriesOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3332,7 +3332,7 @@ export class OneDashboardPageWidgetPieColorsOutputReference extends cdktf.Comple
   public get seriesOverrides() {
     return this._seriesOverrides;
   }
-  public putSeriesOverrides(value: OneDashboardPageWidgetPieColorsSeriesOverrides[] | cdktf.IResolvable) {
+  public putSeriesOverrides(value: OneDashboardPageWidgetPieColorsSeriesOverrides[] | cdktn.IResolvable) {
     this._seriesOverrides.internalValue = value;
   }
   public resetSeriesOverrides() {
@@ -3344,15 +3344,15 @@ export class OneDashboardPageWidgetPieColorsOutputReference extends cdktf.Comple
   }
 }
 
-export class OneDashboardPageWidgetPieColorsList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetPieColors[] | cdktf.IResolvable
+export class OneDashboardPageWidgetPieColorsList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetPieColors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3367,69 +3367,69 @@ export interface OneDashboardPageWidgetPieDataFormat {
   /**
   * Defines the format of the mentioned type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#format OneDashboard#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#format OneDashboard#format}
   */
   readonly format?: string;
   /**
   * The column name to be sorted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#name OneDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#name OneDashboard#name}
   */
   readonly name: string;
   /**
   * The precision of the type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#precision OneDashboard#precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#precision OneDashboard#precision}
   */
   readonly precision?: number;
   /**
   * Defines the type of the mentioned column
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#type OneDashboard#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#type OneDashboard#type}
   */
   readonly type: string;
 }
 
-export function oneDashboardPageWidgetPieDataFormatToTerraform(struct?: OneDashboardPageWidgetPieDataFormat | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieDataFormatToTerraform(struct?: OneDashboardPageWidgetPieDataFormat | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    format: cdktf.stringToTerraform(struct!.format),
-    name: cdktf.stringToTerraform(struct!.name),
-    precision: cdktf.numberToTerraform(struct!.precision),
-    type: cdktf.stringToTerraform(struct!.type),
+    format: cdktn.stringToTerraform(struct!.format),
+    name: cdktn.stringToTerraform(struct!.name),
+    precision: cdktn.numberToTerraform(struct!.precision),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function oneDashboardPageWidgetPieDataFormatToHclTerraform(struct?: OneDashboardPageWidgetPieDataFormat | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieDataFormatToHclTerraform(struct?: OneDashboardPageWidgetPieDataFormat | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     precision: {
-      value: cdktf.numberToHclTerraform(struct!.precision),
+      value: cdktn.numberToHclTerraform(struct!.precision),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3440,9 +3440,9 @@ export function oneDashboardPageWidgetPieDataFormatToHclTerraform(struct?: OneDa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetPieDataFormatOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetPieDataFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3450,11 +3450,11 @@ export class OneDashboardPageWidgetPieDataFormatOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetPieDataFormat | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetPieDataFormat | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3479,7 +3479,7 @@ export class OneDashboardPageWidgetPieDataFormatOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetPieDataFormat | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetPieDataFormat | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3488,7 +3488,7 @@ export class OneDashboardPageWidgetPieDataFormatOutputReference extends cdktf.Co
       this._precision = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3561,15 +3561,15 @@ export class OneDashboardPageWidgetPieDataFormatOutputReference extends cdktf.Co
   }
 }
 
-export class OneDashboardPageWidgetPieDataFormatList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetPieDataFormat[] | cdktf.IResolvable
+export class OneDashboardPageWidgetPieDataFormatList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetPieDataFormat[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3584,43 +3584,43 @@ export interface OneDashboardPageWidgetPieInitialSorting {
   /**
   * Defines the sort order. Either ascending or descending.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#direction OneDashboard#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#direction OneDashboard#direction}
   */
   readonly direction: string;
   /**
   * The column name to be sorted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#name OneDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#name OneDashboard#name}
   */
   readonly name: string;
 }
 
 export function oneDashboardPageWidgetPieInitialSortingToTerraform(struct?: OneDashboardPageWidgetPieInitialSortingOutputReference | OneDashboardPageWidgetPieInitialSorting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    direction: cdktf.stringToTerraform(struct!.direction),
-    name: cdktf.stringToTerraform(struct!.name),
+    direction: cdktn.stringToTerraform(struct!.direction),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function oneDashboardPageWidgetPieInitialSortingToHclTerraform(struct?: OneDashboardPageWidgetPieInitialSortingOutputReference | OneDashboardPageWidgetPieInitialSorting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     direction: {
-      value: cdktf.stringToHclTerraform(struct!.direction),
+      value: cdktn.stringToHclTerraform(struct!.direction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3631,14 +3631,14 @@ export function oneDashboardPageWidgetPieInitialSortingToHclTerraform(struct?: O
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetPieInitialSortingOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetPieInitialSortingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3699,43 +3699,43 @@ export interface OneDashboardPageWidgetPieNrqlQuery {
   /**
   * The account ID(s) used for the NRQL query. Can be a single account ID or multiple account IDs in a JSON-encoded array.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#account_id OneDashboard#account_id}
   */
   readonly accountId?: string;
   /**
   * The NRQL query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#query OneDashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#query OneDashboard#query}
   */
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetPieNrqlQueryToTerraform(struct?: OneDashboardPageWidgetPieNrqlQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieNrqlQueryToTerraform(struct?: OneDashboardPageWidgetPieNrqlQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_id: cdktf.stringToTerraform(struct!.accountId),
-    query: cdktf.stringToTerraform(struct!.query),
+    account_id: cdktn.stringToTerraform(struct!.accountId),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
-export function oneDashboardPageWidgetPieNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetPieNrqlQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetPieNrqlQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_id: {
-      value: cdktf.stringToHclTerraform(struct!.accountId),
+      value: cdktn.stringToHclTerraform(struct!.accountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3746,9 +3746,9 @@ export function oneDashboardPageWidgetPieNrqlQueryToHclTerraform(struct?: OneDas
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetPieNrqlQueryOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetPieNrqlQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3756,11 +3756,11 @@ export class OneDashboardPageWidgetPieNrqlQueryOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetPieNrqlQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetPieNrqlQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3777,14 +3777,14 @@ export class OneDashboardPageWidgetPieNrqlQueryOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetPieNrqlQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetPieNrqlQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accountId = undefined;
       this._query = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3826,15 +3826,15 @@ export class OneDashboardPageWidgetPieNrqlQueryOutputReference extends cdktf.Com
   }
 }
 
-export class OneDashboardPageWidgetPieNrqlQueryList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetPieNrqlQuery[] | cdktf.IResolvable
+export class OneDashboardPageWidgetPieNrqlQueryList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetPieNrqlQuery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3849,43 +3849,43 @@ export interface OneDashboardPageWidgetPieNullValuesSeriesOverrides {
   /**
   * Null value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#null_value OneDashboard#null_value}
   */
   readonly nullValue?: string;
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
 }
 
-export function oneDashboardPageWidgetPieNullValuesSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetPieNullValuesSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieNullValuesSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetPieNullValuesSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    null_value: cdktf.stringToTerraform(struct!.nullValue),
-    series_name: cdktf.stringToTerraform(struct!.seriesName),
+    null_value: cdktn.stringToTerraform(struct!.nullValue),
+    series_name: cdktn.stringToTerraform(struct!.seriesName),
   }
 }
 
 
-export function oneDashboardPageWidgetPieNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetPieNullValuesSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetPieNullValuesSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     null_value: {
-      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      value: cdktn.stringToHclTerraform(struct!.nullValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_name: {
-      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      value: cdktn.stringToHclTerraform(struct!.seriesName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3896,9 +3896,9 @@ export function oneDashboardPageWidgetPieNullValuesSeriesOverridesToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3906,11 +3906,11 @@ export class OneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetPieNullValuesSeriesOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetPieNullValuesSeriesOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3927,14 +3927,14 @@ export class OneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetPieNullValuesSeriesOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetPieNullValuesSeriesOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._nullValue = undefined;
       this._seriesName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3979,15 +3979,15 @@ export class OneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference e
   }
 }
 
-export class OneDashboardPageWidgetPieNullValuesSeriesOverridesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetPieNullValuesSeriesOverrides[] | cdktf.IResolvable
+export class OneDashboardPageWidgetPieNullValuesSeriesOverridesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetPieNullValuesSeriesOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4000,43 +4000,43 @@ export class OneDashboardPageWidgetPieNullValuesSeriesOverridesList extends cdkt
 }
 export interface OneDashboardPageWidgetPieNullValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#null_value OneDashboard#null_value}
   */
   readonly nullValue?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
-  readonly seriesOverrides?: OneDashboardPageWidgetPieNullValuesSeriesOverrides[] | cdktf.IResolvable;
+  readonly seriesOverrides?: OneDashboardPageWidgetPieNullValuesSeriesOverrides[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetPieNullValuesToTerraform(struct?: OneDashboardPageWidgetPieNullValues | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieNullValuesToTerraform(struct?: OneDashboardPageWidgetPieNullValues | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    null_value: cdktf.stringToTerraform(struct!.nullValue),
-    series_overrides: cdktf.listMapper(oneDashboardPageWidgetPieNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
+    null_value: cdktn.stringToTerraform(struct!.nullValue),
+    series_overrides: cdktn.listMapper(oneDashboardPageWidgetPieNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
 }
 
 
-export function oneDashboardPageWidgetPieNullValuesToHclTerraform(struct?: OneDashboardPageWidgetPieNullValues | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieNullValuesToHclTerraform(struct?: OneDashboardPageWidgetPieNullValues | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     null_value: {
-      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      value: cdktn.stringToHclTerraform(struct!.nullValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_overrides: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetPieNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetPieNullValuesSeriesOverridesList",
@@ -4047,9 +4047,9 @@ export function oneDashboardPageWidgetPieNullValuesToHclTerraform(struct?: OneDa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetPieNullValuesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetPieNullValuesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4057,11 +4057,11 @@ export class OneDashboardPageWidgetPieNullValuesOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetPieNullValues | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetPieNullValues | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4078,14 +4078,14 @@ export class OneDashboardPageWidgetPieNullValuesOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetPieNullValues | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetPieNullValues | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._nullValue = undefined;
       this._seriesOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4118,7 +4118,7 @@ export class OneDashboardPageWidgetPieNullValuesOutputReference extends cdktf.Co
   public get seriesOverrides() {
     return this._seriesOverrides;
   }
-  public putSeriesOverrides(value: OneDashboardPageWidgetPieNullValuesSeriesOverrides[] | cdktf.IResolvable) {
+  public putSeriesOverrides(value: OneDashboardPageWidgetPieNullValuesSeriesOverrides[] | cdktn.IResolvable) {
     this._seriesOverrides.internalValue = value;
   }
   public resetSeriesOverrides() {
@@ -4130,15 +4130,15 @@ export class OneDashboardPageWidgetPieNullValuesOutputReference extends cdktf.Co
   }
 }
 
-export class OneDashboardPageWidgetPieNullValuesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetPieNullValues[] | cdktf.IResolvable
+export class OneDashboardPageWidgetPieNullValuesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetPieNullValues[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4153,43 +4153,43 @@ export interface OneDashboardPageWidgetPieUnitsSeriesOverrides {
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
   /**
   * Unit name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#unit OneDashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#unit OneDashboard#unit}
   */
   readonly unit?: string;
 }
 
-export function oneDashboardPageWidgetPieUnitsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetPieUnitsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieUnitsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetPieUnitsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    series_name: cdktf.stringToTerraform(struct!.seriesName),
-    unit: cdktf.stringToTerraform(struct!.unit),
+    series_name: cdktn.stringToTerraform(struct!.seriesName),
+    unit: cdktn.stringToTerraform(struct!.unit),
   }
 }
 
 
-export function oneDashboardPageWidgetPieUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetPieUnitsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetPieUnitsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     series_name: {
-      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      value: cdktn.stringToHclTerraform(struct!.seriesName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4200,9 +4200,9 @@ export function oneDashboardPageWidgetPieUnitsSeriesOverridesToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4210,11 +4210,11 @@ export class OneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetPieUnitsSeriesOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetPieUnitsSeriesOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4231,14 +4231,14 @@ export class OneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetPieUnitsSeriesOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetPieUnitsSeriesOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._seriesName = undefined;
       this._unit = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4283,15 +4283,15 @@ export class OneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference extend
   }
 }
 
-export class OneDashboardPageWidgetPieUnitsSeriesOverridesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetPieUnitsSeriesOverrides[] | cdktf.IResolvable
+export class OneDashboardPageWidgetPieUnitsSeriesOverridesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetPieUnitsSeriesOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4304,43 +4304,43 @@ export class OneDashboardPageWidgetPieUnitsSeriesOverridesList extends cdktf.Com
 }
 export interface OneDashboardPageWidgetPieUnits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#unit OneDashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#unit OneDashboard#unit}
   */
   readonly unit?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
-  readonly seriesOverrides?: OneDashboardPageWidgetPieUnitsSeriesOverrides[] | cdktf.IResolvable;
+  readonly seriesOverrides?: OneDashboardPageWidgetPieUnitsSeriesOverrides[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetPieUnitsToTerraform(struct?: OneDashboardPageWidgetPieUnits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieUnitsToTerraform(struct?: OneDashboardPageWidgetPieUnits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit: cdktf.stringToTerraform(struct!.unit),
-    series_overrides: cdktf.listMapper(oneDashboardPageWidgetPieUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    series_overrides: cdktn.listMapper(oneDashboardPageWidgetPieUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
 }
 
 
-export function oneDashboardPageWidgetPieUnitsToHclTerraform(struct?: OneDashboardPageWidgetPieUnits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieUnitsToHclTerraform(struct?: OneDashboardPageWidgetPieUnits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_overrides: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetPieUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetPieUnitsSeriesOverridesList",
@@ -4351,9 +4351,9 @@ export function oneDashboardPageWidgetPieUnitsToHclTerraform(struct?: OneDashboa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetPieUnitsOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetPieUnitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4361,11 +4361,11 @@ export class OneDashboardPageWidgetPieUnitsOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetPieUnits | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetPieUnits | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4382,14 +4382,14 @@ export class OneDashboardPageWidgetPieUnitsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetPieUnits | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetPieUnits | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._unit = undefined;
       this._seriesOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4422,7 +4422,7 @@ export class OneDashboardPageWidgetPieUnitsOutputReference extends cdktf.Complex
   public get seriesOverrides() {
     return this._seriesOverrides;
   }
-  public putSeriesOverrides(value: OneDashboardPageWidgetPieUnitsSeriesOverrides[] | cdktf.IResolvable) {
+  public putSeriesOverrides(value: OneDashboardPageWidgetPieUnitsSeriesOverrides[] | cdktn.IResolvable) {
     this._seriesOverrides.internalValue = value;
   }
   public resetSeriesOverrides() {
@@ -4434,15 +4434,15 @@ export class OneDashboardPageWidgetPieUnitsOutputReference extends cdktf.Complex
   }
 }
 
-export class OneDashboardPageWidgetPieUnitsList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetPieUnits[] | cdktf.IResolvable
+export class OneDashboardPageWidgetPieUnitsList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetPieUnits[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4455,222 +4455,222 @@ export class OneDashboardPageWidgetPieUnitsList extends cdktf.ComplexList {
 }
 export interface OneDashboardPageWidgetPie {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#column OneDashboard#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#column OneDashboard#column}
   */
   readonly column: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}
   */
-  readonly facetShowOtherSeries?: boolean | cdktf.IResolvable;
+  readonly facetShowOtherSeries?: boolean | cdktn.IResolvable;
   /**
   * Use this item to filter the current dashboard
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
   */
-  readonly filterCurrentDashboard?: boolean | cdktf.IResolvable;
+  readonly filterCurrentDashboard?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#height OneDashboard#height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#height OneDashboard#height}
   */
   readonly height?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
   */
-  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  readonly ignoreTimeRange?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}
   */
-  readonly legendEnabled?: boolean | cdktf.IResolvable;
+  readonly legendEnabled?: boolean | cdktn.IResolvable;
   /**
   * Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
   */
   readonly linkedEntityGuids?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}
   */
   readonly refreshRate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#row OneDashboard#row}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
   /**
   * A title for the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#title OneDashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#title OneDashboard#title}
   */
   readonly title: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#width OneDashboard#width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#width OneDashboard#width}
   */
   readonly width?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}
   */
   readonly yAxisLeftMax?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}
   */
   readonly yAxisLeftMin?: number;
   /**
   * colors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#colors OneDashboard#colors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#colors OneDashboard#colors}
   */
-  readonly colors?: OneDashboardPageWidgetPieColors[] | cdktf.IResolvable;
+  readonly colors?: OneDashboardPageWidgetPieColors[] | cdktn.IResolvable;
   /**
   * data_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#data_format OneDashboard#data_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#data_format OneDashboard#data_format}
   */
-  readonly dataFormat?: OneDashboardPageWidgetPieDataFormat[] | cdktf.IResolvable;
+  readonly dataFormat?: OneDashboardPageWidgetPieDataFormat[] | cdktn.IResolvable;
   /**
   * initial_sorting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
   */
   readonly initialSorting?: OneDashboardPageWidgetPieInitialSorting;
   /**
   * nrql_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetPieNrqlQuery[] | cdktf.IResolvable;
+  readonly nrqlQuery: OneDashboardPageWidgetPieNrqlQuery[] | cdktn.IResolvable;
   /**
   * null_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#null_values OneDashboard#null_values}
   */
-  readonly nullValues?: OneDashboardPageWidgetPieNullValues[] | cdktf.IResolvable;
+  readonly nullValues?: OneDashboardPageWidgetPieNullValues[] | cdktn.IResolvable;
   /**
   * units block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#units OneDashboard#units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#units OneDashboard#units}
   */
-  readonly units?: OneDashboardPageWidgetPieUnits[] | cdktf.IResolvable;
+  readonly units?: OneDashboardPageWidgetPieUnits[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetPieToTerraform(struct?: OneDashboardPageWidgetPie | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieToTerraform(struct?: OneDashboardPageWidgetPie | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column: cdktf.numberToTerraform(struct!.column),
-    facet_show_other_series: cdktf.booleanToTerraform(struct!.facetShowOtherSeries),
-    filter_current_dashboard: cdktf.booleanToTerraform(struct!.filterCurrentDashboard),
-    height: cdktf.numberToTerraform(struct!.height),
-    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
-    legend_enabled: cdktf.booleanToTerraform(struct!.legendEnabled),
-    linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.linkedEntityGuids),
-    refresh_rate: cdktf.stringToTerraform(struct!.refreshRate),
-    row: cdktf.numberToTerraform(struct!.row),
-    title: cdktf.stringToTerraform(struct!.title),
-    width: cdktf.numberToTerraform(struct!.width),
-    y_axis_left_max: cdktf.numberToTerraform(struct!.yAxisLeftMax),
-    y_axis_left_min: cdktf.numberToTerraform(struct!.yAxisLeftMin),
-    colors: cdktf.listMapper(oneDashboardPageWidgetPieColorsToTerraform, true)(struct!.colors),
-    data_format: cdktf.listMapper(oneDashboardPageWidgetPieDataFormatToTerraform, true)(struct!.dataFormat),
+    column: cdktn.numberToTerraform(struct!.column),
+    facet_show_other_series: cdktn.booleanToTerraform(struct!.facetShowOtherSeries),
+    filter_current_dashboard: cdktn.booleanToTerraform(struct!.filterCurrentDashboard),
+    height: cdktn.numberToTerraform(struct!.height),
+    ignore_time_range: cdktn.booleanToTerraform(struct!.ignoreTimeRange),
+    legend_enabled: cdktn.booleanToTerraform(struct!.legendEnabled),
+    linked_entity_guids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.linkedEntityGuids),
+    refresh_rate: cdktn.stringToTerraform(struct!.refreshRate),
+    row: cdktn.numberToTerraform(struct!.row),
+    title: cdktn.stringToTerraform(struct!.title),
+    width: cdktn.numberToTerraform(struct!.width),
+    y_axis_left_max: cdktn.numberToTerraform(struct!.yAxisLeftMax),
+    y_axis_left_min: cdktn.numberToTerraform(struct!.yAxisLeftMin),
+    colors: cdktn.listMapper(oneDashboardPageWidgetPieColorsToTerraform, true)(struct!.colors),
+    data_format: cdktn.listMapper(oneDashboardPageWidgetPieDataFormatToTerraform, true)(struct!.dataFormat),
     initial_sorting: oneDashboardPageWidgetPieInitialSortingToTerraform(struct!.initialSorting),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetPieNrqlQueryToTerraform, true)(struct!.nrqlQuery),
-    null_values: cdktf.listMapper(oneDashboardPageWidgetPieNullValuesToTerraform, true)(struct!.nullValues),
-    units: cdktf.listMapper(oneDashboardPageWidgetPieUnitsToTerraform, true)(struct!.units),
+    nrql_query: cdktn.listMapper(oneDashboardPageWidgetPieNrqlQueryToTerraform, true)(struct!.nrqlQuery),
+    null_values: cdktn.listMapper(oneDashboardPageWidgetPieNullValuesToTerraform, true)(struct!.nullValues),
+    units: cdktn.listMapper(oneDashboardPageWidgetPieUnitsToTerraform, true)(struct!.units),
   }
 }
 
 
-export function oneDashboardPageWidgetPieToHclTerraform(struct?: OneDashboardPageWidgetPie | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetPieToHclTerraform(struct?: OneDashboardPageWidgetPie | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column: {
-      value: cdktf.numberToHclTerraform(struct!.column),
+      value: cdktn.numberToHclTerraform(struct!.column),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     facet_show_other_series: {
-      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      value: cdktn.booleanToHclTerraform(struct!.facetShowOtherSeries),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     filter_current_dashboard: {
-      value: cdktf.booleanToHclTerraform(struct!.filterCurrentDashboard),
+      value: cdktn.booleanToHclTerraform(struct!.filterCurrentDashboard),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     height: {
-      value: cdktf.numberToHclTerraform(struct!.height),
+      value: cdktn.numberToHclTerraform(struct!.height),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ignore_time_range: {
-      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      value: cdktn.booleanToHclTerraform(struct!.ignoreTimeRange),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     legend_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.legendEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     linked_entity_guids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.linkedEntityGuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.linkedEntityGuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     refresh_rate: {
-      value: cdktf.stringToHclTerraform(struct!.refreshRate),
+      value: cdktn.stringToHclTerraform(struct!.refreshRate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     row: {
-      value: cdktf.numberToHclTerraform(struct!.row),
+      value: cdktn.numberToHclTerraform(struct!.row),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     width: {
-      value: cdktf.numberToHclTerraform(struct!.width),
+      value: cdktn.numberToHclTerraform(struct!.width),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     y_axis_left_max: {
-      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      value: cdktn.numberToHclTerraform(struct!.yAxisLeftMax),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     y_axis_left_min: {
-      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      value: cdktn.numberToHclTerraform(struct!.yAxisLeftMin),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     colors: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieColorsToHclTerraform, true)(struct!.colors),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetPieColorsToHclTerraform, true)(struct!.colors),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetPieColorsList",
     },
     data_format: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieDataFormatToHclTerraform, true)(struct!.dataFormat),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetPieDataFormatToHclTerraform, true)(struct!.dataFormat),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetPieDataFormatList",
@@ -4682,19 +4682,19 @@ export function oneDashboardPageWidgetPieToHclTerraform(struct?: OneDashboardPag
       storageClassType: "OneDashboardPageWidgetPieInitialSortingList",
     },
     nrql_query: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetPieNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetPieNrqlQueryList",
     },
     null_values: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieNullValuesToHclTerraform, true)(struct!.nullValues),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetPieNullValuesToHclTerraform, true)(struct!.nullValues),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetPieNullValuesList",
     },
     units: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieUnitsToHclTerraform, true)(struct!.units),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetPieUnitsToHclTerraform, true)(struct!.units),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetPieUnitsList",
@@ -4705,9 +4705,9 @@ export function oneDashboardPageWidgetPieToHclTerraform(struct?: OneDashboardPag
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetPieOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4715,11 +4715,11 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetPie | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetPie | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4804,7 +4804,7 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetPie | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetPie | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4828,7 +4828,7 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
       this._nullValues.internalValue = undefined;
       this._units.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4871,11 +4871,11 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
   }
 
   // facet_show_other_series - computed: false, optional: true, required: false
-  private _facetShowOtherSeries?: boolean | cdktf.IResolvable; 
+  private _facetShowOtherSeries?: boolean | cdktn.IResolvable; 
   public get facetShowOtherSeries() {
     return this.getBooleanAttribute('facet_show_other_series');
   }
-  public set facetShowOtherSeries(value: boolean | cdktf.IResolvable) {
+  public set facetShowOtherSeries(value: boolean | cdktn.IResolvable) {
     this._facetShowOtherSeries = value;
   }
   public resetFacetShowOtherSeries() {
@@ -4887,11 +4887,11 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
   }
 
   // filter_current_dashboard - computed: false, optional: true, required: false
-  private _filterCurrentDashboard?: boolean | cdktf.IResolvable; 
+  private _filterCurrentDashboard?: boolean | cdktn.IResolvable; 
   public get filterCurrentDashboard() {
     return this.getBooleanAttribute('filter_current_dashboard');
   }
-  public set filterCurrentDashboard(value: boolean | cdktf.IResolvable) {
+  public set filterCurrentDashboard(value: boolean | cdktn.IResolvable) {
     this._filterCurrentDashboard = value;
   }
   public resetFilterCurrentDashboard() {
@@ -4924,11 +4924,11 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
   }
 
   // ignore_time_range - computed: false, optional: true, required: false
-  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  private _ignoreTimeRange?: boolean | cdktn.IResolvable; 
   public get ignoreTimeRange() {
     return this.getBooleanAttribute('ignore_time_range');
   }
-  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+  public set ignoreTimeRange(value: boolean | cdktn.IResolvable) {
     this._ignoreTimeRange = value;
   }
   public resetIgnoreTimeRange() {
@@ -4940,11 +4940,11 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
   }
 
   // legend_enabled - computed: false, optional: true, required: false
-  private _legendEnabled?: boolean | cdktf.IResolvable; 
+  private _legendEnabled?: boolean | cdktn.IResolvable; 
   public get legendEnabled() {
     return this.getBooleanAttribute('legend_enabled');
   }
-  public set legendEnabled(value: boolean | cdktf.IResolvable) {
+  public set legendEnabled(value: boolean | cdktn.IResolvable) {
     this._legendEnabled = value;
   }
   public resetLegendEnabled() {
@@ -5066,7 +5066,7 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
   public get colors() {
     return this._colors;
   }
-  public putColors(value: OneDashboardPageWidgetPieColors[] | cdktf.IResolvable) {
+  public putColors(value: OneDashboardPageWidgetPieColors[] | cdktn.IResolvable) {
     this._colors.internalValue = value;
   }
   public resetColors() {
@@ -5082,7 +5082,7 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
   public get dataFormat() {
     return this._dataFormat;
   }
-  public putDataFormat(value: OneDashboardPageWidgetPieDataFormat[] | cdktf.IResolvable) {
+  public putDataFormat(value: OneDashboardPageWidgetPieDataFormat[] | cdktn.IResolvable) {
     this._dataFormat.internalValue = value;
   }
   public resetDataFormat() {
@@ -5114,7 +5114,7 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
   public get nrqlQuery() {
     return this._nrqlQuery;
   }
-  public putNrqlQuery(value: OneDashboardPageWidgetPieNrqlQuery[] | cdktf.IResolvable) {
+  public putNrqlQuery(value: OneDashboardPageWidgetPieNrqlQuery[] | cdktn.IResolvable) {
     this._nrqlQuery.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5127,7 +5127,7 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
   public get nullValues() {
     return this._nullValues;
   }
-  public putNullValues(value: OneDashboardPageWidgetPieNullValues[] | cdktf.IResolvable) {
+  public putNullValues(value: OneDashboardPageWidgetPieNullValues[] | cdktn.IResolvable) {
     this._nullValues.internalValue = value;
   }
   public resetNullValues() {
@@ -5143,7 +5143,7 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
   public get units() {
     return this._units;
   }
-  public putUnits(value: OneDashboardPageWidgetPieUnits[] | cdktf.IResolvable) {
+  public putUnits(value: OneDashboardPageWidgetPieUnits[] | cdktn.IResolvable) {
     this._units.internalValue = value;
   }
   public resetUnits() {
@@ -5155,15 +5155,15 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class OneDashboardPageWidgetPieList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetPie[] | cdktf.IResolvable
+export class OneDashboardPageWidgetPieList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetPie[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5178,43 +5178,43 @@ export interface OneDashboardPageWidgetStackedBarColorsSeriesOverrides {
   /**
   * Color code
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#color OneDashboard#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#color OneDashboard#color}
   */
   readonly color?: string;
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
 }
 
-export function oneDashboardPageWidgetStackedBarColorsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetStackedBarColorsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarColorsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetStackedBarColorsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    color: cdktf.stringToTerraform(struct!.color),
-    series_name: cdktf.stringToTerraform(struct!.seriesName),
+    color: cdktn.stringToTerraform(struct!.color),
+    series_name: cdktn.stringToTerraform(struct!.seriesName),
   }
 }
 
 
-export function oneDashboardPageWidgetStackedBarColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetStackedBarColorsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetStackedBarColorsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     color: {
-      value: cdktf.stringToHclTerraform(struct!.color),
+      value: cdktn.stringToHclTerraform(struct!.color),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_name: {
-      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      value: cdktn.stringToHclTerraform(struct!.seriesName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5225,9 +5225,9 @@ export function oneDashboardPageWidgetStackedBarColorsSeriesOverridesToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5235,11 +5235,11 @@ export class OneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetStackedBarColorsSeriesOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetStackedBarColorsSeriesOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5256,14 +5256,14 @@ export class OneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetStackedBarColorsSeriesOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetStackedBarColorsSeriesOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._color = undefined;
       this._seriesName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5308,15 +5308,15 @@ export class OneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReferenc
   }
 }
 
-export class OneDashboardPageWidgetStackedBarColorsSeriesOverridesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetStackedBarColorsSeriesOverrides[] | cdktf.IResolvable
+export class OneDashboardPageWidgetStackedBarColorsSeriesOverridesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetStackedBarColorsSeriesOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5329,43 +5329,43 @@ export class OneDashboardPageWidgetStackedBarColorsSeriesOverridesList extends c
 }
 export interface OneDashboardPageWidgetStackedBarColors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#color OneDashboard#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#color OneDashboard#color}
   */
   readonly color?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
-  readonly seriesOverrides?: OneDashboardPageWidgetStackedBarColorsSeriesOverrides[] | cdktf.IResolvable;
+  readonly seriesOverrides?: OneDashboardPageWidgetStackedBarColorsSeriesOverrides[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetStackedBarColorsToTerraform(struct?: OneDashboardPageWidgetStackedBarColors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarColorsToTerraform(struct?: OneDashboardPageWidgetStackedBarColors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    color: cdktf.stringToTerraform(struct!.color),
-    series_overrides: cdktf.listMapper(oneDashboardPageWidgetStackedBarColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
+    color: cdktn.stringToTerraform(struct!.color),
+    series_overrides: cdktn.listMapper(oneDashboardPageWidgetStackedBarColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
 }
 
 
-export function oneDashboardPageWidgetStackedBarColorsToHclTerraform(struct?: OneDashboardPageWidgetStackedBarColors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarColorsToHclTerraform(struct?: OneDashboardPageWidgetStackedBarColors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     color: {
-      value: cdktf.stringToHclTerraform(struct!.color),
+      value: cdktn.stringToHclTerraform(struct!.color),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_overrides: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetStackedBarColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetStackedBarColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetStackedBarColorsSeriesOverridesList",
@@ -5376,9 +5376,9 @@ export function oneDashboardPageWidgetStackedBarColorsToHclTerraform(struct?: On
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetStackedBarColorsOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetStackedBarColorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5386,11 +5386,11 @@ export class OneDashboardPageWidgetStackedBarColorsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetStackedBarColors | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetStackedBarColors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5407,14 +5407,14 @@ export class OneDashboardPageWidgetStackedBarColorsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetStackedBarColors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetStackedBarColors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._color = undefined;
       this._seriesOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5447,7 +5447,7 @@ export class OneDashboardPageWidgetStackedBarColorsOutputReference extends cdktf
   public get seriesOverrides() {
     return this._seriesOverrides;
   }
-  public putSeriesOverrides(value: OneDashboardPageWidgetStackedBarColorsSeriesOverrides[] | cdktf.IResolvable) {
+  public putSeriesOverrides(value: OneDashboardPageWidgetStackedBarColorsSeriesOverrides[] | cdktn.IResolvable) {
     this._seriesOverrides.internalValue = value;
   }
   public resetSeriesOverrides() {
@@ -5459,15 +5459,15 @@ export class OneDashboardPageWidgetStackedBarColorsOutputReference extends cdktf
   }
 }
 
-export class OneDashboardPageWidgetStackedBarColorsList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetStackedBarColors[] | cdktf.IResolvable
+export class OneDashboardPageWidgetStackedBarColorsList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetStackedBarColors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5482,69 +5482,69 @@ export interface OneDashboardPageWidgetStackedBarDataFormat {
   /**
   * Defines the format of the mentioned type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#format OneDashboard#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#format OneDashboard#format}
   */
   readonly format?: string;
   /**
   * The column name to be sorted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#name OneDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#name OneDashboard#name}
   */
   readonly name: string;
   /**
   * The precision of the type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#precision OneDashboard#precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#precision OneDashboard#precision}
   */
   readonly precision?: number;
   /**
   * Defines the type of the mentioned column
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#type OneDashboard#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#type OneDashboard#type}
   */
   readonly type: string;
 }
 
-export function oneDashboardPageWidgetStackedBarDataFormatToTerraform(struct?: OneDashboardPageWidgetStackedBarDataFormat | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarDataFormatToTerraform(struct?: OneDashboardPageWidgetStackedBarDataFormat | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    format: cdktf.stringToTerraform(struct!.format),
-    name: cdktf.stringToTerraform(struct!.name),
-    precision: cdktf.numberToTerraform(struct!.precision),
-    type: cdktf.stringToTerraform(struct!.type),
+    format: cdktn.stringToTerraform(struct!.format),
+    name: cdktn.stringToTerraform(struct!.name),
+    precision: cdktn.numberToTerraform(struct!.precision),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function oneDashboardPageWidgetStackedBarDataFormatToHclTerraform(struct?: OneDashboardPageWidgetStackedBarDataFormat | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarDataFormatToHclTerraform(struct?: OneDashboardPageWidgetStackedBarDataFormat | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     precision: {
-      value: cdktf.numberToHclTerraform(struct!.precision),
+      value: cdktn.numberToHclTerraform(struct!.precision),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5555,9 +5555,9 @@ export function oneDashboardPageWidgetStackedBarDataFormatToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetStackedBarDataFormatOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetStackedBarDataFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5565,11 +5565,11 @@ export class OneDashboardPageWidgetStackedBarDataFormatOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetStackedBarDataFormat | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetStackedBarDataFormat | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5594,7 +5594,7 @@ export class OneDashboardPageWidgetStackedBarDataFormatOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetStackedBarDataFormat | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetStackedBarDataFormat | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5603,7 +5603,7 @@ export class OneDashboardPageWidgetStackedBarDataFormatOutputReference extends c
       this._precision = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5676,15 +5676,15 @@ export class OneDashboardPageWidgetStackedBarDataFormatOutputReference extends c
   }
 }
 
-export class OneDashboardPageWidgetStackedBarDataFormatList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetStackedBarDataFormat[] | cdktf.IResolvable
+export class OneDashboardPageWidgetStackedBarDataFormatList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetStackedBarDataFormat[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5699,43 +5699,43 @@ export interface OneDashboardPageWidgetStackedBarInitialSorting {
   /**
   * Defines the sort order. Either ascending or descending.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#direction OneDashboard#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#direction OneDashboard#direction}
   */
   readonly direction: string;
   /**
   * The column name to be sorted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#name OneDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#name OneDashboard#name}
   */
   readonly name: string;
 }
 
 export function oneDashboardPageWidgetStackedBarInitialSortingToTerraform(struct?: OneDashboardPageWidgetStackedBarInitialSortingOutputReference | OneDashboardPageWidgetStackedBarInitialSorting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    direction: cdktf.stringToTerraform(struct!.direction),
-    name: cdktf.stringToTerraform(struct!.name),
+    direction: cdktn.stringToTerraform(struct!.direction),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function oneDashboardPageWidgetStackedBarInitialSortingToHclTerraform(struct?: OneDashboardPageWidgetStackedBarInitialSortingOutputReference | OneDashboardPageWidgetStackedBarInitialSorting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     direction: {
-      value: cdktf.stringToHclTerraform(struct!.direction),
+      value: cdktn.stringToHclTerraform(struct!.direction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5746,14 +5746,14 @@ export function oneDashboardPageWidgetStackedBarInitialSortingToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetStackedBarInitialSortingOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetStackedBarInitialSortingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5814,43 +5814,43 @@ export interface OneDashboardPageWidgetStackedBarNrqlQuery {
   /**
   * The account ID(s) used for the NRQL query. Can be a single account ID or multiple account IDs in a JSON-encoded array.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#account_id OneDashboard#account_id}
   */
   readonly accountId?: string;
   /**
   * The NRQL query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#query OneDashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#query OneDashboard#query}
   */
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetStackedBarNrqlQueryToTerraform(struct?: OneDashboardPageWidgetStackedBarNrqlQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarNrqlQueryToTerraform(struct?: OneDashboardPageWidgetStackedBarNrqlQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_id: cdktf.stringToTerraform(struct!.accountId),
-    query: cdktf.stringToTerraform(struct!.query),
+    account_id: cdktn.stringToTerraform(struct!.accountId),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
-export function oneDashboardPageWidgetStackedBarNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetStackedBarNrqlQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetStackedBarNrqlQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_id: {
-      value: cdktf.stringToHclTerraform(struct!.accountId),
+      value: cdktn.stringToHclTerraform(struct!.accountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5861,9 +5861,9 @@ export function oneDashboardPageWidgetStackedBarNrqlQueryToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetStackedBarNrqlQueryOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetStackedBarNrqlQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5871,11 +5871,11 @@ export class OneDashboardPageWidgetStackedBarNrqlQueryOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetStackedBarNrqlQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetStackedBarNrqlQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5892,14 +5892,14 @@ export class OneDashboardPageWidgetStackedBarNrqlQueryOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetStackedBarNrqlQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetStackedBarNrqlQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accountId = undefined;
       this._query = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5941,15 +5941,15 @@ export class OneDashboardPageWidgetStackedBarNrqlQueryOutputReference extends cd
   }
 }
 
-export class OneDashboardPageWidgetStackedBarNrqlQueryList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetStackedBarNrqlQuery[] | cdktf.IResolvable
+export class OneDashboardPageWidgetStackedBarNrqlQueryList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetStackedBarNrqlQuery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5964,43 +5964,43 @@ export interface OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides {
   /**
   * Null value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#null_value OneDashboard#null_value}
   */
   readonly nullValue?: string;
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
 }
 
-export function oneDashboardPageWidgetStackedBarNullValuesSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarNullValuesSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    null_value: cdktf.stringToTerraform(struct!.nullValue),
-    series_name: cdktf.stringToTerraform(struct!.seriesName),
+    null_value: cdktn.stringToTerraform(struct!.nullValue),
+    series_name: cdktn.stringToTerraform(struct!.seriesName),
   }
 }
 
 
-export function oneDashboardPageWidgetStackedBarNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     null_value: {
-      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      value: cdktn.stringToHclTerraform(struct!.nullValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_name: {
-      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      value: cdktn.stringToHclTerraform(struct!.seriesName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6011,9 +6011,9 @@ export function oneDashboardPageWidgetStackedBarNullValuesSeriesOverridesToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6021,11 +6021,11 @@ export class OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6042,14 +6042,14 @@ export class OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._nullValue = undefined;
       this._seriesName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6094,15 +6094,15 @@ export class OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputRefe
   }
 }
 
-export class OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides[] | cdktf.IResolvable
+export class OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6115,43 +6115,43 @@ export class OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesList exten
 }
 export interface OneDashboardPageWidgetStackedBarNullValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#null_value OneDashboard#null_value}
   */
   readonly nullValue?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
-  readonly seriesOverrides?: OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides[] | cdktf.IResolvable;
+  readonly seriesOverrides?: OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetStackedBarNullValuesToTerraform(struct?: OneDashboardPageWidgetStackedBarNullValues | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarNullValuesToTerraform(struct?: OneDashboardPageWidgetStackedBarNullValues | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    null_value: cdktf.stringToTerraform(struct!.nullValue),
-    series_overrides: cdktf.listMapper(oneDashboardPageWidgetStackedBarNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
+    null_value: cdktn.stringToTerraform(struct!.nullValue),
+    series_overrides: cdktn.listMapper(oneDashboardPageWidgetStackedBarNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
 }
 
 
-export function oneDashboardPageWidgetStackedBarNullValuesToHclTerraform(struct?: OneDashboardPageWidgetStackedBarNullValues | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarNullValuesToHclTerraform(struct?: OneDashboardPageWidgetStackedBarNullValues | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     null_value: {
-      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      value: cdktn.stringToHclTerraform(struct!.nullValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_overrides: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetStackedBarNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetStackedBarNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesList",
@@ -6162,9 +6162,9 @@ export function oneDashboardPageWidgetStackedBarNullValuesToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetStackedBarNullValuesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetStackedBarNullValuesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6172,11 +6172,11 @@ export class OneDashboardPageWidgetStackedBarNullValuesOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetStackedBarNullValues | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetStackedBarNullValues | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6193,14 +6193,14 @@ export class OneDashboardPageWidgetStackedBarNullValuesOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetStackedBarNullValues | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetStackedBarNullValues | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._nullValue = undefined;
       this._seriesOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6233,7 +6233,7 @@ export class OneDashboardPageWidgetStackedBarNullValuesOutputReference extends c
   public get seriesOverrides() {
     return this._seriesOverrides;
   }
-  public putSeriesOverrides(value: OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides[] | cdktf.IResolvable) {
+  public putSeriesOverrides(value: OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides[] | cdktn.IResolvable) {
     this._seriesOverrides.internalValue = value;
   }
   public resetSeriesOverrides() {
@@ -6245,15 +6245,15 @@ export class OneDashboardPageWidgetStackedBarNullValuesOutputReference extends c
   }
 }
 
-export class OneDashboardPageWidgetStackedBarNullValuesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetStackedBarNullValues[] | cdktf.IResolvable
+export class OneDashboardPageWidgetStackedBarNullValuesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetStackedBarNullValues[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6268,30 +6268,30 @@ export interface OneDashboardPageWidgetStackedBarTooltip {
   /**
   * Tooltip display mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#mode OneDashboard#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#mode OneDashboard#mode}
   */
   readonly mode: string;
 }
 
 export function oneDashboardPageWidgetStackedBarTooltipToTerraform(struct?: OneDashboardPageWidgetStackedBarTooltipOutputReference | OneDashboardPageWidgetStackedBarTooltip): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
+    mode: cdktn.stringToTerraform(struct!.mode),
   }
 }
 
 
 export function oneDashboardPageWidgetStackedBarTooltipToHclTerraform(struct?: OneDashboardPageWidgetStackedBarTooltipOutputReference | OneDashboardPageWidgetStackedBarTooltip): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6302,14 +6302,14 @@ export function oneDashboardPageWidgetStackedBarTooltipToHclTerraform(struct?: O
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetStackedBarTooltipOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetStackedBarTooltipOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6351,43 +6351,43 @@ export interface OneDashboardPageWidgetStackedBarUnitsSeriesOverrides {
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
   /**
   * Unit name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#unit OneDashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#unit OneDashboard#unit}
   */
   readonly unit?: string;
 }
 
-export function oneDashboardPageWidgetStackedBarUnitsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetStackedBarUnitsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarUnitsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetStackedBarUnitsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    series_name: cdktf.stringToTerraform(struct!.seriesName),
-    unit: cdktf.stringToTerraform(struct!.unit),
+    series_name: cdktn.stringToTerraform(struct!.seriesName),
+    unit: cdktn.stringToTerraform(struct!.unit),
   }
 }
 
 
-export function oneDashboardPageWidgetStackedBarUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetStackedBarUnitsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetStackedBarUnitsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     series_name: {
-      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      value: cdktn.stringToHclTerraform(struct!.seriesName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6398,9 +6398,9 @@ export function oneDashboardPageWidgetStackedBarUnitsSeriesOverridesToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetStackedBarUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetStackedBarUnitsSeriesOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6408,11 +6408,11 @@ export class OneDashboardPageWidgetStackedBarUnitsSeriesOverridesOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetStackedBarUnitsSeriesOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetStackedBarUnitsSeriesOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6429,14 +6429,14 @@ export class OneDashboardPageWidgetStackedBarUnitsSeriesOverridesOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetStackedBarUnitsSeriesOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetStackedBarUnitsSeriesOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._seriesName = undefined;
       this._unit = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6481,15 +6481,15 @@ export class OneDashboardPageWidgetStackedBarUnitsSeriesOverridesOutputReference
   }
 }
 
-export class OneDashboardPageWidgetStackedBarUnitsSeriesOverridesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetStackedBarUnitsSeriesOverrides[] | cdktf.IResolvable
+export class OneDashboardPageWidgetStackedBarUnitsSeriesOverridesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetStackedBarUnitsSeriesOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6502,43 +6502,43 @@ export class OneDashboardPageWidgetStackedBarUnitsSeriesOverridesList extends cd
 }
 export interface OneDashboardPageWidgetStackedBarUnits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#unit OneDashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#unit OneDashboard#unit}
   */
   readonly unit?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
-  readonly seriesOverrides?: OneDashboardPageWidgetStackedBarUnitsSeriesOverrides[] | cdktf.IResolvable;
+  readonly seriesOverrides?: OneDashboardPageWidgetStackedBarUnitsSeriesOverrides[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetStackedBarUnitsToTerraform(struct?: OneDashboardPageWidgetStackedBarUnits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarUnitsToTerraform(struct?: OneDashboardPageWidgetStackedBarUnits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit: cdktf.stringToTerraform(struct!.unit),
-    series_overrides: cdktf.listMapper(oneDashboardPageWidgetStackedBarUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    series_overrides: cdktn.listMapper(oneDashboardPageWidgetStackedBarUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
 }
 
 
-export function oneDashboardPageWidgetStackedBarUnitsToHclTerraform(struct?: OneDashboardPageWidgetStackedBarUnits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarUnitsToHclTerraform(struct?: OneDashboardPageWidgetStackedBarUnits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_overrides: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetStackedBarUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetStackedBarUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetStackedBarUnitsSeriesOverridesList",
@@ -6549,9 +6549,9 @@ export function oneDashboardPageWidgetStackedBarUnitsToHclTerraform(struct?: One
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetStackedBarUnitsOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetStackedBarUnitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6559,11 +6559,11 @@ export class OneDashboardPageWidgetStackedBarUnitsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetStackedBarUnits | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetStackedBarUnits | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6580,14 +6580,14 @@ export class OneDashboardPageWidgetStackedBarUnitsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetStackedBarUnits | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetStackedBarUnits | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._unit = undefined;
       this._seriesOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6620,7 +6620,7 @@ export class OneDashboardPageWidgetStackedBarUnitsOutputReference extends cdktf.
   public get seriesOverrides() {
     return this._seriesOverrides;
   }
-  public putSeriesOverrides(value: OneDashboardPageWidgetStackedBarUnitsSeriesOverrides[] | cdktf.IResolvable) {
+  public putSeriesOverrides(value: OneDashboardPageWidgetStackedBarUnitsSeriesOverrides[] | cdktn.IResolvable) {
     this._seriesOverrides.internalValue = value;
   }
   public resetSeriesOverrides() {
@@ -6632,15 +6632,15 @@ export class OneDashboardPageWidgetStackedBarUnitsOutputReference extends cdktf.
   }
 }
 
-export class OneDashboardPageWidgetStackedBarUnitsList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetStackedBarUnits[] | cdktf.IResolvable
+export class OneDashboardPageWidgetStackedBarUnitsList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetStackedBarUnits[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6653,203 +6653,203 @@ export class OneDashboardPageWidgetStackedBarUnitsList extends cdktf.ComplexList
 }
 export interface OneDashboardPageWidgetStackedBar {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#column OneDashboard#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#column OneDashboard#column}
   */
   readonly column: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}
   */
-  readonly facetShowOtherSeries?: boolean | cdktf.IResolvable;
+  readonly facetShowOtherSeries?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#height OneDashboard#height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#height OneDashboard#height}
   */
   readonly height?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
   */
-  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  readonly ignoreTimeRange?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}
   */
-  readonly legendEnabled?: boolean | cdktf.IResolvable;
+  readonly legendEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}
   */
   readonly refreshRate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#row OneDashboard#row}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
   /**
   * A title for the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#title OneDashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#title OneDashboard#title}
   */
   readonly title: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#width OneDashboard#width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#width OneDashboard#width}
   */
   readonly width?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}
   */
   readonly yAxisLeftMax?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}
   */
   readonly yAxisLeftMin?: number;
   /**
   * colors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#colors OneDashboard#colors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#colors OneDashboard#colors}
   */
-  readonly colors?: OneDashboardPageWidgetStackedBarColors[] | cdktf.IResolvable;
+  readonly colors?: OneDashboardPageWidgetStackedBarColors[] | cdktn.IResolvable;
   /**
   * data_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#data_format OneDashboard#data_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#data_format OneDashboard#data_format}
   */
-  readonly dataFormat?: OneDashboardPageWidgetStackedBarDataFormat[] | cdktf.IResolvable;
+  readonly dataFormat?: OneDashboardPageWidgetStackedBarDataFormat[] | cdktn.IResolvable;
   /**
   * initial_sorting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
   */
   readonly initialSorting?: OneDashboardPageWidgetStackedBarInitialSorting;
   /**
   * nrql_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetStackedBarNrqlQuery[] | cdktf.IResolvable;
+  readonly nrqlQuery: OneDashboardPageWidgetStackedBarNrqlQuery[] | cdktn.IResolvable;
   /**
   * null_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#null_values OneDashboard#null_values}
   */
-  readonly nullValues?: OneDashboardPageWidgetStackedBarNullValues[] | cdktf.IResolvable;
+  readonly nullValues?: OneDashboardPageWidgetStackedBarNullValues[] | cdktn.IResolvable;
   /**
   * tooltip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#tooltip OneDashboard#tooltip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#tooltip OneDashboard#tooltip}
   */
   readonly tooltip?: OneDashboardPageWidgetStackedBarTooltip;
   /**
   * units block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#units OneDashboard#units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#units OneDashboard#units}
   */
-  readonly units?: OneDashboardPageWidgetStackedBarUnits[] | cdktf.IResolvable;
+  readonly units?: OneDashboardPageWidgetStackedBarUnits[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetStackedBarToTerraform(struct?: OneDashboardPageWidgetStackedBar | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarToTerraform(struct?: OneDashboardPageWidgetStackedBar | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column: cdktf.numberToTerraform(struct!.column),
-    facet_show_other_series: cdktf.booleanToTerraform(struct!.facetShowOtherSeries),
-    height: cdktf.numberToTerraform(struct!.height),
-    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
-    legend_enabled: cdktf.booleanToTerraform(struct!.legendEnabled),
-    refresh_rate: cdktf.stringToTerraform(struct!.refreshRate),
-    row: cdktf.numberToTerraform(struct!.row),
-    title: cdktf.stringToTerraform(struct!.title),
-    width: cdktf.numberToTerraform(struct!.width),
-    y_axis_left_max: cdktf.numberToTerraform(struct!.yAxisLeftMax),
-    y_axis_left_min: cdktf.numberToTerraform(struct!.yAxisLeftMin),
-    colors: cdktf.listMapper(oneDashboardPageWidgetStackedBarColorsToTerraform, true)(struct!.colors),
-    data_format: cdktf.listMapper(oneDashboardPageWidgetStackedBarDataFormatToTerraform, true)(struct!.dataFormat),
+    column: cdktn.numberToTerraform(struct!.column),
+    facet_show_other_series: cdktn.booleanToTerraform(struct!.facetShowOtherSeries),
+    height: cdktn.numberToTerraform(struct!.height),
+    ignore_time_range: cdktn.booleanToTerraform(struct!.ignoreTimeRange),
+    legend_enabled: cdktn.booleanToTerraform(struct!.legendEnabled),
+    refresh_rate: cdktn.stringToTerraform(struct!.refreshRate),
+    row: cdktn.numberToTerraform(struct!.row),
+    title: cdktn.stringToTerraform(struct!.title),
+    width: cdktn.numberToTerraform(struct!.width),
+    y_axis_left_max: cdktn.numberToTerraform(struct!.yAxisLeftMax),
+    y_axis_left_min: cdktn.numberToTerraform(struct!.yAxisLeftMin),
+    colors: cdktn.listMapper(oneDashboardPageWidgetStackedBarColorsToTerraform, true)(struct!.colors),
+    data_format: cdktn.listMapper(oneDashboardPageWidgetStackedBarDataFormatToTerraform, true)(struct!.dataFormat),
     initial_sorting: oneDashboardPageWidgetStackedBarInitialSortingToTerraform(struct!.initialSorting),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetStackedBarNrqlQueryToTerraform, true)(struct!.nrqlQuery),
-    null_values: cdktf.listMapper(oneDashboardPageWidgetStackedBarNullValuesToTerraform, true)(struct!.nullValues),
+    nrql_query: cdktn.listMapper(oneDashboardPageWidgetStackedBarNrqlQueryToTerraform, true)(struct!.nrqlQuery),
+    null_values: cdktn.listMapper(oneDashboardPageWidgetStackedBarNullValuesToTerraform, true)(struct!.nullValues),
     tooltip: oneDashboardPageWidgetStackedBarTooltipToTerraform(struct!.tooltip),
-    units: cdktf.listMapper(oneDashboardPageWidgetStackedBarUnitsToTerraform, true)(struct!.units),
+    units: cdktn.listMapper(oneDashboardPageWidgetStackedBarUnitsToTerraform, true)(struct!.units),
   }
 }
 
 
-export function oneDashboardPageWidgetStackedBarToHclTerraform(struct?: OneDashboardPageWidgetStackedBar | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetStackedBarToHclTerraform(struct?: OneDashboardPageWidgetStackedBar | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column: {
-      value: cdktf.numberToHclTerraform(struct!.column),
+      value: cdktn.numberToHclTerraform(struct!.column),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     facet_show_other_series: {
-      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      value: cdktn.booleanToHclTerraform(struct!.facetShowOtherSeries),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     height: {
-      value: cdktf.numberToHclTerraform(struct!.height),
+      value: cdktn.numberToHclTerraform(struct!.height),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ignore_time_range: {
-      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      value: cdktn.booleanToHclTerraform(struct!.ignoreTimeRange),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     legend_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.legendEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     refresh_rate: {
-      value: cdktf.stringToHclTerraform(struct!.refreshRate),
+      value: cdktn.stringToHclTerraform(struct!.refreshRate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     row: {
-      value: cdktf.numberToHclTerraform(struct!.row),
+      value: cdktn.numberToHclTerraform(struct!.row),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     width: {
-      value: cdktf.numberToHclTerraform(struct!.width),
+      value: cdktn.numberToHclTerraform(struct!.width),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     y_axis_left_max: {
-      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      value: cdktn.numberToHclTerraform(struct!.yAxisLeftMax),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     y_axis_left_min: {
-      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      value: cdktn.numberToHclTerraform(struct!.yAxisLeftMin),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     colors: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetStackedBarColorsToHclTerraform, true)(struct!.colors),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetStackedBarColorsToHclTerraform, true)(struct!.colors),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetStackedBarColorsList",
     },
     data_format: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetStackedBarDataFormatToHclTerraform, true)(struct!.dataFormat),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetStackedBarDataFormatToHclTerraform, true)(struct!.dataFormat),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetStackedBarDataFormatList",
@@ -6861,13 +6861,13 @@ export function oneDashboardPageWidgetStackedBarToHclTerraform(struct?: OneDashb
       storageClassType: "OneDashboardPageWidgetStackedBarInitialSortingList",
     },
     nrql_query: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetStackedBarNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetStackedBarNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetStackedBarNrqlQueryList",
     },
     null_values: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetStackedBarNullValuesToHclTerraform, true)(struct!.nullValues),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetStackedBarNullValuesToHclTerraform, true)(struct!.nullValues),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetStackedBarNullValuesList",
@@ -6879,7 +6879,7 @@ export function oneDashboardPageWidgetStackedBarToHclTerraform(struct?: OneDashb
       storageClassType: "OneDashboardPageWidgetStackedBarTooltipList",
     },
     units: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetStackedBarUnitsToHclTerraform, true)(struct!.units),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetStackedBarUnitsToHclTerraform, true)(struct!.units),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetStackedBarUnitsList",
@@ -6890,9 +6890,9 @@ export function oneDashboardPageWidgetStackedBarToHclTerraform(struct?: OneDashb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetStackedBarOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6900,11 +6900,11 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetStackedBar | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetStackedBar | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6985,7 +6985,7 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetStackedBar | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetStackedBar | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7008,7 +7008,7 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
       this._tooltip.internalValue = undefined;
       this._units.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7050,11 +7050,11 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
   }
 
   // facet_show_other_series - computed: false, optional: true, required: false
-  private _facetShowOtherSeries?: boolean | cdktf.IResolvable; 
+  private _facetShowOtherSeries?: boolean | cdktn.IResolvable; 
   public get facetShowOtherSeries() {
     return this.getBooleanAttribute('facet_show_other_series');
   }
-  public set facetShowOtherSeries(value: boolean | cdktf.IResolvable) {
+  public set facetShowOtherSeries(value: boolean | cdktn.IResolvable) {
     this._facetShowOtherSeries = value;
   }
   public resetFacetShowOtherSeries() {
@@ -7087,11 +7087,11 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
   }
 
   // ignore_time_range - computed: false, optional: true, required: false
-  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  private _ignoreTimeRange?: boolean | cdktn.IResolvable; 
   public get ignoreTimeRange() {
     return this.getBooleanAttribute('ignore_time_range');
   }
-  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+  public set ignoreTimeRange(value: boolean | cdktn.IResolvable) {
     this._ignoreTimeRange = value;
   }
   public resetIgnoreTimeRange() {
@@ -7103,11 +7103,11 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
   }
 
   // legend_enabled - computed: false, optional: true, required: false
-  private _legendEnabled?: boolean | cdktf.IResolvable; 
+  private _legendEnabled?: boolean | cdktn.IResolvable; 
   public get legendEnabled() {
     return this.getBooleanAttribute('legend_enabled');
   }
-  public set legendEnabled(value: boolean | cdktf.IResolvable) {
+  public set legendEnabled(value: boolean | cdktn.IResolvable) {
     this._legendEnabled = value;
   }
   public resetLegendEnabled() {
@@ -7213,7 +7213,7 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
   public get colors() {
     return this._colors;
   }
-  public putColors(value: OneDashboardPageWidgetStackedBarColors[] | cdktf.IResolvable) {
+  public putColors(value: OneDashboardPageWidgetStackedBarColors[] | cdktn.IResolvable) {
     this._colors.internalValue = value;
   }
   public resetColors() {
@@ -7229,7 +7229,7 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
   public get dataFormat() {
     return this._dataFormat;
   }
-  public putDataFormat(value: OneDashboardPageWidgetStackedBarDataFormat[] | cdktf.IResolvable) {
+  public putDataFormat(value: OneDashboardPageWidgetStackedBarDataFormat[] | cdktn.IResolvable) {
     this._dataFormat.internalValue = value;
   }
   public resetDataFormat() {
@@ -7261,7 +7261,7 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
   public get nrqlQuery() {
     return this._nrqlQuery;
   }
-  public putNrqlQuery(value: OneDashboardPageWidgetStackedBarNrqlQuery[] | cdktf.IResolvable) {
+  public putNrqlQuery(value: OneDashboardPageWidgetStackedBarNrqlQuery[] | cdktn.IResolvable) {
     this._nrqlQuery.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -7274,7 +7274,7 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
   public get nullValues() {
     return this._nullValues;
   }
-  public putNullValues(value: OneDashboardPageWidgetStackedBarNullValues[] | cdktf.IResolvable) {
+  public putNullValues(value: OneDashboardPageWidgetStackedBarNullValues[] | cdktn.IResolvable) {
     this._nullValues.internalValue = value;
   }
   public resetNullValues() {
@@ -7306,7 +7306,7 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
   public get units() {
     return this._units;
   }
-  public putUnits(value: OneDashboardPageWidgetStackedBarUnits[] | cdktf.IResolvable) {
+  public putUnits(value: OneDashboardPageWidgetStackedBarUnits[] | cdktn.IResolvable) {
     this._units.internalValue = value;
   }
   public resetUnits() {
@@ -7318,15 +7318,15 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
   }
 }
 
-export class OneDashboardPageWidgetStackedBarList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetStackedBar[] | cdktf.IResolvable
+export class OneDashboardPageWidgetStackedBarList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetStackedBar[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7341,43 +7341,43 @@ export interface OneDashboardPageWidgetTableColorsSeriesOverrides {
   /**
   * Color code
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#color OneDashboard#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#color OneDashboard#color}
   */
   readonly color?: string;
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
 }
 
-export function oneDashboardPageWidgetTableColorsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetTableColorsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableColorsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetTableColorsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    color: cdktf.stringToTerraform(struct!.color),
-    series_name: cdktf.stringToTerraform(struct!.seriesName),
+    color: cdktn.stringToTerraform(struct!.color),
+    series_name: cdktn.stringToTerraform(struct!.seriesName),
   }
 }
 
 
-export function oneDashboardPageWidgetTableColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetTableColorsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetTableColorsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     color: {
-      value: cdktf.stringToHclTerraform(struct!.color),
+      value: cdktn.stringToHclTerraform(struct!.color),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_name: {
-      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      value: cdktn.stringToHclTerraform(struct!.seriesName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7388,9 +7388,9 @@ export function oneDashboardPageWidgetTableColorsSeriesOverridesToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetTableColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetTableColorsSeriesOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7398,11 +7398,11 @@ export class OneDashboardPageWidgetTableColorsSeriesOverridesOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetTableColorsSeriesOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetTableColorsSeriesOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7419,14 +7419,14 @@ export class OneDashboardPageWidgetTableColorsSeriesOverridesOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetTableColorsSeriesOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetTableColorsSeriesOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._color = undefined;
       this._seriesName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7471,15 +7471,15 @@ export class OneDashboardPageWidgetTableColorsSeriesOverridesOutputReference ext
   }
 }
 
-export class OneDashboardPageWidgetTableColorsSeriesOverridesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetTableColorsSeriesOverrides[] | cdktf.IResolvable
+export class OneDashboardPageWidgetTableColorsSeriesOverridesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetTableColorsSeriesOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7492,43 +7492,43 @@ export class OneDashboardPageWidgetTableColorsSeriesOverridesList extends cdktf.
 }
 export interface OneDashboardPageWidgetTableColors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#color OneDashboard#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#color OneDashboard#color}
   */
   readonly color?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
-  readonly seriesOverrides?: OneDashboardPageWidgetTableColorsSeriesOverrides[] | cdktf.IResolvable;
+  readonly seriesOverrides?: OneDashboardPageWidgetTableColorsSeriesOverrides[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetTableColorsToTerraform(struct?: OneDashboardPageWidgetTableColors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableColorsToTerraform(struct?: OneDashboardPageWidgetTableColors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    color: cdktf.stringToTerraform(struct!.color),
-    series_overrides: cdktf.listMapper(oneDashboardPageWidgetTableColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
+    color: cdktn.stringToTerraform(struct!.color),
+    series_overrides: cdktn.listMapper(oneDashboardPageWidgetTableColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
 }
 
 
-export function oneDashboardPageWidgetTableColorsToHclTerraform(struct?: OneDashboardPageWidgetTableColors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableColorsToHclTerraform(struct?: OneDashboardPageWidgetTableColors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     color: {
-      value: cdktf.stringToHclTerraform(struct!.color),
+      value: cdktn.stringToHclTerraform(struct!.color),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_overrides: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetTableColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetTableColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetTableColorsSeriesOverridesList",
@@ -7539,9 +7539,9 @@ export function oneDashboardPageWidgetTableColorsToHclTerraform(struct?: OneDash
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetTableColorsOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetTableColorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7549,11 +7549,11 @@ export class OneDashboardPageWidgetTableColorsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetTableColors | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetTableColors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7570,14 +7570,14 @@ export class OneDashboardPageWidgetTableColorsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetTableColors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetTableColors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._color = undefined;
       this._seriesOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7610,7 +7610,7 @@ export class OneDashboardPageWidgetTableColorsOutputReference extends cdktf.Comp
   public get seriesOverrides() {
     return this._seriesOverrides;
   }
-  public putSeriesOverrides(value: OneDashboardPageWidgetTableColorsSeriesOverrides[] | cdktf.IResolvable) {
+  public putSeriesOverrides(value: OneDashboardPageWidgetTableColorsSeriesOverrides[] | cdktn.IResolvable) {
     this._seriesOverrides.internalValue = value;
   }
   public resetSeriesOverrides() {
@@ -7622,15 +7622,15 @@ export class OneDashboardPageWidgetTableColorsOutputReference extends cdktf.Comp
   }
 }
 
-export class OneDashboardPageWidgetTableColorsList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetTableColors[] | cdktf.IResolvable
+export class OneDashboardPageWidgetTableColorsList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetTableColors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7645,69 +7645,69 @@ export interface OneDashboardPageWidgetTableDataFormat {
   /**
   * Defines the format of the mentioned type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#format OneDashboard#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#format OneDashboard#format}
   */
   readonly format?: string;
   /**
   * The column name to be sorted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#name OneDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#name OneDashboard#name}
   */
   readonly name: string;
   /**
   * The precision of the type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#precision OneDashboard#precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#precision OneDashboard#precision}
   */
   readonly precision?: number;
   /**
   * Defines the type of the mentioned column
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#type OneDashboard#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#type OneDashboard#type}
   */
   readonly type: string;
 }
 
-export function oneDashboardPageWidgetTableDataFormatToTerraform(struct?: OneDashboardPageWidgetTableDataFormat | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableDataFormatToTerraform(struct?: OneDashboardPageWidgetTableDataFormat | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    format: cdktf.stringToTerraform(struct!.format),
-    name: cdktf.stringToTerraform(struct!.name),
-    precision: cdktf.numberToTerraform(struct!.precision),
-    type: cdktf.stringToTerraform(struct!.type),
+    format: cdktn.stringToTerraform(struct!.format),
+    name: cdktn.stringToTerraform(struct!.name),
+    precision: cdktn.numberToTerraform(struct!.precision),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function oneDashboardPageWidgetTableDataFormatToHclTerraform(struct?: OneDashboardPageWidgetTableDataFormat | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableDataFormatToHclTerraform(struct?: OneDashboardPageWidgetTableDataFormat | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     precision: {
-      value: cdktf.numberToHclTerraform(struct!.precision),
+      value: cdktn.numberToHclTerraform(struct!.precision),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7718,9 +7718,9 @@ export function oneDashboardPageWidgetTableDataFormatToHclTerraform(struct?: One
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetTableDataFormatOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetTableDataFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7728,11 +7728,11 @@ export class OneDashboardPageWidgetTableDataFormatOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetTableDataFormat | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetTableDataFormat | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7757,7 +7757,7 @@ export class OneDashboardPageWidgetTableDataFormatOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetTableDataFormat | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetTableDataFormat | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7766,7 +7766,7 @@ export class OneDashboardPageWidgetTableDataFormatOutputReference extends cdktf.
       this._precision = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7839,15 +7839,15 @@ export class OneDashboardPageWidgetTableDataFormatOutputReference extends cdktf.
   }
 }
 
-export class OneDashboardPageWidgetTableDataFormatList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetTableDataFormat[] | cdktf.IResolvable
+export class OneDashboardPageWidgetTableDataFormatList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetTableDataFormat[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7862,43 +7862,43 @@ export interface OneDashboardPageWidgetTableInitialSorting {
   /**
   * Defines the sort order. Either ascending or descending.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#direction OneDashboard#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#direction OneDashboard#direction}
   */
   readonly direction: string;
   /**
   * The column name to be sorted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#name OneDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#name OneDashboard#name}
   */
   readonly name: string;
 }
 
 export function oneDashboardPageWidgetTableInitialSortingToTerraform(struct?: OneDashboardPageWidgetTableInitialSortingOutputReference | OneDashboardPageWidgetTableInitialSorting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    direction: cdktf.stringToTerraform(struct!.direction),
-    name: cdktf.stringToTerraform(struct!.name),
+    direction: cdktn.stringToTerraform(struct!.direction),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function oneDashboardPageWidgetTableInitialSortingToHclTerraform(struct?: OneDashboardPageWidgetTableInitialSortingOutputReference | OneDashboardPageWidgetTableInitialSorting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     direction: {
-      value: cdktf.stringToHclTerraform(struct!.direction),
+      value: cdktn.stringToHclTerraform(struct!.direction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7909,14 +7909,14 @@ export function oneDashboardPageWidgetTableInitialSortingToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetTableInitialSortingOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetTableInitialSortingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7977,43 +7977,43 @@ export interface OneDashboardPageWidgetTableNrqlQuery {
   /**
   * The account ID(s) used for the NRQL query. Can be a single account ID or multiple account IDs in a JSON-encoded array.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#account_id OneDashboard#account_id}
   */
   readonly accountId?: string;
   /**
   * The NRQL query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#query OneDashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#query OneDashboard#query}
   */
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetTableNrqlQueryToTerraform(struct?: OneDashboardPageWidgetTableNrqlQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableNrqlQueryToTerraform(struct?: OneDashboardPageWidgetTableNrqlQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_id: cdktf.stringToTerraform(struct!.accountId),
-    query: cdktf.stringToTerraform(struct!.query),
+    account_id: cdktn.stringToTerraform(struct!.accountId),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
-export function oneDashboardPageWidgetTableNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetTableNrqlQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetTableNrqlQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_id: {
-      value: cdktf.stringToHclTerraform(struct!.accountId),
+      value: cdktn.stringToHclTerraform(struct!.accountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8024,9 +8024,9 @@ export function oneDashboardPageWidgetTableNrqlQueryToHclTerraform(struct?: OneD
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetTableNrqlQueryOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetTableNrqlQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8034,11 +8034,11 @@ export class OneDashboardPageWidgetTableNrqlQueryOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetTableNrqlQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetTableNrqlQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8055,14 +8055,14 @@ export class OneDashboardPageWidgetTableNrqlQueryOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetTableNrqlQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetTableNrqlQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accountId = undefined;
       this._query = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8104,15 +8104,15 @@ export class OneDashboardPageWidgetTableNrqlQueryOutputReference extends cdktf.C
   }
 }
 
-export class OneDashboardPageWidgetTableNrqlQueryList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetTableNrqlQuery[] | cdktf.IResolvable
+export class OneDashboardPageWidgetTableNrqlQueryList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetTableNrqlQuery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8127,43 +8127,43 @@ export interface OneDashboardPageWidgetTableNullValuesSeriesOverrides {
   /**
   * Null value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#null_value OneDashboard#null_value}
   */
   readonly nullValue?: string;
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
 }
 
-export function oneDashboardPageWidgetTableNullValuesSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetTableNullValuesSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableNullValuesSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetTableNullValuesSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    null_value: cdktf.stringToTerraform(struct!.nullValue),
-    series_name: cdktf.stringToTerraform(struct!.seriesName),
+    null_value: cdktn.stringToTerraform(struct!.nullValue),
+    series_name: cdktn.stringToTerraform(struct!.seriesName),
   }
 }
 
 
-export function oneDashboardPageWidgetTableNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetTableNullValuesSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetTableNullValuesSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     null_value: {
-      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      value: cdktn.stringToHclTerraform(struct!.nullValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_name: {
-      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      value: cdktn.stringToHclTerraform(struct!.seriesName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8174,9 +8174,9 @@ export function oneDashboardPageWidgetTableNullValuesSeriesOverridesToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetTableNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetTableNullValuesSeriesOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8184,11 +8184,11 @@ export class OneDashboardPageWidgetTableNullValuesSeriesOverridesOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetTableNullValuesSeriesOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetTableNullValuesSeriesOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8205,14 +8205,14 @@ export class OneDashboardPageWidgetTableNullValuesSeriesOverridesOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetTableNullValuesSeriesOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetTableNullValuesSeriesOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._nullValue = undefined;
       this._seriesName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8257,15 +8257,15 @@ export class OneDashboardPageWidgetTableNullValuesSeriesOverridesOutputReference
   }
 }
 
-export class OneDashboardPageWidgetTableNullValuesSeriesOverridesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetTableNullValuesSeriesOverrides[] | cdktf.IResolvable
+export class OneDashboardPageWidgetTableNullValuesSeriesOverridesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetTableNullValuesSeriesOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8278,43 +8278,43 @@ export class OneDashboardPageWidgetTableNullValuesSeriesOverridesList extends cd
 }
 export interface OneDashboardPageWidgetTableNullValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#null_value OneDashboard#null_value}
   */
   readonly nullValue?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
-  readonly seriesOverrides?: OneDashboardPageWidgetTableNullValuesSeriesOverrides[] | cdktf.IResolvable;
+  readonly seriesOverrides?: OneDashboardPageWidgetTableNullValuesSeriesOverrides[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetTableNullValuesToTerraform(struct?: OneDashboardPageWidgetTableNullValues | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableNullValuesToTerraform(struct?: OneDashboardPageWidgetTableNullValues | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    null_value: cdktf.stringToTerraform(struct!.nullValue),
-    series_overrides: cdktf.listMapper(oneDashboardPageWidgetTableNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
+    null_value: cdktn.stringToTerraform(struct!.nullValue),
+    series_overrides: cdktn.listMapper(oneDashboardPageWidgetTableNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
 }
 
 
-export function oneDashboardPageWidgetTableNullValuesToHclTerraform(struct?: OneDashboardPageWidgetTableNullValues | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableNullValuesToHclTerraform(struct?: OneDashboardPageWidgetTableNullValues | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     null_value: {
-      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      value: cdktn.stringToHclTerraform(struct!.nullValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_overrides: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetTableNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetTableNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetTableNullValuesSeriesOverridesList",
@@ -8325,9 +8325,9 @@ export function oneDashboardPageWidgetTableNullValuesToHclTerraform(struct?: One
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetTableNullValuesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetTableNullValuesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8335,11 +8335,11 @@ export class OneDashboardPageWidgetTableNullValuesOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetTableNullValues | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetTableNullValues | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8356,14 +8356,14 @@ export class OneDashboardPageWidgetTableNullValuesOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetTableNullValues | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetTableNullValues | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._nullValue = undefined;
       this._seriesOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8396,7 +8396,7 @@ export class OneDashboardPageWidgetTableNullValuesOutputReference extends cdktf.
   public get seriesOverrides() {
     return this._seriesOverrides;
   }
-  public putSeriesOverrides(value: OneDashboardPageWidgetTableNullValuesSeriesOverrides[] | cdktf.IResolvable) {
+  public putSeriesOverrides(value: OneDashboardPageWidgetTableNullValuesSeriesOverrides[] | cdktn.IResolvable) {
     this._seriesOverrides.internalValue = value;
   }
   public resetSeriesOverrides() {
@@ -8408,15 +8408,15 @@ export class OneDashboardPageWidgetTableNullValuesOutputReference extends cdktf.
   }
 }
 
-export class OneDashboardPageWidgetTableNullValuesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetTableNullValues[] | cdktf.IResolvable
+export class OneDashboardPageWidgetTableNullValuesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetTableNullValues[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8431,69 +8431,69 @@ export interface OneDashboardPageWidgetTableThreshold {
   /**
   * Name of the column in the table, to which the threshold would be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#column_name OneDashboard#column_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#column_name OneDashboard#column_name}
   */
   readonly columnName?: string;
   /**
   * The number from which the range starts in thresholds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#from OneDashboard#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#from OneDashboard#from}
   */
   readonly from?: string;
   /**
   * Severity of the threshold, which would reflect in the widget, in the range of the threshold specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#severity OneDashboard#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#severity OneDashboard#severity}
   */
   readonly severity?: string;
   /**
   * The number at which the range ends in thresholds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#to OneDashboard#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#to OneDashboard#to}
   */
   readonly to?: string;
 }
 
-export function oneDashboardPageWidgetTableThresholdToTerraform(struct?: OneDashboardPageWidgetTableThreshold | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableThresholdToTerraform(struct?: OneDashboardPageWidgetTableThreshold | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column_name: cdktf.stringToTerraform(struct!.columnName),
-    from: cdktf.stringToTerraform(struct!.from),
-    severity: cdktf.stringToTerraform(struct!.severity),
-    to: cdktf.stringToTerraform(struct!.to),
+    column_name: cdktn.stringToTerraform(struct!.columnName),
+    from: cdktn.stringToTerraform(struct!.from),
+    severity: cdktn.stringToTerraform(struct!.severity),
+    to: cdktn.stringToTerraform(struct!.to),
   }
 }
 
 
-export function oneDashboardPageWidgetTableThresholdToHclTerraform(struct?: OneDashboardPageWidgetTableThreshold | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableThresholdToHclTerraform(struct?: OneDashboardPageWidgetTableThreshold | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column_name: {
-      value: cdktf.stringToHclTerraform(struct!.columnName),
+      value: cdktn.stringToHclTerraform(struct!.columnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     from: {
-      value: cdktf.stringToHclTerraform(struct!.from),
+      value: cdktn.stringToHclTerraform(struct!.from),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     severity: {
-      value: cdktf.stringToHclTerraform(struct!.severity),
+      value: cdktn.stringToHclTerraform(struct!.severity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     to: {
-      value: cdktf.stringToHclTerraform(struct!.to),
+      value: cdktn.stringToHclTerraform(struct!.to),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8504,9 +8504,9 @@ export function oneDashboardPageWidgetTableThresholdToHclTerraform(struct?: OneD
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetTableThresholdOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetTableThresholdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8514,11 +8514,11 @@ export class OneDashboardPageWidgetTableThresholdOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetTableThreshold | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetTableThreshold | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8543,7 +8543,7 @@ export class OneDashboardPageWidgetTableThresholdOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetTableThreshold | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetTableThreshold | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8552,7 +8552,7 @@ export class OneDashboardPageWidgetTableThresholdOutputReference extends cdktf.C
       this._severity = undefined;
       this._to = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8631,15 +8631,15 @@ export class OneDashboardPageWidgetTableThresholdOutputReference extends cdktf.C
   }
 }
 
-export class OneDashboardPageWidgetTableThresholdList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetTableThreshold[] | cdktf.IResolvable
+export class OneDashboardPageWidgetTableThresholdList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetTableThreshold[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8654,43 +8654,43 @@ export interface OneDashboardPageWidgetTableUnitsSeriesOverrides {
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
   /**
   * Unit name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#unit OneDashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#unit OneDashboard#unit}
   */
   readonly unit?: string;
 }
 
-export function oneDashboardPageWidgetTableUnitsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetTableUnitsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableUnitsSeriesOverridesToTerraform(struct?: OneDashboardPageWidgetTableUnitsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    series_name: cdktf.stringToTerraform(struct!.seriesName),
-    unit: cdktf.stringToTerraform(struct!.unit),
+    series_name: cdktn.stringToTerraform(struct!.seriesName),
+    unit: cdktn.stringToTerraform(struct!.unit),
   }
 }
 
 
-export function oneDashboardPageWidgetTableUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetTableUnitsSeriesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetTableUnitsSeriesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     series_name: {
-      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      value: cdktn.stringToHclTerraform(struct!.seriesName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8701,9 +8701,9 @@ export function oneDashboardPageWidgetTableUnitsSeriesOverridesToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetTableUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetTableUnitsSeriesOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8711,11 +8711,11 @@ export class OneDashboardPageWidgetTableUnitsSeriesOverridesOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetTableUnitsSeriesOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetTableUnitsSeriesOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8732,14 +8732,14 @@ export class OneDashboardPageWidgetTableUnitsSeriesOverridesOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetTableUnitsSeriesOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetTableUnitsSeriesOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._seriesName = undefined;
       this._unit = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8784,15 +8784,15 @@ export class OneDashboardPageWidgetTableUnitsSeriesOverridesOutputReference exte
   }
 }
 
-export class OneDashboardPageWidgetTableUnitsSeriesOverridesList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetTableUnitsSeriesOverrides[] | cdktf.IResolvable
+export class OneDashboardPageWidgetTableUnitsSeriesOverridesList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetTableUnitsSeriesOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8805,43 +8805,43 @@ export class OneDashboardPageWidgetTableUnitsSeriesOverridesList extends cdktf.C
 }
 export interface OneDashboardPageWidgetTableUnits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#unit OneDashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#unit OneDashboard#unit}
   */
   readonly unit?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
-  readonly seriesOverrides?: OneDashboardPageWidgetTableUnitsSeriesOverrides[] | cdktf.IResolvable;
+  readonly seriesOverrides?: OneDashboardPageWidgetTableUnitsSeriesOverrides[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetTableUnitsToTerraform(struct?: OneDashboardPageWidgetTableUnits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableUnitsToTerraform(struct?: OneDashboardPageWidgetTableUnits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit: cdktf.stringToTerraform(struct!.unit),
-    series_overrides: cdktf.listMapper(oneDashboardPageWidgetTableUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    series_overrides: cdktn.listMapper(oneDashboardPageWidgetTableUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
 }
 
 
-export function oneDashboardPageWidgetTableUnitsToHclTerraform(struct?: OneDashboardPageWidgetTableUnits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableUnitsToHclTerraform(struct?: OneDashboardPageWidgetTableUnits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     series_overrides: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetTableUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetTableUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetTableUnitsSeriesOverridesList",
@@ -8852,9 +8852,9 @@ export function oneDashboardPageWidgetTableUnitsToHclTerraform(struct?: OneDashb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetTableUnitsOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetTableUnitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8862,11 +8862,11 @@ export class OneDashboardPageWidgetTableUnitsOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetTableUnits | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetTableUnits | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8883,14 +8883,14 @@ export class OneDashboardPageWidgetTableUnitsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetTableUnits | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetTableUnits | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._unit = undefined;
       this._seriesOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8923,7 +8923,7 @@ export class OneDashboardPageWidgetTableUnitsOutputReference extends cdktf.Compl
   public get seriesOverrides() {
     return this._seriesOverrides;
   }
-  public putSeriesOverrides(value: OneDashboardPageWidgetTableUnitsSeriesOverrides[] | cdktf.IResolvable) {
+  public putSeriesOverrides(value: OneDashboardPageWidgetTableUnitsSeriesOverrides[] | cdktn.IResolvable) {
     this._seriesOverrides.internalValue = value;
   }
   public resetSeriesOverrides() {
@@ -8935,15 +8935,15 @@ export class OneDashboardPageWidgetTableUnitsOutputReference extends cdktf.Compl
   }
 }
 
-export class OneDashboardPageWidgetTableUnitsList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetTableUnits[] | cdktf.IResolvable
+export class OneDashboardPageWidgetTableUnitsList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetTableUnits[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8956,229 +8956,229 @@ export class OneDashboardPageWidgetTableUnitsList extends cdktf.ComplexList {
 }
 export interface OneDashboardPageWidgetTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#column OneDashboard#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#column OneDashboard#column}
   */
   readonly column: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}
   */
-  readonly facetShowOtherSeries?: boolean | cdktf.IResolvable;
+  readonly facetShowOtherSeries?: boolean | cdktn.IResolvable;
   /**
   * Use this item to filter the current dashboard
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
   */
-  readonly filterCurrentDashboard?: boolean | cdktf.IResolvable;
+  readonly filterCurrentDashboard?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#height OneDashboard#height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#height OneDashboard#height}
   */
   readonly height?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
   */
-  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  readonly ignoreTimeRange?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}
   */
-  readonly legendEnabled?: boolean | cdktf.IResolvable;
+  readonly legendEnabled?: boolean | cdktn.IResolvable;
   /**
   * Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
   */
   readonly linkedEntityGuids?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}
   */
   readonly refreshRate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#row OneDashboard#row}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
   /**
   * A title for the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#title OneDashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#title OneDashboard#title}
   */
   readonly title: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#width OneDashboard#width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#width OneDashboard#width}
   */
   readonly width?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}
   */
   readonly yAxisLeftMax?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}
   */
   readonly yAxisLeftMin?: number;
   /**
   * colors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#colors OneDashboard#colors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#colors OneDashboard#colors}
   */
-  readonly colors?: OneDashboardPageWidgetTableColors[] | cdktf.IResolvable;
+  readonly colors?: OneDashboardPageWidgetTableColors[] | cdktn.IResolvable;
   /**
   * data_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#data_format OneDashboard#data_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#data_format OneDashboard#data_format}
   */
-  readonly dataFormat?: OneDashboardPageWidgetTableDataFormat[] | cdktf.IResolvable;
+  readonly dataFormat?: OneDashboardPageWidgetTableDataFormat[] | cdktn.IResolvable;
   /**
   * initial_sorting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
   */
   readonly initialSorting?: OneDashboardPageWidgetTableInitialSorting;
   /**
   * nrql_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetTableNrqlQuery[] | cdktf.IResolvable;
+  readonly nrqlQuery: OneDashboardPageWidgetTableNrqlQuery[] | cdktn.IResolvable;
   /**
   * null_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#null_values OneDashboard#null_values}
   */
-  readonly nullValues?: OneDashboardPageWidgetTableNullValues[] | cdktf.IResolvable;
+  readonly nullValues?: OneDashboardPageWidgetTableNullValues[] | cdktn.IResolvable;
   /**
   * threshold block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#threshold OneDashboard#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#threshold OneDashboard#threshold}
   */
-  readonly threshold?: OneDashboardPageWidgetTableThreshold[] | cdktf.IResolvable;
+  readonly threshold?: OneDashboardPageWidgetTableThreshold[] | cdktn.IResolvable;
   /**
   * units block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#units OneDashboard#units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#units OneDashboard#units}
   */
-  readonly units?: OneDashboardPageWidgetTableUnits[] | cdktf.IResolvable;
+  readonly units?: OneDashboardPageWidgetTableUnits[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageWidgetTableToTerraform(struct?: OneDashboardPageWidgetTable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableToTerraform(struct?: OneDashboardPageWidgetTable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column: cdktf.numberToTerraform(struct!.column),
-    facet_show_other_series: cdktf.booleanToTerraform(struct!.facetShowOtherSeries),
-    filter_current_dashboard: cdktf.booleanToTerraform(struct!.filterCurrentDashboard),
-    height: cdktf.numberToTerraform(struct!.height),
-    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
-    legend_enabled: cdktf.booleanToTerraform(struct!.legendEnabled),
-    linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.linkedEntityGuids),
-    refresh_rate: cdktf.stringToTerraform(struct!.refreshRate),
-    row: cdktf.numberToTerraform(struct!.row),
-    title: cdktf.stringToTerraform(struct!.title),
-    width: cdktf.numberToTerraform(struct!.width),
-    y_axis_left_max: cdktf.numberToTerraform(struct!.yAxisLeftMax),
-    y_axis_left_min: cdktf.numberToTerraform(struct!.yAxisLeftMin),
-    colors: cdktf.listMapper(oneDashboardPageWidgetTableColorsToTerraform, true)(struct!.colors),
-    data_format: cdktf.listMapper(oneDashboardPageWidgetTableDataFormatToTerraform, true)(struct!.dataFormat),
+    column: cdktn.numberToTerraform(struct!.column),
+    facet_show_other_series: cdktn.booleanToTerraform(struct!.facetShowOtherSeries),
+    filter_current_dashboard: cdktn.booleanToTerraform(struct!.filterCurrentDashboard),
+    height: cdktn.numberToTerraform(struct!.height),
+    ignore_time_range: cdktn.booleanToTerraform(struct!.ignoreTimeRange),
+    legend_enabled: cdktn.booleanToTerraform(struct!.legendEnabled),
+    linked_entity_guids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.linkedEntityGuids),
+    refresh_rate: cdktn.stringToTerraform(struct!.refreshRate),
+    row: cdktn.numberToTerraform(struct!.row),
+    title: cdktn.stringToTerraform(struct!.title),
+    width: cdktn.numberToTerraform(struct!.width),
+    y_axis_left_max: cdktn.numberToTerraform(struct!.yAxisLeftMax),
+    y_axis_left_min: cdktn.numberToTerraform(struct!.yAxisLeftMin),
+    colors: cdktn.listMapper(oneDashboardPageWidgetTableColorsToTerraform, true)(struct!.colors),
+    data_format: cdktn.listMapper(oneDashboardPageWidgetTableDataFormatToTerraform, true)(struct!.dataFormat),
     initial_sorting: oneDashboardPageWidgetTableInitialSortingToTerraform(struct!.initialSorting),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetTableNrqlQueryToTerraform, true)(struct!.nrqlQuery),
-    null_values: cdktf.listMapper(oneDashboardPageWidgetTableNullValuesToTerraform, true)(struct!.nullValues),
-    threshold: cdktf.listMapper(oneDashboardPageWidgetTableThresholdToTerraform, true)(struct!.threshold),
-    units: cdktf.listMapper(oneDashboardPageWidgetTableUnitsToTerraform, true)(struct!.units),
+    nrql_query: cdktn.listMapper(oneDashboardPageWidgetTableNrqlQueryToTerraform, true)(struct!.nrqlQuery),
+    null_values: cdktn.listMapper(oneDashboardPageWidgetTableNullValuesToTerraform, true)(struct!.nullValues),
+    threshold: cdktn.listMapper(oneDashboardPageWidgetTableThresholdToTerraform, true)(struct!.threshold),
+    units: cdktn.listMapper(oneDashboardPageWidgetTableUnitsToTerraform, true)(struct!.units),
   }
 }
 
 
-export function oneDashboardPageWidgetTableToHclTerraform(struct?: OneDashboardPageWidgetTable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageWidgetTableToHclTerraform(struct?: OneDashboardPageWidgetTable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column: {
-      value: cdktf.numberToHclTerraform(struct!.column),
+      value: cdktn.numberToHclTerraform(struct!.column),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     facet_show_other_series: {
-      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      value: cdktn.booleanToHclTerraform(struct!.facetShowOtherSeries),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     filter_current_dashboard: {
-      value: cdktf.booleanToHclTerraform(struct!.filterCurrentDashboard),
+      value: cdktn.booleanToHclTerraform(struct!.filterCurrentDashboard),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     height: {
-      value: cdktf.numberToHclTerraform(struct!.height),
+      value: cdktn.numberToHclTerraform(struct!.height),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ignore_time_range: {
-      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      value: cdktn.booleanToHclTerraform(struct!.ignoreTimeRange),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     legend_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.legendEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     linked_entity_guids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.linkedEntityGuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.linkedEntityGuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     refresh_rate: {
-      value: cdktf.stringToHclTerraform(struct!.refreshRate),
+      value: cdktn.stringToHclTerraform(struct!.refreshRate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     row: {
-      value: cdktf.numberToHclTerraform(struct!.row),
+      value: cdktn.numberToHclTerraform(struct!.row),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     width: {
-      value: cdktf.numberToHclTerraform(struct!.width),
+      value: cdktn.numberToHclTerraform(struct!.width),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     y_axis_left_max: {
-      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      value: cdktn.numberToHclTerraform(struct!.yAxisLeftMax),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     y_axis_left_min: {
-      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      value: cdktn.numberToHclTerraform(struct!.yAxisLeftMin),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     colors: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetTableColorsToHclTerraform, true)(struct!.colors),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetTableColorsToHclTerraform, true)(struct!.colors),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetTableColorsList",
     },
     data_format: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetTableDataFormatToHclTerraform, true)(struct!.dataFormat),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetTableDataFormatToHclTerraform, true)(struct!.dataFormat),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetTableDataFormatList",
@@ -9190,25 +9190,25 @@ export function oneDashboardPageWidgetTableToHclTerraform(struct?: OneDashboardP
       storageClassType: "OneDashboardPageWidgetTableInitialSortingList",
     },
     nrql_query: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetTableNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetTableNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetTableNrqlQueryList",
     },
     null_values: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetTableNullValuesToHclTerraform, true)(struct!.nullValues),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetTableNullValuesToHclTerraform, true)(struct!.nullValues),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetTableNullValuesList",
     },
     threshold: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetTableThresholdToHclTerraform, true)(struct!.threshold),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetTableThresholdToHclTerraform, true)(struct!.threshold),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetTableThresholdList",
     },
     units: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetTableUnitsToHclTerraform, true)(struct!.units),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetTableUnitsToHclTerraform, true)(struct!.units),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetTableUnitsList",
@@ -9219,9 +9219,9 @@ export function oneDashboardPageWidgetTableToHclTerraform(struct?: OneDashboardP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageWidgetTableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9229,11 +9229,11 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPageWidgetTable | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPageWidgetTable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9322,7 +9322,7 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPageWidgetTable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPageWidgetTable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9347,7 +9347,7 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
       this._threshold.internalValue = undefined;
       this._units.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9391,11 +9391,11 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
   }
 
   // facet_show_other_series - computed: false, optional: true, required: false
-  private _facetShowOtherSeries?: boolean | cdktf.IResolvable; 
+  private _facetShowOtherSeries?: boolean | cdktn.IResolvable; 
   public get facetShowOtherSeries() {
     return this.getBooleanAttribute('facet_show_other_series');
   }
-  public set facetShowOtherSeries(value: boolean | cdktf.IResolvable) {
+  public set facetShowOtherSeries(value: boolean | cdktn.IResolvable) {
     this._facetShowOtherSeries = value;
   }
   public resetFacetShowOtherSeries() {
@@ -9407,11 +9407,11 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
   }
 
   // filter_current_dashboard - computed: false, optional: true, required: false
-  private _filterCurrentDashboard?: boolean | cdktf.IResolvable; 
+  private _filterCurrentDashboard?: boolean | cdktn.IResolvable; 
   public get filterCurrentDashboard() {
     return this.getBooleanAttribute('filter_current_dashboard');
   }
-  public set filterCurrentDashboard(value: boolean | cdktf.IResolvable) {
+  public set filterCurrentDashboard(value: boolean | cdktn.IResolvable) {
     this._filterCurrentDashboard = value;
   }
   public resetFilterCurrentDashboard() {
@@ -9444,11 +9444,11 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
   }
 
   // ignore_time_range - computed: false, optional: true, required: false
-  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  private _ignoreTimeRange?: boolean | cdktn.IResolvable; 
   public get ignoreTimeRange() {
     return this.getBooleanAttribute('ignore_time_range');
   }
-  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+  public set ignoreTimeRange(value: boolean | cdktn.IResolvable) {
     this._ignoreTimeRange = value;
   }
   public resetIgnoreTimeRange() {
@@ -9460,11 +9460,11 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
   }
 
   // legend_enabled - computed: false, optional: true, required: false
-  private _legendEnabled?: boolean | cdktf.IResolvable; 
+  private _legendEnabled?: boolean | cdktn.IResolvable; 
   public get legendEnabled() {
     return this.getBooleanAttribute('legend_enabled');
   }
-  public set legendEnabled(value: boolean | cdktf.IResolvable) {
+  public set legendEnabled(value: boolean | cdktn.IResolvable) {
     this._legendEnabled = value;
   }
   public resetLegendEnabled() {
@@ -9586,7 +9586,7 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
   public get colors() {
     return this._colors;
   }
-  public putColors(value: OneDashboardPageWidgetTableColors[] | cdktf.IResolvable) {
+  public putColors(value: OneDashboardPageWidgetTableColors[] | cdktn.IResolvable) {
     this._colors.internalValue = value;
   }
   public resetColors() {
@@ -9602,7 +9602,7 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
   public get dataFormat() {
     return this._dataFormat;
   }
-  public putDataFormat(value: OneDashboardPageWidgetTableDataFormat[] | cdktf.IResolvable) {
+  public putDataFormat(value: OneDashboardPageWidgetTableDataFormat[] | cdktn.IResolvable) {
     this._dataFormat.internalValue = value;
   }
   public resetDataFormat() {
@@ -9634,7 +9634,7 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
   public get nrqlQuery() {
     return this._nrqlQuery;
   }
-  public putNrqlQuery(value: OneDashboardPageWidgetTableNrqlQuery[] | cdktf.IResolvable) {
+  public putNrqlQuery(value: OneDashboardPageWidgetTableNrqlQuery[] | cdktn.IResolvable) {
     this._nrqlQuery.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9647,7 +9647,7 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
   public get nullValues() {
     return this._nullValues;
   }
-  public putNullValues(value: OneDashboardPageWidgetTableNullValues[] | cdktf.IResolvable) {
+  public putNullValues(value: OneDashboardPageWidgetTableNullValues[] | cdktn.IResolvable) {
     this._nullValues.internalValue = value;
   }
   public resetNullValues() {
@@ -9663,7 +9663,7 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
   public get threshold() {
     return this._threshold;
   }
-  public putThreshold(value: OneDashboardPageWidgetTableThreshold[] | cdktf.IResolvable) {
+  public putThreshold(value: OneDashboardPageWidgetTableThreshold[] | cdktn.IResolvable) {
     this._threshold.internalValue = value;
   }
   public resetThreshold() {
@@ -9679,7 +9679,7 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
   public get units() {
     return this._units;
   }
-  public putUnits(value: OneDashboardPageWidgetTableUnits[] | cdktf.IResolvable) {
+  public putUnits(value: OneDashboardPageWidgetTableUnits[] | cdktn.IResolvable) {
     this._units.internalValue = value;
   }
   public resetUnits() {
@@ -9691,15 +9691,15 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class OneDashboardPageWidgetTableList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPageWidgetTable[] | cdktf.IResolvable
+export class OneDashboardPageWidgetTableList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPageWidgetTable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9714,225 +9714,225 @@ export interface OneDashboardPage {
   /**
   * The dashboard page's description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#description OneDashboard#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#description OneDashboard#description}
   */
   readonly description?: string;
   /**
   * The dashboard page's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#name OneDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#name OneDashboard#name}
   */
   readonly name: string;
   /**
   * widget_area block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#widget_area OneDashboard#widget_area}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#widget_area OneDashboard#widget_area}
   */
-  readonly widgetArea?: OneDashboardPageWidgetArea[] | cdktf.IResolvable;
+  readonly widgetArea?: OneDashboardPageWidgetArea[] | cdktn.IResolvable;
   /**
   * widget_bar block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#widget_bar OneDashboard#widget_bar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#widget_bar OneDashboard#widget_bar}
   */
-  readonly widgetBar?: OneDashboardPageWidgetBar[] | cdktf.IResolvable;
+  readonly widgetBar?: OneDashboardPageWidgetBar[] | cdktn.IResolvable;
   /**
   * widget_billboard block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#widget_billboard OneDashboard#widget_billboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#widget_billboard OneDashboard#widget_billboard}
   */
-  readonly widgetBillboard?: OneDashboardPageWidgetBillboard[] | cdktf.IResolvable;
+  readonly widgetBillboard?: OneDashboardPageWidgetBillboard[] | cdktn.IResolvable;
   /**
   * widget_bullet block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#widget_bullet OneDashboard#widget_bullet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#widget_bullet OneDashboard#widget_bullet}
   */
-  readonly widgetBullet?: OneDashboardPageWidgetBullet[] | cdktf.IResolvable;
+  readonly widgetBullet?: OneDashboardPageWidgetBullet[] | cdktn.IResolvable;
   /**
   * widget_funnel block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#widget_funnel OneDashboard#widget_funnel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#widget_funnel OneDashboard#widget_funnel}
   */
-  readonly widgetFunnel?: OneDashboardPageWidgetFunnel[] | cdktf.IResolvable;
+  readonly widgetFunnel?: OneDashboardPageWidgetFunnel[] | cdktn.IResolvable;
   /**
   * widget_heatmap block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#widget_heatmap OneDashboard#widget_heatmap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#widget_heatmap OneDashboard#widget_heatmap}
   */
-  readonly widgetHeatmap?: OneDashboardPageWidgetHeatmap[] | cdktf.IResolvable;
+  readonly widgetHeatmap?: OneDashboardPageWidgetHeatmap[] | cdktn.IResolvable;
   /**
   * widget_histogram block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#widget_histogram OneDashboard#widget_histogram}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#widget_histogram OneDashboard#widget_histogram}
   */
-  readonly widgetHistogram?: OneDashboardPageWidgetHistogram[] | cdktf.IResolvable;
+  readonly widgetHistogram?: OneDashboardPageWidgetHistogram[] | cdktn.IResolvable;
   /**
   * widget_json block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#widget_json OneDashboard#widget_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#widget_json OneDashboard#widget_json}
   */
-  readonly widgetJson?: OneDashboardPageWidgetJson[] | cdktf.IResolvable;
+  readonly widgetJson?: OneDashboardPageWidgetJson[] | cdktn.IResolvable;
   /**
   * widget_line block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#widget_line OneDashboard#widget_line}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#widget_line OneDashboard#widget_line}
   */
-  readonly widgetLine?: OneDashboardPageWidgetLine[] | cdktf.IResolvable;
+  readonly widgetLine?: OneDashboardPageWidgetLine[] | cdktn.IResolvable;
   /**
   * widget_log_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#widget_log_table OneDashboard#widget_log_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#widget_log_table OneDashboard#widget_log_table}
   */
-  readonly widgetLogTable?: OneDashboardPageWidgetLogTable[] | cdktf.IResolvable;
+  readonly widgetLogTable?: OneDashboardPageWidgetLogTable[] | cdktn.IResolvable;
   /**
   * widget_markdown block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#widget_markdown OneDashboard#widget_markdown}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#widget_markdown OneDashboard#widget_markdown}
   */
-  readonly widgetMarkdown?: OneDashboardPageWidgetMarkdown[] | cdktf.IResolvable;
+  readonly widgetMarkdown?: OneDashboardPageWidgetMarkdown[] | cdktn.IResolvable;
   /**
   * widget_pie block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#widget_pie OneDashboard#widget_pie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#widget_pie OneDashboard#widget_pie}
   */
-  readonly widgetPie?: OneDashboardPageWidgetPie[] | cdktf.IResolvable;
+  readonly widgetPie?: OneDashboardPageWidgetPie[] | cdktn.IResolvable;
   /**
   * widget_stacked_bar block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#widget_stacked_bar OneDashboard#widget_stacked_bar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#widget_stacked_bar OneDashboard#widget_stacked_bar}
   */
-  readonly widgetStackedBar?: OneDashboardPageWidgetStackedBar[] | cdktf.IResolvable;
+  readonly widgetStackedBar?: OneDashboardPageWidgetStackedBar[] | cdktn.IResolvable;
   /**
   * widget_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#widget_table OneDashboard#widget_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#widget_table OneDashboard#widget_table}
   */
-  readonly widgetTable?: OneDashboardPageWidgetTable[] | cdktf.IResolvable;
+  readonly widgetTable?: OneDashboardPageWidgetTable[] | cdktn.IResolvable;
 }
 
-export function oneDashboardPageToTerraform(struct?: OneDashboardPage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageToTerraform(struct?: OneDashboardPage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    widget_area: cdktf.listMapper(oneDashboardPageWidgetAreaToTerraform, true)(struct!.widgetArea),
-    widget_bar: cdktf.listMapper(oneDashboardPageWidgetBarToTerraform, true)(struct!.widgetBar),
-    widget_billboard: cdktf.listMapper(oneDashboardPageWidgetBillboardToTerraform, true)(struct!.widgetBillboard),
-    widget_bullet: cdktf.listMapper(oneDashboardPageWidgetBulletToTerraform, true)(struct!.widgetBullet),
-    widget_funnel: cdktf.listMapper(oneDashboardPageWidgetFunnelToTerraform, true)(struct!.widgetFunnel),
-    widget_heatmap: cdktf.listMapper(oneDashboardPageWidgetHeatmapToTerraform, true)(struct!.widgetHeatmap),
-    widget_histogram: cdktf.listMapper(oneDashboardPageWidgetHistogramToTerraform, true)(struct!.widgetHistogram),
-    widget_json: cdktf.listMapper(oneDashboardPageWidgetJsonToTerraform, true)(struct!.widgetJson),
-    widget_line: cdktf.listMapper(oneDashboardPageWidgetLineToTerraform, true)(struct!.widgetLine),
-    widget_log_table: cdktf.listMapper(oneDashboardPageWidgetLogTableToTerraform, true)(struct!.widgetLogTable),
-    widget_markdown: cdktf.listMapper(oneDashboardPageWidgetMarkdownToTerraform, true)(struct!.widgetMarkdown),
-    widget_pie: cdktf.listMapper(oneDashboardPageWidgetPieToTerraform, true)(struct!.widgetPie),
-    widget_stacked_bar: cdktf.listMapper(oneDashboardPageWidgetStackedBarToTerraform, true)(struct!.widgetStackedBar),
-    widget_table: cdktf.listMapper(oneDashboardPageWidgetTableToTerraform, true)(struct!.widgetTable),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    widget_area: cdktn.listMapper(oneDashboardPageWidgetAreaToTerraform, true)(struct!.widgetArea),
+    widget_bar: cdktn.listMapper(oneDashboardPageWidgetBarToTerraform, true)(struct!.widgetBar),
+    widget_billboard: cdktn.listMapper(oneDashboardPageWidgetBillboardToTerraform, true)(struct!.widgetBillboard),
+    widget_bullet: cdktn.listMapper(oneDashboardPageWidgetBulletToTerraform, true)(struct!.widgetBullet),
+    widget_funnel: cdktn.listMapper(oneDashboardPageWidgetFunnelToTerraform, true)(struct!.widgetFunnel),
+    widget_heatmap: cdktn.listMapper(oneDashboardPageWidgetHeatmapToTerraform, true)(struct!.widgetHeatmap),
+    widget_histogram: cdktn.listMapper(oneDashboardPageWidgetHistogramToTerraform, true)(struct!.widgetHistogram),
+    widget_json: cdktn.listMapper(oneDashboardPageWidgetJsonToTerraform, true)(struct!.widgetJson),
+    widget_line: cdktn.listMapper(oneDashboardPageWidgetLineToTerraform, true)(struct!.widgetLine),
+    widget_log_table: cdktn.listMapper(oneDashboardPageWidgetLogTableToTerraform, true)(struct!.widgetLogTable),
+    widget_markdown: cdktn.listMapper(oneDashboardPageWidgetMarkdownToTerraform, true)(struct!.widgetMarkdown),
+    widget_pie: cdktn.listMapper(oneDashboardPageWidgetPieToTerraform, true)(struct!.widgetPie),
+    widget_stacked_bar: cdktn.listMapper(oneDashboardPageWidgetStackedBarToTerraform, true)(struct!.widgetStackedBar),
+    widget_table: cdktn.listMapper(oneDashboardPageWidgetTableToTerraform, true)(struct!.widgetTable),
   }
 }
 
 
-export function oneDashboardPageToHclTerraform(struct?: OneDashboardPage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardPageToHclTerraform(struct?: OneDashboardPage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     widget_area: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetAreaToHclTerraform, true)(struct!.widgetArea),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetAreaToHclTerraform, true)(struct!.widgetArea),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetAreaList",
     },
     widget_bar: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetBarToHclTerraform, true)(struct!.widgetBar),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetBarToHclTerraform, true)(struct!.widgetBar),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetBarList",
     },
     widget_billboard: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetBillboardToHclTerraform, true)(struct!.widgetBillboard),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetBillboardToHclTerraform, true)(struct!.widgetBillboard),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetBillboardList",
     },
     widget_bullet: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetBulletToHclTerraform, true)(struct!.widgetBullet),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetBulletToHclTerraform, true)(struct!.widgetBullet),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetBulletList",
     },
     widget_funnel: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetFunnelToHclTerraform, true)(struct!.widgetFunnel),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetFunnelToHclTerraform, true)(struct!.widgetFunnel),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetFunnelList",
     },
     widget_heatmap: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetHeatmapToHclTerraform, true)(struct!.widgetHeatmap),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetHeatmapToHclTerraform, true)(struct!.widgetHeatmap),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetHeatmapList",
     },
     widget_histogram: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetHistogramToHclTerraform, true)(struct!.widgetHistogram),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetHistogramToHclTerraform, true)(struct!.widgetHistogram),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetHistogramList",
     },
     widget_json: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetJsonToHclTerraform, true)(struct!.widgetJson),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetJsonToHclTerraform, true)(struct!.widgetJson),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetJsonList",
     },
     widget_line: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetLineToHclTerraform, true)(struct!.widgetLine),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetLineToHclTerraform, true)(struct!.widgetLine),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetLineList",
     },
     widget_log_table: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableToHclTerraform, true)(struct!.widgetLogTable),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetLogTableToHclTerraform, true)(struct!.widgetLogTable),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetLogTableList",
     },
     widget_markdown: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetMarkdownToHclTerraform, true)(struct!.widgetMarkdown),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetMarkdownToHclTerraform, true)(struct!.widgetMarkdown),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetMarkdownList",
     },
     widget_pie: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieToHclTerraform, true)(struct!.widgetPie),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetPieToHclTerraform, true)(struct!.widgetPie),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetPieList",
     },
     widget_stacked_bar: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetStackedBarToHclTerraform, true)(struct!.widgetStackedBar),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetStackedBarToHclTerraform, true)(struct!.widgetStackedBar),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetStackedBarList",
     },
     widget_table: {
-      value: cdktf.listMapperHcl(oneDashboardPageWidgetTableToHclTerraform, true)(struct!.widgetTable),
+      value: cdktn.listMapperHcl(oneDashboardPageWidgetTableToHclTerraform, true)(struct!.widgetTable),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardPageWidgetTableList",
@@ -9943,9 +9943,9 @@ export function oneDashboardPageToHclTerraform(struct?: OneDashboardPage | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
+export class OneDashboardPageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9953,11 +9953,11 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardPage | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardPage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10030,7 +10030,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardPage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardPage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10051,7 +10051,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
       this._widgetStackedBar.internalValue = undefined;
       this._widgetTable.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10116,7 +10116,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   public get widgetArea() {
     return this._widgetArea;
   }
-  public putWidgetArea(value: OneDashboardPageWidgetArea[] | cdktf.IResolvable) {
+  public putWidgetArea(value: OneDashboardPageWidgetArea[] | cdktn.IResolvable) {
     this._widgetArea.internalValue = value;
   }
   public resetWidgetArea() {
@@ -10132,7 +10132,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   public get widgetBar() {
     return this._widgetBar;
   }
-  public putWidgetBar(value: OneDashboardPageWidgetBar[] | cdktf.IResolvable) {
+  public putWidgetBar(value: OneDashboardPageWidgetBar[] | cdktn.IResolvable) {
     this._widgetBar.internalValue = value;
   }
   public resetWidgetBar() {
@@ -10148,7 +10148,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   public get widgetBillboard() {
     return this._widgetBillboard;
   }
-  public putWidgetBillboard(value: OneDashboardPageWidgetBillboard[] | cdktf.IResolvable) {
+  public putWidgetBillboard(value: OneDashboardPageWidgetBillboard[] | cdktn.IResolvable) {
     this._widgetBillboard.internalValue = value;
   }
   public resetWidgetBillboard() {
@@ -10164,7 +10164,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   public get widgetBullet() {
     return this._widgetBullet;
   }
-  public putWidgetBullet(value: OneDashboardPageWidgetBullet[] | cdktf.IResolvable) {
+  public putWidgetBullet(value: OneDashboardPageWidgetBullet[] | cdktn.IResolvable) {
     this._widgetBullet.internalValue = value;
   }
   public resetWidgetBullet() {
@@ -10180,7 +10180,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   public get widgetFunnel() {
     return this._widgetFunnel;
   }
-  public putWidgetFunnel(value: OneDashboardPageWidgetFunnel[] | cdktf.IResolvable) {
+  public putWidgetFunnel(value: OneDashboardPageWidgetFunnel[] | cdktn.IResolvable) {
     this._widgetFunnel.internalValue = value;
   }
   public resetWidgetFunnel() {
@@ -10196,7 +10196,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   public get widgetHeatmap() {
     return this._widgetHeatmap;
   }
-  public putWidgetHeatmap(value: OneDashboardPageWidgetHeatmap[] | cdktf.IResolvable) {
+  public putWidgetHeatmap(value: OneDashboardPageWidgetHeatmap[] | cdktn.IResolvable) {
     this._widgetHeatmap.internalValue = value;
   }
   public resetWidgetHeatmap() {
@@ -10212,7 +10212,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   public get widgetHistogram() {
     return this._widgetHistogram;
   }
-  public putWidgetHistogram(value: OneDashboardPageWidgetHistogram[] | cdktf.IResolvable) {
+  public putWidgetHistogram(value: OneDashboardPageWidgetHistogram[] | cdktn.IResolvable) {
     this._widgetHistogram.internalValue = value;
   }
   public resetWidgetHistogram() {
@@ -10228,7 +10228,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   public get widgetJson() {
     return this._widgetJson;
   }
-  public putWidgetJson(value: OneDashboardPageWidgetJson[] | cdktf.IResolvable) {
+  public putWidgetJson(value: OneDashboardPageWidgetJson[] | cdktn.IResolvable) {
     this._widgetJson.internalValue = value;
   }
   public resetWidgetJson() {
@@ -10244,7 +10244,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   public get widgetLine() {
     return this._widgetLine;
   }
-  public putWidgetLine(value: OneDashboardPageWidgetLine[] | cdktf.IResolvable) {
+  public putWidgetLine(value: OneDashboardPageWidgetLine[] | cdktn.IResolvable) {
     this._widgetLine.internalValue = value;
   }
   public resetWidgetLine() {
@@ -10260,7 +10260,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   public get widgetLogTable() {
     return this._widgetLogTable;
   }
-  public putWidgetLogTable(value: OneDashboardPageWidgetLogTable[] | cdktf.IResolvable) {
+  public putWidgetLogTable(value: OneDashboardPageWidgetLogTable[] | cdktn.IResolvable) {
     this._widgetLogTable.internalValue = value;
   }
   public resetWidgetLogTable() {
@@ -10276,7 +10276,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   public get widgetMarkdown() {
     return this._widgetMarkdown;
   }
-  public putWidgetMarkdown(value: OneDashboardPageWidgetMarkdown[] | cdktf.IResolvable) {
+  public putWidgetMarkdown(value: OneDashboardPageWidgetMarkdown[] | cdktn.IResolvable) {
     this._widgetMarkdown.internalValue = value;
   }
   public resetWidgetMarkdown() {
@@ -10292,7 +10292,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   public get widgetPie() {
     return this._widgetPie;
   }
-  public putWidgetPie(value: OneDashboardPageWidgetPie[] | cdktf.IResolvable) {
+  public putWidgetPie(value: OneDashboardPageWidgetPie[] | cdktn.IResolvable) {
     this._widgetPie.internalValue = value;
   }
   public resetWidgetPie() {
@@ -10308,7 +10308,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   public get widgetStackedBar() {
     return this._widgetStackedBar;
   }
-  public putWidgetStackedBar(value: OneDashboardPageWidgetStackedBar[] | cdktf.IResolvable) {
+  public putWidgetStackedBar(value: OneDashboardPageWidgetStackedBar[] | cdktn.IResolvable) {
     this._widgetStackedBar.internalValue = value;
   }
   public resetWidgetStackedBar() {
@@ -10324,7 +10324,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   public get widgetTable() {
     return this._widgetTable;
   }
-  public putWidgetTable(value: OneDashboardPageWidgetTable[] | cdktf.IResolvable) {
+  public putWidgetTable(value: OneDashboardPageWidgetTable[] | cdktn.IResolvable) {
     this._widgetTable.internalValue = value;
   }
   public resetWidgetTable() {
@@ -10336,15 +10336,15 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class OneDashboardPageList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardPage[] | cdktf.IResolvable
+export class OneDashboardPageList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardPage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10359,43 +10359,43 @@ export interface OneDashboardVariableItem {
   /**
   * A human-friendly display string for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#title OneDashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#title OneDashboard#title}
   */
   readonly title?: string;
   /**
   * A possible variable value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#value OneDashboard#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#value OneDashboard#value}
   */
   readonly value: string;
 }
 
-export function oneDashboardVariableItemToTerraform(struct?: OneDashboardVariableItem | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardVariableItemToTerraform(struct?: OneDashboardVariableItem | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    title: cdktf.stringToTerraform(struct!.title),
-    value: cdktf.stringToTerraform(struct!.value),
+    title: cdktn.stringToTerraform(struct!.title),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function oneDashboardVariableItemToHclTerraform(struct?: OneDashboardVariableItem | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardVariableItemToHclTerraform(struct?: OneDashboardVariableItem | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10406,9 +10406,9 @@ export function oneDashboardVariableItemToHclTerraform(struct?: OneDashboardVari
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardVariableItemOutputReference extends cdktf.ComplexObject {
+export class OneDashboardVariableItemOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10416,11 +10416,11 @@ export class OneDashboardVariableItemOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardVariableItem | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardVariableItem | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10437,14 +10437,14 @@ export class OneDashboardVariableItemOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardVariableItem | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardVariableItem | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._title = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10486,15 +10486,15 @@ export class OneDashboardVariableItemOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class OneDashboardVariableItemList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardVariableItem[] | cdktf.IResolvable
+export class OneDashboardVariableItemList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardVariableItem[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10509,43 +10509,43 @@ export interface OneDashboardVariableNrqlQuery {
   /**
   * New Relic account ID(s) to issue the query against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#account_ids OneDashboard#account_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#account_ids OneDashboard#account_ids}
   */
   readonly accountIds?: number[];
   /**
   * NRQL formatted query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#query OneDashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#query OneDashboard#query}
   */
   readonly query: string;
 }
 
 export function oneDashboardVariableNrqlQueryToTerraform(struct?: OneDashboardVariableNrqlQueryOutputReference | OneDashboardVariableNrqlQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.accountIds),
-    query: cdktf.stringToTerraform(struct!.query),
+    account_ids: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.accountIds),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function oneDashboardVariableNrqlQueryToHclTerraform(struct?: OneDashboardVariableNrqlQueryOutputReference | OneDashboardVariableNrqlQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_ids: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.accountIds),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.accountIds),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10556,14 +10556,14 @@ export function oneDashboardVariableNrqlQueryToHclTerraform(struct?: OneDashboar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardVariableNrqlQueryOutputReference extends cdktf.ComplexObject {
+export class OneDashboardVariableNrqlQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10627,56 +10627,56 @@ export interface OneDashboardVariableOptions {
   /**
   * Only applies to variables of type NRQL. With this turned on, query condition defined with the variable will not be included in the query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#excluded OneDashboard#excluded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#excluded OneDashboard#excluded}
   */
-  readonly excluded?: boolean | cdktf.IResolvable;
+  readonly excluded?: boolean | cdktn.IResolvable;
   /**
   * Only applies to variables of type NRQL. With this turned on, the time range for the NRQL query will override the time picker on dashboards and other pages. Turn this off to use the time picker as normal.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
   */
-  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  readonly ignoreTimeRange?: boolean | cdktn.IResolvable;
   /**
   * Show apply button when multi-selecting
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#show_apply_action OneDashboard#show_apply_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#show_apply_action OneDashboard#show_apply_action}
   */
-  readonly showApplyAction?: boolean | cdktf.IResolvable;
+  readonly showApplyAction?: boolean | cdktn.IResolvable;
 }
 
-export function oneDashboardVariableOptionsToTerraform(struct?: OneDashboardVariableOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardVariableOptionsToTerraform(struct?: OneDashboardVariableOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excluded: cdktf.booleanToTerraform(struct!.excluded),
-    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
-    show_apply_action: cdktf.booleanToTerraform(struct!.showApplyAction),
+    excluded: cdktn.booleanToTerraform(struct!.excluded),
+    ignore_time_range: cdktn.booleanToTerraform(struct!.ignoreTimeRange),
+    show_apply_action: cdktn.booleanToTerraform(struct!.showApplyAction),
   }
 }
 
 
-export function oneDashboardVariableOptionsToHclTerraform(struct?: OneDashboardVariableOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardVariableOptionsToHclTerraform(struct?: OneDashboardVariableOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     excluded: {
-      value: cdktf.booleanToHclTerraform(struct!.excluded),
+      value: cdktn.booleanToHclTerraform(struct!.excluded),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ignore_time_range: {
-      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      value: cdktn.booleanToHclTerraform(struct!.ignoreTimeRange),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     show_apply_action: {
-      value: cdktf.booleanToHclTerraform(struct!.showApplyAction),
+      value: cdktn.booleanToHclTerraform(struct!.showApplyAction),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -10687,9 +10687,9 @@ export function oneDashboardVariableOptionsToHclTerraform(struct?: OneDashboardV
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardVariableOptionsOutputReference extends cdktf.ComplexObject {
+export class OneDashboardVariableOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10697,11 +10697,11 @@ export class OneDashboardVariableOptionsOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardVariableOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardVariableOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10722,7 +10722,7 @@ export class OneDashboardVariableOptionsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardVariableOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardVariableOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10730,7 +10730,7 @@ export class OneDashboardVariableOptionsOutputReference extends cdktf.ComplexObj
       this._ignoreTimeRange = undefined;
       this._showApplyAction = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10744,11 +10744,11 @@ export class OneDashboardVariableOptionsOutputReference extends cdktf.ComplexObj
   }
 
   // excluded - computed: false, optional: true, required: false
-  private _excluded?: boolean | cdktf.IResolvable; 
+  private _excluded?: boolean | cdktn.IResolvable; 
   public get excluded() {
     return this.getBooleanAttribute('excluded');
   }
-  public set excluded(value: boolean | cdktf.IResolvable) {
+  public set excluded(value: boolean | cdktn.IResolvable) {
     this._excluded = value;
   }
   public resetExcluded() {
@@ -10760,11 +10760,11 @@ export class OneDashboardVariableOptionsOutputReference extends cdktf.ComplexObj
   }
 
   // ignore_time_range - computed: false, optional: true, required: false
-  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  private _ignoreTimeRange?: boolean | cdktn.IResolvable; 
   public get ignoreTimeRange() {
     return this.getBooleanAttribute('ignore_time_range');
   }
-  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+  public set ignoreTimeRange(value: boolean | cdktn.IResolvable) {
     this._ignoreTimeRange = value;
   }
   public resetIgnoreTimeRange() {
@@ -10776,11 +10776,11 @@ export class OneDashboardVariableOptionsOutputReference extends cdktf.ComplexObj
   }
 
   // show_apply_action - computed: false, optional: true, required: false
-  private _showApplyAction?: boolean | cdktf.IResolvable; 
+  private _showApplyAction?: boolean | cdktn.IResolvable; 
   public get showApplyAction() {
     return this.getBooleanAttribute('show_apply_action');
   }
-  public set showApplyAction(value: boolean | cdktf.IResolvable) {
+  public set showApplyAction(value: boolean | cdktn.IResolvable) {
     this._showApplyAction = value;
   }
   public resetShowApplyAction() {
@@ -10792,15 +10792,15 @@ export class OneDashboardVariableOptionsOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class OneDashboardVariableOptionsList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardVariableOptions[] | cdktf.IResolvable
+export class OneDashboardVariableOptionsList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardVariableOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10815,122 +10815,122 @@ export interface OneDashboardVariable {
   /**
   * Default values for this variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#default_values OneDashboard#default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#default_values OneDashboard#default_values}
   */
   readonly defaultValues?: string[];
   /**
   * Indicates whether this variable supports multiple selection or not. Only applies to variables of type NRQL or ENUM.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#is_multi_selection OneDashboard#is_multi_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#is_multi_selection OneDashboard#is_multi_selection}
   */
-  readonly isMultiSelection?: boolean | cdktf.IResolvable;
+  readonly isMultiSelection?: boolean | cdktn.IResolvable;
   /**
   * The variable identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#name OneDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#name OneDashboard#name}
   */
   readonly name: string;
   /**
   * Indicates the strategy to apply when replacing a variable in a NRQL query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#replacement_strategy OneDashboard#replacement_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#replacement_strategy OneDashboard#replacement_strategy}
   */
   readonly replacementStrategy: string;
   /**
   * Human-friendly display string for this variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#title OneDashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#title OneDashboard#title}
   */
   readonly title: string;
   /**
   * Specifies the data type of the variable and where its possible values may come from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#type OneDashboard#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#type OneDashboard#type}
   */
   readonly type: string;
   /**
   * item block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#item OneDashboard#item}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#item OneDashboard#item}
   */
-  readonly item?: OneDashboardVariableItem[] | cdktf.IResolvable;
+  readonly item?: OneDashboardVariableItem[] | cdktn.IResolvable;
   /**
   * nrql_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
   readonly nrqlQuery?: OneDashboardVariableNrqlQuery;
   /**
   * options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#options OneDashboard#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#options OneDashboard#options}
   */
-  readonly options?: OneDashboardVariableOptions[] | cdktf.IResolvable;
+  readonly options?: OneDashboardVariableOptions[] | cdktn.IResolvable;
 }
 
-export function oneDashboardVariableToTerraform(struct?: OneDashboardVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardVariableToTerraform(struct?: OneDashboardVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.defaultValues),
-    is_multi_selection: cdktf.booleanToTerraform(struct!.isMultiSelection),
-    name: cdktf.stringToTerraform(struct!.name),
-    replacement_strategy: cdktf.stringToTerraform(struct!.replacementStrategy),
-    title: cdktf.stringToTerraform(struct!.title),
-    type: cdktf.stringToTerraform(struct!.type),
-    item: cdktf.listMapper(oneDashboardVariableItemToTerraform, true)(struct!.item),
+    default_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.defaultValues),
+    is_multi_selection: cdktn.booleanToTerraform(struct!.isMultiSelection),
+    name: cdktn.stringToTerraform(struct!.name),
+    replacement_strategy: cdktn.stringToTerraform(struct!.replacementStrategy),
+    title: cdktn.stringToTerraform(struct!.title),
+    type: cdktn.stringToTerraform(struct!.type),
+    item: cdktn.listMapper(oneDashboardVariableItemToTerraform, true)(struct!.item),
     nrql_query: oneDashboardVariableNrqlQueryToTerraform(struct!.nrqlQuery),
-    options: cdktf.listMapper(oneDashboardVariableOptionsToTerraform, true)(struct!.options),
+    options: cdktn.listMapper(oneDashboardVariableOptionsToTerraform, true)(struct!.options),
   }
 }
 
 
-export function oneDashboardVariableToHclTerraform(struct?: OneDashboardVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardVariableToHclTerraform(struct?: OneDashboardVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.defaultValues),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.defaultValues),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     is_multi_selection: {
-      value: cdktf.booleanToHclTerraform(struct!.isMultiSelection),
+      value: cdktn.booleanToHclTerraform(struct!.isMultiSelection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replacement_strategy: {
-      value: cdktf.stringToHclTerraform(struct!.replacementStrategy),
+      value: cdktn.stringToHclTerraform(struct!.replacementStrategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     item: {
-      value: cdktf.listMapperHcl(oneDashboardVariableItemToHclTerraform, true)(struct!.item),
+      value: cdktn.listMapperHcl(oneDashboardVariableItemToHclTerraform, true)(struct!.item),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardVariableItemList",
@@ -10942,7 +10942,7 @@ export function oneDashboardVariableToHclTerraform(struct?: OneDashboardVariable
       storageClassType: "OneDashboardVariableNrqlQueryList",
     },
     options: {
-      value: cdktf.listMapperHcl(oneDashboardVariableOptionsToHclTerraform, true)(struct!.options),
+      value: cdktn.listMapperHcl(oneDashboardVariableOptionsToHclTerraform, true)(struct!.options),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardVariableOptionsList",
@@ -10953,9 +10953,9 @@ export function oneDashboardVariableToHclTerraform(struct?: OneDashboardVariable
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardVariableOutputReference extends cdktf.ComplexObject {
+export class OneDashboardVariableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10963,11 +10963,11 @@ export class OneDashboardVariableOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardVariable | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardVariable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11012,7 +11012,7 @@ export class OneDashboardVariableOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardVariable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardVariable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11026,7 +11026,7 @@ export class OneDashboardVariableOutputReference extends cdktf.ComplexObject {
       this._nrqlQuery.internalValue = undefined;
       this._options.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11062,11 +11062,11 @@ export class OneDashboardVariableOutputReference extends cdktf.ComplexObject {
   }
 
   // is_multi_selection - computed: false, optional: true, required: false
-  private _isMultiSelection?: boolean | cdktf.IResolvable; 
+  private _isMultiSelection?: boolean | cdktn.IResolvable; 
   public get isMultiSelection() {
     return this.getBooleanAttribute('is_multi_selection');
   }
-  public set isMultiSelection(value: boolean | cdktf.IResolvable) {
+  public set isMultiSelection(value: boolean | cdktn.IResolvable) {
     this._isMultiSelection = value;
   }
   public resetIsMultiSelection() {
@@ -11134,7 +11134,7 @@ export class OneDashboardVariableOutputReference extends cdktf.ComplexObject {
   public get item() {
     return this._item;
   }
-  public putItem(value: OneDashboardVariableItem[] | cdktf.IResolvable) {
+  public putItem(value: OneDashboardVariableItem[] | cdktn.IResolvable) {
     this._item.internalValue = value;
   }
   public resetItem() {
@@ -11166,7 +11166,7 @@ export class OneDashboardVariableOutputReference extends cdktf.ComplexObject {
   public get options() {
     return this._options;
   }
-  public putOptions(value: OneDashboardVariableOptions[] | cdktf.IResolvable) {
+  public putOptions(value: OneDashboardVariableOptions[] | cdktn.IResolvable) {
     this._options.internalValue = value;
   }
   public resetOptions() {
@@ -11178,15 +11178,15 @@ export class OneDashboardVariableOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class OneDashboardVariableList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardVariable[] | cdktf.IResolvable
+export class OneDashboardVariableList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardVariable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 

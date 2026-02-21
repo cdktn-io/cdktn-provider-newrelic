@@ -1,61 +1,61 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SyntheticsMonitorConfig extends cdktf.TerraformMetaArguments {
+export interface SyntheticsMonitorConfig extends cdktn.TerraformMetaArguments {
   /**
   * ID of the newrelic account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#account_id SyntheticsMonitor#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#account_id SyntheticsMonitor#account_id}
   */
   readonly accountId?: number;
   /**
   * The multiple browsers list on which synthetic monitors will run. Valid values are array of CHROME,and FIREFOX
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#browsers SyntheticsMonitor#browsers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#browsers SyntheticsMonitor#browsers}
   */
   readonly browsers?: string[];
   /**
   * Bypass HEAD request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#bypass_head_request SyntheticsMonitor#bypass_head_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#bypass_head_request SyntheticsMonitor#bypass_head_request}
   */
-  readonly bypassHeadRequest?: boolean | cdktf.IResolvable;
+  readonly bypassHeadRequest?: boolean | cdktn.IResolvable;
   /**
   * The device orientation the user would like to represent. Valid values are LANDSCAPE, PORTRAIT, or NONE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#device_orientation SyntheticsMonitor#device_orientation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#device_orientation SyntheticsMonitor#device_orientation}
   */
   readonly deviceOrientation?: string;
   /**
   * The device type that a user can select. Valid values are MOBILE, TABLET, or NONE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#device_type SyntheticsMonitor#device_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#device_type SyntheticsMonitor#device_type}
   */
   readonly deviceType?: string;
   /**
   * The multiple devices list on which synthetic monitors will run. Valid values are array of DESKTOP, MOBILE_LANDSCAPE, MOBILE_PORTRAIT, TABLET_LANDSCAPE and TABLET_PORTRAIT
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#devices SyntheticsMonitor#devices}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#devices SyntheticsMonitor#devices}
   */
   readonly devices?: string[];
   /**
   * Capture a screenshot during job execution
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#enable_screenshot_on_failure_and_script SyntheticsMonitor#enable_screenshot_on_failure_and_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#enable_screenshot_on_failure_and_script SyntheticsMonitor#enable_screenshot_on_failure_and_script}
   */
-  readonly enableScreenshotOnFailureAndScript?: boolean | cdktf.IResolvable;
+  readonly enableScreenshotOnFailureAndScript?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#id SyntheticsMonitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#id SyntheticsMonitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -64,141 +64,141 @@ export interface SyntheticsMonitorConfig extends cdktf.TerraformMetaArguments {
   /**
   * The locations in which this monitor should be run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#locations_private SyntheticsMonitor#locations_private}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#locations_private SyntheticsMonitor#locations_private}
   */
   readonly locationsPrivate?: string[];
   /**
   * The locations in which this monitor should be run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#locations_public SyntheticsMonitor#locations_public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#locations_public SyntheticsMonitor#locations_public}
   */
   readonly locationsPublic?: string[];
   /**
   * The title of this monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
   */
   readonly name: string;
   /**
   * The interval at which this monitor should run. Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#period SyntheticsMonitor#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#period SyntheticsMonitor#period}
   */
   readonly period?: string;
   /**
   * The runtime type that the monitor will run
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#runtime_type SyntheticsMonitor#runtime_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#runtime_type SyntheticsMonitor#runtime_type}
   */
   readonly runtimeType?: string;
   /**
   * The specific version of the runtime type selected
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#runtime_type_version SyntheticsMonitor#runtime_type_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#runtime_type_version SyntheticsMonitor#runtime_type_version}
   */
   readonly runtimeTypeVersion?: string;
   /**
   * The programing language that should execute the script
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#script_language SyntheticsMonitor#script_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#script_language SyntheticsMonitor#script_language}
   */
   readonly scriptLanguage?: string;
   /**
   * The monitor status (ENABLED or DISABLED).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#status SyntheticsMonitor#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#status SyntheticsMonitor#status}
   */
   readonly status: string;
   /**
   * Fail the monitor check if redirected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#treat_redirect_as_failure SyntheticsMonitor#treat_redirect_as_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#treat_redirect_as_failure SyntheticsMonitor#treat_redirect_as_failure}
   */
-  readonly treatRedirectAsFailure?: boolean | cdktf.IResolvable;
+  readonly treatRedirectAsFailure?: boolean | cdktn.IResolvable;
   /**
   * The monitor type. Valid values are SIMPLE AND BROWSER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#type SyntheticsMonitor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#type SyntheticsMonitor#type}
   */
   readonly type: string;
   /**
   * The URI for the monitor to hit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#uri SyntheticsMonitor#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#uri SyntheticsMonitor#uri}
   */
   readonly uri?: string;
   /**
   * A boolean attribute to be set true by the customer, if they would like to use the unsupported legacy runtime of Synthetic Monitors by means of an exemption given until the October 22, 2024 Legacy Runtime EOL. Setting this attribute to true would allow skipping validation performed by the the New Relic Terraform Provider starting v3.43.0 to disallow using the legacy runtime with new monitors. This would, hence, allow creation of monitors in the legacy runtime until the October 22, 2024 Legacy Runtime EOL, if exempt by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#use_unsupported_legacy_runtime SyntheticsMonitor#use_unsupported_legacy_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#use_unsupported_legacy_runtime SyntheticsMonitor#use_unsupported_legacy_runtime}
   */
-  readonly useUnsupportedLegacyRuntime?: boolean | cdktf.IResolvable;
+  readonly useUnsupportedLegacyRuntime?: boolean | cdktn.IResolvable;
   /**
   * The string to validate against in the response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#validation_string SyntheticsMonitor#validation_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#validation_string SyntheticsMonitor#validation_string}
   */
   readonly validationString?: string;
   /**
   * Verify SSL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#verify_ssl SyntheticsMonitor#verify_ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#verify_ssl SyntheticsMonitor#verify_ssl}
   */
-  readonly verifySsl?: boolean | cdktf.IResolvable;
+  readonly verifySsl?: boolean | cdktn.IResolvable;
   /**
   * custom_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#custom_header SyntheticsMonitor#custom_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#custom_header SyntheticsMonitor#custom_header}
   */
-  readonly customHeader?: SyntheticsMonitorCustomHeader[] | cdktf.IResolvable;
+  readonly customHeader?: SyntheticsMonitorCustomHeader[] | cdktn.IResolvable;
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#tag SyntheticsMonitor#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#tag SyntheticsMonitor#tag}
   */
-  readonly tag?: SyntheticsMonitorTag[] | cdktf.IResolvable;
+  readonly tag?: SyntheticsMonitorTag[] | cdktn.IResolvable;
 }
 export interface SyntheticsMonitorCustomHeader {
   /**
   * Header name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
   */
   readonly name?: string;
   /**
   * Header value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#value SyntheticsMonitor#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#value SyntheticsMonitor#value}
   */
   readonly value?: string;
 }
 
-export function syntheticsMonitorCustomHeaderToTerraform(struct?: SyntheticsMonitorCustomHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function syntheticsMonitorCustomHeaderToTerraform(struct?: SyntheticsMonitorCustomHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function syntheticsMonitorCustomHeaderToHclTerraform(struct?: SyntheticsMonitorCustomHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function syntheticsMonitorCustomHeaderToHclTerraform(struct?: SyntheticsMonitorCustomHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -209,9 +209,9 @@ export function syntheticsMonitorCustomHeaderToHclTerraform(struct?: SyntheticsM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SyntheticsMonitorCustomHeaderOutputReference extends cdktf.ComplexObject {
+export class SyntheticsMonitorCustomHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -219,11 +219,11 @@ export class SyntheticsMonitorCustomHeaderOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SyntheticsMonitorCustomHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): SyntheticsMonitorCustomHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -240,14 +240,14 @@ export class SyntheticsMonitorCustomHeaderOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SyntheticsMonitorCustomHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SyntheticsMonitorCustomHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -292,15 +292,15 @@ export class SyntheticsMonitorCustomHeaderOutputReference extends cdktf.ComplexO
   }
 }
 
-export class SyntheticsMonitorCustomHeaderList extends cdktf.ComplexList {
-  public internalValue? : SyntheticsMonitorCustomHeader[] | cdktf.IResolvable
+export class SyntheticsMonitorCustomHeaderList extends cdktn.ComplexList {
+  public internalValue? : SyntheticsMonitorCustomHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -315,43 +315,43 @@ export interface SyntheticsMonitorTag {
   /**
   * Name of the tag key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#key SyntheticsMonitor#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#key SyntheticsMonitor#key}
   */
   readonly key: string;
   /**
   * Values associated with the tag key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#values SyntheticsMonitor#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#values SyntheticsMonitor#values}
   */
   readonly values: string[];
 }
 
-export function syntheticsMonitorTagToTerraform(struct?: SyntheticsMonitorTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function syntheticsMonitorTagToTerraform(struct?: SyntheticsMonitorTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function syntheticsMonitorTagToHclTerraform(struct?: SyntheticsMonitorTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function syntheticsMonitorTagToHclTerraform(struct?: SyntheticsMonitorTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -362,9 +362,9 @@ export function syntheticsMonitorTagToHclTerraform(struct?: SyntheticsMonitorTag
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SyntheticsMonitorTagOutputReference extends cdktf.ComplexObject {
+export class SyntheticsMonitorTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -372,11 +372,11 @@ export class SyntheticsMonitorTagOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SyntheticsMonitorTag | cdktf.IResolvable | undefined {
+  public get internalValue(): SyntheticsMonitorTag | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -393,14 +393,14 @@ export class SyntheticsMonitorTagOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SyntheticsMonitorTag | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SyntheticsMonitorTag | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -439,15 +439,15 @@ export class SyntheticsMonitorTagOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SyntheticsMonitorTagList extends cdktf.ComplexList {
-  public internalValue? : SyntheticsMonitorTag[] | cdktf.IResolvable
+export class SyntheticsMonitorTagList extends cdktn.ComplexList {
+  public internalValue? : SyntheticsMonitorTag[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -460,9 +460,9 @@ export class SyntheticsMonitorTagList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor newrelic_synthetics_monitor}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor newrelic_synthetics_monitor}
 */
-export class SyntheticsMonitor extends cdktf.TerraformResource {
+export class SyntheticsMonitor extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -473,14 +473,14 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SyntheticsMonitor resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SyntheticsMonitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SyntheticsMonitor to import
-  * @param importFromId The id of the existing SyntheticsMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SyntheticsMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SyntheticsMonitor to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_synthetics_monitor", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_synthetics_monitor", importId: importFromId, provider });
       }
 
   // ===========
@@ -488,7 +488,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -499,7 +499,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_monitor',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -559,7 +559,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   // browsers - computed: false, optional: true, required: false
   private _browsers?: string[]; 
   public get browsers() {
-    return cdktf.Fn.tolist(this.getListAttribute('browsers'));
+    return cdktn.Fn.tolist(this.getListAttribute('browsers'));
   }
   public set browsers(value: string[]) {
     this._browsers = value;
@@ -573,11 +573,11 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
 
   // bypass_head_request - computed: false, optional: true, required: false
-  private _bypassHeadRequest?: boolean | cdktf.IResolvable; 
+  private _bypassHeadRequest?: boolean | cdktn.IResolvable; 
   public get bypassHeadRequest() {
     return this.getBooleanAttribute('bypass_head_request');
   }
-  public set bypassHeadRequest(value: boolean | cdktf.IResolvable) {
+  public set bypassHeadRequest(value: boolean | cdktn.IResolvable) {
     this._bypassHeadRequest = value;
   }
   public resetBypassHeadRequest() {
@@ -623,7 +623,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   // devices - computed: false, optional: true, required: false
   private _devices?: string[]; 
   public get devices() {
-    return cdktf.Fn.tolist(this.getListAttribute('devices'));
+    return cdktn.Fn.tolist(this.getListAttribute('devices'));
   }
   public set devices(value: string[]) {
     this._devices = value;
@@ -637,11 +637,11 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
 
   // enable_screenshot_on_failure_and_script - computed: false, optional: true, required: false
-  private _enableScreenshotOnFailureAndScript?: boolean | cdktf.IResolvable; 
+  private _enableScreenshotOnFailureAndScript?: boolean | cdktn.IResolvable; 
   public get enableScreenshotOnFailureAndScript() {
     return this.getBooleanAttribute('enable_screenshot_on_failure_and_script');
   }
-  public set enableScreenshotOnFailureAndScript(value: boolean | cdktf.IResolvable) {
+  public set enableScreenshotOnFailureAndScript(value: boolean | cdktn.IResolvable) {
     this._enableScreenshotOnFailureAndScript = value;
   }
   public resetEnableScreenshotOnFailureAndScript() {
@@ -671,7 +671,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   // locations_private - computed: false, optional: true, required: false
   private _locationsPrivate?: string[]; 
   public get locationsPrivate() {
-    return cdktf.Fn.tolist(this.getListAttribute('locations_private'));
+    return cdktn.Fn.tolist(this.getListAttribute('locations_private'));
   }
   public set locationsPrivate(value: string[]) {
     this._locationsPrivate = value;
@@ -687,7 +687,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   // locations_public - computed: false, optional: true, required: false
   private _locationsPublic?: string[]; 
   public get locationsPublic() {
-    return cdktf.Fn.tolist(this.getListAttribute('locations_public'));
+    return cdktn.Fn.tolist(this.getListAttribute('locations_public'));
   }
   public set locationsPublic(value: string[]) {
     this._locationsPublic = value;
@@ -801,11 +801,11 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
 
   // treat_redirect_as_failure - computed: false, optional: true, required: false
-  private _treatRedirectAsFailure?: boolean | cdktf.IResolvable; 
+  private _treatRedirectAsFailure?: boolean | cdktn.IResolvable; 
   public get treatRedirectAsFailure() {
     return this.getBooleanAttribute('treat_redirect_as_failure');
   }
-  public set treatRedirectAsFailure(value: boolean | cdktf.IResolvable) {
+  public set treatRedirectAsFailure(value: boolean | cdktn.IResolvable) {
     this._treatRedirectAsFailure = value;
   }
   public resetTreatRedirectAsFailure() {
@@ -846,11 +846,11 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
 
   // use_unsupported_legacy_runtime - computed: false, optional: true, required: false
-  private _useUnsupportedLegacyRuntime?: boolean | cdktf.IResolvable; 
+  private _useUnsupportedLegacyRuntime?: boolean | cdktn.IResolvable; 
   public get useUnsupportedLegacyRuntime() {
     return this.getBooleanAttribute('use_unsupported_legacy_runtime');
   }
-  public set useUnsupportedLegacyRuntime(value: boolean | cdktf.IResolvable) {
+  public set useUnsupportedLegacyRuntime(value: boolean | cdktn.IResolvable) {
     this._useUnsupportedLegacyRuntime = value;
   }
   public resetUseUnsupportedLegacyRuntime() {
@@ -878,11 +878,11 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
 
   // verify_ssl - computed: false, optional: true, required: false
-  private _verifySsl?: boolean | cdktf.IResolvable; 
+  private _verifySsl?: boolean | cdktn.IResolvable; 
   public get verifySsl() {
     return this.getBooleanAttribute('verify_ssl');
   }
-  public set verifySsl(value: boolean | cdktf.IResolvable) {
+  public set verifySsl(value: boolean | cdktn.IResolvable) {
     this._verifySsl = value;
   }
   public resetVerifySsl() {
@@ -898,7 +898,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   public get customHeader() {
     return this._customHeader;
   }
-  public putCustomHeader(value: SyntheticsMonitorCustomHeader[] | cdktf.IResolvable) {
+  public putCustomHeader(value: SyntheticsMonitorCustomHeader[] | cdktn.IResolvable) {
     this._customHeader.internalValue = value;
   }
   public resetCustomHeader() {
@@ -914,7 +914,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   public get tag() {
     return this._tag;
   }
-  public putTag(value: SyntheticsMonitorTag[] | cdktf.IResolvable) {
+  public putTag(value: SyntheticsMonitorTag[] | cdktn.IResolvable) {
     this._tag.internalValue = value;
   }
   public resetTag() {
@@ -931,175 +931,175 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      browsers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._browsers),
-      bypass_head_request: cdktf.booleanToTerraform(this._bypassHeadRequest),
-      device_orientation: cdktf.stringToTerraform(this._deviceOrientation),
-      device_type: cdktf.stringToTerraform(this._deviceType),
-      devices: cdktf.listMapper(cdktf.stringToTerraform, false)(this._devices),
-      enable_screenshot_on_failure_and_script: cdktf.booleanToTerraform(this._enableScreenshotOnFailureAndScript),
-      id: cdktf.stringToTerraform(this._id),
-      locations_private: cdktf.listMapper(cdktf.stringToTerraform, false)(this._locationsPrivate),
-      locations_public: cdktf.listMapper(cdktf.stringToTerraform, false)(this._locationsPublic),
-      name: cdktf.stringToTerraform(this._name),
-      period: cdktf.stringToTerraform(this._period),
-      runtime_type: cdktf.stringToTerraform(this._runtimeType),
-      runtime_type_version: cdktf.stringToTerraform(this._runtimeTypeVersion),
-      script_language: cdktf.stringToTerraform(this._scriptLanguage),
-      status: cdktf.stringToTerraform(this._status),
-      treat_redirect_as_failure: cdktf.booleanToTerraform(this._treatRedirectAsFailure),
-      type: cdktf.stringToTerraform(this._type),
-      uri: cdktf.stringToTerraform(this._uri),
-      use_unsupported_legacy_runtime: cdktf.booleanToTerraform(this._useUnsupportedLegacyRuntime),
-      validation_string: cdktf.stringToTerraform(this._validationString),
-      verify_ssl: cdktf.booleanToTerraform(this._verifySsl),
-      custom_header: cdktf.listMapper(syntheticsMonitorCustomHeaderToTerraform, true)(this._customHeader.internalValue),
-      tag: cdktf.listMapper(syntheticsMonitorTagToTerraform, true)(this._tag.internalValue),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      browsers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._browsers),
+      bypass_head_request: cdktn.booleanToTerraform(this._bypassHeadRequest),
+      device_orientation: cdktn.stringToTerraform(this._deviceOrientation),
+      device_type: cdktn.stringToTerraform(this._deviceType),
+      devices: cdktn.listMapper(cdktn.stringToTerraform, false)(this._devices),
+      enable_screenshot_on_failure_and_script: cdktn.booleanToTerraform(this._enableScreenshotOnFailureAndScript),
+      id: cdktn.stringToTerraform(this._id),
+      locations_private: cdktn.listMapper(cdktn.stringToTerraform, false)(this._locationsPrivate),
+      locations_public: cdktn.listMapper(cdktn.stringToTerraform, false)(this._locationsPublic),
+      name: cdktn.stringToTerraform(this._name),
+      period: cdktn.stringToTerraform(this._period),
+      runtime_type: cdktn.stringToTerraform(this._runtimeType),
+      runtime_type_version: cdktn.stringToTerraform(this._runtimeTypeVersion),
+      script_language: cdktn.stringToTerraform(this._scriptLanguage),
+      status: cdktn.stringToTerraform(this._status),
+      treat_redirect_as_failure: cdktn.booleanToTerraform(this._treatRedirectAsFailure),
+      type: cdktn.stringToTerraform(this._type),
+      uri: cdktn.stringToTerraform(this._uri),
+      use_unsupported_legacy_runtime: cdktn.booleanToTerraform(this._useUnsupportedLegacyRuntime),
+      validation_string: cdktn.stringToTerraform(this._validationString),
+      verify_ssl: cdktn.booleanToTerraform(this._verifySsl),
+      custom_header: cdktn.listMapper(syntheticsMonitorCustomHeaderToTerraform, true)(this._customHeader.internalValue),
+      tag: cdktn.listMapper(syntheticsMonitorTagToTerraform, true)(this._tag.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       browsers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._browsers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._browsers),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       bypass_head_request: {
-        value: cdktf.booleanToHclTerraform(this._bypassHeadRequest),
+        value: cdktn.booleanToHclTerraform(this._bypassHeadRequest),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       device_orientation: {
-        value: cdktf.stringToHclTerraform(this._deviceOrientation),
+        value: cdktn.stringToHclTerraform(this._deviceOrientation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       device_type: {
-        value: cdktf.stringToHclTerraform(this._deviceType),
+        value: cdktn.stringToHclTerraform(this._deviceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       devices: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._devices),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._devices),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       enable_screenshot_on_failure_and_script: {
-        value: cdktf.booleanToHclTerraform(this._enableScreenshotOnFailureAndScript),
+        value: cdktn.booleanToHclTerraform(this._enableScreenshotOnFailureAndScript),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       locations_private: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._locationsPrivate),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._locationsPrivate),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       locations_public: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._locationsPublic),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._locationsPublic),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       period: {
-        value: cdktf.stringToHclTerraform(this._period),
+        value: cdktn.stringToHclTerraform(this._period),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runtime_type: {
-        value: cdktf.stringToHclTerraform(this._runtimeType),
+        value: cdktn.stringToHclTerraform(this._runtimeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runtime_type_version: {
-        value: cdktf.stringToHclTerraform(this._runtimeTypeVersion),
+        value: cdktn.stringToHclTerraform(this._runtimeTypeVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       script_language: {
-        value: cdktf.stringToHclTerraform(this._scriptLanguage),
+        value: cdktn.stringToHclTerraform(this._scriptLanguage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       treat_redirect_as_failure: {
-        value: cdktf.booleanToHclTerraform(this._treatRedirectAsFailure),
+        value: cdktn.booleanToHclTerraform(this._treatRedirectAsFailure),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       uri: {
-        value: cdktf.stringToHclTerraform(this._uri),
+        value: cdktn.stringToHclTerraform(this._uri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_unsupported_legacy_runtime: {
-        value: cdktf.booleanToHclTerraform(this._useUnsupportedLegacyRuntime),
+        value: cdktn.booleanToHclTerraform(this._useUnsupportedLegacyRuntime),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       validation_string: {
-        value: cdktf.stringToHclTerraform(this._validationString),
+        value: cdktn.stringToHclTerraform(this._validationString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       verify_ssl: {
-        value: cdktf.booleanToHclTerraform(this._verifySsl),
+        value: cdktn.booleanToHclTerraform(this._verifySsl),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       custom_header: {
-        value: cdktf.listMapperHcl(syntheticsMonitorCustomHeaderToHclTerraform, true)(this._customHeader.internalValue),
+        value: cdktn.listMapperHcl(syntheticsMonitorCustomHeaderToHclTerraform, true)(this._customHeader.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SyntheticsMonitorCustomHeaderList",
       },
       tag: {
-        value: cdktf.listMapperHcl(syntheticsMonitorTagToHclTerraform, true)(this._tag.internalValue),
+        value: cdktn.listMapperHcl(syntheticsMonitorTagToHclTerraform, true)(this._tag.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SyntheticsMonitorTagList",

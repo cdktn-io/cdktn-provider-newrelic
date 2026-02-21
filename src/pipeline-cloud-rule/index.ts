@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/pipeline_cloud_rule
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/pipeline_cloud_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PipelineCloudRuleConfig extends cdktf.TerraformMetaArguments {
+export interface PipelineCloudRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account ID where the Pipeline Cloud rule will be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/pipeline_cloud_rule#account_id PipelineCloudRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/pipeline_cloud_rule#account_id PipelineCloudRule#account_id}
   */
   readonly accountId?: number;
   /**
   * Provides additional information about the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/pipeline_cloud_rule#description PipelineCloudRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/pipeline_cloud_rule#description PipelineCloudRule#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/pipeline_cloud_rule#id PipelineCloudRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/pipeline_cloud_rule#id PipelineCloudRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,21 +34,21 @@ export interface PipelineCloudRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the rule. This must be unique within an account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/pipeline_cloud_rule#name PipelineCloudRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/pipeline_cloud_rule#name PipelineCloudRule#name}
   */
   readonly name: string;
   /**
   * The NRQL query that defines which data will be processed by this pipeline cloud rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/pipeline_cloud_rule#nrql PipelineCloudRule#nrql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/pipeline_cloud_rule#nrql PipelineCloudRule#nrql}
   */
   readonly nrql: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/pipeline_cloud_rule newrelic_pipeline_cloud_rule}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/pipeline_cloud_rule newrelic_pipeline_cloud_rule}
 */
-export class PipelineCloudRule extends cdktf.TerraformResource {
+export class PipelineCloudRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class PipelineCloudRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PipelineCloudRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PipelineCloudRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PipelineCloudRule to import
-  * @param importFromId The id of the existing PipelineCloudRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/pipeline_cloud_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PipelineCloudRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/pipeline_cloud_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PipelineCloudRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_pipeline_cloud_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_pipeline_cloud_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -74,7 +74,7 @@ export class PipelineCloudRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/pipeline_cloud_rule newrelic_pipeline_cloud_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/pipeline_cloud_rule newrelic_pipeline_cloud_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class PipelineCloudRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_pipeline_cloud_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -187,42 +187,42 @@ export class PipelineCloudRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      nrql: cdktf.stringToTerraform(this._nrql),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      nrql: cdktn.stringToTerraform(this._nrql),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nrql: {
-        value: cdktf.stringToHclTerraform(this._nrql),
+        value: cdktn.stringToHclTerraform(this._nrql),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

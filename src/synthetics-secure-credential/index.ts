@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_secure_credential
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_secure_credential
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SyntheticsSecureCredentialConfig extends cdktf.TerraformMetaArguments {
+export interface SyntheticsSecureCredentialConfig extends cdktn.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to create the secure credential.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_secure_credential#account_id SyntheticsSecureCredential#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_secure_credential#account_id SyntheticsSecureCredential#account_id}
   */
   readonly accountId?: number;
   /**
   * The secure credential's description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_secure_credential#description SyntheticsSecureCredential#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_secure_credential#description SyntheticsSecureCredential#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_secure_credential#id SyntheticsSecureCredential#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_secure_credential#id SyntheticsSecureCredential#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,54 +34,54 @@ export interface SyntheticsSecureCredentialConfig extends cdktf.TerraformMetaArg
   /**
   * The secure credential's key name. Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_secure_credential#key SyntheticsSecureCredential#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_secure_credential#key SyntheticsSecureCredential#key}
   */
   readonly key: string;
   /**
   * The time the secure credential was last updated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_secure_credential#last_updated SyntheticsSecureCredential#last_updated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_secure_credential#last_updated SyntheticsSecureCredential#last_updated}
   */
   readonly lastUpdated?: string;
   /**
   * The secure credential's value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_secure_credential#value SyntheticsSecureCredential#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_secure_credential#value SyntheticsSecureCredential#value}
   */
   readonly value: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_secure_credential#timeouts SyntheticsSecureCredential#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_secure_credential#timeouts SyntheticsSecureCredential#timeouts}
   */
   readonly timeouts?: SyntheticsSecureCredentialTimeouts;
 }
 export interface SyntheticsSecureCredentialTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_secure_credential#read SyntheticsSecureCredential#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_secure_credential#read SyntheticsSecureCredential#read}
   */
   readonly read?: string;
 }
 
-export function syntheticsSecureCredentialTimeoutsToTerraform(struct?: SyntheticsSecureCredentialTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function syntheticsSecureCredentialTimeoutsToTerraform(struct?: SyntheticsSecureCredentialTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function syntheticsSecureCredentialTimeoutsToHclTerraform(struct?: SyntheticsSecureCredentialTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function syntheticsSecureCredentialTimeoutsToHclTerraform(struct?: SyntheticsSecureCredentialTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,19 +92,19 @@ export function syntheticsSecureCredentialTimeoutsToHclTerraform(struct?: Synthe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SyntheticsSecureCredentialTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SyntheticsSecureCredentialTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SyntheticsSecureCredentialTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SyntheticsSecureCredentialTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -117,13 +117,13 @@ export class SyntheticsSecureCredentialTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SyntheticsSecureCredentialTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SyntheticsSecureCredentialTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -152,9 +152,9 @@ export class SyntheticsSecureCredentialTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_secure_credential newrelic_synthetics_secure_credential}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_secure_credential newrelic_synthetics_secure_credential}
 */
-export class SyntheticsSecureCredential extends cdktf.TerraformResource {
+export class SyntheticsSecureCredential extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -165,14 +165,14 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SyntheticsSecureCredential resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SyntheticsSecureCredential resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SyntheticsSecureCredential to import
-  * @param importFromId The id of the existing SyntheticsSecureCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_secure_credential#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SyntheticsSecureCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_secure_credential#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SyntheticsSecureCredential to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_synthetics_secure_credential", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_synthetics_secure_credential", importId: importFromId, provider });
       }
 
   // ===========
@@ -180,7 +180,7 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_secure_credential newrelic_synthetics_secure_credential} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/synthetics_secure_credential newrelic_synthetics_secure_credential} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -191,7 +191,7 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_secure_credential',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -327,12 +327,12 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      key: cdktf.stringToTerraform(this._key),
-      last_updated: cdktf.stringToTerraform(this._lastUpdated),
-      value: cdktf.stringToTerraform(this._value),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      key: cdktn.stringToTerraform(this._key),
+      last_updated: cdktn.stringToTerraform(this._lastUpdated),
+      value: cdktn.stringToTerraform(this._value),
       timeouts: syntheticsSecureCredentialTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -340,37 +340,37 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key: {
-        value: cdktf.stringToHclTerraform(this._key),
+        value: cdktn.stringToHclTerraform(this._key),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       last_updated: {
-        value: cdktf.stringToHclTerraform(this._lastUpdated),
+        value: cdktn.stringToHclTerraform(this._lastUpdated),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       value: {
-        value: cdktf.stringToHclTerraform(this._value),
+        value: cdktn.stringToHclTerraform(this._value),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

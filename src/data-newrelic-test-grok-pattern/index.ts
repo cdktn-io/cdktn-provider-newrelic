@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/test_grok_pattern
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataNewrelicTestGrokPatternConfig extends cdktf.TerraformMetaArguments {
+export interface DataNewrelicTestGrokPatternConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account id associated with the test grok.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/test_grok_pattern#account_id DataNewrelicTestGrokPattern#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern#account_id DataNewrelicTestGrokPattern#account_id}
   */
   readonly accountId?: number;
   /**
   * The Grok pattern to test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/test_grok_pattern#grok DataNewrelicTestGrokPattern#grok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern#grok DataNewrelicTestGrokPattern#grok}
   */
   readonly grok: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/test_grok_pattern#id DataNewrelicTestGrokPattern#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern#id DataNewrelicTestGrokPattern#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,7 +34,7 @@ export interface DataNewrelicTestGrokPatternConfig extends cdktf.TerraformMetaAr
   /**
   * The log lines to test the Grok pattern against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/test_grok_pattern#log_lines DataNewrelicTestGrokPattern#log_lines}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern#log_lines DataNewrelicTestGrokPattern#log_lines}
   */
   readonly logLines: string[];
 }
@@ -42,8 +42,8 @@ export interface DataNewrelicTestGrokPatternTestGrokAttributes {
 }
 
 export function dataNewrelicTestGrokPatternTestGrokAttributesToTerraform(struct?: DataNewrelicTestGrokPatternTestGrokAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataNewrelicTestGrokPatternTestGrokAttributesToTerraform(struct?
 
 
 export function dataNewrelicTestGrokPatternTestGrokAttributesToHclTerraform(struct?: DataNewrelicTestGrokPatternTestGrokAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataNewrelicTestGrokPatternTestGrokAttributesToHclTerraform(stru
   return attrs;
 }
 
-export class DataNewrelicTestGrokPatternTestGrokAttributesOutputReference extends cdktf.ComplexObject {
+export class DataNewrelicTestGrokPatternTestGrokAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataNewrelicTestGrokPatternTestGrokAttributesOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -100,14 +100,14 @@ export class DataNewrelicTestGrokPatternTestGrokAttributesOutputReference extend
   }
 }
 
-export class DataNewrelicTestGrokPatternTestGrokAttributesList extends cdktf.ComplexList {
+export class DataNewrelicTestGrokPatternTestGrokAttributesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -122,8 +122,8 @@ export interface DataNewrelicTestGrokPatternTestGrok {
 }
 
 export function dataNewrelicTestGrokPatternTestGrokToTerraform(struct?: DataNewrelicTestGrokPatternTestGrok): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -132,8 +132,8 @@ export function dataNewrelicTestGrokPatternTestGrokToTerraform(struct?: DataNewr
 
 
 export function dataNewrelicTestGrokPatternTestGrokToHclTerraform(struct?: DataNewrelicTestGrokPatternTestGrok): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -141,7 +141,7 @@ export function dataNewrelicTestGrokPatternTestGrokToHclTerraform(struct?: DataN
   return attrs;
 }
 
-export class DataNewrelicTestGrokPatternTestGrokOutputReference extends cdktf.ComplexObject {
+export class DataNewrelicTestGrokPatternTestGrokOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -150,7 +150,7 @@ export class DataNewrelicTestGrokPatternTestGrokOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -186,14 +186,14 @@ export class DataNewrelicTestGrokPatternTestGrokOutputReference extends cdktf.Co
   }
 }
 
-export class DataNewrelicTestGrokPatternTestGrokList extends cdktf.ComplexList {
+export class DataNewrelicTestGrokPatternTestGrokList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -206,9 +206,9 @@ export class DataNewrelicTestGrokPatternTestGrokList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern}
 */
-export class DataNewrelicTestGrokPattern extends cdktf.TerraformDataSource {
+export class DataNewrelicTestGrokPattern extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -219,14 +219,14 @@ export class DataNewrelicTestGrokPattern extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataNewrelicTestGrokPattern resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataNewrelicTestGrokPattern resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicTestGrokPattern to import
-  * @param importFromId The id of the existing DataNewrelicTestGrokPattern that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/test_grok_pattern#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicTestGrokPattern that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicTestGrokPattern to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_test_grok_pattern", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_test_grok_pattern", importId: importFromId, provider });
       }
 
   // ===========
@@ -234,7 +234,7 @@ export class DataNewrelicTestGrokPattern extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -245,7 +245,7 @@ export class DataNewrelicTestGrokPattern extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_test_grok_pattern',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -314,7 +314,7 @@ export class DataNewrelicTestGrokPattern extends cdktf.TerraformDataSource {
   // log_lines - computed: false, optional: false, required: true
   private _logLines?: string[]; 
   public get logLines() {
-    return cdktf.Fn.tolist(this.getListAttribute('log_lines'));
+    return cdktn.Fn.tolist(this.getListAttribute('log_lines'));
   }
   public set logLines(value: string[]) {
     this._logLines = value;
@@ -336,35 +336,35 @@ export class DataNewrelicTestGrokPattern extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      grok: cdktf.stringToTerraform(this._grok),
-      id: cdktf.stringToTerraform(this._id),
-      log_lines: cdktf.listMapper(cdktf.stringToTerraform, false)(this._logLines),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      grok: cdktn.stringToTerraform(this._grok),
+      id: cdktn.stringToTerraform(this._id),
+      log_lines: cdktn.listMapper(cdktn.stringToTerraform, false)(this._logLines),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       grok: {
-        value: cdktf.stringToHclTerraform(this._grok),
+        value: cdktn.stringToHclTerraform(this._grok),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_lines: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._logLines),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._logLines),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

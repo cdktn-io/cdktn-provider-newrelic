@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -15,22 +15,22 @@ oneDashboardVariableToHclTerraform,
 OneDashboardVariableList} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
-export interface OneDashboardConfig extends cdktf.TerraformMetaArguments {
+import * as cdktn from 'cdktn';
+export interface OneDashboardConfig extends cdktn.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to create the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#account_id OneDashboard#account_id}
   */
   readonly accountId?: number;
   /**
   * The dashboard's description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#description OneDashboard#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#description OneDashboard#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#id OneDashboard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#id OneDashboard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,33 +39,33 @@ export interface OneDashboardConfig extends cdktf.TerraformMetaArguments {
   /**
   * The dashboard's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#name OneDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#name OneDashboard#name}
   */
   readonly name: string;
   /**
   * Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#permissions OneDashboard#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#permissions OneDashboard#permissions}
   */
   readonly permissions?: string;
   /**
   * page block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#page OneDashboard#page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#page OneDashboard#page}
   */
-  readonly page: OneDashboardPage[] | cdktf.IResolvable;
+  readonly page: OneDashboardPage[] | cdktn.IResolvable;
   /**
   * variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#variable OneDashboard#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#variable OneDashboard#variable}
   */
-  readonly variable?: OneDashboardVariable[] | cdktf.IResolvable;
+  readonly variable?: OneDashboardVariable[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard newrelic_one_dashboard}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard newrelic_one_dashboard}
 */
-export class OneDashboard extends cdktf.TerraformResource {
+export class OneDashboard extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -76,14 +76,14 @@ export class OneDashboard extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OneDashboard resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OneDashboard resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OneDashboard to import
-  * @param importFromId The id of the existing OneDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OneDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OneDashboard to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_one_dashboard", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_one_dashboard", importId: importFromId, provider });
       }
 
   // ===========
@@ -91,7 +91,7 @@ export class OneDashboard extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard newrelic_one_dashboard} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard newrelic_one_dashboard} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +102,7 @@ export class OneDashboard extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_one_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -218,7 +218,7 @@ export class OneDashboard extends cdktf.TerraformResource {
   public get page() {
     return this._page;
   }
-  public putPage(value: OneDashboardPage[] | cdktf.IResolvable) {
+  public putPage(value: OneDashboardPage[] | cdktn.IResolvable) {
     this._page.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -231,7 +231,7 @@ export class OneDashboard extends cdktf.TerraformResource {
   public get variable() {
     return this._variable;
   }
-  public putVariable(value: OneDashboardVariable[] | cdktf.IResolvable) {
+  public putVariable(value: OneDashboardVariable[] | cdktn.IResolvable) {
     this._variable.internalValue = value;
   }
   public resetVariable() {
@@ -248,56 +248,56 @@ export class OneDashboard extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      permissions: cdktf.stringToTerraform(this._permissions),
-      page: cdktf.listMapper(oneDashboardPageToTerraform, true)(this._page.internalValue),
-      variable: cdktf.listMapper(oneDashboardVariableToTerraform, true)(this._variable.internalValue),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      permissions: cdktn.stringToTerraform(this._permissions),
+      page: cdktn.listMapper(oneDashboardPageToTerraform, true)(this._page.internalValue),
+      variable: cdktn.listMapper(oneDashboardVariableToTerraform, true)(this._variable.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permissions: {
-        value: cdktf.stringToHclTerraform(this._permissions),
+        value: cdktn.stringToHclTerraform(this._permissions),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       page: {
-        value: cdktf.listMapperHcl(oneDashboardPageToHclTerraform, true)(this._page.internalValue),
+        value: cdktn.listMapperHcl(oneDashboardPageToHclTerraform, true)(this._page.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OneDashboardPageList",
       },
       variable: {
-        value: cdktf.listMapperHcl(oneDashboardVariableToHclTerraform, true)(this._variable.internalValue),
+        value: cdktn.listMapperHcl(oneDashboardVariableToHclTerraform, true)(this._variable.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OneDashboardVariableList",

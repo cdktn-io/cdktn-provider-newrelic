@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/synthetics_secure_credential
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/synthetics_secure_credential
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataNewrelicSyntheticsSecureCredentialConfig extends cdktf.TerraformMetaArguments {
+export interface DataNewrelicSyntheticsSecureCredentialConfig extends cdktn.TerraformMetaArguments {
   /**
   * The New Relic account ID associated with this secure credential.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/synthetics_secure_credential#account_id DataNewrelicSyntheticsSecureCredential#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/synthetics_secure_credential#account_id DataNewrelicSyntheticsSecureCredential#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/synthetics_secure_credential#id DataNewrelicSyntheticsSecureCredential#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/synthetics_secure_credential#id DataNewrelicSyntheticsSecureCredential#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,15 +28,15 @@ export interface DataNewrelicSyntheticsSecureCredentialConfig extends cdktf.Terr
   /**
   * The secure credential's key name. Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/synthetics_secure_credential#key DataNewrelicSyntheticsSecureCredential#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/synthetics_secure_credential#key DataNewrelicSyntheticsSecureCredential#key}
   */
   readonly key: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential}
 */
-export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataSource {
+export class DataNewrelicSyntheticsSecureCredential extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataS
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataNewrelicSyntheticsSecureCredential resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataNewrelicSyntheticsSecureCredential resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicSyntheticsSecureCredential to import
-  * @param importFromId The id of the existing DataNewrelicSyntheticsSecureCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/synthetics_secure_credential#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicSyntheticsSecureCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/synthetics_secure_credential#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicSyntheticsSecureCredential to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_synthetics_secure_credential", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_synthetics_secure_credential", importId: importFromId, provider });
       }
 
   // ===========
@@ -62,7 +62,7 @@ export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataS
       terraformResourceType: 'newrelic_synthetics_secure_credential',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -154,28 +154,28 @@ export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataS
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      key: cdktf.stringToTerraform(this._key),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      key: cdktn.stringToTerraform(this._key),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key: {
-        value: cdktf.stringToHclTerraform(this._key),
+        value: cdktn.stringToHclTerraform(this._key),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

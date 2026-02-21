@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/key_transaction
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/key_transaction
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataNewrelicKeyTransactionConfig extends cdktf.TerraformMetaArguments {
+export interface DataNewrelicKeyTransactionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the New Relic account the key transaction would need to belong to. Uses the account_id in the provider{} block by default, if not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/key_transaction#account_id DataNewrelicKeyTransaction#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/key_transaction#account_id DataNewrelicKeyTransaction#account_id}
   */
   readonly accountId?: number;
   /**
   * GUID of the key transaction in New Relic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/key_transaction#guid DataNewrelicKeyTransaction#guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/key_transaction#guid DataNewrelicKeyTransaction#guid}
   */
   readonly guid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/key_transaction#id DataNewrelicKeyTransaction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/key_transaction#id DataNewrelicKeyTransaction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,15 +34,15 @@ export interface DataNewrelicKeyTransactionConfig extends cdktf.TerraformMetaArg
   /**
   * The name of the key transaction in New Relic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/key_transaction#name DataNewrelicKeyTransaction#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/key_transaction#name DataNewrelicKeyTransaction#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/key_transaction newrelic_key_transaction}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/key_transaction newrelic_key_transaction}
 */
-export class DataNewrelicKeyTransaction extends cdktf.TerraformDataSource {
+export class DataNewrelicKeyTransaction extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DataNewrelicKeyTransaction extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataNewrelicKeyTransaction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataNewrelicKeyTransaction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicKeyTransaction to import
-  * @param importFromId The id of the existing DataNewrelicKeyTransaction that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/key_transaction#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicKeyTransaction that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/key_transaction#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicKeyTransaction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_key_transaction", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_key_transaction", importId: importFromId, provider });
       }
 
   // ===========
@@ -68,7 +68,7 @@ export class DataNewrelicKeyTransaction extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/key_transaction newrelic_key_transaction} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/key_transaction newrelic_key_transaction} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class DataNewrelicKeyTransaction extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_key_transaction',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -177,35 +177,35 @@ export class DataNewrelicKeyTransaction extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      guid: cdktf.stringToTerraform(this._guid),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      guid: cdktn.stringToTerraform(this._guid),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       guid: {
-        value: cdktf.stringToHclTerraform(this._guid),
+        value: cdktn.stringToHclTerraform(this._guid),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

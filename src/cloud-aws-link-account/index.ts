@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_link_account
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_link_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudAwsLinkAccountConfig extends cdktf.TerraformMetaArguments {
+export interface CloudAwsLinkAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to link the AWS account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_link_account#account_id CloudAwsLinkAccount#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_link_account#account_id CloudAwsLinkAccount#account_id}
   */
   readonly accountId?: number;
   /**
   * The AWS role ARN.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_link_account#arn CloudAwsLinkAccount#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_link_account#arn CloudAwsLinkAccount#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_link_account#id CloudAwsLinkAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_link_account#id CloudAwsLinkAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,21 +34,21 @@ export interface CloudAwsLinkAccountConfig extends cdktf.TerraformMetaArguments 
   /**
   * How metrics will be collected. Defaults to `PULL` if empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_link_account#metric_collection_mode CloudAwsLinkAccount#metric_collection_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_link_account#metric_collection_mode CloudAwsLinkAccount#metric_collection_mode}
   */
   readonly metricCollectionMode?: string;
   /**
   * The name of the linked account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_link_account#name CloudAwsLinkAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_link_account#name CloudAwsLinkAccount#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account}
 */
-export class CloudAwsLinkAccount extends cdktf.TerraformResource {
+export class CloudAwsLinkAccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class CloudAwsLinkAccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudAwsLinkAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudAwsLinkAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudAwsLinkAccount to import
-  * @param importFromId The id of the existing CloudAwsLinkAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_link_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudAwsLinkAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_link_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudAwsLinkAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_cloud_aws_link_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_cloud_aws_link_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -74,7 +74,7 @@ export class CloudAwsLinkAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class CloudAwsLinkAccount extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_aws_link_account',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -187,42 +187,42 @@ export class CloudAwsLinkAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      arn: cdktf.stringToTerraform(this._arn),
-      id: cdktf.stringToTerraform(this._id),
-      metric_collection_mode: cdktf.stringToTerraform(this._metricCollectionMode),
-      name: cdktf.stringToTerraform(this._name),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      arn: cdktn.stringToTerraform(this._arn),
+      id: cdktn.stringToTerraform(this._id),
+      metric_collection_mode: cdktn.stringToTerraform(this._metricCollectionMode),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       arn: {
-        value: cdktf.stringToHclTerraform(this._arn),
+        value: cdktn.stringToHclTerraform(this._arn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metric_collection_mode: {
-        value: cdktf.stringToHclTerraform(this._metricCollectionMode),
+        value: cdktn.stringToHclTerraform(this._metricCollectionMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

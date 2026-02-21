@@ -1,55 +1,55 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApplicationSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface ApplicationSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * The response time threshold value for Apdex score calculation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}
   */
   readonly appApdexThreshold?: number;
   /**
   * Dummy field to support backward compatibility of previous version.should be removed with next major version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}
   */
-  readonly enableRealUserMonitoring?: boolean | cdktf.IResolvable;
+  readonly enableRealUserMonitoring?: boolean | cdktn.IResolvable;
   /**
   * Samples and reports the slowest database queries in your traces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#enable_slow_sql ApplicationSettings#enable_slow_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#enable_slow_sql ApplicationSettings#enable_slow_sql}
   */
-  readonly enableSlowSql?: boolean | cdktf.IResolvable;
+  readonly enableSlowSql?: boolean | cdktn.IResolvable;
   /**
   * Enable or disable the thread profiler.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#enable_thread_profiler ApplicationSettings#enable_thread_profiler}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#enable_thread_profiler ApplicationSettings#enable_thread_profiler}
   */
-  readonly enableThreadProfiler?: boolean | cdktf.IResolvable;
+  readonly enableThreadProfiler?: boolean | cdktn.IResolvable;
   /**
   * Dummy field to support backward compatibility of previous version.should be removed with next major version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}
   */
   readonly endUserApdexThreshold?: number;
   /**
   * The GUID of the application in New Relic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#guid ApplicationSettings#guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#guid ApplicationSettings#guid}
   */
   readonly guid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#id ApplicationSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#id ApplicationSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,101 +58,101 @@ export interface ApplicationSettingsConfig extends cdktf.TerraformMetaArguments 
   /**
   * The name of the application in New Relic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#name ApplicationSettings#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#name ApplicationSettings#name}
   */
   readonly name?: string;
   /**
   * The type of tracer to use, either 'CROSS_APPLICATION_TRACER', 'DISTRIBUTED_TRACING', 'NONE', or 'OPT_OUT'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#tracer_type ApplicationSettings#tracer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#tracer_type ApplicationSettings#tracer_type}
   */
   readonly tracerType?: string;
   /**
   * Enable or disable server side monitoring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#use_server_side_config ApplicationSettings#use_server_side_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#use_server_side_config ApplicationSettings#use_server_side_config}
   */
-  readonly useServerSideConfig?: boolean | cdktf.IResolvable;
+  readonly useServerSideConfig?: boolean | cdktn.IResolvable;
   /**
   * error_collector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#error_collector ApplicationSettings#error_collector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#error_collector ApplicationSettings#error_collector}
   */
-  readonly errorCollector?: ApplicationSettingsErrorCollector[] | cdktf.IResolvable;
+  readonly errorCollector?: ApplicationSettingsErrorCollector[] | cdktn.IResolvable;
   /**
   * transaction_tracer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#transaction_tracer ApplicationSettings#transaction_tracer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#transaction_tracer ApplicationSettings#transaction_tracer}
   */
-  readonly transactionTracer?: ApplicationSettingsTransactionTracer[] | cdktf.IResolvable;
+  readonly transactionTracer?: ApplicationSettingsTransactionTracer[] | cdktn.IResolvable;
 }
 export interface ApplicationSettingsErrorCollector {
   /**
   * A list of error classes that are expected and should not trigger alerts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#expected_error_classes ApplicationSettings#expected_error_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#expected_error_classes ApplicationSettings#expected_error_classes}
   */
   readonly expectedErrorClasses?: string[];
   /**
   * A list of error codes that are expected and should not trigger alerts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#expected_error_codes ApplicationSettings#expected_error_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#expected_error_codes ApplicationSettings#expected_error_codes}
   */
   readonly expectedErrorCodes?: string[];
   /**
   * A list of error classes that should be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#ignored_error_classes ApplicationSettings#ignored_error_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#ignored_error_classes ApplicationSettings#ignored_error_classes}
   */
   readonly ignoredErrorClasses?: string[];
   /**
   * A list of error codes that should be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#ignored_error_codes ApplicationSettings#ignored_error_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#ignored_error_codes ApplicationSettings#ignored_error_codes}
   */
   readonly ignoredErrorCodes?: string[];
 }
 
-export function applicationSettingsErrorCollectorToTerraform(struct?: ApplicationSettingsErrorCollector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationSettingsErrorCollectorToTerraform(struct?: ApplicationSettingsErrorCollector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expected_error_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.expectedErrorClasses),
-    expected_error_codes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.expectedErrorCodes),
-    ignored_error_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ignoredErrorClasses),
-    ignored_error_codes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ignoredErrorCodes),
+    expected_error_classes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.expectedErrorClasses),
+    expected_error_codes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.expectedErrorCodes),
+    ignored_error_classes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ignoredErrorClasses),
+    ignored_error_codes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ignoredErrorCodes),
   }
 }
 
 
-export function applicationSettingsErrorCollectorToHclTerraform(struct?: ApplicationSettingsErrorCollector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationSettingsErrorCollectorToHclTerraform(struct?: ApplicationSettingsErrorCollector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expected_error_classes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.expectedErrorClasses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.expectedErrorClasses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     expected_error_codes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.expectedErrorCodes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.expectedErrorCodes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     ignored_error_classes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ignoredErrorClasses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ignoredErrorClasses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     ignored_error_codes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ignoredErrorCodes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ignoredErrorCodes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -163,9 +163,9 @@ export function applicationSettingsErrorCollectorToHclTerraform(struct?: Applica
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationSettingsErrorCollectorOutputReference extends cdktf.ComplexObject {
+export class ApplicationSettingsErrorCollectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -173,11 +173,11 @@ export class ApplicationSettingsErrorCollectorOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationSettingsErrorCollector | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationSettingsErrorCollector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -202,7 +202,7 @@ export class ApplicationSettingsErrorCollectorOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationSettingsErrorCollector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationSettingsErrorCollector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -211,7 +211,7 @@ export class ApplicationSettingsErrorCollectorOutputReference extends cdktf.Comp
       this._ignoredErrorClasses = undefined;
       this._ignoredErrorCodes = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -290,15 +290,15 @@ export class ApplicationSettingsErrorCollectorOutputReference extends cdktf.Comp
   }
 }
 
-export class ApplicationSettingsErrorCollectorList extends cdktf.ComplexList {
-  public internalValue? : ApplicationSettingsErrorCollector[] | cdktf.IResolvable
+export class ApplicationSettingsErrorCollectorList extends cdktn.ComplexList {
+  public internalValue? : ApplicationSettingsErrorCollector[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -313,43 +313,43 @@ export interface ApplicationSettingsTransactionTracerExplainQueryPlans {
   /**
   * The type of threshold for explain plans, either 'APDEX_F' or 'VALUE'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#query_plan_threshold_type ApplicationSettings#query_plan_threshold_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#query_plan_threshold_type ApplicationSettings#query_plan_threshold_type}
   */
   readonly queryPlanThresholdType?: string;
   /**
   * The threshold value for explain plans when 'query_plan_threshold_type' is 'VALUE'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#query_plan_threshold_value ApplicationSettings#query_plan_threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#query_plan_threshold_value ApplicationSettings#query_plan_threshold_value}
   */
   readonly queryPlanThresholdValue?: number;
 }
 
-export function applicationSettingsTransactionTracerExplainQueryPlansToTerraform(struct?: ApplicationSettingsTransactionTracerExplainQueryPlans | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationSettingsTransactionTracerExplainQueryPlansToTerraform(struct?: ApplicationSettingsTransactionTracerExplainQueryPlans | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query_plan_threshold_type: cdktf.stringToTerraform(struct!.queryPlanThresholdType),
-    query_plan_threshold_value: cdktf.numberToTerraform(struct!.queryPlanThresholdValue),
+    query_plan_threshold_type: cdktn.stringToTerraform(struct!.queryPlanThresholdType),
+    query_plan_threshold_value: cdktn.numberToTerraform(struct!.queryPlanThresholdValue),
   }
 }
 
 
-export function applicationSettingsTransactionTracerExplainQueryPlansToHclTerraform(struct?: ApplicationSettingsTransactionTracerExplainQueryPlans | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationSettingsTransactionTracerExplainQueryPlansToHclTerraform(struct?: ApplicationSettingsTransactionTracerExplainQueryPlans | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query_plan_threshold_type: {
-      value: cdktf.stringToHclTerraform(struct!.queryPlanThresholdType),
+      value: cdktn.stringToHclTerraform(struct!.queryPlanThresholdType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query_plan_threshold_value: {
-      value: cdktf.numberToHclTerraform(struct!.queryPlanThresholdValue),
+      value: cdktn.numberToHclTerraform(struct!.queryPlanThresholdValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -360,9 +360,9 @@ export function applicationSettingsTransactionTracerExplainQueryPlansToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference extends cdktf.ComplexObject {
+export class ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -370,11 +370,11 @@ export class ApplicationSettingsTransactionTracerExplainQueryPlansOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationSettingsTransactionTracerExplainQueryPlans | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationSettingsTransactionTracerExplainQueryPlans | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -391,14 +391,14 @@ export class ApplicationSettingsTransactionTracerExplainQueryPlansOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationSettingsTransactionTracerExplainQueryPlans | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationSettingsTransactionTracerExplainQueryPlans | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._queryPlanThresholdType = undefined;
       this._queryPlanThresholdValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -443,15 +443,15 @@ export class ApplicationSettingsTransactionTracerExplainQueryPlansOutputReferenc
   }
 }
 
-export class ApplicationSettingsTransactionTracerExplainQueryPlansList extends cdktf.ComplexList {
-  public internalValue? : ApplicationSettingsTransactionTracerExplainQueryPlans[] | cdktf.IResolvable
+export class ApplicationSettingsTransactionTracerExplainQueryPlansList extends cdktn.ComplexList {
+  public internalValue? : ApplicationSettingsTransactionTracerExplainQueryPlans[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -466,30 +466,30 @@ export interface ApplicationSettingsTransactionTracerSql {
   /**
   * The level of SQL recording, either 'OBFUSCATED', 'OFF', or 'RAW'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#record_sql ApplicationSettings#record_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#record_sql ApplicationSettings#record_sql}
   */
   readonly recordSql: string;
 }
 
 export function applicationSettingsTransactionTracerSqlToTerraform(struct?: ApplicationSettingsTransactionTracerSqlOutputReference | ApplicationSettingsTransactionTracerSql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    record_sql: cdktf.stringToTerraform(struct!.recordSql),
+    record_sql: cdktn.stringToTerraform(struct!.recordSql),
   }
 }
 
 
 export function applicationSettingsTransactionTracerSqlToHclTerraform(struct?: ApplicationSettingsTransactionTracerSqlOutputReference | ApplicationSettingsTransactionTracerSql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     record_sql: {
-      value: cdktf.stringToHclTerraform(struct!.recordSql),
+      value: cdktn.stringToHclTerraform(struct!.recordSql),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -500,14 +500,14 @@ export function applicationSettingsTransactionTracerSqlToHclTerraform(struct?: A
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationSettingsTransactionTracerSqlOutputReference extends cdktf.ComplexObject {
+export class ApplicationSettingsTransactionTracerSqlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -549,76 +549,76 @@ export interface ApplicationSettingsTransactionTracer {
   /**
   * The response time threshold value for capturing stack traces of SQL queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#stack_trace_threshold_value ApplicationSettings#stack_trace_threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#stack_trace_threshold_value ApplicationSettings#stack_trace_threshold_value}
   */
   readonly stackTraceThresholdValue?: number;
   /**
   * The type of threshold for transaction tracing, either 'APDEX_F' or 'VALUE'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#transaction_threshold_type ApplicationSettings#transaction_threshold_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#transaction_threshold_type ApplicationSettings#transaction_threshold_type}
   */
   readonly transactionThresholdType?: string;
   /**
   * The threshold value for transaction tracing when 'transaction_threshold_type' is 'VALUE'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#transaction_threshold_value ApplicationSettings#transaction_threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#transaction_threshold_value ApplicationSettings#transaction_threshold_value}
   */
   readonly transactionThresholdValue?: number;
   /**
   * explain_query_plans block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#explain_query_plans ApplicationSettings#explain_query_plans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#explain_query_plans ApplicationSettings#explain_query_plans}
   */
-  readonly explainQueryPlans?: ApplicationSettingsTransactionTracerExplainQueryPlans[] | cdktf.IResolvable;
+  readonly explainQueryPlans?: ApplicationSettingsTransactionTracerExplainQueryPlans[] | cdktn.IResolvable;
   /**
   * sql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#sql ApplicationSettings#sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#sql ApplicationSettings#sql}
   */
   readonly sql?: ApplicationSettingsTransactionTracerSql;
 }
 
-export function applicationSettingsTransactionTracerToTerraform(struct?: ApplicationSettingsTransactionTracer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationSettingsTransactionTracerToTerraform(struct?: ApplicationSettingsTransactionTracer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    stack_trace_threshold_value: cdktf.numberToTerraform(struct!.stackTraceThresholdValue),
-    transaction_threshold_type: cdktf.stringToTerraform(struct!.transactionThresholdType),
-    transaction_threshold_value: cdktf.numberToTerraform(struct!.transactionThresholdValue),
-    explain_query_plans: cdktf.listMapper(applicationSettingsTransactionTracerExplainQueryPlansToTerraform, true)(struct!.explainQueryPlans),
+    stack_trace_threshold_value: cdktn.numberToTerraform(struct!.stackTraceThresholdValue),
+    transaction_threshold_type: cdktn.stringToTerraform(struct!.transactionThresholdType),
+    transaction_threshold_value: cdktn.numberToTerraform(struct!.transactionThresholdValue),
+    explain_query_plans: cdktn.listMapper(applicationSettingsTransactionTracerExplainQueryPlansToTerraform, true)(struct!.explainQueryPlans),
     sql: applicationSettingsTransactionTracerSqlToTerraform(struct!.sql),
   }
 }
 
 
-export function applicationSettingsTransactionTracerToHclTerraform(struct?: ApplicationSettingsTransactionTracer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationSettingsTransactionTracerToHclTerraform(struct?: ApplicationSettingsTransactionTracer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     stack_trace_threshold_value: {
-      value: cdktf.numberToHclTerraform(struct!.stackTraceThresholdValue),
+      value: cdktn.numberToHclTerraform(struct!.stackTraceThresholdValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     transaction_threshold_type: {
-      value: cdktf.stringToHclTerraform(struct!.transactionThresholdType),
+      value: cdktn.stringToHclTerraform(struct!.transactionThresholdType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     transaction_threshold_value: {
-      value: cdktf.numberToHclTerraform(struct!.transactionThresholdValue),
+      value: cdktn.numberToHclTerraform(struct!.transactionThresholdValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     explain_query_plans: {
-      value: cdktf.listMapperHcl(applicationSettingsTransactionTracerExplainQueryPlansToHclTerraform, true)(struct!.explainQueryPlans),
+      value: cdktn.listMapperHcl(applicationSettingsTransactionTracerExplainQueryPlansToHclTerraform, true)(struct!.explainQueryPlans),
       isBlock: true,
       type: "list",
       storageClassType: "ApplicationSettingsTransactionTracerExplainQueryPlansList",
@@ -635,9 +635,9 @@ export function applicationSettingsTransactionTracerToHclTerraform(struct?: Appl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationSettingsTransactionTracerOutputReference extends cdktf.ComplexObject {
+export class ApplicationSettingsTransactionTracerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -645,11 +645,11 @@ export class ApplicationSettingsTransactionTracerOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationSettingsTransactionTracer | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationSettingsTransactionTracer | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -678,7 +678,7 @@ export class ApplicationSettingsTransactionTracerOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationSettingsTransactionTracer | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationSettingsTransactionTracer | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -688,7 +688,7 @@ export class ApplicationSettingsTransactionTracerOutputReference extends cdktf.C
       this._explainQueryPlans.internalValue = undefined;
       this._sql.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -756,7 +756,7 @@ export class ApplicationSettingsTransactionTracerOutputReference extends cdktf.C
   public get explainQueryPlans() {
     return this._explainQueryPlans;
   }
-  public putExplainQueryPlans(value: ApplicationSettingsTransactionTracerExplainQueryPlans[] | cdktf.IResolvable) {
+  public putExplainQueryPlans(value: ApplicationSettingsTransactionTracerExplainQueryPlans[] | cdktn.IResolvable) {
     this._explainQueryPlans.internalValue = value;
   }
   public resetExplainQueryPlans() {
@@ -784,15 +784,15 @@ export class ApplicationSettingsTransactionTracerOutputReference extends cdktf.C
   }
 }
 
-export class ApplicationSettingsTransactionTracerList extends cdktf.ComplexList {
-  public internalValue? : ApplicationSettingsTransactionTracer[] | cdktf.IResolvable
+export class ApplicationSettingsTransactionTracerList extends cdktn.ComplexList {
+  public internalValue? : ApplicationSettingsTransactionTracer[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -805,9 +805,9 @@ export class ApplicationSettingsTransactionTracerList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings newrelic_application_settings}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings newrelic_application_settings}
 */
-export class ApplicationSettings extends cdktf.TerraformResource {
+export class ApplicationSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -818,14 +818,14 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApplicationSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApplicationSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationSettings to import
-  * @param importFromId The id of the existing ApplicationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_application_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_application_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -833,7 +833,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/application_settings newrelic_application_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/application_settings newrelic_application_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -844,7 +844,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_application_settings',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -890,11 +890,11 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   }
 
   // enable_real_user_monitoring - computed: false, optional: true, required: false
-  private _enableRealUserMonitoring?: boolean | cdktf.IResolvable; 
+  private _enableRealUserMonitoring?: boolean | cdktn.IResolvable; 
   public get enableRealUserMonitoring() {
     return this.getBooleanAttribute('enable_real_user_monitoring');
   }
-  public set enableRealUserMonitoring(value: boolean | cdktf.IResolvable) {
+  public set enableRealUserMonitoring(value: boolean | cdktn.IResolvable) {
     this._enableRealUserMonitoring = value;
   }
   public resetEnableRealUserMonitoring() {
@@ -906,11 +906,11 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   }
 
   // enable_slow_sql - computed: false, optional: true, required: false
-  private _enableSlowSql?: boolean | cdktf.IResolvable; 
+  private _enableSlowSql?: boolean | cdktn.IResolvable; 
   public get enableSlowSql() {
     return this.getBooleanAttribute('enable_slow_sql');
   }
-  public set enableSlowSql(value: boolean | cdktf.IResolvable) {
+  public set enableSlowSql(value: boolean | cdktn.IResolvable) {
     this._enableSlowSql = value;
   }
   public resetEnableSlowSql() {
@@ -922,11 +922,11 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   }
 
   // enable_thread_profiler - computed: false, optional: true, required: false
-  private _enableThreadProfiler?: boolean | cdktf.IResolvable; 
+  private _enableThreadProfiler?: boolean | cdktn.IResolvable; 
   public get enableThreadProfiler() {
     return this.getBooleanAttribute('enable_thread_profiler');
   }
-  public set enableThreadProfiler(value: boolean | cdktf.IResolvable) {
+  public set enableThreadProfiler(value: boolean | cdktn.IResolvable) {
     this._enableThreadProfiler = value;
   }
   public resetEnableThreadProfiler() {
@@ -1023,11 +1023,11 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   }
 
   // use_server_side_config - computed: false, optional: true, required: false
-  private _useServerSideConfig?: boolean | cdktf.IResolvable; 
+  private _useServerSideConfig?: boolean | cdktn.IResolvable; 
   public get useServerSideConfig() {
     return this.getBooleanAttribute('use_server_side_config');
   }
-  public set useServerSideConfig(value: boolean | cdktf.IResolvable) {
+  public set useServerSideConfig(value: boolean | cdktn.IResolvable) {
     this._useServerSideConfig = value;
   }
   public resetUseServerSideConfig() {
@@ -1043,7 +1043,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   public get errorCollector() {
     return this._errorCollector;
   }
-  public putErrorCollector(value: ApplicationSettingsErrorCollector[] | cdktf.IResolvable) {
+  public putErrorCollector(value: ApplicationSettingsErrorCollector[] | cdktn.IResolvable) {
     this._errorCollector.internalValue = value;
   }
   public resetErrorCollector() {
@@ -1059,7 +1059,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   public get transactionTracer() {
     return this._transactionTracer;
   }
-  public putTransactionTracer(value: ApplicationSettingsTransactionTracer[] | cdktf.IResolvable) {
+  public putTransactionTracer(value: ApplicationSettingsTransactionTracer[] | cdktn.IResolvable) {
     this._transactionTracer.internalValue = value;
   }
   public resetTransactionTracer() {
@@ -1076,91 +1076,91 @@ export class ApplicationSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_apdex_threshold: cdktf.numberToTerraform(this._appApdexThreshold),
-      enable_real_user_monitoring: cdktf.booleanToTerraform(this._enableRealUserMonitoring),
-      enable_slow_sql: cdktf.booleanToTerraform(this._enableSlowSql),
-      enable_thread_profiler: cdktf.booleanToTerraform(this._enableThreadProfiler),
-      end_user_apdex_threshold: cdktf.numberToTerraform(this._endUserApdexThreshold),
-      guid: cdktf.stringToTerraform(this._guid),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      tracer_type: cdktf.stringToTerraform(this._tracerType),
-      use_server_side_config: cdktf.booleanToTerraform(this._useServerSideConfig),
-      error_collector: cdktf.listMapper(applicationSettingsErrorCollectorToTerraform, true)(this._errorCollector.internalValue),
-      transaction_tracer: cdktf.listMapper(applicationSettingsTransactionTracerToTerraform, true)(this._transactionTracer.internalValue),
+      app_apdex_threshold: cdktn.numberToTerraform(this._appApdexThreshold),
+      enable_real_user_monitoring: cdktn.booleanToTerraform(this._enableRealUserMonitoring),
+      enable_slow_sql: cdktn.booleanToTerraform(this._enableSlowSql),
+      enable_thread_profiler: cdktn.booleanToTerraform(this._enableThreadProfiler),
+      end_user_apdex_threshold: cdktn.numberToTerraform(this._endUserApdexThreshold),
+      guid: cdktn.stringToTerraform(this._guid),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      tracer_type: cdktn.stringToTerraform(this._tracerType),
+      use_server_side_config: cdktn.booleanToTerraform(this._useServerSideConfig),
+      error_collector: cdktn.listMapper(applicationSettingsErrorCollectorToTerraform, true)(this._errorCollector.internalValue),
+      transaction_tracer: cdktn.listMapper(applicationSettingsTransactionTracerToTerraform, true)(this._transactionTracer.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_apdex_threshold: {
-        value: cdktf.numberToHclTerraform(this._appApdexThreshold),
+        value: cdktn.numberToHclTerraform(this._appApdexThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       enable_real_user_monitoring: {
-        value: cdktf.booleanToHclTerraform(this._enableRealUserMonitoring),
+        value: cdktn.booleanToHclTerraform(this._enableRealUserMonitoring),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_slow_sql: {
-        value: cdktf.booleanToHclTerraform(this._enableSlowSql),
+        value: cdktn.booleanToHclTerraform(this._enableSlowSql),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_thread_profiler: {
-        value: cdktf.booleanToHclTerraform(this._enableThreadProfiler),
+        value: cdktn.booleanToHclTerraform(this._enableThreadProfiler),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       end_user_apdex_threshold: {
-        value: cdktf.numberToHclTerraform(this._endUserApdexThreshold),
+        value: cdktn.numberToHclTerraform(this._endUserApdexThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       guid: {
-        value: cdktf.stringToHclTerraform(this._guid),
+        value: cdktn.stringToHclTerraform(this._guid),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tracer_type: {
-        value: cdktf.stringToHclTerraform(this._tracerType),
+        value: cdktn.stringToHclTerraform(this._tracerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_server_side_config: {
-        value: cdktf.booleanToHclTerraform(this._useServerSideConfig),
+        value: cdktn.booleanToHclTerraform(this._useServerSideConfig),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       error_collector: {
-        value: cdktf.listMapperHcl(applicationSettingsErrorCollectorToHclTerraform, true)(this._errorCollector.internalValue),
+        value: cdktn.listMapperHcl(applicationSettingsErrorCollectorToHclTerraform, true)(this._errorCollector.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApplicationSettingsErrorCollectorList",
       },
       transaction_tracer: {
-        value: cdktf.listMapperHcl(applicationSettingsTransactionTracerToHclTerraform, true)(this._transactionTracer.internalValue),
+        value: cdktn.listMapperHcl(applicationSettingsTransactionTracerToHclTerraform, true)(this._transactionTracer.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApplicationSettingsTransactionTracerList",

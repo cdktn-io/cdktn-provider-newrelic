@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/browser_application
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BrowserApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface BrowserApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/browser_application#account_id BrowserApplication#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#account_id BrowserApplication#account_id}
   */
   readonly accountId?: number;
   /**
   * Configure cookies. The default is enabled: true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/browser_application#cookies_enabled BrowserApplication#cookies_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#cookies_enabled BrowserApplication#cookies_enabled}
   */
-  readonly cookiesEnabled?: boolean | cdktf.IResolvable;
+  readonly cookiesEnabled?: boolean | cdktn.IResolvable;
   /**
   * Configure distributed tracing in browser apps. The default is enabled: true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/browser_application#distributed_tracing_enabled BrowserApplication#distributed_tracing_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#distributed_tracing_enabled BrowserApplication#distributed_tracing_enabled}
   */
-  readonly distributedTracingEnabled?: boolean | cdktf.IResolvable;
+  readonly distributedTracingEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/browser_application#id BrowserApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#id BrowserApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,21 +40,154 @@ export interface BrowserApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Determines which browser loader is configured. The default is "SPA".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/browser_application#loader_type BrowserApplication#loader_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#loader_type BrowserApplication#loader_type}
   */
   readonly loaderType?: string;
   /**
   * The name of the application to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/browser_application#name BrowserApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#name BrowserApplication#name}
   */
   readonly name: string;
+  /**
+  * timeouts block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#timeouts BrowserApplication#timeouts}
+  */
+  readonly timeouts?: BrowserApplicationTimeouts;
+}
+export interface BrowserApplicationTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#create BrowserApplication#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#read BrowserApplication#read}
+  */
+  readonly read?: string;
+}
+
+export function browserApplicationTimeoutsToTerraform(struct?: BrowserApplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktn.stringToTerraform(struct!.create),
+    read: cdktn.stringToTerraform(struct!.read),
+  }
+}
+
+
+export function browserApplicationTimeoutsToHclTerraform(struct?: BrowserApplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktn.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktn.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BrowserApplicationTimeoutsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): BrowserApplicationTimeouts | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BrowserApplicationTimeouts | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._read = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._read = value.read;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/browser_application newrelic_browser_application}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application newrelic_browser_application}
 */
-export class BrowserApplication extends cdktf.TerraformResource {
+export class BrowserApplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +198,14 @@ export class BrowserApplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BrowserApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BrowserApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BrowserApplication to import
-  * @param importFromId The id of the existing BrowserApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/browser_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BrowserApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BrowserApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_browser_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_browser_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -80,7 +213,7 @@ export class BrowserApplication extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/browser_application newrelic_browser_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application newrelic_browser_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +224,7 @@ export class BrowserApplication extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_browser_application',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -108,6 +241,7 @@ export class BrowserApplication extends cdktf.TerraformResource {
     this._id = config.id;
     this._loaderType = config.loaderType;
     this._name = config.name;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -136,11 +270,11 @@ export class BrowserApplication extends cdktf.TerraformResource {
   }
 
   // cookies_enabled - computed: false, optional: true, required: false
-  private _cookiesEnabled?: boolean | cdktf.IResolvable; 
+  private _cookiesEnabled?: boolean | cdktn.IResolvable; 
   public get cookiesEnabled() {
     return this.getBooleanAttribute('cookies_enabled');
   }
-  public set cookiesEnabled(value: boolean | cdktf.IResolvable) {
+  public set cookiesEnabled(value: boolean | cdktn.IResolvable) {
     this._cookiesEnabled = value;
   }
   public resetCookiesEnabled() {
@@ -152,11 +286,11 @@ export class BrowserApplication extends cdktf.TerraformResource {
   }
 
   // distributed_tracing_enabled - computed: false, optional: true, required: false
-  private _distributedTracingEnabled?: boolean | cdktf.IResolvable; 
+  private _distributedTracingEnabled?: boolean | cdktn.IResolvable; 
   public get distributedTracingEnabled() {
     return this.getBooleanAttribute('distributed_tracing_enabled');
   }
-  public set distributedTracingEnabled(value: boolean | cdktf.IResolvable) {
+  public set distributedTracingEnabled(value: boolean | cdktn.IResolvable) {
     this._distributedTracingEnabled = value;
   }
   public resetDistributedTracingEnabled() {
@@ -222,58 +356,81 @@ export class BrowserApplication extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new BrowserApplicationTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: BrowserApplicationTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      cookies_enabled: cdktf.booleanToTerraform(this._cookiesEnabled),
-      distributed_tracing_enabled: cdktf.booleanToTerraform(this._distributedTracingEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      loader_type: cdktf.stringToTerraform(this._loaderType),
-      name: cdktf.stringToTerraform(this._name),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      cookies_enabled: cdktn.booleanToTerraform(this._cookiesEnabled),
+      distributed_tracing_enabled: cdktn.booleanToTerraform(this._distributedTracingEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      loader_type: cdktn.stringToTerraform(this._loaderType),
+      name: cdktn.stringToTerraform(this._name),
+      timeouts: browserApplicationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       cookies_enabled: {
-        value: cdktf.booleanToHclTerraform(this._cookiesEnabled),
+        value: cdktn.booleanToHclTerraform(this._cookiesEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       distributed_tracing_enabled: {
-        value: cdktf.booleanToHclTerraform(this._distributedTracingEnabled),
+        value: cdktn.booleanToHclTerraform(this._distributedTracingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       loader_type: {
-        value: cdktf.stringToHclTerraform(this._loaderType),
+        value: cdktn.stringToHclTerraform(this._loaderType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      timeouts: {
+        value: browserApplicationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "BrowserApplicationTimeouts",
       },
     };
 

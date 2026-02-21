@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OneDashboardRawConfig extends cdktf.TerraformMetaArguments {
+export interface OneDashboardRawConfig extends cdktn.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to create the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#account_id OneDashboardRaw#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#account_id OneDashboardRaw#account_id}
   */
   readonly accountId?: number;
   /**
   * The dashboard's description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#description OneDashboardRaw#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#description OneDashboardRaw#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#id OneDashboardRaw#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#id OneDashboardRaw#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,133 +34,133 @@ export interface OneDashboardRawConfig extends cdktf.TerraformMetaArguments {
   /**
   * The dashboard's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#name OneDashboardRaw#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#name OneDashboardRaw#name}
   */
   readonly name: string;
   /**
   * Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#permissions OneDashboardRaw#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#permissions OneDashboardRaw#permissions}
   */
   readonly permissions?: string;
   /**
   * page block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#page OneDashboardRaw#page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#page OneDashboardRaw#page}
   */
-  readonly page: OneDashboardRawPage[] | cdktf.IResolvable;
+  readonly page: OneDashboardRawPage[] | cdktn.IResolvable;
 }
 export interface OneDashboardRawPageWidget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#column OneDashboardRaw#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#column OneDashboardRaw#column}
   */
   readonly column: number;
   /**
   * The configuration of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#configuration OneDashboardRaw#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#configuration OneDashboardRaw#configuration}
   */
   readonly configuration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#height OneDashboardRaw#height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#height OneDashboardRaw#height}
   */
   readonly height?: number;
   /**
   * (Optional) Related entity GUIDs. Currently only supports Dashboard entity GUIDs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#linked_entity_guids OneDashboardRaw#linked_entity_guids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#linked_entity_guids OneDashboardRaw#linked_entity_guids}
   */
   readonly linkedEntityGuids?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#row OneDashboardRaw#row}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#row OneDashboardRaw#row}
   */
   readonly row: number;
   /**
   * A title for the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#title OneDashboardRaw#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#title OneDashboardRaw#title}
   */
   readonly title: string;
   /**
   * The visualization ID of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#visualization_id OneDashboardRaw#visualization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#visualization_id OneDashboardRaw#visualization_id}
   */
   readonly visualizationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#width OneDashboardRaw#width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#width OneDashboardRaw#width}
   */
   readonly width?: number;
 }
 
-export function oneDashboardRawPageWidgetToTerraform(struct?: OneDashboardRawPageWidget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardRawPageWidgetToTerraform(struct?: OneDashboardRawPageWidget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column: cdktf.numberToTerraform(struct!.column),
-    configuration: cdktf.stringToTerraform(struct!.configuration),
-    height: cdktf.numberToTerraform(struct!.height),
-    linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.linkedEntityGuids),
-    row: cdktf.numberToTerraform(struct!.row),
-    title: cdktf.stringToTerraform(struct!.title),
-    visualization_id: cdktf.stringToTerraform(struct!.visualizationId),
-    width: cdktf.numberToTerraform(struct!.width),
+    column: cdktn.numberToTerraform(struct!.column),
+    configuration: cdktn.stringToTerraform(struct!.configuration),
+    height: cdktn.numberToTerraform(struct!.height),
+    linked_entity_guids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.linkedEntityGuids),
+    row: cdktn.numberToTerraform(struct!.row),
+    title: cdktn.stringToTerraform(struct!.title),
+    visualization_id: cdktn.stringToTerraform(struct!.visualizationId),
+    width: cdktn.numberToTerraform(struct!.width),
   }
 }
 
 
-export function oneDashboardRawPageWidgetToHclTerraform(struct?: OneDashboardRawPageWidget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardRawPageWidgetToHclTerraform(struct?: OneDashboardRawPageWidget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column: {
-      value: cdktf.numberToHclTerraform(struct!.column),
+      value: cdktn.numberToHclTerraform(struct!.column),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     configuration: {
-      value: cdktf.stringToHclTerraform(struct!.configuration),
+      value: cdktn.stringToHclTerraform(struct!.configuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     height: {
-      value: cdktf.numberToHclTerraform(struct!.height),
+      value: cdktn.numberToHclTerraform(struct!.height),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     linked_entity_guids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.linkedEntityGuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.linkedEntityGuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     row: {
-      value: cdktf.numberToHclTerraform(struct!.row),
+      value: cdktn.numberToHclTerraform(struct!.row),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     visualization_id: {
-      value: cdktf.stringToHclTerraform(struct!.visualizationId),
+      value: cdktn.stringToHclTerraform(struct!.visualizationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     width: {
-      value: cdktf.numberToHclTerraform(struct!.width),
+      value: cdktn.numberToHclTerraform(struct!.width),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -171,9 +171,9 @@ export function oneDashboardRawPageWidgetToHclTerraform(struct?: OneDashboardRaw
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardRawPageWidgetOutputReference extends cdktf.ComplexObject {
+export class OneDashboardRawPageWidgetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -181,11 +181,11 @@ export class OneDashboardRawPageWidgetOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardRawPageWidget | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardRawPageWidget | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -226,7 +226,7 @@ export class OneDashboardRawPageWidgetOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardRawPageWidget | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardRawPageWidget | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -239,7 +239,7 @@ export class OneDashboardRawPageWidgetOutputReference extends cdktf.ComplexObjec
       this._visualizationId = undefined;
       this._width = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -376,15 +376,15 @@ export class OneDashboardRawPageWidgetOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class OneDashboardRawPageWidgetList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardRawPageWidget[] | cdktf.IResolvable
+export class OneDashboardRawPageWidgetList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardRawPageWidget[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -399,56 +399,56 @@ export interface OneDashboardRawPage {
   /**
   * The dashboard page's description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#description OneDashboardRaw#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#description OneDashboardRaw#description}
   */
   readonly description?: string;
   /**
   * The dashboard page's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#name OneDashboardRaw#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#name OneDashboardRaw#name}
   */
   readonly name: string;
   /**
   * widget block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#widget OneDashboardRaw#widget}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#widget OneDashboardRaw#widget}
   */
-  readonly widget?: OneDashboardRawPageWidget[] | cdktf.IResolvable;
+  readonly widget?: OneDashboardRawPageWidget[] | cdktn.IResolvable;
 }
 
-export function oneDashboardRawPageToTerraform(struct?: OneDashboardRawPage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardRawPageToTerraform(struct?: OneDashboardRawPage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    widget: cdktf.listMapper(oneDashboardRawPageWidgetToTerraform, true)(struct!.widget),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    widget: cdktn.listMapper(oneDashboardRawPageWidgetToTerraform, true)(struct!.widget),
   }
 }
 
 
-export function oneDashboardRawPageToHclTerraform(struct?: OneDashboardRawPage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oneDashboardRawPageToHclTerraform(struct?: OneDashboardRawPage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     widget: {
-      value: cdktf.listMapperHcl(oneDashboardRawPageWidgetToHclTerraform, true)(struct!.widget),
+      value: cdktn.listMapperHcl(oneDashboardRawPageWidgetToHclTerraform, true)(struct!.widget),
       isBlock: true,
       type: "list",
       storageClassType: "OneDashboardRawPageWidgetList",
@@ -459,9 +459,9 @@ export function oneDashboardRawPageToHclTerraform(struct?: OneDashboardRawPage |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OneDashboardRawPageOutputReference extends cdktf.ComplexObject {
+export class OneDashboardRawPageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -469,11 +469,11 @@ export class OneDashboardRawPageOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OneDashboardRawPage | cdktf.IResolvable | undefined {
+  public get internalValue(): OneDashboardRawPage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -494,7 +494,7 @@ export class OneDashboardRawPageOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OneDashboardRawPage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OneDashboardRawPage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -502,7 +502,7 @@ export class OneDashboardRawPageOutputReference extends cdktf.ComplexObject {
       this._name = undefined;
       this._widget.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -554,7 +554,7 @@ export class OneDashboardRawPageOutputReference extends cdktf.ComplexObject {
   public get widget() {
     return this._widget;
   }
-  public putWidget(value: OneDashboardRawPageWidget[] | cdktf.IResolvable) {
+  public putWidget(value: OneDashboardRawPageWidget[] | cdktn.IResolvable) {
     this._widget.internalValue = value;
   }
   public resetWidget() {
@@ -566,15 +566,15 @@ export class OneDashboardRawPageOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class OneDashboardRawPageList extends cdktf.ComplexList {
-  public internalValue? : OneDashboardRawPage[] | cdktf.IResolvable
+export class OneDashboardRawPageList extends cdktn.ComplexList {
+  public internalValue? : OneDashboardRawPage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -587,9 +587,9 @@ export class OneDashboardRawPageList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw newrelic_one_dashboard_raw}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw newrelic_one_dashboard_raw}
 */
-export class OneDashboardRaw extends cdktf.TerraformResource {
+export class OneDashboardRaw extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -600,14 +600,14 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OneDashboardRaw resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OneDashboardRaw resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OneDashboardRaw to import
-  * @param importFromId The id of the existing OneDashboardRaw that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OneDashboardRaw that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OneDashboardRaw to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_one_dashboard_raw", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_one_dashboard_raw", importId: importFromId, provider });
       }
 
   // ===========
@@ -615,7 +615,7 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/one_dashboard_raw newrelic_one_dashboard_raw} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/one_dashboard_raw newrelic_one_dashboard_raw} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -626,7 +626,7 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_one_dashboard_raw',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -741,7 +741,7 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
   public get page() {
     return this._page;
   }
-  public putPage(value: OneDashboardRawPage[] | cdktf.IResolvable) {
+  public putPage(value: OneDashboardRawPage[] | cdktn.IResolvable) {
     this._page.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -755,49 +755,49 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      permissions: cdktf.stringToTerraform(this._permissions),
-      page: cdktf.listMapper(oneDashboardRawPageToTerraform, true)(this._page.internalValue),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      permissions: cdktn.stringToTerraform(this._permissions),
+      page: cdktn.listMapper(oneDashboardRawPageToTerraform, true)(this._page.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permissions: {
-        value: cdktf.stringToHclTerraform(this._permissions),
+        value: cdktn.stringToHclTerraform(this._permissions),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       page: {
-        value: cdktf.listMapperHcl(oneDashboardRawPageToHclTerraform, true)(this._page.internalValue),
+        value: cdktn.listMapperHcl(oneDashboardRawPageToHclTerraform, true)(this._page.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OneDashboardRawPageList",

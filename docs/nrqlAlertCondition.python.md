@@ -1,15 +1,15 @@
-# `nrqlAlertCondition` Submodule <a name="`nrqlAlertCondition` Submodule" id="@cdktf/provider-newrelic.nrqlAlertCondition"></a>
+# `nrqlAlertCondition` Submodule <a name="`nrqlAlertCondition` Submodule" id="@cdktn/provider-newrelic.nrqlAlertCondition"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### NrqlAlertCondition <a name="NrqlAlertCondition" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition"></a>
+### NrqlAlertCondition <a name="NrqlAlertCondition" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertCondition(
   scope: Construct,
@@ -58,51 +58,51 @@ nrqlAlertCondition.NrqlAlertCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.name">name</a></code> | <code>str</code> | The title of the condition. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.nrql">nrql</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a></code> | nrql block. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.policyId">policy_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the policy where this condition should be used. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID for managing your NRQL alert conditions. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationDelay">aggregation_delay</a></code> | <code>str</code> | How long we wait for data that belongs in each aggregation window. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationMethod">aggregation_method</a></code> | <code>str</code> | The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for incidents. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationTimer">aggregation_timer</a></code> | <code>str</code> | How long we wait after each data point arrives to make sure we've processed the whole batch. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationWindow">aggregation_window</a></code> | <code>typing.Union[int, float]</code> | The duration of the time window used to evaluate the NRQL query, in seconds. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.baselineDirection">baseline_direction</a></code> | <code>str</code> | The baseline direction of a baseline NRQL alert condition. Valid values are: 'LOWER_ONLY', 'UPPER_AND_LOWER', 'UPPER_ONLY' (case insensitive). |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.closeViolationsOnExpiration">close_violations_on_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to close all open incidents when the signal expires. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.critical">critical</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a></code> | critical block. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the NRQL alert condition. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to enable the alert condition. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | How long we wait until the signal starts evaluating. The maximum delay is 7200 seconds (120 minutes). |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.expirationDuration">expiration_duration</a></code> | <code>typing.Union[int, float]</code> | The amount of time (in seconds) to wait before considering the signal expired. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.fillOption">fill_option</a></code> | <code>str</code> | Which strategy to use when filling gaps in the signal. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.fillValue">fill_value</a></code> | <code>typing.Union[int, float]</code> | If using the 'static' fill option, this value will be used for filling gaps in the signal. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#id NrqlAlertCondition#id}. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.ignoreOnExpectedTermination">ignore_on_expected_termination</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to ignore expected termination of a signal when considering whether to create a loss of signal incident. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.openViolationOnExpiration">open_violation_on_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to create a new incident to capture that the signal expired. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.outlierConfiguration">outlier_configuration</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a></code> | outlier_configuration block. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.runbookUrl">runbook_url</a></code> | <code>str</code> | Runbook URL to display in notifications. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.signalSeasonality">signal_seasonality</a></code> | <code>str</code> | Seasonality under which a condition's signal(s) are evaluated. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.slideBy">slide_by</a></code> | <code>typing.Union[int, float]</code> | The duration of overlapping time windows used to smooth the chart line, in seconds. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.targetEntity">target_entity</a></code> | <code>str</code> | BETA PREVIEW: the `target_entity` field is in limited release and only enabled for preview on a per-account basis. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.term">term</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]</code> | term block. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.titleTemplate">title_template</a></code> | <code>str</code> | This field allows you to create a custom title to be used when incidents are opened by the condition. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of NRQL alert condition to create. Valid values are: 'static', 'baseline', 'outlier'. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.violationTimeLimit">violation_time_limit</a></code> | <code>str</code> | Sets a time limit, in hours, that will automatically force-close a long-lasting incident after the time limit you select. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.violationTimeLimitSeconds">violation_time_limit_seconds</a></code> | <code>typing.Union[int, float]</code> | Sets a time limit, in seconds, that will automatically force-close a long-lasting incident after the time limit you select. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.warning">warning</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a></code> | warning block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.name">name</a></code> | <code>str</code> | The title of the condition. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.nrql">nrql</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a></code> | nrql block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.policyId">policy_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the policy where this condition should be used. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID for managing your NRQL alert conditions. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationDelay">aggregation_delay</a></code> | <code>str</code> | How long we wait for data that belongs in each aggregation window. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationMethod">aggregation_method</a></code> | <code>str</code> | The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for incidents. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationTimer">aggregation_timer</a></code> | <code>str</code> | How long we wait after each data point arrives to make sure we've processed the whole batch. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationWindow">aggregation_window</a></code> | <code>typing.Union[int, float]</code> | The duration of the time window used to evaluate the NRQL query, in seconds. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.baselineDirection">baseline_direction</a></code> | <code>str</code> | The baseline direction of a baseline NRQL alert condition. Valid values are: 'LOWER_ONLY', 'UPPER_AND_LOWER', 'UPPER_ONLY' (case insensitive). |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.closeViolationsOnExpiration">close_violations_on_expiration</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to close all open incidents when the signal expires. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.critical">critical</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a></code> | critical block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the NRQL alert condition. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not to enable the alert condition. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | How long we wait until the signal starts evaluating. The maximum delay is 7200 seconds (120 minutes). |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.expirationDuration">expiration_duration</a></code> | <code>typing.Union[int, float]</code> | The amount of time (in seconds) to wait before considering the signal expired. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.fillOption">fill_option</a></code> | <code>str</code> | Which strategy to use when filling gaps in the signal. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.fillValue">fill_value</a></code> | <code>typing.Union[int, float]</code> | If using the 'static' fill option, this value will be used for filling gaps in the signal. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#id NrqlAlertCondition#id}. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.ignoreOnExpectedTermination">ignore_on_expected_termination</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to ignore expected termination of a signal when considering whether to create a loss of signal incident. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.openViolationOnExpiration">open_violation_on_expiration</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to create a new incident to capture that the signal expired. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.outlierConfiguration">outlier_configuration</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a></code> | outlier_configuration block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.runbookUrl">runbook_url</a></code> | <code>str</code> | Runbook URL to display in notifications. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.signalSeasonality">signal_seasonality</a></code> | <code>str</code> | Seasonality under which a condition's signal(s) are evaluated. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.slideBy">slide_by</a></code> | <code>typing.Union[int, float]</code> | The duration of overlapping time windows used to smooth the chart line, in seconds. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.targetEntity">target_entity</a></code> | <code>str</code> | BETA PREVIEW: the `target_entity` field is in limited release and only enabled for preview on a per-account basis. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.term">term</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]</code> | term block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.titleTemplate">title_template</a></code> | <code>str</code> | This field allows you to create a custom title to be used when incidents are opened by the condition. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of NRQL alert condition to create. Valid values are: 'static', 'baseline', 'outlier'. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.violationTimeLimit">violation_time_limit</a></code> | <code>str</code> | Sets a time limit, in hours, that will automatically force-close a long-lasting incident after the time limit you select. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.violationTimeLimitSeconds">violation_time_limit_seconds</a></code> | <code>typing.Union[int, float]</code> | Sets a time limit, in seconds, that will automatically force-close a long-lasting incident after the time limit you select. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.warning">warning</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a></code> | warning block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -110,7 +110,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -120,89 +120,89 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.name"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.name"></a>
 
 - *Type:* str
 
 The title of the condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#name NrqlAlertCondition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#name NrqlAlertCondition#name}
 
 ---
 
-##### `nrql`<sup>Required</sup> <a name="nrql" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.nrql"></a>
+##### `nrql`<sup>Required</sup> <a name="nrql" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.nrql"></a>
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a>
 
 nrql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#nrql NrqlAlertCondition#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#nrql NrqlAlertCondition#nrql}
 
 ---
 
-##### `policy_id`<sup>Required</sup> <a name="policy_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.policyId"></a>
+##### `policy_id`<sup>Required</sup> <a name="policy_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.policyId"></a>
 
 - *Type:* typing.Union[int, float]
 
 The ID of the policy where this condition should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#policy_id NrqlAlertCondition#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#policy_id NrqlAlertCondition#policy_id}
 
 ---
 
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.accountId"></a>
 
 - *Type:* typing.Union[int, float]
 
 The New Relic account ID for managing your NRQL alert conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#account_id NrqlAlertCondition#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#account_id NrqlAlertCondition#account_id}
 
 ---
 
-##### `aggregation_delay`<sup>Optional</sup> <a name="aggregation_delay" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationDelay"></a>
+##### `aggregation_delay`<sup>Optional</sup> <a name="aggregation_delay" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationDelay"></a>
 
 - *Type:* str
 
@@ -210,11 +210,11 @@ How long we wait for data that belongs in each aggregation window.
 
 Depending on your data, a longer delay may increase accuracy but delay notifications. Use aggregationDelay with the EVENT_FLOW and CADENCE aggregation methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#aggregation_delay NrqlAlertCondition#aggregation_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#aggregation_delay NrqlAlertCondition#aggregation_delay}
 
 ---
 
-##### `aggregation_method`<sup>Optional</sup> <a name="aggregation_method" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationMethod"></a>
+##### `aggregation_method`<sup>Optional</sup> <a name="aggregation_method" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationMethod"></a>
 
 - *Type:* str
 
@@ -222,11 +222,11 @@ The method that determines when we consider an aggregation window to be complete
 
 Default is EVENT_FLOW.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#aggregation_method NrqlAlertCondition#aggregation_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#aggregation_method NrqlAlertCondition#aggregation_method}
 
 ---
 
-##### `aggregation_timer`<sup>Optional</sup> <a name="aggregation_timer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationTimer"></a>
+##### `aggregation_timer`<sup>Optional</sup> <a name="aggregation_timer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationTimer"></a>
 
 - *Type:* str
 
@@ -234,81 +234,81 @@ How long we wait after each data point arrives to make sure we've processed the 
 
 Use aggregationTimer with the EVENT_TIMER aggregation method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#aggregation_timer NrqlAlertCondition#aggregation_timer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#aggregation_timer NrqlAlertCondition#aggregation_timer}
 
 ---
 
-##### `aggregation_window`<sup>Optional</sup> <a name="aggregation_window" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationWindow"></a>
+##### `aggregation_window`<sup>Optional</sup> <a name="aggregation_window" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationWindow"></a>
 
 - *Type:* typing.Union[int, float]
 
 The duration of the time window used to evaluate the NRQL query, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#aggregation_window NrqlAlertCondition#aggregation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#aggregation_window NrqlAlertCondition#aggregation_window}
 
 ---
 
-##### `baseline_direction`<sup>Optional</sup> <a name="baseline_direction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.baselineDirection"></a>
+##### `baseline_direction`<sup>Optional</sup> <a name="baseline_direction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.baselineDirection"></a>
 
 - *Type:* str
 
 The baseline direction of a baseline NRQL alert condition. Valid values are: 'LOWER_ONLY', 'UPPER_AND_LOWER', 'UPPER_ONLY' (case insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#baseline_direction NrqlAlertCondition#baseline_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#baseline_direction NrqlAlertCondition#baseline_direction}
 
 ---
 
-##### `close_violations_on_expiration`<sup>Optional</sup> <a name="close_violations_on_expiration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.closeViolationsOnExpiration"></a>
+##### `close_violations_on_expiration`<sup>Optional</sup> <a name="close_violations_on_expiration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.closeViolationsOnExpiration"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether to close all open incidents when the signal expires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#close_violations_on_expiration NrqlAlertCondition#close_violations_on_expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#close_violations_on_expiration NrqlAlertCondition#close_violations_on_expiration}
 
 ---
 
-##### `critical`<sup>Optional</sup> <a name="critical" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.critical"></a>
+##### `critical`<sup>Optional</sup> <a name="critical" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.critical"></a>
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a>
 
 critical block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#critical NrqlAlertCondition#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#critical NrqlAlertCondition#critical}
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.description"></a>
 
 - *Type:* str
 
 The description of the NRQL alert condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#description NrqlAlertCondition#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#description NrqlAlertCondition#description}
 
 ---
 
-##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.enabled"></a>
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether or not to enable the alert condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#enabled NrqlAlertCondition#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#enabled NrqlAlertCondition#enabled}
 
 ---
 
-##### `evaluation_delay`<sup>Optional</sup> <a name="evaluation_delay" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.evaluationDelay"></a>
+##### `evaluation_delay`<sup>Optional</sup> <a name="evaluation_delay" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.evaluationDelay"></a>
 
 - *Type:* typing.Union[int, float]
 
 How long we wait until the signal starts evaluating. The maximum delay is 7200 seconds (120 minutes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#evaluation_delay NrqlAlertCondition#evaluation_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#evaluation_delay NrqlAlertCondition#evaluation_delay}
 
 ---
 
-##### `expiration_duration`<sup>Optional</sup> <a name="expiration_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.expirationDuration"></a>
+##### `expiration_duration`<sup>Optional</sup> <a name="expiration_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.expirationDuration"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -316,11 +316,11 @@ The amount of time (in seconds) to wait before considering the signal expired.
 
 Must be in the range of 30 to 172800 (inclusive)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#expiration_duration NrqlAlertCondition#expiration_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#expiration_duration NrqlAlertCondition#expiration_duration}
 
 ---
 
-##### `fill_option`<sup>Optional</sup> <a name="fill_option" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.fillOption"></a>
+##### `fill_option`<sup>Optional</sup> <a name="fill_option" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.fillOption"></a>
 
 - *Type:* str
 
@@ -328,72 +328,72 @@ Which strategy to use when filling gaps in the signal.
 
 If static, the 'fill value' will be used for filling gaps in the signal. Valid values are: 'NONE', 'LAST_VALUE', or 'STATIC' (case insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#fill_option NrqlAlertCondition#fill_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#fill_option NrqlAlertCondition#fill_option}
 
 ---
 
-##### `fill_value`<sup>Optional</sup> <a name="fill_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.fillValue"></a>
+##### `fill_value`<sup>Optional</sup> <a name="fill_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.fillValue"></a>
 
 - *Type:* typing.Union[int, float]
 
 If using the 'static' fill option, this value will be used for filling gaps in the signal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#fill_value NrqlAlertCondition#fill_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#fill_value NrqlAlertCondition#fill_value}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#id NrqlAlertCondition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#id NrqlAlertCondition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `ignore_on_expected_termination`<sup>Optional</sup> <a name="ignore_on_expected_termination" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.ignoreOnExpectedTermination"></a>
+##### `ignore_on_expected_termination`<sup>Optional</sup> <a name="ignore_on_expected_termination" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.ignoreOnExpectedTermination"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether to ignore expected termination of a signal when considering whether to create a loss of signal incident.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#ignore_on_expected_termination NrqlAlertCondition#ignore_on_expected_termination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#ignore_on_expected_termination NrqlAlertCondition#ignore_on_expected_termination}
 
 ---
 
-##### `open_violation_on_expiration`<sup>Optional</sup> <a name="open_violation_on_expiration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.openViolationOnExpiration"></a>
+##### `open_violation_on_expiration`<sup>Optional</sup> <a name="open_violation_on_expiration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.openViolationOnExpiration"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether to create a new incident to capture that the signal expired.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#open_violation_on_expiration NrqlAlertCondition#open_violation_on_expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#open_violation_on_expiration NrqlAlertCondition#open_violation_on_expiration}
 
 ---
 
-##### `outlier_configuration`<sup>Optional</sup> <a name="outlier_configuration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.outlierConfiguration"></a>
+##### `outlier_configuration`<sup>Optional</sup> <a name="outlier_configuration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.outlierConfiguration"></a>
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a>
 
 outlier_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#outlier_configuration NrqlAlertCondition#outlier_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#outlier_configuration NrqlAlertCondition#outlier_configuration}
 
 ---
 
-##### `runbook_url`<sup>Optional</sup> <a name="runbook_url" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.runbookUrl"></a>
+##### `runbook_url`<sup>Optional</sup> <a name="runbook_url" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.runbookUrl"></a>
 
 - *Type:* str
 
 Runbook URL to display in notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#runbook_url NrqlAlertCondition#runbook_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#runbook_url NrqlAlertCondition#runbook_url}
 
 ---
 
-##### `signal_seasonality`<sup>Optional</sup> <a name="signal_seasonality" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.signalSeasonality"></a>
+##### `signal_seasonality`<sup>Optional</sup> <a name="signal_seasonality" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.signalSeasonality"></a>
 
 - *Type:* str
 
@@ -401,11 +401,11 @@ Seasonality under which a condition's signal(s) are evaluated.
 
 Valid values are: 'NEW_RELIC_CALCULATION', 'HOURLY', 'DAILY', 'WEEKLY', or 'NONE'. To have New Relic calculate seasonality automatically, set to 'NEW_RELIC_CALCULATION' (default). To turn off seasonality completely, set to 'NONE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#signal_seasonality NrqlAlertCondition#signal_seasonality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#signal_seasonality NrqlAlertCondition#signal_seasonality}
 
 ---
 
-##### `slide_by`<sup>Optional</sup> <a name="slide_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.slideBy"></a>
+##### `slide_by`<sup>Optional</sup> <a name="slide_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.slideBy"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -413,11 +413,11 @@ The duration of overlapping time windows used to smooth the chart line, in secon
 
 Must be a factor of `aggregation_window` and less than the aggregation window. If `aggregation_window` is less than or equal to 3600 seconds, it should be greater or equal to 30 seconds. If `aggregation_window` is greater than 3600 seconds but less than 7200 seconds, it should be greater or equal to `aggregation_window / 120`.  If `aggregation_window` is greater than 7200 seconds, it should be greater or equal to `aggregation_window / 24
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#slide_by NrqlAlertCondition#slide_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#slide_by NrqlAlertCondition#slide_by}
 
 ---
 
-##### `target_entity`<sup>Optional</sup> <a name="target_entity" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.targetEntity"></a>
+##### `target_entity`<sup>Optional</sup> <a name="target_entity" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.targetEntity"></a>
 
 - *Type:* str
 
@@ -425,31 +425,31 @@ BETA PREVIEW: the `target_entity` field is in limited release and only enabled f
 
 * The GUID of the entity explicitly targeted by the condition. Issues triggered by this condition will affect the health status of this entity instead of having the affected entity detected automatically
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#target_entity NrqlAlertCondition#target_entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#target_entity NrqlAlertCondition#target_entity}
 
 ---
 
-##### `term`<sup>Optional</sup> <a name="term" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.term"></a>
+##### `term`<sup>Optional</sup> <a name="term" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.term"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
 
 term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#term NrqlAlertCondition#term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#term NrqlAlertCondition#term}
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#timeouts NrqlAlertCondition#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#timeouts NrqlAlertCondition#timeouts}
 
 ---
 
-##### `title_template`<sup>Optional</sup> <a name="title_template" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.titleTemplate"></a>
+##### `title_template`<sup>Optional</sup> <a name="title_template" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.titleTemplate"></a>
 
 - *Type:* str
 
@@ -457,21 +457,21 @@ This field allows you to create a custom title to be used when incidents are ope
 
 Setting this field will override the default title. Must be Handlebars format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#title_template NrqlAlertCondition#title_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#title_template NrqlAlertCondition#title_template}
 
 ---
 
-##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.type"></a>
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.type"></a>
 
 - *Type:* str
 
 The type of NRQL alert condition to create. Valid values are: 'static', 'baseline', 'outlier'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#type NrqlAlertCondition#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#type NrqlAlertCondition#type}
 
 ---
 
-##### `violation_time_limit`<sup>Optional</sup> <a name="violation_time_limit" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.violationTimeLimit"></a>
+##### `violation_time_limit`<sup>Optional</sup> <a name="violation_time_limit" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.violationTimeLimit"></a>
 
 - *Type:* str
 
@@ -479,11 +479,11 @@ Sets a time limit, in hours, that will automatically force-close a long-lasting 
 
 Possible values are 'ONE_HOUR', 'TWO_HOURS', 'FOUR_HOURS', 'EIGHT_HOURS', 'TWELVE_HOURS', 'TWENTY_FOUR_HOURS', 'THIRTY_DAYS' (case insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#violation_time_limit NrqlAlertCondition#violation_time_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#violation_time_limit NrqlAlertCondition#violation_time_limit}
 
 ---
 
-##### `violation_time_limit_seconds`<sup>Optional</sup> <a name="violation_time_limit_seconds" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.violationTimeLimitSeconds"></a>
+##### `violation_time_limit_seconds`<sup>Optional</sup> <a name="violation_time_limit_seconds" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.violationTimeLimitSeconds"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -491,17 +491,17 @@ Sets a time limit, in seconds, that will automatically force-close a long-lastin
 
 Must be in the range of 300 to 2592000 (inclusive)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#violation_time_limit_seconds NrqlAlertCondition#violation_time_limit_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#violation_time_limit_seconds NrqlAlertCondition#violation_time_limit_seconds}
 
 ---
 
-##### `warning`<sup>Optional</sup> <a name="warning" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.warning"></a>
+##### `warning`<sup>Optional</sup> <a name="warning" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.warning"></a>
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a>
 
 warning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#warning NrqlAlertCondition#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#warning NrqlAlertCondition#warning}
 
 ---
 
@@ -509,68 +509,68 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical">put_critical</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putNrql">put_nrql</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putOutlierConfiguration">put_outlier_configuration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putTerm">put_term</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning">put_warning</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAccountId">reset_account_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationDelay">reset_aggregation_delay</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationMethod">reset_aggregation_method</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationTimer">reset_aggregation_timer</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationWindow">reset_aggregation_window</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetBaselineDirection">reset_baseline_direction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetCloseViolationsOnExpiration">reset_close_violations_on_expiration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetCritical">reset_critical</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetEnabled">reset_enabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetEvaluationDelay">reset_evaluation_delay</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetExpirationDuration">reset_expiration_duration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetFillOption">reset_fill_option</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetFillValue">reset_fill_value</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetIgnoreOnExpectedTermination">reset_ignore_on_expected_termination</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetOpenViolationOnExpiration">reset_open_violation_on_expiration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetOutlierConfiguration">reset_outlier_configuration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetRunbookUrl">reset_runbook_url</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetSignalSeasonality">reset_signal_seasonality</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetSlideBy">reset_slide_by</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTargetEntity">reset_target_entity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTerm">reset_term</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTimeouts">reset_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTitleTemplate">reset_title_template</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetType">reset_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetViolationTimeLimit">reset_violation_time_limit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetViolationTimeLimitSeconds">reset_violation_time_limit_seconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetWarning">reset_warning</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical">put_critical</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putNrql">put_nrql</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putOutlierConfiguration">put_outlier_configuration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putTerm">put_term</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning">put_warning</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAccountId">reset_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationDelay">reset_aggregation_delay</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationMethod">reset_aggregation_method</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationTimer">reset_aggregation_timer</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationWindow">reset_aggregation_window</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetBaselineDirection">reset_baseline_direction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetCloseViolationsOnExpiration">reset_close_violations_on_expiration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetCritical">reset_critical</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetEnabled">reset_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetEvaluationDelay">reset_evaluation_delay</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetExpirationDuration">reset_expiration_duration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetFillOption">reset_fill_option</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetFillValue">reset_fill_value</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetIgnoreOnExpectedTermination">reset_ignore_on_expected_termination</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetOpenViolationOnExpiration">reset_open_violation_on_expiration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetOutlierConfiguration">reset_outlier_configuration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetRunbookUrl">reset_runbook_url</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetSignalSeasonality">reset_signal_seasonality</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetSlideBy">reset_slide_by</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTargetEntity">reset_target_entity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTerm">reset_term</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTitleTemplate">reset_title_template</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetType">reset_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetViolationTimeLimit">reset_violation_time_limit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetViolationTimeLimitSeconds">reset_violation_time_limit_seconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetWarning">reset_warning</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toString"></a>
 
 ```python
 def to_string() -> str
@@ -578,7 +578,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addOverride"></a>
 
 ```python
 def add_override(
@@ -587,19 +587,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -609,7 +609,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -617,7 +617,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -625,19 +625,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -645,7 +645,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -655,7 +655,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -663,7 +663,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -671,13 +671,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -685,13 +685,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -699,13 +699,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -713,13 +713,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -727,13 +727,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -741,13 +741,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -755,13 +755,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -769,13 +769,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -783,19 +783,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.importFrom"></a>
 
 ```python
 def import_from(
@@ -804,19 +804,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -824,13 +824,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -842,7 +842,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -850,7 +850,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveTo"></a>
 
 ```python
 def move_to(
@@ -861,7 +861,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -869,7 +869,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -877,7 +877,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -887,7 +887,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -895,7 +895,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_critical` <a name="put_critical" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical"></a>
+##### `put_critical` <a name="put_critical" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical"></a>
 
 ```python
 def put_critical(
@@ -910,57 +910,57 @@ def put_critical(
 ) -> None
 ```
 
-###### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.threshold"></a>
+###### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.threshold"></a>
 
 - *Type:* typing.Union[int, float]
 
 For baseline conditions must be in range [1, 1000].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
 
 ---
 
-###### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.disableHealthStatusReporting"></a>
+###### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.disableHealthStatusReporting"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Violations will not change system health status for this term.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#disable_health_status_reporting NrqlAlertCondition#disable_health_status_reporting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#disable_health_status_reporting NrqlAlertCondition#disable_health_status_reporting}
 
 ---
 
-###### `duration`<sup>Optional</sup> <a name="duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.duration"></a>
+###### `duration`<sup>Optional</sup> <a name="duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.duration"></a>
 
 - *Type:* typing.Union[int, float]
 
 In minutes, must be in the range of 1 to 120 (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
 
 ---
 
-###### `operator`<sup>Optional</sup> <a name="operator" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.operator"></a>
+###### `operator`<sup>Optional</sup> <a name="operator" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.operator"></a>
 
 - *Type:* str
 
 One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
 
 ---
 
-###### `prediction`<sup>Optional</sup> <a name="prediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.prediction"></a>
+###### `prediction`<sup>Optional</sup> <a name="prediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.prediction"></a>
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a>
 
 prediction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#prediction NrqlAlertCondition#prediction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#prediction NrqlAlertCondition#prediction}
 
 ---
 
-###### `threshold_duration`<sup>Optional</sup> <a name="threshold_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.thresholdDuration"></a>
+###### `threshold_duration`<sup>Optional</sup> <a name="threshold_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.thresholdDuration"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -968,11 +968,11 @@ The duration, in seconds, that the threshold must violate in order to create an 
 
 Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-86400 seconds for baseline conditions, and within 60-86400 seconds for static conditions
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
 
 ---
 
-###### `threshold_occurrences`<sup>Optional</sup> <a name="threshold_occurrences" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.thresholdOccurrences"></a>
+###### `threshold_occurrences`<sup>Optional</sup> <a name="threshold_occurrences" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.thresholdOccurrences"></a>
 
 - *Type:* str
 
@@ -980,21 +980,21 @@ The criteria for how many data points must be in violation for the specified thr
 
 Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
 
 ---
 
-###### `time_function`<sup>Optional</sup> <a name="time_function" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.timeFunction"></a>
+###### `time_function`<sup>Optional</sup> <a name="time_function" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.timeFunction"></a>
 
 - *Type:* str
 
 Valid values are: 'all' or 'any'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
 
 ---
 
-##### `put_nrql` <a name="put_nrql" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putNrql"></a>
+##### `put_nrql` <a name="put_nrql" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putNrql"></a>
 
 ```python
 def put_nrql(
@@ -1005,15 +1005,15 @@ def put_nrql(
 ) -> None
 ```
 
-###### `query`<sup>Required</sup> <a name="query" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putNrql.parameter.query"></a>
+###### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putNrql.parameter.query"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#query NrqlAlertCondition#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#query NrqlAlertCondition#query}.
 
 ---
 
-###### `data_account_id`<sup>Optional</sup> <a name="data_account_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putNrql.parameter.dataAccountId"></a>
+###### `data_account_id`<sup>Optional</sup> <a name="data_account_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putNrql.parameter.dataAccountId"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1021,11 +1021,11 @@ The New Relic account ID to use as the basis for the NRQL alert condition's `que
 
 will default to `account_id` if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#data_account_id NrqlAlertCondition#data_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#data_account_id NrqlAlertCondition#data_account_id}
 
 ---
 
-###### `evaluation_offset`<sup>Optional</sup> <a name="evaluation_offset" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putNrql.parameter.evaluationOffset"></a>
+###### `evaluation_offset`<sup>Optional</sup> <a name="evaluation_offset" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putNrql.parameter.evaluationOffset"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1033,11 +1033,11 @@ NRQL queries are evaluated in one-minute time windows.
 
 The start time depends on the value you provide in the NRQL condition's `evaluation_offset`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#evaluation_offset NrqlAlertCondition#evaluation_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#evaluation_offset NrqlAlertCondition#evaluation_offset}
 
 ---
 
-###### `since_value`<sup>Optional</sup> <a name="since_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putNrql.parameter.sinceValue"></a>
+###### `since_value`<sup>Optional</sup> <a name="since_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putNrql.parameter.sinceValue"></a>
 
 - *Type:* str
 
@@ -1045,11 +1045,11 @@ NRQL queries are evaluated in one-minute time windows.
 
 The start time depends on the value you provide in the NRQL condition's `since_value`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#since_value NrqlAlertCondition#since_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#since_value NrqlAlertCondition#since_value}
 
 ---
 
-##### `put_outlier_configuration` <a name="put_outlier_configuration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putOutlierConfiguration"></a>
+##### `put_outlier_configuration` <a name="put_outlier_configuration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putOutlierConfiguration"></a>
 
 ```python
 def put_outlier_configuration(
@@ -1057,17 +1057,17 @@ def put_outlier_configuration(
 ) -> None
 ```
 
-###### `dbscan`<sup>Required</sup> <a name="dbscan" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putOutlierConfiguration.parameter.dbscan"></a>
+###### `dbscan`<sup>Required</sup> <a name="dbscan" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putOutlierConfiguration.parameter.dbscan"></a>
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan">NrqlAlertConditionOutlierConfigurationDbscan</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan">NrqlAlertConditionOutlierConfigurationDbscan</a>
 
 dbscan block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#dbscan NrqlAlertCondition#dbscan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#dbscan NrqlAlertCondition#dbscan}
 
 ---
 
-##### `put_term` <a name="put_term" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putTerm"></a>
+##### `put_term` <a name="put_term" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putTerm"></a>
 
 ```python
 def put_term(
@@ -1075,13 +1075,13 @@ def put_term(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putTerm.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putTerm.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -1089,15 +1089,15 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#create NrqlAlertCondition#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#create NrqlAlertCondition#create}.
 
 ---
 
-##### `put_warning` <a name="put_warning" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning"></a>
+##### `put_warning` <a name="put_warning" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning"></a>
 
 ```python
 def put_warning(
@@ -1112,57 +1112,57 @@ def put_warning(
 ) -> None
 ```
 
-###### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.threshold"></a>
+###### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.threshold"></a>
 
 - *Type:* typing.Union[int, float]
 
 For baseline conditions must be in range [1, 1000].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
 
 ---
 
-###### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.disableHealthStatusReporting"></a>
+###### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.disableHealthStatusReporting"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Violations will not change system health status for this term.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#disable_health_status_reporting NrqlAlertCondition#disable_health_status_reporting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#disable_health_status_reporting NrqlAlertCondition#disable_health_status_reporting}
 
 ---
 
-###### `duration`<sup>Optional</sup> <a name="duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.duration"></a>
+###### `duration`<sup>Optional</sup> <a name="duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.duration"></a>
 
 - *Type:* typing.Union[int, float]
 
 In minutes, must be in the range of 1 to 120 (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
 
 ---
 
-###### `operator`<sup>Optional</sup> <a name="operator" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.operator"></a>
+###### `operator`<sup>Optional</sup> <a name="operator" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.operator"></a>
 
 - *Type:* str
 
 One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
 
 ---
 
-###### `prediction`<sup>Optional</sup> <a name="prediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.prediction"></a>
+###### `prediction`<sup>Optional</sup> <a name="prediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.prediction"></a>
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a>
 
 prediction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#prediction NrqlAlertCondition#prediction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#prediction NrqlAlertCondition#prediction}
 
 ---
 
-###### `threshold_duration`<sup>Optional</sup> <a name="threshold_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.thresholdDuration"></a>
+###### `threshold_duration`<sup>Optional</sup> <a name="threshold_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.thresholdDuration"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1170,11 +1170,11 @@ The duration, in seconds, that the threshold must violate in order to create an 
 
 Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-86400 seconds for baseline conditions, and within 60-86400 seconds for static conditions
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
 
 ---
 
-###### `threshold_occurrences`<sup>Optional</sup> <a name="threshold_occurrences" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.thresholdOccurrences"></a>
+###### `threshold_occurrences`<sup>Optional</sup> <a name="threshold_occurrences" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.thresholdOccurrences"></a>
 
 - *Type:* str
 
@@ -1182,189 +1182,189 @@ The criteria for how many data points must be in violation for the specified thr
 
 Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
 
 ---
 
-###### `time_function`<sup>Optional</sup> <a name="time_function" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.timeFunction"></a>
+###### `time_function`<sup>Optional</sup> <a name="time_function" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.timeFunction"></a>
 
 - *Type:* str
 
 Valid values are: 'all' or 'any'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
 
 ---
 
-##### `reset_account_id` <a name="reset_account_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAccountId"></a>
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAccountId"></a>
 
 ```python
 def reset_account_id() -> None
 ```
 
-##### `reset_aggregation_delay` <a name="reset_aggregation_delay" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationDelay"></a>
+##### `reset_aggregation_delay` <a name="reset_aggregation_delay" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationDelay"></a>
 
 ```python
 def reset_aggregation_delay() -> None
 ```
 
-##### `reset_aggregation_method` <a name="reset_aggregation_method" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationMethod"></a>
+##### `reset_aggregation_method` <a name="reset_aggregation_method" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationMethod"></a>
 
 ```python
 def reset_aggregation_method() -> None
 ```
 
-##### `reset_aggregation_timer` <a name="reset_aggregation_timer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationTimer"></a>
+##### `reset_aggregation_timer` <a name="reset_aggregation_timer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationTimer"></a>
 
 ```python
 def reset_aggregation_timer() -> None
 ```
 
-##### `reset_aggregation_window` <a name="reset_aggregation_window" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationWindow"></a>
+##### `reset_aggregation_window` <a name="reset_aggregation_window" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetAggregationWindow"></a>
 
 ```python
 def reset_aggregation_window() -> None
 ```
 
-##### `reset_baseline_direction` <a name="reset_baseline_direction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetBaselineDirection"></a>
+##### `reset_baseline_direction` <a name="reset_baseline_direction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetBaselineDirection"></a>
 
 ```python
 def reset_baseline_direction() -> None
 ```
 
-##### `reset_close_violations_on_expiration` <a name="reset_close_violations_on_expiration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetCloseViolationsOnExpiration"></a>
+##### `reset_close_violations_on_expiration` <a name="reset_close_violations_on_expiration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetCloseViolationsOnExpiration"></a>
 
 ```python
 def reset_close_violations_on_expiration() -> None
 ```
 
-##### `reset_critical` <a name="reset_critical" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetCritical"></a>
+##### `reset_critical` <a name="reset_critical" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetCritical"></a>
 
 ```python
 def reset_critical() -> None
 ```
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_enabled` <a name="reset_enabled" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetEnabled"></a>
+##### `reset_enabled` <a name="reset_enabled" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetEnabled"></a>
 
 ```python
 def reset_enabled() -> None
 ```
 
-##### `reset_evaluation_delay` <a name="reset_evaluation_delay" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetEvaluationDelay"></a>
+##### `reset_evaluation_delay` <a name="reset_evaluation_delay" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetEvaluationDelay"></a>
 
 ```python
 def reset_evaluation_delay() -> None
 ```
 
-##### `reset_expiration_duration` <a name="reset_expiration_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetExpirationDuration"></a>
+##### `reset_expiration_duration` <a name="reset_expiration_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetExpirationDuration"></a>
 
 ```python
 def reset_expiration_duration() -> None
 ```
 
-##### `reset_fill_option` <a name="reset_fill_option" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetFillOption"></a>
+##### `reset_fill_option` <a name="reset_fill_option" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetFillOption"></a>
 
 ```python
 def reset_fill_option() -> None
 ```
 
-##### `reset_fill_value` <a name="reset_fill_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetFillValue"></a>
+##### `reset_fill_value` <a name="reset_fill_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetFillValue"></a>
 
 ```python
 def reset_fill_value() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_ignore_on_expected_termination` <a name="reset_ignore_on_expected_termination" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetIgnoreOnExpectedTermination"></a>
+##### `reset_ignore_on_expected_termination` <a name="reset_ignore_on_expected_termination" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetIgnoreOnExpectedTermination"></a>
 
 ```python
 def reset_ignore_on_expected_termination() -> None
 ```
 
-##### `reset_open_violation_on_expiration` <a name="reset_open_violation_on_expiration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetOpenViolationOnExpiration"></a>
+##### `reset_open_violation_on_expiration` <a name="reset_open_violation_on_expiration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetOpenViolationOnExpiration"></a>
 
 ```python
 def reset_open_violation_on_expiration() -> None
 ```
 
-##### `reset_outlier_configuration` <a name="reset_outlier_configuration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetOutlierConfiguration"></a>
+##### `reset_outlier_configuration` <a name="reset_outlier_configuration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetOutlierConfiguration"></a>
 
 ```python
 def reset_outlier_configuration() -> None
 ```
 
-##### `reset_runbook_url` <a name="reset_runbook_url" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetRunbookUrl"></a>
+##### `reset_runbook_url` <a name="reset_runbook_url" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetRunbookUrl"></a>
 
 ```python
 def reset_runbook_url() -> None
 ```
 
-##### `reset_signal_seasonality` <a name="reset_signal_seasonality" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetSignalSeasonality"></a>
+##### `reset_signal_seasonality` <a name="reset_signal_seasonality" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetSignalSeasonality"></a>
 
 ```python
 def reset_signal_seasonality() -> None
 ```
 
-##### `reset_slide_by` <a name="reset_slide_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetSlideBy"></a>
+##### `reset_slide_by` <a name="reset_slide_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetSlideBy"></a>
 
 ```python
 def reset_slide_by() -> None
 ```
 
-##### `reset_target_entity` <a name="reset_target_entity" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTargetEntity"></a>
+##### `reset_target_entity` <a name="reset_target_entity" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTargetEntity"></a>
 
 ```python
 def reset_target_entity() -> None
 ```
 
-##### `reset_term` <a name="reset_term" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTerm"></a>
+##### `reset_term` <a name="reset_term" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTerm"></a>
 
 ```python
 def reset_term() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
 ```
 
-##### `reset_title_template` <a name="reset_title_template" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTitleTemplate"></a>
+##### `reset_title_template` <a name="reset_title_template" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetTitleTemplate"></a>
 
 ```python
 def reset_title_template() -> None
 ```
 
-##### `reset_type` <a name="reset_type" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetType"></a>
+##### `reset_type` <a name="reset_type" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetType"></a>
 
 ```python
 def reset_type() -> None
 ```
 
-##### `reset_violation_time_limit` <a name="reset_violation_time_limit" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetViolationTimeLimit"></a>
+##### `reset_violation_time_limit` <a name="reset_violation_time_limit" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetViolationTimeLimit"></a>
 
 ```python
 def reset_violation_time_limit() -> None
 ```
 
-##### `reset_violation_time_limit_seconds` <a name="reset_violation_time_limit_seconds" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetViolationTimeLimitSeconds"></a>
+##### `reset_violation_time_limit_seconds` <a name="reset_violation_time_limit_seconds" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetViolationTimeLimitSeconds"></a>
 
 ```python
 def reset_violation_time_limit_seconds() -> None
 ```
 
-##### `reset_warning` <a name="reset_warning" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetWarning"></a>
+##### `reset_warning` <a name="reset_warning" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetWarning"></a>
 
 ```python
 def reset_warning() -> None
@@ -1374,17 +1374,17 @@ def reset_warning() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a NrqlAlertCondition resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a NrqlAlertCondition resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertCondition.is_construct(
   x: typing.Any
@@ -1407,7 +1407,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -1415,42 +1415,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertCondition.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertCondition.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertCondition.generate_config_for_import(
   scope: Construct,
@@ -1460,9 +1460,9 @@ nrqlAlertCondition.NrqlAlertCondition.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a NrqlAlertCondition resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a NrqlAlertCondition resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -1470,7 +1470,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -1478,19 +1478,19 @@ The construct id used in the generated config for the NrqlAlertCondition to impo
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing NrqlAlertCondition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the NrqlAlertCondition to import is found.
 
@@ -1500,89 +1500,89 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.critical">critical</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference">NrqlAlertConditionCriticalOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.entityGuid">entity_guid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nrql">nrql</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference">NrqlAlertConditionNrqlOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.outlierConfiguration">outlier_configuration</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference">NrqlAlertConditionOutlierConfigurationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.term">term</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList">NrqlAlertConditionTermList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference">NrqlAlertConditionTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.warning">warning</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference">NrqlAlertConditionWarningOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.accountIdInput">account_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationDelayInput">aggregation_delay_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationMethodInput">aggregation_method_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationTimerInput">aggregation_timer_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationWindowInput">aggregation_window_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.baselineDirectionInput">baseline_direction_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.closeViolationsOnExpirationInput">close_violations_on_expiration_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.criticalInput">critical_input</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.evaluationDelayInput">evaluation_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.expirationDurationInput">expiration_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillOptionInput">fill_option_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillValueInput">fill_value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.ignoreOnExpectedTerminationInput">ignore_on_expected_termination_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nrqlInput">nrql_input</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.openViolationOnExpirationInput">open_violation_on_expiration_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.outlierConfigurationInput">outlier_configuration_input</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.policyIdInput">policy_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.runbookUrlInput">runbook_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.signalSeasonalityInput">signal_seasonality_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.slideByInput">slide_by_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.targetEntityInput">target_entity_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.termInput">term_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.titleTemplateInput">title_template_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimitInput">violation_time_limit_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimitSecondsInput">violation_time_limit_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.warningInput">warning_input</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationDelay">aggregation_delay</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationMethod">aggregation_method</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationTimer">aggregation_timer</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationWindow">aggregation_window</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.baselineDirection">baseline_direction</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.closeViolationsOnExpiration">close_violations_on_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.expirationDuration">expiration_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillOption">fill_option</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillValue">fill_value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.ignoreOnExpectedTermination">ignore_on_expected_termination</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.openViolationOnExpiration">open_violation_on_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.policyId">policy_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.runbookUrl">runbook_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.signalSeasonality">signal_seasonality</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.slideBy">slide_by</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.targetEntity">target_entity</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.titleTemplate">title_template</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimit">violation_time_limit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimitSeconds">violation_time_limit_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.critical">critical</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference">NrqlAlertConditionCriticalOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.entityGuid">entity_guid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nrql">nrql</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference">NrqlAlertConditionNrqlOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.outlierConfiguration">outlier_configuration</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference">NrqlAlertConditionOutlierConfigurationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.term">term</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList">NrqlAlertConditionTermList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference">NrqlAlertConditionTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.warning">warning</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference">NrqlAlertConditionWarningOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.accountIdInput">account_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationDelayInput">aggregation_delay_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationMethodInput">aggregation_method_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationTimerInput">aggregation_timer_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationWindowInput">aggregation_window_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.baselineDirectionInput">baseline_direction_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.closeViolationsOnExpirationInput">close_violations_on_expiration_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.criticalInput">critical_input</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.evaluationDelayInput">evaluation_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.expirationDurationInput">expiration_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillOptionInput">fill_option_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillValueInput">fill_value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.ignoreOnExpectedTerminationInput">ignore_on_expected_termination_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nrqlInput">nrql_input</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.openViolationOnExpirationInput">open_violation_on_expiration_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.outlierConfigurationInput">outlier_configuration_input</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.policyIdInput">policy_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.runbookUrlInput">runbook_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.signalSeasonalityInput">signal_seasonality_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.slideByInput">slide_by_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.targetEntityInput">target_entity_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.termInput">term_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.titleTemplateInput">title_template_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimitInput">violation_time_limit_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimitSecondsInput">violation_time_limit_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.warningInput">warning_input</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationDelay">aggregation_delay</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationMethod">aggregation_method</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationTimer">aggregation_timer</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationWindow">aggregation_window</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.baselineDirection">baseline_direction</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.closeViolationsOnExpiration">close_violations_on_expiration</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.expirationDuration">expiration_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillOption">fill_option</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillValue">fill_value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.ignoreOnExpectedTermination">ignore_on_expected_termination</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.openViolationOnExpiration">open_violation_on_expiration</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.policyId">policy_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.runbookUrl">runbook_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.signalSeasonality">signal_seasonality</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.slideBy">slide_by</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.targetEntity">target_entity</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.titleTemplate">title_template</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimit">violation_time_limit</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimitSeconds">violation_time_limit_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.node"></a>
 
 ```python
 node: Node
@@ -1594,17 +1594,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1614,7 +1614,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1624,7 +1624,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1634,7 +1634,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1644,37 +1644,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1684,57 +1684,57 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `critical`<sup>Required</sup> <a name="critical" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.critical"></a>
+##### `critical`<sup>Required</sup> <a name="critical" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.critical"></a>
 
 ```python
 critical: NrqlAlertConditionCriticalOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference">NrqlAlertConditionCriticalOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference">NrqlAlertConditionCriticalOutputReference</a>
 
 ---
 
-##### `entity_guid`<sup>Required</sup> <a name="entity_guid" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.entityGuid"></a>
+##### `entity_guid`<sup>Required</sup> <a name="entity_guid" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.entityGuid"></a>
 
 ```python
 entity_guid: str
@@ -1744,57 +1744,57 @@ entity_guid: str
 
 ---
 
-##### `nrql`<sup>Required</sup> <a name="nrql" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nrql"></a>
+##### `nrql`<sup>Required</sup> <a name="nrql" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nrql"></a>
 
 ```python
 nrql: NrqlAlertConditionNrqlOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference">NrqlAlertConditionNrqlOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference">NrqlAlertConditionNrqlOutputReference</a>
 
 ---
 
-##### `outlier_configuration`<sup>Required</sup> <a name="outlier_configuration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.outlierConfiguration"></a>
+##### `outlier_configuration`<sup>Required</sup> <a name="outlier_configuration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.outlierConfiguration"></a>
 
 ```python
 outlier_configuration: NrqlAlertConditionOutlierConfigurationOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference">NrqlAlertConditionOutlierConfigurationOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference">NrqlAlertConditionOutlierConfigurationOutputReference</a>
 
 ---
 
-##### `term`<sup>Required</sup> <a name="term" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.term"></a>
+##### `term`<sup>Required</sup> <a name="term" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.term"></a>
 
 ```python
 term: NrqlAlertConditionTermList
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList">NrqlAlertConditionTermList</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList">NrqlAlertConditionTermList</a>
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.timeouts"></a>
 
 ```python
 timeouts: NrqlAlertConditionTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference">NrqlAlertConditionTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference">NrqlAlertConditionTimeoutsOutputReference</a>
 
 ---
 
-##### `warning`<sup>Required</sup> <a name="warning" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.warning"></a>
+##### `warning`<sup>Required</sup> <a name="warning" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.warning"></a>
 
 ```python
 warning: NrqlAlertConditionWarningOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference">NrqlAlertConditionWarningOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference">NrqlAlertConditionWarningOutputReference</a>
 
 ---
 
-##### `account_id_input`<sup>Optional</sup> <a name="account_id_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.accountIdInput"></a>
+##### `account_id_input`<sup>Optional</sup> <a name="account_id_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.accountIdInput"></a>
 
 ```python
 account_id_input: typing.Union[int, float]
@@ -1804,7 +1804,7 @@ account_id_input: typing.Union[int, float]
 
 ---
 
-##### `aggregation_delay_input`<sup>Optional</sup> <a name="aggregation_delay_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationDelayInput"></a>
+##### `aggregation_delay_input`<sup>Optional</sup> <a name="aggregation_delay_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationDelayInput"></a>
 
 ```python
 aggregation_delay_input: str
@@ -1814,7 +1814,7 @@ aggregation_delay_input: str
 
 ---
 
-##### `aggregation_method_input`<sup>Optional</sup> <a name="aggregation_method_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationMethodInput"></a>
+##### `aggregation_method_input`<sup>Optional</sup> <a name="aggregation_method_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationMethodInput"></a>
 
 ```python
 aggregation_method_input: str
@@ -1824,7 +1824,7 @@ aggregation_method_input: str
 
 ---
 
-##### `aggregation_timer_input`<sup>Optional</sup> <a name="aggregation_timer_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationTimerInput"></a>
+##### `aggregation_timer_input`<sup>Optional</sup> <a name="aggregation_timer_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationTimerInput"></a>
 
 ```python
 aggregation_timer_input: str
@@ -1834,7 +1834,7 @@ aggregation_timer_input: str
 
 ---
 
-##### `aggregation_window_input`<sup>Optional</sup> <a name="aggregation_window_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationWindowInput"></a>
+##### `aggregation_window_input`<sup>Optional</sup> <a name="aggregation_window_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationWindowInput"></a>
 
 ```python
 aggregation_window_input: typing.Union[int, float]
@@ -1844,7 +1844,7 @@ aggregation_window_input: typing.Union[int, float]
 
 ---
 
-##### `baseline_direction_input`<sup>Optional</sup> <a name="baseline_direction_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.baselineDirectionInput"></a>
+##### `baseline_direction_input`<sup>Optional</sup> <a name="baseline_direction_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.baselineDirectionInput"></a>
 
 ```python
 baseline_direction_input: str
@@ -1854,27 +1854,27 @@ baseline_direction_input: str
 
 ---
 
-##### `close_violations_on_expiration_input`<sup>Optional</sup> <a name="close_violations_on_expiration_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.closeViolationsOnExpirationInput"></a>
+##### `close_violations_on_expiration_input`<sup>Optional</sup> <a name="close_violations_on_expiration_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.closeViolationsOnExpirationInput"></a>
 
 ```python
 close_violations_on_expiration_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `critical_input`<sup>Optional</sup> <a name="critical_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.criticalInput"></a>
+##### `critical_input`<sup>Optional</sup> <a name="critical_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.criticalInput"></a>
 
 ```python
 critical_input: NrqlAlertConditionCritical
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a>
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1884,17 +1884,17 @@ description_input: str
 
 ---
 
-##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.enabledInput"></a>
+##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.enabledInput"></a>
 
 ```python
 enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `evaluation_delay_input`<sup>Optional</sup> <a name="evaluation_delay_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.evaluationDelayInput"></a>
+##### `evaluation_delay_input`<sup>Optional</sup> <a name="evaluation_delay_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.evaluationDelayInput"></a>
 
 ```python
 evaluation_delay_input: typing.Union[int, float]
@@ -1904,7 +1904,7 @@ evaluation_delay_input: typing.Union[int, float]
 
 ---
 
-##### `expiration_duration_input`<sup>Optional</sup> <a name="expiration_duration_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.expirationDurationInput"></a>
+##### `expiration_duration_input`<sup>Optional</sup> <a name="expiration_duration_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.expirationDurationInput"></a>
 
 ```python
 expiration_duration_input: typing.Union[int, float]
@@ -1914,7 +1914,7 @@ expiration_duration_input: typing.Union[int, float]
 
 ---
 
-##### `fill_option_input`<sup>Optional</sup> <a name="fill_option_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillOptionInput"></a>
+##### `fill_option_input`<sup>Optional</sup> <a name="fill_option_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillOptionInput"></a>
 
 ```python
 fill_option_input: str
@@ -1924,7 +1924,7 @@ fill_option_input: str
 
 ---
 
-##### `fill_value_input`<sup>Optional</sup> <a name="fill_value_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillValueInput"></a>
+##### `fill_value_input`<sup>Optional</sup> <a name="fill_value_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillValueInput"></a>
 
 ```python
 fill_value_input: typing.Union[int, float]
@@ -1934,7 +1934,7 @@ fill_value_input: typing.Union[int, float]
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1944,17 +1944,17 @@ id_input: str
 
 ---
 
-##### `ignore_on_expected_termination_input`<sup>Optional</sup> <a name="ignore_on_expected_termination_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.ignoreOnExpectedTerminationInput"></a>
+##### `ignore_on_expected_termination_input`<sup>Optional</sup> <a name="ignore_on_expected_termination_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.ignoreOnExpectedTerminationInput"></a>
 
 ```python
 ignore_on_expected_termination_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1964,37 +1964,37 @@ name_input: str
 
 ---
 
-##### `nrql_input`<sup>Optional</sup> <a name="nrql_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nrqlInput"></a>
+##### `nrql_input`<sup>Optional</sup> <a name="nrql_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nrqlInput"></a>
 
 ```python
 nrql_input: NrqlAlertConditionNrql
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a>
 
 ---
 
-##### `open_violation_on_expiration_input`<sup>Optional</sup> <a name="open_violation_on_expiration_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.openViolationOnExpirationInput"></a>
+##### `open_violation_on_expiration_input`<sup>Optional</sup> <a name="open_violation_on_expiration_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.openViolationOnExpirationInput"></a>
 
 ```python
 open_violation_on_expiration_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `outlier_configuration_input`<sup>Optional</sup> <a name="outlier_configuration_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.outlierConfigurationInput"></a>
+##### `outlier_configuration_input`<sup>Optional</sup> <a name="outlier_configuration_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.outlierConfigurationInput"></a>
 
 ```python
 outlier_configuration_input: NrqlAlertConditionOutlierConfiguration
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a>
 
 ---
 
-##### `policy_id_input`<sup>Optional</sup> <a name="policy_id_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.policyIdInput"></a>
+##### `policy_id_input`<sup>Optional</sup> <a name="policy_id_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.policyIdInput"></a>
 
 ```python
 policy_id_input: typing.Union[int, float]
@@ -2004,7 +2004,7 @@ policy_id_input: typing.Union[int, float]
 
 ---
 
-##### `runbook_url_input`<sup>Optional</sup> <a name="runbook_url_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.runbookUrlInput"></a>
+##### `runbook_url_input`<sup>Optional</sup> <a name="runbook_url_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.runbookUrlInput"></a>
 
 ```python
 runbook_url_input: str
@@ -2014,7 +2014,7 @@ runbook_url_input: str
 
 ---
 
-##### `signal_seasonality_input`<sup>Optional</sup> <a name="signal_seasonality_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.signalSeasonalityInput"></a>
+##### `signal_seasonality_input`<sup>Optional</sup> <a name="signal_seasonality_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.signalSeasonalityInput"></a>
 
 ```python
 signal_seasonality_input: str
@@ -2024,7 +2024,7 @@ signal_seasonality_input: str
 
 ---
 
-##### `slide_by_input`<sup>Optional</sup> <a name="slide_by_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.slideByInput"></a>
+##### `slide_by_input`<sup>Optional</sup> <a name="slide_by_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.slideByInput"></a>
 
 ```python
 slide_by_input: typing.Union[int, float]
@@ -2034,7 +2034,7 @@ slide_by_input: typing.Union[int, float]
 
 ---
 
-##### `target_entity_input`<sup>Optional</sup> <a name="target_entity_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.targetEntityInput"></a>
+##### `target_entity_input`<sup>Optional</sup> <a name="target_entity_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.targetEntityInput"></a>
 
 ```python
 target_entity_input: str
@@ -2044,27 +2044,27 @@ target_entity_input: str
 
 ---
 
-##### `term_input`<sup>Optional</sup> <a name="term_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.termInput"></a>
+##### `term_input`<sup>Optional</sup> <a name="term_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.termInput"></a>
 
 ```python
 term_input: IResolvable | typing.List[NrqlAlertConditionTerm]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | NrqlAlertConditionTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a>
 
 ---
 
-##### `title_template_input`<sup>Optional</sup> <a name="title_template_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.titleTemplateInput"></a>
+##### `title_template_input`<sup>Optional</sup> <a name="title_template_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.titleTemplateInput"></a>
 
 ```python
 title_template_input: str
@@ -2074,7 +2074,7 @@ title_template_input: str
 
 ---
 
-##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.typeInput"></a>
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.typeInput"></a>
 
 ```python
 type_input: str
@@ -2084,7 +2084,7 @@ type_input: str
 
 ---
 
-##### `violation_time_limit_input`<sup>Optional</sup> <a name="violation_time_limit_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimitInput"></a>
+##### `violation_time_limit_input`<sup>Optional</sup> <a name="violation_time_limit_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimitInput"></a>
 
 ```python
 violation_time_limit_input: str
@@ -2094,7 +2094,7 @@ violation_time_limit_input: str
 
 ---
 
-##### `violation_time_limit_seconds_input`<sup>Optional</sup> <a name="violation_time_limit_seconds_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimitSecondsInput"></a>
+##### `violation_time_limit_seconds_input`<sup>Optional</sup> <a name="violation_time_limit_seconds_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimitSecondsInput"></a>
 
 ```python
 violation_time_limit_seconds_input: typing.Union[int, float]
@@ -2104,17 +2104,17 @@ violation_time_limit_seconds_input: typing.Union[int, float]
 
 ---
 
-##### `warning_input`<sup>Optional</sup> <a name="warning_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.warningInput"></a>
+##### `warning_input`<sup>Optional</sup> <a name="warning_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.warningInput"></a>
 
 ```python
 warning_input: NrqlAlertConditionWarning
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a>
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.accountId"></a>
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.accountId"></a>
 
 ```python
 account_id: typing.Union[int, float]
@@ -2124,7 +2124,7 @@ account_id: typing.Union[int, float]
 
 ---
 
-##### `aggregation_delay`<sup>Required</sup> <a name="aggregation_delay" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationDelay"></a>
+##### `aggregation_delay`<sup>Required</sup> <a name="aggregation_delay" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationDelay"></a>
 
 ```python
 aggregation_delay: str
@@ -2134,7 +2134,7 @@ aggregation_delay: str
 
 ---
 
-##### `aggregation_method`<sup>Required</sup> <a name="aggregation_method" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationMethod"></a>
+##### `aggregation_method`<sup>Required</sup> <a name="aggregation_method" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationMethod"></a>
 
 ```python
 aggregation_method: str
@@ -2144,7 +2144,7 @@ aggregation_method: str
 
 ---
 
-##### `aggregation_timer`<sup>Required</sup> <a name="aggregation_timer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationTimer"></a>
+##### `aggregation_timer`<sup>Required</sup> <a name="aggregation_timer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationTimer"></a>
 
 ```python
 aggregation_timer: str
@@ -2154,7 +2154,7 @@ aggregation_timer: str
 
 ---
 
-##### `aggregation_window`<sup>Required</sup> <a name="aggregation_window" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationWindow"></a>
+##### `aggregation_window`<sup>Required</sup> <a name="aggregation_window" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationWindow"></a>
 
 ```python
 aggregation_window: typing.Union[int, float]
@@ -2164,7 +2164,7 @@ aggregation_window: typing.Union[int, float]
 
 ---
 
-##### `baseline_direction`<sup>Required</sup> <a name="baseline_direction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.baselineDirection"></a>
+##### `baseline_direction`<sup>Required</sup> <a name="baseline_direction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.baselineDirection"></a>
 
 ```python
 baseline_direction: str
@@ -2174,17 +2174,17 @@ baseline_direction: str
 
 ---
 
-##### `close_violations_on_expiration`<sup>Required</sup> <a name="close_violations_on_expiration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.closeViolationsOnExpiration"></a>
+##### `close_violations_on_expiration`<sup>Required</sup> <a name="close_violations_on_expiration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.closeViolationsOnExpiration"></a>
 
 ```python
 close_violations_on_expiration: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.description"></a>
 
 ```python
 description: str
@@ -2194,17 +2194,17 @@ description: str
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.enabled"></a>
 
 ```python
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `evaluation_delay`<sup>Required</sup> <a name="evaluation_delay" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.evaluationDelay"></a>
+##### `evaluation_delay`<sup>Required</sup> <a name="evaluation_delay" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.evaluationDelay"></a>
 
 ```python
 evaluation_delay: typing.Union[int, float]
@@ -2214,7 +2214,7 @@ evaluation_delay: typing.Union[int, float]
 
 ---
 
-##### `expiration_duration`<sup>Required</sup> <a name="expiration_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.expirationDuration"></a>
+##### `expiration_duration`<sup>Required</sup> <a name="expiration_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.expirationDuration"></a>
 
 ```python
 expiration_duration: typing.Union[int, float]
@@ -2224,7 +2224,7 @@ expiration_duration: typing.Union[int, float]
 
 ---
 
-##### `fill_option`<sup>Required</sup> <a name="fill_option" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillOption"></a>
+##### `fill_option`<sup>Required</sup> <a name="fill_option" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillOption"></a>
 
 ```python
 fill_option: str
@@ -2234,7 +2234,7 @@ fill_option: str
 
 ---
 
-##### `fill_value`<sup>Required</sup> <a name="fill_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillValue"></a>
+##### `fill_value`<sup>Required</sup> <a name="fill_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillValue"></a>
 
 ```python
 fill_value: typing.Union[int, float]
@@ -2244,7 +2244,7 @@ fill_value: typing.Union[int, float]
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.id"></a>
 
 ```python
 id: str
@@ -2254,17 +2254,17 @@ id: str
 
 ---
 
-##### `ignore_on_expected_termination`<sup>Required</sup> <a name="ignore_on_expected_termination" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.ignoreOnExpectedTermination"></a>
+##### `ignore_on_expected_termination`<sup>Required</sup> <a name="ignore_on_expected_termination" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.ignoreOnExpectedTermination"></a>
 
 ```python
 ignore_on_expected_termination: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.name"></a>
 
 ```python
 name: str
@@ -2274,17 +2274,17 @@ name: str
 
 ---
 
-##### `open_violation_on_expiration`<sup>Required</sup> <a name="open_violation_on_expiration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.openViolationOnExpiration"></a>
+##### `open_violation_on_expiration`<sup>Required</sup> <a name="open_violation_on_expiration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.openViolationOnExpiration"></a>
 
 ```python
 open_violation_on_expiration: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `policy_id`<sup>Required</sup> <a name="policy_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.policyId"></a>
+##### `policy_id`<sup>Required</sup> <a name="policy_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.policyId"></a>
 
 ```python
 policy_id: typing.Union[int, float]
@@ -2294,7 +2294,7 @@ policy_id: typing.Union[int, float]
 
 ---
 
-##### `runbook_url`<sup>Required</sup> <a name="runbook_url" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.runbookUrl"></a>
+##### `runbook_url`<sup>Required</sup> <a name="runbook_url" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.runbookUrl"></a>
 
 ```python
 runbook_url: str
@@ -2304,7 +2304,7 @@ runbook_url: str
 
 ---
 
-##### `signal_seasonality`<sup>Required</sup> <a name="signal_seasonality" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.signalSeasonality"></a>
+##### `signal_seasonality`<sup>Required</sup> <a name="signal_seasonality" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.signalSeasonality"></a>
 
 ```python
 signal_seasonality: str
@@ -2314,7 +2314,7 @@ signal_seasonality: str
 
 ---
 
-##### `slide_by`<sup>Required</sup> <a name="slide_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.slideBy"></a>
+##### `slide_by`<sup>Required</sup> <a name="slide_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.slideBy"></a>
 
 ```python
 slide_by: typing.Union[int, float]
@@ -2324,7 +2324,7 @@ slide_by: typing.Union[int, float]
 
 ---
 
-##### `target_entity`<sup>Required</sup> <a name="target_entity" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.targetEntity"></a>
+##### `target_entity`<sup>Required</sup> <a name="target_entity" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.targetEntity"></a>
 
 ```python
 target_entity: str
@@ -2334,7 +2334,7 @@ target_entity: str
 
 ---
 
-##### `title_template`<sup>Required</sup> <a name="title_template" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.titleTemplate"></a>
+##### `title_template`<sup>Required</sup> <a name="title_template" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.titleTemplate"></a>
 
 ```python
 title_template: str
@@ -2344,7 +2344,7 @@ title_template: str
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.type"></a>
 
 ```python
 type: str
@@ -2354,7 +2354,7 @@ type: str
 
 ---
 
-##### `violation_time_limit`<sup>Required</sup> <a name="violation_time_limit" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimit"></a>
+##### `violation_time_limit`<sup>Required</sup> <a name="violation_time_limit" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimit"></a>
 
 ```python
 violation_time_limit: str
@@ -2364,7 +2364,7 @@ violation_time_limit: str
 
 ---
 
-##### `violation_time_limit_seconds`<sup>Required</sup> <a name="violation_time_limit_seconds" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimitSeconds"></a>
+##### `violation_time_limit_seconds`<sup>Required</sup> <a name="violation_time_limit_seconds" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimitSeconds"></a>
 
 ```python
 violation_time_limit_seconds: typing.Union[int, float]
@@ -2378,11 +2378,11 @@ violation_time_limit_seconds: typing.Union[int, float]
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -2394,12 +2394,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### NrqlAlertConditionConfig <a name="NrqlAlertConditionConfig" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig"></a>
+### NrqlAlertConditionConfig <a name="NrqlAlertConditionConfig" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -2448,119 +2448,119 @@ nrqlAlertCondition.NrqlAlertConditionConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.name">name</a></code> | <code>str</code> | The title of the condition. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.nrql">nrql</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a></code> | nrql block. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.policyId">policy_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the policy where this condition should be used. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID for managing your NRQL alert conditions. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationDelay">aggregation_delay</a></code> | <code>str</code> | How long we wait for data that belongs in each aggregation window. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationMethod">aggregation_method</a></code> | <code>str</code> | The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for incidents. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationTimer">aggregation_timer</a></code> | <code>str</code> | How long we wait after each data point arrives to make sure we've processed the whole batch. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationWindow">aggregation_window</a></code> | <code>typing.Union[int, float]</code> | The duration of the time window used to evaluate the NRQL query, in seconds. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.baselineDirection">baseline_direction</a></code> | <code>str</code> | The baseline direction of a baseline NRQL alert condition. Valid values are: 'LOWER_ONLY', 'UPPER_AND_LOWER', 'UPPER_ONLY' (case insensitive). |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.closeViolationsOnExpiration">close_violations_on_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to close all open incidents when the signal expires. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.critical">critical</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a></code> | critical block. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.description">description</a></code> | <code>str</code> | The description of the NRQL alert condition. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to enable the alert condition. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | How long we wait until the signal starts evaluating. The maximum delay is 7200 seconds (120 minutes). |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.expirationDuration">expiration_duration</a></code> | <code>typing.Union[int, float]</code> | The amount of time (in seconds) to wait before considering the signal expired. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.fillOption">fill_option</a></code> | <code>str</code> | Which strategy to use when filling gaps in the signal. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.fillValue">fill_value</a></code> | <code>typing.Union[int, float]</code> | If using the 'static' fill option, this value will be used for filling gaps in the signal. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#id NrqlAlertCondition#id}. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.ignoreOnExpectedTermination">ignore_on_expected_termination</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to ignore expected termination of a signal when considering whether to create a loss of signal incident. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.openViolationOnExpiration">open_violation_on_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to create a new incident to capture that the signal expired. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.outlierConfiguration">outlier_configuration</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a></code> | outlier_configuration block. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.runbookUrl">runbook_url</a></code> | <code>str</code> | Runbook URL to display in notifications. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.signalSeasonality">signal_seasonality</a></code> | <code>str</code> | Seasonality under which a condition's signal(s) are evaluated. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.slideBy">slide_by</a></code> | <code>typing.Union[int, float]</code> | The duration of overlapping time windows used to smooth the chart line, in seconds. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.targetEntity">target_entity</a></code> | <code>str</code> | BETA PREVIEW: the `target_entity` field is in limited release and only enabled for preview on a per-account basis. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.term">term</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]</code> | term block. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.titleTemplate">title_template</a></code> | <code>str</code> | This field allows you to create a custom title to be used when incidents are opened by the condition. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.type">type</a></code> | <code>str</code> | The type of NRQL alert condition to create. Valid values are: 'static', 'baseline', 'outlier'. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.violationTimeLimit">violation_time_limit</a></code> | <code>str</code> | Sets a time limit, in hours, that will automatically force-close a long-lasting incident after the time limit you select. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.violationTimeLimitSeconds">violation_time_limit_seconds</a></code> | <code>typing.Union[int, float]</code> | Sets a time limit, in seconds, that will automatically force-close a long-lasting incident after the time limit you select. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.warning">warning</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a></code> | warning block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.name">name</a></code> | <code>str</code> | The title of the condition. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.nrql">nrql</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a></code> | nrql block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.policyId">policy_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the policy where this condition should be used. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID for managing your NRQL alert conditions. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationDelay">aggregation_delay</a></code> | <code>str</code> | How long we wait for data that belongs in each aggregation window. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationMethod">aggregation_method</a></code> | <code>str</code> | The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for incidents. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationTimer">aggregation_timer</a></code> | <code>str</code> | How long we wait after each data point arrives to make sure we've processed the whole batch. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationWindow">aggregation_window</a></code> | <code>typing.Union[int, float]</code> | The duration of the time window used to evaluate the NRQL query, in seconds. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.baselineDirection">baseline_direction</a></code> | <code>str</code> | The baseline direction of a baseline NRQL alert condition. Valid values are: 'LOWER_ONLY', 'UPPER_AND_LOWER', 'UPPER_ONLY' (case insensitive). |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.closeViolationsOnExpiration">close_violations_on_expiration</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to close all open incidents when the signal expires. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.critical">critical</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a></code> | critical block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.description">description</a></code> | <code>str</code> | The description of the NRQL alert condition. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not to enable the alert condition. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | How long we wait until the signal starts evaluating. The maximum delay is 7200 seconds (120 minutes). |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.expirationDuration">expiration_duration</a></code> | <code>typing.Union[int, float]</code> | The amount of time (in seconds) to wait before considering the signal expired. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.fillOption">fill_option</a></code> | <code>str</code> | Which strategy to use when filling gaps in the signal. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.fillValue">fill_value</a></code> | <code>typing.Union[int, float]</code> | If using the 'static' fill option, this value will be used for filling gaps in the signal. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#id NrqlAlertCondition#id}. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.ignoreOnExpectedTermination">ignore_on_expected_termination</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to ignore expected termination of a signal when considering whether to create a loss of signal incident. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.openViolationOnExpiration">open_violation_on_expiration</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to create a new incident to capture that the signal expired. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.outlierConfiguration">outlier_configuration</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a></code> | outlier_configuration block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.runbookUrl">runbook_url</a></code> | <code>str</code> | Runbook URL to display in notifications. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.signalSeasonality">signal_seasonality</a></code> | <code>str</code> | Seasonality under which a condition's signal(s) are evaluated. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.slideBy">slide_by</a></code> | <code>typing.Union[int, float]</code> | The duration of overlapping time windows used to smooth the chart line, in seconds. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.targetEntity">target_entity</a></code> | <code>str</code> | BETA PREVIEW: the `target_entity` field is in limited release and only enabled for preview on a per-account basis. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.term">term</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]</code> | term block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.titleTemplate">title_template</a></code> | <code>str</code> | This field allows you to create a custom title to be used when incidents are opened by the condition. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.type">type</a></code> | <code>str</code> | The type of NRQL alert condition to create. Valid values are: 'static', 'baseline', 'outlier'. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.violationTimeLimit">violation_time_limit</a></code> | <code>str</code> | Sets a time limit, in hours, that will automatically force-close a long-lasting incident after the time limit you select. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.violationTimeLimitSeconds">violation_time_limit_seconds</a></code> | <code>typing.Union[int, float]</code> | Sets a time limit, in seconds, that will automatically force-close a long-lasting incident after the time limit you select. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.warning">warning</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a></code> | warning block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.name"></a>
 
 ```python
 name: str
@@ -2570,25 +2570,25 @@ name: str
 
 The title of the condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#name NrqlAlertCondition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#name NrqlAlertCondition#name}
 
 ---
 
-##### `nrql`<sup>Required</sup> <a name="nrql" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.nrql"></a>
+##### `nrql`<sup>Required</sup> <a name="nrql" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.nrql"></a>
 
 ```python
 nrql: NrqlAlertConditionNrql
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a>
 
 nrql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#nrql NrqlAlertCondition#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#nrql NrqlAlertCondition#nrql}
 
 ---
 
-##### `policy_id`<sup>Required</sup> <a name="policy_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.policyId"></a>
+##### `policy_id`<sup>Required</sup> <a name="policy_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.policyId"></a>
 
 ```python
 policy_id: typing.Union[int, float]
@@ -2598,11 +2598,11 @@ policy_id: typing.Union[int, float]
 
 The ID of the policy where this condition should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#policy_id NrqlAlertCondition#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#policy_id NrqlAlertCondition#policy_id}
 
 ---
 
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.accountId"></a>
 
 ```python
 account_id: typing.Union[int, float]
@@ -2612,11 +2612,11 @@ account_id: typing.Union[int, float]
 
 The New Relic account ID for managing your NRQL alert conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#account_id NrqlAlertCondition#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#account_id NrqlAlertCondition#account_id}
 
 ---
 
-##### `aggregation_delay`<sup>Optional</sup> <a name="aggregation_delay" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationDelay"></a>
+##### `aggregation_delay`<sup>Optional</sup> <a name="aggregation_delay" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationDelay"></a>
 
 ```python
 aggregation_delay: str
@@ -2628,11 +2628,11 @@ How long we wait for data that belongs in each aggregation window.
 
 Depending on your data, a longer delay may increase accuracy but delay notifications. Use aggregationDelay with the EVENT_FLOW and CADENCE aggregation methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#aggregation_delay NrqlAlertCondition#aggregation_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#aggregation_delay NrqlAlertCondition#aggregation_delay}
 
 ---
 
-##### `aggregation_method`<sup>Optional</sup> <a name="aggregation_method" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationMethod"></a>
+##### `aggregation_method`<sup>Optional</sup> <a name="aggregation_method" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationMethod"></a>
 
 ```python
 aggregation_method: str
@@ -2644,11 +2644,11 @@ The method that determines when we consider an aggregation window to be complete
 
 Default is EVENT_FLOW.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#aggregation_method NrqlAlertCondition#aggregation_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#aggregation_method NrqlAlertCondition#aggregation_method}
 
 ---
 
-##### `aggregation_timer`<sup>Optional</sup> <a name="aggregation_timer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationTimer"></a>
+##### `aggregation_timer`<sup>Optional</sup> <a name="aggregation_timer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationTimer"></a>
 
 ```python
 aggregation_timer: str
@@ -2660,11 +2660,11 @@ How long we wait after each data point arrives to make sure we've processed the 
 
 Use aggregationTimer with the EVENT_TIMER aggregation method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#aggregation_timer NrqlAlertCondition#aggregation_timer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#aggregation_timer NrqlAlertCondition#aggregation_timer}
 
 ---
 
-##### `aggregation_window`<sup>Optional</sup> <a name="aggregation_window" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationWindow"></a>
+##### `aggregation_window`<sup>Optional</sup> <a name="aggregation_window" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationWindow"></a>
 
 ```python
 aggregation_window: typing.Union[int, float]
@@ -2674,11 +2674,11 @@ aggregation_window: typing.Union[int, float]
 
 The duration of the time window used to evaluate the NRQL query, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#aggregation_window NrqlAlertCondition#aggregation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#aggregation_window NrqlAlertCondition#aggregation_window}
 
 ---
 
-##### `baseline_direction`<sup>Optional</sup> <a name="baseline_direction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.baselineDirection"></a>
+##### `baseline_direction`<sup>Optional</sup> <a name="baseline_direction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.baselineDirection"></a>
 
 ```python
 baseline_direction: str
@@ -2688,39 +2688,39 @@ baseline_direction: str
 
 The baseline direction of a baseline NRQL alert condition. Valid values are: 'LOWER_ONLY', 'UPPER_AND_LOWER', 'UPPER_ONLY' (case insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#baseline_direction NrqlAlertCondition#baseline_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#baseline_direction NrqlAlertCondition#baseline_direction}
 
 ---
 
-##### `close_violations_on_expiration`<sup>Optional</sup> <a name="close_violations_on_expiration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.closeViolationsOnExpiration"></a>
+##### `close_violations_on_expiration`<sup>Optional</sup> <a name="close_violations_on_expiration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.closeViolationsOnExpiration"></a>
 
 ```python
 close_violations_on_expiration: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether to close all open incidents when the signal expires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#close_violations_on_expiration NrqlAlertCondition#close_violations_on_expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#close_violations_on_expiration NrqlAlertCondition#close_violations_on_expiration}
 
 ---
 
-##### `critical`<sup>Optional</sup> <a name="critical" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.critical"></a>
+##### `critical`<sup>Optional</sup> <a name="critical" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.critical"></a>
 
 ```python
 critical: NrqlAlertConditionCritical
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a>
 
 critical block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#critical NrqlAlertCondition#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#critical NrqlAlertCondition#critical}
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.description"></a>
 
 ```python
 description: str
@@ -2730,25 +2730,25 @@ description: str
 
 The description of the NRQL alert condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#description NrqlAlertCondition#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#description NrqlAlertCondition#description}
 
 ---
 
-##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.enabled"></a>
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.enabled"></a>
 
 ```python
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether or not to enable the alert condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#enabled NrqlAlertCondition#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#enabled NrqlAlertCondition#enabled}
 
 ---
 
-##### `evaluation_delay`<sup>Optional</sup> <a name="evaluation_delay" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.evaluationDelay"></a>
+##### `evaluation_delay`<sup>Optional</sup> <a name="evaluation_delay" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.evaluationDelay"></a>
 
 ```python
 evaluation_delay: typing.Union[int, float]
@@ -2758,11 +2758,11 @@ evaluation_delay: typing.Union[int, float]
 
 How long we wait until the signal starts evaluating. The maximum delay is 7200 seconds (120 minutes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#evaluation_delay NrqlAlertCondition#evaluation_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#evaluation_delay NrqlAlertCondition#evaluation_delay}
 
 ---
 
-##### `expiration_duration`<sup>Optional</sup> <a name="expiration_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.expirationDuration"></a>
+##### `expiration_duration`<sup>Optional</sup> <a name="expiration_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.expirationDuration"></a>
 
 ```python
 expiration_duration: typing.Union[int, float]
@@ -2774,11 +2774,11 @@ The amount of time (in seconds) to wait before considering the signal expired.
 
 Must be in the range of 30 to 172800 (inclusive)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#expiration_duration NrqlAlertCondition#expiration_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#expiration_duration NrqlAlertCondition#expiration_duration}
 
 ---
 
-##### `fill_option`<sup>Optional</sup> <a name="fill_option" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.fillOption"></a>
+##### `fill_option`<sup>Optional</sup> <a name="fill_option" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.fillOption"></a>
 
 ```python
 fill_option: str
@@ -2790,11 +2790,11 @@ Which strategy to use when filling gaps in the signal.
 
 If static, the 'fill value' will be used for filling gaps in the signal. Valid values are: 'NONE', 'LAST_VALUE', or 'STATIC' (case insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#fill_option NrqlAlertCondition#fill_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#fill_option NrqlAlertCondition#fill_option}
 
 ---
 
-##### `fill_value`<sup>Optional</sup> <a name="fill_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.fillValue"></a>
+##### `fill_value`<sup>Optional</sup> <a name="fill_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.fillValue"></a>
 
 ```python
 fill_value: typing.Union[int, float]
@@ -2804,11 +2804,11 @@ fill_value: typing.Union[int, float]
 
 If using the 'static' fill option, this value will be used for filling gaps in the signal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#fill_value NrqlAlertCondition#fill_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#fill_value NrqlAlertCondition#fill_value}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.id"></a>
 
 ```python
 id: str
@@ -2816,56 +2816,56 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#id NrqlAlertCondition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#id NrqlAlertCondition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `ignore_on_expected_termination`<sup>Optional</sup> <a name="ignore_on_expected_termination" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.ignoreOnExpectedTermination"></a>
+##### `ignore_on_expected_termination`<sup>Optional</sup> <a name="ignore_on_expected_termination" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.ignoreOnExpectedTermination"></a>
 
 ```python
 ignore_on_expected_termination: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether to ignore expected termination of a signal when considering whether to create a loss of signal incident.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#ignore_on_expected_termination NrqlAlertCondition#ignore_on_expected_termination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#ignore_on_expected_termination NrqlAlertCondition#ignore_on_expected_termination}
 
 ---
 
-##### `open_violation_on_expiration`<sup>Optional</sup> <a name="open_violation_on_expiration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.openViolationOnExpiration"></a>
+##### `open_violation_on_expiration`<sup>Optional</sup> <a name="open_violation_on_expiration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.openViolationOnExpiration"></a>
 
 ```python
 open_violation_on_expiration: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether to create a new incident to capture that the signal expired.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#open_violation_on_expiration NrqlAlertCondition#open_violation_on_expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#open_violation_on_expiration NrqlAlertCondition#open_violation_on_expiration}
 
 ---
 
-##### `outlier_configuration`<sup>Optional</sup> <a name="outlier_configuration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.outlierConfiguration"></a>
+##### `outlier_configuration`<sup>Optional</sup> <a name="outlier_configuration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.outlierConfiguration"></a>
 
 ```python
 outlier_configuration: NrqlAlertConditionOutlierConfiguration
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a>
 
 outlier_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#outlier_configuration NrqlAlertCondition#outlier_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#outlier_configuration NrqlAlertCondition#outlier_configuration}
 
 ---
 
-##### `runbook_url`<sup>Optional</sup> <a name="runbook_url" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.runbookUrl"></a>
+##### `runbook_url`<sup>Optional</sup> <a name="runbook_url" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.runbookUrl"></a>
 
 ```python
 runbook_url: str
@@ -2875,11 +2875,11 @@ runbook_url: str
 
 Runbook URL to display in notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#runbook_url NrqlAlertCondition#runbook_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#runbook_url NrqlAlertCondition#runbook_url}
 
 ---
 
-##### `signal_seasonality`<sup>Optional</sup> <a name="signal_seasonality" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.signalSeasonality"></a>
+##### `signal_seasonality`<sup>Optional</sup> <a name="signal_seasonality" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.signalSeasonality"></a>
 
 ```python
 signal_seasonality: str
@@ -2891,11 +2891,11 @@ Seasonality under which a condition's signal(s) are evaluated.
 
 Valid values are: 'NEW_RELIC_CALCULATION', 'HOURLY', 'DAILY', 'WEEKLY', or 'NONE'. To have New Relic calculate seasonality automatically, set to 'NEW_RELIC_CALCULATION' (default). To turn off seasonality completely, set to 'NONE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#signal_seasonality NrqlAlertCondition#signal_seasonality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#signal_seasonality NrqlAlertCondition#signal_seasonality}
 
 ---
 
-##### `slide_by`<sup>Optional</sup> <a name="slide_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.slideBy"></a>
+##### `slide_by`<sup>Optional</sup> <a name="slide_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.slideBy"></a>
 
 ```python
 slide_by: typing.Union[int, float]
@@ -2907,11 +2907,11 @@ The duration of overlapping time windows used to smooth the chart line, in secon
 
 Must be a factor of `aggregation_window` and less than the aggregation window. If `aggregation_window` is less than or equal to 3600 seconds, it should be greater or equal to 30 seconds. If `aggregation_window` is greater than 3600 seconds but less than 7200 seconds, it should be greater or equal to `aggregation_window / 120`.  If `aggregation_window` is greater than 7200 seconds, it should be greater or equal to `aggregation_window / 24
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#slide_by NrqlAlertCondition#slide_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#slide_by NrqlAlertCondition#slide_by}
 
 ---
 
-##### `target_entity`<sup>Optional</sup> <a name="target_entity" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.targetEntity"></a>
+##### `target_entity`<sup>Optional</sup> <a name="target_entity" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.targetEntity"></a>
 
 ```python
 target_entity: str
@@ -2923,39 +2923,39 @@ BETA PREVIEW: the `target_entity` field is in limited release and only enabled f
 
 * The GUID of the entity explicitly targeted by the condition. Issues triggered by this condition will affect the health status of this entity instead of having the affected entity detected automatically
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#target_entity NrqlAlertCondition#target_entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#target_entity NrqlAlertCondition#target_entity}
 
 ---
 
-##### `term`<sup>Optional</sup> <a name="term" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.term"></a>
+##### `term`<sup>Optional</sup> <a name="term" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.term"></a>
 
 ```python
 term: IResolvable | typing.List[NrqlAlertConditionTerm]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
 
 term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#term NrqlAlertCondition#term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#term NrqlAlertCondition#term}
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.timeouts"></a>
 
 ```python
 timeouts: NrqlAlertConditionTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#timeouts NrqlAlertCondition#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#timeouts NrqlAlertCondition#timeouts}
 
 ---
 
-##### `title_template`<sup>Optional</sup> <a name="title_template" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.titleTemplate"></a>
+##### `title_template`<sup>Optional</sup> <a name="title_template" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.titleTemplate"></a>
 
 ```python
 title_template: str
@@ -2967,11 +2967,11 @@ This field allows you to create a custom title to be used when incidents are ope
 
 Setting this field will override the default title. Must be Handlebars format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#title_template NrqlAlertCondition#title_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#title_template NrqlAlertCondition#title_template}
 
 ---
 
-##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.type"></a>
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.type"></a>
 
 ```python
 type: str
@@ -2981,11 +2981,11 @@ type: str
 
 The type of NRQL alert condition to create. Valid values are: 'static', 'baseline', 'outlier'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#type NrqlAlertCondition#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#type NrqlAlertCondition#type}
 
 ---
 
-##### `violation_time_limit`<sup>Optional</sup> <a name="violation_time_limit" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.violationTimeLimit"></a>
+##### `violation_time_limit`<sup>Optional</sup> <a name="violation_time_limit" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.violationTimeLimit"></a>
 
 ```python
 violation_time_limit: str
@@ -2997,11 +2997,11 @@ Sets a time limit, in hours, that will automatically force-close a long-lasting 
 
 Possible values are 'ONE_HOUR', 'TWO_HOURS', 'FOUR_HOURS', 'EIGHT_HOURS', 'TWELVE_HOURS', 'TWENTY_FOUR_HOURS', 'THIRTY_DAYS' (case insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#violation_time_limit NrqlAlertCondition#violation_time_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#violation_time_limit NrqlAlertCondition#violation_time_limit}
 
 ---
 
-##### `violation_time_limit_seconds`<sup>Optional</sup> <a name="violation_time_limit_seconds" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.violationTimeLimitSeconds"></a>
+##### `violation_time_limit_seconds`<sup>Optional</sup> <a name="violation_time_limit_seconds" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.violationTimeLimitSeconds"></a>
 
 ```python
 violation_time_limit_seconds: typing.Union[int, float]
@@ -3013,30 +3013,30 @@ Sets a time limit, in seconds, that will automatically force-close a long-lastin
 
 Must be in the range of 300 to 2592000 (inclusive)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#violation_time_limit_seconds NrqlAlertCondition#violation_time_limit_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#violation_time_limit_seconds NrqlAlertCondition#violation_time_limit_seconds}
 
 ---
 
-##### `warning`<sup>Optional</sup> <a name="warning" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.warning"></a>
+##### `warning`<sup>Optional</sup> <a name="warning" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.warning"></a>
 
 ```python
 warning: NrqlAlertConditionWarning
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a>
 
 warning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#warning NrqlAlertCondition#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#warning NrqlAlertCondition#warning}
 
 ---
 
-### NrqlAlertConditionCritical <a name="NrqlAlertConditionCritical" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical"></a>
+### NrqlAlertConditionCritical <a name="NrqlAlertConditionCritical" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionCritical(
   threshold: typing.Union[int, float],
@@ -3054,18 +3054,18 @@ nrqlAlertCondition.NrqlAlertConditionCritical(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | For baseline conditions must be in range [1, 1000]. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktf.IResolvable</code> | Violations will not change system health status for this term. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | In minutes, must be in the range of 1 to 120 (inclusive). |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.operator">operator</a></code> | <code>str</code> | One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.prediction">prediction</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a></code> | prediction block. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | The duration, in seconds, that the threshold must violate in order to create an incident. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.thresholdOccurrences">threshold_occurrences</a></code> | <code>str</code> | The criteria for how many data points must be in violation for the specified threshold duration. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.timeFunction">time_function</a></code> | <code>str</code> | Valid values are: 'all' or 'any'. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | For baseline conditions must be in range [1, 1000]. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktn.IResolvable</code> | Violations will not change system health status for this term. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | In minutes, must be in the range of 1 to 120 (inclusive). |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.operator">operator</a></code> | <code>str</code> | One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.prediction">prediction</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a></code> | prediction block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | The duration, in seconds, that the threshold must violate in order to create an incident. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.thresholdOccurrences">threshold_occurrences</a></code> | <code>str</code> | The criteria for how many data points must be in violation for the specified threshold duration. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.timeFunction">time_function</a></code> | <code>str</code> | Valid values are: 'all' or 'any'. |
 
 ---
 
-##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.threshold"></a>
+##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.threshold"></a>
 
 ```python
 threshold: typing.Union[int, float]
@@ -3075,25 +3075,25 @@ threshold: typing.Union[int, float]
 
 For baseline conditions must be in range [1, 1000].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
 
 ---
 
-##### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.disableHealthStatusReporting"></a>
+##### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.disableHealthStatusReporting"></a>
 
 ```python
 disable_health_status_reporting: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Violations will not change system health status for this term.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#disable_health_status_reporting NrqlAlertCondition#disable_health_status_reporting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#disable_health_status_reporting NrqlAlertCondition#disable_health_status_reporting}
 
 ---
 
-##### `duration`<sup>Optional</sup> <a name="duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.duration"></a>
+##### `duration`<sup>Optional</sup> <a name="duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.duration"></a>
 
 ```python
 duration: typing.Union[int, float]
@@ -3103,11 +3103,11 @@ duration: typing.Union[int, float]
 
 In minutes, must be in the range of 1 to 120 (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
 
 ---
 
-##### `operator`<sup>Optional</sup> <a name="operator" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.operator"></a>
+##### `operator`<sup>Optional</sup> <a name="operator" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.operator"></a>
 
 ```python
 operator: str
@@ -3117,25 +3117,25 @@ operator: str
 
 One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
 
 ---
 
-##### `prediction`<sup>Optional</sup> <a name="prediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.prediction"></a>
+##### `prediction`<sup>Optional</sup> <a name="prediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.prediction"></a>
 
 ```python
 prediction: NrqlAlertConditionCriticalPrediction
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a>
 
 prediction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#prediction NrqlAlertCondition#prediction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#prediction NrqlAlertCondition#prediction}
 
 ---
 
-##### `threshold_duration`<sup>Optional</sup> <a name="threshold_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.thresholdDuration"></a>
+##### `threshold_duration`<sup>Optional</sup> <a name="threshold_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.thresholdDuration"></a>
 
 ```python
 threshold_duration: typing.Union[int, float]
@@ -3147,11 +3147,11 @@ The duration, in seconds, that the threshold must violate in order to create an 
 
 Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-86400 seconds for baseline conditions, and within 60-86400 seconds for static conditions
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
 
 ---
 
-##### `threshold_occurrences`<sup>Optional</sup> <a name="threshold_occurrences" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.thresholdOccurrences"></a>
+##### `threshold_occurrences`<sup>Optional</sup> <a name="threshold_occurrences" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.thresholdOccurrences"></a>
 
 ```python
 threshold_occurrences: str
@@ -3163,11 +3163,11 @@ The criteria for how many data points must be in violation for the specified thr
 
 Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
 
 ---
 
-##### `time_function`<sup>Optional</sup> <a name="time_function" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.timeFunction"></a>
+##### `time_function`<sup>Optional</sup> <a name="time_function" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.timeFunction"></a>
 
 ```python
 time_function: str
@@ -3177,16 +3177,16 @@ time_function: str
 
 Valid values are: 'all' or 'any'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
 
 ---
 
-### NrqlAlertConditionCriticalPrediction <a name="NrqlAlertConditionCriticalPrediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction"></a>
+### NrqlAlertConditionCriticalPrediction <a name="NrqlAlertConditionCriticalPrediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionCriticalPrediction(
   predict_by: typing.Union[int, float] = None,
@@ -3198,12 +3198,12 @@ nrqlAlertCondition.NrqlAlertConditionCriticalPrediction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | BETA PREVIEW: the `predict_by` field is in limited release and only enabled for preview on a per-account basis. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktf.IResolvable</code> | BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | BETA PREVIEW: the `predict_by` field is in limited release and only enabled for preview on a per-account basis. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktn.IResolvable</code> | BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. |
 
 ---
 
-##### `predict_by`<sup>Optional</sup> <a name="predict_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction.property.predictBy"></a>
+##### `predict_by`<sup>Optional</sup> <a name="predict_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction.property.predictBy"></a>
 
 ```python
 predict_by: typing.Union[int, float]
@@ -3215,32 +3215,32 @@ BETA PREVIEW: the `predict_by` field is in limited release and only enabled for 
 
 * The duration, in seconds, that the prediction should look into the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
 
 ---
 
-##### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction.property.preferPredictionViolation"></a>
+##### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction.property.preferPredictionViolation"></a>
 
 ```python
 prefer_prediction_violation: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis.
 
 * If a prediction incident is open when a term's static threshold is breached by the actual signal, default behavior is to close the prediction incident and open a static incident. Setting `prefer_prediction_violation` to `true` overrides this behavior leaving the prediction incident open and preventing a static incident from opening.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
 
 ---
 
-### NrqlAlertConditionNrql <a name="NrqlAlertConditionNrql" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql"></a>
+### NrqlAlertConditionNrql <a name="NrqlAlertConditionNrql" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionNrql(
   query: str,
@@ -3254,14 +3254,14 @@ nrqlAlertCondition.NrqlAlertConditionNrql(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.query">query</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#query NrqlAlertCondition#query}. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.dataAccountId">data_account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID to use as the basis for the NRQL alert condition's `query`; |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.evaluationOffset">evaluation_offset</a></code> | <code>typing.Union[int, float]</code> | NRQL queries are evaluated in one-minute time windows. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.sinceValue">since_value</a></code> | <code>str</code> | NRQL queries are evaluated in one-minute time windows. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.query">query</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#query NrqlAlertCondition#query}. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.dataAccountId">data_account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID to use as the basis for the NRQL alert condition's `query`; |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.evaluationOffset">evaluation_offset</a></code> | <code>typing.Union[int, float]</code> | NRQL queries are evaluated in one-minute time windows. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.sinceValue">since_value</a></code> | <code>str</code> | NRQL queries are evaluated in one-minute time windows. |
 
 ---
 
-##### `query`<sup>Required</sup> <a name="query" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.query"></a>
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.query"></a>
 
 ```python
 query: str
@@ -3269,11 +3269,11 @@ query: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#query NrqlAlertCondition#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#query NrqlAlertCondition#query}.
 
 ---
 
-##### `data_account_id`<sup>Optional</sup> <a name="data_account_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.dataAccountId"></a>
+##### `data_account_id`<sup>Optional</sup> <a name="data_account_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.dataAccountId"></a>
 
 ```python
 data_account_id: typing.Union[int, float]
@@ -3285,11 +3285,11 @@ The New Relic account ID to use as the basis for the NRQL alert condition's `que
 
 will default to `account_id` if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#data_account_id NrqlAlertCondition#data_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#data_account_id NrqlAlertCondition#data_account_id}
 
 ---
 
-##### `evaluation_offset`<sup>Optional</sup> <a name="evaluation_offset" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.evaluationOffset"></a>
+##### `evaluation_offset`<sup>Optional</sup> <a name="evaluation_offset" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.evaluationOffset"></a>
 
 ```python
 evaluation_offset: typing.Union[int, float]
@@ -3301,11 +3301,11 @@ NRQL queries are evaluated in one-minute time windows.
 
 The start time depends on the value you provide in the NRQL condition's `evaluation_offset`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#evaluation_offset NrqlAlertCondition#evaluation_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#evaluation_offset NrqlAlertCondition#evaluation_offset}
 
 ---
 
-##### `since_value`<sup>Optional</sup> <a name="since_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.sinceValue"></a>
+##### `since_value`<sup>Optional</sup> <a name="since_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.property.sinceValue"></a>
 
 ```python
 since_value: str
@@ -3317,16 +3317,16 @@ NRQL queries are evaluated in one-minute time windows.
 
 The start time depends on the value you provide in the NRQL condition's `since_value`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#since_value NrqlAlertCondition#since_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#since_value NrqlAlertCondition#since_value}
 
 ---
 
-### NrqlAlertConditionOutlierConfiguration <a name="NrqlAlertConditionOutlierConfiguration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration"></a>
+### NrqlAlertConditionOutlierConfiguration <a name="NrqlAlertConditionOutlierConfiguration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration(
   dbscan: NrqlAlertConditionOutlierConfigurationDbscan
@@ -3337,30 +3337,30 @@ nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration.property.dbscan">dbscan</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan">NrqlAlertConditionOutlierConfigurationDbscan</a></code> | dbscan block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration.property.dbscan">dbscan</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan">NrqlAlertConditionOutlierConfigurationDbscan</a></code> | dbscan block. |
 
 ---
 
-##### `dbscan`<sup>Required</sup> <a name="dbscan" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration.property.dbscan"></a>
+##### `dbscan`<sup>Required</sup> <a name="dbscan" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration.property.dbscan"></a>
 
 ```python
 dbscan: NrqlAlertConditionOutlierConfigurationDbscan
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan">NrqlAlertConditionOutlierConfigurationDbscan</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan">NrqlAlertConditionOutlierConfigurationDbscan</a>
 
 dbscan block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#dbscan NrqlAlertCondition#dbscan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#dbscan NrqlAlertCondition#dbscan}
 
 ---
 
-### NrqlAlertConditionOutlierConfigurationDbscan <a name="NrqlAlertConditionOutlierConfigurationDbscan" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan"></a>
+### NrqlAlertConditionOutlierConfigurationDbscan <a name="NrqlAlertConditionOutlierConfigurationDbscan" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan(
   epsilon: typing.Union[int, float],
@@ -3373,13 +3373,13 @@ nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan.property.epsilon">epsilon</a></code> | <code>typing.Union[int, float]</code> | BETA PREVIEW: the `epsilon` field is in limited release and only enabled for preview on a per-account basis. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan.property.minimumPoints">minimum_points</a></code> | <code>typing.Union[int, float]</code> | BETA PREVIEW: the `minimum_points` field is in limited release and only enabled for preview on a per-account basis. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan.property.evaluationGroupFacet">evaluation_group_facet</a></code> | <code>str</code> | BETA PREVIEW: the `evaluation_group_facet` field is in limited release and only enabled for preview on a per-account basis. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan.property.epsilon">epsilon</a></code> | <code>typing.Union[int, float]</code> | BETA PREVIEW: the `epsilon` field is in limited release and only enabled for preview on a per-account basis. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan.property.minimumPoints">minimum_points</a></code> | <code>typing.Union[int, float]</code> | BETA PREVIEW: the `minimum_points` field is in limited release and only enabled for preview on a per-account basis. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan.property.evaluationGroupFacet">evaluation_group_facet</a></code> | <code>str</code> | BETA PREVIEW: the `evaluation_group_facet` field is in limited release and only enabled for preview on a per-account basis. |
 
 ---
 
-##### `epsilon`<sup>Required</sup> <a name="epsilon" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan.property.epsilon"></a>
+##### `epsilon`<sup>Required</sup> <a name="epsilon" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan.property.epsilon"></a>
 
 ```python
 epsilon: typing.Union[int, float]
@@ -3391,11 +3391,11 @@ BETA PREVIEW: the `epsilon` field is in limited release and only enabled for pre
 
 * Radius (distance threshold) for DBSCAN in the units of the query result. Smaller values tighten clusters; larger values broaden them. Must be > 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#epsilon NrqlAlertCondition#epsilon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#epsilon NrqlAlertCondition#epsilon}
 
 ---
 
-##### `minimum_points`<sup>Required</sup> <a name="minimum_points" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan.property.minimumPoints"></a>
+##### `minimum_points`<sup>Required</sup> <a name="minimum_points" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan.property.minimumPoints"></a>
 
 ```python
 minimum_points: typing.Union[int, float]
@@ -3407,11 +3407,11 @@ BETA PREVIEW: the `minimum_points` field is in limited release and only enabled 
 
 * Minimum number of neighboring points needed to form a cluster. Must be >= 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#minimum_points NrqlAlertCondition#minimum_points}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#minimum_points NrqlAlertCondition#minimum_points}
 
 ---
 
-##### `evaluation_group_facet`<sup>Optional</sup> <a name="evaluation_group_facet" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan.property.evaluationGroupFacet"></a>
+##### `evaluation_group_facet`<sup>Optional</sup> <a name="evaluation_group_facet" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan.property.evaluationGroupFacet"></a>
 
 ```python
 evaluation_group_facet: str
@@ -3423,16 +3423,16 @@ BETA PREVIEW: the `evaluation_group_facet` field is in limited release and only 
 
 * Optional NRQL facet attribute used to segment data into groups (e.g. `host`, `region`) before running outlier detection. Omit to evaluate all results together.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#evaluation_group_facet NrqlAlertCondition#evaluation_group_facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#evaluation_group_facet NrqlAlertCondition#evaluation_group_facet}
 
 ---
 
-### NrqlAlertConditionTerm <a name="NrqlAlertConditionTerm" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm"></a>
+### NrqlAlertConditionTerm <a name="NrqlAlertConditionTerm" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionTerm(
   threshold: typing.Union[int, float],
@@ -3451,19 +3451,19 @@ nrqlAlertCondition.NrqlAlertConditionTerm(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | For baseline conditions must be in range [1, 1000]. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktf.IResolvable</code> | Violations will not change system health status for this term. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | In minutes, must be in the range of 1 to 120 (inclusive). |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.operator">operator</a></code> | <code>str</code> | One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.prediction">prediction</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a></code> | prediction block. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.priority">priority</a></code> | <code>str</code> | One of (critical, warning). Defaults to 'critical'. At least one condition term must have priority set to 'critical'. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | The duration, in seconds, that the threshold must violate in order to create an incident. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.thresholdOccurrences">threshold_occurrences</a></code> | <code>str</code> | The criteria for how many data points must be in violation for the specified threshold duration. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.timeFunction">time_function</a></code> | <code>str</code> | Valid values are: 'all' or 'any'. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | For baseline conditions must be in range [1, 1000]. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktn.IResolvable</code> | Violations will not change system health status for this term. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | In minutes, must be in the range of 1 to 120 (inclusive). |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.operator">operator</a></code> | <code>str</code> | One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.prediction">prediction</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a></code> | prediction block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.priority">priority</a></code> | <code>str</code> | One of (critical, warning). Defaults to 'critical'. At least one condition term must have priority set to 'critical'. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | The duration, in seconds, that the threshold must violate in order to create an incident. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.thresholdOccurrences">threshold_occurrences</a></code> | <code>str</code> | The criteria for how many data points must be in violation for the specified threshold duration. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.timeFunction">time_function</a></code> | <code>str</code> | Valid values are: 'all' or 'any'. |
 
 ---
 
-##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.threshold"></a>
+##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.threshold"></a>
 
 ```python
 threshold: typing.Union[int, float]
@@ -3473,25 +3473,25 @@ threshold: typing.Union[int, float]
 
 For baseline conditions must be in range [1, 1000].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
 
 ---
 
-##### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.disableHealthStatusReporting"></a>
+##### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.disableHealthStatusReporting"></a>
 
 ```python
 disable_health_status_reporting: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Violations will not change system health status for this term.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#disable_health_status_reporting NrqlAlertCondition#disable_health_status_reporting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#disable_health_status_reporting NrqlAlertCondition#disable_health_status_reporting}
 
 ---
 
-##### `duration`<sup>Optional</sup> <a name="duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.duration"></a>
+##### `duration`<sup>Optional</sup> <a name="duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.duration"></a>
 
 ```python
 duration: typing.Union[int, float]
@@ -3501,11 +3501,11 @@ duration: typing.Union[int, float]
 
 In minutes, must be in the range of 1 to 120 (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
 
 ---
 
-##### `operator`<sup>Optional</sup> <a name="operator" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.operator"></a>
+##### `operator`<sup>Optional</sup> <a name="operator" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.operator"></a>
 
 ```python
 operator: str
@@ -3515,25 +3515,25 @@ operator: str
 
 One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
 
 ---
 
-##### `prediction`<sup>Optional</sup> <a name="prediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.prediction"></a>
+##### `prediction`<sup>Optional</sup> <a name="prediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.prediction"></a>
 
 ```python
 prediction: NrqlAlertConditionTermPrediction
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a>
 
 prediction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#prediction NrqlAlertCondition#prediction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#prediction NrqlAlertCondition#prediction}
 
 ---
 
-##### `priority`<sup>Optional</sup> <a name="priority" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.priority"></a>
+##### `priority`<sup>Optional</sup> <a name="priority" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.priority"></a>
 
 ```python
 priority: str
@@ -3543,11 +3543,11 @@ priority: str
 
 One of (critical, warning). Defaults to 'critical'. At least one condition term must have priority set to 'critical'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#priority NrqlAlertCondition#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#priority NrqlAlertCondition#priority}
 
 ---
 
-##### `threshold_duration`<sup>Optional</sup> <a name="threshold_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.thresholdDuration"></a>
+##### `threshold_duration`<sup>Optional</sup> <a name="threshold_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.thresholdDuration"></a>
 
 ```python
 threshold_duration: typing.Union[int, float]
@@ -3559,11 +3559,11 @@ The duration, in seconds, that the threshold must violate in order to create an 
 
 Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-86400 seconds for baseline conditions, and within 60-86400 seconds for static conditions
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
 
 ---
 
-##### `threshold_occurrences`<sup>Optional</sup> <a name="threshold_occurrences" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.thresholdOccurrences"></a>
+##### `threshold_occurrences`<sup>Optional</sup> <a name="threshold_occurrences" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.thresholdOccurrences"></a>
 
 ```python
 threshold_occurrences: str
@@ -3575,11 +3575,11 @@ The criteria for how many data points must be in violation for the specified thr
 
 Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
 
 ---
 
-##### `time_function`<sup>Optional</sup> <a name="time_function" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.timeFunction"></a>
+##### `time_function`<sup>Optional</sup> <a name="time_function" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.timeFunction"></a>
 
 ```python
 time_function: str
@@ -3589,16 +3589,16 @@ time_function: str
 
 Valid values are: 'all' or 'any'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
 
 ---
 
-### NrqlAlertConditionTermPrediction <a name="NrqlAlertConditionTermPrediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction"></a>
+### NrqlAlertConditionTermPrediction <a name="NrqlAlertConditionTermPrediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionTermPrediction(
   predict_by: typing.Union[int, float] = None,
@@ -3610,12 +3610,12 @@ nrqlAlertCondition.NrqlAlertConditionTermPrediction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | BETA PREVIEW: the `predict_by` field is in limited release and only enabled for preview on a per-account basis. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktf.IResolvable</code> | BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | BETA PREVIEW: the `predict_by` field is in limited release and only enabled for preview on a per-account basis. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktn.IResolvable</code> | BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. |
 
 ---
 
-##### `predict_by`<sup>Optional</sup> <a name="predict_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction.property.predictBy"></a>
+##### `predict_by`<sup>Optional</sup> <a name="predict_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction.property.predictBy"></a>
 
 ```python
 predict_by: typing.Union[int, float]
@@ -3627,32 +3627,32 @@ BETA PREVIEW: the `predict_by` field is in limited release and only enabled for 
 
 * The duration, in seconds, that the prediction should look into the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
 
 ---
 
-##### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction.property.preferPredictionViolation"></a>
+##### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction.property.preferPredictionViolation"></a>
 
 ```python
 prefer_prediction_violation: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis.
 
 * If a prediction incident is open when a term's static threshold is breached by the actual signal, default behavior is to close the prediction incident and open a static incident. Setting `prefer_prediction_violation` to `true` overrides this behavior leaving the prediction incident open and preventing a static incident from opening.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
 
 ---
 
-### NrqlAlertConditionTimeouts <a name="NrqlAlertConditionTimeouts" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts"></a>
+### NrqlAlertConditionTimeouts <a name="NrqlAlertConditionTimeouts" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionTimeouts(
   create: str = None
@@ -3663,11 +3663,11 @@ nrqlAlertCondition.NrqlAlertConditionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#create NrqlAlertCondition#create}. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#create NrqlAlertCondition#create}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -3675,16 +3675,16 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#create NrqlAlertCondition#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#create NrqlAlertCondition#create}.
 
 ---
 
-### NrqlAlertConditionWarning <a name="NrqlAlertConditionWarning" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning"></a>
+### NrqlAlertConditionWarning <a name="NrqlAlertConditionWarning" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionWarning(
   threshold: typing.Union[int, float],
@@ -3702,18 +3702,18 @@ nrqlAlertCondition.NrqlAlertConditionWarning(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | For baseline conditions must be in range [1, 1000]. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktf.IResolvable</code> | Violations will not change system health status for this term. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | In minutes, must be in the range of 1 to 120 (inclusive). |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.operator">operator</a></code> | <code>str</code> | One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.prediction">prediction</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a></code> | prediction block. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | The duration, in seconds, that the threshold must violate in order to create an incident. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.thresholdOccurrences">threshold_occurrences</a></code> | <code>str</code> | The criteria for how many data points must be in violation for the specified threshold duration. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.timeFunction">time_function</a></code> | <code>str</code> | Valid values are: 'all' or 'any'. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | For baseline conditions must be in range [1, 1000]. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktn.IResolvable</code> | Violations will not change system health status for this term. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | In minutes, must be in the range of 1 to 120 (inclusive). |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.operator">operator</a></code> | <code>str</code> | One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.prediction">prediction</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a></code> | prediction block. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | The duration, in seconds, that the threshold must violate in order to create an incident. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.thresholdOccurrences">threshold_occurrences</a></code> | <code>str</code> | The criteria for how many data points must be in violation for the specified threshold duration. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.timeFunction">time_function</a></code> | <code>str</code> | Valid values are: 'all' or 'any'. |
 
 ---
 
-##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.threshold"></a>
+##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.threshold"></a>
 
 ```python
 threshold: typing.Union[int, float]
@@ -3723,25 +3723,25 @@ threshold: typing.Union[int, float]
 
 For baseline conditions must be in range [1, 1000].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
 
 ---
 
-##### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.disableHealthStatusReporting"></a>
+##### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.disableHealthStatusReporting"></a>
 
 ```python
 disable_health_status_reporting: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Violations will not change system health status for this term.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#disable_health_status_reporting NrqlAlertCondition#disable_health_status_reporting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#disable_health_status_reporting NrqlAlertCondition#disable_health_status_reporting}
 
 ---
 
-##### `duration`<sup>Optional</sup> <a name="duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.duration"></a>
+##### `duration`<sup>Optional</sup> <a name="duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.duration"></a>
 
 ```python
 duration: typing.Union[int, float]
@@ -3751,11 +3751,11 @@ duration: typing.Union[int, float]
 
 In minutes, must be in the range of 1 to 120 (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
 
 ---
 
-##### `operator`<sup>Optional</sup> <a name="operator" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.operator"></a>
+##### `operator`<sup>Optional</sup> <a name="operator" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.operator"></a>
 
 ```python
 operator: str
@@ -3765,25 +3765,25 @@ operator: str
 
 One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
 
 ---
 
-##### `prediction`<sup>Optional</sup> <a name="prediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.prediction"></a>
+##### `prediction`<sup>Optional</sup> <a name="prediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.prediction"></a>
 
 ```python
 prediction: NrqlAlertConditionWarningPrediction
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a>
 
 prediction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#prediction NrqlAlertCondition#prediction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#prediction NrqlAlertCondition#prediction}
 
 ---
 
-##### `threshold_duration`<sup>Optional</sup> <a name="threshold_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.thresholdDuration"></a>
+##### `threshold_duration`<sup>Optional</sup> <a name="threshold_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.thresholdDuration"></a>
 
 ```python
 threshold_duration: typing.Union[int, float]
@@ -3795,11 +3795,11 @@ The duration, in seconds, that the threshold must violate in order to create an 
 
 Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-86400 seconds for baseline conditions, and within 60-86400 seconds for static conditions
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
 
 ---
 
-##### `threshold_occurrences`<sup>Optional</sup> <a name="threshold_occurrences" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.thresholdOccurrences"></a>
+##### `threshold_occurrences`<sup>Optional</sup> <a name="threshold_occurrences" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.thresholdOccurrences"></a>
 
 ```python
 threshold_occurrences: str
@@ -3811,11 +3811,11 @@ The criteria for how many data points must be in violation for the specified thr
 
 Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
 
 ---
 
-##### `time_function`<sup>Optional</sup> <a name="time_function" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.timeFunction"></a>
+##### `time_function`<sup>Optional</sup> <a name="time_function" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.timeFunction"></a>
 
 ```python
 time_function: str
@@ -3825,16 +3825,16 @@ time_function: str
 
 Valid values are: 'all' or 'any'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
 
 ---
 
-### NrqlAlertConditionWarningPrediction <a name="NrqlAlertConditionWarningPrediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction"></a>
+### NrqlAlertConditionWarningPrediction <a name="NrqlAlertConditionWarningPrediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionWarningPrediction(
   predict_by: typing.Union[int, float] = None,
@@ -3846,12 +3846,12 @@ nrqlAlertCondition.NrqlAlertConditionWarningPrediction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | BETA PREVIEW: the `predict_by` field is in limited release and only enabled for preview on a per-account basis. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktf.IResolvable</code> | BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | BETA PREVIEW: the `predict_by` field is in limited release and only enabled for preview on a per-account basis. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktn.IResolvable</code> | BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. |
 
 ---
 
-##### `predict_by`<sup>Optional</sup> <a name="predict_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction.property.predictBy"></a>
+##### `predict_by`<sup>Optional</sup> <a name="predict_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction.property.predictBy"></a>
 
 ```python
 predict_by: typing.Union[int, float]
@@ -3863,34 +3863,34 @@ BETA PREVIEW: the `predict_by` field is in limited release and only enabled for 
 
 * The duration, in seconds, that the prediction should look into the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
 
 ---
 
-##### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction.property.preferPredictionViolation"></a>
+##### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction.property.preferPredictionViolation"></a>
 
 ```python
 prefer_prediction_violation: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis.
 
 * If a prediction incident is open when a term's static threshold is breached by the actual signal, default behavior is to close the prediction incident and open a static incident. Setting `prefer_prediction_violation` to `true` overrides this behavior leaving the prediction incident open and preventing a static incident from opening.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### NrqlAlertConditionCriticalOutputReference <a name="NrqlAlertConditionCriticalOutputReference" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference"></a>
+### NrqlAlertConditionCriticalOutputReference <a name="NrqlAlertConditionCriticalOutputReference" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3900,20 +3900,20 @@ nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3925,37 +3925,37 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.putPrediction">put_prediction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetDisableHealthStatusReporting">reset_disable_health_status_reporting</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetDuration">reset_duration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetOperator">reset_operator</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetPrediction">reset_prediction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetThresholdDuration">reset_threshold_duration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetThresholdOccurrences">reset_threshold_occurrences</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetTimeFunction">reset_time_function</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.putPrediction">put_prediction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetDisableHealthStatusReporting">reset_disable_health_status_reporting</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetDuration">reset_duration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetOperator">reset_operator</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetPrediction">reset_prediction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetThresholdDuration">reset_threshold_duration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetThresholdOccurrences">reset_threshold_occurrences</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetTimeFunction">reset_time_function</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3963,13 +3963,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3977,13 +3977,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3991,13 +3991,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4005,13 +4005,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4019,13 +4019,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4033,13 +4033,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4047,13 +4047,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4061,13 +4061,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4075,13 +4075,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4089,13 +4089,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4105,13 +4105,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4121,7 +4121,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_prediction` <a name="put_prediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.putPrediction"></a>
+##### `put_prediction` <a name="put_prediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.putPrediction"></a>
 
 ```python
 def put_prediction(
@@ -4130,7 +4130,7 @@ def put_prediction(
 ) -> None
 ```
 
-###### `predict_by`<sup>Optional</sup> <a name="predict_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.putPrediction.parameter.predictBy"></a>
+###### `predict_by`<sup>Optional</sup> <a name="predict_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.putPrediction.parameter.predictBy"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4138,59 +4138,59 @@ BETA PREVIEW: the `predict_by` field is in limited release and only enabled for 
 
 * The duration, in seconds, that the prediction should look into the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
 
 ---
 
-###### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.putPrediction.parameter.preferPredictionViolation"></a>
+###### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.putPrediction.parameter.preferPredictionViolation"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis.
 
 * If a prediction incident is open when a term's static threshold is breached by the actual signal, default behavior is to close the prediction incident and open a static incident. Setting `prefer_prediction_violation` to `true` overrides this behavior leaving the prediction incident open and preventing a static incident from opening.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
 
 ---
 
-##### `reset_disable_health_status_reporting` <a name="reset_disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetDisableHealthStatusReporting"></a>
+##### `reset_disable_health_status_reporting` <a name="reset_disable_health_status_reporting" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetDisableHealthStatusReporting"></a>
 
 ```python
 def reset_disable_health_status_reporting() -> None
 ```
 
-##### `reset_duration` <a name="reset_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetDuration"></a>
+##### `reset_duration` <a name="reset_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetDuration"></a>
 
 ```python
 def reset_duration() -> None
 ```
 
-##### `reset_operator` <a name="reset_operator" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetOperator"></a>
+##### `reset_operator` <a name="reset_operator" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetOperator"></a>
 
 ```python
 def reset_operator() -> None
 ```
 
-##### `reset_prediction` <a name="reset_prediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetPrediction"></a>
+##### `reset_prediction` <a name="reset_prediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetPrediction"></a>
 
 ```python
 def reset_prediction() -> None
 ```
 
-##### `reset_threshold_duration` <a name="reset_threshold_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetThresholdDuration"></a>
+##### `reset_threshold_duration` <a name="reset_threshold_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetThresholdDuration"></a>
 
 ```python
 def reset_threshold_duration() -> None
 ```
 
-##### `reset_threshold_occurrences` <a name="reset_threshold_occurrences" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetThresholdOccurrences"></a>
+##### `reset_threshold_occurrences` <a name="reset_threshold_occurrences" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetThresholdOccurrences"></a>
 
 ```python
 def reset_threshold_occurrences() -> None
 ```
 
-##### `reset_time_function` <a name="reset_time_function" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetTimeFunction"></a>
+##### `reset_time_function` <a name="reset_time_function" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.resetTimeFunction"></a>
 
 ```python
 def reset_time_function() -> None
@@ -4201,29 +4201,29 @@ def reset_time_function() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.prediction">prediction</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference">NrqlAlertConditionCriticalPredictionOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.disableHealthStatusReportingInput">disable_health_status_reporting_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.durationInput">duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.predictionInput">prediction_input</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdDurationInput">threshold_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdInput">threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdOccurrencesInput">threshold_occurrences_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.timeFunctionInput">time_function_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdOccurrences">threshold_occurrences</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.timeFunction">time_function</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.prediction">prediction</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference">NrqlAlertConditionCriticalPredictionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.disableHealthStatusReportingInput">disable_health_status_reporting_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.durationInput">duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.predictionInput">prediction_input</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdDurationInput">threshold_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdInput">threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdOccurrencesInput">threshold_occurrences_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.timeFunctionInput">time_function_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdOccurrences">threshold_occurrences</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.timeFunction">time_function</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4237,7 +4237,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4247,27 +4247,27 @@ fqn: str
 
 ---
 
-##### `prediction`<sup>Required</sup> <a name="prediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.prediction"></a>
+##### `prediction`<sup>Required</sup> <a name="prediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.prediction"></a>
 
 ```python
 prediction: NrqlAlertConditionCriticalPredictionOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference">NrqlAlertConditionCriticalPredictionOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference">NrqlAlertConditionCriticalPredictionOutputReference</a>
 
 ---
 
-##### `disable_health_status_reporting_input`<sup>Optional</sup> <a name="disable_health_status_reporting_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.disableHealthStatusReportingInput"></a>
+##### `disable_health_status_reporting_input`<sup>Optional</sup> <a name="disable_health_status_reporting_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.disableHealthStatusReportingInput"></a>
 
 ```python
 disable_health_status_reporting_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `duration_input`<sup>Optional</sup> <a name="duration_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.durationInput"></a>
+##### `duration_input`<sup>Optional</sup> <a name="duration_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.durationInput"></a>
 
 ```python
 duration_input: typing.Union[int, float]
@@ -4277,7 +4277,7 @@ duration_input: typing.Union[int, float]
 
 ---
 
-##### `operator_input`<sup>Optional</sup> <a name="operator_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.operatorInput"></a>
+##### `operator_input`<sup>Optional</sup> <a name="operator_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.operatorInput"></a>
 
 ```python
 operator_input: str
@@ -4287,17 +4287,17 @@ operator_input: str
 
 ---
 
-##### `prediction_input`<sup>Optional</sup> <a name="prediction_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.predictionInput"></a>
+##### `prediction_input`<sup>Optional</sup> <a name="prediction_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.predictionInput"></a>
 
 ```python
 prediction_input: NrqlAlertConditionCriticalPrediction
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a>
 
 ---
 
-##### `threshold_duration_input`<sup>Optional</sup> <a name="threshold_duration_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdDurationInput"></a>
+##### `threshold_duration_input`<sup>Optional</sup> <a name="threshold_duration_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdDurationInput"></a>
 
 ```python
 threshold_duration_input: typing.Union[int, float]
@@ -4307,7 +4307,7 @@ threshold_duration_input: typing.Union[int, float]
 
 ---
 
-##### `threshold_input`<sup>Optional</sup> <a name="threshold_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdInput"></a>
+##### `threshold_input`<sup>Optional</sup> <a name="threshold_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdInput"></a>
 
 ```python
 threshold_input: typing.Union[int, float]
@@ -4317,7 +4317,7 @@ threshold_input: typing.Union[int, float]
 
 ---
 
-##### `threshold_occurrences_input`<sup>Optional</sup> <a name="threshold_occurrences_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdOccurrencesInput"></a>
+##### `threshold_occurrences_input`<sup>Optional</sup> <a name="threshold_occurrences_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdOccurrencesInput"></a>
 
 ```python
 threshold_occurrences_input: str
@@ -4327,7 +4327,7 @@ threshold_occurrences_input: str
 
 ---
 
-##### `time_function_input`<sup>Optional</sup> <a name="time_function_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.timeFunctionInput"></a>
+##### `time_function_input`<sup>Optional</sup> <a name="time_function_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.timeFunctionInput"></a>
 
 ```python
 time_function_input: str
@@ -4337,17 +4337,17 @@ time_function_input: str
 
 ---
 
-##### `disable_health_status_reporting`<sup>Required</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.disableHealthStatusReporting"></a>
+##### `disable_health_status_reporting`<sup>Required</sup> <a name="disable_health_status_reporting" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.disableHealthStatusReporting"></a>
 
 ```python
 disable_health_status_reporting: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `duration`<sup>Required</sup> <a name="duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.duration"></a>
+##### `duration`<sup>Required</sup> <a name="duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.duration"></a>
 
 ```python
 duration: typing.Union[int, float]
@@ -4357,7 +4357,7 @@ duration: typing.Union[int, float]
 
 ---
 
-##### `operator`<sup>Required</sup> <a name="operator" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.operator"></a>
+##### `operator`<sup>Required</sup> <a name="operator" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.operator"></a>
 
 ```python
 operator: str
@@ -4367,7 +4367,7 @@ operator: str
 
 ---
 
-##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.threshold"></a>
+##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.threshold"></a>
 
 ```python
 threshold: typing.Union[int, float]
@@ -4377,7 +4377,7 @@ threshold: typing.Union[int, float]
 
 ---
 
-##### `threshold_duration`<sup>Required</sup> <a name="threshold_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdDuration"></a>
+##### `threshold_duration`<sup>Required</sup> <a name="threshold_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdDuration"></a>
 
 ```python
 threshold_duration: typing.Union[int, float]
@@ -4387,7 +4387,7 @@ threshold_duration: typing.Union[int, float]
 
 ---
 
-##### `threshold_occurrences`<sup>Required</sup> <a name="threshold_occurrences" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdOccurrences"></a>
+##### `threshold_occurrences`<sup>Required</sup> <a name="threshold_occurrences" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdOccurrences"></a>
 
 ```python
 threshold_occurrences: str
@@ -4397,7 +4397,7 @@ threshold_occurrences: str
 
 ---
 
-##### `time_function`<sup>Required</sup> <a name="time_function" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.timeFunction"></a>
+##### `time_function`<sup>Required</sup> <a name="time_function" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.timeFunction"></a>
 
 ```python
 time_function: str
@@ -4407,23 +4407,23 @@ time_function: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: NrqlAlertConditionCritical
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a>
 
 ---
 
 
-### NrqlAlertConditionCriticalPredictionOutputReference <a name="NrqlAlertConditionCriticalPredictionOutputReference" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference"></a>
+### NrqlAlertConditionCriticalPredictionOutputReference <a name="NrqlAlertConditionCriticalPredictionOutputReference" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4433,20 +4433,20 @@ nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4458,31 +4458,31 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.resetPredictBy">reset_predict_by</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.resetPreferPredictionViolation">reset_prefer_prediction_violation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.resetPredictBy">reset_predict_by</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.resetPreferPredictionViolation">reset_prefer_prediction_violation</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4490,13 +4490,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4504,13 +4504,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4518,13 +4518,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4532,13 +4532,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4546,13 +4546,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4560,13 +4560,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4574,13 +4574,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4588,13 +4588,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4602,13 +4602,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4616,13 +4616,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4632,13 +4632,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4648,13 +4648,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_predict_by` <a name="reset_predict_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.resetPredictBy"></a>
+##### `reset_predict_by` <a name="reset_predict_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.resetPredictBy"></a>
 
 ```python
 def reset_predict_by() -> None
 ```
 
-##### `reset_prefer_prediction_violation` <a name="reset_prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.resetPreferPredictionViolation"></a>
+##### `reset_prefer_prediction_violation` <a name="reset_prefer_prediction_violation" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.resetPreferPredictionViolation"></a>
 
 ```python
 def reset_prefer_prediction_violation() -> None
@@ -4665,17 +4665,17 @@ def reset_prefer_prediction_violation() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.predictByInput">predict_by_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.preferPredictionViolationInput">prefer_prediction_violation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.predictByInput">predict_by_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.preferPredictionViolationInput">prefer_prediction_violation_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4689,7 +4689,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4699,7 +4699,7 @@ fqn: str
 
 ---
 
-##### `predict_by_input`<sup>Optional</sup> <a name="predict_by_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.predictByInput"></a>
+##### `predict_by_input`<sup>Optional</sup> <a name="predict_by_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.predictByInput"></a>
 
 ```python
 predict_by_input: typing.Union[int, float]
@@ -4709,17 +4709,17 @@ predict_by_input: typing.Union[int, float]
 
 ---
 
-##### `prefer_prediction_violation_input`<sup>Optional</sup> <a name="prefer_prediction_violation_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.preferPredictionViolationInput"></a>
+##### `prefer_prediction_violation_input`<sup>Optional</sup> <a name="prefer_prediction_violation_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.preferPredictionViolationInput"></a>
 
 ```python
 prefer_prediction_violation_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `predict_by`<sup>Required</sup> <a name="predict_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.predictBy"></a>
+##### `predict_by`<sup>Required</sup> <a name="predict_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.predictBy"></a>
 
 ```python
 predict_by: typing.Union[int, float]
@@ -4729,33 +4729,33 @@ predict_by: typing.Union[int, float]
 
 ---
 
-##### `prefer_prediction_violation`<sup>Required</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.preferPredictionViolation"></a>
+##### `prefer_prediction_violation`<sup>Required</sup> <a name="prefer_prediction_violation" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.preferPredictionViolation"></a>
 
 ```python
 prefer_prediction_violation: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: NrqlAlertConditionCriticalPrediction
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a>
 
 ---
 
 
-### NrqlAlertConditionNrqlOutputReference <a name="NrqlAlertConditionNrqlOutputReference" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference"></a>
+### NrqlAlertConditionNrqlOutputReference <a name="NrqlAlertConditionNrqlOutputReference" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4765,20 +4765,20 @@ nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4790,32 +4790,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resetDataAccountId">reset_data_account_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resetEvaluationOffset">reset_evaluation_offset</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resetSinceValue">reset_since_value</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resetDataAccountId">reset_data_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resetEvaluationOffset">reset_evaluation_offset</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resetSinceValue">reset_since_value</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4823,13 +4823,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4837,13 +4837,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4851,13 +4851,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4865,13 +4865,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4879,13 +4879,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4893,13 +4893,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4907,13 +4907,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4921,13 +4921,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4935,13 +4935,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4949,13 +4949,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4965,13 +4965,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4981,19 +4981,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_data_account_id` <a name="reset_data_account_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resetDataAccountId"></a>
+##### `reset_data_account_id` <a name="reset_data_account_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resetDataAccountId"></a>
 
 ```python
 def reset_data_account_id() -> None
 ```
 
-##### `reset_evaluation_offset` <a name="reset_evaluation_offset" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resetEvaluationOffset"></a>
+##### `reset_evaluation_offset` <a name="reset_evaluation_offset" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resetEvaluationOffset"></a>
 
 ```python
 def reset_evaluation_offset() -> None
 ```
 
-##### `reset_since_value` <a name="reset_since_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resetSinceValue"></a>
+##### `reset_since_value` <a name="reset_since_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.resetSinceValue"></a>
 
 ```python
 def reset_since_value() -> None
@@ -5004,21 +5004,21 @@ def reset_since_value() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.dataAccountIdInput">data_account_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.evaluationOffsetInput">evaluation_offset_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.sinceValueInput">since_value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.dataAccountId">data_account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.evaluationOffset">evaluation_offset</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.sinceValue">since_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.dataAccountIdInput">data_account_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.evaluationOffsetInput">evaluation_offset_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.sinceValueInput">since_value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.dataAccountId">data_account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.evaluationOffset">evaluation_offset</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.sinceValue">since_value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -5032,7 +5032,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -5042,7 +5042,7 @@ fqn: str
 
 ---
 
-##### `data_account_id_input`<sup>Optional</sup> <a name="data_account_id_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.dataAccountIdInput"></a>
+##### `data_account_id_input`<sup>Optional</sup> <a name="data_account_id_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.dataAccountIdInput"></a>
 
 ```python
 data_account_id_input: typing.Union[int, float]
@@ -5052,7 +5052,7 @@ data_account_id_input: typing.Union[int, float]
 
 ---
 
-##### `evaluation_offset_input`<sup>Optional</sup> <a name="evaluation_offset_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.evaluationOffsetInput"></a>
+##### `evaluation_offset_input`<sup>Optional</sup> <a name="evaluation_offset_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.evaluationOffsetInput"></a>
 
 ```python
 evaluation_offset_input: typing.Union[int, float]
@@ -5062,7 +5062,7 @@ evaluation_offset_input: typing.Union[int, float]
 
 ---
 
-##### `query_input`<sup>Optional</sup> <a name="query_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.queryInput"></a>
+##### `query_input`<sup>Optional</sup> <a name="query_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.queryInput"></a>
 
 ```python
 query_input: str
@@ -5072,7 +5072,7 @@ query_input: str
 
 ---
 
-##### `since_value_input`<sup>Optional</sup> <a name="since_value_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.sinceValueInput"></a>
+##### `since_value_input`<sup>Optional</sup> <a name="since_value_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.sinceValueInput"></a>
 
 ```python
 since_value_input: str
@@ -5082,7 +5082,7 @@ since_value_input: str
 
 ---
 
-##### `data_account_id`<sup>Required</sup> <a name="data_account_id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.dataAccountId"></a>
+##### `data_account_id`<sup>Required</sup> <a name="data_account_id" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.dataAccountId"></a>
 
 ```python
 data_account_id: typing.Union[int, float]
@@ -5092,7 +5092,7 @@ data_account_id: typing.Union[int, float]
 
 ---
 
-##### `evaluation_offset`<sup>Required</sup> <a name="evaluation_offset" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.evaluationOffset"></a>
+##### `evaluation_offset`<sup>Required</sup> <a name="evaluation_offset" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.evaluationOffset"></a>
 
 ```python
 evaluation_offset: typing.Union[int, float]
@@ -5102,7 +5102,7 @@ evaluation_offset: typing.Union[int, float]
 
 ---
 
-##### `query`<sup>Required</sup> <a name="query" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.query"></a>
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.query"></a>
 
 ```python
 query: str
@@ -5112,7 +5112,7 @@ query: str
 
 ---
 
-##### `since_value`<sup>Required</sup> <a name="since_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.sinceValue"></a>
+##### `since_value`<sup>Required</sup> <a name="since_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.sinceValue"></a>
 
 ```python
 since_value: str
@@ -5122,23 +5122,23 @@ since_value: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: NrqlAlertConditionNrql
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a>
 
 ---
 
 
-### NrqlAlertConditionOutlierConfigurationDbscanOutputReference <a name="NrqlAlertConditionOutlierConfigurationDbscanOutputReference" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference"></a>
+### NrqlAlertConditionOutlierConfigurationDbscanOutputReference <a name="NrqlAlertConditionOutlierConfigurationDbscanOutputReference" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -5148,20 +5148,20 @@ nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -5173,30 +5173,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.resetEvaluationGroupFacet">reset_evaluation_group_facet</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.resetEvaluationGroupFacet">reset_evaluation_group_facet</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -5204,13 +5204,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -5218,13 +5218,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -5232,13 +5232,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -5246,13 +5246,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -5260,13 +5260,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -5274,13 +5274,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -5288,13 +5288,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -5302,13 +5302,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -5316,13 +5316,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -5330,13 +5330,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -5346,13 +5346,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -5362,7 +5362,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_evaluation_group_facet` <a name="reset_evaluation_group_facet" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.resetEvaluationGroupFacet"></a>
+##### `reset_evaluation_group_facet` <a name="reset_evaluation_group_facet" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.resetEvaluationGroupFacet"></a>
 
 ```python
 def reset_evaluation_group_facet() -> None
@@ -5373,19 +5373,19 @@ def reset_evaluation_group_facet() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.epsilonInput">epsilon_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.evaluationGroupFacetInput">evaluation_group_facet_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.minimumPointsInput">minimum_points_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.epsilon">epsilon</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.evaluationGroupFacet">evaluation_group_facet</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.minimumPoints">minimum_points</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan">NrqlAlertConditionOutlierConfigurationDbscan</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.epsilonInput">epsilon_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.evaluationGroupFacetInput">evaluation_group_facet_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.minimumPointsInput">minimum_points_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.epsilon">epsilon</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.evaluationGroupFacet">evaluation_group_facet</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.minimumPoints">minimum_points</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan">NrqlAlertConditionOutlierConfigurationDbscan</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -5399,7 +5399,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -5409,7 +5409,7 @@ fqn: str
 
 ---
 
-##### `epsilon_input`<sup>Optional</sup> <a name="epsilon_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.epsilonInput"></a>
+##### `epsilon_input`<sup>Optional</sup> <a name="epsilon_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.epsilonInput"></a>
 
 ```python
 epsilon_input: typing.Union[int, float]
@@ -5419,7 +5419,7 @@ epsilon_input: typing.Union[int, float]
 
 ---
 
-##### `evaluation_group_facet_input`<sup>Optional</sup> <a name="evaluation_group_facet_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.evaluationGroupFacetInput"></a>
+##### `evaluation_group_facet_input`<sup>Optional</sup> <a name="evaluation_group_facet_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.evaluationGroupFacetInput"></a>
 
 ```python
 evaluation_group_facet_input: str
@@ -5429,7 +5429,7 @@ evaluation_group_facet_input: str
 
 ---
 
-##### `minimum_points_input`<sup>Optional</sup> <a name="minimum_points_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.minimumPointsInput"></a>
+##### `minimum_points_input`<sup>Optional</sup> <a name="minimum_points_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.minimumPointsInput"></a>
 
 ```python
 minimum_points_input: typing.Union[int, float]
@@ -5439,7 +5439,7 @@ minimum_points_input: typing.Union[int, float]
 
 ---
 
-##### `epsilon`<sup>Required</sup> <a name="epsilon" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.epsilon"></a>
+##### `epsilon`<sup>Required</sup> <a name="epsilon" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.epsilon"></a>
 
 ```python
 epsilon: typing.Union[int, float]
@@ -5449,7 +5449,7 @@ epsilon: typing.Union[int, float]
 
 ---
 
-##### `evaluation_group_facet`<sup>Required</sup> <a name="evaluation_group_facet" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.evaluationGroupFacet"></a>
+##### `evaluation_group_facet`<sup>Required</sup> <a name="evaluation_group_facet" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.evaluationGroupFacet"></a>
 
 ```python
 evaluation_group_facet: str
@@ -5459,7 +5459,7 @@ evaluation_group_facet: str
 
 ---
 
-##### `minimum_points`<sup>Required</sup> <a name="minimum_points" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.minimumPoints"></a>
+##### `minimum_points`<sup>Required</sup> <a name="minimum_points" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.minimumPoints"></a>
 
 ```python
 minimum_points: typing.Union[int, float]
@@ -5469,23 +5469,23 @@ minimum_points: typing.Union[int, float]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: NrqlAlertConditionOutlierConfigurationDbscan
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan">NrqlAlertConditionOutlierConfigurationDbscan</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan">NrqlAlertConditionOutlierConfigurationDbscan</a>
 
 ---
 
 
-### NrqlAlertConditionOutlierConfigurationOutputReference <a name="NrqlAlertConditionOutlierConfigurationOutputReference" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference"></a>
+### NrqlAlertConditionOutlierConfigurationOutputReference <a name="NrqlAlertConditionOutlierConfigurationOutputReference" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -5495,20 +5495,20 @@ nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -5520,30 +5520,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.putDbscan">put_dbscan</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.putDbscan">put_dbscan</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -5551,13 +5551,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -5565,13 +5565,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -5579,13 +5579,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -5593,13 +5593,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -5607,13 +5607,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -5621,13 +5621,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -5635,13 +5635,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -5649,13 +5649,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -5663,13 +5663,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -5677,13 +5677,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -5693,13 +5693,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -5709,7 +5709,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_dbscan` <a name="put_dbscan" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.putDbscan"></a>
+##### `put_dbscan` <a name="put_dbscan" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.putDbscan"></a>
 
 ```python
 def put_dbscan(
@@ -5719,7 +5719,7 @@ def put_dbscan(
 ) -> None
 ```
 
-###### `epsilon`<sup>Required</sup> <a name="epsilon" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.putDbscan.parameter.epsilon"></a>
+###### `epsilon`<sup>Required</sup> <a name="epsilon" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.putDbscan.parameter.epsilon"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -5727,11 +5727,11 @@ BETA PREVIEW: the `epsilon` field is in limited release and only enabled for pre
 
 * Radius (distance threshold) for DBSCAN in the units of the query result. Smaller values tighten clusters; larger values broaden them. Must be > 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#epsilon NrqlAlertCondition#epsilon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#epsilon NrqlAlertCondition#epsilon}
 
 ---
 
-###### `minimum_points`<sup>Required</sup> <a name="minimum_points" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.putDbscan.parameter.minimumPoints"></a>
+###### `minimum_points`<sup>Required</sup> <a name="minimum_points" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.putDbscan.parameter.minimumPoints"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -5739,11 +5739,11 @@ BETA PREVIEW: the `minimum_points` field is in limited release and only enabled 
 
 * Minimum number of neighboring points needed to form a cluster. Must be >= 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#minimum_points NrqlAlertCondition#minimum_points}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#minimum_points NrqlAlertCondition#minimum_points}
 
 ---
 
-###### `evaluation_group_facet`<sup>Optional</sup> <a name="evaluation_group_facet" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.putDbscan.parameter.evaluationGroupFacet"></a>
+###### `evaluation_group_facet`<sup>Optional</sup> <a name="evaluation_group_facet" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.putDbscan.parameter.evaluationGroupFacet"></a>
 
 - *Type:* str
 
@@ -5751,7 +5751,7 @@ BETA PREVIEW: the `evaluation_group_facet` field is in limited release and only 
 
 * Optional NRQL facet attribute used to segment data into groups (e.g. `host`, `region`) before running outlier detection. Omit to evaluate all results together.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#evaluation_group_facet NrqlAlertCondition#evaluation_group_facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#evaluation_group_facet NrqlAlertCondition#evaluation_group_facet}
 
 ---
 
@@ -5760,15 +5760,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.dbscan">dbscan</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference">NrqlAlertConditionOutlierConfigurationDbscanOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.dbscanInput">dbscan_input</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan">NrqlAlertConditionOutlierConfigurationDbscan</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.dbscan">dbscan</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference">NrqlAlertConditionOutlierConfigurationDbscanOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.dbscanInput">dbscan_input</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan">NrqlAlertConditionOutlierConfigurationDbscan</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -5782,7 +5782,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -5792,43 +5792,43 @@ fqn: str
 
 ---
 
-##### `dbscan`<sup>Required</sup> <a name="dbscan" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.dbscan"></a>
+##### `dbscan`<sup>Required</sup> <a name="dbscan" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.dbscan"></a>
 
 ```python
 dbscan: NrqlAlertConditionOutlierConfigurationDbscanOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference">NrqlAlertConditionOutlierConfigurationDbscanOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference">NrqlAlertConditionOutlierConfigurationDbscanOutputReference</a>
 
 ---
 
-##### `dbscan_input`<sup>Optional</sup> <a name="dbscan_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.dbscanInput"></a>
+##### `dbscan_input`<sup>Optional</sup> <a name="dbscan_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.dbscanInput"></a>
 
 ```python
 dbscan_input: NrqlAlertConditionOutlierConfigurationDbscan
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan">NrqlAlertConditionOutlierConfigurationDbscan</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan">NrqlAlertConditionOutlierConfigurationDbscan</a>
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: NrqlAlertConditionOutlierConfiguration
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration">NrqlAlertConditionOutlierConfiguration</a>
 
 ---
 
 
-### NrqlAlertConditionTermList <a name="NrqlAlertConditionTermList" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList"></a>
+### NrqlAlertConditionTermList <a name="NrqlAlertConditionTermList" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionTermList(
   terraform_resource: IInterpolatingParent,
@@ -5839,21 +5839,21 @@ nrqlAlertCondition.NrqlAlertConditionTermList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -5861,7 +5861,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -5873,15 +5873,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -5893,19 +5893,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.resolve"></a>
 
 ```python
 def resolve(
@@ -5915,13 +5915,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -5931,7 +5931,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.get"></a>
 
 ```python
 def get(
@@ -5939,7 +5939,7 @@ def get(
 ) -> NrqlAlertConditionTermOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -5952,13 +5952,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -5972,7 +5972,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -5982,23 +5982,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[NrqlAlertConditionTerm]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
 
 ---
 
 
-### NrqlAlertConditionTermOutputReference <a name="NrqlAlertConditionTermOutputReference" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference"></a>
+### NrqlAlertConditionTermOutputReference <a name="NrqlAlertConditionTermOutputReference" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionTermOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -6010,22 +6010,22 @@ nrqlAlertCondition.NrqlAlertConditionTermOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -6033,7 +6033,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -6041,7 +6041,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -6053,38 +6053,38 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.putPrediction">put_prediction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetDisableHealthStatusReporting">reset_disable_health_status_reporting</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetDuration">reset_duration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetOperator">reset_operator</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetPrediction">reset_prediction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetPriority">reset_priority</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetThresholdDuration">reset_threshold_duration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetThresholdOccurrences">reset_threshold_occurrences</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetTimeFunction">reset_time_function</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.putPrediction">put_prediction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetDisableHealthStatusReporting">reset_disable_health_status_reporting</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetDuration">reset_duration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetOperator">reset_operator</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetPrediction">reset_prediction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetPriority">reset_priority</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetThresholdDuration">reset_threshold_duration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetThresholdOccurrences">reset_threshold_occurrences</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetTimeFunction">reset_time_function</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -6092,13 +6092,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -6106,13 +6106,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -6120,13 +6120,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -6134,13 +6134,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -6148,13 +6148,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -6162,13 +6162,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -6176,13 +6176,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -6190,13 +6190,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -6204,13 +6204,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -6218,13 +6218,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -6234,13 +6234,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -6250,7 +6250,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_prediction` <a name="put_prediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.putPrediction"></a>
+##### `put_prediction` <a name="put_prediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.putPrediction"></a>
 
 ```python
 def put_prediction(
@@ -6259,7 +6259,7 @@ def put_prediction(
 ) -> None
 ```
 
-###### `predict_by`<sup>Optional</sup> <a name="predict_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.putPrediction.parameter.predictBy"></a>
+###### `predict_by`<sup>Optional</sup> <a name="predict_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.putPrediction.parameter.predictBy"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -6267,65 +6267,65 @@ BETA PREVIEW: the `predict_by` field is in limited release and only enabled for 
 
 * The duration, in seconds, that the prediction should look into the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
 
 ---
 
-###### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.putPrediction.parameter.preferPredictionViolation"></a>
+###### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.putPrediction.parameter.preferPredictionViolation"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis.
 
 * If a prediction incident is open when a term's static threshold is breached by the actual signal, default behavior is to close the prediction incident and open a static incident. Setting `prefer_prediction_violation` to `true` overrides this behavior leaving the prediction incident open and preventing a static incident from opening.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
 
 ---
 
-##### `reset_disable_health_status_reporting` <a name="reset_disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetDisableHealthStatusReporting"></a>
+##### `reset_disable_health_status_reporting` <a name="reset_disable_health_status_reporting" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetDisableHealthStatusReporting"></a>
 
 ```python
 def reset_disable_health_status_reporting() -> None
 ```
 
-##### `reset_duration` <a name="reset_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetDuration"></a>
+##### `reset_duration` <a name="reset_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetDuration"></a>
 
 ```python
 def reset_duration() -> None
 ```
 
-##### `reset_operator` <a name="reset_operator" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetOperator"></a>
+##### `reset_operator` <a name="reset_operator" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetOperator"></a>
 
 ```python
 def reset_operator() -> None
 ```
 
-##### `reset_prediction` <a name="reset_prediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetPrediction"></a>
+##### `reset_prediction` <a name="reset_prediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetPrediction"></a>
 
 ```python
 def reset_prediction() -> None
 ```
 
-##### `reset_priority` <a name="reset_priority" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetPriority"></a>
+##### `reset_priority` <a name="reset_priority" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetPriority"></a>
 
 ```python
 def reset_priority() -> None
 ```
 
-##### `reset_threshold_duration` <a name="reset_threshold_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetThresholdDuration"></a>
+##### `reset_threshold_duration` <a name="reset_threshold_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetThresholdDuration"></a>
 
 ```python
 def reset_threshold_duration() -> None
 ```
 
-##### `reset_threshold_occurrences` <a name="reset_threshold_occurrences" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetThresholdOccurrences"></a>
+##### `reset_threshold_occurrences` <a name="reset_threshold_occurrences" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetThresholdOccurrences"></a>
 
 ```python
 def reset_threshold_occurrences() -> None
 ```
 
-##### `reset_time_function` <a name="reset_time_function" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetTimeFunction"></a>
+##### `reset_time_function` <a name="reset_time_function" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.resetTimeFunction"></a>
 
 ```python
 def reset_time_function() -> None
@@ -6336,31 +6336,31 @@ def reset_time_function() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.prediction">prediction</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference">NrqlAlertConditionTermPredictionOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.disableHealthStatusReportingInput">disable_health_status_reporting_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.durationInput">duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.predictionInput">prediction_input</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.priorityInput">priority_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdDurationInput">threshold_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdInput">threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdOccurrencesInput">threshold_occurrences_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.timeFunctionInput">time_function_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.priority">priority</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdOccurrences">threshold_occurrences</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.timeFunction">time_function</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.prediction">prediction</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference">NrqlAlertConditionTermPredictionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.disableHealthStatusReportingInput">disable_health_status_reporting_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.durationInput">duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.predictionInput">prediction_input</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.priorityInput">priority_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdDurationInput">threshold_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdInput">threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdOccurrencesInput">threshold_occurrences_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.timeFunctionInput">time_function_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.priority">priority</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdOccurrences">threshold_occurrences</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.timeFunction">time_function</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -6374,7 +6374,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -6384,27 +6384,27 @@ fqn: str
 
 ---
 
-##### `prediction`<sup>Required</sup> <a name="prediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.prediction"></a>
+##### `prediction`<sup>Required</sup> <a name="prediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.prediction"></a>
 
 ```python
 prediction: NrqlAlertConditionTermPredictionOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference">NrqlAlertConditionTermPredictionOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference">NrqlAlertConditionTermPredictionOutputReference</a>
 
 ---
 
-##### `disable_health_status_reporting_input`<sup>Optional</sup> <a name="disable_health_status_reporting_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.disableHealthStatusReportingInput"></a>
+##### `disable_health_status_reporting_input`<sup>Optional</sup> <a name="disable_health_status_reporting_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.disableHealthStatusReportingInput"></a>
 
 ```python
 disable_health_status_reporting_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `duration_input`<sup>Optional</sup> <a name="duration_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.durationInput"></a>
+##### `duration_input`<sup>Optional</sup> <a name="duration_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.durationInput"></a>
 
 ```python
 duration_input: typing.Union[int, float]
@@ -6414,7 +6414,7 @@ duration_input: typing.Union[int, float]
 
 ---
 
-##### `operator_input`<sup>Optional</sup> <a name="operator_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.operatorInput"></a>
+##### `operator_input`<sup>Optional</sup> <a name="operator_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.operatorInput"></a>
 
 ```python
 operator_input: str
@@ -6424,17 +6424,17 @@ operator_input: str
 
 ---
 
-##### `prediction_input`<sup>Optional</sup> <a name="prediction_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.predictionInput"></a>
+##### `prediction_input`<sup>Optional</sup> <a name="prediction_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.predictionInput"></a>
 
 ```python
 prediction_input: NrqlAlertConditionTermPrediction
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a>
 
 ---
 
-##### `priority_input`<sup>Optional</sup> <a name="priority_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.priorityInput"></a>
+##### `priority_input`<sup>Optional</sup> <a name="priority_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.priorityInput"></a>
 
 ```python
 priority_input: str
@@ -6444,7 +6444,7 @@ priority_input: str
 
 ---
 
-##### `threshold_duration_input`<sup>Optional</sup> <a name="threshold_duration_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdDurationInput"></a>
+##### `threshold_duration_input`<sup>Optional</sup> <a name="threshold_duration_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdDurationInput"></a>
 
 ```python
 threshold_duration_input: typing.Union[int, float]
@@ -6454,7 +6454,7 @@ threshold_duration_input: typing.Union[int, float]
 
 ---
 
-##### `threshold_input`<sup>Optional</sup> <a name="threshold_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdInput"></a>
+##### `threshold_input`<sup>Optional</sup> <a name="threshold_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdInput"></a>
 
 ```python
 threshold_input: typing.Union[int, float]
@@ -6464,7 +6464,7 @@ threshold_input: typing.Union[int, float]
 
 ---
 
-##### `threshold_occurrences_input`<sup>Optional</sup> <a name="threshold_occurrences_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdOccurrencesInput"></a>
+##### `threshold_occurrences_input`<sup>Optional</sup> <a name="threshold_occurrences_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdOccurrencesInput"></a>
 
 ```python
 threshold_occurrences_input: str
@@ -6474,7 +6474,7 @@ threshold_occurrences_input: str
 
 ---
 
-##### `time_function_input`<sup>Optional</sup> <a name="time_function_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.timeFunctionInput"></a>
+##### `time_function_input`<sup>Optional</sup> <a name="time_function_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.timeFunctionInput"></a>
 
 ```python
 time_function_input: str
@@ -6484,17 +6484,17 @@ time_function_input: str
 
 ---
 
-##### `disable_health_status_reporting`<sup>Required</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.disableHealthStatusReporting"></a>
+##### `disable_health_status_reporting`<sup>Required</sup> <a name="disable_health_status_reporting" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.disableHealthStatusReporting"></a>
 
 ```python
 disable_health_status_reporting: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `duration`<sup>Required</sup> <a name="duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.duration"></a>
+##### `duration`<sup>Required</sup> <a name="duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.duration"></a>
 
 ```python
 duration: typing.Union[int, float]
@@ -6504,7 +6504,7 @@ duration: typing.Union[int, float]
 
 ---
 
-##### `operator`<sup>Required</sup> <a name="operator" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.operator"></a>
+##### `operator`<sup>Required</sup> <a name="operator" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.operator"></a>
 
 ```python
 operator: str
@@ -6514,7 +6514,7 @@ operator: str
 
 ---
 
-##### `priority`<sup>Required</sup> <a name="priority" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.priority"></a>
+##### `priority`<sup>Required</sup> <a name="priority" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.priority"></a>
 
 ```python
 priority: str
@@ -6524,7 +6524,7 @@ priority: str
 
 ---
 
-##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.threshold"></a>
+##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.threshold"></a>
 
 ```python
 threshold: typing.Union[int, float]
@@ -6534,7 +6534,7 @@ threshold: typing.Union[int, float]
 
 ---
 
-##### `threshold_duration`<sup>Required</sup> <a name="threshold_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdDuration"></a>
+##### `threshold_duration`<sup>Required</sup> <a name="threshold_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdDuration"></a>
 
 ```python
 threshold_duration: typing.Union[int, float]
@@ -6544,7 +6544,7 @@ threshold_duration: typing.Union[int, float]
 
 ---
 
-##### `threshold_occurrences`<sup>Required</sup> <a name="threshold_occurrences" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdOccurrences"></a>
+##### `threshold_occurrences`<sup>Required</sup> <a name="threshold_occurrences" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdOccurrences"></a>
 
 ```python
 threshold_occurrences: str
@@ -6554,7 +6554,7 @@ threshold_occurrences: str
 
 ---
 
-##### `time_function`<sup>Required</sup> <a name="time_function" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.timeFunction"></a>
+##### `time_function`<sup>Required</sup> <a name="time_function" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.timeFunction"></a>
 
 ```python
 time_function: str
@@ -6564,23 +6564,23 @@ time_function: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | NrqlAlertConditionTerm
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>
 
 ---
 
 
-### NrqlAlertConditionTermPredictionOutputReference <a name="NrqlAlertConditionTermPredictionOutputReference" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference"></a>
+### NrqlAlertConditionTermPredictionOutputReference <a name="NrqlAlertConditionTermPredictionOutputReference" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -6590,20 +6590,20 @@ nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -6615,31 +6615,31 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.resetPredictBy">reset_predict_by</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.resetPreferPredictionViolation">reset_prefer_prediction_violation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.resetPredictBy">reset_predict_by</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.resetPreferPredictionViolation">reset_prefer_prediction_violation</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -6647,13 +6647,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -6661,13 +6661,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -6675,13 +6675,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -6689,13 +6689,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -6703,13 +6703,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -6717,13 +6717,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -6731,13 +6731,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -6745,13 +6745,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -6759,13 +6759,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -6773,13 +6773,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -6789,13 +6789,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -6805,13 +6805,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_predict_by` <a name="reset_predict_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.resetPredictBy"></a>
+##### `reset_predict_by` <a name="reset_predict_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.resetPredictBy"></a>
 
 ```python
 def reset_predict_by() -> None
 ```
 
-##### `reset_prefer_prediction_violation` <a name="reset_prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.resetPreferPredictionViolation"></a>
+##### `reset_prefer_prediction_violation` <a name="reset_prefer_prediction_violation" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.resetPreferPredictionViolation"></a>
 
 ```python
 def reset_prefer_prediction_violation() -> None
@@ -6822,17 +6822,17 @@ def reset_prefer_prediction_violation() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.predictByInput">predict_by_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.preferPredictionViolationInput">prefer_prediction_violation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.predictByInput">predict_by_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.preferPredictionViolationInput">prefer_prediction_violation_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -6846,7 +6846,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -6856,7 +6856,7 @@ fqn: str
 
 ---
 
-##### `predict_by_input`<sup>Optional</sup> <a name="predict_by_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.predictByInput"></a>
+##### `predict_by_input`<sup>Optional</sup> <a name="predict_by_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.predictByInput"></a>
 
 ```python
 predict_by_input: typing.Union[int, float]
@@ -6866,17 +6866,17 @@ predict_by_input: typing.Union[int, float]
 
 ---
 
-##### `prefer_prediction_violation_input`<sup>Optional</sup> <a name="prefer_prediction_violation_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.preferPredictionViolationInput"></a>
+##### `prefer_prediction_violation_input`<sup>Optional</sup> <a name="prefer_prediction_violation_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.preferPredictionViolationInput"></a>
 
 ```python
 prefer_prediction_violation_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `predict_by`<sup>Required</sup> <a name="predict_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.predictBy"></a>
+##### `predict_by`<sup>Required</sup> <a name="predict_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.predictBy"></a>
 
 ```python
 predict_by: typing.Union[int, float]
@@ -6886,33 +6886,33 @@ predict_by: typing.Union[int, float]
 
 ---
 
-##### `prefer_prediction_violation`<sup>Required</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.preferPredictionViolation"></a>
+##### `prefer_prediction_violation`<sup>Required</sup> <a name="prefer_prediction_violation" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.preferPredictionViolation"></a>
 
 ```python
 prefer_prediction_violation: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: NrqlAlertConditionTermPrediction
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a>
 
 ---
 
 
-### NrqlAlertConditionTimeoutsOutputReference <a name="NrqlAlertConditionTimeoutsOutputReference" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference"></a>
+### NrqlAlertConditionTimeoutsOutputReference <a name="NrqlAlertConditionTimeoutsOutputReference" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -6922,20 +6922,20 @@ nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -6947,30 +6947,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -6978,13 +6978,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -6992,13 +6992,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -7006,13 +7006,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -7020,13 +7020,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -7034,13 +7034,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -7048,13 +7048,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -7062,13 +7062,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -7076,13 +7076,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -7090,13 +7090,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -7104,13 +7104,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -7120,13 +7120,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -7136,7 +7136,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
@@ -7147,15 +7147,15 @@ def reset_create() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -7169,7 +7169,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -7179,7 +7179,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -7189,7 +7189,7 @@ create_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -7199,23 +7199,23 @@ create: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | NrqlAlertConditionTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a>
 
 ---
 
 
-### NrqlAlertConditionWarningOutputReference <a name="NrqlAlertConditionWarningOutputReference" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference"></a>
+### NrqlAlertConditionWarningOutputReference <a name="NrqlAlertConditionWarningOutputReference" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionWarningOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -7225,20 +7225,20 @@ nrqlAlertCondition.NrqlAlertConditionWarningOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -7250,37 +7250,37 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.putPrediction">put_prediction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetDisableHealthStatusReporting">reset_disable_health_status_reporting</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetDuration">reset_duration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetOperator">reset_operator</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetPrediction">reset_prediction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetThresholdDuration">reset_threshold_duration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetThresholdOccurrences">reset_threshold_occurrences</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetTimeFunction">reset_time_function</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.putPrediction">put_prediction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetDisableHealthStatusReporting">reset_disable_health_status_reporting</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetDuration">reset_duration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetOperator">reset_operator</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetPrediction">reset_prediction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetThresholdDuration">reset_threshold_duration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetThresholdOccurrences">reset_threshold_occurrences</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetTimeFunction">reset_time_function</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -7288,13 +7288,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -7302,13 +7302,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -7316,13 +7316,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -7330,13 +7330,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -7344,13 +7344,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -7358,13 +7358,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -7372,13 +7372,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -7386,13 +7386,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -7400,13 +7400,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -7414,13 +7414,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -7430,13 +7430,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -7446,7 +7446,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_prediction` <a name="put_prediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.putPrediction"></a>
+##### `put_prediction` <a name="put_prediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.putPrediction"></a>
 
 ```python
 def put_prediction(
@@ -7455,7 +7455,7 @@ def put_prediction(
 ) -> None
 ```
 
-###### `predict_by`<sup>Optional</sup> <a name="predict_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.putPrediction.parameter.predictBy"></a>
+###### `predict_by`<sup>Optional</sup> <a name="predict_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.putPrediction.parameter.predictBy"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -7463,59 +7463,59 @@ BETA PREVIEW: the `predict_by` field is in limited release and only enabled for 
 
 * The duration, in seconds, that the prediction should look into the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
 
 ---
 
-###### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.putPrediction.parameter.preferPredictionViolation"></a>
+###### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.putPrediction.parameter.preferPredictionViolation"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis.
 
 * If a prediction incident is open when a term's static threshold is breached by the actual signal, default behavior is to close the prediction incident and open a static incident. Setting `prefer_prediction_violation` to `true` overrides this behavior leaving the prediction incident open and preventing a static incident from opening.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
 
 ---
 
-##### `reset_disable_health_status_reporting` <a name="reset_disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetDisableHealthStatusReporting"></a>
+##### `reset_disable_health_status_reporting` <a name="reset_disable_health_status_reporting" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetDisableHealthStatusReporting"></a>
 
 ```python
 def reset_disable_health_status_reporting() -> None
 ```
 
-##### `reset_duration` <a name="reset_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetDuration"></a>
+##### `reset_duration` <a name="reset_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetDuration"></a>
 
 ```python
 def reset_duration() -> None
 ```
 
-##### `reset_operator` <a name="reset_operator" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetOperator"></a>
+##### `reset_operator` <a name="reset_operator" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetOperator"></a>
 
 ```python
 def reset_operator() -> None
 ```
 
-##### `reset_prediction` <a name="reset_prediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetPrediction"></a>
+##### `reset_prediction` <a name="reset_prediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetPrediction"></a>
 
 ```python
 def reset_prediction() -> None
 ```
 
-##### `reset_threshold_duration` <a name="reset_threshold_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetThresholdDuration"></a>
+##### `reset_threshold_duration` <a name="reset_threshold_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetThresholdDuration"></a>
 
 ```python
 def reset_threshold_duration() -> None
 ```
 
-##### `reset_threshold_occurrences` <a name="reset_threshold_occurrences" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetThresholdOccurrences"></a>
+##### `reset_threshold_occurrences` <a name="reset_threshold_occurrences" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetThresholdOccurrences"></a>
 
 ```python
 def reset_threshold_occurrences() -> None
 ```
 
-##### `reset_time_function` <a name="reset_time_function" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetTimeFunction"></a>
+##### `reset_time_function` <a name="reset_time_function" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.resetTimeFunction"></a>
 
 ```python
 def reset_time_function() -> None
@@ -7526,29 +7526,29 @@ def reset_time_function() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.prediction">prediction</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference">NrqlAlertConditionWarningPredictionOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.disableHealthStatusReportingInput">disable_health_status_reporting_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.durationInput">duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.predictionInput">prediction_input</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdDurationInput">threshold_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdInput">threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdOccurrencesInput">threshold_occurrences_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.timeFunctionInput">time_function_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdOccurrences">threshold_occurrences</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.timeFunction">time_function</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.prediction">prediction</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference">NrqlAlertConditionWarningPredictionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.disableHealthStatusReportingInput">disable_health_status_reporting_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.durationInput">duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.predictionInput">prediction_input</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdDurationInput">threshold_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdInput">threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdOccurrencesInput">threshold_occurrences_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.timeFunctionInput">time_function_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdOccurrences">threshold_occurrences</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.timeFunction">time_function</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -7562,7 +7562,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -7572,27 +7572,27 @@ fqn: str
 
 ---
 
-##### `prediction`<sup>Required</sup> <a name="prediction" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.prediction"></a>
+##### `prediction`<sup>Required</sup> <a name="prediction" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.prediction"></a>
 
 ```python
 prediction: NrqlAlertConditionWarningPredictionOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference">NrqlAlertConditionWarningPredictionOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference">NrqlAlertConditionWarningPredictionOutputReference</a>
 
 ---
 
-##### `disable_health_status_reporting_input`<sup>Optional</sup> <a name="disable_health_status_reporting_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.disableHealthStatusReportingInput"></a>
+##### `disable_health_status_reporting_input`<sup>Optional</sup> <a name="disable_health_status_reporting_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.disableHealthStatusReportingInput"></a>
 
 ```python
 disable_health_status_reporting_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `duration_input`<sup>Optional</sup> <a name="duration_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.durationInput"></a>
+##### `duration_input`<sup>Optional</sup> <a name="duration_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.durationInput"></a>
 
 ```python
 duration_input: typing.Union[int, float]
@@ -7602,7 +7602,7 @@ duration_input: typing.Union[int, float]
 
 ---
 
-##### `operator_input`<sup>Optional</sup> <a name="operator_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.operatorInput"></a>
+##### `operator_input`<sup>Optional</sup> <a name="operator_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.operatorInput"></a>
 
 ```python
 operator_input: str
@@ -7612,17 +7612,17 @@ operator_input: str
 
 ---
 
-##### `prediction_input`<sup>Optional</sup> <a name="prediction_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.predictionInput"></a>
+##### `prediction_input`<sup>Optional</sup> <a name="prediction_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.predictionInput"></a>
 
 ```python
 prediction_input: NrqlAlertConditionWarningPrediction
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a>
 
 ---
 
-##### `threshold_duration_input`<sup>Optional</sup> <a name="threshold_duration_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdDurationInput"></a>
+##### `threshold_duration_input`<sup>Optional</sup> <a name="threshold_duration_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdDurationInput"></a>
 
 ```python
 threshold_duration_input: typing.Union[int, float]
@@ -7632,7 +7632,7 @@ threshold_duration_input: typing.Union[int, float]
 
 ---
 
-##### `threshold_input`<sup>Optional</sup> <a name="threshold_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdInput"></a>
+##### `threshold_input`<sup>Optional</sup> <a name="threshold_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdInput"></a>
 
 ```python
 threshold_input: typing.Union[int, float]
@@ -7642,7 +7642,7 @@ threshold_input: typing.Union[int, float]
 
 ---
 
-##### `threshold_occurrences_input`<sup>Optional</sup> <a name="threshold_occurrences_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdOccurrencesInput"></a>
+##### `threshold_occurrences_input`<sup>Optional</sup> <a name="threshold_occurrences_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdOccurrencesInput"></a>
 
 ```python
 threshold_occurrences_input: str
@@ -7652,7 +7652,7 @@ threshold_occurrences_input: str
 
 ---
 
-##### `time_function_input`<sup>Optional</sup> <a name="time_function_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.timeFunctionInput"></a>
+##### `time_function_input`<sup>Optional</sup> <a name="time_function_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.timeFunctionInput"></a>
 
 ```python
 time_function_input: str
@@ -7662,17 +7662,17 @@ time_function_input: str
 
 ---
 
-##### `disable_health_status_reporting`<sup>Required</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.disableHealthStatusReporting"></a>
+##### `disable_health_status_reporting`<sup>Required</sup> <a name="disable_health_status_reporting" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.disableHealthStatusReporting"></a>
 
 ```python
 disable_health_status_reporting: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `duration`<sup>Required</sup> <a name="duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.duration"></a>
+##### `duration`<sup>Required</sup> <a name="duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.duration"></a>
 
 ```python
 duration: typing.Union[int, float]
@@ -7682,7 +7682,7 @@ duration: typing.Union[int, float]
 
 ---
 
-##### `operator`<sup>Required</sup> <a name="operator" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.operator"></a>
+##### `operator`<sup>Required</sup> <a name="operator" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.operator"></a>
 
 ```python
 operator: str
@@ -7692,7 +7692,7 @@ operator: str
 
 ---
 
-##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.threshold"></a>
+##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.threshold"></a>
 
 ```python
 threshold: typing.Union[int, float]
@@ -7702,7 +7702,7 @@ threshold: typing.Union[int, float]
 
 ---
 
-##### `threshold_duration`<sup>Required</sup> <a name="threshold_duration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdDuration"></a>
+##### `threshold_duration`<sup>Required</sup> <a name="threshold_duration" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdDuration"></a>
 
 ```python
 threshold_duration: typing.Union[int, float]
@@ -7712,7 +7712,7 @@ threshold_duration: typing.Union[int, float]
 
 ---
 
-##### `threshold_occurrences`<sup>Required</sup> <a name="threshold_occurrences" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdOccurrences"></a>
+##### `threshold_occurrences`<sup>Required</sup> <a name="threshold_occurrences" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdOccurrences"></a>
 
 ```python
 threshold_occurrences: str
@@ -7722,7 +7722,7 @@ threshold_occurrences: str
 
 ---
 
-##### `time_function`<sup>Required</sup> <a name="time_function" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.timeFunction"></a>
+##### `time_function`<sup>Required</sup> <a name="time_function" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.timeFunction"></a>
 
 ```python
 time_function: str
@@ -7732,23 +7732,23 @@ time_function: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: NrqlAlertConditionWarning
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning">NrqlAlertConditionWarning</a>
 
 ---
 
 
-### NrqlAlertConditionWarningPredictionOutputReference <a name="NrqlAlertConditionWarningPredictionOutputReference" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference"></a>
+### NrqlAlertConditionWarningPredictionOutputReference <a name="NrqlAlertConditionWarningPredictionOutputReference" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_newrelic import nrql_alert_condition
+from cdktn_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -7758,20 +7758,20 @@ nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -7783,31 +7783,31 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.resetPredictBy">reset_predict_by</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.resetPreferPredictionViolation">reset_prefer_prediction_violation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.resetPredictBy">reset_predict_by</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.resetPreferPredictionViolation">reset_prefer_prediction_violation</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -7815,13 +7815,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -7829,13 +7829,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -7843,13 +7843,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -7857,13 +7857,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -7871,13 +7871,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -7885,13 +7885,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -7899,13 +7899,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -7913,13 +7913,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -7927,13 +7927,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -7941,13 +7941,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -7957,13 +7957,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -7973,13 +7973,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_predict_by` <a name="reset_predict_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.resetPredictBy"></a>
+##### `reset_predict_by` <a name="reset_predict_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.resetPredictBy"></a>
 
 ```python
 def reset_predict_by() -> None
 ```
 
-##### `reset_prefer_prediction_violation` <a name="reset_prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.resetPreferPredictionViolation"></a>
+##### `reset_prefer_prediction_violation` <a name="reset_prefer_prediction_violation" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.resetPreferPredictionViolation"></a>
 
 ```python
 def reset_prefer_prediction_violation() -> None
@@ -7990,17 +7990,17 @@ def reset_prefer_prediction_violation() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.predictByInput">predict_by_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.preferPredictionViolationInput">prefer_prediction_violation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.predictByInput">predict_by_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.preferPredictionViolationInput">prefer_prediction_violation_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -8014,7 +8014,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -8024,7 +8024,7 @@ fqn: str
 
 ---
 
-##### `predict_by_input`<sup>Optional</sup> <a name="predict_by_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.predictByInput"></a>
+##### `predict_by_input`<sup>Optional</sup> <a name="predict_by_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.predictByInput"></a>
 
 ```python
 predict_by_input: typing.Union[int, float]
@@ -8034,17 +8034,17 @@ predict_by_input: typing.Union[int, float]
 
 ---
 
-##### `prefer_prediction_violation_input`<sup>Optional</sup> <a name="prefer_prediction_violation_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.preferPredictionViolationInput"></a>
+##### `prefer_prediction_violation_input`<sup>Optional</sup> <a name="prefer_prediction_violation_input" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.preferPredictionViolationInput"></a>
 
 ```python
 prefer_prediction_violation_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `predict_by`<sup>Required</sup> <a name="predict_by" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.predictBy"></a>
+##### `predict_by`<sup>Required</sup> <a name="predict_by" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.predictBy"></a>
 
 ```python
 predict_by: typing.Union[int, float]
@@ -8054,23 +8054,23 @@ predict_by: typing.Union[int, float]
 
 ---
 
-##### `prefer_prediction_violation`<sup>Required</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.preferPredictionViolation"></a>
+##### `prefer_prediction_violation`<sup>Required</sup> <a name="prefer_prediction_violation" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.preferPredictionViolation"></a>
 
 ```python
 prefer_prediction_violation: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: NrqlAlertConditionWarningPrediction
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a>
+- *Type:* <a href="#@cdktn/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a>
 
 ---
 

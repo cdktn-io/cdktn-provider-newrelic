@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkloadConfig extends cdktf.TerraformMetaArguments {
+export interface WorkloadConfig extends cdktn.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to create the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#account_id Workload#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#account_id Workload#account_id}
   */
   readonly accountId?: number;
   /**
   * Relevant information about the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#description Workload#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#description Workload#description}
   */
   readonly description?: string;
   /**
   * A list of entity GUIDs manually assigned to this workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#entity_guids Workload#entity_guids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#entity_guids Workload#entity_guids}
   */
   readonly entityGuids?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#id Workload#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#id Workload#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,31 +40,31 @@ export interface WorkloadConfig extends cdktf.TerraformMetaArguments {
   /**
   * The workload's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#name Workload#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#name Workload#name}
   */
   readonly name: string;
   /**
   * A list of account IDs that will be used to get entities from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
   */
   readonly scopeAccountIds?: number[];
   /**
   * entity_search_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#entity_search_query Workload#entity_search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#entity_search_query Workload#entity_search_query}
   */
-  readonly entitySearchQuery?: WorkloadEntitySearchQuery[] | cdktf.IResolvable;
+  readonly entitySearchQuery?: WorkloadEntitySearchQuery[] | cdktn.IResolvable;
   /**
   * status_config_automatic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
   */
   readonly statusConfigAutomatic?: WorkloadStatusConfigAutomatic;
   /**
   * status_config_static block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#status_config_static Workload#status_config_static}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#status_config_static Workload#status_config_static}
   */
   readonly statusConfigStatic?: WorkloadStatusConfigStatic;
 }
@@ -72,30 +72,30 @@ export interface WorkloadEntitySearchQuery {
   /**
   * A valid entity search query; empty, and null values are considered invalid.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#query Workload#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#query Workload#query}
   */
   readonly query: string;
 }
 
-export function workloadEntitySearchQueryToTerraform(struct?: WorkloadEntitySearchQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadEntitySearchQueryToTerraform(struct?: WorkloadEntitySearchQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
-export function workloadEntitySearchQueryToHclTerraform(struct?: WorkloadEntitySearchQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadEntitySearchQueryToHclTerraform(struct?: WorkloadEntitySearchQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -106,9 +106,9 @@ export function workloadEntitySearchQueryToHclTerraform(struct?: WorkloadEntityS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadEntitySearchQueryOutputReference extends cdktf.ComplexObject {
+export class WorkloadEntitySearchQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -116,11 +116,11 @@ export class WorkloadEntitySearchQueryOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkloadEntitySearchQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkloadEntitySearchQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,13 +133,13 @@ export class WorkloadEntitySearchQueryOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkloadEntitySearchQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkloadEntitySearchQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._query = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -164,15 +164,15 @@ export class WorkloadEntitySearchQueryOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class WorkloadEntitySearchQueryList extends cdktf.ComplexList {
-  public internalValue? : WorkloadEntitySearchQuery[] | cdktf.IResolvable
+export class WorkloadEntitySearchQueryList extends cdktn.ComplexList {
+  public internalValue? : WorkloadEntitySearchQuery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -187,69 +187,69 @@ export interface WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEnti
   /**
   * The grouping to be applied to the remaining entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#group_by Workload#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#group_by Workload#group_by}
   */
   readonly groupBy: string;
   /**
   * The rollup strategy that is applied to a group of entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#strategy Workload#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#strategy Workload#strategy}
   */
   readonly strategy: string;
   /**
   * Type of threshold defined for the rule. This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#threshold_type Workload#threshold_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#threshold_type Workload#threshold_type}
   */
   readonly thresholdType?: string;
   /**
   * Threshold value defined for the rule. This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#threshold_value Workload#threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#threshold_value Workload#threshold_value}
   */
   readonly thresholdValue?: number;
 }
 
 export function workloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupToTerraform(struct?: WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupOutputReference | WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_by: cdktf.stringToTerraform(struct!.groupBy),
-    strategy: cdktf.stringToTerraform(struct!.strategy),
-    threshold_type: cdktf.stringToTerraform(struct!.thresholdType),
-    threshold_value: cdktf.numberToTerraform(struct!.thresholdValue),
+    group_by: cdktn.stringToTerraform(struct!.groupBy),
+    strategy: cdktn.stringToTerraform(struct!.strategy),
+    threshold_type: cdktn.stringToTerraform(struct!.thresholdType),
+    threshold_value: cdktn.numberToTerraform(struct!.thresholdValue),
   }
 }
 
 
 export function workloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupToHclTerraform(struct?: WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupOutputReference | WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_by: {
-      value: cdktf.stringToHclTerraform(struct!.groupBy),
+      value: cdktn.stringToHclTerraform(struct!.groupBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     strategy: {
-      value: cdktf.stringToHclTerraform(struct!.strategy),
+      value: cdktn.stringToHclTerraform(struct!.strategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     threshold_type: {
-      value: cdktf.stringToHclTerraform(struct!.thresholdType),
+      value: cdktn.stringToHclTerraform(struct!.thresholdType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     threshold_value: {
-      value: cdktf.numberToHclTerraform(struct!.thresholdValue),
+      value: cdktn.numberToHclTerraform(struct!.thresholdValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -260,14 +260,14 @@ export function workloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupOutputReference extends cdktf.ComplexObject {
+export class WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -372,14 +372,14 @@ export interface WorkloadStatusConfigAutomaticRemainingEntitiesRule {
   /**
   * remaining_entities_rule_rollup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
   */
   readonly remainingEntitiesRuleRollup: WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup;
 }
 
 export function workloadStatusConfigAutomaticRemainingEntitiesRuleToTerraform(struct?: WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference | WorkloadStatusConfigAutomaticRemainingEntitiesRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -389,8 +389,8 @@ export function workloadStatusConfigAutomaticRemainingEntitiesRuleToTerraform(st
 
 
 export function workloadStatusConfigAutomaticRemainingEntitiesRuleToHclTerraform(struct?: WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference | WorkloadStatusConfigAutomaticRemainingEntitiesRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -406,14 +406,14 @@ export function workloadStatusConfigAutomaticRemainingEntitiesRuleToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference extends cdktf.ComplexObject {
+export class WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -455,30 +455,30 @@ export interface WorkloadStatusConfigAutomaticRuleNrqlQuery {
   /**
   * The entity search query that is used to perform the search of a group of entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#query Workload#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#query Workload#query}
   */
   readonly query: string;
 }
 
-export function workloadStatusConfigAutomaticRuleNrqlQueryToTerraform(struct?: WorkloadStatusConfigAutomaticRuleNrqlQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadStatusConfigAutomaticRuleNrqlQueryToTerraform(struct?: WorkloadStatusConfigAutomaticRuleNrqlQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
-export function workloadStatusConfigAutomaticRuleNrqlQueryToHclTerraform(struct?: WorkloadStatusConfigAutomaticRuleNrqlQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadStatusConfigAutomaticRuleNrqlQueryToHclTerraform(struct?: WorkloadStatusConfigAutomaticRuleNrqlQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -489,9 +489,9 @@ export function workloadStatusConfigAutomaticRuleNrqlQueryToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference extends cdktf.ComplexObject {
+export class WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -499,11 +499,11 @@ export class WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkloadStatusConfigAutomaticRuleNrqlQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkloadStatusConfigAutomaticRuleNrqlQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -516,13 +516,13 @@ export class WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkloadStatusConfigAutomaticRuleNrqlQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkloadStatusConfigAutomaticRuleNrqlQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._query = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -547,15 +547,15 @@ export class WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference extends c
   }
 }
 
-export class WorkloadStatusConfigAutomaticRuleNrqlQueryList extends cdktf.ComplexList {
-  public internalValue? : WorkloadStatusConfigAutomaticRuleNrqlQuery[] | cdktf.IResolvable
+export class WorkloadStatusConfigAutomaticRuleNrqlQueryList extends cdktn.ComplexList {
+  public internalValue? : WorkloadStatusConfigAutomaticRuleNrqlQuery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -570,56 +570,56 @@ export interface WorkloadStatusConfigAutomaticRuleRollup {
   /**
   * The rollup strategy that is applied to a group of entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#strategy Workload#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#strategy Workload#strategy}
   */
   readonly strategy: string;
   /**
   * Type of threshold defined for the rule. This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#threshold_type Workload#threshold_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#threshold_type Workload#threshold_type}
   */
   readonly thresholdType?: string;
   /**
   * Threshold value defined for the rule. This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#threshold_value Workload#threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#threshold_value Workload#threshold_value}
   */
   readonly thresholdValue?: number;
 }
 
 export function workloadStatusConfigAutomaticRuleRollupToTerraform(struct?: WorkloadStatusConfigAutomaticRuleRollupOutputReference | WorkloadStatusConfigAutomaticRuleRollup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    strategy: cdktf.stringToTerraform(struct!.strategy),
-    threshold_type: cdktf.stringToTerraform(struct!.thresholdType),
-    threshold_value: cdktf.numberToTerraform(struct!.thresholdValue),
+    strategy: cdktn.stringToTerraform(struct!.strategy),
+    threshold_type: cdktn.stringToTerraform(struct!.thresholdType),
+    threshold_value: cdktn.numberToTerraform(struct!.thresholdValue),
   }
 }
 
 
 export function workloadStatusConfigAutomaticRuleRollupToHclTerraform(struct?: WorkloadStatusConfigAutomaticRuleRollupOutputReference | WorkloadStatusConfigAutomaticRuleRollup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     strategy: {
-      value: cdktf.stringToHclTerraform(struct!.strategy),
+      value: cdktn.stringToHclTerraform(struct!.strategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     threshold_type: {
-      value: cdktf.stringToHclTerraform(struct!.thresholdType),
+      value: cdktn.stringToHclTerraform(struct!.thresholdType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     threshold_value: {
-      value: cdktf.numberToHclTerraform(struct!.thresholdValue),
+      value: cdktn.numberToHclTerraform(struct!.thresholdValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -630,14 +630,14 @@ export function workloadStatusConfigAutomaticRuleRollupToHclTerraform(struct?: W
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadStatusConfigAutomaticRuleRollupOutputReference extends cdktf.ComplexObject {
+export class WorkloadStatusConfigAutomaticRuleRollupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -723,50 +723,50 @@ export interface WorkloadStatusConfigAutomaticRule {
   /**
   * A list of entity GUIDs composing the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#entity_guids Workload#entity_guids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#entity_guids Workload#entity_guids}
   */
   readonly entityGuids?: string[];
   /**
   * nrql_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#nrql_query Workload#nrql_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#nrql_query Workload#nrql_query}
   */
-  readonly nrqlQuery?: WorkloadStatusConfigAutomaticRuleNrqlQuery[] | cdktf.IResolvable;
+  readonly nrqlQuery?: WorkloadStatusConfigAutomaticRuleNrqlQuery[] | cdktn.IResolvable;
   /**
   * rollup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#rollup Workload#rollup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#rollup Workload#rollup}
   */
   readonly rollup: WorkloadStatusConfigAutomaticRuleRollup;
 }
 
-export function workloadStatusConfigAutomaticRuleToTerraform(struct?: WorkloadStatusConfigAutomaticRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadStatusConfigAutomaticRuleToTerraform(struct?: WorkloadStatusConfigAutomaticRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entity_guids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.entityGuids),
-    nrql_query: cdktf.listMapper(workloadStatusConfigAutomaticRuleNrqlQueryToTerraform, true)(struct!.nrqlQuery),
+    entity_guids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.entityGuids),
+    nrql_query: cdktn.listMapper(workloadStatusConfigAutomaticRuleNrqlQueryToTerraform, true)(struct!.nrqlQuery),
     rollup: workloadStatusConfigAutomaticRuleRollupToTerraform(struct!.rollup),
   }
 }
 
 
-export function workloadStatusConfigAutomaticRuleToHclTerraform(struct?: WorkloadStatusConfigAutomaticRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadStatusConfigAutomaticRuleToHclTerraform(struct?: WorkloadStatusConfigAutomaticRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entity_guids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.entityGuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.entityGuids),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     nrql_query: {
-      value: cdktf.listMapperHcl(workloadStatusConfigAutomaticRuleNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      value: cdktn.listMapperHcl(workloadStatusConfigAutomaticRuleNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
       isBlock: true,
       type: "set",
       storageClassType: "WorkloadStatusConfigAutomaticRuleNrqlQueryList",
@@ -783,9 +783,9 @@ export function workloadStatusConfigAutomaticRuleToHclTerraform(struct?: Workloa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadStatusConfigAutomaticRuleOutputReference extends cdktf.ComplexObject {
+export class WorkloadStatusConfigAutomaticRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -793,11 +793,11 @@ export class WorkloadStatusConfigAutomaticRuleOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkloadStatusConfigAutomaticRule | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkloadStatusConfigAutomaticRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -818,7 +818,7 @@ export class WorkloadStatusConfigAutomaticRuleOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkloadStatusConfigAutomaticRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkloadStatusConfigAutomaticRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -826,7 +826,7 @@ export class WorkloadStatusConfigAutomaticRuleOutputReference extends cdktf.Comp
       this._nrqlQuery.internalValue = undefined;
       this._rollup.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -842,7 +842,7 @@ export class WorkloadStatusConfigAutomaticRuleOutputReference extends cdktf.Comp
   // entity_guids - computed: true, optional: true, required: false
   private _entityGuids?: string[]; 
   public get entityGuids() {
-    return cdktf.Fn.tolist(this.getListAttribute('entity_guids'));
+    return cdktn.Fn.tolist(this.getListAttribute('entity_guids'));
   }
   public set entityGuids(value: string[]) {
     this._entityGuids = value;
@@ -860,7 +860,7 @@ export class WorkloadStatusConfigAutomaticRuleOutputReference extends cdktf.Comp
   public get nrqlQuery() {
     return this._nrqlQuery;
   }
-  public putNrqlQuery(value: WorkloadStatusConfigAutomaticRuleNrqlQuery[] | cdktf.IResolvable) {
+  public putNrqlQuery(value: WorkloadStatusConfigAutomaticRuleNrqlQuery[] | cdktn.IResolvable) {
     this._nrqlQuery.internalValue = value;
   }
   public resetNrqlQuery() {
@@ -885,15 +885,15 @@ export class WorkloadStatusConfigAutomaticRuleOutputReference extends cdktf.Comp
   }
 }
 
-export class WorkloadStatusConfigAutomaticRuleList extends cdktf.ComplexList {
-  public internalValue? : WorkloadStatusConfigAutomaticRule[] | cdktf.IResolvable
+export class WorkloadStatusConfigAutomaticRuleList extends cdktn.ComplexList {
+  public internalValue? : WorkloadStatusConfigAutomaticRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -908,44 +908,44 @@ export interface WorkloadStatusConfigAutomatic {
   /**
   * Whether the automatic status configuration is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#enabled Workload#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#enabled Workload#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * remaining_entities_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
   */
   readonly remainingEntitiesRule?: WorkloadStatusConfigAutomaticRemainingEntitiesRule;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#rule Workload#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#rule Workload#rule}
   */
-  readonly rule?: WorkloadStatusConfigAutomaticRule[] | cdktf.IResolvable;
+  readonly rule?: WorkloadStatusConfigAutomaticRule[] | cdktn.IResolvable;
 }
 
 export function workloadStatusConfigAutomaticToTerraform(struct?: WorkloadStatusConfigAutomaticOutputReference | WorkloadStatusConfigAutomatic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
     remaining_entities_rule: workloadStatusConfigAutomaticRemainingEntitiesRuleToTerraform(struct!.remainingEntitiesRule),
-    rule: cdktf.listMapper(workloadStatusConfigAutomaticRuleToTerraform, true)(struct!.rule),
+    rule: cdktn.listMapper(workloadStatusConfigAutomaticRuleToTerraform, true)(struct!.rule),
   }
 }
 
 
 export function workloadStatusConfigAutomaticToHclTerraform(struct?: WorkloadStatusConfigAutomaticOutputReference | WorkloadStatusConfigAutomatic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -957,7 +957,7 @@ export function workloadStatusConfigAutomaticToHclTerraform(struct?: WorkloadSta
       storageClassType: "WorkloadStatusConfigAutomaticRemainingEntitiesRuleList",
     },
     rule: {
-      value: cdktf.listMapperHcl(workloadStatusConfigAutomaticRuleToHclTerraform, true)(struct!.rule),
+      value: cdktn.listMapperHcl(workloadStatusConfigAutomaticRuleToHclTerraform, true)(struct!.rule),
       isBlock: true,
       type: "set",
       storageClassType: "WorkloadStatusConfigAutomaticRuleList",
@@ -968,14 +968,14 @@ export function workloadStatusConfigAutomaticToHclTerraform(struct?: WorkloadSta
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadStatusConfigAutomaticOutputReference extends cdktf.ComplexObject {
+export class WorkloadStatusConfigAutomaticOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1013,11 +1013,11 @@ export class WorkloadStatusConfigAutomaticOutputReference extends cdktf.ComplexO
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1046,7 +1046,7 @@ export class WorkloadStatusConfigAutomaticOutputReference extends cdktf.ComplexO
   public get rule() {
     return this._rule;
   }
-  public putRule(value: WorkloadStatusConfigAutomaticRule[] | cdktf.IResolvable) {
+  public putRule(value: WorkloadStatusConfigAutomaticRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -1061,69 +1061,69 @@ export interface WorkloadStatusConfigStatic {
   /**
   * A description that provides additional details about the status of the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#description Workload#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#description Workload#description}
   */
   readonly description?: string;
   /**
   * Whether the static status configuration is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#enabled Workload#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#enabled Workload#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The status of the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#status Workload#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#status Workload#status}
   */
   readonly status: string;
   /**
   * A short description of the status of the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#summary Workload#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#summary Workload#summary}
   */
   readonly summary?: string;
 }
 
 export function workloadStatusConfigStaticToTerraform(struct?: WorkloadStatusConfigStaticOutputReference | WorkloadStatusConfigStatic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    status: cdktf.stringToTerraform(struct!.status),
-    summary: cdktf.stringToTerraform(struct!.summary),
+    description: cdktn.stringToTerraform(struct!.description),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    status: cdktn.stringToTerraform(struct!.status),
+    summary: cdktn.stringToTerraform(struct!.summary),
   }
 }
 
 
 export function workloadStatusConfigStaticToHclTerraform(struct?: WorkloadStatusConfigStaticOutputReference | WorkloadStatusConfigStatic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     summary: {
-      value: cdktf.stringToHclTerraform(struct!.summary),
+      value: cdktn.stringToHclTerraform(struct!.summary),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1134,14 +1134,14 @@ export function workloadStatusConfigStaticToHclTerraform(struct?: WorkloadStatus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadStatusConfigStaticOutputReference extends cdktf.ComplexObject {
+export class WorkloadStatusConfigStaticOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1201,11 +1201,11 @@ export class WorkloadStatusConfigStaticOutputReference extends cdktf.ComplexObje
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1244,9 +1244,9 @@ export class WorkloadStatusConfigStaticOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload newrelic_workload}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload newrelic_workload}
 */
-export class Workload extends cdktf.TerraformResource {
+export class Workload extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1257,14 +1257,14 @@ export class Workload extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Workload resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Workload resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Workload to import
-  * @param importFromId The id of the existing Workload that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Workload that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Workload to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_workload", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_workload", importId: importFromId, provider });
       }
 
   // ===========
@@ -1272,7 +1272,7 @@ export class Workload extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workload newrelic_workload} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/workload newrelic_workload} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1283,7 +1283,7 @@ export class Workload extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_workload',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.76.3',
+        providerVersion: '3.80.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -1349,7 +1349,7 @@ export class Workload extends cdktf.TerraformResource {
   // entity_guids - computed: true, optional: true, required: false
   private _entityGuids?: string[]; 
   public get entityGuids() {
-    return cdktf.Fn.tolist(this.getListAttribute('entity_guids'));
+    return cdktn.Fn.tolist(this.getListAttribute('entity_guids'));
   }
   public set entityGuids(value: string[]) {
     this._entityGuids = value;
@@ -1404,7 +1404,7 @@ export class Workload extends cdktf.TerraformResource {
   // scope_account_ids - computed: true, optional: true, required: false
   private _scopeAccountIds?: number[]; 
   public get scopeAccountIds() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('scope_account_ids')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('scope_account_ids')));
   }
   public set scopeAccountIds(value: number[]) {
     this._scopeAccountIds = value;
@@ -1427,7 +1427,7 @@ export class Workload extends cdktf.TerraformResource {
   public get entitySearchQuery() {
     return this._entitySearchQuery;
   }
-  public putEntitySearchQuery(value: WorkloadEntitySearchQuery[] | cdktf.IResolvable) {
+  public putEntitySearchQuery(value: WorkloadEntitySearchQuery[] | cdktn.IResolvable) {
     this._entitySearchQuery.internalValue = value;
   }
   public resetEntitySearchQuery() {
@@ -1476,13 +1476,13 @@ export class Workload extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      description: cdktf.stringToTerraform(this._description),
-      entity_guids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._entityGuids),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      scope_account_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._scopeAccountIds),
-      entity_search_query: cdktf.listMapper(workloadEntitySearchQueryToTerraform, true)(this._entitySearchQuery.internalValue),
+      account_id: cdktn.numberToTerraform(this._accountId),
+      description: cdktn.stringToTerraform(this._description),
+      entity_guids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._entityGuids),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      scope_account_ids: cdktn.listMapper(cdktn.numberToTerraform, false)(this._scopeAccountIds),
+      entity_search_query: cdktn.listMapper(workloadEntitySearchQueryToTerraform, true)(this._entitySearchQuery.internalValue),
       status_config_automatic: workloadStatusConfigAutomaticToTerraform(this._statusConfigAutomatic.internalValue),
       status_config_static: workloadStatusConfigStaticToTerraform(this._statusConfigStatic.internalValue),
     };
@@ -1491,43 +1491,43 @@ export class Workload extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.numberToHclTerraform(this._accountId),
+        value: cdktn.numberToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       entity_guids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._entityGuids),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._entityGuids),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope_account_ids: {
-        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._scopeAccountIds),
+        value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(this._scopeAccountIds),
         isBlock: false,
         type: "set",
         storageClassType: "numberList",
       },
       entity_search_query: {
-        value: cdktf.listMapperHcl(workloadEntitySearchQueryToHclTerraform, true)(this._entitySearchQuery.internalValue),
+        value: cdktn.listMapperHcl(workloadEntitySearchQueryToHclTerraform, true)(this._entitySearchQuery.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WorkloadEntitySearchQueryList",
