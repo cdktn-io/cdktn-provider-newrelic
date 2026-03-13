@@ -4,7 +4,7 @@
 
 ### DataNewrelicNotificationDestination <a name="DataNewrelicNotificationDestination" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination newrelic_notification_destination}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/notification_destination newrelic_notification_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.Initializer"></a>
 
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.putSecureUrl">putSecureUrl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetAccountId">resetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetExactName">resetExactName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetSecureUrl">resetSecureUrl</a></code> | *No description.* |
@@ -307,6 +308,12 @@ public putSecureUrl(value: IResolvable | DataNewrelicNotificationDestinationSecu
 public resetAccountId(): void
 ```
 
+##### `resetExactName` <a name="resetExactName" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetExactName"></a>
+
+```typescript
+public resetExactName(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetId"></a>
 
 ```typescript
@@ -428,7 +435,7 @@ The construct id used in the generated config for the DataNewrelicNotificationDe
 
 The id of the existing DataNewrelicNotificationDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/notification_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -463,10 +470,12 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.status">status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.accountIdInput">accountIdInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.exactNameInput">exactNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.secureUrlInput">secureUrlInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationSecureUrl">DataNewrelicNotificationDestinationSecureUrl</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.accountId">accountId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.exactName">exactName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.name">name</a></code> | <code>string</code> | *No description.* |
 
@@ -664,6 +673,16 @@ public readonly accountIdInput: number;
 
 ---
 
+##### `exactNameInput`<sup>Optional</sup> <a name="exactNameInput" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.exactNameInput"></a>
+
+```typescript
+public readonly exactNameInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.idInput"></a>
 
 ```typescript
@@ -701,6 +720,16 @@ public readonly accountId: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `exactName`<sup>Required</sup> <a name="exactName" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.exactName"></a>
+
+```typescript
+public readonly exactName: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -766,8 +795,9 @@ const dataNewrelicNotificationDestinationConfig: dataNewrelicNotificationDestina
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.accountId">accountId</a></code> | <code>number</code> | The account ID under which to put the destination. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.exactName">exactName</a></code> | <code>string</code> | The exact name of the destination. Uses an exact match. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.id">id</a></code> | <code>string</code> | The ID of the destination. |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.name">name</a></code> | <code>string</code> | The name of the destination. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.name">name</a></code> | <code>string</code> | The name of the destination. Uses a contains match. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.secureUrl">secureUrl</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationSecureUrl">DataNewrelicNotificationDestinationSecureUrl</a>[]</code> | secure_url block. |
 
 ---
@@ -852,7 +882,21 @@ public readonly accountId: number;
 
 The account ID under which to put the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
+
+---
+
+##### `exactName`<sup>Optional</sup> <a name="exactName" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.exactName"></a>
+
+```typescript
+public readonly exactName: string;
+```
+
+- *Type:* string
+
+The exact name of the destination. Uses an exact match.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/notification_destination#exact_name DataNewrelicNotificationDestination#exact_name}
 
 ---
 
@@ -866,7 +910,7 @@ public readonly id: string;
 
 The ID of the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -881,9 +925,9 @@ public readonly name: string;
 
 - *Type:* string
 
-The name of the destination.
+The name of the destination. Uses a contains match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
 
 ---
 
@@ -897,7 +941,7 @@ public readonly secureUrl: IResolvable | DataNewrelicNotificationDestinationSecu
 
 secure_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination#secure_url DataNewrelicNotificationDestination#secure_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/notification_destination#secure_url DataNewrelicNotificationDestination#secure_url}
 
 ---
 
@@ -926,7 +970,7 @@ const dataNewrelicNotificationDestinationSecureUrl: dataNewrelicNotificationDest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationSecureUrl.property.prefix">prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationSecureUrl.property.prefix">prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}. |
 
 ---
 
@@ -938,7 +982,7 @@ public readonly prefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}.
 
 ---
 

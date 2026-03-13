@@ -4,7 +4,7 @@
 
 ### AccountManagement <a name="AccountManagement" id="@cdktn/provider-newrelic.accountManagement.AccountManagement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/account_management newrelic_account_management}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/account_management newrelic_account_management}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.accountManagement.AccountManagement.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the AccountManagement to impor
 
 The id of the existing AccountManagement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/account_management#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/account_management#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -845,7 +845,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/accountmanag
 | <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementConfig.property.name">Name</a></code> | <code>*string</code> | Name of the account to be created. |
 | <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementConfig.property.region">Region</a></code> | <code>*string</code> | A description of what this parsing rule represents. |
-| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/account_management#id AccountManagement#id}. |
+| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/account_management#id AccountManagement#id}. |
 | <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts">AccountManagementTimeouts</a></code> | timeouts block. |
 
 ---
@@ -930,7 +930,7 @@ Name *string
 
 Name of the account to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/account_management#name AccountManagement#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/account_management#name AccountManagement#name}
 
 ---
 
@@ -944,7 +944,7 @@ Region *string
 
 A description of what this parsing rule represents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/account_management#region AccountManagement#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/account_management#region AccountManagement#region}
 
 ---
 
@@ -956,7 +956,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/account_management#id AccountManagement#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/account_management#id AccountManagement#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -973,7 +973,7 @@ Timeouts AccountManagementTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/account_management#timeouts AccountManagement#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/account_management#timeouts AccountManagement#timeouts}
 
 ---
 
@@ -995,9 +995,9 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/accountmanag
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/account_management#create AccountManagement#create}. |
-| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/account_management#read AccountManagement#read}. |
-| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/account_management#update AccountManagement#update}. |
+| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/account_management#create AccountManagement#create}. |
+| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/account_management#read AccountManagement#read}. |
+| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/account_management#update AccountManagement#update}. |
 
 ---
 
@@ -1009,7 +1009,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/account_management#create AccountManagement#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/account_management#create AccountManagement#create}.
 
 ---
 
@@ -1021,7 +1021,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/account_management#read AccountManagement#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/account_management#read AccountManagement#read}.
 
 ---
 
@@ -1033,7 +1033,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/account_management#update AccountManagement#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/account_management#update AccountManagement#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### BrowserApplication <a name="BrowserApplication" id="@cdktn/provider-newrelic.browserApplication.BrowserApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application newrelic_browser_application}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/browser_application newrelic_browser_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.browserApplication.BrowserApplication.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the BrowserApplication to impo
 
 The id of the existing BrowserApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/browser_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,7 +951,7 @@ const browserApplicationConfig: browserApplication.BrowserApplicationConfig = { 
 | <code><a href="#@cdktn/provider-newrelic.browserApplication.BrowserApplicationConfig.property.accountId">accountId</a></code> | <code>number</code> | The account ID. |
 | <code><a href="#@cdktn/provider-newrelic.browserApplication.BrowserApplicationConfig.property.cookiesEnabled">cookiesEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Configure cookies. The default is enabled: true. |
 | <code><a href="#@cdktn/provider-newrelic.browserApplication.BrowserApplicationConfig.property.distributedTracingEnabled">distributedTracingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Configure distributed tracing in browser apps. The default is enabled: true. |
-| <code><a href="#@cdktn/provider-newrelic.browserApplication.BrowserApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#id BrowserApplication#id}. |
+| <code><a href="#@cdktn/provider-newrelic.browserApplication.BrowserApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/browser_application#id BrowserApplication#id}. |
 | <code><a href="#@cdktn/provider-newrelic.browserApplication.BrowserApplicationConfig.property.loaderType">loaderType</a></code> | <code>string</code> | Determines which browser loader is configured. The default is "SPA". |
 | <code><a href="#@cdktn/provider-newrelic.browserApplication.BrowserApplicationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-newrelic.browserApplication.BrowserApplicationTimeouts">BrowserApplicationTimeouts</a></code> | timeouts block. |
 
@@ -1037,7 +1037,7 @@ public readonly name: string;
 
 The name of the application to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#name BrowserApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/browser_application#name BrowserApplication#name}
 
 ---
 
@@ -1051,7 +1051,7 @@ public readonly accountId: number;
 
 The account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#account_id BrowserApplication#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/browser_application#account_id BrowserApplication#account_id}
 
 ---
 
@@ -1065,7 +1065,7 @@ public readonly cookiesEnabled: boolean | IResolvable;
 
 Configure cookies. The default is enabled: true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#cookies_enabled BrowserApplication#cookies_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/browser_application#cookies_enabled BrowserApplication#cookies_enabled}
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly distributedTracingEnabled: boolean | IResolvable;
 
 Configure distributed tracing in browser apps. The default is enabled: true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#distributed_tracing_enabled BrowserApplication#distributed_tracing_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/browser_application#distributed_tracing_enabled BrowserApplication#distributed_tracing_enabled}
 
 ---
 
@@ -1091,7 +1091,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#id BrowserApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/browser_application#id BrowserApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1108,7 +1108,7 @@ public readonly loaderType: string;
 
 Determines which browser loader is configured. The default is "SPA".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#loader_type BrowserApplication#loader_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/browser_application#loader_type BrowserApplication#loader_type}
 
 ---
 
@@ -1122,7 +1122,7 @@ public readonly timeouts: BrowserApplicationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#timeouts BrowserApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/browser_application#timeouts BrowserApplication#timeouts}
 
 ---
 
@@ -1140,8 +1140,8 @@ const browserApplicationTimeouts: browserApplication.BrowserApplicationTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.browserApplication.BrowserApplicationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#create BrowserApplication#create}. |
-| <code><a href="#@cdktn/provider-newrelic.browserApplication.BrowserApplicationTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#read BrowserApplication#read}. |
+| <code><a href="#@cdktn/provider-newrelic.browserApplication.BrowserApplicationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/browser_application#create BrowserApplication#create}. |
+| <code><a href="#@cdktn/provider-newrelic.browserApplication.BrowserApplicationTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/browser_application#read BrowserApplication#read}. |
 
 ---
 
@@ -1153,7 +1153,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#create BrowserApplication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/browser_application#create BrowserApplication#create}.
 
 ---
 
@@ -1165,7 +1165,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/browser_application#read BrowserApplication#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/browser_application#read BrowserApplication#read}.
 
 ---
 

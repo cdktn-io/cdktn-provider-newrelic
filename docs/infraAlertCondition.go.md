@@ -4,7 +4,7 @@
 
 ### InfraAlertCondition <a name="InfraAlertCondition" id="@cdktn/provider-newrelic.infraAlertCondition.InfraAlertCondition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition newrelic_infra_alert_condition}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition newrelic_infra_alert_condition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.infraAlertCondition.InfraAlertCondition.Initializer"></a>
 
@@ -606,7 +606,7 @@ The construct id used in the generated config for the InfraAlertCondition to imp
 
 The id of the existing InfraAlertCondition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1239,7 +1239,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/infraalertco
 | <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionConfig.property.description">Description</a></code> | <code>*string</code> | The description of the Infrastructure alert condition. |
 | <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether the condition is turned on or off. Valid values are true and false. Defaults to true. |
 | <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionConfig.property.event">Event</a></code> | <code>*string</code> | The metric event; for example, SystemSample or StorageSample. Supported by the infra_metric condition type. |
-| <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#id InfraAlertCondition#id}. |
+| <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#id InfraAlertCondition#id}. |
 | <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionConfig.property.integrationProvider">IntegrationProvider</a></code> | <code>*string</code> | For alerts on integrations, use this instead of event. Supported by the infra_metric condition type. |
 | <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionConfig.property.processWhere">ProcessWhere</a></code> | <code>*string</code> | Any filters applied to processes; for example: commandName = 'java'. Supported by the infra_process_running condition type. |
 | <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionConfig.property.runbookUrl">RunbookUrl</a></code> | <code>*string</code> | Runbook URL to display in notifications. |
@@ -1330,7 +1330,7 @@ Name *string
 
 The Infrastructure alert condition's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#name InfraAlertCondition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#name InfraAlertCondition#name}
 
 ---
 
@@ -1344,7 +1344,7 @@ PolicyId *f64
 
 The ID of the alert policy where this condition should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#policy_id InfraAlertCondition#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#policy_id InfraAlertCondition#policy_id}
 
 ---
 
@@ -1358,7 +1358,7 @@ Type *string
 
 The type of Infrastructure alert condition. Valid values are infra_process_running, infra_metric, and infra_host_not_reporting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#type InfraAlertCondition#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#type InfraAlertCondition#type}
 
 ---
 
@@ -1374,7 +1374,7 @@ The operator used to evaluate the threshold value.
 
 Valid values are above, below, and equal. Supported by the infra_metric and infra_process_running condition types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#comparison InfraAlertCondition#comparison}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#comparison InfraAlertCondition#comparison}
 
 ---
 
@@ -1388,7 +1388,7 @@ Critical InfraAlertConditionCritical
 
 critical block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#critical InfraAlertCondition#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#critical InfraAlertCondition#critical}
 
 ---
 
@@ -1402,7 +1402,7 @@ Description *string
 
 The description of the Infrastructure alert condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#description InfraAlertCondition#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#description InfraAlertCondition#description}
 
 ---
 
@@ -1416,7 +1416,7 @@ Enabled interface{}
 
 Whether the condition is turned on or off. Valid values are true and false. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#enabled InfraAlertCondition#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#enabled InfraAlertCondition#enabled}
 
 ---
 
@@ -1430,7 +1430,7 @@ Event *string
 
 The metric event; for example, SystemSample or StorageSample. Supported by the infra_metric condition type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#event InfraAlertCondition#event}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#event InfraAlertCondition#event}
 
 ---
 
@@ -1442,7 +1442,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#id InfraAlertCondition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#id InfraAlertCondition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1459,7 +1459,7 @@ IntegrationProvider *string
 
 For alerts on integrations, use this instead of event. Supported by the infra_metric condition type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#integration_provider InfraAlertCondition#integration_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#integration_provider InfraAlertCondition#integration_provider}
 
 ---
 
@@ -1473,7 +1473,7 @@ ProcessWhere *string
 
 Any filters applied to processes; for example: commandName = 'java'. Supported by the infra_process_running condition type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#process_where InfraAlertCondition#process_where}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#process_where InfraAlertCondition#process_where}
 
 ---
 
@@ -1487,7 +1487,7 @@ RunbookUrl *string
 
 Runbook URL to display in notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#runbook_url InfraAlertCondition#runbook_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#runbook_url InfraAlertCondition#runbook_url}
 
 ---
 
@@ -1503,7 +1503,7 @@ The attribute name to identify the metric being targeted;
 
 for example, cpuPercent, diskFreePercent, or memoryResidentSizeBytes. The underlying API will automatically populate this value for Infrastructure integrations (for example diskFreePercent), so make sure to explicitly include this value to avoid diff issues. Supported by the infra_metric condition type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#select InfraAlertCondition#select}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#select InfraAlertCondition#select}
 
 ---
 
@@ -1519,7 +1519,7 @@ Determines how much time, in hours, will pass before an incident is automaticall
 
 Valid values are 1, 2, 4, 8, 12, 24, 48, or 72
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#violation_close_timer InfraAlertCondition#violation_close_timer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#violation_close_timer InfraAlertCondition#violation_close_timer}
 
 ---
 
@@ -1533,7 +1533,7 @@ Warning InfraAlertConditionWarning
 
 warning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#warning InfraAlertCondition#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#warning InfraAlertCondition#warning}
 
 ---
 
@@ -1547,7 +1547,7 @@ Where *string
 
 If applicable, this identifies any Infrastructure host filters used; for example: hostname LIKE '%cassandra%'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#where InfraAlertCondition#where}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#where InfraAlertCondition#where}
 
 ---
 
@@ -1569,9 +1569,9 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/infraalertco
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionCritical.property.duration">Duration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#duration InfraAlertCondition#duration}. |
-| <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionCritical.property.timeFunction">TimeFunction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#time_function InfraAlertCondition#time_function}. |
-| <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionCritical.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#value InfraAlertCondition#value}. |
+| <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionCritical.property.duration">Duration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#duration InfraAlertCondition#duration}. |
+| <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionCritical.property.timeFunction">TimeFunction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#time_function InfraAlertCondition#time_function}. |
+| <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionCritical.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#value InfraAlertCondition#value}. |
 
 ---
 
@@ -1583,7 +1583,7 @@ Duration *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#duration InfraAlertCondition#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#duration InfraAlertCondition#duration}.
 
 ---
 
@@ -1595,7 +1595,7 @@ TimeFunction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#time_function InfraAlertCondition#time_function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#time_function InfraAlertCondition#time_function}.
 
 ---
 
@@ -1607,7 +1607,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#value InfraAlertCondition#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#value InfraAlertCondition#value}.
 
 ---
 
@@ -1629,9 +1629,9 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/infraalertco
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionWarning.property.duration">Duration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#duration InfraAlertCondition#duration}. |
-| <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionWarning.property.timeFunction">TimeFunction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#time_function InfraAlertCondition#time_function}. |
-| <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionWarning.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#value InfraAlertCondition#value}. |
+| <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionWarning.property.duration">Duration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#duration InfraAlertCondition#duration}. |
+| <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionWarning.property.timeFunction">TimeFunction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#time_function InfraAlertCondition#time_function}. |
+| <code><a href="#@cdktn/provider-newrelic.infraAlertCondition.InfraAlertConditionWarning.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#value InfraAlertCondition#value}. |
 
 ---
 
@@ -1643,7 +1643,7 @@ Duration *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#duration InfraAlertCondition#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#duration InfraAlertCondition#duration}.
 
 ---
 
@@ -1655,7 +1655,7 @@ TimeFunction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#time_function InfraAlertCondition#time_function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#time_function InfraAlertCondition#time_function}.
 
 ---
 
@@ -1667,7 +1667,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/infra_alert_condition#value InfraAlertCondition#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/infra_alert_condition#value InfraAlertCondition#value}.
 
 ---
 

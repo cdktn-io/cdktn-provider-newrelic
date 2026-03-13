@@ -4,7 +4,7 @@
 
 ### DataNewrelicGroup <a name="DataNewrelicGroup" id="@cdktn/provider-newrelic.dataNewrelicGroup.DataNewrelicGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/group newrelic_group}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/group newrelic_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicGroup.DataNewrelicGroup.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataNewrelicGroup to impor
 
 The id of the existing DataNewrelicGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -732,7 +732,7 @@ public readonly authenticationDomainId: string;
 
 The ID of the Authentication Domain the group being queried would belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/group#authentication_domain_id DataNewrelicGroup#authentication_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/group#authentication_domain_id DataNewrelicGroup#authentication_domain_id}
 
 ---
 
@@ -746,7 +746,7 @@ public readonly name: string;
 
 The name of the group to be queried.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/group#name DataNewrelicGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/group#name DataNewrelicGroup#name}
 
 ---
 
