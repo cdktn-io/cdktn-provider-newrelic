@@ -4,7 +4,7 @@
 
 ### DataNewrelicAccount <a name="DataNewrelicAccount" id="@cdktn/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/account newrelic_account}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/account newrelic_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.Initializer"></a>
 
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataNewrelicAccount to imp
 
 The id of the existing DataNewrelicAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,7 +721,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelic
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The ID of the account in New Relic. |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/account#id DataNewrelicAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/account#id DataNewrelicAccount#id}. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.property.name">Name</a></code> | <code>*string</code> | The name of the account in New Relic. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.property.scope">Scope</a></code> | <code>*string</code> | The scope of the account in New Relic.  Valid values are "global" and "in_region".  Defaults to "in_region". |
 
@@ -807,7 +807,7 @@ AccountId *f64
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/account#account_id DataNewrelicAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/account#account_id DataNewrelicAccount#account_id}
 
 ---
 
@@ -819,7 +819,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/account#id DataNewrelicAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/account#id DataNewrelicAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -836,7 +836,7 @@ Name *string
 
 The name of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/account#name DataNewrelicAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/account#name DataNewrelicAccount#name}
 
 ---
 
@@ -850,7 +850,7 @@ Scope *string
 
 The scope of the account in New Relic.  Valid values are "global" and "in_region".  Defaults to "in_region".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/account#scope DataNewrelicAccount#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/account#scope DataNewrelicAccount#scope}
 
 ---
 

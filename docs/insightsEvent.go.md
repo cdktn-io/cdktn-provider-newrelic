@@ -4,7 +4,7 @@
 
 ### InsightsEvent <a name="InsightsEvent" id="@cdktn/provider-newrelic.insightsEvent.InsightsEvent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event newrelic_insights_event}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/insights_event newrelic_insights_event}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.insightsEvent.InsightsEvent.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the InsightsEvent to import.
 
 The id of the existing InsightsEvent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/insights_event#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/insightseven
 | <code><a href="#@cdktn/provider-newrelic.insightsEvent.InsightsEventConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.insightsEvent.InsightsEventConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.insightsEvent.InsightsEventConfig.property.event">Event</a></code> | <code>interface{}</code> | event block. |
-| <code><a href="#@cdktn/provider-newrelic.insightsEvent.InsightsEventConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#id InsightsEvent#id}. |
+| <code><a href="#@cdktn/provider-newrelic.insightsEvent.InsightsEventConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/insights_event#id InsightsEvent#id}. |
 
 ---
 
@@ -864,7 +864,7 @@ Event interface{}
 
 event block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#event InsightsEvent#event}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/insights_event#event InsightsEvent#event}
 
 ---
 
@@ -876,7 +876,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#id InsightsEvent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/insights_event#id InsightsEvent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -917,7 +917,7 @@ Attribute interface{}
 
 attribute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#attribute InsightsEvent#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/insights_event#attribute InsightsEvent#attribute}
 
 ---
 
@@ -931,7 +931,7 @@ Type *string
 
 The event's name. Can be a combination of alphanumeric characters, underscores, and colons.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#type InsightsEvent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/insights_event#type InsightsEvent#type}
 
 ---
 
@@ -945,7 +945,7 @@ Timestamp *f64
 
 Must be a Unix epoch timestamp. You can define timestamps either in seconds or in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#timestamp InsightsEvent#timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/insights_event#timestamp InsightsEvent#timestamp}
 
 ---
 
@@ -983,7 +983,7 @@ Key *string
 
 The name of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#key InsightsEvent#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/insights_event#key InsightsEvent#key}
 
 ---
 
@@ -997,7 +997,7 @@ Value *string
 
 The value of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#value InsightsEvent#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/insights_event#value InsightsEvent#value}
 
 ---
 
@@ -1013,7 +1013,7 @@ Specify the type for the attribute value.
 
 This is useful when passing integer or float values to Insights. Allowed values are string, int, or float. Defaults to string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/resources/insights_event#type InsightsEvent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/insights_event#type InsightsEvent#type}
 
 ---
 

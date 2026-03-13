@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern
+// https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/test_grok_pattern
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataNewrelicTestGrokPatternConfig extends cdktn.TerraformMetaAr
   /**
   * The account id associated with the test grok.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern#account_id DataNewrelicTestGrokPattern#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/test_grok_pattern#account_id DataNewrelicTestGrokPattern#account_id}
   */
   readonly accountId?: number;
   /**
   * The Grok pattern to test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern#grok DataNewrelicTestGrokPattern#grok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/test_grok_pattern#grok DataNewrelicTestGrokPattern#grok}
   */
   readonly grok: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern#id DataNewrelicTestGrokPattern#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/test_grok_pattern#id DataNewrelicTestGrokPattern#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,7 +34,7 @@ export interface DataNewrelicTestGrokPatternConfig extends cdktn.TerraformMetaAr
   /**
   * The log lines to test the Grok pattern against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern#log_lines DataNewrelicTestGrokPattern#log_lines}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/test_grok_pattern#log_lines DataNewrelicTestGrokPattern#log_lines}
   */
   readonly logLines: string[];
 }
@@ -206,7 +206,7 @@ export class DataNewrelicTestGrokPatternTestGrokList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern}
 */
 export class DataNewrelicTestGrokPattern extends cdktn.TerraformDataSource {
 
@@ -222,7 +222,7 @@ export class DataNewrelicTestGrokPattern extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataNewrelicTestGrokPattern resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicTestGrokPattern to import
-  * @param importFromId The id of the existing DataNewrelicTestGrokPattern that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicTestGrokPattern that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/test_grok_pattern#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicTestGrokPattern to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -234,7 +234,7 @@ export class DataNewrelicTestGrokPattern extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.2/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -245,7 +245,7 @@ export class DataNewrelicTestGrokPattern extends cdktn.TerraformDataSource {
       terraformResourceType: 'newrelic_test_grok_pattern',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.80.2',
+        providerVersion: '3.80.3',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
