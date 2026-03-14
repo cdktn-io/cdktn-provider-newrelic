@@ -4,7 +4,7 @@
 
 ### Group <a name="Group" id="@cdktn/provider-newrelic.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/group newrelic_group}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/group newrelic_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.group.Group.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the Group to import.
 
 The id of the existing Group that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -821,7 +821,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/group"
 | <code><a href="#@cdktn/provider-newrelic.group.GroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.group.GroupConfig.property.authenticationDomainId">AuthenticationDomainId</a></code> | <code>*string</code> | The ID of the authentication domain the group will belong to. |
 | <code><a href="#@cdktn/provider-newrelic.group.GroupConfig.property.name">Name</a></code> | <code>*string</code> | The name of the group. |
-| <code><a href="#@cdktn/provider-newrelic.group.GroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktn/provider-newrelic.group.GroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktn/provider-newrelic.group.GroupConfig.property.userIds">UserIds</a></code> | <code>*[]*string</code> | IDs of users to be added to the group. |
 
 ---
@@ -906,7 +906,7 @@ AuthenticationDomainId *string
 
 The ID of the authentication domain the group will belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/group#authentication_domain_id Group#authentication_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/group#authentication_domain_id Group#authentication_domain_id}
 
 ---
 
@@ -920,7 +920,7 @@ Name *string
 
 The name of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/group#name Group#name}
 
 ---
 
@@ -932,7 +932,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -949,7 +949,7 @@ UserIds *[]*string
 
 IDs of users to be added to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/group#user_ids Group#user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/group#user_ids Group#user_ids}
 
 ---
 

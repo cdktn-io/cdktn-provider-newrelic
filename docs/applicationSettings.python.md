@@ -4,7 +4,7 @@
 
 ### ApplicationSettings <a name="ApplicationSettings" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings newrelic_application_settings}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings newrelic_application_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettings.Initializer"></a>
 
@@ -54,7 +54,7 @@ applicationSettings.ApplicationSettings(
 | <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.endUserApdexThreshold">end_user_apdex_threshold</a></code> | <code>typing.Union[int, float]</code> | Dummy field to support backward compatibility of previous version.should be removed with next major version. |
 | <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.errorCollector">error_collector</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>]</code> | error_collector block. |
 | <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.guid">guid</a></code> | <code>str</code> | The GUID of the application in New Relic. |
-| <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#id ApplicationSettings#id}. |
+| <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#id ApplicationSettings#id}. |
 | <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the application in New Relic. |
 | <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.tracerType">tracer_type</a></code> | <code>str</code> | The type of tracer to use, either 'CROSS_APPLICATION_TRACER', 'DISTRIBUTED_TRACING', 'NONE', or 'OPT_OUT'. |
 | <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.transactionTracer">transaction_tracer</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>]</code> | transaction_tracer block. |
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 The response time threshold value for Apdex score calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Dummy field to support backward compatibility of previous version.should be removed with next major version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Samples and reports the slowest database queries in your traces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#enable_slow_sql ApplicationSettings#enable_slow_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#enable_slow_sql ApplicationSettings#enable_slow_sql}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Enable or disable the thread profiler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#enable_thread_profiler ApplicationSettings#enable_thread_profiler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#enable_thread_profiler ApplicationSettings#enable_thread_profiler}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Dummy field to support backward compatibility of previous version.should be removed with next major version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 error_collector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#error_collector ApplicationSettings#error_collector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#error_collector ApplicationSettings#error_collector}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The GUID of the application in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#guid ApplicationSettings#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#guid ApplicationSettings#guid}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#id ApplicationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#id ApplicationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -209,7 +209,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The name of the application in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#name ApplicationSettings#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#name ApplicationSettings#name}
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The type of tracer to use, either 'CROSS_APPLICATION_TRACER', 'DISTRIBUTED_TRACING', 'NONE', or 'OPT_OUT'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#tracer_type ApplicationSettings#tracer_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#tracer_type ApplicationSettings#tracer_type}
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 transaction_tracer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#transaction_tracer ApplicationSettings#transaction_tracer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#transaction_tracer ApplicationSettings#transaction_tracer}
 
 ---
 
@@ -239,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Enable or disable server side monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#use_server_side_config ApplicationSettings#use_server_side_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#use_server_side_config ApplicationSettings#use_server_side_config}
 
 ---
 
@@ -850,7 +850,7 @@ The construct id used in the generated config for the ApplicationSettings to imp
 
 The id of the existing ApplicationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1368,7 +1368,7 @@ applicationSettings.ApplicationSettingsConfig(
 | <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.endUserApdexThreshold">end_user_apdex_threshold</a></code> | <code>typing.Union[int, float]</code> | Dummy field to support backward compatibility of previous version.should be removed with next major version. |
 | <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.errorCollector">error_collector</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>]</code> | error_collector block. |
 | <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.guid">guid</a></code> | <code>str</code> | The GUID of the application in New Relic. |
-| <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#id ApplicationSettings#id}. |
+| <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#id ApplicationSettings#id}. |
 | <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.name">name</a></code> | <code>str</code> | The name of the application in New Relic. |
 | <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.tracerType">tracer_type</a></code> | <code>str</code> | The type of tracer to use, either 'CROSS_APPLICATION_TRACER', 'DISTRIBUTED_TRACING', 'NONE', or 'OPT_OUT'. |
 | <code><a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.transactionTracer">transaction_tracer</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>]</code> | transaction_tracer block. |
@@ -1456,7 +1456,7 @@ app_apdex_threshold: typing.Union[int, float]
 
 The response time threshold value for Apdex score calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}
 
 ---
 
@@ -1470,7 +1470,7 @@ enable_real_user_monitoring: bool | IResolvable
 
 Dummy field to support backward compatibility of previous version.should be removed with next major version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}
 
 ---
 
@@ -1484,7 +1484,7 @@ enable_slow_sql: bool | IResolvable
 
 Samples and reports the slowest database queries in your traces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#enable_slow_sql ApplicationSettings#enable_slow_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#enable_slow_sql ApplicationSettings#enable_slow_sql}
 
 ---
 
@@ -1498,7 +1498,7 @@ enable_thread_profiler: bool | IResolvable
 
 Enable or disable the thread profiler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#enable_thread_profiler ApplicationSettings#enable_thread_profiler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#enable_thread_profiler ApplicationSettings#enable_thread_profiler}
 
 ---
 
@@ -1512,7 +1512,7 @@ end_user_apdex_threshold: typing.Union[int, float]
 
 Dummy field to support backward compatibility of previous version.should be removed with next major version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}
 
 ---
 
@@ -1526,7 +1526,7 @@ error_collector: IResolvable | typing.List[ApplicationSettingsErrorCollector]
 
 error_collector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#error_collector ApplicationSettings#error_collector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#error_collector ApplicationSettings#error_collector}
 
 ---
 
@@ -1540,7 +1540,7 @@ guid: str
 
 The GUID of the application in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#guid ApplicationSettings#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#guid ApplicationSettings#guid}
 
 ---
 
@@ -1552,7 +1552,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#id ApplicationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#id ApplicationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1569,7 +1569,7 @@ name: str
 
 The name of the application in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#name ApplicationSettings#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#name ApplicationSettings#name}
 
 ---
 
@@ -1583,7 +1583,7 @@ tracer_type: str
 
 The type of tracer to use, either 'CROSS_APPLICATION_TRACER', 'DISTRIBUTED_TRACING', 'NONE', or 'OPT_OUT'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#tracer_type ApplicationSettings#tracer_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#tracer_type ApplicationSettings#tracer_type}
 
 ---
 
@@ -1597,7 +1597,7 @@ transaction_tracer: IResolvable | typing.List[ApplicationSettingsTransactionTrac
 
 transaction_tracer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#transaction_tracer ApplicationSettings#transaction_tracer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#transaction_tracer ApplicationSettings#transaction_tracer}
 
 ---
 
@@ -1611,7 +1611,7 @@ use_server_side_config: bool | IResolvable
 
 Enable or disable server side monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#use_server_side_config ApplicationSettings#use_server_side_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#use_server_side_config ApplicationSettings#use_server_side_config}
 
 ---
 
@@ -1651,7 +1651,7 @@ expected_error_classes: typing.List[str]
 
 A list of error classes that are expected and should not trigger alerts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#expected_error_classes ApplicationSettings#expected_error_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#expected_error_classes ApplicationSettings#expected_error_classes}
 
 ---
 
@@ -1665,7 +1665,7 @@ expected_error_codes: typing.List[str]
 
 A list of error codes that are expected and should not trigger alerts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#expected_error_codes ApplicationSettings#expected_error_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#expected_error_codes ApplicationSettings#expected_error_codes}
 
 ---
 
@@ -1679,7 +1679,7 @@ ignored_error_classes: typing.List[str]
 
 A list of error classes that should be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#ignored_error_classes ApplicationSettings#ignored_error_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#ignored_error_classes ApplicationSettings#ignored_error_classes}
 
 ---
 
@@ -1693,7 +1693,7 @@ ignored_error_codes: typing.List[str]
 
 A list of error codes that should be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#ignored_error_codes ApplicationSettings#ignored_error_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#ignored_error_codes ApplicationSettings#ignored_error_codes}
 
 ---
 
@@ -1735,7 +1735,7 @@ explain_query_plans: IResolvable | typing.List[ApplicationSettingsTransactionTra
 
 explain_query_plans block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#explain_query_plans ApplicationSettings#explain_query_plans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#explain_query_plans ApplicationSettings#explain_query_plans}
 
 ---
 
@@ -1749,7 +1749,7 @@ sql: ApplicationSettingsTransactionTracerSql
 
 sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#sql ApplicationSettings#sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#sql ApplicationSettings#sql}
 
 ---
 
@@ -1763,7 +1763,7 @@ stack_trace_threshold_value: typing.Union[int, float]
 
 The response time threshold value for capturing stack traces of SQL queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#stack_trace_threshold_value ApplicationSettings#stack_trace_threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#stack_trace_threshold_value ApplicationSettings#stack_trace_threshold_value}
 
 ---
 
@@ -1777,7 +1777,7 @@ transaction_threshold_type: str
 
 The type of threshold for transaction tracing, either 'APDEX_F' or 'VALUE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#transaction_threshold_type ApplicationSettings#transaction_threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#transaction_threshold_type ApplicationSettings#transaction_threshold_type}
 
 ---
 
@@ -1791,7 +1791,7 @@ transaction_threshold_value: typing.Union[int, float]
 
 The threshold value for transaction tracing when 'transaction_threshold_type' is 'VALUE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#transaction_threshold_value ApplicationSettings#transaction_threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#transaction_threshold_value ApplicationSettings#transaction_threshold_value}
 
 ---
 
@@ -1827,7 +1827,7 @@ query_plan_threshold_type: str
 
 The type of threshold for explain plans, either 'APDEX_F' or 'VALUE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#query_plan_threshold_type ApplicationSettings#query_plan_threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#query_plan_threshold_type ApplicationSettings#query_plan_threshold_type}
 
 ---
 
@@ -1841,7 +1841,7 @@ query_plan_threshold_value: typing.Union[int, float]
 
 The threshold value for explain plans when 'query_plan_threshold_type' is 'VALUE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#query_plan_threshold_value ApplicationSettings#query_plan_threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#query_plan_threshold_value ApplicationSettings#query_plan_threshold_value}
 
 ---
 
@@ -1875,7 +1875,7 @@ record_sql: str
 
 The level of SQL recording, either 'OBFUSCATED', 'OFF', or 'RAW'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#record_sql ApplicationSettings#record_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#record_sql ApplicationSettings#record_sql}
 
 ---
 
@@ -3436,7 +3436,7 @@ def put_sql(
 
 The level of SQL recording, either 'OBFUSCATED', 'OFF', or 'RAW'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/application_settings#record_sql ApplicationSettings#record_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/application_settings#record_sql ApplicationSettings#record_sql}
 
 ---
 

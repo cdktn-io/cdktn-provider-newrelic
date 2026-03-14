@@ -4,7 +4,7 @@
 
 ### DataNewrelicUser <a name="DataNewrelicUser" id="@cdktn/provider-newrelic.dataNewrelicUser.DataNewrelicUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/user newrelic_user}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/user newrelic_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicUser.DataNewrelicUser.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataNewrelicUser to import
 
 The id of the existing DataNewrelicUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -758,7 +758,7 @@ public readonly authenticationDomainId: string;
 
 The ID of the Authentication Domain the user being queried would belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/user#authentication_domain_id DataNewrelicUser#authentication_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/user#authentication_domain_id DataNewrelicUser#authentication_domain_id}
 
 ---
 
@@ -772,7 +772,7 @@ public readonly emailId: string;
 
 The email ID of the user to be queried.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/user#email_id DataNewrelicUser#email_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/user#email_id DataNewrelicUser#email_id}
 
 ---
 
@@ -786,7 +786,7 @@ public readonly name: string;
 
 The name of the user to be queried.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/user#name DataNewrelicUser#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/user#name DataNewrelicUser#name}
 
 ---
 

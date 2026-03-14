@@ -4,7 +4,7 @@
 
 ### DataNewrelicKeyTransaction <a name="DataNewrelicKeyTransaction" id="@cdktn/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransaction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/key_transaction newrelic_key_transaction}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/key_transaction newrelic_key_transaction}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransaction.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataNewrelicKeyTransaction
 
 The id of the existing DataNewrelicKeyTransaction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/key_transaction#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/key_transaction#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -727,7 +727,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelic
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransactionConfig.property.name">Name</a></code> | <code>*string</code> | The name of the key transaction in New Relic. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransactionConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The ID of the New Relic account the key transaction would need to belong to. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransactionConfig.property.guid">Guid</a></code> | <code>*string</code> | GUID of the key transaction in New Relic. |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransactionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/key_transaction#id DataNewrelicKeyTransaction#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransactionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/key_transaction#id DataNewrelicKeyTransaction#id}. |
 
 ---
 
@@ -811,7 +811,7 @@ Name *string
 
 The name of the key transaction in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/key_transaction#name DataNewrelicKeyTransaction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/key_transaction#name DataNewrelicKeyTransaction#name}
 
 ---
 
@@ -827,7 +827,7 @@ The ID of the New Relic account the key transaction would need to belong to.
 
 Uses the account_id in the provider{} block by default, if not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/key_transaction#account_id DataNewrelicKeyTransaction#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/key_transaction#account_id DataNewrelicKeyTransaction#account_id}
 
 ---
 
@@ -841,7 +841,7 @@ Guid *string
 
 GUID of the key transaction in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/key_transaction#guid DataNewrelicKeyTransaction#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/key_transaction#guid DataNewrelicKeyTransaction#guid}
 
 ---
 
@@ -853,7 +853,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/key_transaction#id DataNewrelicKeyTransaction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/key_transaction#id DataNewrelicKeyTransaction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/group
+// https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataNewrelicGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the Authentication Domain the group being queried would belong to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/group#authentication_domain_id DataNewrelicGroup#authentication_domain_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/group#authentication_domain_id DataNewrelicGroup#authentication_domain_id}
   */
   readonly authenticationDomainId: string;
   /**
   * The name of the group to be queried.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/group#name DataNewrelicGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/group#name DataNewrelicGroup#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/group newrelic_group}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/group newrelic_group}
 */
 export class DataNewrelicGroup extends cdktn.TerraformDataSource {
 
@@ -43,7 +43,7 @@ export class DataNewrelicGroup extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataNewrelicGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicGroup to import
-  * @param importFromId The id of the existing DataNewrelicGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class DataNewrelicGroup extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/data-sources/group newrelic_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/group newrelic_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class DataNewrelicGroup extends cdktn.TerraformDataSource {
       terraformResourceType: 'newrelic_group',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.80.3',
+        providerVersion: '3.81.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
