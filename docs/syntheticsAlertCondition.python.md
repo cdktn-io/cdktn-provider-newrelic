@@ -4,7 +4,7 @@
 
 ### SyntheticsAlertCondition <a name="SyntheticsAlertCondition" id="@cdktn/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition newrelic_synthetics_alert_condition}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition newrelic_synthetics_alert_condition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.Initializer"></a>
 
@@ -45,7 +45,7 @@ syntheticsAlertCondition.SyntheticsAlertCondition(
 | <code><a href="#@cdktn/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.Initializer.parameter.name">name</a></code> | <code>str</code> | The title of this condition. |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.Initializer.parameter.policyId">policy_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the policy where this condition should be used. |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Set whether to enable the alert condition. Defaults to true. |
-| <code><a href="#@cdktn/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#id SyntheticsAlertCondition#id}. |
+| <code><a href="#@cdktn/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#id SyntheticsAlertCondition#id}. |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.Initializer.parameter.runbookUrl">runbook_url</a></code> | <code>str</code> | Runbook URL to display in notifications. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the Synthetics monitor to be referenced in the alert condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#monitor_id SyntheticsAlertCondition#monitor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#monitor_id SyntheticsAlertCondition#monitor_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The title of this condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#name SyntheticsAlertCondition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#name SyntheticsAlertCondition#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The ID of the policy where this condition should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#policy_id SyntheticsAlertCondition#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#policy_id SyntheticsAlertCondition#policy_id}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Set whether to enable the alert condition. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#enabled SyntheticsAlertCondition#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#enabled SyntheticsAlertCondition#enabled}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#id SyntheticsAlertCondition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#id SyntheticsAlertCondition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Runbook URL to display in notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#runbook_url SyntheticsAlertCondition#runbook_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#runbook_url SyntheticsAlertCondition#runbook_url}
 
 ---
 
@@ -685,7 +685,7 @@ The construct id used in the generated config for the SyntheticsAlertCondition t
 
 The id of the existing SyntheticsAlertCondition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1062,7 +1062,7 @@ syntheticsAlertCondition.SyntheticsAlertConditionConfig(
 | <code><a href="#@cdktn/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertConditionConfig.property.name">name</a></code> | <code>str</code> | The title of this condition. |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertConditionConfig.property.policyId">policy_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the policy where this condition should be used. |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertConditionConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Set whether to enable the alert condition. Defaults to true. |
-| <code><a href="#@cdktn/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertConditionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#id SyntheticsAlertCondition#id}. |
+| <code><a href="#@cdktn/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertConditionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#id SyntheticsAlertCondition#id}. |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertConditionConfig.property.runbookUrl">runbook_url</a></code> | <code>str</code> | Runbook URL to display in notifications. |
 
 ---
@@ -1147,7 +1147,7 @@ monitor_id: str
 
 The ID of the Synthetics monitor to be referenced in the alert condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#monitor_id SyntheticsAlertCondition#monitor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#monitor_id SyntheticsAlertCondition#monitor_id}
 
 ---
 
@@ -1161,7 +1161,7 @@ name: str
 
 The title of this condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#name SyntheticsAlertCondition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#name SyntheticsAlertCondition#name}
 
 ---
 
@@ -1175,7 +1175,7 @@ policy_id: typing.Union[int, float]
 
 The ID of the policy where this condition should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#policy_id SyntheticsAlertCondition#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#policy_id SyntheticsAlertCondition#policy_id}
 
 ---
 
@@ -1189,7 +1189,7 @@ enabled: bool | IResolvable
 
 Set whether to enable the alert condition. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#enabled SyntheticsAlertCondition#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#enabled SyntheticsAlertCondition#enabled}
 
 ---
 
@@ -1201,7 +1201,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#id SyntheticsAlertCondition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#id SyntheticsAlertCondition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1218,7 +1218,7 @@ runbook_url: str
 
 Runbook URL to display in notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.80.3/docs/resources/synthetics_alert_condition#runbook_url SyntheticsAlertCondition#runbook_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/resources/synthetics_alert_condition#runbook_url SyntheticsAlertCondition#runbook_url}
 
 ---
 
