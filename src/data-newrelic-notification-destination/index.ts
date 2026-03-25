@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination
+// https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataNewrelicNotificationDestinationConfig extends cdktn.Terrafo
   /**
   * The account ID under which to put the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
   */
   readonly accountId?: number;
   /**
   * The exact name of the destination. Uses an exact match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#exact_name DataNewrelicNotificationDestination#exact_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#exact_name DataNewrelicNotificationDestination#exact_name}
   */
   readonly exactName?: string;
   /**
   * The ID of the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,13 +36,19 @@ export interface DataNewrelicNotificationDestinationConfig extends cdktn.Terrafo
   /**
   * The name of the destination. Uses a contains match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
   */
   readonly name?: string;
   /**
+  * scope block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#scope DataNewrelicNotificationDestination#scope}
+  */
+  readonly scope?: DataNewrelicNotificationDestinationScope;
+  /**
   * secure_url block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#secure_url DataNewrelicNotificationDestination#secure_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#secure_url DataNewrelicNotificationDestination#secure_url}
   */
   readonly secureUrl?: DataNewrelicNotificationDestinationSecureUrl[] | cdktn.IResolvable;
 }
@@ -136,9 +142,127 @@ export class DataNewrelicNotificationDestinationPropertyList extends cdktn.Compl
     return new DataNewrelicNotificationDestinationPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataNewrelicNotificationDestinationScope {
+  /**
+  * The ID of the scope (Organization UUID for ORGANIZATION scope, Account ID for ACCOUNT scope)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+  /**
+  * (Required) The scope type of the destination. One of: (ACCOUNT, ORGANIZATION).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#type DataNewrelicNotificationDestination#type}
+  */
+  readonly type: string;
+}
+
+export function dataNewrelicNotificationDestinationScopeToTerraform(struct?: DataNewrelicNotificationDestinationScopeOutputReference | DataNewrelicNotificationDestinationScope): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktn.stringToTerraform(struct!.id),
+    type: cdktn.stringToTerraform(struct!.type),
+  }
+}
+
+
+export function dataNewrelicNotificationDestinationScopeToHclTerraform(struct?: DataNewrelicNotificationDestinationScopeOutputReference | DataNewrelicNotificationDestinationScope): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktn.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktn.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataNewrelicNotificationDestinationScopeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataNewrelicNotificationDestinationScope | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataNewrelicNotificationDestinationScope | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._id = undefined;
+      this._type = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._id = value.id;
+      this._type = value.type;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
 export interface DataNewrelicNotificationDestinationSecureUrl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}
   */
   readonly prefix: string;
 }
@@ -251,7 +375,7 @@ export class DataNewrelicNotificationDestinationSecureUrlList extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination newrelic_notification_destination}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination newrelic_notification_destination}
 */
 export class DataNewrelicNotificationDestination extends cdktn.TerraformDataSource {
 
@@ -267,7 +391,7 @@ export class DataNewrelicNotificationDestination extends cdktn.TerraformDataSour
   * Generates CDKTN code for importing a DataNewrelicNotificationDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicNotificationDestination to import
-  * @param importFromId The id of the existing DataNewrelicNotificationDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicNotificationDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicNotificationDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -279,7 +403,7 @@ export class DataNewrelicNotificationDestination extends cdktn.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination newrelic_notification_destination} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination newrelic_notification_destination} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -290,7 +414,7 @@ export class DataNewrelicNotificationDestination extends cdktn.TerraformDataSour
       terraformResourceType: 'newrelic_notification_destination',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.81.0',
+        providerVersion: '3.82.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -305,6 +429,7 @@ export class DataNewrelicNotificationDestination extends cdktn.TerraformDataSour
     this._exactName = config.exactName;
     this._id = config.id;
     this._name = config.name;
+    this._scope.internalValue = config.scope;
     this._secureUrl.internalValue = config.secureUrl;
   }
 
@@ -402,6 +527,22 @@ export class DataNewrelicNotificationDestination extends cdktn.TerraformDataSour
     return this.getStringAttribute('type');
   }
 
+  // scope - computed: false, optional: true, required: false
+  private _scope = new DataNewrelicNotificationDestinationScopeOutputReference(this, "scope");
+  public get scope() {
+    return this._scope;
+  }
+  public putScope(value: DataNewrelicNotificationDestinationScope) {
+    this._scope.internalValue = value;
+  }
+  public resetScope() {
+    this._scope.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope.internalValue;
+  }
+
   // secure_url - computed: false, optional: true, required: false
   private _secureUrl = new DataNewrelicNotificationDestinationSecureUrlList(this, "secure_url", true);
   public get secureUrl() {
@@ -428,6 +569,7 @@ export class DataNewrelicNotificationDestination extends cdktn.TerraformDataSour
       exact_name: cdktn.stringToTerraform(this._exactName),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
+      scope: dataNewrelicNotificationDestinationScopeToTerraform(this._scope.internalValue),
       secure_url: cdktn.listMapper(dataNewrelicNotificationDestinationSecureUrlToTerraform, true)(this._secureUrl.internalValue),
     };
   }
@@ -457,6 +599,12 @@ export class DataNewrelicNotificationDestination extends cdktn.TerraformDataSour
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      scope: {
+        value: dataNewrelicNotificationDestinationScopeToHclTerraform(this._scope.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataNewrelicNotificationDestinationScopeList",
       },
       secure_url: {
         value: cdktn.listMapperHcl(dataNewrelicNotificationDestinationSecureUrlToHclTerraform, true)(this._secureUrl.internalValue),

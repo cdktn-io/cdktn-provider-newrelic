@@ -4,7 +4,7 @@
 
 ### DataNewrelicNotificationDestination <a name="DataNewrelicNotificationDestination" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination newrelic_notification_destination}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination newrelic_notification_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.Initializer"></a>
 
@@ -25,6 +25,7 @@ dataNewrelicNotificationDestination.DataNewrelicNotificationDestination(
   exact_name: str = None,
   id: str = None,
   name: str = None,
+  scope: DataNewrelicNotificationDestinationScope = None,
   secure_url: IResolvable | typing.List[DataNewrelicNotificationDestinationSecureUrl] = None
 )
 ```
@@ -44,6 +45,7 @@ dataNewrelicNotificationDestination.DataNewrelicNotificationDestination(
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.Initializer.parameter.exactName">exact_name</a></code> | <code>str</code> | The exact name of the destination. Uses an exact match. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.Initializer.parameter.id">id</a></code> | <code>str</code> | The ID of the destination. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the destination. Uses a contains match. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.Initializer.parameter.scope">scope</a></code> | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope">DataNewrelicNotificationDestinationScope</a></code> | scope block. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.Initializer.parameter.secureUrl">secure_url</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationSecureUrl">DataNewrelicNotificationDestinationSecureUrl</a>]</code> | secure_url block. |
 
 ---
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The account ID under which to put the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The exact name of the destination. Uses an exact match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#exact_name DataNewrelicNotificationDestination#exact_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#exact_name DataNewrelicNotificationDestination#exact_name}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The ID of the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +149,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 The name of the destination. Uses a contains match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
+
+---
+
+##### `scope`<sup>Optional</sup> <a name="scope" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.Initializer.parameter.scope"></a>
+
+- *Type:* <a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope">DataNewrelicNotificationDestinationScope</a>
+
+scope block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#scope DataNewrelicNotificationDestination#scope}
 
 ---
 
@@ -157,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 secure_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#secure_url DataNewrelicNotificationDestination#secure_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#secure_url DataNewrelicNotificationDestination#secure_url}
 
 ---
 
@@ -183,11 +195,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.putScope">put_scope</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.putSecureUrl">put_secure_url</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetExactName">reset_exact_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetScope">reset_scope</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetSecureUrl">reset_secure_url</a></code> | *No description.* |
 
 ---
@@ -432,6 +446,38 @@ def interpolation_for_attribute(
 
 ---
 
+##### `put_scope` <a name="put_scope" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.putScope"></a>
+
+```python
+def put_scope(
+  id: str,
+  type: str
+) -> None
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.putScope.parameter.id"></a>
+
+- *Type:* str
+
+The ID of the scope (Organization UUID for ORGANIZATION scope, Account ID for ACCOUNT scope).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+###### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.putScope.parameter.type"></a>
+
+- *Type:* str
+
+(Required) The scope type of the destination. One of: (ACCOUNT, ORGANIZATION).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#type DataNewrelicNotificationDestination#type}
+
+---
+
 ##### `put_secure_url` <a name="put_secure_url" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.putSecureUrl"></a>
 
 ```python
@@ -468,6 +514,12 @@ def reset_id() -> None
 
 ```python
 def reset_name() -> None
+```
+
+##### `reset_scope` <a name="reset_scope" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetScope"></a>
+
+```python
+def reset_scope() -> None
 ```
 
 ##### `reset_secure_url` <a name="reset_secure_url" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetSecureUrl"></a>
@@ -590,7 +642,7 @@ The construct id used in the generated config for the DataNewrelicNotificationDe
 
 The id of the existing DataNewrelicNotificationDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -621,6 +673,7 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.active">active</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.guid">guid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.property">property</a></code> | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationPropertyList">DataNewrelicNotificationDestinationPropertyList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.scope">scope</a></code> | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference">DataNewrelicNotificationDestinationScopeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.secureUrl">secure_url</a></code> | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationSecureUrlList">DataNewrelicNotificationDestinationSecureUrlList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.type">type</a></code> | <code>str</code> | *No description.* |
@@ -628,6 +681,7 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.exactNameInput">exact_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.scopeInput">scope_input</a></code> | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope">DataNewrelicNotificationDestinationScope</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.secureUrlInput">secure_url_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationSecureUrl">DataNewrelicNotificationDestinationSecureUrl</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.exactName">exact_name</a></code> | <code>str</code> | *No description.* |
@@ -788,6 +842,16 @@ property: DataNewrelicNotificationDestinationPropertyList
 
 ---
 
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.scope"></a>
+
+```python
+scope: DataNewrelicNotificationDestinationScopeOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference">DataNewrelicNotificationDestinationScopeOutputReference</a>
+
+---
+
 ##### `secure_url`<sup>Required</sup> <a name="secure_url" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.secureUrl"></a>
 
 ```python
@@ -855,6 +919,16 @@ name_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `scope_input`<sup>Optional</sup> <a name="scope_input" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.scopeInput"></a>
+
+```python
+scope_input: DataNewrelicNotificationDestinationScope
+```
+
+- *Type:* <a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope">DataNewrelicNotificationDestinationScope</a>
 
 ---
 
@@ -947,6 +1021,7 @@ dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig(
   exact_name: str = None,
   id: str = None,
   name: str = None,
+  scope: DataNewrelicNotificationDestinationScope = None,
   secure_url: IResolvable | typing.List[DataNewrelicNotificationDestinationSecureUrl] = None
 )
 ```
@@ -966,6 +1041,7 @@ dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig(
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.exactName">exact_name</a></code> | <code>str</code> | The exact name of the destination. Uses an exact match. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.id">id</a></code> | <code>str</code> | The ID of the destination. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.name">name</a></code> | <code>str</code> | The name of the destination. Uses a contains match. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.scope">scope</a></code> | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope">DataNewrelicNotificationDestinationScope</a></code> | scope block. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.secureUrl">secure_url</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationSecureUrl">DataNewrelicNotificationDestinationSecureUrl</a>]</code> | secure_url block. |
 
 ---
@@ -1050,7 +1126,7 @@ account_id: typing.Union[int, float]
 
 The account ID under which to put the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
 
 ---
 
@@ -1064,7 +1140,7 @@ exact_name: str
 
 The exact name of the destination. Uses an exact match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#exact_name DataNewrelicNotificationDestination#exact_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#exact_name DataNewrelicNotificationDestination#exact_name}
 
 ---
 
@@ -1078,7 +1154,7 @@ id: str
 
 The ID of the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1095,7 +1171,21 @@ name: str
 
 The name of the destination. Uses a contains match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
+
+---
+
+##### `scope`<sup>Optional</sup> <a name="scope" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.scope"></a>
+
+```python
+scope: DataNewrelicNotificationDestinationScope
+```
+
+- *Type:* <a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope">DataNewrelicNotificationDestinationScope</a>
+
+scope block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#scope DataNewrelicNotificationDestination#scope}
 
 ---
 
@@ -1109,7 +1199,7 @@ secure_url: IResolvable | typing.List[DataNewrelicNotificationDestinationSecureU
 
 secure_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#secure_url DataNewrelicNotificationDestination#secure_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#secure_url DataNewrelicNotificationDestination#secure_url}
 
 ---
 
@@ -1123,6 +1213,59 @@ from cdktn_provider_newrelic import data_newrelic_notification_destination
 dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationProperty()
 ```
 
+
+### DataNewrelicNotificationDestinationScope <a name="DataNewrelicNotificationDestinationScope" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope.Initializer"></a>
+
+```python
+from cdktn_provider_newrelic import data_newrelic_notification_destination
+
+dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope(
+  id: str,
+  type: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope.property.id">id</a></code> | <code>str</code> | The ID of the scope (Organization UUID for ORGANIZATION scope, Account ID for ACCOUNT scope). |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope.property.type">type</a></code> | <code>str</code> | (Required) The scope type of the destination. One of: (ACCOUNT, ORGANIZATION). |
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+The ID of the scope (Organization UUID for ORGANIZATION scope, Account ID for ACCOUNT scope).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope.property.type"></a>
+
+```python
+type: str
+```
+
+- *Type:* str
+
+(Required) The scope type of the destination. One of: (ACCOUNT, ORGANIZATION).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#type DataNewrelicNotificationDestination#type}
+
+---
 
 ### DataNewrelicNotificationDestinationSecureUrl <a name="DataNewrelicNotificationDestinationSecureUrl" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationSecureUrl"></a>
 
@@ -1140,7 +1283,7 @@ dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationSecureUrl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationSecureUrl.property.prefix">prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationSecureUrl.property.prefix">prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}. |
 
 ---
 
@@ -1152,7 +1295,7 @@ prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.81.0/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.82.0/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}.
 
 ---
 
@@ -1651,6 +1794,324 @@ internal_value: DataNewrelicNotificationDestinationProperty
 ```
 
 - *Type:* <a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationProperty">DataNewrelicNotificationDestinationProperty</a>
+
+---
+
+
+### DataNewrelicNotificationDestinationScopeOutputReference <a name="DataNewrelicNotificationDestinationScopeOutputReference" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_newrelic import data_newrelic_notification_destination
+
+dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope">DataNewrelicNotificationDestinationScope</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.property.idInput"></a>
+
+```python
+id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.property.typeInput"></a>
+
+```python
+type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.property.type"></a>
+
+```python
+type: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScopeOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataNewrelicNotificationDestinationScope
+```
+
+- *Type:* <a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationScope">DataNewrelicNotificationDestinationScope</a>
 
 ---
 
