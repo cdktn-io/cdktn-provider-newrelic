@@ -44,6 +44,7 @@ The following submodules are available:
 - [dataPartitionRule](./dataPartitionRule.go.md)
 - [entityTags](./entityTags.go.md)
 - [eventsToMetricsRule](./eventsToMetricsRule.go.md)
+- [fleet](./fleet.go.md)
 - [group](./group.go.md)
 - [infraAlertCondition](./infraAlertCondition.go.md)
 - [insightsEvent](./insightsEvent.go.md)
@@ -73,6 +74,7 @@ The following submodules are available:
 - [syntheticsStepMonitor](./syntheticsStepMonitor.go.md)
 - [user](./user.go.md)
 - [workflow](./workflow.go.md)
+- [workflowAutomation](./workflowAutomation.go.md)
 - [workload](./workload.go.md)
 
 

@@ -44,6 +44,7 @@ The following submodules are available:
 - [dataPartitionRule](./dataPartitionRule.python.md)
 - [entityTags](./entityTags.python.md)
 - [eventsToMetricsRule](./eventsToMetricsRule.python.md)
+- [fleet](./fleet.python.md)
 - [group](./group.python.md)
 - [infraAlertCondition](./infraAlertCondition.python.md)
 - [insightsEvent](./insightsEvent.python.md)
@@ -73,6 +74,7 @@ The following submodules are available:
 - [syntheticsStepMonitor](./syntheticsStepMonitor.python.md)
 - [user](./user.python.md)
 - [workflow](./workflow.python.md)
+- [workflowAutomation](./workflowAutomation.python.md)
 - [workload](./workload.python.md)
 
 

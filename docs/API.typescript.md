@@ -44,6 +44,7 @@ The following submodules are available:
 - [dataPartitionRule](./dataPartitionRule.typescript.md)
 - [entityTags](./entityTags.typescript.md)
 - [eventsToMetricsRule](./eventsToMetricsRule.typescript.md)
+- [fleet](./fleet.typescript.md)
 - [group](./group.typescript.md)
 - [infraAlertCondition](./infraAlertCondition.typescript.md)
 - [insightsEvent](./insightsEvent.typescript.md)
@@ -73,6 +74,7 @@ The following submodules are available:
 - [syntheticsStepMonitor](./syntheticsStepMonitor.typescript.md)
 - [user](./user.typescript.md)
 - [workflow](./workflow.typescript.md)
+- [workflowAutomation](./workflowAutomation.typescript.md)
 - [workload](./workload.typescript.md)
 
 
