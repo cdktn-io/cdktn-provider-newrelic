@@ -28,6 +28,7 @@ Object.defineProperty(exports, 'cloudOciLinkAccount', { get: function () { retur
 Object.defineProperty(exports, 'dataPartitionRule', { get: function () { return require('./data-partition-rule'); } });
 Object.defineProperty(exports, 'entityTags', { get: function () { return require('./entity-tags'); } });
 Object.defineProperty(exports, 'eventsToMetricsRule', { get: function () { return require('./events-to-metrics-rule'); } });
+Object.defineProperty(exports, 'fleet', { get: function () { return require('./fleet'); } });
 Object.defineProperty(exports, 'group', { get: function () { return require('./group'); } });
 Object.defineProperty(exports, 'infraAlertCondition', { get: function () { return require('./infra-alert-condition'); } });
 Object.defineProperty(exports, 'insightsEvent', { get: function () { return require('./insights-event'); } });
@@ -56,6 +57,7 @@ Object.defineProperty(exports, 'syntheticsSecureCredential', { get: function () 
 Object.defineProperty(exports, 'syntheticsStepMonitor', { get: function () { return require('./synthetics-step-monitor'); } });
 Object.defineProperty(exports, 'user', { get: function () { return require('./user'); } });
 Object.defineProperty(exports, 'workflow', { get: function () { return require('./workflow'); } });
+Object.defineProperty(exports, 'workflowAutomation', { get: function () { return require('./workflow-automation'); } });
 Object.defineProperty(exports, 'workload', { get: function () { return require('./workload'); } });
 Object.defineProperty(exports, 'dataNewrelicAccount', { get: function () { return require('./data-newrelic-account'); } });
 Object.defineProperty(exports, 'dataNewrelicAlertChannel', { get: function () { return require('./data-newrelic-alert-channel'); } });
