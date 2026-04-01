@@ -4,7 +4,7 @@
 
 ### Fleet <a name="Fleet" id="@cdktn/provider-newrelic.fleet.Fleet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.0/docs/resources/fleet newrelic_fleet}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.1/docs/resources/fleet newrelic_fleet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.fleet.Fleet.Initializer"></a>
 
@@ -78,7 +78,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.resetOperatingSystem">ResetOperatingSystem</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.resetOrganizationId">ResetOrganizationId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.resetProduct">ResetProduct</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
@@ -416,12 +415,6 @@ func ResetOperatingSystem()
 func ResetOrganizationId()
 ```
 
-##### `ResetProduct` <a name="ResetProduct" id="@cdktn/provider-newrelic.fleet.Fleet.resetProduct"></a>
-
-```go
-func ResetProduct()
-```
-
 ##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-newrelic.fleet.Fleet.resetTags"></a>
 
 ```go
@@ -531,7 +524,7 @@ The construct id used in the generated config for the Fleet to import.
 
 The id of the existing Fleet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.0/docs/resources/fleet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.1/docs/resources/fleet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -567,7 +560,6 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.property.operatingSystemInput">OperatingSystemInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.property.organizationIdInput">OrganizationIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.property.productInput">ProductInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.property.tagsInput">TagsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -575,7 +567,6 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.property.operatingSystem">OperatingSystem</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.property.organizationId">OrganizationId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.property.product">Product</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.property.tags">Tags</a></code> | <code>*[]*string</code> | *No description.* |
 
 ---
@@ -782,16 +773,6 @@ func OrganizationIdInput() *string
 
 ---
 
-##### `ProductInput`<sup>Optional</sup> <a name="ProductInput" id="@cdktn/provider-newrelic.fleet.Fleet.property.productInput"></a>
-
-```go
-func ProductInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-newrelic.fleet.Fleet.property.tagsInput"></a>
 
 ```go
@@ -862,16 +843,6 @@ func OrganizationId() *string
 
 ---
 
-##### `Product`<sup>Required</sup> <a name="Product" id="@cdktn/provider-newrelic.fleet.Fleet.property.product"></a>
-
-```go
-func Product() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-newrelic.fleet.Fleet.property.tags"></a>
 
 ```go
@@ -923,7 +894,6 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/fleet"
 	Id: *string,
 	OperatingSystem: *string,
 	OrganizationId: *string,
-	Product: *string,
 	Tags: *[]*string,
 }
 ```
@@ -942,10 +912,9 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/fleet"
 | <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.managedEntityType">ManagedEntityType</a></code> | <code>*string</code> | The type of entities this fleet will manage. Allowed values: HOST, KUBERNETESCLUSTER. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.name">Name</a></code> | <code>*string</code> | The name of the fleet. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.description">Description</a></code> | <code>*string</code> | The description of the fleet. |
-| <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.0/docs/resources/fleet#id Fleet#id}. |
+| <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.1/docs/resources/fleet#id Fleet#id}. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.operatingSystem">OperatingSystem</a></code> | <code>*string</code> | The operating system type. Required for HOST fleets. Allowed values: LINUX, WINDOWS. Must not be set for KUBERNETESCLUSTER fleets. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.organizationId">OrganizationId</a></code> | <code>*string</code> | The organization ID. If not provided, it will be auto-fetched from the account. |
-| <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.product">Product</a></code> | <code>*string</code> | The New Relic product associated with this fleet. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Tags for the fleet in format 'key:value1,value2'. Each tag can have multiple values. |
 
 ---
@@ -1030,7 +999,7 @@ ManagedEntityType *string
 
 The type of entities this fleet will manage. Allowed values: HOST, KUBERNETESCLUSTER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.0/docs/resources/fleet#managed_entity_type Fleet#managed_entity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.1/docs/resources/fleet#managed_entity_type Fleet#managed_entity_type}
 
 ---
 
@@ -1044,7 +1013,7 @@ Name *string
 
 The name of the fleet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.0/docs/resources/fleet#name Fleet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.1/docs/resources/fleet#name Fleet#name}
 
 ---
 
@@ -1058,7 +1027,7 @@ Description *string
 
 The description of the fleet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.0/docs/resources/fleet#description Fleet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.1/docs/resources/fleet#description Fleet#description}
 
 ---
 
@@ -1070,7 +1039,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.0/docs/resources/fleet#id Fleet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.1/docs/resources/fleet#id Fleet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1087,7 +1056,7 @@ OperatingSystem *string
 
 The operating system type. Required for HOST fleets. Allowed values: LINUX, WINDOWS. Must not be set for KUBERNETESCLUSTER fleets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.0/docs/resources/fleet#operating_system Fleet#operating_system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.1/docs/resources/fleet#operating_system Fleet#operating_system}
 
 ---
 
@@ -1101,21 +1070,7 @@ OrganizationId *string
 
 The organization ID. If not provided, it will be auto-fetched from the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.0/docs/resources/fleet#organization_id Fleet#organization_id}
-
----
-
-##### `Product`<sup>Optional</sup> <a name="Product" id="@cdktn/provider-newrelic.fleet.FleetConfig.property.product"></a>
-
-```go
-Product *string
-```
-
-- *Type:* *string
-
-The New Relic product associated with this fleet.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.0/docs/resources/fleet#product Fleet#product}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.1/docs/resources/fleet#organization_id Fleet#organization_id}
 
 ---
 
@@ -1129,7 +1084,7 @@ Tags *[]*string
 
 Tags for the fleet in format 'key:value1,value2'. Each tag can have multiple values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.0/docs/resources/fleet#tags Fleet#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.1/docs/resources/fleet#tags Fleet#tags}
 
 ---
 
