@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.84.3/docs/resources/workflow_automation
+// https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/resources/workflow_automation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface WorkflowAutomationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The YAML definition of the workflow automation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.3/docs/resources/workflow_automation#definition WorkflowAutomation#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/resources/workflow_automation#definition WorkflowAutomation#definition}
   */
   readonly definition: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.3/docs/resources/workflow_automation#id WorkflowAutomation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/resources/workflow_automation#id WorkflowAutomation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface WorkflowAutomationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the workflow automation. Must match the name in the YAML definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.3/docs/resources/workflow_automation#name WorkflowAutomation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/resources/workflow_automation#name WorkflowAutomation#name}
   */
   readonly name: string;
   /**
   * The scope ID (account ID for ACCOUNT scope, organization ID for ORGANIZATION scope).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.3/docs/resources/workflow_automation#scope_id WorkflowAutomation#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/resources/workflow_automation#scope_id WorkflowAutomation#scope_id}
   */
   readonly scopeId: string;
   /**
   * The scope type. Supported values are: ACCOUNT, ORGANIZATION.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.3/docs/resources/workflow_automation#scope_type WorkflowAutomation#scope_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/resources/workflow_automation#scope_type WorkflowAutomation#scope_type}
   */
   readonly scopeType: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.3/docs/resources/workflow_automation newrelic_workflow_automation}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/resources/workflow_automation newrelic_workflow_automation}
 */
 export class WorkflowAutomation extends cdktn.TerraformResource {
 
@@ -62,7 +62,7 @@ export class WorkflowAutomation extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a WorkflowAutomation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkflowAutomation to import
-  * @param importFromId The id of the existing WorkflowAutomation that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.3/docs/resources/workflow_automation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkflowAutomation that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/resources/workflow_automation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkflowAutomation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -74,7 +74,7 @@ export class WorkflowAutomation extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.84.3/docs/resources/workflow_automation newrelic_workflow_automation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/resources/workflow_automation newrelic_workflow_automation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class WorkflowAutomation extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_workflow_automation',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.84.3',
+        providerVersion: '3.85.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
