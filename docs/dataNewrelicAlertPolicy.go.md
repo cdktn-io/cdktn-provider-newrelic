@@ -4,7 +4,7 @@
 
 ### DataNewrelicAlertPolicy <a name="DataNewrelicAlertPolicy" id="@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/data-sources/alert_policy newrelic_alert_policy}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.1/docs/data-sources/alert_policy newrelic_alert_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataNewrelicAlertPolicy to
 
 The id of the existing DataNewrelicAlertPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/data-sources/alert_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.1/docs/data-sources/alert_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -437,6 +437,7 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy.property.createdAt">CreatedAt</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy.property.entityGuid">EntityGuid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy.property.updatedAt">UpdatedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy.property.accountIdInput">AccountIdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -575,6 +576,16 @@ func Provider() TerraformProvider
 
 ```go
 func CreatedAt() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EntityGuid`<sup>Required</sup> <a name="EntityGuid" id="@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy.property.entityGuid"></a>
+
+```go
+func EntityGuid() *string
 ```
 
 - *Type:* *string
@@ -726,7 +737,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelic
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicyConfig.property.name">Name</a></code> | <code>*string</code> | The name of the alert policy in New Relic. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicyConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The New Relic account ID to operate on. |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/data-sources/alert_policy#id DataNewrelicAlertPolicy#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.1/docs/data-sources/alert_policy#id DataNewrelicAlertPolicy#id}. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicyConfig.property.incidentPreference">IncidentPreference</a></code> | <code>*string</code> | The rollup strategy for the policy, which can be `PER_POLICY`, `PER_CONDITION`, or `PER_CONDITION_AND_TARGET`. |
 
 ---
@@ -811,7 +822,7 @@ Name *string
 
 The name of the alert policy in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/data-sources/alert_policy#name DataNewrelicAlertPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.1/docs/data-sources/alert_policy#name DataNewrelicAlertPolicy#name}
 
 ---
 
@@ -825,7 +836,7 @@ AccountId *f64
 
 The New Relic account ID to operate on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/data-sources/alert_policy#account_id DataNewrelicAlertPolicy#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.1/docs/data-sources/alert_policy#account_id DataNewrelicAlertPolicy#account_id}
 
 ---
 
@@ -837,7 +848,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/data-sources/alert_policy#id DataNewrelicAlertPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.1/docs/data-sources/alert_policy#id DataNewrelicAlertPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -854,7 +865,7 @@ IncidentPreference *string
 
 The rollup strategy for the policy, which can be `PER_POLICY`, `PER_CONDITION`, or `PER_CONDITION_AND_TARGET`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.0/docs/data-sources/alert_policy#incident_preference DataNewrelicAlertPolicy#incident_preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.85.1/docs/data-sources/alert_policy#incident_preference DataNewrelicAlertPolicy#incident_preference}
 
 ---
 
