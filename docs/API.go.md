@@ -47,6 +47,7 @@ The following submodules are available:
 - [eventsToMetricsRule](./eventsToMetricsRule.go.md)
 - [fleet](./fleet.go.md)
 - [fleetConfiguration](./fleetConfiguration.go.md)
+- [fleetDeployment](./fleetDeployment.go.md)
 - [group](./group.go.md)
 - [infraAlertCondition](./infraAlertCondition.go.md)
 - [insightsEvent](./insightsEvent.go.md)

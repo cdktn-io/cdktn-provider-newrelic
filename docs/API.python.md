@@ -47,6 +47,7 @@ The following submodules are available:
 - [eventsToMetricsRule](./eventsToMetricsRule.python.md)
 - [fleet](./fleet.python.md)
 - [fleetConfiguration](./fleetConfiguration.python.md)
+- [fleetDeployment](./fleetDeployment.python.md)
 - [group](./group.python.md)
 - [infraAlertCondition](./infraAlertCondition.python.md)
 - [insightsEvent](./insightsEvent.python.md)
