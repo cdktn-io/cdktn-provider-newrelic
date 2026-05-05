@@ -47,6 +47,7 @@ The following submodules are available:
 - [eventsToMetricsRule](./eventsToMetricsRule.typescript.md)
 - [fleet](./fleet.typescript.md)
 - [fleetConfiguration](./fleetConfiguration.typescript.md)
+- [fleetDeployment](./fleetDeployment.typescript.md)
 - [group](./group.typescript.md)
 - [infraAlertCondition](./infraAlertCondition.typescript.md)
 - [insightsEvent](./insightsEvent.typescript.md)
