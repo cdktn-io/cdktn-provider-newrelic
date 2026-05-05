@@ -30,6 +30,7 @@ export * as entityTags from './entity-tags';
 export * as eventsToMetricsRule from './events-to-metrics-rule';
 export * as fleet from './fleet';
 export * as fleetConfiguration from './fleet-configuration';
+export * as fleetDeployment from './fleet-deployment';
 export * as group from './group';
 export * as infraAlertCondition from './infra-alert-condition';
 export * as insightsEvent from './insights-event';

@@ -30,6 +30,7 @@ Object.defineProperty(exports, 'entityTags', { get: function () { return require
 Object.defineProperty(exports, 'eventsToMetricsRule', { get: function () { return require('./events-to-metrics-rule'); } });
 Object.defineProperty(exports, 'fleet', { get: function () { return require('./fleet'); } });
 Object.defineProperty(exports, 'fleetConfiguration', { get: function () { return require('./fleet-configuration'); } });
+Object.defineProperty(exports, 'fleetDeployment', { get: function () { return require('./fleet-deployment'); } });
 Object.defineProperty(exports, 'group', { get: function () { return require('./group'); } });
 Object.defineProperty(exports, 'infraAlertCondition', { get: function () { return require('./infra-alert-condition'); } });
 Object.defineProperty(exports, 'insightsEvent', { get: function () { return require('./insights-event'); } });
