@@ -4,7 +4,7 @@
 
 ### FleetDeployment <a name="FleetDeployment" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.0/docs/resources/fleet_deployment newrelic_fleet_deployment}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment newrelic_fleet_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.putAgent">PutAgent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.resetAgent">ResetAgent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.resetName">ResetName</a></code> | *No description.* |
@@ -404,6 +405,12 @@ func PutAgent(value interface{})
 
 ---
 
+##### `ResetAgent` <a name="ResetAgent" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.resetAgent"></a>
+
+```go
+func ResetAgent()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.resetDescription"></a>
 
 ```go
@@ -537,7 +544,7 @@ The construct id used in the generated config for the FleetDeployment to import.
 
 The id of the existing FleetDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.0/docs/resources/fleet_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -917,8 +924,8 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/fleetdeploym
 
 &fleetdeployment.FleetDeploymentAgent {
 	AgentType: *string,
-	Version: *string,
 	ConfigurationVersionId: *string,
+	Version: *string,
 }
 ```
 
@@ -927,8 +934,8 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/fleetdeploym
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgent.property.agentType">AgentType</a></code> | <code>*string</code> | The agent type. Allowed values: NRInfra, NRDOT, FluentBit, NRPrometheusAgent. |
-| <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgent.property.version">Version</a></code> | <code>*string</code> | The agent version to deploy (e.g. "1.58.0"). |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgent.property.configurationVersionId">ConfigurationVersionId</a></code> | <code>*string</code> | Configuration version entity GUID to associate with this agent in the deployment. |
+| <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgent.property.version">Version</a></code> | <code>*string</code> | The agent version to deploy (e.g. "1.58.0"). |
 
 ---
 
@@ -942,7 +949,21 @@ AgentType *string
 
 The agent type. Allowed values: NRInfra, NRDOT, FluentBit, NRPrometheusAgent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.0/docs/resources/fleet_deployment#agent_type FleetDeployment#agent_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#agent_type FleetDeployment#agent_type}
+
+---
+
+##### `ConfigurationVersionId`<sup>Required</sup> <a name="ConfigurationVersionId" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgent.property.configurationVersionId"></a>
+
+```go
+ConfigurationVersionId *string
+```
+
+- *Type:* *string
+
+Configuration version entity GUID to associate with this agent in the deployment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#configuration_version_id FleetDeployment#configuration_version_id}
 
 ---
 
@@ -956,21 +977,7 @@ Version *string
 
 The agent version to deploy (e.g. "1.58.0").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.0/docs/resources/fleet_deployment#version FleetDeployment#version}
-
----
-
-##### `ConfigurationVersionId`<sup>Optional</sup> <a name="ConfigurationVersionId" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgent.property.configurationVersionId"></a>
-
-```go
-ConfigurationVersionId *string
-```
-
-- *Type:* *string
-
-Configuration version entity GUID to associate with this agent in the deployment.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.0/docs/resources/fleet_deployment#configuration_version_id FleetDeployment#configuration_version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#version FleetDeployment#version}
 
 ---
 
@@ -989,8 +996,8 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/fleetdeploym
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Agent: interface{},
 	FleetId: *string,
+	Agent: interface{},
 	Description: *string,
 	Id: *string,
 	Name: *string,
@@ -1010,10 +1017,10 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/fleetdeploym
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.agent">Agent</a></code> | <code>interface{}</code> | agent block. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.fleetId">FleetId</a></code> | <code>*string</code> | The GUID of the fleet this deployment belongs to. |
+| <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.agent">Agent</a></code> | <code>interface{}</code> | agent block. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.description">Description</a></code> | <code>*string</code> | A description of the deployment. |
-| <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.0/docs/resources/fleet_deployment#id FleetDeployment#id}. |
+| <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#id FleetDeployment#id}. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.name">Name</a></code> | <code>*string</code> | The name of the deployment. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.organizationId">OrganizationId</a></code> | <code>*string</code> | The organization ID. Auto-fetched from the account if not provided. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Tags for the deployment in format 'key:value1,value2'. |
@@ -1090,20 +1097,6 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Agent`<sup>Required</sup> <a name="Agent" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.agent"></a>
-
-```go
-Agent interface{}
-```
-
-- *Type:* interface{}
-
-agent block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.0/docs/resources/fleet_deployment#agent FleetDeployment#agent}
-
----
-
 ##### `FleetId`<sup>Required</sup> <a name="FleetId" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.fleetId"></a>
 
 ```go
@@ -1114,7 +1107,21 @@ FleetId *string
 
 The GUID of the fleet this deployment belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.0/docs/resources/fleet_deployment#fleet_id FleetDeployment#fleet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#fleet_id FleetDeployment#fleet_id}
+
+---
+
+##### `Agent`<sup>Optional</sup> <a name="Agent" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.agent"></a>
+
+```go
+Agent interface{}
+```
+
+- *Type:* interface{}
+
+agent block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#agent FleetDeployment#agent}
 
 ---
 
@@ -1128,7 +1135,7 @@ Description *string
 
 A description of the deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.0/docs/resources/fleet_deployment#description FleetDeployment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#description FleetDeployment#description}
 
 ---
 
@@ -1140,7 +1147,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.0/docs/resources/fleet_deployment#id FleetDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#id FleetDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1157,7 +1164,7 @@ Name *string
 
 The name of the deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.0/docs/resources/fleet_deployment#name FleetDeployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#name FleetDeployment#name}
 
 ---
 
@@ -1171,7 +1178,7 @@ OrganizationId *string
 
 The organization ID. Auto-fetched from the account if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.0/docs/resources/fleet_deployment#organization_id FleetDeployment#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#organization_id FleetDeployment#organization_id}
 
 ---
 
@@ -1185,7 +1192,7 @@ Tags *[]*string
 
 Tags for the deployment in format 'key:value1,value2'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.0/docs/resources/fleet_deployment#tags FleetDeployment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#tags FleetDeployment#tags}
 
 ---
 
@@ -1419,7 +1426,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgentOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgentOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgentOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgentOutputReference.resetConfigurationVersionId">ResetConfigurationVersionId</a></code> | *No description.* |
 
 ---
 
@@ -1572,12 +1578,6 @@ func ToString() *string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
-
-##### `ResetConfigurationVersionId` <a name="ResetConfigurationVersionId" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgentOutputReference.resetConfigurationVersionId"></a>
-
-```go
-func ResetConfigurationVersionId()
-```
 
 
 #### Properties <a name="Properties" id="Properties"></a>
