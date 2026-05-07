@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/alertpolicychannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertpolicychannel"
 
 alertpolicychannel.NewAlertPolicyChannel(scope Construct, id *string, config AlertPolicyChannelConfig) AlertPolicyChannel
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/alertpolicychannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertpolicychannel"
 
 alertpolicychannel.AlertPolicyChannel_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/alertpolicychannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertpolicychannel"
 
 alertpolicychannel.AlertPolicyChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ alertpolicychannel.AlertPolicyChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/alertpolicychannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertpolicychannel"
 
 alertpolicychannel.AlertPolicyChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ alertpolicychannel.AlertPolicyChannel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/alertpolicychannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertpolicychannel"
 
 alertpolicychannel.AlertPolicyChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/alertpolicychannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertpolicychannel"
 
 &alertpolicychannel.AlertPolicyChannelConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/alertpolicyc
 	PolicyId: *f64,
 	AccountId: *f64,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.alertPolicyChannel.AlertPolicyChannelTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.alertPolicyChannel.AlertPolicyChannelTimeouts,
 }
 ```
 
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.alertPolicyChannel.AlertPolicyChannelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/alertpolicychannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertpolicychannel"
 
 &alertpolicychannel.AlertPolicyChannelTimeouts {
 	Create: *string,
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.alertPolicyChannel.AlertPolicyChannelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/alertpolicychannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertpolicychannel"
 
 alertpolicychannel.NewAlertPolicyChannelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertPolicyChannelTimeoutsOutputReference
 ```

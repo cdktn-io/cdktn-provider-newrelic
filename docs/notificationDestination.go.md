@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestination(scope Construct, id *string, config NotificationDestinationConfig) NotificationDestination
 ```
@@ -554,7 +554,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 notificationdestination.NotificationDestination_IsConstruct(x interface{}) *bool
 ```
@@ -586,7 +586,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 notificationdestination.NotificationDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -600,7 +600,7 @@ notificationdestination.NotificationDestination_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 notificationdestination.NotificationDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -614,7 +614,7 @@ notificationdestination.NotificationDestination_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 notificationdestination.NotificationDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1140,7 +1140,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationAuthBasic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationAuthBasic {
 	Password: *string,
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationAuthCustomHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationAuthCustomHeader {
 	Key: *string,
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationAuthToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationAuthToken {
 	Token: *string,
@@ -1278,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationConfig {
 	Connection: interface{},
@@ -1293,13 +1293,13 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notification
 	Type: *string,
 	AccountId: *f64,
 	Active: interface{},
-	AuthBasic: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.notificationDestination.NotificationDestinationAuthBasic,
+	AuthBasic: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.notificationDestination.NotificationDestinationAuthBasic,
 	AuthCustomHeader: interface{},
-	AuthToken: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.notificationDestination.NotificationDestinationAuthToken,
+	AuthToken: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.notificationDestination.NotificationDestinationAuthToken,
 	Id: *string,
-	Scope: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.notificationDestination.NotificationDestinationScope,
-	SecureUrl: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.notificationDestination.NotificationDestinationSecureUrl,
-	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.notificationDestination.NotificationDestinationTimeouts,
+	Scope: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.notificationDestination.NotificationDestinationScope,
+	SecureUrl: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.notificationDestination.NotificationDestinationSecureUrl,
+	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.notificationDestination.NotificationDestinationTimeouts,
 }
 ```
 
@@ -1575,7 +1575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationProperty {
 	Key: *string,
@@ -1657,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationScope {
 	Id: *string,
@@ -1710,7 +1710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationSecureUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationSecureUrl {
 	Prefix: *string,
@@ -1756,7 +1756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationTimeouts {
 	Create: *string,
@@ -1804,7 +1804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationAuthBasicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationAuthBasicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationDestinationAuthBasicOutputReference
 ```
@@ -2097,7 +2097,7 @@ func InternalValue() NotificationDestinationAuthBasic
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationAuthCustomHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationAuthCustomHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationDestinationAuthCustomHeaderList
 ```
@@ -2257,7 +2257,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationAuthCustomHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationAuthCustomHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NotificationDestinationAuthCustomHeaderOutputReference
 ```
@@ -2568,7 +2568,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationAuthTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationAuthTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationDestinationAuthTokenOutputReference
 ```
@@ -2868,7 +2868,7 @@ func InternalValue() NotificationDestinationAuthToken
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationDestinationPropertyList
 ```
@@ -3028,7 +3028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NotificationDestinationPropertyOutputReference
 ```
@@ -3397,7 +3397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationDestinationScopeOutputReference
 ```
@@ -3690,7 +3690,7 @@ func InternalValue() NotificationDestinationScope
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationSecureUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationSecureUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationDestinationSecureUrlOutputReference
 ```
@@ -3983,7 +3983,7 @@ func InternalValue() NotificationDestinationSecureUrl
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notificationDestination.NotificationDestinationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationdestination"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationDestinationTimeoutsOutputReference
 ```

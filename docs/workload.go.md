@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.Workload.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.NewWorkload(scope Construct, id *string, config WorkloadConfig) Workload
 ```
@@ -495,7 +495,7 @@ func ResetStatusConfigStatic()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.workload.Workload.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.Workload_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.workload.Workload.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.Workload_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ workload.Workload_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.workload.Workload.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.Workload_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ workload.Workload_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.workload.Workload.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.Workload_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1026,7 +1026,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workload.WorkloadConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 &workload.WorkloadConfig {
 	Connection: interface{},
@@ -1043,8 +1043,8 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
 	EntitySearchQuery: interface{},
 	Id: *string,
 	ScopeAccountIds: *[]*f64,
-	StatusConfigAutomatic: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.workload.WorkloadStatusConfigAutomatic,
-	StatusConfigStatic: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.workload.WorkloadStatusConfigStatic,
+	StatusConfigAutomatic: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.workload.WorkloadStatusConfigAutomatic,
+	StatusConfigStatic: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.workload.WorkloadStatusConfigStatic,
 }
 ```
 
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workload.WorkloadEntitySearchQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 &workload.WorkloadEntitySearchQuery {
 	Query: *string,
@@ -1307,11 +1307,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomatic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 &workload.WorkloadStatusConfigAutomatic {
 	Enabled: interface{},
-	RemainingEntitiesRule: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRule,
+	RemainingEntitiesRule: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRule,
 	Rule: interface{},
 }
 ```
@@ -1373,10 +1373,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 &workload.WorkloadStatusConfigAutomaticRemainingEntitiesRule {
-	RemainingEntitiesRuleRollup: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup,
+	RemainingEntitiesRuleRollup: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup,
 }
 ```
 
@@ -1407,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 &workload.WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup {
 	GroupBy: *string,
@@ -1493,10 +1493,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 &workload.WorkloadStatusConfigAutomaticRule {
-	Rollup: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.workload.WorkloadStatusConfigAutomaticRuleRollup,
+	Rollup: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.workload.WorkloadStatusConfigAutomaticRuleRollup,
 	EntityGuids: *[]*string,
 	NrqlQuery: interface{},
 }
@@ -1559,7 +1559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 &workload.WorkloadStatusConfigAutomaticRuleNrqlQuery {
 	Query: *string,
@@ -1593,7 +1593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleRollup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 &workload.WorkloadStatusConfigAutomaticRuleRollup {
 	Strategy: *string,
@@ -1663,7 +1663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigStatic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 &workload.WorkloadStatusConfigStatic {
 	Enabled: interface{},
@@ -1747,7 +1747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadEntitySearchQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.NewWorkloadEntitySearchQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkloadEntitySearchQueryList
 ```
@@ -1907,7 +1907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadEntitySearchQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.NewWorkloadEntitySearchQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkloadEntitySearchQueryOutputReference
 ```
@@ -2196,7 +2196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.NewWorkloadStatusConfigAutomaticOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadStatusConfigAutomaticOutputReference
 ```
@@ -2551,7 +2551,7 @@ func InternalValue() WorkloadStatusConfigAutomatic
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.NewWorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference
 ```
@@ -2835,7 +2835,7 @@ func InternalValue() WorkloadStatusConfigAutomaticRemainingEntitiesRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.NewWorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupOutputReference
 ```
@@ -3186,7 +3186,7 @@ func InternalValue() WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemaining
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.NewWorkloadStatusConfigAutomaticRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkloadStatusConfigAutomaticRuleList
 ```
@@ -3346,7 +3346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.NewWorkloadStatusConfigAutomaticRuleNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkloadStatusConfigAutomaticRuleNrqlQueryList
 ```
@@ -3506,7 +3506,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.NewWorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference
 ```
@@ -3795,7 +3795,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.NewWorkloadStatusConfigAutomaticRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkloadStatusConfigAutomaticRuleOutputReference
 ```
@@ -4168,7 +4168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleRollupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.NewWorkloadStatusConfigAutomaticRuleRollupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadStatusConfigAutomaticRuleRollupOutputReference
 ```
@@ -4497,7 +4497,7 @@ func InternalValue() WorkloadStatusConfigAutomaticRuleRollup
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workload"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workload"
 
 workload.NewWorkloadStatusConfigStaticOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadStatusConfigStaticOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboardRaw.OneDashboardRaw.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/onedashboardraw"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardraw"
 
 onedashboardraw.NewOneDashboardRaw(scope Construct, id *string, config OneDashboardRawConfig) OneDashboardRaw
 ```
@@ -441,7 +441,7 @@ func ResetPermissions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.oneDashboardRaw.OneDashboardRaw.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/onedashboardraw"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardraw"
 
 onedashboardraw.OneDashboardRaw_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.oneDashboardRaw.OneDashboardRaw.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/onedashboardraw"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardraw"
 
 onedashboardraw.OneDashboardRaw_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ onedashboardraw.OneDashboardRaw_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.oneDashboardRaw.OneDashboardRaw.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/onedashboardraw"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardraw"
 
 onedashboardraw.OneDashboardRaw_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ onedashboardraw.OneDashboardRaw_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.oneDashboardRaw.OneDashboardRaw.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/onedashboardraw"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardraw"
 
 onedashboardraw.OneDashboardRaw_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboardRaw.OneDashboardRawConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/onedashboardraw"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardraw"
 
 &onedashboardraw.OneDashboardRawConfig {
 	Connection: interface{},
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboardRaw.OneDashboardRawPage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/onedashboardraw"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardraw"
 
 &onedashboardraw.OneDashboardRawPage {
 	Name: *string,
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/onedashboardraw"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardraw"
 
 &onedashboardraw.OneDashboardRawPageWidget {
 	Column: *f64,
@@ -1289,7 +1289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboardRaw.OneDashboardRawPageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/onedashboardraw"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardraw"
 
 onedashboardraw.NewOneDashboardRawPageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardRawPageList
 ```
@@ -1449,7 +1449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboardRaw.OneDashboardRawPageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/onedashboardraw"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardraw"
 
 onedashboardraw.NewOneDashboardRawPageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardRawPageOutputReference
 ```
@@ -1820,7 +1820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidgetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/onedashboardraw"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardraw"
 
 onedashboardraw.NewOneDashboardRawPageWidgetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardRawPageWidgetList
 ```
@@ -1980,7 +1980,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidgetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/onedashboardraw"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardraw"
 
 onedashboardraw.NewOneDashboardRawPageWidgetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardRawPageWidgetOutputReference
 ```

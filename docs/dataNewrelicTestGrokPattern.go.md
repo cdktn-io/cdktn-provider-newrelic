@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelictestgrokpattern"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelictestgrokpattern"
 
 datanewrelictestgrokpattern.NewDataNewrelicTestGrokPattern(scope Construct, id *string, config DataNewrelicTestGrokPatternConfig) DataNewrelicTestGrokPattern
 ```
@@ -312,7 +312,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPattern.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelictestgrokpattern"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelictestgrokpattern"
 
 datanewrelictestgrokpattern.DataNewrelicTestGrokPattern_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPattern.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelictestgrokpattern"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelictestgrokpattern"
 
 datanewrelictestgrokpattern.DataNewrelicTestGrokPattern_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datanewrelictestgrokpattern.DataNewrelicTestGrokPattern_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPattern.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelictestgrokpattern"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelictestgrokpattern"
 
 datanewrelictestgrokpattern.DataNewrelicTestGrokPattern_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datanewrelictestgrokpattern.DataNewrelicTestGrokPattern_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPattern.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelictestgrokpattern"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelictestgrokpattern"
 
 datanewrelictestgrokpattern.DataNewrelicTestGrokPattern_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPatternConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelictestgrokpattern"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelictestgrokpattern"
 
 &datanewrelictestgrokpattern.DataNewrelicTestGrokPatternConfig {
 	Connection: interface{},
@@ -845,7 +845,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPatternTestGrok.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelictestgrokpattern"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelictestgrokpattern"
 
 &datanewrelictestgrokpattern.DataNewrelicTestGrokPatternTestGrok {
 
@@ -858,7 +858,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelic
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPatternTestGrokAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelictestgrokpattern"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelictestgrokpattern"
 
 &datanewrelictestgrokpattern.DataNewrelicTestGrokPatternTestGrokAttributes {
 
@@ -873,7 +873,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelic
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPatternTestGrokAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelictestgrokpattern"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelictestgrokpattern"
 
 datanewrelictestgrokpattern.NewDataNewrelicTestGrokPatternTestGrokAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNewrelicTestGrokPatternTestGrokAttributesList
 ```
@@ -1022,7 +1022,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPatternTestGrokAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelictestgrokpattern"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelictestgrokpattern"
 
 datanewrelictestgrokpattern.NewDataNewrelicTestGrokPatternTestGrokAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNewrelicTestGrokPatternTestGrokAttributesOutputReference
 ```
@@ -1311,7 +1311,7 @@ func InternalValue() DataNewrelicTestGrokPatternTestGrokAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPatternTestGrokList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelictestgrokpattern"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelictestgrokpattern"
 
 datanewrelictestgrokpattern.NewDataNewrelicTestGrokPatternTestGrokList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNewrelicTestGrokPatternTestGrokList
 ```
@@ -1460,7 +1460,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPatternTestGrokOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelictestgrokpattern"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelictestgrokpattern"
 
 datanewrelictestgrokpattern.NewDataNewrelicTestGrokPatternTestGrokOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNewrelicTestGrokPatternTestGrokOutputReference
 ```

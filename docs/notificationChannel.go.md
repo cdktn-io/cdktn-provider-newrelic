@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notificationChannel.NotificationChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationchannel"
 
 notificationchannel.NewNotificationChannel(scope Construct, id *string, config NotificationChannelConfig) NotificationChannel
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.notificationChannel.NotificationChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationchannel"
 
 notificationchannel.NotificationChannel_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.notificationChannel.NotificationChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationchannel"
 
 notificationchannel.NotificationChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ notificationchannel.NotificationChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.notificationChannel.NotificationChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationchannel"
 
 notificationchannel.NotificationChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ notificationchannel.NotificationChannel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.notificationChannel.NotificationChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationchannel"
 
 notificationchannel.NotificationChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -952,7 +952,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.notificationChannel.NotificationChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationchannel"
 
 &notificationchannel.NotificationChannelConfig {
 	Connection: interface{},
@@ -970,7 +970,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notification
 	AccountId: *f64,
 	Active: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.notificationChannel.NotificationChannelTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.notificationChannel.NotificationChannelTimeouts,
 }
 ```
 
@@ -1201,7 +1201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.notificationChannel.NotificationChannelProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationchannel"
 
 &notificationchannel.NotificationChannelProperty {
 	Key: *string,
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.notificationChannel.NotificationChannelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationchannel"
 
 &notificationchannel.NotificationChannelTimeouts {
 	Create: *string,
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notificationChannel.NotificationChannelPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationchannel"
 
 notificationchannel.NewNotificationChannelPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationChannelPropertyList
 ```
@@ -1491,7 +1491,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notificationChannel.NotificationChannelPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationchannel"
 
 notificationchannel.NewNotificationChannelPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NotificationChannelPropertyOutputReference
 ```
@@ -1860,7 +1860,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notificationChannel.NotificationChannelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/notificationchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/notificationchannel"
 
 notificationchannel.NewNotificationChannelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationChannelTimeoutsOutputReference
 ```

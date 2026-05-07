@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelicalertchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertchannel"
 
 datanewrelicalertchannel.NewDataNewrelicAlertChannel(scope Construct, id *string, config DataNewrelicAlertChannelConfig) DataNewrelicAlertChannel
 ```
@@ -312,7 +312,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelicalertchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertchannel"
 
 datanewrelicalertchannel.DataNewrelicAlertChannel_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelicalertchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertchannel"
 
 datanewrelicalertchannel.DataNewrelicAlertChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datanewrelicalertchannel.DataNewrelicAlertChannel_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannel.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelicalertchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertchannel"
 
 datanewrelicalertchannel.DataNewrelicAlertChannel_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datanewrelicalertchannel.DataNewrelicAlertChannel_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelicalertchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertchannel"
 
 datanewrelicalertchannel.DataNewrelicAlertChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelicalertchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertchannel"
 
 &datanewrelicalertchannel.DataNewrelicAlertChannelConfig {
 	Connection: interface{},
@@ -829,7 +829,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannelConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelicalertchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertchannel"
 
 &datanewrelicalertchannel.DataNewrelicAlertChannelConfigA {
 
@@ -844,7 +844,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelic
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannelConfigAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelicalertchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertchannel"
 
 datanewrelicalertchannel.NewDataNewrelicAlertChannelConfigAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNewrelicAlertChannelConfigAList
 ```
@@ -993,7 +993,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannelConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewrelicalertchannel"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertchannel"
 
 datanewrelicalertchannel.NewDataNewrelicAlertChannelConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNewrelicAlertChannelConfigAOutputReference
 ```
