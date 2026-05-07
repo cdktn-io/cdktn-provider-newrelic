@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/eventstometricsrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/eventstometricsrule"
 
 eventstometricsrule.NewEventsToMetricsRule(scope Construct, id *string, config EventsToMetricsRuleConfig) EventsToMetricsRule
 ```
@@ -428,7 +428,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/eventstometricsrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/eventstometricsrule"
 
 eventstometricsrule.EventsToMetricsRule_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/eventstometricsrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/eventstometricsrule"
 
 eventstometricsrule.EventsToMetricsRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ eventstometricsrule.EventsToMetricsRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/eventstometricsrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/eventstometricsrule"
 
 eventstometricsrule.EventsToMetricsRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ eventstometricsrule.EventsToMetricsRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/eventstometricsrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/eventstometricsrule"
 
 eventstometricsrule.EventsToMetricsRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/eventstometricsrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/eventstometricsrule"
 
 &eventstometricsrule.EventsToMetricsRuleConfig {
 	Connection: interface{},

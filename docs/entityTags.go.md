@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.entityTags.EntityTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/entitytags"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/entitytags"
 
 entitytags.NewEntityTags(scope Construct, id *string, config EntityTagsConfig) EntityTags
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.entityTags.EntityTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/entitytags"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/entitytags"
 
 entitytags.EntityTags_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.entityTags.EntityTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/entitytags"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/entitytags"
 
 entitytags.EntityTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ entitytags.EntityTags_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.entityTags.EntityTags.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/entitytags"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/entitytags"
 
 entitytags.EntityTags_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ entitytags.EntityTags_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.entityTags.EntityTags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/entitytags"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/entitytags"
 
 entitytags.EntityTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.entityTags.EntityTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/entitytags"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/entitytags"
 
 &entitytags.EntityTagsConfig {
 	Connection: interface{},
@@ -830,7 +830,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/entitytags"
 	Guid: *string,
 	Tag: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.entityTags.EntityTagsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.entityTags.EntityTagsTimeouts,
 }
 ```
 
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.entityTags.EntityTagsTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/entitytags"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/entitytags"
 
 &entitytags.EntityTagsTag {
 	Key: *string,
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.entityTags.EntityTagsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/entitytags"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/entitytags"
 
 &entitytags.EntityTagsTimeouts {
 	Create: *string,
@@ -1068,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.entityTags.EntityTagsTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/entitytags"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/entitytags"
 
 entitytags.NewEntityTagsTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EntityTagsTagList
 ```
@@ -1228,7 +1228,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.entityTags.EntityTagsTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/entitytags"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/entitytags"
 
 entitytags.NewEntityTagsTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EntityTagsTagOutputReference
 ```
@@ -1539,7 +1539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.entityTags.EntityTagsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/entitytags"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/entitytags"
 
 entitytags.NewEntityTagsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EntityTagsTimeoutsOutputReference
 ```

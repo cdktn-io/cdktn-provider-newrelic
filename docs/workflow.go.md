@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workflow.Workflow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.NewWorkflow(scope Construct, id *string, config WorkflowConfig) Workflow
 ```
@@ -481,7 +481,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.workflow.Workflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.Workflow_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.workflow.Workflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.Workflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ workflow.Workflow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.workflow.Workflow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.Workflow_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ workflow.Workflow_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.workflow.Workflow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.Workflow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1023,7 +1023,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workflow.WorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 &workflow.WorkflowConfig {
 	Connection: interface{},
@@ -1034,13 +1034,13 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Destination: interface{},
-	IssuesFilter: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.workflow.WorkflowIssuesFilter,
+	IssuesFilter: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.workflow.WorkflowIssuesFilter,
 	MutingRulesHandling: *string,
 	Name: *string,
 	AccountId: *f64,
 	DestinationsEnabled: interface{},
 	Enabled: interface{},
-	Enrichments: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14.workflow.WorkflowEnrichments,
+	Enrichments: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.workflow.WorkflowEnrichments,
 	EnrichmentsEnabled: interface{},
 	Id: *string,
 }
@@ -1286,7 +1286,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workflow.WorkflowDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 &workflow.WorkflowDestination {
 	ChannelId: *string,
@@ -1352,7 +1352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workflow.WorkflowEnrichments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 &workflow.WorkflowEnrichments {
 	Nrql: interface{},
@@ -1386,7 +1386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workflow.WorkflowEnrichmentsNrql.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 &workflow.WorkflowEnrichmentsNrql {
 	Configuration: interface{},
@@ -1436,7 +1436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 &workflow.WorkflowEnrichmentsNrqlConfiguration {
 	Query: *string,
@@ -1470,7 +1470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workflow.WorkflowIssuesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 &workflow.WorkflowIssuesFilter {
 	Name: *string,
@@ -1536,7 +1536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workflow.WorkflowIssuesFilterPredicate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 &workflow.WorkflowIssuesFilterPredicate {
 	Attribute: *string,
@@ -1606,7 +1606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workflow.WorkflowDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.NewWorkflowDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkflowDestinationList
 ```
@@ -1766,7 +1766,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workflow.WorkflowDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.NewWorkflowDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkflowDestinationOutputReference
 ```
@@ -2135,7 +2135,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.NewWorkflowEnrichmentsNrqlConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkflowEnrichmentsNrqlConfigurationList
 ```
@@ -2295,7 +2295,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.NewWorkflowEnrichmentsNrqlConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkflowEnrichmentsNrqlConfigurationOutputReference
 ```
@@ -2584,7 +2584,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workflow.WorkflowEnrichmentsNrqlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.NewWorkflowEnrichmentsNrqlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkflowEnrichmentsNrqlList
 ```
@@ -2744,7 +2744,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.NewWorkflowEnrichmentsNrqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkflowEnrichmentsNrqlOutputReference
 ```
@@ -3101,7 +3101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.NewWorkflowEnrichmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkflowEnrichmentsOutputReference
 ```
@@ -3385,7 +3385,7 @@ func InternalValue() WorkflowEnrichments
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.NewWorkflowIssuesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkflowIssuesFilterOutputReference
 ```
@@ -3731,7 +3731,7 @@ func InternalValue() WorkflowIssuesFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workflow.WorkflowIssuesFilterPredicateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.NewWorkflowIssuesFilterPredicateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkflowIssuesFilterPredicateList
 ```
@@ -3891,7 +3891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workflow.WorkflowIssuesFilterPredicateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflow"
 
 workflow.NewWorkflowIssuesFilterPredicateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkflowIssuesFilterPredicateOutputReference
 ```

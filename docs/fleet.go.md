@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.fleet.Fleet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/fleet"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleet"
 
 fleet.NewFleet(scope Construct, id *string, config FleetConfig) Fleet
 ```
@@ -435,7 +435,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.fleet.Fleet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/fleet"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleet"
 
 fleet.Fleet_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.fleet.Fleet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/fleet"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleet"
 
 fleet.Fleet_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ fleet.Fleet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.fleet.Fleet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/fleet"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleet"
 
 fleet.Fleet_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ fleet.Fleet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.fleet.Fleet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/fleet"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleet"
 
 fleet.Fleet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -878,7 +878,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.fleet.FleetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/fleet"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleet"
 
 &fleet.FleetConfig {
 	Connection: interface{},

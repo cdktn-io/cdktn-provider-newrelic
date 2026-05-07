@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewreliccloudaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewreliccloudaccount"
 
 datanewreliccloudaccount.NewDataNewrelicCloudAccount(scope Construct, id *string, config DataNewrelicCloudAccountConfig) DataNewrelicCloudAccount
 ```
@@ -312,7 +312,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewreliccloudaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewreliccloudaccount"
 
 datanewreliccloudaccount.DataNewrelicCloudAccount_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewreliccloudaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewreliccloudaccount"
 
 datanewreliccloudaccount.DataNewrelicCloudAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datanewreliccloudaccount.DataNewrelicCloudAccount_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewreliccloudaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewreliccloudaccount"
 
 datanewreliccloudaccount.DataNewrelicCloudAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datanewreliccloudaccount.DataNewrelicCloudAccount_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewreliccloudaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewreliccloudaccount"
 
 datanewreliccloudaccount.DataNewrelicCloudAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v14/datanewreliccloudaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewreliccloudaccount"
 
 &datanewreliccloudaccount.DataNewrelicCloudAccountConfig {
 	Connection: interface{},
