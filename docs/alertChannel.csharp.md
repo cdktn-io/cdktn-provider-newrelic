@@ -8,31 +8,31 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer"></a>
 
-```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertchannel"
+```csharp
+using Io.Cdktn.Providers.Newrelic;
 
-alertchannel.NewAlertChannel(scope Construct, id *string, config AlertChannelConfig) AlertChannel
+new AlertChannel(Construct Scope, string Id, AlertChannelConfig Config);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig">AlertChannelConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.scope">Scope</a></code> | <code>Constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.id">Id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.config">Config</a></code> | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig">AlertChannelConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.scope"></a>
+##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.scope"></a>
 
-- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+- *Type:* Constructs.Construct
 
 The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.id"></a>
 
-- *Type:* *string
+- *Type:* string
 
 The scoped construct ID.
 
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.config"></a>
+##### `Config`<sup>Required</sup> <a name="Config" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig">AlertChannelConfig</a>
 
@@ -83,16 +83,16 @@ Must be unique amongst siblings in the same scope
 
 ##### `ToString` <a name="ToString" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.toString"></a>
 
-```go
-func ToString() *string
+```csharp
+private string ToString()
 ```
 
 Returns a string representation of this construct.
 
 ##### `With` <a name="With" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.with"></a>
 
-```go
-func With(mixins ...IMixin) IConstruct
+```csharp
+private IConstruct With(params IMixin[] Mixins)
 ```
 
 Applies one or more mixins to this construct.
@@ -102,9 +102,9 @@ start of the call, so constructs added by a mixin will not be visited.
 Use multiple `with()` calls if subsequent mixins should apply to added
 constructs.
 
-###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.with.parameter.mixins"></a>
+###### `Mixins`<sup>Required</sup> <a name="Mixins" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.with.parameter.mixins"></a>
 
-- *Type:* ...github.com/aws/constructs-go/constructs/v10.IMixin
+- *Type:* params Constructs.IMixin[]
 
 The mixins to apply.
 
@@ -112,33 +112,33 @@ The mixins to apply.
 
 ##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.addOverride"></a>
 
-```go
-func AddOverride(path *string, value interface{})
+```csharp
+private void AddOverride(string Path, object Value)
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.addOverride.parameter.path"></a>
+###### `Path`<sup>Required</sup> <a name="Path" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.addOverride.parameter.path"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.addOverride.parameter.value"></a>
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.addOverride.parameter.value"></a>
 
-- *Type:* interface{}
+- *Type:* object
 
 ---
 
 ##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.overrideLogicalId"></a>
 
-```go
-func OverrideLogicalId(newLogicalId *string)
+```csharp
+private void OverrideLogicalId(string NewLogicalId)
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.overrideLogicalId.parameter.newLogicalId"></a>
+###### `NewLogicalId`<sup>Required</sup> <a name="NewLogicalId" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.overrideLogicalId.parameter.newLogicalId"></a>
 
-- *Type:* *string
+- *Type:* string
 
 The new logical ID to use for this stack element.
 
@@ -146,43 +146,43 @@ The new logical ID to use for this stack element.
 
 ##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.resetOverrideLogicalId"></a>
 
-```go
-func ResetOverrideLogicalId()
+```csharp
+private void ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
 ##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.toHclTerraform"></a>
 
-```go
-func ToHclTerraform() interface{}
+```csharp
+private object ToHclTerraform()
 ```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.toMetadata"></a>
 
-```go
-func ToMetadata() interface{}
+```csharp
+private object ToMetadata()
 ```
 
 ##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.toTerraform"></a>
 
-```go
-func ToTerraform() interface{}
+```csharp
+private object ToTerraform()
 ```
 
 Adds this resource to the terraform JSON output.
 
 ##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.addMoveTarget"></a>
 
-```go
-func AddMoveTarget(moveTarget *string)
+```csharp
+private void AddMoveTarget(string MoveTarget)
 ```
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.addMoveTarget.parameter.moveTarget"></a>
+###### `MoveTarget`<sup>Required</sup> <a name="MoveTarget" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.addMoveTarget.parameter.moveTarget"></a>
 
-- *Type:* *string
+- *Type:* string
 
 The string move target that will correspond to this resource.
 
@@ -190,161 +190,161 @@ The string move target that will correspond to this resource.
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getAnyMapAttribute"></a>
 
-```go
-func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getBooleanAttribute"></a>
 
-```go
-func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getBooleanAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getBooleanMapAttribute"></a>
 
-```go
-func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getListAttribute"></a>
 
-```go
-func GetListAttribute(terraformAttribute *string) *[]*string
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getListAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getListAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getNumberAttribute"></a>
 
-```go
-func GetNumberAttribute(terraformAttribute *string) *f64
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getNumberAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getNumberListAttribute"></a>
 
-```go
-func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getNumberListAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getNumberMapAttribute"></a>
 
-```go
-func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getStringAttribute"></a>
 
-```go
-func GetStringAttribute(terraformAttribute *string) *string
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getStringAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getStringAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getStringMapAttribute"></a>
 
-```go
-func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.getStringMapAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.hasResourceMove"></a>
 
-```go
-func HasResourceMove() interface{}
+```csharp
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.importFrom"></a>
 
-```go
-func ImportFrom(id *string, provider TerraformProvider)
+```csharp
+private void ImportFrom(string Id, TerraformProvider Provider = null)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.importFrom.parameter.id"></a>
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.importFrom.parameter.id"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.importFrom.parameter.provider"></a>
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
+- *Type:* Io.Cdktn.TerraformProvider
 
 ---
 
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.interpolationForAttribute"></a>
 
-```go
-func InterpolationForAttribute(terraformAttribute *string) IResolvable
+```csharp
+private IResolvable InterpolationForAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.interpolationForAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.moveFromId"></a>
 
-```go
-func MoveFromId(id *string)
+```csharp
+private void MoveFromId(string Id)
 ```
 
 Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.moveFromId.parameter.id"></a>
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.moveFromId.parameter.id"></a>
 
-- *Type:* *string
+- *Type:* string
 
 Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
@@ -352,23 +352,23 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.moveTo"></a>
 
-```go
-func MoveTo(moveTarget *string, index interface{})
+```csharp
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.moveTo.parameter.moveTarget"></a>
+###### `MoveTarget`<sup>Required</sup> <a name="MoveTarget" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.moveTo.parameter.moveTarget"></a>
 
-- *Type:* *string
+- *Type:* string
 
 The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.moveTo.parameter.index"></a>
+###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.moveTo.parameter.index"></a>
 
-- *Type:* interface{}
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -376,15 +376,15 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.moveToId"></a>
 
-```go
-func MoveToId(id *string)
+```csharp
+private void MoveToId(string Id)
 ```
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.moveToId.parameter.id"></a>
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.moveToId.parameter.id"></a>
 
-- *Type:* *string
+- *Type:* string
 
 Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
@@ -392,11 +392,11 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ##### `PutConfig` <a name="PutConfig" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.putConfig"></a>
 
-```go
-func PutConfig(value AlertChannelConfigA)
+```csharp
+private void PutConfig(AlertChannelConfigA Value)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.putConfig.parameter.value"></a>
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.putConfig.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA">AlertChannelConfigA</a>
 
@@ -404,20 +404,20 @@ func PutConfig(value AlertChannelConfigA)
 
 ##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.resetAccountId"></a>
 
-```go
-func ResetAccountId()
+```csharp
+private void ResetAccountId()
 ```
 
 ##### `ResetConfig` <a name="ResetConfig" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.resetConfig"></a>
 
-```go
-func ResetConfig()
+```csharp
+private void ResetConfig()
 ```
 
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.resetId"></a>
 
-```go
-func ResetId()
+```csharp
+private void ResetId()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -433,10 +433,10 @@ func ResetId()
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.isConstruct"></a>
 
-```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertchannel"
+```csharp
+using Io.Cdktn.Providers.Newrelic;
 
-alertchannel.AlertChannel_IsConstruct(x interface{}) *bool
+AlertChannel.IsConstruct(object X);
 ```
 
 Checks if `x` is a construct.
@@ -455,9 +455,9 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.isConstruct.parameter.x"></a>
+###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.isConstruct.parameter.x"></a>
 
-- *Type:* interface{}
+- *Type:* object
 
 Any object.
 
@@ -465,61 +465,61 @@ Any object.
 
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.isTerraformElement"></a>
 
-```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertchannel"
+```csharp
+using Io.Cdktn.Providers.Newrelic;
 
-alertchannel.AlertChannel_IsTerraformElement(x interface{}) *bool
+AlertChannel.IsTerraformElement(object X);
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.isTerraformElement.parameter.x"></a>
+###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.isTerraformElement.parameter.x"></a>
 
-- *Type:* interface{}
+- *Type:* object
 
 ---
 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.isTerraformResource"></a>
 
-```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertchannel"
+```csharp
+using Io.Cdktn.Providers.Newrelic;
 
-alertchannel.AlertChannel_IsTerraformResource(x interface{}) *bool
+AlertChannel.IsTerraformResource(object X);
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.isTerraformResource.parameter.x"></a>
+###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.isTerraformResource.parameter.x"></a>
 
-- *Type:* interface{}
+- *Type:* object
 
 ---
 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.generateConfigForImport"></a>
 
-```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertchannel"
+```csharp
+using Io.Cdktn.Providers.Newrelic;
 
-alertchannel.AlertChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+AlertChannel.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
 ```
 
 Generates CDKTN code for importing a AlertChannel resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.generateConfigForImport.parameter.scope"></a>
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.generateConfigForImport.parameter.scope"></a>
 
-- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+- *Type:* Constructs.Construct
 
 The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.generateConfigForImport.parameter.importToId"></a>
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.generateConfigForImport.parameter.importToId"></a>
 
-- *Type:* *string
+- *Type:* string
 
 The construct id used in the generated config for the AlertChannel to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.generateConfigForImport.parameter.importFromId"></a>
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.generateConfigForImport.parameter.importFromId"></a>
 
-- *Type:* *string
+- *Type:* string
 
 The id of the existing AlertChannel that should be imported.
 
@@ -527,9 +527,9 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.generateConfigForImport.parameter.provider"></a>
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
+- *Type:* Io.Cdktn.TerraformProvider
 
 ? Optional instance of the provider where the AlertChannel to import is found.
 
@@ -539,40 +539,40 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.node">Node</a></code> | <code>Constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.cdktfStack">CdktfStack</a></code> | <code>Io.Cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>Io.Cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.connection">Connection</a></code> | <code>Io.Cdktn.SSHProvisionerConnection\|Io.Cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.count">Count</a></code> | <code>double\|Io.Cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.forEach">ForEach</a></code> | <code>Io.Cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.config">Config</a></code> | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference">AlertChannelConfigAOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.accountIdInput">AccountIdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.accountIdInput">AccountIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.configInput">ConfigInput</a></code> | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA">AlertChannelConfigA</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.accountId">AccountId</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.accountId">AccountId</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.type">Type</a></code> | <code>string</code> | *No description.* |
 
 ---
 
 ##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.node"></a>
 
-```go
-func Node() Node
+```csharp
+public Node Node { get; }
 ```
 
-- *Type:* github.com/aws/constructs-go/constructs/v10.Node
+- *Type:* Constructs.Node
 
 The tree node.
 
@@ -580,138 +580,138 @@ The tree node.
 
 ##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.cdktfStack"></a>
 
-```go
-func CdktfStack() TerraformStack
+```csharp
+public TerraformStack CdktfStack { get; }
 ```
 
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
+- *Type:* Io.Cdktn.TerraformStack
 
 ---
 
 ##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.fqn"></a>
 
-```go
-func Fqn() *string
+```csharp
+public string Fqn { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.friendlyUniqueId"></a>
 
-```go
-func FriendlyUniqueId() *string
+```csharp
+public string FriendlyUniqueId { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.terraformMetaArguments"></a>
 
-```go
-func TerraformMetaArguments() *map[string]interface{}
+```csharp
+public System.Collections.Generic.IDictionary<string, object> TerraformMetaArguments { get; }
 ```
 
-- *Type:* *map[string]interface{}
+- *Type:* System.Collections.Generic.IDictionary<string, object>
 
 ---
 
 ##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.terraformResourceType"></a>
 
-```go
-func TerraformResourceType() *string
+```csharp
+public string TerraformResourceType { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.terraformGeneratorMetadata"></a>
 
-```go
-func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
+```csharp
+public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ```
 
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
+- *Type:* Io.Cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.connection"></a>
 
-```go
-func Connection() interface{}
+```csharp
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* interface{}
+- *Type:* Io.Cdktn.SSHProvisionerConnection|Io.Cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.count"></a>
 
-```go
-func Count() interface{}
+```csharp
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* interface{}
+- *Type:* double|Io.Cdktn.TerraformCount
 
 ---
 
 ##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.dependsOn"></a>
 
-```go
-func DependsOn() *[]*string
+```csharp
+public string[] DependsOn { get; }
 ```
 
-- *Type:* *[]*string
+- *Type:* string[]
 
 ---
 
 ##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.forEach"></a>
 
-```go
-func ForEach() ITerraformIterator
+```csharp
+public ITerraformIterator ForEach { get; }
 ```
 
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
+- *Type:* Io.Cdktn.ITerraformIterator
 
 ---
 
 ##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.lifecycle"></a>
 
-```go
-func Lifecycle() TerraformResourceLifecycle
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; }
 ```
 
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
+- *Type:* Io.Cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.provider"></a>
 
-```go
-func Provider() TerraformProvider
+```csharp
+public TerraformProvider Provider { get; }
 ```
 
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
+- *Type:* Io.Cdktn.TerraformProvider
 
 ---
 
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.provisioners"></a>
 
-```go
-func Provisioners() *[]interface{}
+```csharp
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* *[]interface{}
+- *Type:* Io.Cdktn.FileProvisioner|Io.Cdktn.LocalExecProvisioner|Io.Cdktn.RemoteExecProvisioner[]
 
 ---
 
 ##### `Config`<sup>Required</sup> <a name="Config" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.config"></a>
 
-```go
-func Config() AlertChannelConfigAOutputReference
+```csharp
+public AlertChannelConfigAOutputReference Config { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference">AlertChannelConfigAOutputReference</a>
@@ -720,18 +720,18 @@ func Config() AlertChannelConfigAOutputReference
 
 ##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.accountIdInput"></a>
 
-```go
-func AccountIdInput() *f64
+```csharp
+public double AccountIdInput { get; }
 ```
 
-- *Type:* *f64
+- *Type:* double
 
 ---
 
 ##### `ConfigInput`<sup>Optional</sup> <a name="ConfigInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.configInput"></a>
 
-```go
-func ConfigInput() AlertChannelConfigA
+```csharp
+public AlertChannelConfigA ConfigInput { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA">AlertChannelConfigA</a>
@@ -740,71 +740,71 @@ func ConfigInput() AlertChannelConfigA
 
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.idInput"></a>
 
-```go
-func IdInput() *string
+```csharp
+public string IdInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.nameInput"></a>
 
-```go
-func NameInput() *string
+```csharp
+public string NameInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.typeInput"></a>
 
-```go
-func TypeInput() *string
+```csharp
+public string TypeInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.accountId"></a>
 
-```go
-func AccountId() *f64
+```csharp
+public double AccountId { get; }
 ```
 
-- *Type:* *f64
+- *Type:* double
 
 ---
 
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.id"></a>
 
-```go
-func Id() *string
+```csharp
+public string Id { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.name"></a>
 
-```go
-func Name() *string
+```csharp
+public string Name { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.type"></a>
 
-```go
-func Type() *string
+```csharp
+public string Type { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
@@ -812,17 +812,17 @@ func Type() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.property.tfResourceType">TfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
 ##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-newrelic.alertChannel.AlertChannel.property.tfResourceType"></a>
 
-```go
-func TfResourceType() *string
+```csharp
+public string TfResourceType { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
@@ -832,121 +832,121 @@ func TfResourceType() *string
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.Initializer"></a>
 
-```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertchannel"
+```csharp
+using Io.Cdktn.Providers.Newrelic;
 
-&alertchannel.AlertChannelConfig {
-	Connection: interface{},
-	Count: interface{},
-	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
-	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
-	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
-	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
-	Provisioners: *[]interface{},
-	Name: *string,
-	Type: *string,
-	AccountId: *f64,
-	Config: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.alertChannel.AlertChannelConfigA,
-	Id: *string,
-}
+new AlertChannelConfig {
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
+    ITerraformDependable[] DependsOn = null,
+    ITerraformIterator ForEach = null,
+    TerraformResourceLifecycle Lifecycle = null,
+    TerraformProvider Provider = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string Name,
+    string Type,
+    double AccountId = null,
+    AlertChannelConfigA Config = null,
+    string Id = null
+};
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.name">Name</a></code> | <code>*string</code> | (Required) The name of the channel. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.type">Type</a></code> | <code>*string</code> | (Required) The type of channel. One of: (user, victorops, webhook, email, opsgenie, pagerduty, slack). |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The New Relic account ID where you want to create alert channels. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.connection">Connection</a></code> | <code>Io.Cdktn.SSHProvisionerConnection\|Io.Cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.count">Count</a></code> | <code>double\|Io.Cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.dependsOn">DependsOn</a></code> | <code>Io.Cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.forEach">ForEach</a></code> | <code>Io.Cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.name">Name</a></code> | <code>string</code> | (Required) The name of the channel. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.type">Type</a></code> | <code>string</code> | (Required) The type of channel. One of: (user, victorops, webhook, email, opsgenie, pagerduty, slack). |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.accountId">AccountId</a></code> | <code>double</code> | The New Relic account ID where you want to create alert channels. |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.config">Config</a></code> | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA">AlertChannelConfigA</a></code> | config block. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/alert_channel#id AlertChannel#id}. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/alert_channel#id AlertChannel#id}. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.connection"></a>
 
-```go
-Connection interface{}
+```csharp
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* interface{}
+- *Type:* Io.Cdktn.SSHProvisionerConnection|Io.Cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.count"></a>
 
-```go
-Count interface{}
+```csharp
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* interface{}
+- *Type:* double|Io.Cdktn.TerraformCount
 
 ---
 
 ##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.dependsOn"></a>
 
-```go
-DependsOn *[]ITerraformDependable
+```csharp
+public ITerraformDependable[] DependsOn { get; set; }
 ```
 
-- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
+- *Type:* Io.Cdktn.ITerraformDependable[]
 
 ---
 
 ##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.forEach"></a>
 
-```go
-ForEach ITerraformIterator
+```csharp
+public ITerraformIterator ForEach { get; set; }
 ```
 
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
+- *Type:* Io.Cdktn.ITerraformIterator
 
 ---
 
 ##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.lifecycle"></a>
 
-```go
-Lifecycle TerraformResourceLifecycle
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; set; }
 ```
 
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
+- *Type:* Io.Cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.provider"></a>
 
-```go
-Provider TerraformProvider
+```csharp
+public TerraformProvider Provider { get; set; }
 ```
 
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
+- *Type:* Io.Cdktn.TerraformProvider
 
 ---
 
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.provisioners"></a>
 
-```go
-Provisioners *[]interface{}
+```csharp
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* *[]interface{}
+- *Type:* Io.Cdktn.FileProvisioner|Io.Cdktn.LocalExecProvisioner|Io.Cdktn.RemoteExecProvisioner[]
 
 ---
 
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.name"></a>
 
-```go
-Name *string
+```csharp
+public string Name { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 (Required) The name of the channel.
 
@@ -956,11 +956,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.type"></a>
 
-```go
-Type *string
+```csharp
+public string Type { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 (Required) The type of channel. One of: (user, victorops, webhook, email, opsgenie, pagerduty, slack).
 
@@ -970,11 +970,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.accountId"></a>
 
-```go
-AccountId *f64
+```csharp
+public double AccountId { get; set; }
 ```
 
-- *Type:* *f64
+- *Type:* double
 
 The New Relic account ID where you want to create alert channels.
 
@@ -984,8 +984,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.config"></a>
 
-```go
-Config AlertChannelConfigA
+```csharp
+public AlertChannelConfigA Config { get; set; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA">AlertChannelConfigA</a>
@@ -998,11 +998,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.id"></a>
 
-```go
-Id *string
+```csharp
+public string Id { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/alert_channel#id AlertChannel#id}.
 
@@ -1015,69 +1015,69 @@ If you experience problems setting this value it might not be settable. Please t
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.Initializer"></a>
 
-```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertchannel"
+```csharp
+using Io.Cdktn.Providers.Newrelic;
 
-&alertchannel.AlertChannelConfigA {
-	ApiKey: *string,
-	AuthPassword: *string,
-	AuthType: *string,
-	AuthUsername: *string,
-	BaseUrl: *string,
-	Channel: *string,
-	Headers: *map[string]*string,
-	HeadersString: *string,
-	IncludeJsonAttachment: *string,
-	Key: *string,
-	Payload: *map[string]*string,
-	PayloadString: *string,
-	PayloadType: *string,
-	Recipients: *string,
-	Region: *string,
-	RouteKey: *string,
-	ServiceKey: *string,
-	Tags: *string,
-	Teams: *string,
-	Url: *string,
-	UserId: *string,
-}
+new AlertChannelConfigA {
+    string ApiKey = null,
+    string AuthPassword = null,
+    string AuthType = null,
+    string AuthUsername = null,
+    string BaseUrl = null,
+    string Channel = null,
+    System.Collections.Generic.IDictionary<string, string> Headers = null,
+    string HeadersString = null,
+    string IncludeJsonAttachment = null,
+    string Key = null,
+    System.Collections.Generic.IDictionary<string, string> Payload = null,
+    string PayloadString = null,
+    string PayloadType = null,
+    string Recipients = null,
+    string Region = null,
+    string RouteKey = null,
+    string ServiceKey = null,
+    string Tags = null,
+    string Teams = null,
+    string Url = null,
+    string UserId = null
+};
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.apiKey">ApiKey</a></code> | <code>*string</code> | The API key for integrating with OpsGenie. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.authPassword">AuthPassword</a></code> | <code>*string</code> | Specifies an authentication password for use with a channel. Supported by the webhook channel type. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.authType">AuthType</a></code> | <code>*string</code> | Specifies an authentication method for use with a channel. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.authUsername">AuthUsername</a></code> | <code>*string</code> | Specifies an authentication username for use with a channel. Supported by the webhook channel type. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.baseUrl">BaseUrl</a></code> | <code>*string</code> | The base URL of the webhook destination. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.channel">Channel</a></code> | <code>*string</code> | The Slack channel to send notifications to. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.headers">Headers</a></code> | <code>*map[string]*string</code> | A map of key/value pairs that represents extra HTTP headers to be sent along with the webhook payload. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.headersString">HeadersString</a></code> | <code>*string</code> | Use instead of headers if the desired payload is more complex than a list of key/value pairs (e.g. a set of headers that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with headers. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.includeJsonAttachment">IncludeJsonAttachment</a></code> | <code>*string</code> | true or false. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.key">Key</a></code> | <code>*string</code> | The key for integrating with VictorOps. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.payload">Payload</a></code> | <code>*map[string]*string</code> | A map of key/value pairs that represents the webhook payload. Must provide payload_type if setting this argument. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.payloadString">PayloadString</a></code> | <code>*string</code> | Use instead of payload if the desired payload is more complex than a list of key/value pairs (e.g. a payload that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with payload. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.payloadType">PayloadType</a></code> | <code>*string</code> | Can either be application/json or application/x-www-form-urlencoded. The payload_type argument is required if payload is set. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.recipients">Recipients</a></code> | <code>*string</code> | A set of recipients for targeting notifications. Multiple values are comma separated. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.region">Region</a></code> | <code>*string</code> | The data center region to store your data. Valid values are US, EU, and JP. Default is US. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.routeKey">RouteKey</a></code> | <code>*string</code> | The route key for integrating with VictorOps. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.serviceKey">ServiceKey</a></code> | <code>*string</code> | Specifies the service key for integrating with Pagerduty. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.tags">Tags</a></code> | <code>*string</code> | A set of tags for targeting notifications. Multiple values are comma separated. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.teams">Teams</a></code> | <code>*string</code> | A set of teams for targeting notifications. Multiple values are comma separated. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.url">Url</a></code> | <code>*string</code> | Your organization's Slack URL. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.userId">UserId</a></code> | <code>*string</code> | The user ID for use with the user channel type. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.apiKey">ApiKey</a></code> | <code>string</code> | The API key for integrating with OpsGenie. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.authPassword">AuthPassword</a></code> | <code>string</code> | Specifies an authentication password for use with a channel. Supported by the webhook channel type. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.authType">AuthType</a></code> | <code>string</code> | Specifies an authentication method for use with a channel. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.authUsername">AuthUsername</a></code> | <code>string</code> | Specifies an authentication username for use with a channel. Supported by the webhook channel type. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.baseUrl">BaseUrl</a></code> | <code>string</code> | The base URL of the webhook destination. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.channel">Channel</a></code> | <code>string</code> | The Slack channel to send notifications to. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.headers">Headers</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of key/value pairs that represents extra HTTP headers to be sent along with the webhook payload. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.headersString">HeadersString</a></code> | <code>string</code> | Use instead of headers if the desired payload is more complex than a list of key/value pairs (e.g. a set of headers that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with headers. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.includeJsonAttachment">IncludeJsonAttachment</a></code> | <code>string</code> | true or false. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.key">Key</a></code> | <code>string</code> | The key for integrating with VictorOps. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.payload">Payload</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of key/value pairs that represents the webhook payload. Must provide payload_type if setting this argument. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.payloadString">PayloadString</a></code> | <code>string</code> | Use instead of payload if the desired payload is more complex than a list of key/value pairs (e.g. a payload that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with payload. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.payloadType">PayloadType</a></code> | <code>string</code> | Can either be application/json or application/x-www-form-urlencoded. The payload_type argument is required if payload is set. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.recipients">Recipients</a></code> | <code>string</code> | A set of recipients for targeting notifications. Multiple values are comma separated. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.region">Region</a></code> | <code>string</code> | The data center region to store your data. Valid values are US, EU, and JP. Default is US. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.routeKey">RouteKey</a></code> | <code>string</code> | The route key for integrating with VictorOps. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.serviceKey">ServiceKey</a></code> | <code>string</code> | Specifies the service key for integrating with Pagerduty. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.tags">Tags</a></code> | <code>string</code> | A set of tags for targeting notifications. Multiple values are comma separated. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.teams">Teams</a></code> | <code>string</code> | A set of teams for targeting notifications. Multiple values are comma separated. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.url">Url</a></code> | <code>string</code> | Your organization's Slack URL. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.userId">UserId</a></code> | <code>string</code> | The user ID for use with the user channel type. |
 
 ---
 
 ##### `ApiKey`<sup>Optional</sup> <a name="ApiKey" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.apiKey"></a>
 
-```go
-ApiKey *string
+```csharp
+public string ApiKey { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 The API key for integrating with OpsGenie.
 
@@ -1087,11 +1087,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `AuthPassword`<sup>Optional</sup> <a name="AuthPassword" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.authPassword"></a>
 
-```go
-AuthPassword *string
+```csharp
+public string AuthPassword { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 Specifies an authentication password for use with a channel. Supported by the webhook channel type.
 
@@ -1101,11 +1101,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `AuthType`<sup>Optional</sup> <a name="AuthType" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.authType"></a>
 
-```go
-AuthType *string
+```csharp
+public string AuthType { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 Specifies an authentication method for use with a channel.
 
@@ -1117,11 +1117,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `AuthUsername`<sup>Optional</sup> <a name="AuthUsername" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.authUsername"></a>
 
-```go
-AuthUsername *string
+```csharp
+public string AuthUsername { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 Specifies an authentication username for use with a channel. Supported by the webhook channel type.
 
@@ -1131,11 +1131,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `BaseUrl`<sup>Optional</sup> <a name="BaseUrl" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.baseUrl"></a>
 
-```go
-BaseUrl *string
+```csharp
+public string BaseUrl { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 The base URL of the webhook destination.
 
@@ -1145,11 +1145,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `Channel`<sup>Optional</sup> <a name="Channel" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.channel"></a>
 
-```go
-Channel *string
+```csharp
+public string Channel { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 The Slack channel to send notifications to.
 
@@ -1159,11 +1159,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `Headers`<sup>Optional</sup> <a name="Headers" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.headers"></a>
 
-```go
-Headers *map[string]*string
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Headers { get; set; }
 ```
 
-- *Type:* *map[string]*string
+- *Type:* System.Collections.Generic.IDictionary<string, string>
 
 A map of key/value pairs that represents extra HTTP headers to be sent along with the webhook payload.
 
@@ -1173,11 +1173,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `HeadersString`<sup>Optional</sup> <a name="HeadersString" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.headersString"></a>
 
-```go
-HeadersString *string
+```csharp
+public string HeadersString { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 Use instead of headers if the desired payload is more complex than a list of key/value pairs (e.g. a set of headers that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with headers.
 
@@ -1187,11 +1187,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `IncludeJsonAttachment`<sup>Optional</sup> <a name="IncludeJsonAttachment" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.includeJsonAttachment"></a>
 
-```go
-IncludeJsonAttachment *string
+```csharp
+public string IncludeJsonAttachment { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 true or false.
 
@@ -1203,11 +1203,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `Key`<sup>Optional</sup> <a name="Key" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.key"></a>
 
-```go
-Key *string
+```csharp
+public string Key { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 The key for integrating with VictorOps.
 
@@ -1217,11 +1217,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `Payload`<sup>Optional</sup> <a name="Payload" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.payload"></a>
 
-```go
-Payload *map[string]*string
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Payload { get; set; }
 ```
 
-- *Type:* *map[string]*string
+- *Type:* System.Collections.Generic.IDictionary<string, string>
 
 A map of key/value pairs that represents the webhook payload. Must provide payload_type if setting this argument.
 
@@ -1231,11 +1231,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `PayloadString`<sup>Optional</sup> <a name="PayloadString" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.payloadString"></a>
 
-```go
-PayloadString *string
+```csharp
+public string PayloadString { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 Use instead of payload if the desired payload is more complex than a list of key/value pairs (e.g. a payload that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with payload.
 
@@ -1245,11 +1245,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `PayloadType`<sup>Optional</sup> <a name="PayloadType" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.payloadType"></a>
 
-```go
-PayloadType *string
+```csharp
+public string PayloadType { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 Can either be application/json or application/x-www-form-urlencoded. The payload_type argument is required if payload is set.
 
@@ -1259,11 +1259,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `Recipients`<sup>Optional</sup> <a name="Recipients" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.recipients"></a>
 
-```go
-Recipients *string
+```csharp
+public string Recipients { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 A set of recipients for targeting notifications. Multiple values are comma separated.
 
@@ -1273,11 +1273,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.region"></a>
 
-```go
-Region *string
+```csharp
+public string Region { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 The data center region to store your data. Valid values are US, EU, and JP. Default is US.
 
@@ -1287,11 +1287,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `RouteKey`<sup>Optional</sup> <a name="RouteKey" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.routeKey"></a>
 
-```go
-RouteKey *string
+```csharp
+public string RouteKey { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 The route key for integrating with VictorOps.
 
@@ -1301,11 +1301,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `ServiceKey`<sup>Optional</sup> <a name="ServiceKey" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.serviceKey"></a>
 
-```go
-ServiceKey *string
+```csharp
+public string ServiceKey { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 Specifies the service key for integrating with Pagerduty.
 
@@ -1315,11 +1315,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.tags"></a>
 
-```go
-Tags *string
+```csharp
+public string Tags { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 A set of tags for targeting notifications. Multiple values are comma separated.
 
@@ -1329,11 +1329,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `Teams`<sup>Optional</sup> <a name="Teams" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.teams"></a>
 
-```go
-Teams *string
+```csharp
+public string Teams { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 A set of teams for targeting notifications. Multiple values are comma separated.
 
@@ -1343,11 +1343,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `Url`<sup>Optional</sup> <a name="Url" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.url"></a>
 
-```go
-Url *string
+```csharp
+public string Url { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 Your organization's Slack URL.
 
@@ -1357,11 +1357,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `UserId`<sup>Optional</sup> <a name="UserId" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA.property.userId"></a>
 
-```go
-UserId *string
+```csharp
+public string UserId { get; set; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 The user ID for use with the user channel type.
 
@@ -1375,30 +1375,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.Initializer"></a>
 
-```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/alertchannel"
+```csharp
+using Io.Cdktn.Providers.Newrelic;
 
-alertchannel.NewAlertChannelConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertChannelConfigAOutputReference
+new AlertChannelConfigAOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.Initializer.parameter.terraformResource"></a>
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+- *Type:* Io.Cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.Initializer.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 The attribute on the parent resource this class is referencing.
 
@@ -1447,148 +1447,148 @@ The attribute on the parent resource this class is referencing.
 
 ##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.computeFqn"></a>
 
-```go
-func ComputeFqn() *string
+```csharp
+private string ComputeFqn()
 ```
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getAnyMapAttribute"></a>
 
-```go
-func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getBooleanAttribute"></a>
 
-```go
-func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getBooleanMapAttribute"></a>
 
-```go
-func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getListAttribute"></a>
 
-```go
-func GetListAttribute(terraformAttribute *string) *[]*string
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getNumberAttribute"></a>
 
-```go
-func GetNumberAttribute(terraformAttribute *string) *f64
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getNumberListAttribute"></a>
 
-```go
-func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getNumberMapAttribute"></a>
 
-```go
-func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getStringAttribute"></a>
 
-```go
-func GetStringAttribute(terraformAttribute *string) *string
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getStringMapAttribute"></a>
 
-```go
-func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.interpolationForAttribute"></a>
 
-```go
-func InterpolationForAttribute(property *string) IResolvable
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.interpolationForAttribute.parameter.property"></a>
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `Resolve` <a name="Resolve" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resolve"></a>
 
-```go
-func Resolve(_context IResolveContext) interface{}
+```csharp
+private object Resolve(IResolveContext Context)
 ```
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resolve.parameter._context"></a>
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+- *Type:* Io.Cdktn.IResolveContext
 
 ---
 
 ##### `ToString` <a name="ToString" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.toString"></a>
 
-```go
-func ToString() *string
+```csharp
+private string ToString()
 ```
 
 Return a string representation of this resolvable object.
@@ -1597,128 +1597,128 @@ Returns a reversible string representation.
 
 ##### `ResetApiKey` <a name="ResetApiKey" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetApiKey"></a>
 
-```go
-func ResetApiKey()
+```csharp
+private void ResetApiKey()
 ```
 
 ##### `ResetAuthPassword` <a name="ResetAuthPassword" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetAuthPassword"></a>
 
-```go
-func ResetAuthPassword()
+```csharp
+private void ResetAuthPassword()
 ```
 
 ##### `ResetAuthType` <a name="ResetAuthType" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetAuthType"></a>
 
-```go
-func ResetAuthType()
+```csharp
+private void ResetAuthType()
 ```
 
 ##### `ResetAuthUsername` <a name="ResetAuthUsername" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetAuthUsername"></a>
 
-```go
-func ResetAuthUsername()
+```csharp
+private void ResetAuthUsername()
 ```
 
 ##### `ResetBaseUrl` <a name="ResetBaseUrl" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetBaseUrl"></a>
 
-```go
-func ResetBaseUrl()
+```csharp
+private void ResetBaseUrl()
 ```
 
 ##### `ResetChannel` <a name="ResetChannel" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetChannel"></a>
 
-```go
-func ResetChannel()
+```csharp
+private void ResetChannel()
 ```
 
 ##### `ResetHeaders` <a name="ResetHeaders" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetHeaders"></a>
 
-```go
-func ResetHeaders()
+```csharp
+private void ResetHeaders()
 ```
 
 ##### `ResetHeadersString` <a name="ResetHeadersString" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetHeadersString"></a>
 
-```go
-func ResetHeadersString()
+```csharp
+private void ResetHeadersString()
 ```
 
 ##### `ResetIncludeJsonAttachment` <a name="ResetIncludeJsonAttachment" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetIncludeJsonAttachment"></a>
 
-```go
-func ResetIncludeJsonAttachment()
+```csharp
+private void ResetIncludeJsonAttachment()
 ```
 
 ##### `ResetKey` <a name="ResetKey" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetKey"></a>
 
-```go
-func ResetKey()
+```csharp
+private void ResetKey()
 ```
 
 ##### `ResetPayload` <a name="ResetPayload" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetPayload"></a>
 
-```go
-func ResetPayload()
+```csharp
+private void ResetPayload()
 ```
 
 ##### `ResetPayloadString` <a name="ResetPayloadString" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetPayloadString"></a>
 
-```go
-func ResetPayloadString()
+```csharp
+private void ResetPayloadString()
 ```
 
 ##### `ResetPayloadType` <a name="ResetPayloadType" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetPayloadType"></a>
 
-```go
-func ResetPayloadType()
+```csharp
+private void ResetPayloadType()
 ```
 
 ##### `ResetRecipients` <a name="ResetRecipients" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetRecipients"></a>
 
-```go
-func ResetRecipients()
+```csharp
+private void ResetRecipients()
 ```
 
 ##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetRegion"></a>
 
-```go
-func ResetRegion()
+```csharp
+private void ResetRegion()
 ```
 
 ##### `ResetRouteKey` <a name="ResetRouteKey" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetRouteKey"></a>
 
-```go
-func ResetRouteKey()
+```csharp
+private void ResetRouteKey()
 ```
 
 ##### `ResetServiceKey` <a name="ResetServiceKey" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetServiceKey"></a>
 
-```go
-func ResetServiceKey()
+```csharp
+private void ResetServiceKey()
 ```
 
 ##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetTags"></a>
 
-```go
-func ResetTags()
+```csharp
+private void ResetTags()
 ```
 
 ##### `ResetTeams` <a name="ResetTeams" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetTeams"></a>
 
-```go
-func ResetTeams()
+```csharp
+private void ResetTeams()
 ```
 
 ##### `ResetUrl` <a name="ResetUrl" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetUrl"></a>
 
-```go
-func ResetUrl()
+```csharp
+private void ResetUrl()
 ```
 
 ##### `ResetUserId` <a name="ResetUserId" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.resetUserId"></a>
 
-```go
-func ResetUserId()
+```csharp
+private void ResetUserId()
 ```
 
 
@@ -1726,61 +1726,61 @@ func ResetUserId()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.apiKeyInput">ApiKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authPasswordInput">AuthPasswordInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authTypeInput">AuthTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authUsernameInput">AuthUsernameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.baseUrlInput">BaseUrlInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.channelInput">ChannelInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.headersInput">HeadersInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.headersStringInput">HeadersStringInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.includeJsonAttachmentInput">IncludeJsonAttachmentInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.keyInput">KeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadInput">PayloadInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadStringInput">PayloadStringInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadTypeInput">PayloadTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.recipientsInput">RecipientsInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.routeKeyInput">RouteKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.serviceKeyInput">ServiceKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.tagsInput">TagsInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.teamsInput">TeamsInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.urlInput">UrlInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.userIdInput">UserIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.apiKey">ApiKey</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authPassword">AuthPassword</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authType">AuthType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authUsername">AuthUsername</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.baseUrl">BaseUrl</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.channel">Channel</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.headers">Headers</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.headersString">HeadersString</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.includeJsonAttachment">IncludeJsonAttachment</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.key">Key</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payload">Payload</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadString">PayloadString</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadType">PayloadType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.recipients">Recipients</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.region">Region</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.routeKey">RouteKey</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.serviceKey">ServiceKey</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.tags">Tags</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.teams">Teams</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.url">Url</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.userId">UserId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.apiKeyInput">ApiKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authPasswordInput">AuthPasswordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authTypeInput">AuthTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authUsernameInput">AuthUsernameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.baseUrlInput">BaseUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.channelInput">ChannelInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.headersInput">HeadersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.headersStringInput">HeadersStringInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.includeJsonAttachmentInput">IncludeJsonAttachmentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadInput">PayloadInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadStringInput">PayloadStringInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadTypeInput">PayloadTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.recipientsInput">RecipientsInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.routeKeyInput">RouteKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.serviceKeyInput">ServiceKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.tagsInput">TagsInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.teamsInput">TeamsInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.userIdInput">UserIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.apiKey">ApiKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authPassword">AuthPassword</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authType">AuthType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authUsername">AuthUsername</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.baseUrl">BaseUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.channel">Channel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.headers">Headers</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.headersString">HeadersString</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.includeJsonAttachment">IncludeJsonAttachment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payload">Payload</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadString">PayloadString</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadType">PayloadType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.recipients">Recipients</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.routeKey">RouteKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.serviceKey">ServiceKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.tags">Tags</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.teams">Teams</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.userId">UserId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA">AlertChannelConfigA</a></code> | *No description.* |
 
 ---
 
 ##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.creationStack"></a>
 
-```go
-func CreationStack() *[]*string
+```csharp
+public string[] CreationStack { get; }
 ```
 
-- *Type:* *[]*string
+- *Type:* string[]
 
 The creation stack of this resolvable which will be appended to errors thrown during resolution.
 
@@ -1790,438 +1790,438 @@ If this returns an empty array the stack will not be attached.
 
 ##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.fqn"></a>
 
-```go
-func Fqn() *string
+```csharp
+public string Fqn { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `ApiKeyInput`<sup>Optional</sup> <a name="ApiKeyInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.apiKeyInput"></a>
 
-```go
-func ApiKeyInput() *string
+```csharp
+public string ApiKeyInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `AuthPasswordInput`<sup>Optional</sup> <a name="AuthPasswordInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authPasswordInput"></a>
 
-```go
-func AuthPasswordInput() *string
+```csharp
+public string AuthPasswordInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `AuthTypeInput`<sup>Optional</sup> <a name="AuthTypeInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authTypeInput"></a>
 
-```go
-func AuthTypeInput() *string
+```csharp
+public string AuthTypeInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `AuthUsernameInput`<sup>Optional</sup> <a name="AuthUsernameInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authUsernameInput"></a>
 
-```go
-func AuthUsernameInput() *string
+```csharp
+public string AuthUsernameInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `BaseUrlInput`<sup>Optional</sup> <a name="BaseUrlInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.baseUrlInput"></a>
 
-```go
-func BaseUrlInput() *string
+```csharp
+public string BaseUrlInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `ChannelInput`<sup>Optional</sup> <a name="ChannelInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.channelInput"></a>
 
-```go
-func ChannelInput() *string
+```csharp
+public string ChannelInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `HeadersInput`<sup>Optional</sup> <a name="HeadersInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.headersInput"></a>
 
-```go
-func HeadersInput() *map[string]*string
+```csharp
+public System.Collections.Generic.IDictionary<string, string> HeadersInput { get; }
 ```
 
-- *Type:* *map[string]*string
+- *Type:* System.Collections.Generic.IDictionary<string, string>
 
 ---
 
 ##### `HeadersStringInput`<sup>Optional</sup> <a name="HeadersStringInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.headersStringInput"></a>
 
-```go
-func HeadersStringInput() *string
+```csharp
+public string HeadersStringInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `IncludeJsonAttachmentInput`<sup>Optional</sup> <a name="IncludeJsonAttachmentInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.includeJsonAttachmentInput"></a>
 
-```go
-func IncludeJsonAttachmentInput() *string
+```csharp
+public string IncludeJsonAttachmentInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `KeyInput`<sup>Optional</sup> <a name="KeyInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.keyInput"></a>
 
-```go
-func KeyInput() *string
+```csharp
+public string KeyInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `PayloadInput`<sup>Optional</sup> <a name="PayloadInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadInput"></a>
 
-```go
-func PayloadInput() *map[string]*string
+```csharp
+public System.Collections.Generic.IDictionary<string, string> PayloadInput { get; }
 ```
 
-- *Type:* *map[string]*string
+- *Type:* System.Collections.Generic.IDictionary<string, string>
 
 ---
 
 ##### `PayloadStringInput`<sup>Optional</sup> <a name="PayloadStringInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadStringInput"></a>
 
-```go
-func PayloadStringInput() *string
+```csharp
+public string PayloadStringInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `PayloadTypeInput`<sup>Optional</sup> <a name="PayloadTypeInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadTypeInput"></a>
 
-```go
-func PayloadTypeInput() *string
+```csharp
+public string PayloadTypeInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `RecipientsInput`<sup>Optional</sup> <a name="RecipientsInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.recipientsInput"></a>
 
-```go
-func RecipientsInput() *string
+```csharp
+public string RecipientsInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.regionInput"></a>
 
-```go
-func RegionInput() *string
+```csharp
+public string RegionInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `RouteKeyInput`<sup>Optional</sup> <a name="RouteKeyInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.routeKeyInput"></a>
 
-```go
-func RouteKeyInput() *string
+```csharp
+public string RouteKeyInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `ServiceKeyInput`<sup>Optional</sup> <a name="ServiceKeyInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.serviceKeyInput"></a>
 
-```go
-func ServiceKeyInput() *string
+```csharp
+public string ServiceKeyInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.tagsInput"></a>
 
-```go
-func TagsInput() *string
+```csharp
+public string TagsInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `TeamsInput`<sup>Optional</sup> <a name="TeamsInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.teamsInput"></a>
 
-```go
-func TeamsInput() *string
+```csharp
+public string TeamsInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `UrlInput`<sup>Optional</sup> <a name="UrlInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.urlInput"></a>
 
-```go
-func UrlInput() *string
+```csharp
+public string UrlInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `UserIdInput`<sup>Optional</sup> <a name="UserIdInput" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.userIdInput"></a>
 
-```go
-func UserIdInput() *string
+```csharp
+public string UserIdInput { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `ApiKey`<sup>Required</sup> <a name="ApiKey" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.apiKey"></a>
 
-```go
-func ApiKey() *string
+```csharp
+public string ApiKey { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `AuthPassword`<sup>Required</sup> <a name="AuthPassword" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authPassword"></a>
 
-```go
-func AuthPassword() *string
+```csharp
+public string AuthPassword { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `AuthType`<sup>Required</sup> <a name="AuthType" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authType"></a>
 
-```go
-func AuthType() *string
+```csharp
+public string AuthType { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `AuthUsername`<sup>Required</sup> <a name="AuthUsername" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.authUsername"></a>
 
-```go
-func AuthUsername() *string
+```csharp
+public string AuthUsername { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `BaseUrl`<sup>Required</sup> <a name="BaseUrl" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.baseUrl"></a>
 
-```go
-func BaseUrl() *string
+```csharp
+public string BaseUrl { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `Channel`<sup>Required</sup> <a name="Channel" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.channel"></a>
 
-```go
-func Channel() *string
+```csharp
+public string Channel { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `Headers`<sup>Required</sup> <a name="Headers" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.headers"></a>
 
-```go
-func Headers() *map[string]*string
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Headers { get; }
 ```
 
-- *Type:* *map[string]*string
+- *Type:* System.Collections.Generic.IDictionary<string, string>
 
 ---
 
 ##### `HeadersString`<sup>Required</sup> <a name="HeadersString" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.headersString"></a>
 
-```go
-func HeadersString() *string
+```csharp
+public string HeadersString { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `IncludeJsonAttachment`<sup>Required</sup> <a name="IncludeJsonAttachment" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.includeJsonAttachment"></a>
 
-```go
-func IncludeJsonAttachment() *string
+```csharp
+public string IncludeJsonAttachment { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.key"></a>
 
-```go
-func Key() *string
+```csharp
+public string Key { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `Payload`<sup>Required</sup> <a name="Payload" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payload"></a>
 
-```go
-func Payload() *map[string]*string
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Payload { get; }
 ```
 
-- *Type:* *map[string]*string
+- *Type:* System.Collections.Generic.IDictionary<string, string>
 
 ---
 
 ##### `PayloadString`<sup>Required</sup> <a name="PayloadString" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadString"></a>
 
-```go
-func PayloadString() *string
+```csharp
+public string PayloadString { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `PayloadType`<sup>Required</sup> <a name="PayloadType" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.payloadType"></a>
 
-```go
-func PayloadType() *string
+```csharp
+public string PayloadType { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `Recipients`<sup>Required</sup> <a name="Recipients" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.recipients"></a>
 
-```go
-func Recipients() *string
+```csharp
+public string Recipients { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.region"></a>
 
-```go
-func Region() *string
+```csharp
+public string Region { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `RouteKey`<sup>Required</sup> <a name="RouteKey" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.routeKey"></a>
 
-```go
-func RouteKey() *string
+```csharp
+public string RouteKey { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `ServiceKey`<sup>Required</sup> <a name="ServiceKey" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.serviceKey"></a>
 
-```go
-func ServiceKey() *string
+```csharp
+public string ServiceKey { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.tags"></a>
 
-```go
-func Tags() *string
+```csharp
+public string Tags { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `Teams`<sup>Required</sup> <a name="Teams" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.teams"></a>
 
-```go
-func Teams() *string
+```csharp
+public string Teams { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `Url`<sup>Required</sup> <a name="Url" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.url"></a>
 
-```go
-func Url() *string
+```csharp
+public string Url { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `UserId`<sup>Required</sup> <a name="UserId" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.userId"></a>
 
-```go
-func UserId() *string
+```csharp
+public string UserId { get; }
 ```
 
-- *Type:* *string
+- *Type:* string
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.property.internalValue"></a>
 
-```go
-func InternalValue() AlertChannelConfigA
+```csharp
+public AlertChannelConfigA InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA">AlertChannelConfigA</a>
