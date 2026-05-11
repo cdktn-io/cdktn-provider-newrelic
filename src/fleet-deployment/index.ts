@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment
+// https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/fleet_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface FleetDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * A description of the deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#description FleetDeployment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/fleet_deployment#description FleetDeployment#description}
   */
   readonly description?: string;
   /**
   * The GUID of the fleet this deployment belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#fleet_id FleetDeployment#fleet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/fleet_deployment#fleet_id FleetDeployment#fleet_id}
   */
   readonly fleetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#id FleetDeployment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/fleet_deployment#id FleetDeployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +34,25 @@ export interface FleetDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#name FleetDeployment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/fleet_deployment#name FleetDeployment#name}
   */
   readonly name?: string;
   /**
   * The organization ID. Auto-fetched from the account if not provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#organization_id FleetDeployment#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/fleet_deployment#organization_id FleetDeployment#organization_id}
   */
   readonly organizationId?: string;
   /**
   * Tags for the deployment in format 'key:value1,value2'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#tags FleetDeployment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/fleet_deployment#tags FleetDeployment#tags}
   */
   readonly tags?: string[];
   /**
   * agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#agent FleetDeployment#agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/fleet_deployment#agent FleetDeployment#agent}
   */
   readonly agent?: FleetDeploymentAgent[] | cdktn.IResolvable;
 }
@@ -60,19 +60,19 @@ export interface FleetDeploymentAgent {
   /**
   * The agent type. Allowed values: NRInfra, NRDOT, FluentBit, NRPrometheusAgent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#agent_type FleetDeployment#agent_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/fleet_deployment#agent_type FleetDeployment#agent_type}
   */
   readonly agentType: string;
   /**
   * Configuration version entity GUID to associate with this agent in the deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#configuration_version_id FleetDeployment#configuration_version_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/fleet_deployment#configuration_version_id FleetDeployment#configuration_version_id}
   */
   readonly configurationVersionId: string;
   /**
   * The agent version to deploy (e.g. "1.58.0").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#version FleetDeployment#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/fleet_deployment#version FleetDeployment#version}
   */
   readonly version: string;
 }
@@ -237,7 +237,7 @@ export class FleetDeploymentAgentList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment newrelic_fleet_deployment}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/fleet_deployment newrelic_fleet_deployment}
 */
 export class FleetDeployment extends cdktn.TerraformResource {
 
@@ -253,7 +253,7 @@ export class FleetDeployment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FleetDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FleetDeployment to import
-  * @param importFromId The id of the existing FleetDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FleetDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/fleet_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FleetDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -265,7 +265,7 @@ export class FleetDeployment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.1/docs/resources/fleet_deployment newrelic_fleet_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/fleet_deployment newrelic_fleet_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -276,7 +276,7 @@ export class FleetDeployment extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_fleet_deployment',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.87.1',
+        providerVersion: '3.87.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
