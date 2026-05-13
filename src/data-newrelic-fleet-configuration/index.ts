@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/data-sources/fleet_configuration
+// https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/data-sources/fleet_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataNewrelicFleetConfigurationConfig extends cdktn.TerraformMet
   /**
   * The GUID of the fleet configuration entity. Returns the content of the latest version. Populated automatically when looking up by version_entity_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/data-sources/fleet_configuration#configuration_id DataNewrelicFleetConfiguration#configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/data-sources/fleet_configuration#configuration_id DataNewrelicFleetConfiguration#configuration_id}
   */
   readonly configurationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/data-sources/fleet_configuration#id DataNewrelicFleetConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/data-sources/fleet_configuration#id DataNewrelicFleetConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface DataNewrelicFleetConfigurationConfig extends cdktn.TerraformMet
   /**
   * The name of the fleet configuration. The first matching configuration is returned. Returns the content of its latest version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/data-sources/fleet_configuration#name DataNewrelicFleetConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/data-sources/fleet_configuration#name DataNewrelicFleetConfiguration#name}
   */
   readonly name?: string;
   /**
   * The organization ID. Resolved automatically from the provider when omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/data-sources/fleet_configuration#organization_id DataNewrelicFleetConfiguration#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/data-sources/fleet_configuration#organization_id DataNewrelicFleetConfiguration#organization_id}
   */
   readonly organizationId?: string;
   /**
   * The GUID of a specific configuration version entity. Returns the content of that exact version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/data-sources/fleet_configuration#version_entity_id DataNewrelicFleetConfiguration#version_entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/data-sources/fleet_configuration#version_entity_id DataNewrelicFleetConfiguration#version_entity_id}
   */
   readonly versionEntityId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/data-sources/fleet_configuration newrelic_fleet_configuration}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/data-sources/fleet_configuration newrelic_fleet_configuration}
 */
 export class DataNewrelicFleetConfiguration extends cdktn.TerraformDataSource {
 
@@ -62,7 +62,7 @@ export class DataNewrelicFleetConfiguration extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataNewrelicFleetConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicFleetConfiguration to import
-  * @param importFromId The id of the existing DataNewrelicFleetConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/data-sources/fleet_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicFleetConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/data-sources/fleet_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicFleetConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -74,7 +74,7 @@ export class DataNewrelicFleetConfiguration extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/data-sources/fleet_configuration newrelic_fleet_configuration} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/data-sources/fleet_configuration newrelic_fleet_configuration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class DataNewrelicFleetConfiguration extends cdktn.TerraformDataSource {
       terraformResourceType: 'newrelic_fleet_configuration',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.87.2',
+        providerVersion: '3.87.3',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
