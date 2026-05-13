@@ -4,7 +4,7 @@
 
 ### SyntheticsPrivateLocation <a name="SyntheticsPrivateLocation" id="@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/synthetics_private_location newrelic_synthetics_private_location}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location newrelic_synthetics_private_location}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer"></a>
 
@@ -25,6 +25,7 @@ syntheticsPrivateLocation.SyntheticsPrivateLocation(
   name: str,
   account_id: typing.Union[int, float] = None,
   id: str = None,
+  shared: bool | IResolvable = None,
   verified_script_execution: bool | IResolvable = None
 )
 ```
@@ -43,7 +44,8 @@ syntheticsPrivateLocation.SyntheticsPrivateLocation(
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.description">description</a></code> | <code>str</code> | The private location description. |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the private location. |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the account in New Relic. |
-| <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}. |
+| <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}. |
+| <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.shared">shared</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether the private location is shared across the organization. |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.verifiedScriptExecution">verified_script_execution</a></code> | <code>bool \| cdktn.IResolvable</code> | The private location requires a password to edit if value is true. |
 
 ---
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The private location description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The name of the private location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/synthetics_private_location#account_id SyntheticsPrivateLocation#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#account_id SyntheticsPrivateLocation#account_id}
 
 ---
 
@@ -142,10 +144,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `shared`<sup>Optional</sup> <a name="shared" id="@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.shared"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Specifies whether the private location is shared across the organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#shared SyntheticsPrivateLocation#shared}
 
 ---
 
@@ -155,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The private location requires a password to edit if value is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/synthetics_private_location#verified_script_execution SyntheticsPrivateLocation#verified_script_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#verified_script_execution SyntheticsPrivateLocation#verified_script_execution}
 
 ---
 
@@ -189,6 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.resetShared">reset_shared</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.resetVerifiedScriptExecution">reset_verified_script_execution</a></code> | *No description.* |
 
 ---
@@ -553,6 +566,12 @@ def reset_account_id() -> None
 def reset_id() -> None
 ```
 
+##### `reset_shared` <a name="reset_shared" id="@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.resetShared"></a>
+
+```python
+def reset_shared() -> None
+```
+
 ##### `reset_verified_script_execution` <a name="reset_verified_script_execution" id="@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.resetVerifiedScriptExecution"></a>
 
 ```python
@@ -673,7 +692,7 @@ The construct id used in the generated config for the SyntheticsPrivateLocation 
 
 The id of the existing SyntheticsPrivateLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,11 +730,13 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.sharedInput">shared_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.verifiedScriptExecutionInput">verified_script_execution_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.shared">shared</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.verifiedScriptExecution">verified_script_execution</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
 ---
@@ -942,6 +963,16 @@ name_input: str
 
 ---
 
+##### `shared_input`<sup>Optional</sup> <a name="shared_input" id="@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.sharedInput"></a>
+
+```python
+shared_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `verified_script_execution_input`<sup>Optional</sup> <a name="verified_script_execution_input" id="@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.verifiedScriptExecutionInput"></a>
 
 ```python
@@ -989,6 +1020,16 @@ name: str
 ```
 
 - *Type:* str
+
+---
+
+##### `shared`<sup>Required</sup> <a name="shared" id="@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.shared"></a>
+
+```python
+shared: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1041,6 +1082,7 @@ syntheticsPrivateLocation.SyntheticsPrivateLocationConfig(
   name: str,
   account_id: typing.Union[int, float] = None,
   id: str = None,
+  shared: bool | IResolvable = None,
   verified_script_execution: bool | IResolvable = None
 )
 ```
@@ -1059,7 +1101,8 @@ syntheticsPrivateLocation.SyntheticsPrivateLocationConfig(
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.description">description</a></code> | <code>str</code> | The private location description. |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.name">name</a></code> | <code>str</code> | The name of the private location. |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the account in New Relic. |
-| <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}. |
+| <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}. |
+| <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.shared">shared</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether the private location is shared across the organization. |
 | <code><a href="#@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.verifiedScriptExecution">verified_script_execution</a></code> | <code>bool \| cdktn.IResolvable</code> | The private location requires a password to edit if value is true. |
 
 ---
@@ -1144,7 +1187,7 @@ description: str
 
 The private location description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
 
 ---
 
@@ -1158,7 +1201,7 @@ name: str
 
 The name of the private location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
 
 ---
 
@@ -1172,7 +1215,7 @@ account_id: typing.Union[int, float]
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/synthetics_private_location#account_id SyntheticsPrivateLocation#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#account_id SyntheticsPrivateLocation#account_id}
 
 ---
 
@@ -1184,10 +1227,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `shared`<sup>Optional</sup> <a name="shared" id="@cdktn/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.shared"></a>
+
+```python
+shared: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Specifies whether the private location is shared across the organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#shared SyntheticsPrivateLocation#shared}
 
 ---
 
@@ -1201,7 +1258,7 @@ verified_script_execution: bool | IResolvable
 
 The private location requires a password to edit if value is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.2/docs/resources/synthetics_private_location#verified_script_execution SyntheticsPrivateLocation#verified_script_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/synthetics_private_location#verified_script_execution SyntheticsPrivateLocation#verified_script_execution}
 
 ---
 
