@@ -4,7 +4,7 @@
 
 ### AlertCompoundCondition <a name="AlertCompoundCondition" id="@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition newrelic_alert_compound_condition}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition newrelic_alert_compound_condition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.Initializer"></a>
 
@@ -53,7 +53,7 @@ alertCompoundCondition.AlertCompoundCondition(
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.Initializer.parameter.triggerExpression">trigger_expression</a></code> | <code>str</code> | Expression that defines how component condition evaluations are combined. |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.Initializer.parameter.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID for managing your compound alert conditions. |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.Initializer.parameter.facetMatchingBehavior">facet_matching_behavior</a></code> | <code>str</code> | How the compound condition will take into account the component conditions' facets during evaluation. |
-| <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#id AlertCompoundCondition#id}. |
+| <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#id AlertCompoundCondition#id}. |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.Initializer.parameter.runbookUrl">runbook_url</a></code> | <code>str</code> | Runbook URL to display in notifications. |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.Initializer.parameter.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | The duration, in seconds, that the trigger expression must be true before the compound alert condition will activate. |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionTimeouts">AlertCompoundConditionTimeouts</a></code> | timeouts block. |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 component_conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#component_conditions AlertCompoundCondition#component_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#component_conditions AlertCompoundCondition#component_conditions}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Whether or not to enable the alert condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#enabled AlertCompoundCondition#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#enabled AlertCompoundCondition#enabled}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The title of the compound alert condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#name AlertCompoundCondition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#name AlertCompoundCondition#name}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The ID of the policy where this condition should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#policy_id AlertCompoundCondition#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#policy_id AlertCompoundCondition#policy_id}
 
 ---
 
@@ -168,7 +168,7 @@ Expression that defines how component condition evaluations are combined.
 
 Valid operators are 'AND', 'OR', 'NOT'. For more complex expressions, use parentheses. Simple example: 'A AND B'. Complex example: 'A AND (B OR C) AND NOT D'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#trigger_expression AlertCompoundCondition#trigger_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#trigger_expression AlertCompoundCondition#trigger_expression}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The New Relic account ID for managing your compound alert conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#account_id AlertCompoundCondition#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#account_id AlertCompoundCondition#account_id}
 
 ---
 
@@ -190,7 +190,7 @@ How the compound condition will take into account the component conditions' face
 
 Valid values: 'FACETS_IGNORED' (default) - facets are not taken into consideration when determining when the compound alert condition activates; 'FACETS_MATCH' - the compound alert condition will activate only when shared facets have matching values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#facet_matching_behavior AlertCompoundCondition#facet_matching_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#facet_matching_behavior AlertCompoundCondition#facet_matching_behavior}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#id AlertCompoundCondition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#id AlertCompoundCondition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -211,7 +211,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Runbook URL to display in notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#runbook_url AlertCompoundCondition#runbook_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#runbook_url AlertCompoundCondition#runbook_url}
 
 ---
 
@@ -223,7 +223,7 @@ The duration, in seconds, that the trigger expression must be true before the co
 
 Between 30-86400 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#threshold_duration AlertCompoundCondition#threshold_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#threshold_duration AlertCompoundCondition#threshold_duration}
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#timeouts AlertCompoundCondition#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#timeouts AlertCompoundCondition#timeouts}
 
 ---
 
@@ -650,7 +650,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#create AlertCompoundCondition#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#create AlertCompoundCondition#create}.
 
 ---
 
@@ -804,7 +804,7 @@ The construct id used in the generated config for the AlertCompoundCondition to 
 
 The id of the existing AlertCompoundCondition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -835,6 +835,7 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.property.componentConditions">component_conditions</a></code> | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionComponentConditionsList">AlertCompoundConditionComponentConditionsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.property.entityGuid">entity_guid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionTimeoutsOutputReference">AlertCompoundConditionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.property.accountIdInput">account_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.property.componentConditionsInput">component_conditions_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionComponentConditions">AlertCompoundConditionComponentConditions</a>]</code> | *No description.* |
@@ -1008,6 +1009,16 @@ component_conditions: AlertCompoundConditionComponentConditionsList
 ```
 
 - *Type:* <a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionComponentConditionsList">AlertCompoundConditionComponentConditionsList</a>
+
+---
+
+##### `entity_guid`<sup>Required</sup> <a name="entity_guid" id="@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundCondition.property.entityGuid"></a>
+
+```python
+entity_guid: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1273,7 +1284,7 @@ alias: str
 
 The identifier that will be used in the compound alert condition's trigger_expression (e.g., 'A', 'B', 'C').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#alias AlertCompoundCondition#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#alias AlertCompoundCondition#alias}
 
 ---
 
@@ -1287,7 +1298,7 @@ id: str
 
 The ID of the existing alert condition to use as a component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#id AlertCompoundCondition#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#id AlertCompoundCondition#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1341,7 +1352,7 @@ alertCompoundCondition.AlertCompoundConditionConfig(
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionConfig.property.triggerExpression">trigger_expression</a></code> | <code>str</code> | Expression that defines how component condition evaluations are combined. |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionConfig.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID for managing your compound alert conditions. |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionConfig.property.facetMatchingBehavior">facet_matching_behavior</a></code> | <code>str</code> | How the compound condition will take into account the component conditions' facets during evaluation. |
-| <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#id AlertCompoundCondition#id}. |
+| <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#id AlertCompoundCondition#id}. |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionConfig.property.runbookUrl">runbook_url</a></code> | <code>str</code> | Runbook URL to display in notifications. |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionConfig.property.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | The duration, in seconds, that the trigger expression must be true before the compound alert condition will activate. |
 | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionTimeouts">AlertCompoundConditionTimeouts</a></code> | timeouts block. |
@@ -1428,7 +1439,7 @@ component_conditions: IResolvable | typing.List[AlertCompoundConditionComponentC
 
 component_conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#component_conditions AlertCompoundCondition#component_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#component_conditions AlertCompoundCondition#component_conditions}
 
 ---
 
@@ -1442,7 +1453,7 @@ enabled: bool | IResolvable
 
 Whether or not to enable the alert condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#enabled AlertCompoundCondition#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#enabled AlertCompoundCondition#enabled}
 
 ---
 
@@ -1456,7 +1467,7 @@ name: str
 
 The title of the compound alert condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#name AlertCompoundCondition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#name AlertCompoundCondition#name}
 
 ---
 
@@ -1470,7 +1481,7 @@ policy_id: typing.Union[int, float]
 
 The ID of the policy where this condition should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#policy_id AlertCompoundCondition#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#policy_id AlertCompoundCondition#policy_id}
 
 ---
 
@@ -1486,7 +1497,7 @@ Expression that defines how component condition evaluations are combined.
 
 Valid operators are 'AND', 'OR', 'NOT'. For more complex expressions, use parentheses. Simple example: 'A AND B'. Complex example: 'A AND (B OR C) AND NOT D'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#trigger_expression AlertCompoundCondition#trigger_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#trigger_expression AlertCompoundCondition#trigger_expression}
 
 ---
 
@@ -1500,7 +1511,7 @@ account_id: typing.Union[int, float]
 
 The New Relic account ID for managing your compound alert conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#account_id AlertCompoundCondition#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#account_id AlertCompoundCondition#account_id}
 
 ---
 
@@ -1516,7 +1527,7 @@ How the compound condition will take into account the component conditions' face
 
 Valid values: 'FACETS_IGNORED' (default) - facets are not taken into consideration when determining when the compound alert condition activates; 'FACETS_MATCH' - the compound alert condition will activate only when shared facets have matching values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#facet_matching_behavior AlertCompoundCondition#facet_matching_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#facet_matching_behavior AlertCompoundCondition#facet_matching_behavior}
 
 ---
 
@@ -1528,7 +1539,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#id AlertCompoundCondition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#id AlertCompoundCondition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1545,7 +1556,7 @@ runbook_url: str
 
 Runbook URL to display in notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#runbook_url AlertCompoundCondition#runbook_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#runbook_url AlertCompoundCondition#runbook_url}
 
 ---
 
@@ -1561,7 +1572,7 @@ The duration, in seconds, that the trigger expression must be true before the co
 
 Between 30-86400 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#threshold_duration AlertCompoundCondition#threshold_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#threshold_duration AlertCompoundCondition#threshold_duration}
 
 ---
 
@@ -1575,7 +1586,7 @@ timeouts: AlertCompoundConditionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#timeouts AlertCompoundCondition#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#timeouts AlertCompoundCondition#timeouts}
 
 ---
 
@@ -1595,7 +1606,7 @@ alertCompoundCondition.AlertCompoundConditionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#create AlertCompoundCondition#create}. |
+| <code><a href="#@cdktn/provider-newrelic.alertCompoundCondition.AlertCompoundConditionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#create AlertCompoundCondition#create}. |
 
 ---
 
@@ -1607,7 +1618,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/alert_compound_condition#create AlertCompoundCondition#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/alert_compound_condition#create AlertCompoundCondition#create}.
 
 ---
 
