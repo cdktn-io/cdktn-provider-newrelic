@@ -14,6 +14,7 @@ Object.defineProperty(exports, 'alertPolicyChannel', { get: function () { return
 Object.defineProperty(exports, 'apiAccessKey', { get: function () { return require('./api-access-key'); } });
 Object.defineProperty(exports, 'applicationSettings', { get: function () { return require('./application-settings'); } });
 Object.defineProperty(exports, 'browserApplication', { get: function () { return require('./browser-application'); } });
+Object.defineProperty(exports, 'cardinalityManagement', { get: function () { return require('./cardinality-management'); } });
 Object.defineProperty(exports, 'cloudAwsEuSovereignIntegrations', { get: function () { return require('./cloud-aws-eu-sovereign-integrations'); } });
 Object.defineProperty(exports, 'cloudAwsEuSovereignLinkAccount', { get: function () { return require('./cloud-aws-eu-sovereign-link-account'); } });
 Object.defineProperty(exports, 'cloudAwsGovcloudIntegrations', { get: function () { return require('./cloud-aws-govcloud-integrations'); } });
@@ -31,11 +32,13 @@ Object.defineProperty(exports, 'eventsToMetricsRule', { get: function () { retur
 Object.defineProperty(exports, 'fleet', { get: function () { return require('./fleet'); } });
 Object.defineProperty(exports, 'fleetConfiguration', { get: function () { return require('./fleet-configuration'); } });
 Object.defineProperty(exports, 'fleetDeployment', { get: function () { return require('./fleet-deployment'); } });
+Object.defineProperty(exports, 'fleetMembers', { get: function () { return require('./fleet-members'); } });
 Object.defineProperty(exports, 'group', { get: function () { return require('./group'); } });
 Object.defineProperty(exports, 'infraAlertCondition', { get: function () { return require('./infra-alert-condition'); } });
 Object.defineProperty(exports, 'insightsEvent', { get: function () { return require('./insights-event'); } });
 Object.defineProperty(exports, 'keyTransaction', { get: function () { return require('./key-transaction'); } });
 Object.defineProperty(exports, 'logParsingRule', { get: function () { return require('./log-parsing-rule'); } });
+Object.defineProperty(exports, 'metricPruningRule', { get: function () { return require('./metric-pruning-rule'); } });
 Object.defineProperty(exports, 'monitorDowntime', { get: function () { return require('./monitor-downtime'); } });
 Object.defineProperty(exports, 'notificationChannel', { get: function () { return require('./notification-channel'); } });
 Object.defineProperty(exports, 'notificationDestination', { get: function () { return require('./notification-destination'); } });
@@ -69,6 +72,7 @@ Object.defineProperty(exports, 'dataNewrelicAuthenticationDomain', { get: functi
 Object.defineProperty(exports, 'dataNewrelicCloudAccount', { get: function () { return require('./data-newrelic-cloud-account'); } });
 Object.defineProperty(exports, 'dataNewrelicEntity', { get: function () { return require('./data-newrelic-entity'); } });
 Object.defineProperty(exports, 'dataNewrelicFleetConfiguration', { get: function () { return require('./data-newrelic-fleet-configuration'); } });
+Object.defineProperty(exports, 'dataNewrelicFleetMembers', { get: function () { return require('./data-newrelic-fleet-members'); } });
 Object.defineProperty(exports, 'dataNewrelicGroup', { get: function () { return require('./data-newrelic-group'); } });
 Object.defineProperty(exports, 'dataNewrelicKeyTransaction', { get: function () { return require('./data-newrelic-key-transaction'); } });
 Object.defineProperty(exports, 'dataNewrelicNotificationDestination', { get: function () { return require('./data-newrelic-notification-destination'); } });

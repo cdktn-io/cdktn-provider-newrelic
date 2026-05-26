@@ -4,7 +4,7 @@
 
 ### WorkflowAutomation <a name="WorkflowAutomation" id="@cdktn/provider-newrelic.workflowAutomation.WorkflowAutomation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/workflow_automation newrelic_workflow_automation}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/workflow_automation newrelic_workflow_automation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workflowAutomation.WorkflowAutomation.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the WorkflowAutomation to impo
 
 The id of the existing WorkflowAutomation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/workflow_automation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/workflow_automation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -870,7 +870,7 @@ const workflowAutomationConfig: workflowAutomation.WorkflowAutomationConfig = { 
 | <code><a href="#@cdktn/provider-newrelic.workflowAutomation.WorkflowAutomationConfig.property.name">name</a></code> | <code>string</code> | The name of the workflow automation. Must match the name in the YAML definition. |
 | <code><a href="#@cdktn/provider-newrelic.workflowAutomation.WorkflowAutomationConfig.property.scopeId">scopeId</a></code> | <code>string</code> | The scope ID (account ID for ACCOUNT scope, organization ID for ORGANIZATION scope). |
 | <code><a href="#@cdktn/provider-newrelic.workflowAutomation.WorkflowAutomationConfig.property.scopeType">scopeType</a></code> | <code>string</code> | The scope type. Supported values are: ACCOUNT, ORGANIZATION. |
-| <code><a href="#@cdktn/provider-newrelic.workflowAutomation.WorkflowAutomationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/workflow_automation#id WorkflowAutomation#id}. |
+| <code><a href="#@cdktn/provider-newrelic.workflowAutomation.WorkflowAutomationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/workflow_automation#id WorkflowAutomation#id}. |
 
 ---
 
@@ -954,7 +954,7 @@ public readonly definition: string;
 
 The YAML definition of the workflow automation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/workflow_automation#definition WorkflowAutomation#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/workflow_automation#definition WorkflowAutomation#definition}
 
 ---
 
@@ -968,7 +968,7 @@ public readonly name: string;
 
 The name of the workflow automation. Must match the name in the YAML definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/workflow_automation#name WorkflowAutomation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/workflow_automation#name WorkflowAutomation#name}
 
 ---
 
@@ -982,7 +982,7 @@ public readonly scopeId: string;
 
 The scope ID (account ID for ACCOUNT scope, organization ID for ORGANIZATION scope).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/workflow_automation#scope_id WorkflowAutomation#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/workflow_automation#scope_id WorkflowAutomation#scope_id}
 
 ---
 
@@ -996,7 +996,7 @@ public readonly scopeType: string;
 
 The scope type. Supported values are: ACCOUNT, ORGANIZATION.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/workflow_automation#scope_type WorkflowAutomation#scope_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/workflow_automation#scope_type WorkflowAutomation#scope_type}
 
 ---
 
@@ -1008,7 +1008,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.87.3/docs/resources/workflow_automation#id WorkflowAutomation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/resources/workflow_automation#id WorkflowAutomation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
