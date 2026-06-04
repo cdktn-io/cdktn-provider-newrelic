@@ -4,7 +4,7 @@
 
 ### DataNewrelicNotificationDestination <a name="DataNewrelicNotificationDestination" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/data-sources/notification_destination newrelic_notification_destination}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/data-sources/notification_destination newrelic_notification_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.Initializer"></a>
 
@@ -455,7 +455,7 @@ The construct id used in the generated config for the DataNewrelicNotificationDe
 
 The id of the existing DataNewrelicNotificationDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/data-sources/notification_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/data-sources/notification_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -939,7 +939,7 @@ public double AccountId { get; set; }
 
 The account ID under which the particular destination belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
 
 ---
 
@@ -953,7 +953,7 @@ public string ExactName { get; set; }
 
 The exact name of the destination. Uses an exact match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/data-sources/notification_destination#exact_name DataNewrelicNotificationDestination#exact_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/data-sources/notification_destination#exact_name DataNewrelicNotificationDestination#exact_name}
 
 ---
 
@@ -967,7 +967,7 @@ public string Id { get; set; }
 
 The ID of the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -984,7 +984,7 @@ public string Name { get; set; }
 
 The name of the destination. Uses a contains match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
 
 ---
 
@@ -998,7 +998,7 @@ public DataNewrelicNotificationDestinationScope Scope { get; set; }
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/data-sources/notification_destination#scope DataNewrelicNotificationDestination#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/data-sources/notification_destination#scope DataNewrelicNotificationDestination#scope}
 
 ---
 
@@ -1012,7 +1012,7 @@ public IResolvable|DataNewrelicNotificationDestinationSecureUrl[] SecureUrl { ge
 
 secure_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/data-sources/notification_destination#secure_url DataNewrelicNotificationDestination#secure_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/data-sources/notification_destination#secure_url DataNewrelicNotificationDestination#secure_url}
 
 ---
 
@@ -1061,7 +1061,7 @@ public string Id { get; set; }
 
 The ID of the Scope (Organization UUID for ORGANIZATION scope, Account ID for ACCOUNT scope).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1078,7 +1078,7 @@ public string Type { get; set; }
 
 (Required) The scope type of the destination. One of: (ACCOUNT, ORGANIZATION).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/data-sources/notification_destination#type DataNewrelicNotificationDestination#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/data-sources/notification_destination#type DataNewrelicNotificationDestination#type}
 
 ---
 
@@ -1098,7 +1098,7 @@ new DataNewrelicNotificationDestinationSecureUrl {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationSecureUrl.property.prefix">Prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationSecureUrl.property.prefix">Prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}. |
 
 ---
 
@@ -1110,7 +1110,7 @@ public string Prefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.90.0/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}.
 
 ---
 
