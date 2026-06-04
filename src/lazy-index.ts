@@ -13,6 +13,7 @@ Object.defineProperty(exports, 'alertPolicy', { get: function () { return requir
 Object.defineProperty(exports, 'alertPolicyChannel', { get: function () { return require('./alert-policy-channel'); } });
 Object.defineProperty(exports, 'apiAccessKey', { get: function () { return require('./api-access-key'); } });
 Object.defineProperty(exports, 'applicationSettings', { get: function () { return require('./application-settings'); } });
+Object.defineProperty(exports, 'awsConnection', { get: function () { return require('./aws-connection'); } });
 Object.defineProperty(exports, 'browserApplication', { get: function () { return require('./browser-application'); } });
 Object.defineProperty(exports, 'cardinalityManagement', { get: function () { return require('./cardinality-management'); } });
 Object.defineProperty(exports, 'cloudAwsEuSovereignIntegrations', { get: function () { return require('./cloud-aws-eu-sovereign-integrations'); } });
@@ -29,6 +30,8 @@ Object.defineProperty(exports, 'cloudOciLinkAccount', { get: function () { retur
 Object.defineProperty(exports, 'dataPartitionRule', { get: function () { return require('./data-partition-rule'); } });
 Object.defineProperty(exports, 'entityTags', { get: function () { return require('./entity-tags'); } });
 Object.defineProperty(exports, 'eventsToMetricsRule', { get: function () { return require('./events-to-metrics-rule'); } });
+Object.defineProperty(exports, 'federatedLogsPartition', { get: function () { return require('./federated-logs-partition'); } });
+Object.defineProperty(exports, 'federatedLogsSetup', { get: function () { return require('./federated-logs-setup'); } });
 Object.defineProperty(exports, 'fleet', { get: function () { return require('./fleet'); } });
 Object.defineProperty(exports, 'fleetConfiguration', { get: function () { return require('./fleet-configuration'); } });
 Object.defineProperty(exports, 'fleetDeployment', { get: function () { return require('./fleet-deployment'); } });
