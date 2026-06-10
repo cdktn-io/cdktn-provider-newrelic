@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cardinality_management
+// https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cardinality_management
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface CardinalityManagementConfig extends cdktn.TerraformMetaArgument
   /**
   * The account-wide cardinality limit — the maximum number of unique dimension-value combinations allowed per metric per day. Required when `mode` is `DEFAULT`; must not be set when `mode` is `PER_METRIC`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cardinality_management#cardinality_limit CardinalityManagement#cardinality_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cardinality_management#cardinality_limit CardinalityManagement#cardinality_limit}
   */
   readonly cardinalityLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cardinality_management#id CardinalityManagement#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cardinality_management#id CardinalityManagement#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface CardinalityManagementConfig extends cdktn.TerraformMetaArgument
   /**
   * The override mode. Use `DEFAULT` to set a single account-wide limit that applies to all metrics, or `PER_METRIC` to set individual limits for one or more named metrics.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cardinality_management#mode CardinalityManagement#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cardinality_management#mode CardinalityManagement#mode}
   */
   readonly mode: string;
   /**
   * metric block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cardinality_management#metric CardinalityManagement#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cardinality_management#metric CardinalityManagement#metric}
   */
   readonly metric?: CardinalityManagementMetric[] | cdktn.IResolvable;
 }
@@ -42,13 +42,13 @@ export interface CardinalityManagementMetric {
   /**
   * The maximum number of unique dimension-value combinations allowed per day for this metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cardinality_management#cardinality_limit CardinalityManagement#cardinality_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cardinality_management#cardinality_limit CardinalityManagement#cardinality_limit}
   */
   readonly cardinalityLimit: number;
   /**
   * The full name of the metric (e.g. `http.server.duration`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cardinality_management#name CardinalityManagement#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cardinality_management#name CardinalityManagement#name}
   */
   readonly name: string;
 }
@@ -56,7 +56,7 @@ export interface CardinalityManagementMetric {
 export function cardinalityManagementMetricToTerraform(struct?: CardinalityManagementMetric | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cardinality_limit: cdktn.numberToTerraform(struct!.cardinalityLimit),
@@ -68,7 +68,7 @@ export function cardinalityManagementMetricToTerraform(struct?: CardinalityManag
 export function cardinalityManagementMetricToHclTerraform(struct?: CardinalityManagementMetric | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cardinality_limit: {
@@ -187,7 +187,7 @@ export class CardinalityManagementMetricList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cardinality_management newrelic_cardinality_management}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cardinality_management newrelic_cardinality_management}
 */
 export class CardinalityManagement extends cdktn.TerraformResource {
 
@@ -203,7 +203,7 @@ export class CardinalityManagement extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CardinalityManagement resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CardinalityManagement to import
-  * @param importFromId The id of the existing CardinalityManagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cardinality_management#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CardinalityManagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cardinality_management#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CardinalityManagement to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -215,7 +215,7 @@ export class CardinalityManagement extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cardinality_management newrelic_cardinality_management} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cardinality_management newrelic_cardinality_management} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -226,7 +226,7 @@ export class CardinalityManagement extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_cardinality_management',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.91.0',
+        providerVersion: '3.92.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

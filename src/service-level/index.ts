@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level
+// https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktn from 'cdktn';
 
 export interface ServiceLevelConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#description ServiceLevel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#description ServiceLevel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#guid ServiceLevel#guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#guid ServiceLevel#guid}
   */
   readonly guid: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#id ServiceLevel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#id ServiceLevel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#name ServiceLevel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#name ServiceLevel#name}
   */
   readonly name: string;
   /**
   * events block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#events ServiceLevel#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#events ServiceLevel#events}
   */
   readonly events: ServiceLevelEvents;
   /**
   * objective block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#objective ServiceLevel#objective}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#objective ServiceLevel#objective}
   */
   readonly objective: ServiceLevelObjective;
 }
 export interface ServiceLevelEventsBadEventsSelect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#attribute ServiceLevel#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#attribute ServiceLevel#attribute}
   */
   readonly attribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#function ServiceLevel#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#function ServiceLevel#function}
   */
   readonly function: string;
   /**
   * The event threshold to use in the SELECT clause
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#threshold ServiceLevel#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#threshold ServiceLevel#threshold}
   */
   readonly threshold?: number;
 }
@@ -64,7 +64,7 @@ export interface ServiceLevelEventsBadEventsSelect {
 export function serviceLevelEventsBadEventsSelectToTerraform(struct?: ServiceLevelEventsBadEventsSelectOutputReference | ServiceLevelEventsBadEventsSelect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attribute: cdktn.stringToTerraform(struct!.attribute),
@@ -77,7 +77,7 @@ export function serviceLevelEventsBadEventsSelectToTerraform(struct?: ServiceLev
 export function serviceLevelEventsBadEventsSelectToHclTerraform(struct?: ServiceLevelEventsBadEventsSelectOutputReference | ServiceLevelEventsBadEventsSelect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attribute: {
@@ -195,17 +195,17 @@ export class ServiceLevelEventsBadEventsSelectOutputReference extends cdktn.Comp
 }
 export interface ServiceLevelEventsBadEvents {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#from ServiceLevel#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#from ServiceLevel#from}
   */
   readonly from: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#where ServiceLevel#where}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#where ServiceLevel#where}
   */
   readonly where?: string;
   /**
   * select block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#select ServiceLevel#select}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#select ServiceLevel#select}
   */
   readonly select?: ServiceLevelEventsBadEventsSelect;
 }
@@ -213,7 +213,7 @@ export interface ServiceLevelEventsBadEvents {
 export function serviceLevelEventsBadEventsToTerraform(struct?: ServiceLevelEventsBadEventsOutputReference | ServiceLevelEventsBadEvents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     from: cdktn.stringToTerraform(struct!.from),
@@ -226,7 +226,7 @@ export function serviceLevelEventsBadEventsToTerraform(struct?: ServiceLevelEven
 export function serviceLevelEventsBadEventsToHclTerraform(struct?: ServiceLevelEventsBadEventsOutputReference | ServiceLevelEventsBadEvents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     from: {
@@ -344,17 +344,17 @@ export class ServiceLevelEventsBadEventsOutputReference extends cdktn.ComplexObj
 }
 export interface ServiceLevelEventsGoodEventsSelect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#attribute ServiceLevel#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#attribute ServiceLevel#attribute}
   */
   readonly attribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#function ServiceLevel#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#function ServiceLevel#function}
   */
   readonly function: string;
   /**
   * The event threshold to use in the SELECT clause
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#threshold ServiceLevel#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#threshold ServiceLevel#threshold}
   */
   readonly threshold?: number;
 }
@@ -362,7 +362,7 @@ export interface ServiceLevelEventsGoodEventsSelect {
 export function serviceLevelEventsGoodEventsSelectToTerraform(struct?: ServiceLevelEventsGoodEventsSelectOutputReference | ServiceLevelEventsGoodEventsSelect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attribute: cdktn.stringToTerraform(struct!.attribute),
@@ -375,7 +375,7 @@ export function serviceLevelEventsGoodEventsSelectToTerraform(struct?: ServiceLe
 export function serviceLevelEventsGoodEventsSelectToHclTerraform(struct?: ServiceLevelEventsGoodEventsSelectOutputReference | ServiceLevelEventsGoodEventsSelect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attribute: {
@@ -493,17 +493,17 @@ export class ServiceLevelEventsGoodEventsSelectOutputReference extends cdktn.Com
 }
 export interface ServiceLevelEventsGoodEvents {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#from ServiceLevel#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#from ServiceLevel#from}
   */
   readonly from: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#where ServiceLevel#where}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#where ServiceLevel#where}
   */
   readonly where?: string;
   /**
   * select block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#select ServiceLevel#select}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#select ServiceLevel#select}
   */
   readonly select?: ServiceLevelEventsGoodEventsSelect;
 }
@@ -511,7 +511,7 @@ export interface ServiceLevelEventsGoodEvents {
 export function serviceLevelEventsGoodEventsToTerraform(struct?: ServiceLevelEventsGoodEventsOutputReference | ServiceLevelEventsGoodEvents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     from: cdktn.stringToTerraform(struct!.from),
@@ -524,7 +524,7 @@ export function serviceLevelEventsGoodEventsToTerraform(struct?: ServiceLevelEve
 export function serviceLevelEventsGoodEventsToHclTerraform(struct?: ServiceLevelEventsGoodEventsOutputReference | ServiceLevelEventsGoodEvents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     from: {
@@ -642,17 +642,17 @@ export class ServiceLevelEventsGoodEventsOutputReference extends cdktn.ComplexOb
 }
 export interface ServiceLevelEventsValidEventsSelect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#attribute ServiceLevel#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#attribute ServiceLevel#attribute}
   */
   readonly attribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#function ServiceLevel#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#function ServiceLevel#function}
   */
   readonly function: string;
   /**
   * The event threshold to use in the SELECT clause
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#threshold ServiceLevel#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#threshold ServiceLevel#threshold}
   */
   readonly threshold?: number;
 }
@@ -660,7 +660,7 @@ export interface ServiceLevelEventsValidEventsSelect {
 export function serviceLevelEventsValidEventsSelectToTerraform(struct?: ServiceLevelEventsValidEventsSelectOutputReference | ServiceLevelEventsValidEventsSelect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attribute: cdktn.stringToTerraform(struct!.attribute),
@@ -673,7 +673,7 @@ export function serviceLevelEventsValidEventsSelectToTerraform(struct?: ServiceL
 export function serviceLevelEventsValidEventsSelectToHclTerraform(struct?: ServiceLevelEventsValidEventsSelectOutputReference | ServiceLevelEventsValidEventsSelect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attribute: {
@@ -791,17 +791,17 @@ export class ServiceLevelEventsValidEventsSelectOutputReference extends cdktn.Co
 }
 export interface ServiceLevelEventsValidEvents {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#from ServiceLevel#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#from ServiceLevel#from}
   */
   readonly from: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#where ServiceLevel#where}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#where ServiceLevel#where}
   */
   readonly where?: string;
   /**
   * select block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#select ServiceLevel#select}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#select ServiceLevel#select}
   */
   readonly select?: ServiceLevelEventsValidEventsSelect;
 }
@@ -809,7 +809,7 @@ export interface ServiceLevelEventsValidEvents {
 export function serviceLevelEventsValidEventsToTerraform(struct?: ServiceLevelEventsValidEventsOutputReference | ServiceLevelEventsValidEvents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     from: cdktn.stringToTerraform(struct!.from),
@@ -822,7 +822,7 @@ export function serviceLevelEventsValidEventsToTerraform(struct?: ServiceLevelEv
 export function serviceLevelEventsValidEventsToHclTerraform(struct?: ServiceLevelEventsValidEventsOutputReference | ServiceLevelEventsValidEvents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     from: {
@@ -940,25 +940,25 @@ export class ServiceLevelEventsValidEventsOutputReference extends cdktn.ComplexO
 }
 export interface ServiceLevelEvents {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#account_id ServiceLevel#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#account_id ServiceLevel#account_id}
   */
   readonly accountId: number;
   /**
   * bad_events block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#bad_events ServiceLevel#bad_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#bad_events ServiceLevel#bad_events}
   */
   readonly badEvents?: ServiceLevelEventsBadEvents;
   /**
   * good_events block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#good_events ServiceLevel#good_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#good_events ServiceLevel#good_events}
   */
   readonly goodEvents?: ServiceLevelEventsGoodEvents;
   /**
   * valid_events block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#valid_events ServiceLevel#valid_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#valid_events ServiceLevel#valid_events}
   */
   readonly validEvents: ServiceLevelEventsValidEvents;
 }
@@ -966,7 +966,7 @@ export interface ServiceLevelEvents {
 export function serviceLevelEventsToTerraform(struct?: ServiceLevelEventsOutputReference | ServiceLevelEvents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_id: cdktn.numberToTerraform(struct!.accountId),
@@ -980,7 +980,7 @@ export function serviceLevelEventsToTerraform(struct?: ServiceLevelEventsOutputR
 export function serviceLevelEventsToHclTerraform(struct?: ServiceLevelEventsOutputReference | ServiceLevelEvents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_id: {
@@ -1123,11 +1123,11 @@ export class ServiceLevelEventsOutputReference extends cdktn.ComplexObject {
 }
 export interface ServiceLevelObjectiveTimeWindowRolling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#count ServiceLevel#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#count ServiceLevel#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#unit ServiceLevel#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#unit ServiceLevel#unit}
   */
   readonly unit: string;
 }
@@ -1135,7 +1135,7 @@ export interface ServiceLevelObjectiveTimeWindowRolling {
 export function serviceLevelObjectiveTimeWindowRollingToTerraform(struct?: ServiceLevelObjectiveTimeWindowRollingOutputReference | ServiceLevelObjectiveTimeWindowRolling): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -1147,7 +1147,7 @@ export function serviceLevelObjectiveTimeWindowRollingToTerraform(struct?: Servi
 export function serviceLevelObjectiveTimeWindowRollingToHclTerraform(struct?: ServiceLevelObjectiveTimeWindowRollingOutputReference | ServiceLevelObjectiveTimeWindowRolling): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -1236,7 +1236,7 @@ export interface ServiceLevelObjectiveTimeWindow {
   /**
   * rolling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#rolling ServiceLevel#rolling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#rolling ServiceLevel#rolling}
   */
   readonly rolling: ServiceLevelObjectiveTimeWindowRolling;
 }
@@ -1244,7 +1244,7 @@ export interface ServiceLevelObjectiveTimeWindow {
 export function serviceLevelObjectiveTimeWindowToTerraform(struct?: ServiceLevelObjectiveTimeWindowOutputReference | ServiceLevelObjectiveTimeWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     rolling: serviceLevelObjectiveTimeWindowRollingToTerraform(struct!.rolling),
@@ -1255,7 +1255,7 @@ export function serviceLevelObjectiveTimeWindowToTerraform(struct?: ServiceLevel
 export function serviceLevelObjectiveTimeWindowToHclTerraform(struct?: ServiceLevelObjectiveTimeWindowOutputReference | ServiceLevelObjectiveTimeWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     rolling: {
@@ -1317,21 +1317,21 @@ export class ServiceLevelObjectiveTimeWindowOutputReference extends cdktn.Comple
 }
 export interface ServiceLevelObjective {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#description ServiceLevel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#description ServiceLevel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#name ServiceLevel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#name ServiceLevel#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#target ServiceLevel#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#target ServiceLevel#target}
   */
   readonly target: number;
   /**
   * time_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#time_window ServiceLevel#time_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#time_window ServiceLevel#time_window}
   */
   readonly timeWindow: ServiceLevelObjectiveTimeWindow;
 }
@@ -1339,7 +1339,7 @@ export interface ServiceLevelObjective {
 export function serviceLevelObjectiveToTerraform(struct?: ServiceLevelObjectiveOutputReference | ServiceLevelObjective): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -1353,7 +1353,7 @@ export function serviceLevelObjectiveToTerraform(struct?: ServiceLevelObjectiveO
 export function serviceLevelObjectiveToHclTerraform(struct?: ServiceLevelObjectiveOutputReference | ServiceLevelObjective): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -1496,7 +1496,7 @@ export class ServiceLevelObjectiveOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level newrelic_service_level}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level newrelic_service_level}
 */
 export class ServiceLevel extends cdktn.TerraformResource {
 
@@ -1512,7 +1512,7 @@ export class ServiceLevel extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ServiceLevel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceLevel to import
-  * @param importFromId The id of the existing ServiceLevel that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceLevel that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceLevel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1524,7 +1524,7 @@ export class ServiceLevel extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/service_level newrelic_service_level} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/service_level newrelic_service_level} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1535,7 +1535,7 @@ export class ServiceLevel extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_service_level',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.91.0',
+        providerVersion: '3.92.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

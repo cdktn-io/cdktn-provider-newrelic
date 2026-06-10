@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload
+// https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface WorkloadConfig extends cdktn.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to create the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#account_id Workload#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#account_id Workload#account_id}
   */
   readonly accountId?: number;
   /**
   * Relevant information about the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#description Workload#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#description Workload#description}
   */
   readonly description?: string;
   /**
   * A list of entity GUIDs manually assigned to this workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#entity_guids Workload#entity_guids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#entity_guids Workload#entity_guids}
   */
   readonly entityGuids?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#id Workload#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#id Workload#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,31 +40,31 @@ export interface WorkloadConfig extends cdktn.TerraformMetaArguments {
   /**
   * The workload's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#name Workload#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#name Workload#name}
   */
   readonly name: string;
   /**
   * A list of account IDs that will be used to get entities from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
   */
   readonly scopeAccountIds?: number[];
   /**
   * entity_search_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#entity_search_query Workload#entity_search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#entity_search_query Workload#entity_search_query}
   */
   readonly entitySearchQuery?: WorkloadEntitySearchQuery[] | cdktn.IResolvable;
   /**
   * status_config_automatic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
   */
   readonly statusConfigAutomatic?: WorkloadStatusConfigAutomatic;
   /**
   * status_config_static block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#status_config_static Workload#status_config_static}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#status_config_static Workload#status_config_static}
   */
   readonly statusConfigStatic?: WorkloadStatusConfigStatic;
 }
@@ -72,7 +72,7 @@ export interface WorkloadEntitySearchQuery {
   /**
   * A valid entity search query; empty, and null values are considered invalid.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#query Workload#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#query Workload#query}
   */
   readonly query: string;
 }
@@ -80,7 +80,7 @@ export interface WorkloadEntitySearchQuery {
 export function workloadEntitySearchQueryToTerraform(struct?: WorkloadEntitySearchQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -91,7 +91,7 @@ export function workloadEntitySearchQueryToTerraform(struct?: WorkloadEntitySear
 export function workloadEntitySearchQueryToHclTerraform(struct?: WorkloadEntitySearchQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -187,25 +187,25 @@ export interface WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEnti
   /**
   * The grouping to be applied to the remaining entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#group_by Workload#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#group_by Workload#group_by}
   */
   readonly groupBy: string;
   /**
   * The rollup strategy that is applied to a group of entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#strategy Workload#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#strategy Workload#strategy}
   */
   readonly strategy: string;
   /**
   * Type of threshold defined for the rule. This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#threshold_type Workload#threshold_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#threshold_type Workload#threshold_type}
   */
   readonly thresholdType?: string;
   /**
   * Threshold value defined for the rule. This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#threshold_value Workload#threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#threshold_value Workload#threshold_value}
   */
   readonly thresholdValue?: number;
 }
@@ -213,7 +213,7 @@ export interface WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEnti
 export function workloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupToTerraform(struct?: WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupOutputReference | WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     group_by: cdktn.stringToTerraform(struct!.groupBy),
@@ -227,7 +227,7 @@ export function workloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntit
 export function workloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupToHclTerraform(struct?: WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupOutputReference | WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     group_by: {
@@ -372,7 +372,7 @@ export interface WorkloadStatusConfigAutomaticRemainingEntitiesRule {
   /**
   * remaining_entities_rule_rollup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
   */
   readonly remainingEntitiesRuleRollup: WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup;
 }
@@ -380,7 +380,7 @@ export interface WorkloadStatusConfigAutomaticRemainingEntitiesRule {
 export function workloadStatusConfigAutomaticRemainingEntitiesRuleToTerraform(struct?: WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference | WorkloadStatusConfigAutomaticRemainingEntitiesRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     remaining_entities_rule_rollup: workloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupToTerraform(struct!.remainingEntitiesRuleRollup),
@@ -391,7 +391,7 @@ export function workloadStatusConfigAutomaticRemainingEntitiesRuleToTerraform(st
 export function workloadStatusConfigAutomaticRemainingEntitiesRuleToHclTerraform(struct?: WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference | WorkloadStatusConfigAutomaticRemainingEntitiesRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     remaining_entities_rule_rollup: {
@@ -455,7 +455,7 @@ export interface WorkloadStatusConfigAutomaticRuleNrqlQuery {
   /**
   * The entity search query that is used to perform the search of a group of entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#query Workload#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#query Workload#query}
   */
   readonly query: string;
 }
@@ -463,7 +463,7 @@ export interface WorkloadStatusConfigAutomaticRuleNrqlQuery {
 export function workloadStatusConfigAutomaticRuleNrqlQueryToTerraform(struct?: WorkloadStatusConfigAutomaticRuleNrqlQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -474,7 +474,7 @@ export function workloadStatusConfigAutomaticRuleNrqlQueryToTerraform(struct?: W
 export function workloadStatusConfigAutomaticRuleNrqlQueryToHclTerraform(struct?: WorkloadStatusConfigAutomaticRuleNrqlQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -570,19 +570,19 @@ export interface WorkloadStatusConfigAutomaticRuleRollup {
   /**
   * The rollup strategy that is applied to a group of entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#strategy Workload#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#strategy Workload#strategy}
   */
   readonly strategy: string;
   /**
   * Type of threshold defined for the rule. This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#threshold_type Workload#threshold_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#threshold_type Workload#threshold_type}
   */
   readonly thresholdType?: string;
   /**
   * Threshold value defined for the rule. This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#threshold_value Workload#threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#threshold_value Workload#threshold_value}
   */
   readonly thresholdValue?: number;
 }
@@ -590,7 +590,7 @@ export interface WorkloadStatusConfigAutomaticRuleRollup {
 export function workloadStatusConfigAutomaticRuleRollupToTerraform(struct?: WorkloadStatusConfigAutomaticRuleRollupOutputReference | WorkloadStatusConfigAutomaticRuleRollup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     strategy: cdktn.stringToTerraform(struct!.strategy),
@@ -603,7 +603,7 @@ export function workloadStatusConfigAutomaticRuleRollupToTerraform(struct?: Work
 export function workloadStatusConfigAutomaticRuleRollupToHclTerraform(struct?: WorkloadStatusConfigAutomaticRuleRollupOutputReference | WorkloadStatusConfigAutomaticRuleRollup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     strategy: {
@@ -723,19 +723,19 @@ export interface WorkloadStatusConfigAutomaticRule {
   /**
   * A list of entity GUIDs composing the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#entity_guids Workload#entity_guids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#entity_guids Workload#entity_guids}
   */
   readonly entityGuids?: string[];
   /**
   * nrql_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#nrql_query Workload#nrql_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#nrql_query Workload#nrql_query}
   */
   readonly nrqlQuery?: WorkloadStatusConfigAutomaticRuleNrqlQuery[] | cdktn.IResolvable;
   /**
   * rollup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#rollup Workload#rollup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#rollup Workload#rollup}
   */
   readonly rollup: WorkloadStatusConfigAutomaticRuleRollup;
 }
@@ -743,7 +743,7 @@ export interface WorkloadStatusConfigAutomaticRule {
 export function workloadStatusConfigAutomaticRuleToTerraform(struct?: WorkloadStatusConfigAutomaticRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     entity_guids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.entityGuids),
@@ -756,7 +756,7 @@ export function workloadStatusConfigAutomaticRuleToTerraform(struct?: WorkloadSt
 export function workloadStatusConfigAutomaticRuleToHclTerraform(struct?: WorkloadStatusConfigAutomaticRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     entity_guids: {
@@ -908,19 +908,19 @@ export interface WorkloadStatusConfigAutomatic {
   /**
   * Whether the automatic status configuration is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#enabled Workload#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#enabled Workload#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * remaining_entities_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
   */
   readonly remainingEntitiesRule?: WorkloadStatusConfigAutomaticRemainingEntitiesRule;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#rule Workload#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#rule Workload#rule}
   */
   readonly rule?: WorkloadStatusConfigAutomaticRule[] | cdktn.IResolvable;
 }
@@ -928,7 +928,7 @@ export interface WorkloadStatusConfigAutomatic {
 export function workloadStatusConfigAutomaticToTerraform(struct?: WorkloadStatusConfigAutomaticOutputReference | WorkloadStatusConfigAutomatic): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -941,7 +941,7 @@ export function workloadStatusConfigAutomaticToTerraform(struct?: WorkloadStatus
 export function workloadStatusConfigAutomaticToHclTerraform(struct?: WorkloadStatusConfigAutomaticOutputReference | WorkloadStatusConfigAutomatic): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -1061,25 +1061,25 @@ export interface WorkloadStatusConfigStatic {
   /**
   * A description that provides additional details about the status of the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#description Workload#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#description Workload#description}
   */
   readonly description?: string;
   /**
   * Whether the static status configuration is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#enabled Workload#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#enabled Workload#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The status of the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#status Workload#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#status Workload#status}
   */
   readonly status: string;
   /**
   * A short description of the status of the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#summary Workload#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#summary Workload#summary}
   */
   readonly summary?: string;
 }
@@ -1087,7 +1087,7 @@ export interface WorkloadStatusConfigStatic {
 export function workloadStatusConfigStaticToTerraform(struct?: WorkloadStatusConfigStaticOutputReference | WorkloadStatusConfigStatic): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -1101,7 +1101,7 @@ export function workloadStatusConfigStaticToTerraform(struct?: WorkloadStatusCon
 export function workloadStatusConfigStaticToHclTerraform(struct?: WorkloadStatusConfigStaticOutputReference | WorkloadStatusConfigStatic): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -1244,7 +1244,7 @@ export class WorkloadStatusConfigStaticOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload newrelic_workload}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload newrelic_workload}
 */
 export class Workload extends cdktn.TerraformResource {
 
@@ -1260,7 +1260,7 @@ export class Workload extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Workload resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Workload to import
-  * @param importFromId The id of the existing Workload that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Workload that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Workload to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1272,7 +1272,7 @@ export class Workload extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workload newrelic_workload} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workload newrelic_workload} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1283,7 +1283,7 @@ export class Workload extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_workload',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.91.0',
+        providerVersion: '3.92.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

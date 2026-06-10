@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations
+// https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface CloudAwsEuSovereignIntegrationsConfig extends cdktn.TerraformMe
   /**
   * The ID of the account in New Relic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations#account_id CloudAwsEuSovereignIntegrations#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations#account_id CloudAwsEuSovereignIntegrations#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations#id CloudAwsEuSovereignIntegrations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations#id CloudAwsEuSovereignIntegrations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface CloudAwsEuSovereignIntegrationsConfig extends cdktn.TerraformMe
   /**
   * The ID of the linked AWS EU Sovereign account in New Relic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations#linked_account_id CloudAwsEuSovereignIntegrations#linked_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations#linked_account_id CloudAwsEuSovereignIntegrations#linked_account_id}
   */
   readonly linkedAccountId: number;
   /**
   * billing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations#billing CloudAwsEuSovereignIntegrations#billing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations#billing CloudAwsEuSovereignIntegrations#billing}
   */
   readonly billing?: CloudAwsEuSovereignIntegrationsBilling;
   /**
   * cloudtrail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations#cloudtrail CloudAwsEuSovereignIntegrations#cloudtrail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations#cloudtrail CloudAwsEuSovereignIntegrations#cloudtrail}
   */
   readonly cloudtrail?: CloudAwsEuSovereignIntegrationsCloudtrail;
   /**
   * x_ray block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations#x_ray CloudAwsEuSovereignIntegrations#x_ray}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations#x_ray CloudAwsEuSovereignIntegrations#x_ray}
   */
   readonly xRay?: CloudAwsEuSovereignIntegrationsXRay;
 }
@@ -54,7 +54,7 @@ export interface CloudAwsEuSovereignIntegrationsBilling {
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations#metrics_polling_interval CloudAwsEuSovereignIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations#metrics_polling_interval CloudAwsEuSovereignIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -62,7 +62,7 @@ export interface CloudAwsEuSovereignIntegrationsBilling {
 export function cloudAwsEuSovereignIntegrationsBillingToTerraform(struct?: CloudAwsEuSovereignIntegrationsBillingOutputReference | CloudAwsEuSovereignIntegrationsBilling): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metrics_polling_interval: cdktn.numberToTerraform(struct!.metricsPollingInterval),
@@ -73,7 +73,7 @@ export function cloudAwsEuSovereignIntegrationsBillingToTerraform(struct?: Cloud
 export function cloudAwsEuSovereignIntegrationsBillingToHclTerraform(struct?: CloudAwsEuSovereignIntegrationsBillingOutputReference | CloudAwsEuSovereignIntegrationsBilling): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metrics_polling_interval: {
@@ -140,13 +140,13 @@ export interface CloudAwsEuSovereignIntegrationsCloudtrail {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations#aws_regions CloudAwsEuSovereignIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations#aws_regions CloudAwsEuSovereignIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations#metrics_polling_interval CloudAwsEuSovereignIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations#metrics_polling_interval CloudAwsEuSovereignIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -154,7 +154,7 @@ export interface CloudAwsEuSovereignIntegrationsCloudtrail {
 export function cloudAwsEuSovereignIntegrationsCloudtrailToTerraform(struct?: CloudAwsEuSovereignIntegrationsCloudtrailOutputReference | CloudAwsEuSovereignIntegrationsCloudtrail): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
@@ -166,7 +166,7 @@ export function cloudAwsEuSovereignIntegrationsCloudtrailToTerraform(struct?: Cl
 export function cloudAwsEuSovereignIntegrationsCloudtrailToHclTerraform(struct?: CloudAwsEuSovereignIntegrationsCloudtrailOutputReference | CloudAwsEuSovereignIntegrationsCloudtrail): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aws_regions: {
@@ -261,13 +261,13 @@ export interface CloudAwsEuSovereignIntegrationsXRay {
   /**
   * Specify each AWS region that includes the resources that you want to monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations#aws_regions CloudAwsEuSovereignIntegrations#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations#aws_regions CloudAwsEuSovereignIntegrations#aws_regions}
   */
   readonly awsRegions?: string[];
   /**
   * The data polling interval in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations#metrics_polling_interval CloudAwsEuSovereignIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations#metrics_polling_interval CloudAwsEuSovereignIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -275,7 +275,7 @@ export interface CloudAwsEuSovereignIntegrationsXRay {
 export function cloudAwsEuSovereignIntegrationsXRayToTerraform(struct?: CloudAwsEuSovereignIntegrationsXRayOutputReference | CloudAwsEuSovereignIntegrationsXRay): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aws_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.awsRegions),
@@ -287,7 +287,7 @@ export function cloudAwsEuSovereignIntegrationsXRayToTerraform(struct?: CloudAws
 export function cloudAwsEuSovereignIntegrationsXRayToHclTerraform(struct?: CloudAwsEuSovereignIntegrationsXRayOutputReference | CloudAwsEuSovereignIntegrationsXRay): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aws_regions: {
@@ -380,7 +380,7 @@ export class CloudAwsEuSovereignIntegrationsXRayOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations newrelic_cloud_aws_eu_sovereign_integrations}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations newrelic_cloud_aws_eu_sovereign_integrations}
 */
 export class CloudAwsEuSovereignIntegrations extends cdktn.TerraformResource {
 
@@ -396,7 +396,7 @@ export class CloudAwsEuSovereignIntegrations extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CloudAwsEuSovereignIntegrations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudAwsEuSovereignIntegrations to import
-  * @param importFromId The id of the existing CloudAwsEuSovereignIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudAwsEuSovereignIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudAwsEuSovereignIntegrations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -408,7 +408,7 @@ export class CloudAwsEuSovereignIntegrations extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_aws_eu_sovereign_integrations newrelic_cloud_aws_eu_sovereign_integrations} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_aws_eu_sovereign_integrations newrelic_cloud_aws_eu_sovereign_integrations} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -419,7 +419,7 @@ export class CloudAwsEuSovereignIntegrations extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_cloud_aws_eu_sovereign_integrations',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.91.0',
+        providerVersion: '3.92.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
