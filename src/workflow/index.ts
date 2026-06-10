@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow
+// https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface WorkflowConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account id of the workflow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#account_id Workflow#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#account_id Workflow#account_id}
   */
   readonly accountId?: number;
   /**
   * Indicates whether the destinations are enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#destinations_enabled Workflow#destinations_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#destinations_enabled Workflow#destinations_enabled}
   */
   readonly destinationsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether the workflow is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#enabled Workflow#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#enabled Workflow#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether the enrichments are enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#enrichments_enabled Workflow#enrichments_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#enrichments_enabled Workflow#enrichments_enabled}
   */
   readonly enrichmentsEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#id Workflow#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#id Workflow#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,31 +46,31 @@ export interface WorkflowConfig extends cdktn.TerraformMetaArguments {
   /**
   * The type of the muting rule handling. One of: (NOTIFY_ALL_ISSUES, DONT_NOTIFY_FULLY_MUTED_ISSUES, DONT_NOTIFY_FULLY_OR_PARTIALLY_MUTED_ISSUES).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#muting_rules_handling Workflow#muting_rules_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#muting_rules_handling Workflow#muting_rules_handling}
   */
   readonly mutingRulesHandling: string;
   /**
   * (Required) The name of the workflow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#name Workflow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#name Workflow#name}
   */
   readonly name: string;
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#destination Workflow#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#destination Workflow#destination}
   */
   readonly destination: WorkflowDestination[] | cdktn.IResolvable;
   /**
   * enrichments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#enrichments Workflow#enrichments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#enrichments Workflow#enrichments}
   */
   readonly enrichments?: WorkflowEnrichments;
   /**
   * issues_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#issues_filter Workflow#issues_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#issues_filter Workflow#issues_filter}
   */
   readonly issuesFilter: WorkflowIssuesFilter;
 }
@@ -78,19 +78,19 @@ export interface WorkflowDestination {
   /**
   * (Required) Destination's channel id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#channel_id Workflow#channel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#channel_id Workflow#channel_id}
   */
   readonly channelId: string;
   /**
   * List of triggers to notify about in this destination configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#notification_triggers Workflow#notification_triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#notification_triggers Workflow#notification_triggers}
   */
   readonly notificationTriggers?: string[];
   /**
   * Update original notification message (Slack channels only)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#update_original_message Workflow#update_original_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#update_original_message Workflow#update_original_message}
   */
   readonly updateOriginalMessage?: boolean | cdktn.IResolvable;
 }
@@ -98,7 +98,7 @@ export interface WorkflowDestination {
 export function workflowDestinationToTerraform(struct?: WorkflowDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     channel_id: cdktn.stringToTerraform(struct!.channelId),
@@ -111,7 +111,7 @@ export function workflowDestinationToTerraform(struct?: WorkflowDestination | cd
 export function workflowDestinationToHclTerraform(struct?: WorkflowDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     channel_id: {
@@ -273,7 +273,7 @@ export interface WorkflowEnrichmentsNrqlConfiguration {
   /**
   * enrichment's NRQL query
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#query Workflow#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#query Workflow#query}
   */
   readonly query: string;
 }
@@ -281,7 +281,7 @@ export interface WorkflowEnrichmentsNrqlConfiguration {
 export function workflowEnrichmentsNrqlConfigurationToTerraform(struct?: WorkflowEnrichmentsNrqlConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -292,7 +292,7 @@ export function workflowEnrichmentsNrqlConfigurationToTerraform(struct?: Workflo
 export function workflowEnrichmentsNrqlConfigurationToHclTerraform(struct?: WorkflowEnrichmentsNrqlConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -388,13 +388,13 @@ export interface WorkflowEnrichmentsNrql {
   /**
   * (Required) Enrichment's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#name Workflow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#name Workflow#name}
   */
   readonly name: string;
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#configuration Workflow#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#configuration Workflow#configuration}
   */
   readonly configuration: WorkflowEnrichmentsNrqlConfiguration[] | cdktn.IResolvable;
 }
@@ -402,7 +402,7 @@ export interface WorkflowEnrichmentsNrql {
 export function workflowEnrichmentsNrqlToTerraform(struct?: WorkflowEnrichmentsNrql | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -414,7 +414,7 @@ export function workflowEnrichmentsNrqlToTerraform(struct?: WorkflowEnrichmentsN
 export function workflowEnrichmentsNrqlToHclTerraform(struct?: WorkflowEnrichmentsNrql | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -550,7 +550,7 @@ export interface WorkflowEnrichments {
   /**
   * nrql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#nrql Workflow#nrql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#nrql Workflow#nrql}
   */
   readonly nrql: WorkflowEnrichmentsNrql[] | cdktn.IResolvable;
 }
@@ -558,7 +558,7 @@ export interface WorkflowEnrichments {
 export function workflowEnrichmentsToTerraform(struct?: WorkflowEnrichmentsOutputReference | WorkflowEnrichments): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     nrql: cdktn.listMapper(workflowEnrichmentsNrqlToTerraform, true)(struct!.nrql),
@@ -569,7 +569,7 @@ export function workflowEnrichmentsToTerraform(struct?: WorkflowEnrichmentsOutpu
 export function workflowEnrichmentsToHclTerraform(struct?: WorkflowEnrichmentsOutputReference | WorkflowEnrichments): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     nrql: {
@@ -633,19 +633,19 @@ export interface WorkflowIssuesFilterPredicate {
   /**
   * (Required) predicate's attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#attribute Workflow#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#attribute Workflow#attribute}
   */
   readonly attribute: string;
   /**
   * The type of the operator. One of: (CONTAINS, DOES_NOT_CONTAIN, DOES_NOT_EQUAL, DOES_NOT_EXACTLY_MATCH, ENDS_WITH, EQUAL, EXACTLY_MATCHES, GREATER_OR_EQUAL, GREATER_THAN, IS, IS_NOT, LESS_OR_EQUAL, LESS_THAN, STARTS_WITH).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#operator Workflow#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#operator Workflow#operator}
   */
   readonly operator: string;
   /**
   * List of predicate values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#values Workflow#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#values Workflow#values}
   */
   readonly values: string[];
 }
@@ -653,7 +653,7 @@ export interface WorkflowIssuesFilterPredicate {
 export function workflowIssuesFilterPredicateToTerraform(struct?: WorkflowIssuesFilterPredicate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attribute: cdktn.stringToTerraform(struct!.attribute),
@@ -666,7 +666,7 @@ export function workflowIssuesFilterPredicateToTerraform(struct?: WorkflowIssues
 export function workflowIssuesFilterPredicateToHclTerraform(struct?: WorkflowIssuesFilterPredicate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attribute: {
@@ -812,19 +812,19 @@ export interface WorkflowIssuesFilter {
   /**
   * (Required) Filter's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#name Workflow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#name Workflow#name}
   */
   readonly name: string;
   /**
   * (Required) The type of the filter. One of: (FILTER, VIEW).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#type Workflow#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#type Workflow#type}
   */
   readonly type: string;
   /**
   * predicate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#predicate Workflow#predicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#predicate Workflow#predicate}
   */
   readonly predicate?: WorkflowIssuesFilterPredicate[] | cdktn.IResolvable;
 }
@@ -832,7 +832,7 @@ export interface WorkflowIssuesFilter {
 export function workflowIssuesFilterToTerraform(struct?: WorkflowIssuesFilterOutputReference | WorkflowIssuesFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -845,7 +845,7 @@ export function workflowIssuesFilterToTerraform(struct?: WorkflowIssuesFilterOut
 export function workflowIssuesFilterToHclTerraform(struct?: WorkflowIssuesFilterOutputReference | WorkflowIssuesFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -965,7 +965,7 @@ export class WorkflowIssuesFilterOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow newrelic_workflow}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow newrelic_workflow}
 */
 export class Workflow extends cdktn.TerraformResource {
 
@@ -981,7 +981,7 @@ export class Workflow extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Workflow resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Workflow to import
-  * @param importFromId The id of the existing Workflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Workflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Workflow to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -993,7 +993,7 @@ export class Workflow extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/workflow newrelic_workflow} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/workflow newrelic_workflow} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1004,7 +1004,7 @@ export class Workflow extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_workflow',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.91.0',
+        providerVersion: '3.92.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

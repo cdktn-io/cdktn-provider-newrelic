@@ -4,7 +4,7 @@
 
 ### CloudOciLinkAccount <a name="CloudOciLinkAccount" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account newrelic_cloud_oci_link_account}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account newrelic_cloud_oci_link_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer"></a>
 
@@ -35,6 +35,8 @@ cloudOciLinkAccount.CloudOciLinkAccount(
   logging_stack_ocid: str = None,
   metric_stack_ocid: str = None,
   oci_region: str = None,
+  resource_tag: str = None,
+  trust_type: str = None,
   user_vault_ocid: str = None
 )
 ```
@@ -58,12 +60,14 @@ cloudOciLinkAccount.CloudOciLinkAccount(
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.ociHomeRegion">oci_home_region</a></code> | <code>str</code> | The home region of the tenancy. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.tenantId">tenant_id</a></code> | <code>str</code> | The OCI tenant identifier. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID where you want to link the OCI account. |
-| <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#id CloudOciLinkAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#id CloudOciLinkAccount#id}. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.ingestVaultOcid">ingest_vault_ocid</a></code> | <code>str</code> | The OCI ingest secret OCID. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.instrumentationType">instrumentation_type</a></code> | <code>str</code> | Specifies the type of integration, such as metrics, logs, or a combination of logs and metrics. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.loggingStackOcid">logging_stack_ocid</a></code> | <code>str</code> | The Logging stack identifier for the OCI account. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.metricStackOcid">metric_stack_ocid</a></code> | <code>str</code> | The metric stack identifier for the OCI account. This field is only used for updates, not during initial creation. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.ociRegion">oci_region</a></code> | <code>str</code> | The OCI region for the account. This field is only used for updates, not during initial creation. |
+| <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.resourceTag">resource_tag</a></code> | <code>str</code> | Optional value propagated as the ext_resource_tag claim on the RPST for tag-based scoping in customer IAM policies. |
+| <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.trustType">trust_type</a></code> | <code>str</code> | OCI WIF trust type. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.userVaultOcid">user_vault_ocid</a></code> | <code>str</code> | The user secret OCID. |
 
 ---
@@ -134,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 The New Relic compartment OCID in OCI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#compartment_ocid CloudOciLinkAccount#compartment_ocid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#compartment_ocid CloudOciLinkAccount#compartment_ocid}
 
 ---
 
@@ -144,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The linked account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#name CloudOciLinkAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#name CloudOciLinkAccount#name}
 
 ---
 
@@ -154,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The client ID for OCI WIF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#oci_client_id CloudOciLinkAccount#oci_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#oci_client_id CloudOciLinkAccount#oci_client_id}
 
 ---
 
@@ -164,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The client secret for OCI WIF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#oci_client_secret CloudOciLinkAccount#oci_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#oci_client_secret CloudOciLinkAccount#oci_client_secret}
 
 ---
 
@@ -174,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The OCI domain URL for WIF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#oci_domain_url CloudOciLinkAccount#oci_domain_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#oci_domain_url CloudOciLinkAccount#oci_domain_url}
 
 ---
 
@@ -184,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The home region of the tenancy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#oci_home_region CloudOciLinkAccount#oci_home_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#oci_home_region CloudOciLinkAccount#oci_home_region}
 
 ---
 
@@ -194,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The OCI tenant identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#tenant_id CloudOciLinkAccount#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#tenant_id CloudOciLinkAccount#tenant_id}
 
 ---
 
@@ -204,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The New Relic account ID where you want to link the OCI account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#account_id CloudOciLinkAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#account_id CloudOciLinkAccount#account_id}
 
 ---
 
@@ -212,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#id CloudOciLinkAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#id CloudOciLinkAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -225,7 +229,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The OCI ingest secret OCID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#ingest_vault_ocid CloudOciLinkAccount#ingest_vault_ocid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#ingest_vault_ocid CloudOciLinkAccount#ingest_vault_ocid}
 
 ---
 
@@ -235,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specifies the type of integration, such as metrics, logs, or a combination of logs and metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#instrumentation_type CloudOciLinkAccount#instrumentation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#instrumentation_type CloudOciLinkAccount#instrumentation_type}
 
 ---
 
@@ -245,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The Logging stack identifier for the OCI account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#logging_stack_ocid CloudOciLinkAccount#logging_stack_ocid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#logging_stack_ocid CloudOciLinkAccount#logging_stack_ocid}
 
 ---
 
@@ -255,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The metric stack identifier for the OCI account. This field is only used for updates, not during initial creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#metric_stack_ocid CloudOciLinkAccount#metric_stack_ocid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#metric_stack_ocid CloudOciLinkAccount#metric_stack_ocid}
 
 ---
 
@@ -265,7 +269,31 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The OCI region for the account. This field is only used for updates, not during initial creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#oci_region CloudOciLinkAccount#oci_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#oci_region CloudOciLinkAccount#oci_region}
+
+---
+
+##### `resource_tag`<sup>Optional</sup> <a name="resource_tag" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.resourceTag"></a>
+
+- *Type:* str
+
+Optional value propagated as the ext_resource_tag claim on the RPST for tag-based scoping in customer IAM policies.
+
+Ignored for UPST. Cannot be changed after creation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#resource_tag CloudOciLinkAccount#resource_tag}
+
+---
+
+##### `trust_type`<sup>Optional</sup> <a name="trust_type" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.Initializer.parameter.trustType"></a>
+
+- *Type:* str
+
+OCI WIF trust type.
+
+Allowed: UPST (default), RPST. RPST uses claim-based ephemeral principals; UPST impersonates a service user. Cannot be changed after creation — re-create the linked account to switch trust types.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#trust_type CloudOciLinkAccount#trust_type}
 
 ---
 
@@ -275,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The user secret OCID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#user_vault_ocid CloudOciLinkAccount#user_vault_ocid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#user_vault_ocid CloudOciLinkAccount#user_vault_ocid}
 
 ---
 
@@ -314,6 +342,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.resetLoggingStackOcid">reset_logging_stack_ocid</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.resetMetricStackOcid">reset_metric_stack_ocid</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.resetOciRegion">reset_oci_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.resetResourceTag">reset_resource_tag</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.resetTrustType">reset_trust_type</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.resetUserVaultOcid">reset_user_vault_ocid</a></code> | *No description.* |
 
 ---
@@ -708,6 +738,18 @@ def reset_metric_stack_ocid() -> None
 def reset_oci_region() -> None
 ```
 
+##### `reset_resource_tag` <a name="reset_resource_tag" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.resetResourceTag"></a>
+
+```python
+def reset_resource_tag() -> None
+```
+
+##### `reset_trust_type` <a name="reset_trust_type" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.resetTrustType"></a>
+
+```python
+def reset_trust_type() -> None
+```
+
 ##### `reset_user_vault_ocid` <a name="reset_user_vault_ocid" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.resetUserVaultOcid"></a>
 
 ```python
@@ -828,7 +870,7 @@ The construct id used in the generated config for the CloudOciLinkAccount to imp
 
 The id of the existing CloudOciLinkAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,7 +913,9 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.ociDomainUrlInput">oci_domain_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.ociHomeRegionInput">oci_home_region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.ociRegionInput">oci_region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.resourceTagInput">resource_tag_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.tenantIdInput">tenant_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.trustTypeInput">trust_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.userVaultOcidInput">user_vault_ocid_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.compartmentOcid">compartment_ocid</a></code> | <code>str</code> | *No description.* |
@@ -886,7 +930,9 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.ociDomainUrl">oci_domain_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.ociHomeRegion">oci_home_region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.ociRegion">oci_region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.resourceTag">resource_tag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.trustType">trust_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.userVaultOcid">user_vault_ocid</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1163,10 +1209,30 @@ oci_region_input: str
 
 ---
 
+##### `resource_tag_input`<sup>Optional</sup> <a name="resource_tag_input" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.resourceTagInput"></a>
+
+```python
+resource_tag_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `tenant_id_input`<sup>Optional</sup> <a name="tenant_id_input" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.tenantIdInput"></a>
 
 ```python
 tenant_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `trust_type_input`<sup>Optional</sup> <a name="trust_type_input" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.trustTypeInput"></a>
+
+```python
+trust_type_input: str
 ```
 
 - *Type:* str
@@ -1313,10 +1379,30 @@ oci_region: str
 
 ---
 
+##### `resource_tag`<sup>Required</sup> <a name="resource_tag" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.resourceTag"></a>
+
+```python
+resource_tag: str
+```
+
+- *Type:* str
+
+---
+
 ##### `tenant_id`<sup>Required</sup> <a name="tenant_id" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.tenantId"></a>
 
 ```python
 tenant_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `trust_type`<sup>Required</sup> <a name="trust_type" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccount.property.trustType"></a>
+
+```python
+trust_type: str
 ```
 
 - *Type:* str
@@ -1382,6 +1468,8 @@ cloudOciLinkAccount.CloudOciLinkAccountConfig(
   logging_stack_ocid: str = None,
   metric_stack_ocid: str = None,
   oci_region: str = None,
+  resource_tag: str = None,
+  trust_type: str = None,
   user_vault_ocid: str = None
 )
 ```
@@ -1405,12 +1493,14 @@ cloudOciLinkAccount.CloudOciLinkAccountConfig(
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.ociHomeRegion">oci_home_region</a></code> | <code>str</code> | The home region of the tenancy. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.tenantId">tenant_id</a></code> | <code>str</code> | The OCI tenant identifier. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID where you want to link the OCI account. |
-| <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#id CloudOciLinkAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#id CloudOciLinkAccount#id}. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.ingestVaultOcid">ingest_vault_ocid</a></code> | <code>str</code> | The OCI ingest secret OCID. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.instrumentationType">instrumentation_type</a></code> | <code>str</code> | Specifies the type of integration, such as metrics, logs, or a combination of logs and metrics. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.loggingStackOcid">logging_stack_ocid</a></code> | <code>str</code> | The Logging stack identifier for the OCI account. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.metricStackOcid">metric_stack_ocid</a></code> | <code>str</code> | The metric stack identifier for the OCI account. This field is only used for updates, not during initial creation. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.ociRegion">oci_region</a></code> | <code>str</code> | The OCI region for the account. This field is only used for updates, not during initial creation. |
+| <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.resourceTag">resource_tag</a></code> | <code>str</code> | Optional value propagated as the ext_resource_tag claim on the RPST for tag-based scoping in customer IAM policies. |
+| <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.trustType">trust_type</a></code> | <code>str</code> | OCI WIF trust type. |
 | <code><a href="#@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.userVaultOcid">user_vault_ocid</a></code> | <code>str</code> | The user secret OCID. |
 
 ---
@@ -1495,7 +1585,7 @@ compartment_ocid: str
 
 The New Relic compartment OCID in OCI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#compartment_ocid CloudOciLinkAccount#compartment_ocid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#compartment_ocid CloudOciLinkAccount#compartment_ocid}
 
 ---
 
@@ -1509,7 +1599,7 @@ name: str
 
 The linked account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#name CloudOciLinkAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#name CloudOciLinkAccount#name}
 
 ---
 
@@ -1523,7 +1613,7 @@ oci_client_id: str
 
 The client ID for OCI WIF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#oci_client_id CloudOciLinkAccount#oci_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#oci_client_id CloudOciLinkAccount#oci_client_id}
 
 ---
 
@@ -1537,7 +1627,7 @@ oci_client_secret: str
 
 The client secret for OCI WIF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#oci_client_secret CloudOciLinkAccount#oci_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#oci_client_secret CloudOciLinkAccount#oci_client_secret}
 
 ---
 
@@ -1551,7 +1641,7 @@ oci_domain_url: str
 
 The OCI domain URL for WIF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#oci_domain_url CloudOciLinkAccount#oci_domain_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#oci_domain_url CloudOciLinkAccount#oci_domain_url}
 
 ---
 
@@ -1565,7 +1655,7 @@ oci_home_region: str
 
 The home region of the tenancy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#oci_home_region CloudOciLinkAccount#oci_home_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#oci_home_region CloudOciLinkAccount#oci_home_region}
 
 ---
 
@@ -1579,7 +1669,7 @@ tenant_id: str
 
 The OCI tenant identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#tenant_id CloudOciLinkAccount#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#tenant_id CloudOciLinkAccount#tenant_id}
 
 ---
 
@@ -1593,7 +1683,7 @@ account_id: typing.Union[int, float]
 
 The New Relic account ID where you want to link the OCI account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#account_id CloudOciLinkAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#account_id CloudOciLinkAccount#account_id}
 
 ---
 
@@ -1605,7 +1695,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#id CloudOciLinkAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#id CloudOciLinkAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1622,7 +1712,7 @@ ingest_vault_ocid: str
 
 The OCI ingest secret OCID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#ingest_vault_ocid CloudOciLinkAccount#ingest_vault_ocid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#ingest_vault_ocid CloudOciLinkAccount#ingest_vault_ocid}
 
 ---
 
@@ -1636,7 +1726,7 @@ instrumentation_type: str
 
 Specifies the type of integration, such as metrics, logs, or a combination of logs and metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#instrumentation_type CloudOciLinkAccount#instrumentation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#instrumentation_type CloudOciLinkAccount#instrumentation_type}
 
 ---
 
@@ -1650,7 +1740,7 @@ logging_stack_ocid: str
 
 The Logging stack identifier for the OCI account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#logging_stack_ocid CloudOciLinkAccount#logging_stack_ocid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#logging_stack_ocid CloudOciLinkAccount#logging_stack_ocid}
 
 ---
 
@@ -1664,7 +1754,7 @@ metric_stack_ocid: str
 
 The metric stack identifier for the OCI account. This field is only used for updates, not during initial creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#metric_stack_ocid CloudOciLinkAccount#metric_stack_ocid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#metric_stack_ocid CloudOciLinkAccount#metric_stack_ocid}
 
 ---
 
@@ -1678,7 +1768,39 @@ oci_region: str
 
 The OCI region for the account. This field is only used for updates, not during initial creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#oci_region CloudOciLinkAccount#oci_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#oci_region CloudOciLinkAccount#oci_region}
+
+---
+
+##### `resource_tag`<sup>Optional</sup> <a name="resource_tag" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.resourceTag"></a>
+
+```python
+resource_tag: str
+```
+
+- *Type:* str
+
+Optional value propagated as the ext_resource_tag claim on the RPST for tag-based scoping in customer IAM policies.
+
+Ignored for UPST. Cannot be changed after creation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#resource_tag CloudOciLinkAccount#resource_tag}
+
+---
+
+##### `trust_type`<sup>Optional</sup> <a name="trust_type" id="@cdktn/provider-newrelic.cloudOciLinkAccount.CloudOciLinkAccountConfig.property.trustType"></a>
+
+```python
+trust_type: str
+```
+
+- *Type:* str
+
+OCI WIF trust type.
+
+Allowed: UPST (default), RPST. RPST uses claim-based ephemeral principals; UPST impersonates a service user. Cannot be changed after creation — re-create the linked account to switch trust types.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#trust_type CloudOciLinkAccount#trust_type}
 
 ---
 
@@ -1692,7 +1814,7 @@ user_vault_ocid: str
 
 The user secret OCID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.91.0/docs/resources/cloud_oci_link_account#user_vault_ocid CloudOciLinkAccount#user_vault_ocid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.92.0/docs/resources/cloud_oci_link_account#user_vault_ocid CloudOciLinkAccount#user_vault_ocid}
 
 ---
 
