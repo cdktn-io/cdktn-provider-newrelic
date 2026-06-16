@@ -4,7 +4,7 @@
 
 ### Fleet <a name="Fleet" id="@cdktn/provider-newrelic.fleet.Fleet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet newrelic_fleet}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet newrelic_fleet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.fleet.Fleet.Initializer"></a>
 
@@ -43,7 +43,7 @@ Fleet.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.Initializer.parameter.managedEntityType">managedEntityType</a></code> | <code>java.lang.String</code> | The type of entities this fleet will manage. Allowed values: HOST, KUBERNETESCLUSTER. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the fleet. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of the fleet. |
-| <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#id Fleet#id}. |
+| <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#id Fleet#id}. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.Initializer.parameter.operatingSystem">operatingSystem</a></code> | <code>java.lang.String</code> | The operating system type. Required for HOST fleets. Allowed values: LINUX, WINDOWS. Must not be set for KUBERNETESCLUSTER fleets. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.Initializer.parameter.organizationId">organizationId</a></code> | <code>java.lang.String</code> | The organization ID. If not provided, it will be auto-fetched from the account. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.Fleet.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags for the fleet in format 'key:value1,value2'. Each tag can have multiple values. |
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The type of entities this fleet will manage. Allowed values: HOST, KUBERNETESCLUSTER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#managed_entity_type Fleet#managed_entity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#managed_entity_type Fleet#managed_entity_type}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The name of the fleet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#name Fleet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#name Fleet#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The description of the fleet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#description Fleet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#description Fleet#description}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#id Fleet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#id Fleet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The operating system type. Required for HOST fleets. Allowed values: LINUX, WINDOWS. Must not be set for KUBERNETESCLUSTER fleets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#operating_system Fleet#operating_system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#operating_system Fleet#operating_system}
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The organization ID. If not provided, it will be auto-fetched from the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#organization_id Fleet#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#organization_id Fleet#organization_id}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Tags for the fleet in format 'key:value1,value2'. Each tag can have multiple values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#tags Fleet#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#tags Fleet#tags}
 
 ---
 
@@ -661,7 +661,7 @@ The construct id used in the generated config for the Fleet to import.
 
 The id of the existing Fleet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1049,7 +1049,7 @@ FleetConfig.builder()
 | <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.managedEntityType">managedEntityType</a></code> | <code>java.lang.String</code> | The type of entities this fleet will manage. Allowed values: HOST, KUBERNETESCLUSTER. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the fleet. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of the fleet. |
-| <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#id Fleet#id}. |
+| <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#id Fleet#id}. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.operatingSystem">operatingSystem</a></code> | <code>java.lang.String</code> | The operating system type. Required for HOST fleets. Allowed values: LINUX, WINDOWS. Must not be set for KUBERNETESCLUSTER fleets. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.organizationId">organizationId</a></code> | <code>java.lang.String</code> | The organization ID. If not provided, it will be auto-fetched from the account. |
 | <code><a href="#@cdktn/provider-newrelic.fleet.FleetConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags for the fleet in format 'key:value1,value2'. Each tag can have multiple values. |
@@ -1136,7 +1136,7 @@ public java.lang.String getManagedEntityType();
 
 The type of entities this fleet will manage. Allowed values: HOST, KUBERNETESCLUSTER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#managed_entity_type Fleet#managed_entity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#managed_entity_type Fleet#managed_entity_type}
 
 ---
 
@@ -1150,7 +1150,7 @@ public java.lang.String getName();
 
 The name of the fleet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#name Fleet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#name Fleet#name}
 
 ---
 
@@ -1164,7 +1164,7 @@ public java.lang.String getDescription();
 
 The description of the fleet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#description Fleet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#description Fleet#description}
 
 ---
 
@@ -1176,7 +1176,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#id Fleet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#id Fleet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1193,7 +1193,7 @@ public java.lang.String getOperatingSystem();
 
 The operating system type. Required for HOST fleets. Allowed values: LINUX, WINDOWS. Must not be set for KUBERNETESCLUSTER fleets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#operating_system Fleet#operating_system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#operating_system Fleet#operating_system}
 
 ---
 
@@ -1207,7 +1207,7 @@ public java.lang.String getOrganizationId();
 
 The organization ID. If not provided, it will be auto-fetched from the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#organization_id Fleet#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#organization_id Fleet#organization_id}
 
 ---
 
@@ -1221,7 +1221,7 @@ public java.util.List<java.lang.String> getTags();
 
 Tags for the fleet in format 'key:value1,value2'. Each tag can have multiple values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.0/docs/resources/fleet#tags Fleet#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/fleet#tags Fleet#tags}
 
 ---
 
