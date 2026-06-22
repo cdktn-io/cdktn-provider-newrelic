@@ -39,7 +39,7 @@ AlertChannel.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | (Required) The name of the channel. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | (Required) The type of channel. One of: (user, victorops, webhook, email, opsgenie, pagerduty, slack). |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook). |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The New Relic account ID where you want to create alert channels. |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA">AlertChannelConfigA</a></code> | config block. |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/alert_channel#id AlertChannel#id}. |
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-(Required) The type of channel. One of: (user, victorops, webhook, email, opsgenie, pagerduty, slack).
+(Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/alert_channel#type AlertChannel#type}
 
@@ -976,7 +976,7 @@ AlertChannelConfig.builder()
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.name">name</a></code> | <code>java.lang.String</code> | (Required) The name of the channel. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.type">type</a></code> | <code>java.lang.String</code> | (Required) The type of channel. One of: (user, victorops, webhook, email, opsgenie, pagerduty, slack). |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.type">type</a></code> | <code>java.lang.String</code> | (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook). |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The New Relic account ID where you want to create alert channels. |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.config">config</a></code> | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA">AlertChannelConfigA</a></code> | config block. |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/alert_channel#id AlertChannel#id}. |
@@ -1075,7 +1075,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-(Required) The type of channel. One of: (user, victorops, webhook, email, opsgenie, pagerduty, slack).
+(Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.1/docs/resources/alert_channel#type AlertChannel#type}
 
