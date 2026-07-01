@@ -4,7 +4,7 @@
 
 ### Workload <a name="Workload" id="@cdktn/provider-newrelic.workload.Workload"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload newrelic_workload}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload newrelic_workload}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.Workload.Initializer"></a>
 
@@ -24,10 +24,12 @@ workload.Workload(
   name: str,
   account_id: typing.Union[int, float] = None,
   description: str = None,
+  dynamic_flows: IResolvable | typing.List[WorkloadDynamicFlows] = None,
   entity_guids: typing.List[str] = None,
   entity_search_query: IResolvable | typing.List[WorkloadEntitySearchQuery] = None,
   id: str = None,
   scope_account_ids: typing.List[typing.Union[int, float]] = None,
+  status_config_alert_policy: WorkloadStatusConfigAlertPolicy = None,
   status_config_automatic: WorkloadStatusConfigAutomatic = None,
   status_config_static: WorkloadStatusConfigStatic = None
 )
@@ -47,10 +49,12 @@ workload.Workload(
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.Initializer.parameter.name">name</a></code> | <code>str</code> | The workload's name. |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.Initializer.parameter.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID where you want to create the workload. |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.Initializer.parameter.description">description</a></code> | <code>str</code> | Relevant information about the workload. |
+| <code><a href="#@cdktn/provider-newrelic.workload.Workload.Initializer.parameter.dynamicFlows">dynamic_flows</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlows">WorkloadDynamicFlows</a>]</code> | dynamic_flows block. |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.Initializer.parameter.entityGuids">entity_guids</a></code> | <code>typing.List[str]</code> | A list of entity GUIDs manually assigned to this workload. |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.Initializer.parameter.entitySearchQuery">entity_search_query</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>]</code> | entity_search_query block. |
-| <code><a href="#@cdktn/provider-newrelic.workload.Workload.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#id Workload#id}. |
+| <code><a href="#@cdktn/provider-newrelic.workload.Workload.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#id Workload#id}. |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.Initializer.parameter.scopeAccountIds">scope_account_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of account IDs that will be used to get entities from. |
+| <code><a href="#@cdktn/provider-newrelic.workload.Workload.Initializer.parameter.statusConfigAlertPolicy">status_config_alert_policy</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicy">WorkloadStatusConfigAlertPolicy</a></code> | status_config_alert_policy block. |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.Initializer.parameter.statusConfigAutomatic">status_config_automatic</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomatic">WorkloadStatusConfigAutomatic</a></code> | status_config_automatic block. |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.Initializer.parameter.statusConfigStatic">status_config_static</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigStatic">WorkloadStatusConfigStatic</a></code> | status_config_static block. |
 
@@ -122,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The workload's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#name Workload#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#name Workload#name}
 
 ---
 
@@ -132,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The New Relic account ID where you want to create the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#account_id Workload#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#account_id Workload#account_id}
 
 ---
 
@@ -142,7 +146,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Relevant information about the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#description Workload#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#description Workload#description}
+
+---
+
+##### `dynamic_flows`<sup>Optional</sup> <a name="dynamic_flows" id="@cdktn/provider-newrelic.workload.Workload.Initializer.parameter.dynamicFlows"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlows">WorkloadDynamicFlows</a>]
+
+dynamic_flows block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#dynamic_flows Workload#dynamic_flows}
 
 ---
 
@@ -152,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 A list of entity GUIDs manually assigned to this workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#entity_guids Workload#entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#entity_guids Workload#entity_guids}
 
 ---
 
@@ -162,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 entity_search_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#entity_search_query Workload#entity_search_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#entity_search_query Workload#entity_search_query}
 
 ---
 
@@ -170,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#id Workload#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#id Workload#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -183,7 +197,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 A list of account IDs that will be used to get entities from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
+
+---
+
+##### `status_config_alert_policy`<sup>Optional</sup> <a name="status_config_alert_policy" id="@cdktn/provider-newrelic.workload.Workload.Initializer.parameter.statusConfigAlertPolicy"></a>
+
+- *Type:* <a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicy">WorkloadStatusConfigAlertPolicy</a>
+
+status_config_alert_policy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#status_config_alert_policy Workload#status_config_alert_policy}
 
 ---
 
@@ -193,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 status_config_automatic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
 
 ---
 
@@ -203,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 status_config_static block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#status_config_static Workload#status_config_static}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#status_config_static Workload#status_config_static}
 
 ---
 
@@ -235,15 +259,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-newrelic.workload.Workload.putDynamicFlows">put_dynamic_flows</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.putEntitySearchQuery">put_entity_search_query</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.Workload.putStatusConfigAlertPolicy">put_status_config_alert_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.putStatusConfigAutomatic">put_status_config_automatic</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.putStatusConfigStatic">put_status_config_static</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.Workload.resetDynamicFlows">reset_dynamic_flows</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.resetEntityGuids">reset_entity_guids</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.resetEntitySearchQuery">reset_entity_search_query</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.resetScopeAccountIds">reset_scope_account_ids</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.Workload.resetStatusConfigAlertPolicy">reset_status_config_alert_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.resetStatusConfigAutomatic">reset_status_config_automatic</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.resetStatusConfigStatic">reset_status_config_static</a></code> | *No description.* |
 
@@ -597,6 +625,20 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_dynamic_flows` <a name="put_dynamic_flows" id="@cdktn/provider-newrelic.workload.Workload.putDynamicFlows"></a>
+
+```python
+def put_dynamic_flows(
+  value: IResolvable | typing.List[WorkloadDynamicFlows]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-newrelic.workload.Workload.putDynamicFlows.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlows">WorkloadDynamicFlows</a>]
+
+---
+
 ##### `put_entity_search_query` <a name="put_entity_search_query" id="@cdktn/provider-newrelic.workload.Workload.putEntitySearchQuery"></a>
 
 ```python
@@ -608,6 +650,24 @@ def put_entity_search_query(
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-newrelic.workload.Workload.putEntitySearchQuery.parameter.value"></a>
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>]
+
+---
+
+##### `put_status_config_alert_policy` <a name="put_status_config_alert_policy" id="@cdktn/provider-newrelic.workload.Workload.putStatusConfigAlertPolicy"></a>
+
+```python
+def put_status_config_alert_policy(
+  enabled: bool | IResolvable
+) -> None
+```
+
+###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-newrelic.workload.Workload.putStatusConfigAlertPolicy.parameter.enabled"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether the alert policy status configuration is enabled or not.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#enabled Workload#enabled}
 
 ---
 
@@ -627,7 +687,7 @@ def put_status_config_automatic(
 
 Whether the automatic status configuration is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#enabled Workload#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#enabled Workload#enabled}
 
 ---
 
@@ -637,7 +697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 remaining_entities_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
 
 ---
 
@@ -647,7 +707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#rule Workload#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#rule Workload#rule}
 
 ---
 
@@ -668,7 +728,7 @@ def put_status_config_static(
 
 Whether the static status configuration is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#enabled Workload#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#enabled Workload#enabled}
 
 ---
 
@@ -678,7 +738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The status of the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#status Workload#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#status Workload#status}
 
 ---
 
@@ -688,7 +748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 A description that provides additional details about the status of the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#description Workload#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#description Workload#description}
 
 ---
 
@@ -698,7 +758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 A short description of the status of the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#summary Workload#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#summary Workload#summary}
 
 ---
 
@@ -712,6 +772,12 @@ def reset_account_id() -> None
 
 ```python
 def reset_description() -> None
+```
+
+##### `reset_dynamic_flows` <a name="reset_dynamic_flows" id="@cdktn/provider-newrelic.workload.Workload.resetDynamicFlows"></a>
+
+```python
+def reset_dynamic_flows() -> None
 ```
 
 ##### `reset_entity_guids` <a name="reset_entity_guids" id="@cdktn/provider-newrelic.workload.Workload.resetEntityGuids"></a>
@@ -736,6 +802,12 @@ def reset_id() -> None
 
 ```python
 def reset_scope_account_ids() -> None
+```
+
+##### `reset_status_config_alert_policy` <a name="reset_status_config_alert_policy" id="@cdktn/provider-newrelic.workload.Workload.resetStatusConfigAlertPolicy"></a>
+
+```python
+def reset_status_config_alert_policy() -> None
 ```
 
 ##### `reset_status_config_automatic` <a name="reset_status_config_automatic" id="@cdktn/provider-newrelic.workload.Workload.resetStatusConfigAutomatic"></a>
@@ -864,7 +936,7 @@ The construct id used in the generated config for the Workload to import.
 
 The id of the existing Workload that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -895,19 +967,23 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.compositeEntitySearchQuery">composite_entity_search_query</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.dynamicFlows">dynamic_flows</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList">WorkloadDynamicFlowsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.entitySearchQuery">entity_search_query</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadEntitySearchQueryList">WorkloadEntitySearchQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.guid">guid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.permalink">permalink</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.statusConfigAlertPolicy">status_config_alert_policy</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference">WorkloadStatusConfigAlertPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.statusConfigAutomatic">status_config_automatic</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference">WorkloadStatusConfigAutomaticOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.statusConfigStatic">status_config_static</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference">WorkloadStatusConfigStaticOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.workloadId">workload_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.accountIdInput">account_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.dynamicFlowsInput">dynamic_flows_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlows">WorkloadDynamicFlows</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.entityGuidsInput">entity_guids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.entitySearchQueryInput">entity_search_query_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.scopeAccountIdsInput">scope_account_ids_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.statusConfigAlertPolicyInput">status_config_alert_policy_input</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicy">WorkloadStatusConfigAlertPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.statusConfigAutomaticInput">status_config_automatic_input</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomatic">WorkloadStatusConfigAutomatic</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.statusConfigStaticInput">status_config_static_input</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigStatic">WorkloadStatusConfigStatic</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.workload.Workload.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1071,6 +1147,16 @@ composite_entity_search_query: str
 
 ---
 
+##### `dynamic_flows`<sup>Required</sup> <a name="dynamic_flows" id="@cdktn/provider-newrelic.workload.Workload.property.dynamicFlows"></a>
+
+```python
+dynamic_flows: WorkloadDynamicFlowsList
+```
+
+- *Type:* <a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList">WorkloadDynamicFlowsList</a>
+
+---
+
 ##### `entity_search_query`<sup>Required</sup> <a name="entity_search_query" id="@cdktn/provider-newrelic.workload.Workload.property.entitySearchQuery"></a>
 
 ```python
@@ -1098,6 +1184,16 @@ permalink: str
 ```
 
 - *Type:* str
+
+---
+
+##### `status_config_alert_policy`<sup>Required</sup> <a name="status_config_alert_policy" id="@cdktn/provider-newrelic.workload.Workload.property.statusConfigAlertPolicy"></a>
+
+```python
+status_config_alert_policy: WorkloadStatusConfigAlertPolicyOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference">WorkloadStatusConfigAlertPolicyOutputReference</a>
 
 ---
 
@@ -1151,6 +1247,16 @@ description_input: str
 
 ---
 
+##### `dynamic_flows_input`<sup>Optional</sup> <a name="dynamic_flows_input" id="@cdktn/provider-newrelic.workload.Workload.property.dynamicFlowsInput"></a>
+
+```python
+dynamic_flows_input: IResolvable | typing.List[WorkloadDynamicFlows]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlows">WorkloadDynamicFlows</a>]
+
+---
+
 ##### `entity_guids_input`<sup>Optional</sup> <a name="entity_guids_input" id="@cdktn/provider-newrelic.workload.Workload.property.entityGuidsInput"></a>
 
 ```python
@@ -1198,6 +1304,16 @@ scope_account_ids_input: typing.List[typing.Union[int, float]]
 ```
 
 - *Type:* typing.List[typing.Union[int, float]]
+
+---
+
+##### `status_config_alert_policy_input`<sup>Optional</sup> <a name="status_config_alert_policy_input" id="@cdktn/provider-newrelic.workload.Workload.property.statusConfigAlertPolicyInput"></a>
+
+```python
+status_config_alert_policy_input: WorkloadStatusConfigAlertPolicy
+```
+
+- *Type:* <a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicy">WorkloadStatusConfigAlertPolicy</a>
 
 ---
 
@@ -1319,10 +1435,12 @@ workload.WorkloadConfig(
   name: str,
   account_id: typing.Union[int, float] = None,
   description: str = None,
+  dynamic_flows: IResolvable | typing.List[WorkloadDynamicFlows] = None,
   entity_guids: typing.List[str] = None,
   entity_search_query: IResolvable | typing.List[WorkloadEntitySearchQuery] = None,
   id: str = None,
   scope_account_ids: typing.List[typing.Union[int, float]] = None,
+  status_config_alert_policy: WorkloadStatusConfigAlertPolicy = None,
   status_config_automatic: WorkloadStatusConfigAutomatic = None,
   status_config_static: WorkloadStatusConfigStatic = None
 )
@@ -1342,10 +1460,12 @@ workload.WorkloadConfig(
 | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadConfig.property.name">name</a></code> | <code>str</code> | The workload's name. |
 | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadConfig.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID where you want to create the workload. |
 | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadConfig.property.description">description</a></code> | <code>str</code> | Relevant information about the workload. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadConfig.property.dynamicFlows">dynamic_flows</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlows">WorkloadDynamicFlows</a>]</code> | dynamic_flows block. |
 | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadConfig.property.entityGuids">entity_guids</a></code> | <code>typing.List[str]</code> | A list of entity GUIDs manually assigned to this workload. |
 | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadConfig.property.entitySearchQuery">entity_search_query</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>]</code> | entity_search_query block. |
-| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#id Workload#id}. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#id Workload#id}. |
 | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadConfig.property.scopeAccountIds">scope_account_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of account IDs that will be used to get entities from. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadConfig.property.statusConfigAlertPolicy">status_config_alert_policy</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicy">WorkloadStatusConfigAlertPolicy</a></code> | status_config_alert_policy block. |
 | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadConfig.property.statusConfigAutomatic">status_config_automatic</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomatic">WorkloadStatusConfigAutomatic</a></code> | status_config_automatic block. |
 | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadConfig.property.statusConfigStatic">status_config_static</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigStatic">WorkloadStatusConfigStatic</a></code> | status_config_static block. |
 
@@ -1431,7 +1551,7 @@ name: str
 
 The workload's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#name Workload#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#name Workload#name}
 
 ---
 
@@ -1445,7 +1565,7 @@ account_id: typing.Union[int, float]
 
 The New Relic account ID where you want to create the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#account_id Workload#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#account_id Workload#account_id}
 
 ---
 
@@ -1459,7 +1579,21 @@ description: str
 
 Relevant information about the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#description Workload#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#description Workload#description}
+
+---
+
+##### `dynamic_flows`<sup>Optional</sup> <a name="dynamic_flows" id="@cdktn/provider-newrelic.workload.WorkloadConfig.property.dynamicFlows"></a>
+
+```python
+dynamic_flows: IResolvable | typing.List[WorkloadDynamicFlows]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlows">WorkloadDynamicFlows</a>]
+
+dynamic_flows block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#dynamic_flows Workload#dynamic_flows}
 
 ---
 
@@ -1473,7 +1607,7 @@ entity_guids: typing.List[str]
 
 A list of entity GUIDs manually assigned to this workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#entity_guids Workload#entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#entity_guids Workload#entity_guids}
 
 ---
 
@@ -1487,7 +1621,7 @@ entity_search_query: IResolvable | typing.List[WorkloadEntitySearchQuery]
 
 entity_search_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#entity_search_query Workload#entity_search_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#entity_search_query Workload#entity_search_query}
 
 ---
 
@@ -1499,7 +1633,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#id Workload#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#id Workload#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1516,7 +1650,21 @@ scope_account_ids: typing.List[typing.Union[int, float]]
 
 A list of account IDs that will be used to get entities from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
+
+---
+
+##### `status_config_alert_policy`<sup>Optional</sup> <a name="status_config_alert_policy" id="@cdktn/provider-newrelic.workload.WorkloadConfig.property.statusConfigAlertPolicy"></a>
+
+```python
+status_config_alert_policy: WorkloadStatusConfigAlertPolicy
+```
+
+- *Type:* <a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicy">WorkloadStatusConfigAlertPolicy</a>
+
+status_config_alert_policy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#status_config_alert_policy Workload#status_config_alert_policy}
 
 ---
 
@@ -1530,7 +1678,7 @@ status_config_automatic: WorkloadStatusConfigAutomatic
 
 status_config_automatic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
 
 ---
 
@@ -1544,7 +1692,57 @@ status_config_static: WorkloadStatusConfigStatic
 
 status_config_static block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#status_config_static Workload#status_config_static}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#status_config_static Workload#status_config_static}
+
+---
+
+### WorkloadDynamicFlows <a name="WorkloadDynamicFlows" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlows"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlows.Initializer"></a>
+
+```python
+from cdktn_provider_newrelic import workload
+
+workload.WorkloadDynamicFlows(
+  entity_guid: str,
+  transaction_name: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlows.property.entityGuid">entity_guid</a></code> | <code>str</code> | The unique entity identifier of the dynamic flow entry. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlows.property.transactionName">transaction_name</a></code> | <code>str</code> | The transaction name associated with the dynamic flow entry. |
+
+---
+
+##### `entity_guid`<sup>Required</sup> <a name="entity_guid" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlows.property.entityGuid"></a>
+
+```python
+entity_guid: str
+```
+
+- *Type:* str
+
+The unique entity identifier of the dynamic flow entry.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#entity_guid Workload#entity_guid}
+
+---
+
+##### `transaction_name`<sup>Required</sup> <a name="transaction_name" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlows.property.transactionName"></a>
+
+```python
+transaction_name: str
+```
+
+- *Type:* str
+
+The transaction name associated with the dynamic flow entry.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#transaction_name Workload#transaction_name}
 
 ---
 
@@ -1578,7 +1776,41 @@ query: str
 
 A valid entity search query; empty, and null values are considered invalid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#query Workload#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#query Workload#query}
+
+---
+
+### WorkloadStatusConfigAlertPolicy <a name="WorkloadStatusConfigAlertPolicy" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicy.Initializer"></a>
+
+```python
+from cdktn_provider_newrelic import workload
+
+workload.WorkloadStatusConfigAlertPolicy(
+  enabled: bool | IResolvable
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicy.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the alert policy status configuration is enabled or not. |
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicy.property.enabled"></a>
+
+```python
+enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether the alert policy status configuration is enabled or not.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#enabled Workload#enabled}
 
 ---
 
@@ -1616,7 +1848,7 @@ enabled: bool | IResolvable
 
 Whether the automatic status configuration is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#enabled Workload#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#enabled Workload#enabled}
 
 ---
 
@@ -1630,7 +1862,7 @@ remaining_entities_rule: WorkloadStatusConfigAutomaticRemainingEntitiesRule
 
 remaining_entities_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
 
 ---
 
@@ -1644,7 +1876,7 @@ rule: IResolvable | typing.List[WorkloadStatusConfigAutomaticRule]
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#rule Workload#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#rule Workload#rule}
 
 ---
 
@@ -1678,7 +1910,7 @@ remaining_entities_rule_rollup: WorkloadStatusConfigAutomaticRemainingEntitiesRu
 
 remaining_entities_rule_rollup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
 
 ---
 
@@ -1718,7 +1950,7 @@ group_by: str
 
 The grouping to be applied to the remaining entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#group_by Workload#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#group_by Workload#group_by}
 
 ---
 
@@ -1732,7 +1964,7 @@ strategy: str
 
 The rollup strategy that is applied to a group of entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#strategy Workload#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#strategy Workload#strategy}
 
 ---
 
@@ -1748,7 +1980,7 @@ Type of threshold defined for the rule.
 
 This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#threshold_type Workload#threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#threshold_type Workload#threshold_type}
 
 ---
 
@@ -1764,7 +1996,7 @@ Threshold value defined for the rule.
 
 This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#threshold_value Workload#threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#threshold_value Workload#threshold_value}
 
 ---
 
@@ -1802,7 +2034,7 @@ rollup: WorkloadStatusConfigAutomaticRuleRollup
 
 rollup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#rollup Workload#rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#rollup Workload#rollup}
 
 ---
 
@@ -1816,7 +2048,7 @@ entity_guids: typing.List[str]
 
 A list of entity GUIDs composing the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#entity_guids Workload#entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#entity_guids Workload#entity_guids}
 
 ---
 
@@ -1830,7 +2062,7 @@ nrql_query: IResolvable | typing.List[WorkloadStatusConfigAutomaticRuleNrqlQuery
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#nrql_query Workload#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#nrql_query Workload#nrql_query}
 
 ---
 
@@ -1864,7 +2096,7 @@ query: str
 
 The entity search query that is used to perform the search of a group of entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#query Workload#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#query Workload#query}
 
 ---
 
@@ -1902,7 +2134,7 @@ strategy: str
 
 The rollup strategy that is applied to a group of entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#strategy Workload#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#strategy Workload#strategy}
 
 ---
 
@@ -1918,7 +2150,7 @@ Type of threshold defined for the rule.
 
 This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#threshold_type Workload#threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#threshold_type Workload#threshold_type}
 
 ---
 
@@ -1934,7 +2166,7 @@ Threshold value defined for the rule.
 
 This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#threshold_value Workload#threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#threshold_value Workload#threshold_value}
 
 ---
 
@@ -1974,7 +2206,7 @@ enabled: bool | IResolvable
 
 Whether the static status configuration is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#enabled Workload#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#enabled Workload#enabled}
 
 ---
 
@@ -1988,7 +2220,7 @@ status: str
 
 The status of the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#status Workload#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#status Workload#status}
 
 ---
 
@@ -2002,7 +2234,7 @@ description: str
 
 A description that provides additional details about the status of the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#description Workload#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#description Workload#description}
 
 ---
 
@@ -2016,11 +2248,519 @@ summary: str
 
 A short description of the status of the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#summary Workload#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#summary Workload#summary}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### WorkloadDynamicFlowsList <a name="WorkloadDynamicFlowsList" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.Initializer"></a>
+
+```python
+from cdktn_provider_newrelic import workload
+
+workload.WorkloadDynamicFlowsList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> WorkloadDynamicFlowsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlows">WorkloadDynamicFlows</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[WorkloadDynamicFlows]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlows">WorkloadDynamicFlows</a>]
+
+---
+
+
+### WorkloadDynamicFlowsOutputReference <a name="WorkloadDynamicFlowsOutputReference" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_newrelic import workload
+
+workload.WorkloadDynamicFlowsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.property.entityGuidInput">entity_guid_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.property.transactionNameInput">transaction_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.property.entityGuid">entity_guid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.property.transactionName">transaction_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlows">WorkloadDynamicFlows</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `entity_guid_input`<sup>Optional</sup> <a name="entity_guid_input" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.property.entityGuidInput"></a>
+
+```python
+entity_guid_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `transaction_name_input`<sup>Optional</sup> <a name="transaction_name_input" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.property.transactionNameInput"></a>
+
+```python
+transaction_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `entity_guid`<sup>Required</sup> <a name="entity_guid" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.property.entityGuid"></a>
+
+```python
+entity_guid: str
+```
+
+- *Type:* str
+
+---
+
+##### `transaction_name`<sup>Required</sup> <a name="transaction_name" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.property.transactionName"></a>
+
+```python
+transaction_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.workload.WorkloadDynamicFlowsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | WorkloadDynamicFlows
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-newrelic.workload.WorkloadDynamicFlows">WorkloadDynamicFlows</a>
+
+---
+
 
 ### WorkloadEntitySearchQueryList <a name="WorkloadEntitySearchQueryList" id="@cdktn/provider-newrelic.workload.WorkloadEntitySearchQueryList"></a>
 
@@ -2508,6 +3248,302 @@ internal_value: IResolvable | WorkloadEntitySearchQuery
 ---
 
 
+### WorkloadStatusConfigAlertPolicyOutputReference <a name="WorkloadStatusConfigAlertPolicyOutputReference" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_newrelic import workload
+
+workload.WorkloadStatusConfigAlertPolicyOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicy">WorkloadStatusConfigAlertPolicy</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.property.enabledInput"></a>
+
+```python
+enabled_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.property.enabled"></a>
+
+```python
+enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicyOutputReference.property.internalValue"></a>
+
+```python
+internal_value: WorkloadStatusConfigAlertPolicy
+```
+
+- *Type:* <a href="#@cdktn/provider-newrelic.workload.WorkloadStatusConfigAlertPolicy">WorkloadStatusConfigAlertPolicy</a>
+
+---
+
+
 ### WorkloadStatusConfigAutomaticOutputReference <a name="WorkloadStatusConfigAutomaticOutputReference" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.Initializer"></a>
@@ -2754,7 +3790,7 @@ def put_remaining_entities_rule(
 
 remaining_entities_rule_rollup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
 
 ---
 
@@ -3142,7 +4178,7 @@ def put_remaining_entities_rule_rollup(
 
 The grouping to be applied to the remaining entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#group_by Workload#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#group_by Workload#group_by}
 
 ---
 
@@ -3152,7 +4188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The rollup strategy that is applied to a group of entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#strategy Workload#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#strategy Workload#strategy}
 
 ---
 
@@ -3164,7 +4200,7 @@ Type of threshold defined for the rule.
 
 This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#threshold_type Workload#threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#threshold_type Workload#threshold_type}
 
 ---
 
@@ -3176,7 +4212,7 @@ Threshold value defined for the rule.
 
 This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#threshold_value Workload#threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#threshold_value Workload#threshold_value}
 
 ---
 
@@ -4562,7 +5598,7 @@ def put_rollup(
 
 The rollup strategy that is applied to a group of entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#strategy Workload#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#strategy Workload#strategy}
 
 ---
 
@@ -4574,7 +5610,7 @@ Type of threshold defined for the rule.
 
 This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#threshold_type Workload#threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#threshold_type Workload#threshold_type}
 
 ---
 
@@ -4586,7 +5622,7 @@ Threshold value defined for the rule.
 
 This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#threshold_value Workload#threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#threshold_value Workload#threshold_value}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### MetricPruningRule <a name="MetricPruningRule" id="@cdktn/provider-newrelic.metricPruningRule.MetricPruningRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/metric_pruning_rule newrelic_metric_pruning_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/metric_pruning_rule newrelic_metric_pruning_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.metricPruningRule.MetricPruningRule.Initializer"></a>
 
@@ -42,7 +42,7 @@ metricPruningRule.MetricPruningRule(
 | <code><a href="#@cdktn/provider-newrelic.metricPruningRule.MetricPruningRule.Initializer.parameter.nrql">nrql</a></code> | <code>str</code> | The NRQL query that identifies the metric attributes to prune. |
 | <code><a href="#@cdktn/provider-newrelic.metricPruningRule.MetricPruningRule.Initializer.parameter.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The account ID in which the pruning rule is created. |
 | <code><a href="#@cdktn/provider-newrelic.metricPruningRule.MetricPruningRule.Initializer.parameter.description">description</a></code> | <code>str</code> | A human-readable description of the pruning rule. |
-| <code><a href="#@cdktn/provider-newrelic.metricPruningRule.MetricPruningRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/metric_pruning_rule#id MetricPruningRule#id}. |
+| <code><a href="#@cdktn/provider-newrelic.metricPruningRule.MetricPruningRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/metric_pruning_rule#id MetricPruningRule#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ The NRQL query that identifies the metric attributes to prune.
 
 Must select specific attributes from Metric (e.g. `SELECT collector.name FROM Metric WHERE metricName = 'my.metric'`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/metric_pruning_rule#nrql MetricPruningRule#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/metric_pruning_rule#nrql MetricPruningRule#nrql}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The account ID in which the pruning rule is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/metric_pruning_rule#account_id MetricPruningRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/metric_pruning_rule#account_id MetricPruningRule#account_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 A human-readable description of the pruning rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/metric_pruning_rule#description MetricPruningRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/metric_pruning_rule#description MetricPruningRule#description}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/metric_pruning_rule#id MetricPruningRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/metric_pruning_rule#id MetricPruningRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -663,7 +663,7 @@ The construct id used in the generated config for the MetricPruningRule to impor
 
 The id of the existing MetricPruningRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/metric_pruning_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/metric_pruning_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -993,7 +993,7 @@ metricPruningRule.MetricPruningRuleConfig(
 | <code><a href="#@cdktn/provider-newrelic.metricPruningRule.MetricPruningRuleConfig.property.nrql">nrql</a></code> | <code>str</code> | The NRQL query that identifies the metric attributes to prune. |
 | <code><a href="#@cdktn/provider-newrelic.metricPruningRule.MetricPruningRuleConfig.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The account ID in which the pruning rule is created. |
 | <code><a href="#@cdktn/provider-newrelic.metricPruningRule.MetricPruningRuleConfig.property.description">description</a></code> | <code>str</code> | A human-readable description of the pruning rule. |
-| <code><a href="#@cdktn/provider-newrelic.metricPruningRule.MetricPruningRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/metric_pruning_rule#id MetricPruningRule#id}. |
+| <code><a href="#@cdktn/provider-newrelic.metricPruningRule.MetricPruningRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/metric_pruning_rule#id MetricPruningRule#id}. |
 
 ---
 
@@ -1079,7 +1079,7 @@ The NRQL query that identifies the metric attributes to prune.
 
 Must select specific attributes from Metric (e.g. `SELECT collector.name FROM Metric WHERE metricName = 'my.metric'`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/metric_pruning_rule#nrql MetricPruningRule#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/metric_pruning_rule#nrql MetricPruningRule#nrql}
 
 ---
 
@@ -1093,7 +1093,7 @@ account_id: typing.Union[int, float]
 
 The account ID in which the pruning rule is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/metric_pruning_rule#account_id MetricPruningRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/metric_pruning_rule#account_id MetricPruningRule#account_id}
 
 ---
 
@@ -1107,7 +1107,7 @@ description: str
 
 A human-readable description of the pruning rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/metric_pruning_rule#description MetricPruningRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/metric_pruning_rule#description MetricPruningRule#description}
 
 ---
 
@@ -1119,7 +1119,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/metric_pruning_rule#id MetricPruningRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/metric_pruning_rule#id MetricPruningRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
