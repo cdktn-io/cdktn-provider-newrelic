@@ -4,7 +4,7 @@
 
 ### AlertMutingRule <a name="AlertMutingRule" id="@cdktn/provider-newrelic.alertMutingRule.AlertMutingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule newrelic_alert_muting_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule newrelic_alert_muting_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.alertMutingRule.AlertMutingRule.Initializer"></a>
 
@@ -47,7 +47,7 @@ AlertMutingRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-newrelic.alertMutingRule.AlertMutingRule.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The account id of the MutingRule.. |
 | <code><a href="#@cdktn/provider-newrelic.alertMutingRule.AlertMutingRule.Initializer.parameter.actionOnMutingRuleWindowEnded">actionOnMutingRuleWindowEnded</a></code> | <code>java.lang.String</code> | The action when the muting rule window is ended or disabled. |
 | <code><a href="#@cdktn/provider-newrelic.alertMutingRule.AlertMutingRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of the MutingRule. |
-| <code><a href="#@cdktn/provider-newrelic.alertMutingRule.AlertMutingRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#id AlertMutingRule#id}. |
+| <code><a href="#@cdktn/provider-newrelic.alertMutingRule.AlertMutingRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#id AlertMutingRule#id}. |
 | <code><a href="#@cdktn/provider-newrelic.alertMutingRule.AlertMutingRule.Initializer.parameter.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-newrelic.alertMutingRule.AlertMutingRuleSchedule">AlertMutingRuleSchedule</a></code> | schedule block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#condition AlertMutingRule#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#condition AlertMutingRule#condition}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Whether the MutingRule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#enabled AlertMutingRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#enabled AlertMutingRule#enabled}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The name of the MutingRule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#name AlertMutingRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#name AlertMutingRule#name}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The account id of the MutingRule..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#account_id AlertMutingRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#account_id AlertMutingRule#account_id}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The action when the muting rule window is ended or disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#action_on_muting_rule_window_ended AlertMutingRule#action_on_muting_rule_window_ended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#action_on_muting_rule_window_ended AlertMutingRule#action_on_muting_rule_window_ended}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The description of the MutingRule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#description AlertMutingRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#description AlertMutingRule#description}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#id AlertMutingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#id AlertMutingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -189,7 +189,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#schedule AlertMutingRule#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#schedule AlertMutingRule#schedule}
 
 ---
 
@@ -699,7 +699,7 @@ The construct id used in the generated config for the AlertMutingRule to import.
 
 The id of the existing AlertMutingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1102,7 +1102,7 @@ public IResolvable|java.util.List<AlertMutingRuleConditionConditions> getConditi
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#conditions AlertMutingRule#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#conditions AlertMutingRule#conditions}
 
 ---
 
@@ -1116,7 +1116,7 @@ public java.lang.String getOperator();
 
 The operator used to combine all the MutingRuleConditions within the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
 
 ---
 
@@ -1154,7 +1154,7 @@ public java.lang.String getAttribute();
 
 The attribute on an incident.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#attribute AlertMutingRule#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#attribute AlertMutingRule#attribute}
 
 ---
 
@@ -1168,7 +1168,7 @@ public java.lang.String getOperator();
 
 The operator used to compare the attribute's value with the supplied value(s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
 
 ---
 
@@ -1182,7 +1182,7 @@ public java.util.List<java.lang.String> getValues();
 
 The value(s) to compare against the attribute's value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#values AlertMutingRule#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#values AlertMutingRule#values}
 
 ---
 
@@ -1229,7 +1229,7 @@ AlertMutingRuleConfig.builder()
 | <code><a href="#@cdktn/provider-newrelic.alertMutingRule.AlertMutingRuleConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The account id of the MutingRule.. |
 | <code><a href="#@cdktn/provider-newrelic.alertMutingRule.AlertMutingRuleConfig.property.actionOnMutingRuleWindowEnded">actionOnMutingRuleWindowEnded</a></code> | <code>java.lang.String</code> | The action when the muting rule window is ended or disabled. |
 | <code><a href="#@cdktn/provider-newrelic.alertMutingRule.AlertMutingRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of the MutingRule. |
-| <code><a href="#@cdktn/provider-newrelic.alertMutingRule.AlertMutingRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#id AlertMutingRule#id}. |
+| <code><a href="#@cdktn/provider-newrelic.alertMutingRule.AlertMutingRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#id AlertMutingRule#id}. |
 | <code><a href="#@cdktn/provider-newrelic.alertMutingRule.AlertMutingRuleConfig.property.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-newrelic.alertMutingRule.AlertMutingRuleSchedule">AlertMutingRuleSchedule</a></code> | schedule block. |
 
 ---
@@ -1314,7 +1314,7 @@ public AlertMutingRuleCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#condition AlertMutingRule#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#condition AlertMutingRule#condition}
 
 ---
 
@@ -1328,7 +1328,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether the MutingRule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#enabled AlertMutingRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#enabled AlertMutingRule#enabled}
 
 ---
 
@@ -1342,7 +1342,7 @@ public java.lang.String getName();
 
 The name of the MutingRule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#name AlertMutingRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#name AlertMutingRule#name}
 
 ---
 
@@ -1356,7 +1356,7 @@ public java.lang.Number getAccountId();
 
 The account id of the MutingRule..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#account_id AlertMutingRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#account_id AlertMutingRule#account_id}
 
 ---
 
@@ -1370,7 +1370,7 @@ public java.lang.String getActionOnMutingRuleWindowEnded();
 
 The action when the muting rule window is ended or disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#action_on_muting_rule_window_ended AlertMutingRule#action_on_muting_rule_window_ended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#action_on_muting_rule_window_ended AlertMutingRule#action_on_muting_rule_window_ended}
 
 ---
 
@@ -1384,7 +1384,7 @@ public java.lang.String getDescription();
 
 The description of the MutingRule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#description AlertMutingRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#description AlertMutingRule#description}
 
 ---
 
@@ -1396,7 +1396,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#id AlertMutingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#id AlertMutingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1413,7 +1413,7 @@ public AlertMutingRuleSchedule getSchedule();
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#schedule AlertMutingRule#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#schedule AlertMutingRule#schedule}
 
 ---
 
@@ -1459,7 +1459,7 @@ public java.lang.String getTimeZone();
 
 The time zone that applies to the MutingRule schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#time_zone AlertMutingRule#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#time_zone AlertMutingRule#time_zone}
 
 ---
 
@@ -1473,7 +1473,7 @@ public java.lang.String getEndRepeat();
 
 The datetime stamp when the MutingRule schedule should stop repeating.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#end_repeat AlertMutingRule#end_repeat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#end_repeat AlertMutingRule#end_repeat}
 
 ---
 
@@ -1487,7 +1487,7 @@ public java.lang.String getEndTime();
 
 The datetime stamp representing when the MutingRule should end.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#end_time AlertMutingRule#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#end_time AlertMutingRule#end_time}
 
 ---
 
@@ -1501,7 +1501,7 @@ public java.lang.String getRepeat();
 
 The frequency the MutingRule schedule repeats. One of [DAILY, WEEKLY, MONTHLY].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#repeat AlertMutingRule#repeat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#repeat AlertMutingRule#repeat}
 
 ---
 
@@ -1515,7 +1515,7 @@ public java.lang.Number getRepeatCount();
 
 The number of times the MutingRule schedule should repeat.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#repeat_count AlertMutingRule#repeat_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#repeat_count AlertMutingRule#repeat_count}
 
 ---
 
@@ -1529,7 +1529,7 @@ public java.lang.String getStartTime();
 
 The datetime stamp representing when the MutingRule should start.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#start_time AlertMutingRule#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#start_time AlertMutingRule#start_time}
 
 ---
 
@@ -1543,7 +1543,7 @@ public java.util.List<java.lang.String> getWeeklyRepeatDays();
 
 The day(s) of the week that a MutingRule should repeat when the repeat field is set to WEEKLY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/alert_muting_rule#weekly_repeat_days AlertMutingRule#weekly_repeat_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/alert_muting_rule#weekly_repeat_days AlertMutingRule#weekly_repeat_days}
 
 ---
 
