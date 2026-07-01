@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload
+// https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface WorkloadConfig extends cdktn.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to create the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#account_id Workload#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#account_id Workload#account_id}
   */
   readonly accountId?: number;
   /**
   * Relevant information about the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#description Workload#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#description Workload#description}
   */
   readonly description?: string;
   /**
   * A list of entity GUIDs manually assigned to this workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#entity_guids Workload#entity_guids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#entity_guids Workload#entity_guids}
   */
   readonly entityGuids?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#id Workload#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#id Workload#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,39 +40,198 @@ export interface WorkloadConfig extends cdktn.TerraformMetaArguments {
   /**
   * The workload's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#name Workload#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#name Workload#name}
   */
   readonly name: string;
   /**
   * A list of account IDs that will be used to get entities from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
   */
   readonly scopeAccountIds?: number[];
   /**
+  * dynamic_flows block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#dynamic_flows Workload#dynamic_flows}
+  */
+  readonly dynamicFlows?: WorkloadDynamicFlows[] | cdktn.IResolvable;
+  /**
   * entity_search_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#entity_search_query Workload#entity_search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#entity_search_query Workload#entity_search_query}
   */
   readonly entitySearchQuery?: WorkloadEntitySearchQuery[] | cdktn.IResolvable;
   /**
+  * status_config_alert_policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#status_config_alert_policy Workload#status_config_alert_policy}
+  */
+  readonly statusConfigAlertPolicy?: WorkloadStatusConfigAlertPolicy;
+  /**
   * status_config_automatic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
   */
   readonly statusConfigAutomatic?: WorkloadStatusConfigAutomatic;
   /**
   * status_config_static block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#status_config_static Workload#status_config_static}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#status_config_static Workload#status_config_static}
   */
   readonly statusConfigStatic?: WorkloadStatusConfigStatic;
+}
+export interface WorkloadDynamicFlows {
+  /**
+  * The unique entity identifier of the dynamic flow entry.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#entity_guid Workload#entity_guid}
+  */
+  readonly entityGuid: string;
+  /**
+  * The transaction name associated with the dynamic flow entry.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#transaction_name Workload#transaction_name}
+  */
+  readonly transactionName: string;
+}
+
+export function workloadDynamicFlowsToTerraform(struct?: WorkloadDynamicFlows | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    entity_guid: cdktn.stringToTerraform(struct!.entityGuid),
+    transaction_name: cdktn.stringToTerraform(struct!.transactionName),
+  }
+}
+
+
+export function workloadDynamicFlowsToHclTerraform(struct?: WorkloadDynamicFlows | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    entity_guid: {
+      value: cdktn.stringToHclTerraform(struct!.entityGuid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transaction_name: {
+      value: cdktn.stringToHclTerraform(struct!.transactionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class WorkloadDynamicFlowsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): WorkloadDynamicFlows | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._entityGuid !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.entityGuid = this._entityGuid;
+    }
+    if (this._transactionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transactionName = this._transactionName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkloadDynamicFlows | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._entityGuid = undefined;
+      this._transactionName = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._entityGuid = value.entityGuid;
+      this._transactionName = value.transactionName;
+    }
+  }
+
+  // entity_guid - computed: false, optional: false, required: true
+  private _entityGuid?: string; 
+  public get entityGuid() {
+    return this.getStringAttribute('entity_guid');
+  }
+  public set entityGuid(value: string) {
+    this._entityGuid = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entityGuidInput() {
+    return this._entityGuid;
+  }
+
+  // transaction_name - computed: false, optional: false, required: true
+  private _transactionName?: string; 
+  public get transactionName() {
+    return this.getStringAttribute('transaction_name');
+  }
+  public set transactionName(value: string) {
+    this._transactionName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transactionNameInput() {
+    return this._transactionName;
+  }
+}
+
+export class WorkloadDynamicFlowsList extends cdktn.ComplexList {
+  public internalValue? : WorkloadDynamicFlows[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): WorkloadDynamicFlowsOutputReference {
+    return new WorkloadDynamicFlowsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface WorkloadEntitySearchQuery {
   /**
   * A valid entity search query; empty, and null values are considered invalid.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#query Workload#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#query Workload#query}
   */
   readonly query: string;
 }
@@ -183,29 +342,112 @@ export class WorkloadEntitySearchQueryList extends cdktn.ComplexList {
     return new WorkloadEntitySearchQueryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface WorkloadStatusConfigAlertPolicy {
+  /**
+  * Whether the alert policy status configuration is enabled or not.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#enabled Workload#enabled}
+  */
+  readonly enabled: boolean | cdktn.IResolvable;
+}
+
+export function workloadStatusConfigAlertPolicyToTerraform(struct?: WorkloadStatusConfigAlertPolicyOutputReference | WorkloadStatusConfigAlertPolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+  }
+}
+
+
+export function workloadStatusConfigAlertPolicyToHclTerraform(struct?: WorkloadStatusConfigAlertPolicyOutputReference | WorkloadStatusConfigAlertPolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class WorkloadStatusConfigAlertPolicyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): WorkloadStatusConfigAlertPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkloadStatusConfigAlertPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktn.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktn.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
 export interface WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup {
   /**
   * The grouping to be applied to the remaining entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#group_by Workload#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#group_by Workload#group_by}
   */
   readonly groupBy: string;
   /**
   * The rollup strategy that is applied to a group of entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#strategy Workload#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#strategy Workload#strategy}
   */
   readonly strategy: string;
   /**
   * Type of threshold defined for the rule. This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#threshold_type Workload#threshold_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#threshold_type Workload#threshold_type}
   */
   readonly thresholdType?: string;
   /**
   * Threshold value defined for the rule. This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#threshold_value Workload#threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#threshold_value Workload#threshold_value}
   */
   readonly thresholdValue?: number;
 }
@@ -372,7 +614,7 @@ export interface WorkloadStatusConfigAutomaticRemainingEntitiesRule {
   /**
   * remaining_entities_rule_rollup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
   */
   readonly remainingEntitiesRuleRollup: WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup;
 }
@@ -455,7 +697,7 @@ export interface WorkloadStatusConfigAutomaticRuleNrqlQuery {
   /**
   * The entity search query that is used to perform the search of a group of entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#query Workload#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#query Workload#query}
   */
   readonly query: string;
 }
@@ -570,19 +812,19 @@ export interface WorkloadStatusConfigAutomaticRuleRollup {
   /**
   * The rollup strategy that is applied to a group of entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#strategy Workload#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#strategy Workload#strategy}
   */
   readonly strategy: string;
   /**
   * Type of threshold defined for the rule. This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#threshold_type Workload#threshold_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#threshold_type Workload#threshold_type}
   */
   readonly thresholdType?: string;
   /**
   * Threshold value defined for the rule. This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#threshold_value Workload#threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#threshold_value Workload#threshold_value}
   */
   readonly thresholdValue?: number;
 }
@@ -723,19 +965,19 @@ export interface WorkloadStatusConfigAutomaticRule {
   /**
   * A list of entity GUIDs composing the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#entity_guids Workload#entity_guids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#entity_guids Workload#entity_guids}
   */
   readonly entityGuids?: string[];
   /**
   * nrql_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#nrql_query Workload#nrql_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#nrql_query Workload#nrql_query}
   */
   readonly nrqlQuery?: WorkloadStatusConfigAutomaticRuleNrqlQuery[] | cdktn.IResolvable;
   /**
   * rollup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#rollup Workload#rollup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#rollup Workload#rollup}
   */
   readonly rollup: WorkloadStatusConfigAutomaticRuleRollup;
 }
@@ -908,19 +1150,19 @@ export interface WorkloadStatusConfigAutomatic {
   /**
   * Whether the automatic status configuration is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#enabled Workload#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#enabled Workload#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * remaining_entities_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
   */
   readonly remainingEntitiesRule?: WorkloadStatusConfigAutomaticRemainingEntitiesRule;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#rule Workload#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#rule Workload#rule}
   */
   readonly rule?: WorkloadStatusConfigAutomaticRule[] | cdktn.IResolvable;
 }
@@ -1061,25 +1303,25 @@ export interface WorkloadStatusConfigStatic {
   /**
   * A description that provides additional details about the status of the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#description Workload#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#description Workload#description}
   */
   readonly description?: string;
   /**
   * Whether the static status configuration is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#enabled Workload#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#enabled Workload#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The status of the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#status Workload#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#status Workload#status}
   */
   readonly status: string;
   /**
   * A short description of the status of the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#summary Workload#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#summary Workload#summary}
   */
   readonly summary?: string;
 }
@@ -1244,7 +1486,7 @@ export class WorkloadStatusConfigStaticOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload newrelic_workload}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload newrelic_workload}
 */
 export class Workload extends cdktn.TerraformResource {
 
@@ -1260,7 +1502,7 @@ export class Workload extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Workload resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Workload to import
-  * @param importFromId The id of the existing Workload that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Workload that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Workload to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1272,7 +1514,7 @@ export class Workload extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.93.2/docs/resources/workload newrelic_workload} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/workload newrelic_workload} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1283,7 +1525,7 @@ export class Workload extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_workload',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.93.2',
+        providerVersion: '3.94.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -1300,7 +1542,9 @@ export class Workload extends cdktn.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._scopeAccountIds = config.scopeAccountIds;
+    this._dynamicFlows.internalValue = config.dynamicFlows;
     this._entitySearchQuery.internalValue = config.entitySearchQuery;
+    this._statusConfigAlertPolicy.internalValue = config.statusConfigAlertPolicy;
     this._statusConfigAutomatic.internalValue = config.statusConfigAutomatic;
     this._statusConfigStatic.internalValue = config.statusConfigStatic;
   }
@@ -1422,6 +1666,22 @@ export class Workload extends cdktn.TerraformResource {
     return this.getNumberAttribute('workload_id');
   }
 
+  // dynamic_flows - computed: false, optional: true, required: false
+  private _dynamicFlows = new WorkloadDynamicFlowsList(this, "dynamic_flows", true);
+  public get dynamicFlows() {
+    return this._dynamicFlows;
+  }
+  public putDynamicFlows(value: WorkloadDynamicFlows[] | cdktn.IResolvable) {
+    this._dynamicFlows.internalValue = value;
+  }
+  public resetDynamicFlows() {
+    this._dynamicFlows.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dynamicFlowsInput() {
+    return this._dynamicFlows.internalValue;
+  }
+
   // entity_search_query - computed: false, optional: true, required: false
   private _entitySearchQuery = new WorkloadEntitySearchQueryList(this, "entity_search_query", true);
   public get entitySearchQuery() {
@@ -1436,6 +1696,22 @@ export class Workload extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get entitySearchQueryInput() {
     return this._entitySearchQuery.internalValue;
+  }
+
+  // status_config_alert_policy - computed: false, optional: true, required: false
+  private _statusConfigAlertPolicy = new WorkloadStatusConfigAlertPolicyOutputReference(this, "status_config_alert_policy");
+  public get statusConfigAlertPolicy() {
+    return this._statusConfigAlertPolicy;
+  }
+  public putStatusConfigAlertPolicy(value: WorkloadStatusConfigAlertPolicy) {
+    this._statusConfigAlertPolicy.internalValue = value;
+  }
+  public resetStatusConfigAlertPolicy() {
+    this._statusConfigAlertPolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusConfigAlertPolicyInput() {
+    return this._statusConfigAlertPolicy.internalValue;
   }
 
   // status_config_automatic - computed: false, optional: true, required: false
@@ -1482,7 +1758,9 @@ export class Workload extends cdktn.TerraformResource {
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
       scope_account_ids: cdktn.listMapper(cdktn.numberToTerraform, false)(this._scopeAccountIds),
+      dynamic_flows: cdktn.listMapper(workloadDynamicFlowsToTerraform, true)(this._dynamicFlows.internalValue),
       entity_search_query: cdktn.listMapper(workloadEntitySearchQueryToTerraform, true)(this._entitySearchQuery.internalValue),
+      status_config_alert_policy: workloadStatusConfigAlertPolicyToTerraform(this._statusConfigAlertPolicy.internalValue),
       status_config_automatic: workloadStatusConfigAutomaticToTerraform(this._statusConfigAutomatic.internalValue),
       status_config_static: workloadStatusConfigStaticToTerraform(this._statusConfigStatic.internalValue),
     };
@@ -1526,11 +1804,23 @@ export class Workload extends cdktn.TerraformResource {
         type: "set",
         storageClassType: "numberList",
       },
+      dynamic_flows: {
+        value: cdktn.listMapperHcl(workloadDynamicFlowsToHclTerraform, true)(this._dynamicFlows.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkloadDynamicFlowsList",
+      },
       entity_search_query: {
         value: cdktn.listMapperHcl(workloadEntitySearchQueryToHclTerraform, true)(this._entitySearchQuery.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WorkloadEntitySearchQueryList",
+      },
+      status_config_alert_policy: {
+        value: workloadStatusConfigAlertPolicyToHclTerraform(this._statusConfigAlertPolicy.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkloadStatusConfigAlertPolicyList",
       },
       status_config_automatic: {
         value: workloadStatusConfigAutomaticToHclTerraform(this._statusConfigAutomatic.internalValue),
