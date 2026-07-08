@@ -4,7 +4,7 @@
 
 ### FleetConfiguration <a name="FleetConfiguration" id="@cdktn/provider-newrelic.fleetConfiguration.FleetConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/fleet_configuration newrelic_fleet_configuration}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/fleet_configuration newrelic_fleet_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.fleetConfiguration.FleetConfiguration.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the FleetConfiguration to impo
 
 The id of the existing FleetConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/fleet_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/fleet_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -954,7 +954,7 @@ new FleetConfigurationConfig {
 | <code><a href="#@cdktn/provider-newrelic.fleetConfiguration.FleetConfigurationConfig.property.configurationContent">ConfigurationContent</a></code> | <code>string</code> | The configuration content (YAML or JSON). |
 | <code><a href="#@cdktn/provider-newrelic.fleetConfiguration.FleetConfigurationConfig.property.managedEntityType">ManagedEntityType</a></code> | <code>string</code> | The type of entities this configuration manages. Allowed values: HOST, KUBERNETESCLUSTER. |
 | <code><a href="#@cdktn/provider-newrelic.fleetConfiguration.FleetConfigurationConfig.property.name">Name</a></code> | <code>string</code> | The name of the configuration. Changing this forces resource recreation because the API does not support renaming. |
-| <code><a href="#@cdktn/provider-newrelic.fleetConfiguration.FleetConfigurationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/fleet_configuration#id FleetConfiguration#id}. |
+| <code><a href="#@cdktn/provider-newrelic.fleetConfiguration.FleetConfigurationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/fleet_configuration#id FleetConfiguration#id}. |
 | <code><a href="#@cdktn/provider-newrelic.fleetConfiguration.FleetConfigurationConfig.property.operatingSystem">OperatingSystem</a></code> | <code>string</code> | The operating system this configuration targets. |
 | <code><a href="#@cdktn/provider-newrelic.fleetConfiguration.FleetConfigurationConfig.property.organizationId">OrganizationId</a></code> | <code>string</code> | The organization ID. Auto-fetched from the account if not provided. |
 
@@ -1040,7 +1040,7 @@ public string AgentType { get; set; }
 
 The type of agent this configuration is for. Allowed values: NRInfra, NRDOT, FluentBit, NRPrometheusAgent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/fleet_configuration#agent_type FleetConfiguration#agent_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/fleet_configuration#agent_type FleetConfiguration#agent_type}
 
 ---
 
@@ -1056,7 +1056,7 @@ The configuration content (YAML or JSON).
 
 Use file() to load from a file. Each change to this field creates a new immutable version on the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/fleet_configuration#configuration_content FleetConfiguration#configuration_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/fleet_configuration#configuration_content FleetConfiguration#configuration_content}
 
 ---
 
@@ -1070,7 +1070,7 @@ public string ManagedEntityType { get; set; }
 
 The type of entities this configuration manages. Allowed values: HOST, KUBERNETESCLUSTER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/fleet_configuration#managed_entity_type FleetConfiguration#managed_entity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/fleet_configuration#managed_entity_type FleetConfiguration#managed_entity_type}
 
 ---
 
@@ -1084,7 +1084,7 @@ public string Name { get; set; }
 
 The name of the configuration. Changing this forces resource recreation because the API does not support renaming.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/fleet_configuration#name FleetConfiguration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/fleet_configuration#name FleetConfiguration#name}
 
 ---
 
@@ -1096,7 +1096,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/fleet_configuration#id FleetConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/fleet_configuration#id FleetConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1115,7 +1115,7 @@ The operating system this configuration targets.
 
 Required for HOST configurations. Allowed values: LINUX, WINDOWS. Must not be set for KUBERNETESCLUSTER configurations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/fleet_configuration#operating_system FleetConfiguration#operating_system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/fleet_configuration#operating_system FleetConfiguration#operating_system}
 
 ---
 
@@ -1129,7 +1129,7 @@ public string OrganizationId { get; set; }
 
 The organization ID. Auto-fetched from the account if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/fleet_configuration#organization_id FleetConfiguration#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/fleet_configuration#organization_id FleetConfiguration#organization_id}
 
 ---
 

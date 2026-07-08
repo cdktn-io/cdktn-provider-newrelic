@@ -30,6 +30,7 @@ The following submodules are available:
 - [dataNewrelicAccount](./dataNewrelicAccount.java.md)
 - [dataNewrelicAlertChannel](./dataNewrelicAlertChannel.java.md)
 - [dataNewrelicAlertPolicy](./dataNewrelicAlertPolicy.java.md)
+- [dataNewrelicApiAccessKey](./dataNewrelicApiAccessKey.java.md)
 - [dataNewrelicApplication](./dataNewrelicApplication.java.md)
 - [dataNewrelicAuthenticationDomain](./dataNewrelicAuthenticationDomain.java.md)
 - [dataNewrelicCloudAccount](./dataNewrelicCloudAccount.java.md)
