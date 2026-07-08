@@ -70,6 +70,7 @@ export * as workload from './workload/index';
 export * as dataNewrelicAccount from './data-newrelic-account/index';
 export * as dataNewrelicAlertChannel from './data-newrelic-alert-channel/index';
 export * as dataNewrelicAlertPolicy from './data-newrelic-alert-policy/index';
+export * as dataNewrelicApiAccessKey from './data-newrelic-api-access-key/index';
 export * as dataNewrelicApplication from './data-newrelic-application/index';
 export * as dataNewrelicAuthenticationDomain from './data-newrelic-authentication-domain/index';
 export * as dataNewrelicCloudAccount from './data-newrelic-cloud-account/index';

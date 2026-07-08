@@ -4,7 +4,7 @@
 
 ### FederatedLogsSetup <a name="FederatedLogsSetup" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup newrelic_federated_logs_setup}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup newrelic_federated_logs_setup}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetup.Initializer"></a>
 
@@ -563,7 +563,7 @@ The construct id used in the generated config for the FederatedLogsSetup to impo
 
 The id of the existing FederatedLogsSetup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1017,7 +1017,7 @@ const federatedLogsSetupConfig: federatedLogsSetup.FederatedLogsSetupConfig = { 
 | <code><a href="#@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupConfig.property.active">active</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the setup is active. When false, log routing to this setup is turned off. |
 | <code><a href="#@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupConfig.property.description">description</a></code> | <code>string</code> | The description of the federated log setup. |
 | <code><a href="#@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupConfig.property.forwarder">forwarder</a></code> | <code><a href="#@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupForwarder">FederatedLogsSetupForwarder</a></code> | forwarder block. |
-| <code><a href="#@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#id FederatedLogsSetup#id}. |
+| <code><a href="#@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#id FederatedLogsSetup#id}. |
 
 ---
 
@@ -1101,7 +1101,7 @@ public readonly defaultPartition: FederatedLogsSetupDefaultPartition;
 
 default_partition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#default_partition FederatedLogsSetup#default_partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#default_partition FederatedLogsSetup#default_partition}
 
 ---
 
@@ -1115,7 +1115,7 @@ public readonly name: string;
 
 The name of the federated log setup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#name FederatedLogsSetup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#name FederatedLogsSetup#name}
 
 ---
 
@@ -1129,7 +1129,7 @@ public readonly storage: FederatedLogsSetupStorage;
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#storage FederatedLogsSetup#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#storage FederatedLogsSetup#storage}
 
 ---
 
@@ -1145,7 +1145,7 @@ The New Relic account ID where the federated logs setup will live.
 
 Defaults to the provider's account_id. Changing this after creation is rejected by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#account_id FederatedLogsSetup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#account_id FederatedLogsSetup#account_id}
 
 ---
 
@@ -1159,7 +1159,7 @@ public readonly active: boolean | IResolvable;
 
 Whether the setup is active. When false, log routing to this setup is turned off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#active FederatedLogsSetup#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#active FederatedLogsSetup#active}
 
 ---
 
@@ -1173,7 +1173,7 @@ public readonly description: string;
 
 The description of the federated log setup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#description FederatedLogsSetup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#description FederatedLogsSetup#description}
 
 ---
 
@@ -1187,7 +1187,7 @@ public readonly forwarder: FederatedLogsSetupForwarder;
 
 forwarder block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#forwarder FederatedLogsSetup#forwarder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#forwarder FederatedLogsSetup#forwarder}
 
 ---
 
@@ -1199,7 +1199,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#id FederatedLogsSetup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#id FederatedLogsSetup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1235,7 +1235,7 @@ public readonly storage: FederatedLogsSetupDefaultPartitionStorage;
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#storage FederatedLogsSetup#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#storage FederatedLogsSetup#storage}
 
 ---
 
@@ -1249,7 +1249,7 @@ public readonly dataRetentionPolicy: FederatedLogsSetupDefaultPartitionDataReten
 
 data_retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#data_retention_policy FederatedLogsSetup#data_retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#data_retention_policy FederatedLogsSetup#data_retention_policy}
 
 ---
 
@@ -1282,7 +1282,7 @@ public readonly duration: number;
 
 The duration value for retention.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#duration FederatedLogsSetup#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#duration FederatedLogsSetup#duration}
 
 ---
 
@@ -1296,7 +1296,7 @@ public readonly unit: string;
 
 The time unit for the retention duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#unit FederatedLogsSetup#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#unit FederatedLogsSetup#unit}
 
 ---
 
@@ -1329,7 +1329,7 @@ public readonly dataLocationUri: string;
 
 The URI location of the partition in object storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#data_location_uri FederatedLogsSetup#data_location_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#data_location_uri FederatedLogsSetup#data_location_uri}
 
 ---
 
@@ -1343,7 +1343,7 @@ public readonly table: string;
 
 The table name associated with the default partition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#table FederatedLogsSetup#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#table FederatedLogsSetup#table}
 
 ---
 
@@ -1376,7 +1376,7 @@ public readonly type: string;
 
 The type of forwarder. Currently only PIPELINE_CONTROL is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#type FederatedLogsSetup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#type FederatedLogsSetup#type}
 
 ---
 
@@ -1390,7 +1390,7 @@ public readonly pipelineControl: FederatedLogsSetupForwarderPipelineControl;
 
 pipeline_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#pipeline_control FederatedLogsSetup#pipeline_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#pipeline_control FederatedLogsSetup#pipeline_control}
 
 ---
 
@@ -1423,7 +1423,7 @@ public readonly fleetId: string;
 
 The fleet entity GUID used for deploying the pipeline configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#fleet_id FederatedLogsSetup#fleet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#fleet_id FederatedLogsSetup#fleet_id}
 
 ---
 
@@ -1437,7 +1437,7 @@ public readonly routingRule: FederatedLogsSetupForwarderPipelineControlRoutingRu
 
 routing_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#routing_rule FederatedLogsSetup#routing_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#routing_rule FederatedLogsSetup#routing_rule}
 
 ---
 
@@ -1469,7 +1469,7 @@ public readonly expression: string;
 
 OTTL expression for routing logs to this setup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#expression FederatedLogsSetup#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#expression FederatedLogsSetup#expression}
 
 ---
 
@@ -1549,7 +1549,7 @@ public readonly cloudProviderConfiguration: FederatedLogsSetupStorageCloudProvid
 
 cloud_provider_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#cloud_provider_configuration FederatedLogsSetup#cloud_provider_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#cloud_provider_configuration FederatedLogsSetup#cloud_provider_configuration}
 
 ---
 
@@ -1563,7 +1563,7 @@ public readonly database: string;
 
 The database name associated with the federated log setup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#database FederatedLogsSetup#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#database FederatedLogsSetup#database}
 
 ---
 
@@ -1577,7 +1577,7 @@ public readonly dataIngestConnectionId: string;
 
 The connection manager entity GUID used for writing data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#data_ingest_connection_id FederatedLogsSetup#data_ingest_connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#data_ingest_connection_id FederatedLogsSetup#data_ingest_connection_id}
 
 ---
 
@@ -1591,7 +1591,7 @@ public readonly dataLocationBucket: string;
 
 The object storage bucket where log data is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#data_location_bucket FederatedLogsSetup#data_location_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#data_location_bucket FederatedLogsSetup#data_location_bucket}
 
 ---
 
@@ -1605,7 +1605,7 @@ public readonly queryConnectionId: string;
 
 The connection manager entity GUID used by query workers for reading data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#query_connection_id FederatedLogsSetup#query_connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#query_connection_id FederatedLogsSetup#query_connection_id}
 
 ---
 
@@ -1638,7 +1638,7 @@ public readonly provider: string;
 
 The cloud provider. Currently only AWS is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#provider FederatedLogsSetup#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#provider FederatedLogsSetup#provider}
 
 ---
 
@@ -1652,7 +1652,7 @@ public readonly region: string;
 
 The cloud provider region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.0/docs/resources/federated_logs_setup#region FederatedLogsSetup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/resources/federated_logs_setup#region FederatedLogsSetup#region}
 
 ---
 

@@ -30,6 +30,7 @@ The following submodules are available:
 - [dataNewrelicAccount](./dataNewrelicAccount.python.md)
 - [dataNewrelicAlertChannel](./dataNewrelicAlertChannel.python.md)
 - [dataNewrelicAlertPolicy](./dataNewrelicAlertPolicy.python.md)
+- [dataNewrelicApiAccessKey](./dataNewrelicApiAccessKey.python.md)
 - [dataNewrelicApplication](./dataNewrelicApplication.python.md)
 - [dataNewrelicAuthenticationDomain](./dataNewrelicAuthenticationDomain.python.md)
 - [dataNewrelicCloudAccount](./dataNewrelicCloudAccount.python.md)

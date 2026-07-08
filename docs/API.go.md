@@ -30,6 +30,7 @@ The following submodules are available:
 - [dataNewrelicAccount](./dataNewrelicAccount.go.md)
 - [dataNewrelicAlertChannel](./dataNewrelicAlertChannel.go.md)
 - [dataNewrelicAlertPolicy](./dataNewrelicAlertPolicy.go.md)
+- [dataNewrelicApiAccessKey](./dataNewrelicApiAccessKey.go.md)
 - [dataNewrelicApplication](./dataNewrelicApplication.go.md)
 - [dataNewrelicAuthenticationDomain](./dataNewrelicAuthenticationDomain.go.md)
 - [dataNewrelicCloudAccount](./dataNewrelicCloudAccount.go.md)

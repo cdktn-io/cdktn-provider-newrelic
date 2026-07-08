@@ -30,6 +30,7 @@ The following submodules are available:
 - [dataNewrelicAccount](./dataNewrelicAccount.csharp.md)
 - [dataNewrelicAlertChannel](./dataNewrelicAlertChannel.csharp.md)
 - [dataNewrelicAlertPolicy](./dataNewrelicAlertPolicy.csharp.md)
+- [dataNewrelicApiAccessKey](./dataNewrelicApiAccessKey.csharp.md)
 - [dataNewrelicApplication](./dataNewrelicApplication.csharp.md)
 - [dataNewrelicAuthenticationDomain](./dataNewrelicAuthenticationDomain.csharp.md)
 - [dataNewrelicCloudAccount](./dataNewrelicCloudAccount.csharp.md)

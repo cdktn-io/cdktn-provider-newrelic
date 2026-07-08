@@ -70,6 +70,7 @@ Object.defineProperty(exports, 'workload', { get: function () { return require('
 Object.defineProperty(exports, 'dataNewrelicAccount', { get: function () { return require('./data-newrelic-account'); } });
 Object.defineProperty(exports, 'dataNewrelicAlertChannel', { get: function () { return require('./data-newrelic-alert-channel'); } });
 Object.defineProperty(exports, 'dataNewrelicAlertPolicy', { get: function () { return require('./data-newrelic-alert-policy'); } });
+Object.defineProperty(exports, 'dataNewrelicApiAccessKey', { get: function () { return require('./data-newrelic-api-access-key'); } });
 Object.defineProperty(exports, 'dataNewrelicApplication', { get: function () { return require('./data-newrelic-application'); } });
 Object.defineProperty(exports, 'dataNewrelicAuthenticationDomain', { get: function () { return require('./data-newrelic-authentication-domain'); } });
 Object.defineProperty(exports, 'dataNewrelicCloudAccount', { get: function () { return require('./data-newrelic-cloud-account'); } });
