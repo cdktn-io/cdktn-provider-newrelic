@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/data-sources/api_access_key
+// https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/api_access_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataNewrelicApiAccessKeyConfig extends cdktn.TerraformMetaArgum
   /**
   * The New Relic account ID the key belongs to. Defaults to the account ID configured on the provider when not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/data-sources/api_access_key#account_id DataNewrelicApiAccessKey#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/api_access_key#account_id DataNewrelicApiAccessKey#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/data-sources/api_access_key#id DataNewrelicApiAccessKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/api_access_key#id DataNewrelicApiAccessKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +28,37 @@ export interface DataNewrelicApiAccessKeyConfig extends cdktn.TerraformMetaArgum
   /**
   * The type of the ingest key, one of LICENSE or BROWSER. Only applies when `key_type` is INGEST.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/data-sources/api_access_key#ingest_type DataNewrelicApiAccessKey#ingest_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/api_access_key#ingest_type DataNewrelicApiAccessKey#ingest_type}
   */
   readonly ingestType?: string;
   /**
   * The ID of the key. When specified, the key is fetched directly by its ID instead of searching by other attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/data-sources/api_access_key#key_id DataNewrelicApiAccessKey#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/api_access_key#key_id DataNewrelicApiAccessKey#key_id}
   */
   readonly keyId?: string;
   /**
   * The type of the key, one of INGEST or USER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/data-sources/api_access_key#key_type DataNewrelicApiAccessKey#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/api_access_key#key_type DataNewrelicApiAccessKey#key_type}
   */
   readonly keyType: string;
   /**
   * The name of the key. Used to narrow down the search when `key_id` is not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/data-sources/api_access_key#name DataNewrelicApiAccessKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/api_access_key#name DataNewrelicApiAccessKey#name}
   */
   readonly name?: string;
   /**
   * The ID of the user that owns the key. Only applies when `key_type` is USER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/data-sources/api_access_key#user_id DataNewrelicApiAccessKey#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/api_access_key#user_id DataNewrelicApiAccessKey#user_id}
   */
   readonly userId?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/data-sources/api_access_key newrelic_api_access_key}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/api_access_key newrelic_api_access_key}
 */
 export class DataNewrelicApiAccessKey extends cdktn.TerraformDataSource {
 
@@ -74,7 +74,7 @@ export class DataNewrelicApiAccessKey extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataNewrelicApiAccessKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicApiAccessKey to import
-  * @param importFromId The id of the existing DataNewrelicApiAccessKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/data-sources/api_access_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicApiAccessKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/api_access_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicApiAccessKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -86,7 +86,7 @@ export class DataNewrelicApiAccessKey extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.2/docs/data-sources/api_access_key newrelic_api_access_key} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/api_access_key newrelic_api_access_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class DataNewrelicApiAccessKey extends cdktn.TerraformDataSource {
       terraformResourceType: 'newrelic_api_access_key',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.94.2',
+        providerVersion: '3.94.3',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
