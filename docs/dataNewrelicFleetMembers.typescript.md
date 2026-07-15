@@ -4,7 +4,7 @@
 
 ### DataNewrelicFleetMembers <a name="DataNewrelicFleetMembers" id="@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/fleet_members newrelic_fleet_members}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/fleet_members newrelic_fleet_members}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembers.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataNewrelicFleetMembers t
 
 The id of the existing DataNewrelicFleetMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/fleet_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/fleet_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -673,7 +673,7 @@ const dataNewrelicFleetMembersConfig: dataNewrelicFleetMembers.DataNewrelicFleet
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembersConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembersConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembersConfig.property.fleetId">fleetId</a></code> | <code>string</code> | The GUID of the fleet to list members for. |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembersConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/fleet_members#id DataNewrelicFleetMembers#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembersConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/fleet_members#id DataNewrelicFleetMembers#id}. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembersConfig.property.ring">ring</a></code> | <code>string</code> | Filter members by ring name. If omitted, all members across all rings are returned. |
 
 ---
@@ -758,7 +758,7 @@ public readonly fleetId: string;
 
 The GUID of the fleet to list members for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/fleet_members#fleet_id DataNewrelicFleetMembers#fleet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/fleet_members#fleet_id DataNewrelicFleetMembers#fleet_id}
 
 ---
 
@@ -770,7 +770,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/fleet_members#id DataNewrelicFleetMembers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/fleet_members#id DataNewrelicFleetMembers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -787,7 +787,7 @@ public readonly ring: string;
 
 Filter members by ring name. If omitted, all members across all rings are returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/fleet_members#ring DataNewrelicFleetMembers#ring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/fleet_members#ring DataNewrelicFleetMembers#ring}
 
 ---
 
