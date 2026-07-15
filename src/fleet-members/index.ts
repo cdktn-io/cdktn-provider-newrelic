@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/resources/fleet_members
+// https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/resources/fleet_members
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface FleetMembersConfig extends cdktn.TerraformMetaArguments {
   /**
   * The GUID of the fleet to manage entity assignments for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/resources/fleet_members#fleet_id FleetMembers#fleet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/resources/fleet_members#fleet_id FleetMembers#fleet_id}
   */
   readonly fleetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/resources/fleet_members#id FleetMembers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/resources/fleet_members#id FleetMembers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +28,7 @@ export interface FleetMembersConfig extends cdktn.TerraformMetaArguments {
   /**
   * ring block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/resources/fleet_members#ring FleetMembers#ring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/resources/fleet_members#ring FleetMembers#ring}
   */
   readonly ring: FleetMembersRing[] | cdktn.IResolvable;
 }
@@ -36,13 +36,13 @@ export interface FleetMembersRing {
   /**
   * Ordered list of entity GUIDs to assign to this ring. Only the entities listed here are tracked by Terraform; any other entities already in the ring through other means are not affected. Removing a GUID from this list will remove that entity from the fleet ring on the next apply.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/resources/fleet_members#entity_ids FleetMembers#entity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/resources/fleet_members#entity_ids FleetMembers#entity_ids}
   */
   readonly entityIds: string[];
   /**
   * The name of the ring as configured on the fleet (e.g. "default", "canary").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/resources/fleet_members#name FleetMembers#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/resources/fleet_members#name FleetMembers#name}
   */
   readonly name: string;
 }
@@ -181,7 +181,7 @@ export class FleetMembersRingList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/resources/fleet_members newrelic_fleet_members}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/resources/fleet_members newrelic_fleet_members}
 */
 export class FleetMembers extends cdktn.TerraformResource {
 
@@ -197,7 +197,7 @@ export class FleetMembers extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FleetMembers resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FleetMembers to import
-  * @param importFromId The id of the existing FleetMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/resources/fleet_members#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FleetMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/resources/fleet_members#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FleetMembers to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -209,7 +209,7 @@ export class FleetMembers extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/resources/fleet_members newrelic_fleet_members} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/resources/fleet_members newrelic_fleet_members} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -220,7 +220,7 @@ export class FleetMembers extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_fleet_members',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.94.3',
+        providerVersion: '3.95.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

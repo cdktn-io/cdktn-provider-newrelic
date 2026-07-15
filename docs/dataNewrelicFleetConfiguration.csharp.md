@@ -4,7 +4,7 @@
 
 ### DataNewrelicFleetConfiguration <a name="DataNewrelicFleetConfiguration" id="@cdktn/provider-newrelic.dataNewrelicFleetConfiguration.DataNewrelicFleetConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/fleet_configuration newrelic_fleet_configuration}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/fleet_configuration newrelic_fleet_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicFleetConfiguration.DataNewrelicFleetConfiguration.Initializer"></a>
 
@@ -422,7 +422,7 @@ The construct id used in the generated config for the DataNewrelicFleetConfigura
 
 The id of the existing DataNewrelicFleetConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/fleet_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/fleet_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ new DataNewrelicFleetConfigurationConfig {
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicFleetConfiguration.DataNewrelicFleetConfigurationConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicFleetConfiguration.DataNewrelicFleetConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicFleetConfiguration.DataNewrelicFleetConfigurationConfig.property.configurationId">ConfigurationId</a></code> | <code>string</code> | The GUID of the fleet configuration entity. |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicFleetConfiguration.DataNewrelicFleetConfigurationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/fleet_configuration#id DataNewrelicFleetConfiguration#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicFleetConfiguration.DataNewrelicFleetConfigurationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/fleet_configuration#id DataNewrelicFleetConfiguration#id}. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicFleetConfiguration.DataNewrelicFleetConfigurationConfig.property.name">Name</a></code> | <code>string</code> | The name of the fleet configuration. The first matching configuration is returned. Returns the content of its latest version. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicFleetConfiguration.DataNewrelicFleetConfigurationConfig.property.organizationId">OrganizationId</a></code> | <code>string</code> | The organization ID. Resolved automatically from the provider when omitted. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicFleetConfiguration.DataNewrelicFleetConfigurationConfig.property.versionEntityId">VersionEntityId</a></code> | <code>string</code> | The GUID of a specific configuration version entity. Returns the content of that exact version. |
@@ -862,7 +862,7 @@ The GUID of the fleet configuration entity.
 
 Returns the content of the latest version. Populated automatically when looking up by version_entity_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/fleet_configuration#configuration_id DataNewrelicFleetConfiguration#configuration_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/fleet_configuration#configuration_id DataNewrelicFleetConfiguration#configuration_id}
 
 ---
 
@@ -874,7 +874,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/fleet_configuration#id DataNewrelicFleetConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/fleet_configuration#id DataNewrelicFleetConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -891,7 +891,7 @@ public string Name { get; set; }
 
 The name of the fleet configuration. The first matching configuration is returned. Returns the content of its latest version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/fleet_configuration#name DataNewrelicFleetConfiguration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/fleet_configuration#name DataNewrelicFleetConfiguration#name}
 
 ---
 
@@ -905,7 +905,7 @@ public string OrganizationId { get; set; }
 
 The organization ID. Resolved automatically from the provider when omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/fleet_configuration#organization_id DataNewrelicFleetConfiguration#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/fleet_configuration#organization_id DataNewrelicFleetConfiguration#organization_id}
 
 ---
 
@@ -919,7 +919,7 @@ public string VersionEntityId { get; set; }
 
 The GUID of a specific configuration version entity. Returns the content of that exact version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.94.3/docs/data-sources/fleet_configuration#version_entity_id DataNewrelicFleetConfiguration#version_entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/fleet_configuration#version_entity_id DataNewrelicFleetConfiguration#version_entity_id}
 
 ---
 
