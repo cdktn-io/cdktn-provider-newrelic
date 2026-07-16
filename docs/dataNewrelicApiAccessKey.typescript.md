@@ -4,7 +4,7 @@
 
 ### DataNewrelicApiAccessKey <a name="DataNewrelicApiAccessKey" id="@cdktn/provider-newrelic.dataNewrelicApiAccessKey.DataNewrelicApiAccessKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/api_access_key newrelic_api_access_key}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.1/docs/data-sources/api_access_key newrelic_api_access_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicApiAccessKey.DataNewrelicApiAccessKey.Initializer"></a>
 
@@ -429,7 +429,7 @@ The construct id used in the generated config for the DataNewrelicApiAccessKey t
 
 The id of the existing DataNewrelicApiAccessKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/api_access_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.1/docs/data-sources/api_access_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -801,7 +801,7 @@ const dataNewrelicApiAccessKeyConfig: dataNewrelicApiAccessKey.DataNewrelicApiAc
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicApiAccessKey.DataNewrelicApiAccessKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicApiAccessKey.DataNewrelicApiAccessKeyConfig.property.keyType">keyType</a></code> | <code>string</code> | The type of the key, one of INGEST or USER. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicApiAccessKey.DataNewrelicApiAccessKeyConfig.property.accountId">accountId</a></code> | <code>number</code> | The New Relic account ID the key belongs to. |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicApiAccessKey.DataNewrelicApiAccessKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/api_access_key#id DataNewrelicApiAccessKey#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicApiAccessKey.DataNewrelicApiAccessKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.1/docs/data-sources/api_access_key#id DataNewrelicApiAccessKey#id}. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicApiAccessKey.DataNewrelicApiAccessKeyConfig.property.ingestType">ingestType</a></code> | <code>string</code> | The type of the ingest key, one of LICENSE or BROWSER. Only applies when `key_type` is INGEST. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicApiAccessKey.DataNewrelicApiAccessKeyConfig.property.keyId">keyId</a></code> | <code>string</code> | The ID of the key. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicApiAccessKey.DataNewrelicApiAccessKeyConfig.property.name">name</a></code> | <code>string</code> | The name of the key. Used to narrow down the search when `key_id` is not specified. |
@@ -889,7 +889,7 @@ public readonly keyType: string;
 
 The type of the key, one of INGEST or USER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/api_access_key#key_type DataNewrelicApiAccessKey#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.1/docs/data-sources/api_access_key#key_type DataNewrelicApiAccessKey#key_type}
 
 ---
 
@@ -905,7 +905,7 @@ The New Relic account ID the key belongs to.
 
 Defaults to the account ID configured on the provider when not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/api_access_key#account_id DataNewrelicApiAccessKey#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.1/docs/data-sources/api_access_key#account_id DataNewrelicApiAccessKey#account_id}
 
 ---
 
@@ -917,7 +917,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/api_access_key#id DataNewrelicApiAccessKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.1/docs/data-sources/api_access_key#id DataNewrelicApiAccessKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -934,7 +934,7 @@ public readonly ingestType: string;
 
 The type of the ingest key, one of LICENSE or BROWSER. Only applies when `key_type` is INGEST.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/api_access_key#ingest_type DataNewrelicApiAccessKey#ingest_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.1/docs/data-sources/api_access_key#ingest_type DataNewrelicApiAccessKey#ingest_type}
 
 ---
 
@@ -950,7 +950,7 @@ The ID of the key.
 
 When specified, the key is fetched directly by its ID instead of searching by other attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/api_access_key#key_id DataNewrelicApiAccessKey#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.1/docs/data-sources/api_access_key#key_id DataNewrelicApiAccessKey#key_id}
 
 ---
 
@@ -964,7 +964,7 @@ public readonly name: string;
 
 The name of the key. Used to narrow down the search when `key_id` is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/api_access_key#name DataNewrelicApiAccessKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.1/docs/data-sources/api_access_key#name DataNewrelicApiAccessKey#name}
 
 ---
 
@@ -978,7 +978,7 @@ public readonly userId: number;
 
 The ID of the user that owns the key. Only applies when `key_type` is USER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.0/docs/data-sources/api_access_key#user_id DataNewrelicApiAccessKey#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.1/docs/data-sources/api_access_key#user_id DataNewrelicApiAccessKey#user_id}
 
 ---
 
