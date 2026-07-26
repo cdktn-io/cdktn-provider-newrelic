@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignlinkaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignlinkaccount"
 
 cloudawseusovereignlinkaccount.NewCloudAwsEuSovereignLinkAccount(scope Construct, id *string, config CloudAwsEuSovereignLinkAccountConfig) CloudAwsEuSovereignLinkAccount
 ```
@@ -421,7 +421,7 @@ func ResetMetricCollectionMode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignlinkaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignlinkaccount"
 
 cloudawseusovereignlinkaccount.CloudAwsEuSovereignLinkAccount_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignlinkaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignlinkaccount"
 
 cloudawseusovereignlinkaccount.CloudAwsEuSovereignLinkAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ cloudawseusovereignlinkaccount.CloudAwsEuSovereignLinkAccount_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignlinkaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignlinkaccount"
 
 cloudawseusovereignlinkaccount.CloudAwsEuSovereignLinkAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ cloudawseusovereignlinkaccount.CloudAwsEuSovereignLinkAccount_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignlinkaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignlinkaccount"
 
 cloudawseusovereignlinkaccount.CloudAwsEuSovereignLinkAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignlinkaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignlinkaccount"
 
 &cloudawseusovereignlinkaccount.CloudAwsEuSovereignLinkAccountConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicsyntheticssecurecredential"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicsyntheticssecurecredential"
 
 datanewrelicsyntheticssecurecredential.NewDataNewrelicSyntheticsSecureCredential(scope Construct, id *string, config DataNewrelicSyntheticsSecureCredentialConfig) DataNewrelicSyntheticsSecureCredential
 ```
@@ -312,7 +312,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicsyntheticssecurecredential"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicsyntheticssecurecredential"
 
 datanewrelicsyntheticssecurecredential.DataNewrelicSyntheticsSecureCredential_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicsyntheticssecurecredential"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicsyntheticssecurecredential"
 
 datanewrelicsyntheticssecurecredential.DataNewrelicSyntheticsSecureCredential_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datanewrelicsyntheticssecurecredential.DataNewrelicSyntheticsSecureCredential_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicsyntheticssecurecredential"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicsyntheticssecurecredential"
 
 datanewrelicsyntheticssecurecredential.DataNewrelicSyntheticsSecureCredential_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datanewrelicsyntheticssecurecredential.DataNewrelicSyntheticsSecureCredential_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicsyntheticssecurecredential"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicsyntheticssecurecredential"
 
 datanewrelicsyntheticssecurecredential.DataNewrelicSyntheticsSecureCredential_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredentialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicsyntheticssecurecredential"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicsyntheticssecurecredential"
 
 &datanewrelicsyntheticssecurecredential.DataNewrelicSyntheticsSecureCredentialConfig {
 	Connection: interface{},
