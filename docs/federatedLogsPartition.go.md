@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.NewFederatedLogsPartition(scope Construct, id *string, config FederatedLogsPartitionConfig) FederatedLogsPartition
 ```
@@ -481,7 +481,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.FederatedLogsPartition_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.FederatedLogsPartition_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ federatedlogspartition.FederatedLogsPartition_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.FederatedLogsPartition_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ federatedlogspartition.FederatedLogsPartition_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.FederatedLogsPartition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1023,7 +1023,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 &federatedlogspartition.FederatedLogsPartitionConfig {
 	Connection: interface{},
@@ -1035,12 +1035,12 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlog
 	Provisioners: *[]interface{},
 	Name: *string,
 	SetupId: *string,
-	Storage: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.federatedLogsPartition.FederatedLogsPartitionStorage,
+	Storage: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.federatedLogsPartition.FederatedLogsPartitionStorage,
 	AccountId: *f64,
 	Active: interface{},
-	DataRetentionPolicy: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.federatedLogsPartition.FederatedLogsPartitionDataRetentionPolicy,
+	DataRetentionPolicy: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.federatedLogsPartition.FederatedLogsPartitionDataRetentionPolicy,
 	Description: *string,
-	ForwarderConfiguration: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.federatedLogsPartition.FederatedLogsPartitionForwarderConfiguration,
+	ForwarderConfiguration: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.federatedLogsPartition.FederatedLogsPartitionForwarderConfiguration,
 	Id: *string,
 }
 ```
@@ -1272,7 +1272,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionDataRetentionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 &federatedlogspartition.FederatedLogsPartitionDataRetentionPolicy {
 	Duration: *f64,
@@ -1322,11 +1322,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionForwarderConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 &federatedlogspartition.FederatedLogsPartitionForwarderConfiguration {
 	Type: *string,
-	PipelineControl: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.federatedLogsPartition.FederatedLogsPartitionForwarderConfigurationPipelineControl,
+	PipelineControl: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.federatedLogsPartition.FederatedLogsPartitionForwarderConfigurationPipelineControl,
 }
 ```
 
@@ -1372,10 +1372,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionForwarderConfigurationPipelineControl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 &federatedlogspartition.FederatedLogsPartitionForwarderConfigurationPipelineControl {
-	PartitionRule: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.federatedLogsPartition.FederatedLogsPartitionForwarderConfigurationPipelineControlPartitionRule,
+	PartitionRule: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.federatedLogsPartition.FederatedLogsPartitionForwarderConfigurationPipelineControlPartitionRule,
 }
 ```
 
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionForwarderConfigurationPipelineControlPartitionRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 &federatedlogspartition.FederatedLogsPartitionForwarderConfigurationPipelineControlPartitionRule {
 	Expression: *string,
@@ -1440,7 +1440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 &federatedlogspartition.FederatedLogsPartitionHealthCheck {
 
@@ -1453,7 +1453,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionHealthCheckEnd2EndDataFlow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 &federatedlogspartition.FederatedLogsPartitionHealthCheckEnd2EndDataFlow {
 
@@ -1466,7 +1466,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionHealthCheckQueryConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 &federatedlogspartition.FederatedLogsPartitionHealthCheckQueryConnection {
 
@@ -1479,7 +1479,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionLifecycleStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 &federatedlogspartition.FederatedLogsPartitionLifecycleStatus {
 
@@ -1492,7 +1492,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 &federatedlogspartition.FederatedLogsPartitionStorage {
 	DataLocationUri: *string,
@@ -1544,7 +1544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionDataRetentionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.NewFederatedLogsPartitionDataRetentionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedLogsPartitionDataRetentionPolicyOutputReference
 ```
@@ -1837,7 +1837,7 @@ func InternalValue() FederatedLogsPartitionDataRetentionPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionForwarderConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.NewFederatedLogsPartitionForwarderConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedLogsPartitionForwarderConfigurationOutputReference
 ```
@@ -2150,7 +2150,7 @@ func InternalValue() FederatedLogsPartitionForwarderConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionForwarderConfigurationPipelineControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.NewFederatedLogsPartitionForwarderConfigurationPipelineControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedLogsPartitionForwarderConfigurationPipelineControlOutputReference
 ```
@@ -2441,7 +2441,7 @@ func InternalValue() FederatedLogsPartitionForwarderConfigurationPipelineControl
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionForwarderConfigurationPipelineControlPartitionRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.NewFederatedLogsPartitionForwarderConfigurationPipelineControlPartitionRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedLogsPartitionForwarderConfigurationPipelineControlPartitionRuleOutputReference
 ```
@@ -2712,7 +2712,7 @@ func InternalValue() FederatedLogsPartitionForwarderConfigurationPipelineControl
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionHealthCheckEnd2EndDataFlowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.NewFederatedLogsPartitionHealthCheckEnd2EndDataFlowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedLogsPartitionHealthCheckEnd2EndDataFlowList
 ```
@@ -2861,7 +2861,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionHealthCheckEnd2EndDataFlowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.NewFederatedLogsPartitionHealthCheckEnd2EndDataFlowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedLogsPartitionHealthCheckEnd2EndDataFlowOutputReference
 ```
@@ -3161,7 +3161,7 @@ func InternalValue() FederatedLogsPartitionHealthCheckEnd2EndDataFlow
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.NewFederatedLogsPartitionHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedLogsPartitionHealthCheckList
 ```
@@ -3310,7 +3310,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.NewFederatedLogsPartitionHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedLogsPartitionHealthCheckOutputReference
 ```
@@ -3610,7 +3610,7 @@ func InternalValue() FederatedLogsPartitionHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionHealthCheckQueryConnectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.NewFederatedLogsPartitionHealthCheckQueryConnectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedLogsPartitionHealthCheckQueryConnectionList
 ```
@@ -3759,7 +3759,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionHealthCheckQueryConnectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.NewFederatedLogsPartitionHealthCheckQueryConnectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedLogsPartitionHealthCheckQueryConnectionOutputReference
 ```
@@ -4059,7 +4059,7 @@ func InternalValue() FederatedLogsPartitionHealthCheckQueryConnection
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionLifecycleStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.NewFederatedLogsPartitionLifecycleStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedLogsPartitionLifecycleStatusList
 ```
@@ -4208,7 +4208,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionLifecycleStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.NewFederatedLogsPartitionLifecycleStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedLogsPartitionLifecycleStatusOutputReference
 ```
@@ -4508,7 +4508,7 @@ func InternalValue() FederatedLogsPartitionLifecycleStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogspartition"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/federatedlogspartition"
 
 federatedlogspartition.NewFederatedLogsPartitionStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedLogsPartitionStorageOutputReference
 ```

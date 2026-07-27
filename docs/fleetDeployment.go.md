@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetdeployment"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleetdeployment"
 
 fleetdeployment.NewFleetDeployment(scope Construct, id *string, config FleetDeploymentConfig) FleetDeployment
 ```
@@ -448,7 +448,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetdeployment"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleetdeployment"
 
 fleetdeployment.FleetDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetdeployment"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleetdeployment"
 
 fleetdeployment.FleetDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ fleetdeployment.FleetDeployment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetdeployment"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleetdeployment"
 
 fleetdeployment.FleetDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ fleetdeployment.FleetDeployment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetdeployment"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleetdeployment"
 
 fleetdeployment.FleetDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetdeployment"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleetdeployment"
 
 &fleetdeployment.FleetDeploymentAgent {
 	AgentType: *string,
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetdeployment"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleetdeployment"
 
 &fleetdeployment.FleetDeploymentConfig {
 	Connection: interface{},
@@ -1196,7 +1196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetdeployment"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleetdeployment"
 
 fleetdeployment.NewFleetDeploymentAgentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FleetDeploymentAgentList
 ```
@@ -1356,7 +1356,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetdeployment"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/fleetdeployment"
 
 fleetdeployment.NewFleetDeploymentAgentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FleetDeploymentAgentOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.awsConnection.AwsConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 awsconnection.NewAwsConnection(scope Construct, id *string, config AwsConnectionConfig) AwsConnection
 ```
@@ -509,7 +509,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.awsConnection.AwsConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 awsconnection.AwsConnection_IsConstruct(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.awsConnection.AwsConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 awsconnection.AwsConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ awsconnection.AwsConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.awsConnection.AwsConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 awsconnection.AwsConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ awsconnection.AwsConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.awsConnection.AwsConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 awsconnection.AwsConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1062,7 +1062,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.awsConnection.AwsConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 &awsconnection.AwsConnectionConfig {
 	Connection: interface{},
@@ -1072,7 +1072,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnectio
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Credential: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.awsConnection.AwsConnectionCredential,
+	Credential: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.awsConnection.AwsConnectionCredential,
 	Name: *string,
 	AccountId: *f64,
 	Description: *string,
@@ -1357,10 +1357,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.awsConnection.AwsConnectionCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 &awsconnection.AwsConnectionCredential {
-	AssumeRole: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.awsConnection.AwsConnectionCredentialAssumeRole,
+	AssumeRole: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.awsConnection.AwsConnectionCredentialAssumeRole,
 }
 ```
 
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.awsConnection.AwsConnectionCredentialAssumeRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 &awsconnection.AwsConnectionCredentialAssumeRole {
 	RoleArn: *string,
@@ -1441,7 +1441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.awsConnection.AwsConnectionSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 &awsconnection.AwsConnectionSettings {
 	Key: *string,
@@ -1491,7 +1491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.awsConnection.AwsConnectionTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 &awsconnection.AwsConnectionTag {
 	Key: *string,
@@ -1543,7 +1543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.awsConnection.AwsConnectionCredentialAssumeRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 awsconnection.NewAwsConnectionCredentialAssumeRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AwsConnectionCredentialAssumeRoleOutputReference
 ```
@@ -1843,7 +1843,7 @@ func InternalValue() AwsConnectionCredentialAssumeRole
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.awsConnection.AwsConnectionCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 awsconnection.NewAwsConnectionCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AwsConnectionCredentialOutputReference
 ```
@@ -2127,7 +2127,7 @@ func InternalValue() AwsConnectionCredential
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.awsConnection.AwsConnectionSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 awsconnection.NewAwsConnectionSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AwsConnectionSettingsList
 ```
@@ -2287,7 +2287,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.awsConnection.AwsConnectionSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 awsconnection.NewAwsConnectionSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AwsConnectionSettingsOutputReference
 ```
@@ -2598,7 +2598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.awsConnection.AwsConnectionTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 awsconnection.NewAwsConnectionTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AwsConnectionTagList
 ```
@@ -2758,7 +2758,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.awsConnection.AwsConnectionTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/awsconnection"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/awsconnection"
 
 awsconnection.NewAwsConnectionTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AwsConnectionTagOutputReference
 ```
