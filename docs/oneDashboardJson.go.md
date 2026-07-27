@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboardJson.OneDashboardJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboardjson"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardjson"
 
 onedashboardjson.NewOneDashboardJson(scope Construct, id *string, config OneDashboardJsonConfig) OneDashboardJson
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.oneDashboardJson.OneDashboardJson.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboardjson"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardjson"
 
 onedashboardjson.OneDashboardJson_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.oneDashboardJson.OneDashboardJson.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboardjson"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardjson"
 
 onedashboardjson.OneDashboardJson_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ onedashboardjson.OneDashboardJson_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.oneDashboardJson.OneDashboardJson.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboardjson"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardjson"
 
 onedashboardjson.OneDashboardJson_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ onedashboardjson.OneDashboardJson_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.oneDashboardJson.OneDashboardJson.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboardjson"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardjson"
 
 onedashboardjson.OneDashboardJson_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboardJson.OneDashboardJsonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboardjson"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardjson"
 
 &onedashboardjson.OneDashboardJsonConfig {
 	Connection: interface{},
@@ -857,7 +857,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard
 	Json: *string,
 	AccountId: *f64,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboardJson.OneDashboardJsonTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboardJson.OneDashboardJsonTimeouts,
 }
 ```
 
@@ -1011,7 +1011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboardJson.OneDashboardJsonTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboardjson"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardjson"
 
 &onedashboardjson.OneDashboardJsonTimeouts {
 	Create: *string,
@@ -1059,7 +1059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboardJson.OneDashboardJsonTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboardjson"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboardjson"
 
 onedashboardjson.NewOneDashboardJsonTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardJsonTimeoutsOutputReference
 ```

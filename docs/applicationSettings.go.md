@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 applicationsettings.NewApplicationSettings(scope Construct, id *string, config ApplicationSettingsConfig) ApplicationSettings
 ```
@@ -510,7 +510,7 @@ func ResetUseServerSideConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 applicationsettings.ApplicationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 applicationsettings.ApplicationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ applicationsettings.ApplicationSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 applicationsettings.ApplicationSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ applicationsettings.ApplicationSettings_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 applicationsettings.ApplicationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1074,7 +1074,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 &applicationsettings.ApplicationSettingsConfig {
 	Connection: interface{},
@@ -1369,7 +1369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 &applicationsettings.ApplicationSettingsErrorCollector {
 	ExpectedErrorClasses: *[]*string,
@@ -1451,11 +1451,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 &applicationsettings.ApplicationSettingsTransactionTracer {
 	ExplainQueryPlans: interface{},
-	Sql: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.applicationSettings.ApplicationSettingsTransactionTracerSql,
+	Sql: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.applicationSettings.ApplicationSettingsTransactionTracerSql,
 	StackTraceThresholdValue: *f64,
 	TransactionThresholdType: *string,
 	TransactionThresholdValue: *f64,
@@ -1549,7 +1549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 &applicationsettings.ApplicationSettingsTransactionTracerExplainQueryPlans {
 	QueryPlanThresholdType: *string,
@@ -1599,7 +1599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerSql.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 &applicationsettings.ApplicationSettingsTransactionTracerSql {
 	RecordSql: *string,
@@ -1635,7 +1635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 applicationsettings.NewApplicationSettingsErrorCollectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationSettingsErrorCollectorList
 ```
@@ -1795,7 +1795,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 applicationsettings.NewApplicationSettingsErrorCollectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationSettingsErrorCollectorOutputReference
 ```
@@ -2178,7 +2178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 applicationsettings.NewApplicationSettingsTransactionTracerExplainQueryPlansList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationSettingsTransactionTracerExplainQueryPlansList
 ```
@@ -2338,7 +2338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 applicationsettings.NewApplicationSettingsTransactionTracerExplainQueryPlansOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference
 ```
@@ -2663,7 +2663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 applicationsettings.NewApplicationSettingsTransactionTracerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationSettingsTransactionTracerList
 ```
@@ -2823,7 +2823,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 applicationsettings.NewApplicationSettingsTransactionTracerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationSettingsTransactionTracerOutputReference
 ```
@@ -3261,7 +3261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerSqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/applicationsettings"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/applicationsettings"
 
 applicationsettings.NewApplicationSettingsTransactionTracerSqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationSettingsTransactionTracerSqlOutputReference
 ```

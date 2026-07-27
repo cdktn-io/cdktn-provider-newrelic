@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignintegrations"
 
 cloudawseusovereignintegrations.NewCloudAwsEuSovereignIntegrations(scope Construct, id *string, config CloudAwsEuSovereignIntegrationsConfig) CloudAwsEuSovereignIntegrations
 ```
@@ -474,7 +474,7 @@ func ResetXRay()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignintegrations"
 
 cloudawseusovereignintegrations.CloudAwsEuSovereignIntegrations_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignintegrations"
 
 cloudawseusovereignintegrations.CloudAwsEuSovereignIntegrations_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ cloudawseusovereignintegrations.CloudAwsEuSovereignIntegrations_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrations.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignintegrations"
 
 cloudawseusovereignintegrations.CloudAwsEuSovereignIntegrations_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ cloudawseusovereignintegrations.CloudAwsEuSovereignIntegrations_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignintegrations"
 
 cloudawseusovereignintegrations.CloudAwsEuSovereignIntegrations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrationsBilling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignintegrations"
 
 &cloudawseusovereignintegrations.CloudAwsEuSovereignIntegrationsBilling {
 	MetricsPollingInterval: *f64,
@@ -929,7 +929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrationsCloudtrail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignintegrations"
 
 &cloudawseusovereignintegrations.CloudAwsEuSovereignIntegrationsCloudtrail {
 	AwsRegions: *[]*string,
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignintegrations"
 
 &cloudawseusovereignintegrations.CloudAwsEuSovereignIntegrationsConfig {
 	Connection: interface{},
@@ -991,10 +991,10 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseuso
 	Provisioners: *[]interface{},
 	LinkedAccountId: *f64,
 	AccountId: *f64,
-	Billing: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrationsBilling,
-	Cloudtrail: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrationsCloudtrail,
+	Billing: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrationsBilling,
+	Cloudtrail: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrationsCloudtrail,
 	Id: *string,
-	XRay: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrationsXRay,
+	XRay: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrationsXRay,
 }
 ```
 
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrationsXRay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignintegrations"
 
 &cloudawseusovereignintegrations.CloudAwsEuSovereignIntegrationsXRay {
 	AwsRegions: *[]*string,
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrationsBillingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignintegrations"
 
 cloudawseusovereignintegrations.NewCloudAwsEuSovereignIntegrationsBillingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsEuSovereignIntegrationsBillingOutputReference
 ```
@@ -1508,7 +1508,7 @@ func InternalValue() CloudAwsEuSovereignIntegrationsBilling
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrationsCloudtrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignintegrations"
 
 cloudawseusovereignintegrations.NewCloudAwsEuSovereignIntegrationsCloudtrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsEuSovereignIntegrationsCloudtrailOutputReference
 ```
@@ -1815,7 +1815,7 @@ func InternalValue() CloudAwsEuSovereignIntegrationsCloudtrail
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudAwsEuSovereignIntegrations.CloudAwsEuSovereignIntegrationsXRayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudawseusovereignintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cloudawseusovereignintegrations"
 
 cloudawseusovereignintegrations.NewCloudAwsEuSovereignIntegrationsXRayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsEuSovereignIntegrationsXRayOutputReference
 ```

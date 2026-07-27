@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.workflowAutomation.WorkflowAutomation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/workflowautomation"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflowautomation"
 
 workflowautomation.NewWorkflowAutomation(scope Construct, id *string, config WorkflowAutomationConfig) WorkflowAutomation
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.workflowAutomation.WorkflowAutomation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/workflowautomation"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflowautomation"
 
 workflowautomation.WorkflowAutomation_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.workflowAutomation.WorkflowAutomation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/workflowautomation"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflowautomation"
 
 workflowautomation.WorkflowAutomation_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ workflowautomation.WorkflowAutomation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.workflowAutomation.WorkflowAutomation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/workflowautomation"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflowautomation"
 
 workflowautomation.WorkflowAutomation_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ workflowautomation.WorkflowAutomation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.workflowAutomation.WorkflowAutomation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/workflowautomation"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflowautomation"
 
 workflowautomation.WorkflowAutomation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -850,7 +850,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.workflowAutomation.WorkflowAutomationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/workflowautomation"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/workflowautomation"
 
 &workflowautomation.WorkflowAutomationConfig {
 	Connection: interface{},

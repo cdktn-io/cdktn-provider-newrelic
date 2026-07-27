@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicauthenticationdomain"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicauthenticationdomain"
 
 datanewrelicauthenticationdomain.NewDataNewrelicAuthenticationDomain(scope Construct, id *string, config DataNewrelicAuthenticationDomainConfig) DataNewrelicAuthenticationDomain
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicauthenticationdomain"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicauthenticationdomain"
 
 datanewrelicauthenticationdomain.DataNewrelicAuthenticationDomain_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicauthenticationdomain"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicauthenticationdomain"
 
 datanewrelicauthenticationdomain.DataNewrelicAuthenticationDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datanewrelicauthenticationdomain.DataNewrelicAuthenticationDomain_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomain.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicauthenticationdomain"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicauthenticationdomain"
 
 datanewrelicauthenticationdomain.DataNewrelicAuthenticationDomain_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datanewrelicauthenticationdomain.DataNewrelicAuthenticationDomain_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicauthenticationdomain"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicauthenticationdomain"
 
 datanewrelicauthenticationdomain.DataNewrelicAuthenticationDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicauthenticationdomain"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicauthenticationdomain"
 
 &datanewrelicauthenticationdomain.DataNewrelicAuthenticationDomainConfig {
 	Connection: interface{},
