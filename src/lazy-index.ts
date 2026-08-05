@@ -24,6 +24,7 @@ Object.defineProperty(exports, 'cloudAwsIntegrations', { get: function () { retu
 Object.defineProperty(exports, 'cloudAwsLinkAccount', { get: function () { return require('./cloud-aws-link-account'); } });
 Object.defineProperty(exports, 'cloudAzureIntegrations', { get: function () { return require('./cloud-azure-integrations'); } });
 Object.defineProperty(exports, 'cloudAzureLinkAccount', { get: function () { return require('./cloud-azure-link-account'); } });
+Object.defineProperty(exports, 'cloudGcpDmIntegrations', { get: function () { return require('./cloud-gcp-dm-integrations'); } });
 Object.defineProperty(exports, 'cloudGcpIntegrations', { get: function () { return require('./cloud-gcp-integrations'); } });
 Object.defineProperty(exports, 'cloudGcpLinkAccount', { get: function () { return require('./cloud-gcp-link-account'); } });
 Object.defineProperty(exports, 'cloudOciLinkAccount', { get: function () { return require('./cloud-oci-link-account'); } });
