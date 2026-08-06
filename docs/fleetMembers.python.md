@@ -4,7 +4,7 @@
 
 ### FleetMembers <a name="FleetMembers" id="@cdktn/provider-newrelic.fleetMembers.FleetMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/fleet_members newrelic_fleet_members}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet_members newrelic_fleet_members}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.fleetMembers.FleetMembers.Initializer"></a>
 
@@ -40,7 +40,7 @@ fleetMembers.FleetMembers(
 | <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembers.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembers.Initializer.parameter.fleetId">fleet_id</a></code> | <code>str</code> | The GUID of the fleet to manage entity assignments for. |
 | <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembers.Initializer.parameter.ring">ring</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembersRing">FleetMembersRing</a>]</code> | ring block. |
-| <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembers.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/fleet_members#id FleetMembers#id}. |
+| <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembers.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet_members#id FleetMembers#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The GUID of the fleet to manage entity assignments for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/fleet_members#fleet_id FleetMembers#fleet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet_members#fleet_id FleetMembers#fleet_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ring block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/fleet_members#ring FleetMembers#ring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet_members#ring FleetMembers#ring}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/fleet_members#id FleetMembers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet_members#id FleetMembers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -650,7 +650,7 @@ The construct id used in the generated config for the FleetMembers to import.
 
 The id of the existing FleetMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/fleet_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -945,7 +945,7 @@ fleetMembers.FleetMembersConfig(
 | <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembersConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembersConfig.property.fleetId">fleet_id</a></code> | <code>str</code> | The GUID of the fleet to manage entity assignments for. |
 | <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembersConfig.property.ring">ring</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembersRing">FleetMembersRing</a>]</code> | ring block. |
-| <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembersConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/fleet_members#id FleetMembers#id}. |
+| <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembersConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet_members#id FleetMembers#id}. |
 
 ---
 
@@ -1029,7 +1029,7 @@ fleet_id: str
 
 The GUID of the fleet to manage entity assignments for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/fleet_members#fleet_id FleetMembers#fleet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet_members#fleet_id FleetMembers#fleet_id}
 
 ---
 
@@ -1043,7 +1043,7 @@ ring: IResolvable | typing.List[FleetMembersRing]
 
 ring block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/fleet_members#ring FleetMembers#ring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet_members#ring FleetMembers#ring}
 
 ---
 
@@ -1055,7 +1055,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/fleet_members#id FleetMembers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet_members#id FleetMembers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1096,7 +1096,7 @@ Ordered list of entity GUIDs to assign to this ring.
 
 Only the entities listed here are tracked by Terraform; any other entities already in the ring through other means are not affected. Removing a GUID from this list will remove that entity from the fleet ring on the next apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/fleet_members#entity_ids FleetMembers#entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet_members#entity_ids FleetMembers#entity_ids}
 
 ---
 
@@ -1110,7 +1110,7 @@ name: str
 
 The name of the ring as configured on the fleet (e.g. "default", "canary").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/fleet_members#name FleetMembers#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet_members#name FleetMembers#name}
 
 ---
 

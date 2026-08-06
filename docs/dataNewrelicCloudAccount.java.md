@@ -4,7 +4,7 @@
 
 ### DataNewrelicCloudAccount <a name="DataNewrelicCloudAccount" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/data-sources/cloud_account newrelic_cloud_account}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/data-sources/cloud_account newrelic_cloud_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.Initializer"></a>
 
@@ -23,6 +23,7 @@ DataNewrelicCloudAccount.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
 //  .accountId(java.lang.Number)
 //  .id(java.lang.String)
+//  .isDimensionalMetrics(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -40,7 +41,8 @@ DataNewrelicCloudAccount.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.Initializer.parameter.cloudProvider">cloudProvider</a></code> | <code>java.lang.String</code> | The cloud provider of the account, e.g. aws, gcp, azure. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the cloud account. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The ID of the New Relic account. |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.Initializer.parameter.isDimensionalMetrics">isDimensionalMetrics</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Set to true when looking up a GCP Dimensional Metrics linked account (cloud_provider must be "gcp"). |
 
 ---
 
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The cloud provider of the account, e.g. aws, gcp, azure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/data-sources/cloud_account#cloud_provider DataNewrelicCloudAccount#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/data-sources/cloud_account#cloud_provider DataNewrelicCloudAccount#cloud_provider}
 
 ---
 
@@ -120,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The name of the cloud account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/data-sources/cloud_account#name DataNewrelicCloudAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/data-sources/cloud_account#name DataNewrelicCloudAccount#name}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The ID of the New Relic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/data-sources/cloud_account#account_id DataNewrelicCloudAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/data-sources/cloud_account#account_id DataNewrelicCloudAccount#account_id}
 
 ---
 
@@ -138,10 +140,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `isDimensionalMetrics`<sup>Optional</sup> <a name="isDimensionalMetrics" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.Initializer.parameter.isDimensionalMetrics"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Set to true when looking up a GCP Dimensional Metrics linked account (cloud_provider must be "gcp").
+
+Internally uses the gcp_v2 provider slug.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/data-sources/cloud_account#is_dimensional_metrics DataNewrelicCloudAccount#is_dimensional_metrics}
 
 ---
 
@@ -169,6 +183,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.resetIsDimensionalMetrics">resetIsDimensionalMetrics</a></code> | *No description.* |
 
 ---
 
@@ -397,6 +412,12 @@ public void resetAccountId()
 public void resetId()
 ```
 
+##### `resetIsDimensionalMetrics` <a name="resetIsDimensionalMetrics" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.resetIsDimensionalMetrics"></a>
+
+```java
+public void resetIsDimensionalMetrics()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -500,7 +521,7 @@ The construct id used in the generated config for the DataNewrelicCloudAccount t
 
 The id of the existing DataNewrelicCloudAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/data-sources/cloud_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/data-sources/cloud_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -531,10 +552,12 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.property.cloudProviderInput">cloudProviderInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.property.isDimensionalMetricsInput">isDimensionalMetricsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.property.cloudProvider">cloudProvider</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.property.isDimensionalMetrics">isDimensionalMetrics</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -691,6 +714,16 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `isDimensionalMetricsInput`<sup>Optional</sup> <a name="isDimensionalMetricsInput" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.property.isDimensionalMetricsInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsDimensionalMetricsInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.property.nameInput"></a>
 
 ```java
@@ -728,6 +761,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `isDimensionalMetrics`<sup>Required</sup> <a name="isDimensionalMetrics" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.property.isDimensionalMetrics"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsDimensionalMetrics();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -780,6 +823,7 @@ DataNewrelicCloudAccountConfig.builder()
     .name(java.lang.String)
 //  .accountId(java.lang.Number)
 //  .id(java.lang.String)
+//  .isDimensionalMetrics(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -797,7 +841,8 @@ DataNewrelicCloudAccountConfig.builder()
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.cloudProvider">cloudProvider</a></code> | <code>java.lang.String</code> | The cloud provider of the account, e.g. aws, gcp, azure. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the cloud account. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The ID of the New Relic account. |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.isDimensionalMetrics">isDimensionalMetrics</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Set to true when looking up a GCP Dimensional Metrics linked account (cloud_provider must be "gcp"). |
 
 ---
 
@@ -881,7 +926,7 @@ public java.lang.String getCloudProvider();
 
 The cloud provider of the account, e.g. aws, gcp, azure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/data-sources/cloud_account#cloud_provider DataNewrelicCloudAccount#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/data-sources/cloud_account#cloud_provider DataNewrelicCloudAccount#cloud_provider}
 
 ---
 
@@ -895,7 +940,7 @@ public java.lang.String getName();
 
 The name of the cloud account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/data-sources/cloud_account#name DataNewrelicCloudAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/data-sources/cloud_account#name DataNewrelicCloudAccount#name}
 
 ---
 
@@ -909,7 +954,7 @@ public java.lang.Number getAccountId();
 
 The ID of the New Relic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/data-sources/cloud_account#account_id DataNewrelicCloudAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/data-sources/cloud_account#account_id DataNewrelicCloudAccount#account_id}
 
 ---
 
@@ -921,10 +966,26 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `isDimensionalMetrics`<sup>Optional</sup> <a name="isDimensionalMetrics" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.isDimensionalMetrics"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsDimensionalMetrics();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Set to true when looking up a GCP Dimensional Metrics linked account (cloud_provider must be "gcp").
+
+Internally uses the gcp_v2 provider slug.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/data-sources/cloud_account#is_dimensional_metrics DataNewrelicCloudAccount#is_dimensional_metrics}
 
 ---
 

@@ -24,6 +24,7 @@ The following submodules are available:
 - [cloudAwsLinkAccount](./cloudAwsLinkAccount.typescript.md)
 - [cloudAzureIntegrations](./cloudAzureIntegrations.typescript.md)
 - [cloudAzureLinkAccount](./cloudAzureLinkAccount.typescript.md)
+- [cloudGcpDmIntegrations](./cloudGcpDmIntegrations.typescript.md)
 - [cloudGcpIntegrations](./cloudGcpIntegrations.typescript.md)
 - [cloudGcpLinkAccount](./cloudGcpLinkAccount.typescript.md)
 - [cloudOciLinkAccount](./cloudOciLinkAccount.typescript.md)

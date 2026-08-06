@@ -24,6 +24,7 @@ The following submodules are available:
 - [cloudAwsLinkAccount](./cloudAwsLinkAccount.go.md)
 - [cloudAzureIntegrations](./cloudAzureIntegrations.go.md)
 - [cloudAzureLinkAccount](./cloudAzureLinkAccount.go.md)
+- [cloudGcpDmIntegrations](./cloudGcpDmIntegrations.go.md)
 - [cloudGcpIntegrations](./cloudGcpIntegrations.go.md)
 - [cloudGcpLinkAccount](./cloudGcpLinkAccount.go.md)
 - [cloudOciLinkAccount](./cloudOciLinkAccount.go.md)
