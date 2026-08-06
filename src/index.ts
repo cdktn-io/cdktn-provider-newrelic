@@ -24,6 +24,7 @@ export * as cloudAwsIntegrations from './cloud-aws-integrations/index';
 export * as cloudAwsLinkAccount from './cloud-aws-link-account/index';
 export * as cloudAzureIntegrations from './cloud-azure-integrations/index';
 export * as cloudAzureLinkAccount from './cloud-azure-link-account/index';
+export * as cloudGcpDmIntegrations from './cloud-gcp-dm-integrations/index';
 export * as cloudGcpIntegrations from './cloud-gcp-integrations/index';
 export * as cloudGcpLinkAccount from './cloud-gcp-link-account/index';
 export * as cloudOciLinkAccount from './cloud-oci-link-account/index';

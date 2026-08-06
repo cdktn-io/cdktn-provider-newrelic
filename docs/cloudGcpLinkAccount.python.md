@@ -4,7 +4,7 @@
 
 ### CloudGcpLinkAccount <a name="CloudGcpLinkAccount" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer"></a>
 
@@ -24,7 +24,10 @@ cloudGcpLinkAccount.CloudGcpLinkAccount(
   name: str,
   project_id: str,
   account_id: typing.Union[int, float] = None,
-  id: str = None
+  audience: str = None,
+  id: str = None,
+  service_account_email: str = None,
+  use_workload_identity_federation: bool | IResolvable = None
 )
 ```
 
@@ -42,7 +45,10 @@ cloudGcpLinkAccount.CloudGcpLinkAccount(
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.name">name</a></code> | <code>str</code> | name of the linked account. |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | project id of the Gcp account. |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | accountID of newrelic account. |
-| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.audience">audience</a></code> | <code>str</code> | The Workload Identity Federation pool provider audience URI, used for GCP Dimensional Metrics (keyless) linking. |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.serviceAccountEmail">service_account_email</a></code> | <code>str</code> | The GCP service account email New Relic impersonates to collect metrics when linking via Workload Identity Federation (GCP Dimensional Metrics). |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.useWorkloadIdentityFederation">use_workload_identity_federation</a></code> | <code>bool \| cdktn.IResolvable</code> | Set to true to link this GCP account for New Relic GCP Dimensional Metrics (v2) using keyless Workload Identity Federation (WIF). |
 
 ---
 
@@ -112,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 name of the linked account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
 
 ---
 
@@ -122,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 project id of the Gcp account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
 
 ---
 
@@ -132,7 +138,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 accountID of newrelic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
+
+---
+
+##### `audience`<sup>Optional</sup> <a name="audience" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.audience"></a>
+
+- *Type:* str
+
+The Workload Identity Federation pool provider audience URI, used for GCP Dimensional Metrics (keyless) linking.
+
+Format: //iam.googleapis.com/projects/{PROJECT_NUMBER}/locations/global/workloadIdentityPools/{POOL_ID}/providers/{PROVIDER_ID}. Required when use_workload_identity_federation = true.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#audience CloudGcpLinkAccount#audience}
 
 ---
 
@@ -140,10 +158,34 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `service_account_email`<sup>Optional</sup> <a name="service_account_email" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.serviceAccountEmail"></a>
+
+- *Type:* str
+
+The GCP service account email New Relic impersonates to collect metrics when linking via Workload Identity Federation (GCP Dimensional Metrics).
+
+The service account must grant the WIF pool the roles/iam.workloadIdentityUser binding. Required when use_workload_identity_federation = true.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#service_account_email CloudGcpLinkAccount#service_account_email}
+
+---
+
+##### `use_workload_identity_federation`<sup>Optional</sup> <a name="use_workload_identity_federation" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.useWorkloadIdentityFederation"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Set to true to link this GCP account for New Relic GCP Dimensional Metrics (v2) using keyless Workload Identity Federation (WIF).
+
+When true, audience and service_account_email are required. When false (the default), the account is linked using the legacy service-account-key flow.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#use_workload_identity_federation CloudGcpLinkAccount#use_workload_identity_federation}
 
 ---
 
@@ -176,7 +218,10 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.resetAccountId">reset_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.resetAudience">reset_audience</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.resetServiceAccountEmail">reset_service_account_email</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.resetUseWorkloadIdentityFederation">reset_use_workload_identity_federation</a></code> | *No description.* |
 
 ---
 
@@ -534,10 +579,28 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_account_id() -> None
 ```
 
+##### `reset_audience` <a name="reset_audience" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.resetAudience"></a>
+
+```python
+def reset_audience() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.resetId"></a>
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_service_account_email` <a name="reset_service_account_email" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.resetServiceAccountEmail"></a>
+
+```python
+def reset_service_account_email() -> None
+```
+
+##### `reset_use_workload_identity_federation` <a name="reset_use_workload_identity_federation" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.resetUseWorkloadIdentityFederation"></a>
+
+```python
+def reset_use_workload_identity_federation() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -654,7 +717,7 @@ The construct id used in the generated config for the CloudGcpLinkAccount to imp
 
 The id of the existing CloudGcpLinkAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/cloud_gcp_link_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -685,13 +748,19 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.accountIdInput">account_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.audienceInput">audience_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.serviceAccountEmailInput">service_account_email_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.useWorkloadIdentityFederationInput">use_workload_identity_federation_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.audience">audience</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.serviceAccountEmail">service_account_email</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.useWorkloadIdentityFederation">use_workload_identity_federation</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -847,6 +916,16 @@ account_id_input: typing.Union[int, float]
 
 ---
 
+##### `audience_input`<sup>Optional</sup> <a name="audience_input" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.audienceInput"></a>
+
+```python
+audience_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.idInput"></a>
 
 ```python
@@ -877,6 +956,26 @@ project_id_input: str
 
 ---
 
+##### `service_account_email_input`<sup>Optional</sup> <a name="service_account_email_input" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.serviceAccountEmailInput"></a>
+
+```python
+service_account_email_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `use_workload_identity_federation_input`<sup>Optional</sup> <a name="use_workload_identity_federation_input" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.useWorkloadIdentityFederationInput"></a>
+
+```python
+use_workload_identity_federation_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.accountId"></a>
 
 ```python
@@ -884,6 +983,16 @@ account_id: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `audience`<sup>Required</sup> <a name="audience" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.audience"></a>
+
+```python
+audience: str
+```
+
+- *Type:* str
 
 ---
 
@@ -914,6 +1023,26 @@ project_id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `service_account_email`<sup>Required</sup> <a name="service_account_email" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.serviceAccountEmail"></a>
+
+```python
+service_account_email: str
+```
+
+- *Type:* str
+
+---
+
+##### `use_workload_identity_federation`<sup>Required</sup> <a name="use_workload_identity_federation" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.property.useWorkloadIdentityFederation"></a>
+
+```python
+use_workload_identity_federation: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -955,7 +1084,10 @@ cloudGcpLinkAccount.CloudGcpLinkAccountConfig(
   name: str,
   project_id: str,
   account_id: typing.Union[int, float] = None,
-  id: str = None
+  audience: str = None,
+  id: str = None,
+  service_account_email: str = None,
+  use_workload_identity_federation: bool | IResolvable = None
 )
 ```
 
@@ -973,7 +1105,10 @@ cloudGcpLinkAccount.CloudGcpLinkAccountConfig(
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.name">name</a></code> | <code>str</code> | name of the linked account. |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.projectId">project_id</a></code> | <code>str</code> | project id of the Gcp account. |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | accountID of newrelic account. |
-| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.audience">audience</a></code> | <code>str</code> | The Workload Identity Federation pool provider audience URI, used for GCP Dimensional Metrics (keyless) linking. |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.serviceAccountEmail">service_account_email</a></code> | <code>str</code> | The GCP service account email New Relic impersonates to collect metrics when linking via Workload Identity Federation (GCP Dimensional Metrics). |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.useWorkloadIdentityFederation">use_workload_identity_federation</a></code> | <code>bool \| cdktn.IResolvable</code> | Set to true to link this GCP account for New Relic GCP Dimensional Metrics (v2) using keyless Workload Identity Federation (WIF). |
 
 ---
 
@@ -1057,7 +1192,7 @@ name: str
 
 name of the linked account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
 
 ---
 
@@ -1071,7 +1206,7 @@ project_id: str
 
 project id of the Gcp account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
 
 ---
 
@@ -1085,7 +1220,23 @@ account_id: typing.Union[int, float]
 
 accountID of newrelic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
+
+---
+
+##### `audience`<sup>Optional</sup> <a name="audience" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.audience"></a>
+
+```python
+audience: str
+```
+
+- *Type:* str
+
+The Workload Identity Federation pool provider audience URI, used for GCP Dimensional Metrics (keyless) linking.
+
+Format: //iam.googleapis.com/projects/{PROJECT_NUMBER}/locations/global/workloadIdentityPools/{POOL_ID}/providers/{PROVIDER_ID}. Required when use_workload_identity_federation = true.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#audience CloudGcpLinkAccount#audience}
 
 ---
 
@@ -1097,10 +1248,42 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.95.2/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `service_account_email`<sup>Optional</sup> <a name="service_account_email" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.serviceAccountEmail"></a>
+
+```python
+service_account_email: str
+```
+
+- *Type:* str
+
+The GCP service account email New Relic impersonates to collect metrics when linking via Workload Identity Federation (GCP Dimensional Metrics).
+
+The service account must grant the WIF pool the roles/iam.workloadIdentityUser binding. Required when use_workload_identity_federation = true.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#service_account_email CloudGcpLinkAccount#service_account_email}
+
+---
+
+##### `use_workload_identity_federation`<sup>Optional</sup> <a name="use_workload_identity_federation" id="@cdktn/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.useWorkloadIdentityFederation"></a>
+
+```python
+use_workload_identity_federation: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Set to true to link this GCP account for New Relic GCP Dimensional Metrics (v2) using keyless Workload Identity Federation (WIF).
+
+When true, audience and service_account_email are required. When false (the default), the account is linked using the legacy service-account-key flow.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/cloud_gcp_link_account#use_workload_identity_federation CloudGcpLinkAccount#use_workload_identity_federation}
 
 ---
 

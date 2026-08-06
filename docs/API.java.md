@@ -24,6 +24,7 @@ The following submodules are available:
 - [cloudAwsLinkAccount](./cloudAwsLinkAccount.java.md)
 - [cloudAzureIntegrations](./cloudAzureIntegrations.java.md)
 - [cloudAzureLinkAccount](./cloudAzureLinkAccount.java.md)
+- [cloudGcpDmIntegrations](./cloudGcpDmIntegrations.java.md)
 - [cloudGcpIntegrations](./cloudGcpIntegrations.java.md)
 - [cloudGcpLinkAccount](./cloudGcpLinkAccount.java.md)
 - [cloudOciLinkAccount](./cloudOciLinkAccount.java.md)

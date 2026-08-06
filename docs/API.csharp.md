@@ -24,6 +24,7 @@ The following submodules are available:
 - [cloudAwsLinkAccount](./cloudAwsLinkAccount.csharp.md)
 - [cloudAzureIntegrations](./cloudAzureIntegrations.csharp.md)
 - [cloudAzureLinkAccount](./cloudAzureLinkAccount.csharp.md)
+- [cloudGcpDmIntegrations](./cloudGcpDmIntegrations.csharp.md)
 - [cloudGcpIntegrations](./cloudGcpIntegrations.csharp.md)
 - [cloudGcpLinkAccount](./cloudGcpLinkAccount.csharp.md)
 - [cloudOciLinkAccount](./cloudOciLinkAccount.csharp.md)
