@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicalertpolicy"
 
 datanewrelicalertpolicy.NewDataNewrelicAlertPolicy(scope Construct, id *string, config DataNewrelicAlertPolicyConfig) DataNewrelicAlertPolicy
 ```
@@ -319,7 +319,7 @@ func ResetIncidentPreference()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicalertpolicy"
 
 datanewrelicalertpolicy.DataNewrelicAlertPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicalertpolicy"
 
 datanewrelicalertpolicy.DataNewrelicAlertPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datanewrelicalertpolicy.DataNewrelicAlertPolicy_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicalertpolicy"
 
 datanewrelicalertpolicy.DataNewrelicAlertPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datanewrelicalertpolicy.DataNewrelicAlertPolicy_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicalertpolicy"
 
 datanewrelicalertpolicy.DataNewrelicAlertPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicAlertPolicy.DataNewrelicAlertPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicalertpolicy"
 
 &datanewrelicalertpolicy.DataNewrelicAlertPolicyConfig {
 	Connection: interface{},

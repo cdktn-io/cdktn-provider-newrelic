@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboard(scope Construct, id *string, config OneDashboardConfig) OneDashboard
 ```
@@ -461,7 +461,7 @@ func ResetVariable()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.oneDashboard.OneDashboard.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.OneDashboard_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.oneDashboard.OneDashboard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.OneDashboard_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ onedashboard.OneDashboard_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.oneDashboard.OneDashboard.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.OneDashboard_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ onedashboard.OneDashboard_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.oneDashboard.OneDashboard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.OneDashboard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -926,7 +926,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardConfig {
 	Connection: interface{},
@@ -1141,7 +1141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPage {
 	Name: *string,
@@ -1415,24 +1415,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetArea {
 	Column: *f64,
 	NrqlQuery: interface{},
 	Row: *f64,
 	Title: *string,
-	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetAreaChartStyles,
+	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetAreaChartStyles,
 	Colors: interface{},
 	DataFormat: interface{},
 	FacetShowOtherSeries: interface{},
 	Height: *f64,
 	IgnoreTimeRange: interface{},
-	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetAreaInitialSorting,
+	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetAreaInitialSorting,
 	LegendEnabled: interface{},
 	NullValues: interface{},
 	RefreshRate: *string,
-	Tooltip: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetAreaTooltip,
+	Tooltip: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetAreaTooltip,
 	Units: interface{},
 	Width: *f64,
 	YAxisLeftMax: *f64,
@@ -1717,10 +1717,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaChartStyles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetAreaChartStyles {
-	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetAreaChartStylesGradient,
+	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetAreaChartStylesGradient,
 	LineInterpolation: *string,
 }
 ```
@@ -1767,7 +1767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaChartStylesGradient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetAreaChartStylesGradient {
 	Enabled: interface{},
@@ -1801,7 +1801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetAreaColors {
 	Color: *string,
@@ -1849,7 +1849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetAreaColorsSeriesOverrides {
 	Color: *string,
@@ -1899,7 +1899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaDataFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetAreaDataFormat {
 	Name: *string,
@@ -1981,7 +1981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSorting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetAreaInitialSorting {
 	Direction: *string,
@@ -2031,7 +2031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetAreaNrqlQuery {
 	Query: *string,
@@ -2083,7 +2083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetAreaNullValues {
 	NullValue: *string,
@@ -2131,7 +2131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverrides {
 	NullValue: *string,
@@ -2181,7 +2181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaTooltip.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetAreaTooltip {
 	Mode: *string,
@@ -2215,7 +2215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetAreaUnits {
 	SeriesOverrides: interface{},
@@ -2263,7 +2263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetAreaUnitsSeriesOverrides {
 	SeriesName: *string,
@@ -2313,21 +2313,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBar {
 	Column: *f64,
 	NrqlQuery: interface{},
 	Row: *f64,
 	Title: *string,
-	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetBarChartStyles,
+	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetBarChartStyles,
 	Colors: interface{},
 	DataFormat: interface{},
 	FacetShowOtherSeries: interface{},
 	FilterCurrentDashboard: interface{},
 	Height: *f64,
 	IgnoreTimeRange: interface{},
-	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetBarInitialSorting,
+	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetBarInitialSorting,
 	LegendEnabled: interface{},
 	LinkedEntityGuids: *[]*string,
 	NullValues: interface{},
@@ -2631,10 +2631,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarChartStyles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBarChartStyles {
-	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetBarChartStylesGradient,
+	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetBarChartStylesGradient,
 	LineInterpolation: *string,
 }
 ```
@@ -2681,7 +2681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarChartStylesGradient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBarChartStylesGradient {
 	Enabled: interface{},
@@ -2715,7 +2715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBarColors {
 	Color: *string,
@@ -2763,7 +2763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBarColorsSeriesOverrides {
 	Color: *string,
@@ -2813,7 +2813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarDataFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBarDataFormat {
 	Name: *string,
@@ -2895,7 +2895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSorting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBarInitialSorting {
 	Direction: *string,
@@ -2945,7 +2945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBarNrqlQuery {
 	Query: *string,
@@ -2997,7 +2997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBarNullValues {
 	NullValue: *string,
@@ -3045,7 +3045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBarNullValuesSeriesOverrides {
 	NullValue: *string,
@@ -3095,7 +3095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBarUnits {
 	SeriesOverrides: interface{},
@@ -3143,7 +3143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBarUnitsSeriesOverrides {
 	SeriesName: *string,
@@ -3193,22 +3193,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboard {
 	Column: *f64,
 	NrqlQuery: interface{},
 	Row: *f64,
 	Title: *string,
-	BillboardSettings: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettings,
-	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetBillboardChartStyles,
+	BillboardSettings: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettings,
+	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetBillboardChartStyles,
 	Colors: interface{},
 	Critical: *string,
 	DataFormat: interface{},
 	FacetShowOtherSeries: interface{},
 	Height: *f64,
 	IgnoreTimeRange: interface{},
-	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting,
+	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting,
 	LegendEnabled: interface{},
 	NullValues: interface{},
 	RefreshRate: *string,
@@ -3527,12 +3527,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardBillboardSettings {
-	GridOptions: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsGridOptions,
-	Link: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsLink,
-	Visual: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsVisual,
+	GridOptions: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsGridOptions,
+	Link: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsLink,
+	Visual: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsVisual,
 }
 ```
 
@@ -3593,7 +3593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsGridOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardBillboardSettingsGridOptions {
 	Columns: *f64,
@@ -3659,7 +3659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardBillboardSettingsLink {
 	NewTab: interface{},
@@ -3725,7 +3725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsVisual.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardBillboardSettingsVisual {
 	Alignment: *string,
@@ -3775,10 +3775,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardChartStyles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardChartStyles {
-	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetBillboardChartStylesGradient,
+	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetBillboardChartStylesGradient,
 	LineInterpolation: *string,
 }
 ```
@@ -3825,7 +3825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardChartStylesGradient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardChartStylesGradient {
 	Enabled: interface{},
@@ -3859,7 +3859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardColors {
 	Color: *string,
@@ -3907,7 +3907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardColorsSeriesOverrides {
 	Color: *string,
@@ -3957,7 +3957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardDataFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardDataFormat {
 	Name: *string,
@@ -4039,7 +4039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardInitialSorting {
 	Direction: *string,
@@ -4089,7 +4089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardNrqlQuery {
 	Query: *string,
@@ -4141,7 +4141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardNullValues {
 	NullValue: *string,
@@ -4189,7 +4189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverrides {
 	NullValue: *string,
@@ -4239,7 +4239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardUnits {
 	SeriesOverrides: interface{},
@@ -4287,7 +4287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverrides {
 	SeriesName: *string,
@@ -4337,7 +4337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBullet {
 	Column: *f64,
@@ -4345,13 +4345,13 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard
 	NrqlQuery: interface{},
 	Row: *f64,
 	Title: *string,
-	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetBulletChartStyles,
+	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetBulletChartStyles,
 	Colors: interface{},
 	DataFormat: interface{},
 	FacetShowOtherSeries: interface{},
 	Height: *f64,
 	IgnoreTimeRange: interface{},
-	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetBulletInitialSorting,
+	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetBulletInitialSorting,
 	LegendEnabled: interface{},
 	NullValues: interface{},
 	RefreshRate: *string,
@@ -4639,10 +4639,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletChartStyles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBulletChartStyles {
-	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetBulletChartStylesGradient,
+	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetBulletChartStylesGradient,
 	LineInterpolation: *string,
 }
 ```
@@ -4689,7 +4689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletChartStylesGradient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBulletChartStylesGradient {
 	Enabled: interface{},
@@ -4723,7 +4723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBulletColors {
 	Color: *string,
@@ -4771,7 +4771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBulletColorsSeriesOverrides {
 	Color: *string,
@@ -4821,7 +4821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletDataFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBulletDataFormat {
 	Name: *string,
@@ -4903,7 +4903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSorting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBulletInitialSorting {
 	Direction: *string,
@@ -4953,7 +4953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBulletNrqlQuery {
 	Query: *string,
@@ -5005,7 +5005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBulletNullValues {
 	NullValue: *string,
@@ -5053,7 +5053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverrides {
 	NullValue: *string,
@@ -5103,7 +5103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBulletUnits {
 	SeriesOverrides: interface{},
@@ -5151,7 +5151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetBulletUnitsSeriesOverrides {
 	SeriesName: *string,
@@ -5201,20 +5201,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetFunnel {
 	Column: *f64,
 	NrqlQuery: interface{},
 	Row: *f64,
 	Title: *string,
-	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetFunnelChartStyles,
+	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetFunnelChartStyles,
 	Colors: interface{},
 	DataFormat: interface{},
 	FacetShowOtherSeries: interface{},
 	Height: *f64,
 	IgnoreTimeRange: interface{},
-	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting,
+	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting,
 	LegendEnabled: interface{},
 	NullValues: interface{},
 	RefreshRate: *string,
@@ -5487,10 +5487,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelChartStyles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetFunnelChartStyles {
-	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetFunnelChartStylesGradient,
+	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetFunnelChartStylesGradient,
 	LineInterpolation: *string,
 }
 ```
@@ -5537,7 +5537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelChartStylesGradient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetFunnelChartStylesGradient {
 	Enabled: interface{},
@@ -5571,7 +5571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetFunnelColors {
 	Color: *string,
@@ -5619,7 +5619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetFunnelColorsSeriesOverrides {
 	Color: *string,
@@ -5669,7 +5669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelDataFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetFunnelDataFormat {
 	Name: *string,
@@ -5751,7 +5751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetFunnelInitialSorting {
 	Direction: *string,
@@ -5801,7 +5801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetFunnelNrqlQuery {
 	Query: *string,
@@ -5853,7 +5853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetFunnelNullValues {
 	NullValue: *string,
@@ -5901,7 +5901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverrides {
 	NullValue: *string,
@@ -5951,7 +5951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetFunnelUnits {
 	SeriesOverrides: interface{},
@@ -5999,7 +5999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverrides {
 	SeriesName: *string,
@@ -6049,21 +6049,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHeatmap {
 	Column: *f64,
 	NrqlQuery: interface{},
 	Row: *f64,
 	Title: *string,
-	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetHeatmapChartStyles,
+	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetHeatmapChartStyles,
 	Colors: interface{},
 	DataFormat: interface{},
 	FacetShowOtherSeries: interface{},
 	FilterCurrentDashboard: interface{},
 	Height: *f64,
 	IgnoreTimeRange: interface{},
-	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting,
+	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting,
 	LegendEnabled: interface{},
 	LinkedEntityGuids: *[]*string,
 	NullValues: interface{},
@@ -6367,10 +6367,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapChartStyles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHeatmapChartStyles {
-	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetHeatmapChartStylesGradient,
+	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetHeatmapChartStylesGradient,
 	LineInterpolation: *string,
 }
 ```
@@ -6417,7 +6417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapChartStylesGradient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHeatmapChartStylesGradient {
 	Enabled: interface{},
@@ -6451,7 +6451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHeatmapColors {
 	Color: *string,
@@ -6499,7 +6499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverrides {
 	Color: *string,
@@ -6549,7 +6549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapDataFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHeatmapDataFormat {
 	Name: *string,
@@ -6631,7 +6631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHeatmapInitialSorting {
 	Direction: *string,
@@ -6681,7 +6681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHeatmapNrqlQuery {
 	Query: *string,
@@ -6733,7 +6733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHeatmapNullValues {
 	NullValue: *string,
@@ -6781,7 +6781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides {
 	NullValue: *string,
@@ -6831,7 +6831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHeatmapUnits {
 	SeriesOverrides: interface{},
@@ -6879,7 +6879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverrides {
 	SeriesName: *string,
@@ -6929,20 +6929,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHistogram {
 	Column: *f64,
 	NrqlQuery: interface{},
 	Row: *f64,
 	Title: *string,
-	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetHistogramChartStyles,
+	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetHistogramChartStyles,
 	Colors: interface{},
 	DataFormat: interface{},
 	FacetShowOtherSeries: interface{},
 	Height: *f64,
 	IgnoreTimeRange: interface{},
-	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting,
+	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting,
 	LegendEnabled: interface{},
 	NullValues: interface{},
 	RefreshRate: *string,
@@ -7215,10 +7215,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramChartStyles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHistogramChartStyles {
-	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetHistogramChartStylesGradient,
+	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetHistogramChartStylesGradient,
 	LineInterpolation: *string,
 }
 ```
@@ -7265,7 +7265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramChartStylesGradient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHistogramChartStylesGradient {
 	Enabled: interface{},
@@ -7299,7 +7299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHistogramColors {
 	Color: *string,
@@ -7347,7 +7347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHistogramColorsSeriesOverrides {
 	Color: *string,
@@ -7397,7 +7397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramDataFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHistogramDataFormat {
 	Name: *string,
@@ -7479,7 +7479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHistogramInitialSorting {
 	Direction: *string,
@@ -7529,7 +7529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHistogramNrqlQuery {
 	Query: *string,
@@ -7581,7 +7581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHistogramNullValues {
 	NullValue: *string,
@@ -7629,7 +7629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverrides {
 	NullValue: *string,
@@ -7679,7 +7679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHistogramUnits {
 	SeriesOverrides: interface{},
@@ -7727,7 +7727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverrides {
 	SeriesName: *string,
@@ -7777,20 +7777,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetJson {
 	Column: *f64,
 	NrqlQuery: interface{},
 	Row: *f64,
 	Title: *string,
-	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetJsonChartStyles,
+	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetJsonChartStyles,
 	Colors: interface{},
 	DataFormat: interface{},
 	FacetShowOtherSeries: interface{},
 	Height: *f64,
 	IgnoreTimeRange: interface{},
-	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetJsonInitialSorting,
+	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetJsonInitialSorting,
 	LegendEnabled: interface{},
 	NullValues: interface{},
 	RefreshRate: *string,
@@ -8063,10 +8063,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonChartStyles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetJsonChartStyles {
-	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetJsonChartStylesGradient,
+	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetJsonChartStylesGradient,
 	LineInterpolation: *string,
 }
 ```
@@ -8113,7 +8113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonChartStylesGradient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetJsonChartStylesGradient {
 	Enabled: interface{},
@@ -8147,7 +8147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetJsonColors {
 	Color: *string,
@@ -8195,7 +8195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetJsonColorsSeriesOverrides {
 	Color: *string,
@@ -8245,7 +8245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonDataFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetJsonDataFormat {
 	Name: *string,
@@ -8327,7 +8327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSorting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetJsonInitialSorting {
 	Direction: *string,
@@ -8377,7 +8377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetJsonNrqlQuery {
 	Query: *string,
@@ -8429,7 +8429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetJsonNullValues {
 	NullValue: *string,
@@ -8477,7 +8477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverrides {
 	NullValue: *string,
@@ -8527,7 +8527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetJsonUnits {
 	SeriesOverrides: interface{},
@@ -8575,7 +8575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetJsonUnitsSeriesOverrides {
 	SeriesName: *string,
@@ -8625,32 +8625,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLine {
 	Column: *f64,
 	NrqlQuery: interface{},
 	Row: *f64,
 	Title: *string,
-	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetLineChartStyles,
+	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetLineChartStyles,
 	Colors: interface{},
 	DataFormat: interface{},
 	FacetShowOtherSeries: interface{},
 	Height: *f64,
 	IgnoreTimeRange: interface{},
-	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetLineInitialSorting,
+	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetLineInitialSorting,
 	IsLabelVisible: interface{},
 	LegendEnabled: interface{},
 	NullValues: interface{},
 	RefreshRate: *string,
 	Threshold: interface{},
-	Tooltip: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetLineTooltip,
+	Tooltip: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetLineTooltip,
 	Units: interface{},
 	Width: *f64,
 	YAxisLeftMax: *f64,
 	YAxisLeftMin: *f64,
 	YAxisLeftZero: interface{},
-	YAxisRight: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetLineYAxisRight,
+	YAxisRight: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetLineYAxisRight,
 }
 ```
 
@@ -8991,10 +8991,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineChartStyles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLineChartStyles {
-	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetLineChartStylesGradient,
+	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetLineChartStylesGradient,
 	LineInterpolation: *string,
 }
 ```
@@ -9041,7 +9041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineChartStylesGradient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLineChartStylesGradient {
 	Enabled: interface{},
@@ -9075,7 +9075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLineColors {
 	Color: *string,
@@ -9123,7 +9123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLineColorsSeriesOverrides {
 	Color: *string,
@@ -9173,7 +9173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineDataFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLineDataFormat {
 	Name: *string,
@@ -9255,7 +9255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSorting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLineInitialSorting {
 	Direction: *string,
@@ -9305,7 +9305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLineNrqlQuery {
 	Query: *string,
@@ -9357,7 +9357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLineNullValues {
 	NullValue: *string,
@@ -9405,7 +9405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLineNullValuesSeriesOverrides {
 	NullValue: *string,
@@ -9455,7 +9455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLineThreshold {
 	From: *string,
@@ -9537,7 +9537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineTooltip.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLineTooltip {
 	Mode: *string,
@@ -9571,7 +9571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLineUnits {
 	SeriesOverrides: interface{},
@@ -9619,7 +9619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLineUnitsSeriesOverrides {
 	SeriesName: *string,
@@ -9669,7 +9669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLineYAxisRight {
 	YAxisRightMax: *f64,
@@ -9751,20 +9751,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLogTable {
 	Column: *f64,
 	NrqlQuery: interface{},
 	Row: *f64,
 	Title: *string,
-	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetLogTableChartStyles,
+	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetLogTableChartStyles,
 	Colors: interface{},
 	DataFormat: interface{},
 	FacetShowOtherSeries: interface{},
 	Height: *f64,
 	IgnoreTimeRange: interface{},
-	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting,
+	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting,
 	LegendEnabled: interface{},
 	NullValues: interface{},
 	RefreshRate: *string,
@@ -10037,10 +10037,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableChartStyles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLogTableChartStyles {
-	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetLogTableChartStylesGradient,
+	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetLogTableChartStylesGradient,
 	LineInterpolation: *string,
 }
 ```
@@ -10087,7 +10087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableChartStylesGradient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLogTableChartStylesGradient {
 	Enabled: interface{},
@@ -10121,7 +10121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLogTableColors {
 	Color: *string,
@@ -10169,7 +10169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLogTableColorsSeriesOverrides {
 	Color: *string,
@@ -10219,7 +10219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableDataFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLogTableDataFormat {
 	Name: *string,
@@ -10301,7 +10301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLogTableInitialSorting {
 	Direction: *string,
@@ -10351,7 +10351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLogTableNrqlQuery {
 	Query: *string,
@@ -10403,7 +10403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLogTableNullValues {
 	NullValue: *string,
@@ -10451,7 +10451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverrides {
 	NullValue: *string,
@@ -10501,7 +10501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLogTableUnits {
 	SeriesOverrides: interface{},
@@ -10549,7 +10549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverrides {
 	SeriesName: *string,
@@ -10599,20 +10599,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetMarkdown {
 	Column: *f64,
 	Row: *f64,
 	Text: *string,
 	Title: *string,
-	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetMarkdownChartStyles,
+	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetMarkdownChartStyles,
 	Colors: interface{},
 	DataFormat: interface{},
 	FacetShowOtherSeries: interface{},
 	Height: *f64,
 	IgnoreTimeRange: interface{},
-	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting,
+	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting,
 	LegendEnabled: interface{},
 	NullValues: interface{},
 	RefreshRate: *string,
@@ -10883,10 +10883,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownChartStyles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetMarkdownChartStyles {
-	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetMarkdownChartStylesGradient,
+	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetMarkdownChartStylesGradient,
 	LineInterpolation: *string,
 }
 ```
@@ -10933,7 +10933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownChartStylesGradient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetMarkdownChartStylesGradient {
 	Enabled: interface{},
@@ -10967,7 +10967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetMarkdownColors {
 	Color: *string,
@@ -11015,7 +11015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverrides {
 	Color: *string,
@@ -11065,7 +11065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownDataFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetMarkdownDataFormat {
 	Name: *string,
@@ -11147,7 +11147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetMarkdownInitialSorting {
 	Direction: *string,
@@ -11197,7 +11197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetMarkdownNullValues {
 	NullValue: *string,
@@ -11245,7 +11245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides {
 	NullValue: *string,
@@ -11295,7 +11295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetMarkdownUnits {
 	SeriesOverrides: interface{},
@@ -11343,7 +11343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverrides {
 	SeriesName: *string,
@@ -11393,21 +11393,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetPie {
 	Column: *f64,
 	NrqlQuery: interface{},
 	Row: *f64,
 	Title: *string,
-	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetPieChartStyles,
+	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetPieChartStyles,
 	Colors: interface{},
 	DataFormat: interface{},
 	FacetShowOtherSeries: interface{},
 	FilterCurrentDashboard: interface{},
 	Height: *f64,
 	IgnoreTimeRange: interface{},
-	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetPieInitialSorting,
+	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetPieInitialSorting,
 	LegendEnabled: interface{},
 	LinkedEntityGuids: *[]*string,
 	NullValues: interface{},
@@ -11711,10 +11711,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieChartStyles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetPieChartStyles {
-	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetPieChartStylesGradient,
+	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetPieChartStylesGradient,
 	LineInterpolation: *string,
 }
 ```
@@ -11761,7 +11761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieChartStylesGradient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetPieChartStylesGradient {
 	Enabled: interface{},
@@ -11795,7 +11795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetPieColors {
 	Color: *string,
@@ -11843,7 +11843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetPieColorsSeriesOverrides {
 	Color: *string,
@@ -11893,7 +11893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieDataFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetPieDataFormat {
 	Name: *string,
@@ -11975,7 +11975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSorting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetPieInitialSorting {
 	Direction: *string,
@@ -12025,7 +12025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetPieNrqlQuery {
 	Query: *string,
@@ -12077,7 +12077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetPieNullValues {
 	NullValue: *string,
@@ -12125,7 +12125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetPieNullValuesSeriesOverrides {
 	NullValue: *string,
@@ -12175,7 +12175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetPieUnits {
 	SeriesOverrides: interface{},
@@ -12223,7 +12223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetPieUnitsSeriesOverrides {
 	SeriesName: *string,
@@ -12273,24 +12273,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetStackedBar {
 	Column: *f64,
 	NrqlQuery: interface{},
 	Row: *f64,
 	Title: *string,
-	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetStackedBarChartStyles,
+	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetStackedBarChartStyles,
 	Colors: interface{},
 	DataFormat: interface{},
 	FacetShowOtherSeries: interface{},
 	Height: *f64,
 	IgnoreTimeRange: interface{},
-	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting,
+	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting,
 	LegendEnabled: interface{},
 	NullValues: interface{},
 	RefreshRate: *string,
-	Tooltip: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetStackedBarTooltip,
+	Tooltip: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetStackedBarTooltip,
 	Units: interface{},
 	Width: *f64,
 	YAxisLeftMax: *f64,
@@ -12575,10 +12575,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarChartStyles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetStackedBarChartStyles {
-	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetStackedBarChartStylesGradient,
+	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetStackedBarChartStylesGradient,
 	LineInterpolation: *string,
 }
 ```
@@ -12625,7 +12625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarChartStylesGradient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetStackedBarChartStylesGradient {
 	Enabled: interface{},
@@ -12659,7 +12659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetStackedBarColors {
 	Color: *string,
@@ -12707,7 +12707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverrides {
 	Color: *string,
@@ -12757,7 +12757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarDataFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetStackedBarDataFormat {
 	Name: *string,
@@ -12839,7 +12839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetStackedBarInitialSorting {
 	Direction: *string,
@@ -12889,7 +12889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetStackedBarNrqlQuery {
 	Query: *string,
@@ -12941,7 +12941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetStackedBarNullValues {
 	NullValue: *string,
@@ -12989,7 +12989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides {
 	NullValue: *string,
@@ -13039,7 +13039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarTooltip.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetStackedBarTooltip {
 	Mode: *string,
@@ -13073,7 +13073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetStackedBarUnits {
 	SeriesOverrides: interface{},
@@ -13121,7 +13121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverrides {
 	SeriesName: *string,
@@ -13171,21 +13171,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetTable {
 	Column: *f64,
 	NrqlQuery: interface{},
 	Row: *f64,
 	Title: *string,
-	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetTableChartStyles,
+	ChartStyles: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetTableChartStyles,
 	Colors: interface{},
 	DataFormat: interface{},
 	FacetShowOtherSeries: interface{},
 	FilterCurrentDashboard: interface{},
 	Height: *f64,
 	IgnoreTimeRange: interface{},
-	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetTableInitialSorting,
+	InitialSorting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetTableInitialSorting,
 	LegendEnabled: interface{},
 	LinkedEntityGuids: *[]*string,
 	NullValues: interface{},
@@ -13505,10 +13505,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableChartStyles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetTableChartStyles {
-	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardPageWidgetTableChartStylesGradient,
+	Gradient: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardPageWidgetTableChartStylesGradient,
 	LineInterpolation: *string,
 }
 ```
@@ -13555,7 +13555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableChartStylesGradient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetTableChartStylesGradient {
 	Enabled: interface{},
@@ -13589,7 +13589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetTableColors {
 	Color: *string,
@@ -13637,7 +13637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetTableColorsSeriesOverrides {
 	Color: *string,
@@ -13687,7 +13687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableDataFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetTableDataFormat {
 	Name: *string,
@@ -13769,7 +13769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSorting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetTableInitialSorting {
 	Direction: *string,
@@ -13819,7 +13819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetTableNrqlQuery {
 	Query: *string,
@@ -13871,7 +13871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetTableNullValues {
 	NullValue: *string,
@@ -13919,7 +13919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetTableNullValuesSeriesOverrides {
 	NullValue: *string,
@@ -13969,7 +13969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetTableThreshold {
 	ColumnName: *string,
@@ -14051,7 +14051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetTableUnits {
 	SeriesOverrides: interface{},
@@ -14099,7 +14099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardPageWidgetTableUnitsSeriesOverrides {
 	SeriesName: *string,
@@ -14149,7 +14149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardVariable {
 	Name: *string,
@@ -14159,7 +14159,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard
 	DefaultValues: *[]*string,
 	IsMultiSelection: interface{},
 	Item: interface{},
-	NrqlQuery: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15.oneDashboard.OneDashboardVariableNrqlQuery,
+	NrqlQuery: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.oneDashboard.OneDashboardVariableNrqlQuery,
 	Options: interface{},
 }
 ```
@@ -14311,7 +14311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardVariableItem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardVariableItem {
 	Value: *string,
@@ -14361,7 +14361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardVariableNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardVariableNrqlQuery {
 	Query: *string,
@@ -14411,7 +14411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardVariableOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 &onedashboard.OneDashboardVariableOptions {
 	Excluded: interface{},
@@ -14483,7 +14483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageList
 ```
@@ -14643,7 +14643,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageOutputReference
 ```
@@ -15560,7 +15560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaChartStylesGradientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaChartStylesGradientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetAreaChartStylesGradientOutputReference
 ```
@@ -15831,7 +15831,7 @@ func InternalValue() OneDashboardPageWidgetAreaChartStylesGradient
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaChartStylesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaChartStylesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetAreaChartStylesOutputReference
 ```
@@ -16151,7 +16151,7 @@ func InternalValue() OneDashboardPageWidgetAreaChartStyles
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaColorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetAreaColorsList
 ```
@@ -16311,7 +16311,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaColorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetAreaColorsOutputReference
 ```
@@ -16649,7 +16649,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaColorsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetAreaColorsSeriesOverridesList
 ```
@@ -16809,7 +16809,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaColorsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetAreaColorsSeriesOverridesOutputReference
 ```
@@ -17134,7 +17134,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaDataFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaDataFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetAreaDataFormatList
 ```
@@ -17294,7 +17294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaDataFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaDataFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetAreaDataFormatOutputReference
 ```
@@ -17663,7 +17663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaInitialSortingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetAreaInitialSortingOutputReference
 ```
@@ -17956,7 +17956,7 @@ func InternalValue() OneDashboardPageWidgetAreaInitialSorting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetAreaList
 ```
@@ -18116,7 +18116,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetAreaNrqlQueryList
 ```
@@ -18276,7 +18276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetAreaNrqlQueryOutputReference
 ```
@@ -18594,7 +18594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaNullValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetAreaNullValuesList
 ```
@@ -18754,7 +18754,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaNullValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetAreaNullValuesOutputReference
 ```
@@ -19092,7 +19092,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaNullValuesSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetAreaNullValuesSeriesOverridesList
 ```
@@ -19252,7 +19252,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaNullValuesSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetAreaNullValuesSeriesOverridesOutputReference
 ```
@@ -19577,7 +19577,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetAreaOutputReference
 ```
@@ -20482,7 +20482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaTooltipOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaTooltipOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetAreaTooltipOutputReference
 ```
@@ -20753,7 +20753,7 @@ func InternalValue() OneDashboardPageWidgetAreaTooltip
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetAreaUnitsList
 ```
@@ -20913,7 +20913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetAreaUnitsOutputReference
 ```
@@ -21251,7 +21251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaUnitsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetAreaUnitsSeriesOverridesList
 ```
@@ -21411,7 +21411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetAreaUnitsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetAreaUnitsSeriesOverridesOutputReference
 ```
@@ -21736,7 +21736,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarChartStylesGradientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarChartStylesGradientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetBarChartStylesGradientOutputReference
 ```
@@ -22007,7 +22007,7 @@ func InternalValue() OneDashboardPageWidgetBarChartStylesGradient
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarChartStylesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarChartStylesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetBarChartStylesOutputReference
 ```
@@ -22327,7 +22327,7 @@ func InternalValue() OneDashboardPageWidgetBarChartStyles
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarColorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBarColorsList
 ```
@@ -22487,7 +22487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarColorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBarColorsOutputReference
 ```
@@ -22825,7 +22825,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarColorsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBarColorsSeriesOverridesList
 ```
@@ -22985,7 +22985,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarColorsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBarColorsSeriesOverridesOutputReference
 ```
@@ -23310,7 +23310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarDataFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarDataFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBarDataFormatList
 ```
@@ -23470,7 +23470,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarDataFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarDataFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBarDataFormatOutputReference
 ```
@@ -23839,7 +23839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarInitialSortingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetBarInitialSortingOutputReference
 ```
@@ -24132,7 +24132,7 @@ func InternalValue() OneDashboardPageWidgetBarInitialSorting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBarList
 ```
@@ -24292,7 +24292,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBarNrqlQueryList
 ```
@@ -24452,7 +24452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBarNrqlQueryOutputReference
 ```
@@ -24770,7 +24770,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarNullValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBarNullValuesList
 ```
@@ -24930,7 +24930,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarNullValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBarNullValuesOutputReference
 ```
@@ -25268,7 +25268,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarNullValuesSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBarNullValuesSeriesOverridesList
 ```
@@ -25428,7 +25428,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarNullValuesSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBarNullValuesSeriesOverridesOutputReference
 ```
@@ -25753,7 +25753,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBarOutputReference
 ```
@@ -26674,7 +26674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBarUnitsList
 ```
@@ -26834,7 +26834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBarUnitsOutputReference
 ```
@@ -27172,7 +27172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarUnitsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBarUnitsSeriesOverridesList
 ```
@@ -27332,7 +27332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBarUnitsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBarUnitsSeriesOverridesOutputReference
 ```
@@ -27657,7 +27657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsGridOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardBillboardSettingsGridOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetBillboardBillboardSettingsGridOptionsOutputReference
 ```
@@ -27993,7 +27993,7 @@ func InternalValue() OneDashboardPageWidgetBillboardBillboardSettingsGridOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsLinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardBillboardSettingsLinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetBillboardBillboardSettingsLinkOutputReference
 ```
@@ -28329,7 +28329,7 @@ func InternalValue() OneDashboardPageWidgetBillboardBillboardSettingsLink
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardBillboardSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetBillboardBillboardSettingsOutputReference
 ```
@@ -28704,7 +28704,7 @@ func InternalValue() OneDashboardPageWidgetBillboardBillboardSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsVisualOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardBillboardSettingsVisualOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetBillboardBillboardSettingsVisualOutputReference
 ```
@@ -29011,7 +29011,7 @@ func InternalValue() OneDashboardPageWidgetBillboardBillboardSettingsVisual
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardChartStylesGradientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardChartStylesGradientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetBillboardChartStylesGradientOutputReference
 ```
@@ -29282,7 +29282,7 @@ func InternalValue() OneDashboardPageWidgetBillboardChartStylesGradient
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardChartStylesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardChartStylesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetBillboardChartStylesOutputReference
 ```
@@ -29602,7 +29602,7 @@ func InternalValue() OneDashboardPageWidgetBillboardChartStyles
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardColorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBillboardColorsList
 ```
@@ -29762,7 +29762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardColorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBillboardColorsOutputReference
 ```
@@ -30100,7 +30100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardColorsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBillboardColorsSeriesOverridesList
 ```
@@ -30260,7 +30260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardColorsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBillboardColorsSeriesOverridesOutputReference
 ```
@@ -30585,7 +30585,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardDataFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardDataFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBillboardDataFormatList
 ```
@@ -30745,7 +30745,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardDataFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardDataFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBillboardDataFormatOutputReference
 ```
@@ -31114,7 +31114,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardInitialSortingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetBillboardInitialSortingOutputReference
 ```
@@ -31407,7 +31407,7 @@ func InternalValue() OneDashboardPageWidgetBillboardInitialSorting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBillboardList
 ```
@@ -31567,7 +31567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBillboardNrqlQueryList
 ```
@@ -31727,7 +31727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBillboardNrqlQueryOutputReference
 ```
@@ -32045,7 +32045,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardNullValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBillboardNullValuesList
 ```
@@ -32205,7 +32205,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardNullValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBillboardNullValuesOutputReference
 ```
@@ -32543,7 +32543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardNullValuesSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBillboardNullValuesSeriesOverridesList
 ```
@@ -32703,7 +32703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardNullValuesSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBillboardNullValuesSeriesOverridesOutputReference
 ```
@@ -33028,7 +33028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBillboardOutputReference
 ```
@@ -33991,7 +33991,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBillboardUnitsList
 ```
@@ -34151,7 +34151,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBillboardUnitsOutputReference
 ```
@@ -34489,7 +34489,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardUnitsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBillboardUnitsSeriesOverridesList
 ```
@@ -34649,7 +34649,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBillboardUnitsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBillboardUnitsSeriesOverridesOutputReference
 ```
@@ -34974,7 +34974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletChartStylesGradientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletChartStylesGradientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetBulletChartStylesGradientOutputReference
 ```
@@ -35245,7 +35245,7 @@ func InternalValue() OneDashboardPageWidgetBulletChartStylesGradient
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletChartStylesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletChartStylesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetBulletChartStylesOutputReference
 ```
@@ -35565,7 +35565,7 @@ func InternalValue() OneDashboardPageWidgetBulletChartStyles
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletColorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBulletColorsList
 ```
@@ -35725,7 +35725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletColorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBulletColorsOutputReference
 ```
@@ -36063,7 +36063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletColorsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBulletColorsSeriesOverridesList
 ```
@@ -36223,7 +36223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletColorsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBulletColorsSeriesOverridesOutputReference
 ```
@@ -36548,7 +36548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletDataFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletDataFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBulletDataFormatList
 ```
@@ -36708,7 +36708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletDataFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletDataFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBulletDataFormatOutputReference
 ```
@@ -37077,7 +37077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletInitialSortingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetBulletInitialSortingOutputReference
 ```
@@ -37370,7 +37370,7 @@ func InternalValue() OneDashboardPageWidgetBulletInitialSorting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBulletList
 ```
@@ -37530,7 +37530,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBulletNrqlQueryList
 ```
@@ -37690,7 +37690,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBulletNrqlQueryOutputReference
 ```
@@ -38008,7 +38008,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletNullValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBulletNullValuesList
 ```
@@ -38168,7 +38168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletNullValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBulletNullValuesOutputReference
 ```
@@ -38506,7 +38506,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletNullValuesSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBulletNullValuesSeriesOverridesList
 ```
@@ -38666,7 +38666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletNullValuesSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBulletNullValuesSeriesOverridesOutputReference
 ```
@@ -38991,7 +38991,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBulletOutputReference
 ```
@@ -39876,7 +39876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBulletUnitsList
 ```
@@ -40036,7 +40036,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBulletUnitsOutputReference
 ```
@@ -40374,7 +40374,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletUnitsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBulletUnitsSeriesOverridesList
 ```
@@ -40534,7 +40534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetBulletUnitsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetBulletUnitsSeriesOverridesOutputReference
 ```
@@ -40859,7 +40859,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelChartStylesGradientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelChartStylesGradientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetFunnelChartStylesGradientOutputReference
 ```
@@ -41130,7 +41130,7 @@ func InternalValue() OneDashboardPageWidgetFunnelChartStylesGradient
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelChartStylesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelChartStylesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetFunnelChartStylesOutputReference
 ```
@@ -41450,7 +41450,7 @@ func InternalValue() OneDashboardPageWidgetFunnelChartStyles
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelColorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetFunnelColorsList
 ```
@@ -41610,7 +41610,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelColorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetFunnelColorsOutputReference
 ```
@@ -41948,7 +41948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelColorsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetFunnelColorsSeriesOverridesList
 ```
@@ -42108,7 +42108,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelColorsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetFunnelColorsSeriesOverridesOutputReference
 ```
@@ -42433,7 +42433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelDataFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelDataFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetFunnelDataFormatList
 ```
@@ -42593,7 +42593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelDataFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelDataFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetFunnelDataFormatOutputReference
 ```
@@ -42962,7 +42962,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelInitialSortingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetFunnelInitialSortingOutputReference
 ```
@@ -43255,7 +43255,7 @@ func InternalValue() OneDashboardPageWidgetFunnelInitialSorting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetFunnelList
 ```
@@ -43415,7 +43415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetFunnelNrqlQueryList
 ```
@@ -43575,7 +43575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetFunnelNrqlQueryOutputReference
 ```
@@ -43893,7 +43893,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelNullValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetFunnelNullValuesList
 ```
@@ -44053,7 +44053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelNullValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetFunnelNullValuesOutputReference
 ```
@@ -44391,7 +44391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelNullValuesSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetFunnelNullValuesSeriesOverridesList
 ```
@@ -44551,7 +44551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputReference
 ```
@@ -44876,7 +44876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetFunnelOutputReference
 ```
@@ -45739,7 +45739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetFunnelUnitsList
 ```
@@ -45899,7 +45899,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetFunnelUnitsOutputReference
 ```
@@ -46237,7 +46237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelUnitsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetFunnelUnitsSeriesOverridesList
 ```
@@ -46397,7 +46397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetFunnelUnitsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetFunnelUnitsSeriesOverridesOutputReference
 ```
@@ -46722,7 +46722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapChartStylesGradientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapChartStylesGradientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetHeatmapChartStylesGradientOutputReference
 ```
@@ -46993,7 +46993,7 @@ func InternalValue() OneDashboardPageWidgetHeatmapChartStylesGradient
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapChartStylesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapChartStylesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetHeatmapChartStylesOutputReference
 ```
@@ -47313,7 +47313,7 @@ func InternalValue() OneDashboardPageWidgetHeatmapChartStyles
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapColorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHeatmapColorsList
 ```
@@ -47473,7 +47473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapColorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHeatmapColorsOutputReference
 ```
@@ -47811,7 +47811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapColorsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHeatmapColorsSeriesOverridesList
 ```
@@ -47971,7 +47971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapColorsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHeatmapColorsSeriesOverridesOutputReference
 ```
@@ -48296,7 +48296,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapDataFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapDataFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHeatmapDataFormatList
 ```
@@ -48456,7 +48456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapDataFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapDataFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHeatmapDataFormatOutputReference
 ```
@@ -48825,7 +48825,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapInitialSortingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetHeatmapInitialSortingOutputReference
 ```
@@ -49118,7 +49118,7 @@ func InternalValue() OneDashboardPageWidgetHeatmapInitialSorting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHeatmapList
 ```
@@ -49278,7 +49278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHeatmapNrqlQueryList
 ```
@@ -49438,7 +49438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHeatmapNrqlQueryOutputReference
 ```
@@ -49756,7 +49756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapNullValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHeatmapNullValuesList
 ```
@@ -49916,7 +49916,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapNullValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHeatmapNullValuesOutputReference
 ```
@@ -50254,7 +50254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapNullValuesSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHeatmapNullValuesSeriesOverridesList
 ```
@@ -50414,7 +50414,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapNullValuesSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHeatmapNullValuesSeriesOverridesOutputReference
 ```
@@ -50739,7 +50739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHeatmapOutputReference
 ```
@@ -51660,7 +51660,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHeatmapUnitsList
 ```
@@ -51820,7 +51820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHeatmapUnitsOutputReference
 ```
@@ -52158,7 +52158,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapUnitsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHeatmapUnitsSeriesOverridesList
 ```
@@ -52318,7 +52318,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHeatmapUnitsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHeatmapUnitsSeriesOverridesOutputReference
 ```
@@ -52643,7 +52643,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramChartStylesGradientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramChartStylesGradientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetHistogramChartStylesGradientOutputReference
 ```
@@ -52914,7 +52914,7 @@ func InternalValue() OneDashboardPageWidgetHistogramChartStylesGradient
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramChartStylesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramChartStylesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetHistogramChartStylesOutputReference
 ```
@@ -53234,7 +53234,7 @@ func InternalValue() OneDashboardPageWidgetHistogramChartStyles
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramColorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHistogramColorsList
 ```
@@ -53394,7 +53394,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramColorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHistogramColorsOutputReference
 ```
@@ -53732,7 +53732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramColorsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHistogramColorsSeriesOverridesList
 ```
@@ -53892,7 +53892,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramColorsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHistogramColorsSeriesOverridesOutputReference
 ```
@@ -54217,7 +54217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramDataFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramDataFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHistogramDataFormatList
 ```
@@ -54377,7 +54377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramDataFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramDataFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHistogramDataFormatOutputReference
 ```
@@ -54746,7 +54746,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramInitialSortingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetHistogramInitialSortingOutputReference
 ```
@@ -55039,7 +55039,7 @@ func InternalValue() OneDashboardPageWidgetHistogramInitialSorting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHistogramList
 ```
@@ -55199,7 +55199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHistogramNrqlQueryList
 ```
@@ -55359,7 +55359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHistogramNrqlQueryOutputReference
 ```
@@ -55677,7 +55677,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramNullValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHistogramNullValuesList
 ```
@@ -55837,7 +55837,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramNullValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHistogramNullValuesOutputReference
 ```
@@ -56175,7 +56175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramNullValuesSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHistogramNullValuesSeriesOverridesList
 ```
@@ -56335,7 +56335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramNullValuesSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHistogramNullValuesSeriesOverridesOutputReference
 ```
@@ -56660,7 +56660,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHistogramOutputReference
 ```
@@ -57523,7 +57523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHistogramUnitsList
 ```
@@ -57683,7 +57683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHistogramUnitsOutputReference
 ```
@@ -58021,7 +58021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramUnitsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHistogramUnitsSeriesOverridesList
 ```
@@ -58181,7 +58181,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetHistogramUnitsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHistogramUnitsSeriesOverridesOutputReference
 ```
@@ -58506,7 +58506,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonChartStylesGradientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonChartStylesGradientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetJsonChartStylesGradientOutputReference
 ```
@@ -58777,7 +58777,7 @@ func InternalValue() OneDashboardPageWidgetJsonChartStylesGradient
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonChartStylesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonChartStylesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetJsonChartStylesOutputReference
 ```
@@ -59097,7 +59097,7 @@ func InternalValue() OneDashboardPageWidgetJsonChartStyles
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonColorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetJsonColorsList
 ```
@@ -59257,7 +59257,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonColorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetJsonColorsOutputReference
 ```
@@ -59595,7 +59595,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonColorsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetJsonColorsSeriesOverridesList
 ```
@@ -59755,7 +59755,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonColorsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetJsonColorsSeriesOverridesOutputReference
 ```
@@ -60080,7 +60080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonDataFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonDataFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetJsonDataFormatList
 ```
@@ -60240,7 +60240,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonDataFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonDataFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetJsonDataFormatOutputReference
 ```
@@ -60609,7 +60609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonInitialSortingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetJsonInitialSortingOutputReference
 ```
@@ -60902,7 +60902,7 @@ func InternalValue() OneDashboardPageWidgetJsonInitialSorting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetJsonList
 ```
@@ -61062,7 +61062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetJsonNrqlQueryList
 ```
@@ -61222,7 +61222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetJsonNrqlQueryOutputReference
 ```
@@ -61540,7 +61540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonNullValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetJsonNullValuesList
 ```
@@ -61700,7 +61700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonNullValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetJsonNullValuesOutputReference
 ```
@@ -62038,7 +62038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonNullValuesSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetJsonNullValuesSeriesOverridesList
 ```
@@ -62198,7 +62198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonNullValuesSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetJsonNullValuesSeriesOverridesOutputReference
 ```
@@ -62523,7 +62523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetJsonOutputReference
 ```
@@ -63386,7 +63386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetJsonUnitsList
 ```
@@ -63546,7 +63546,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetJsonUnitsOutputReference
 ```
@@ -63884,7 +63884,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonUnitsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetJsonUnitsSeriesOverridesList
 ```
@@ -64044,7 +64044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetJsonUnitsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetJsonUnitsSeriesOverridesOutputReference
 ```
@@ -64369,7 +64369,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineChartStylesGradientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineChartStylesGradientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetLineChartStylesGradientOutputReference
 ```
@@ -64640,7 +64640,7 @@ func InternalValue() OneDashboardPageWidgetLineChartStylesGradient
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineChartStylesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineChartStylesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetLineChartStylesOutputReference
 ```
@@ -64960,7 +64960,7 @@ func InternalValue() OneDashboardPageWidgetLineChartStyles
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineColorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLineColorsList
 ```
@@ -65120,7 +65120,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineColorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLineColorsOutputReference
 ```
@@ -65458,7 +65458,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineColorsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLineColorsSeriesOverridesList
 ```
@@ -65618,7 +65618,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineColorsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLineColorsSeriesOverridesOutputReference
 ```
@@ -65943,7 +65943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineDataFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineDataFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLineDataFormatList
 ```
@@ -66103,7 +66103,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineDataFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineDataFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLineDataFormatOutputReference
 ```
@@ -66472,7 +66472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineInitialSortingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetLineInitialSortingOutputReference
 ```
@@ -66765,7 +66765,7 @@ func InternalValue() OneDashboardPageWidgetLineInitialSorting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLineList
 ```
@@ -66925,7 +66925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLineNrqlQueryList
 ```
@@ -67085,7 +67085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLineNrqlQueryOutputReference
 ```
@@ -67403,7 +67403,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineNullValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLineNullValuesList
 ```
@@ -67563,7 +67563,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineNullValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLineNullValuesOutputReference
 ```
@@ -67901,7 +67901,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineNullValuesSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLineNullValuesSeriesOverridesList
 ```
@@ -68061,7 +68061,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineNullValuesSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLineNullValuesSeriesOverridesOutputReference
 ```
@@ -68386,7 +68386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLineOutputReference
 ```
@@ -69433,7 +69433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineThresholdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLineThresholdList
 ```
@@ -69593,7 +69593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLineThresholdOutputReference
 ```
@@ -69976,7 +69976,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineTooltipOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineTooltipOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetLineTooltipOutputReference
 ```
@@ -70247,7 +70247,7 @@ func InternalValue() OneDashboardPageWidgetLineTooltip
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLineUnitsList
 ```
@@ -70407,7 +70407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLineUnitsOutputReference
 ```
@@ -70745,7 +70745,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineUnitsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLineUnitsSeriesOverridesList
 ```
@@ -70905,7 +70905,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineUnitsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLineUnitsSeriesOverridesOutputReference
 ```
@@ -71230,7 +71230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLineYAxisRightOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetLineYAxisRightOutputReference
 ```
@@ -71595,7 +71595,7 @@ func InternalValue() OneDashboardPageWidgetLineYAxisRight
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableChartStylesGradientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableChartStylesGradientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetLogTableChartStylesGradientOutputReference
 ```
@@ -71866,7 +71866,7 @@ func InternalValue() OneDashboardPageWidgetLogTableChartStylesGradient
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableChartStylesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableChartStylesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetLogTableChartStylesOutputReference
 ```
@@ -72186,7 +72186,7 @@ func InternalValue() OneDashboardPageWidgetLogTableChartStyles
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableColorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLogTableColorsList
 ```
@@ -72346,7 +72346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableColorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLogTableColorsOutputReference
 ```
@@ -72684,7 +72684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableColorsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLogTableColorsSeriesOverridesList
 ```
@@ -72844,7 +72844,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableColorsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLogTableColorsSeriesOverridesOutputReference
 ```
@@ -73169,7 +73169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableDataFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableDataFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLogTableDataFormatList
 ```
@@ -73329,7 +73329,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableDataFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableDataFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLogTableDataFormatOutputReference
 ```
@@ -73698,7 +73698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableInitialSortingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetLogTableInitialSortingOutputReference
 ```
@@ -73991,7 +73991,7 @@ func InternalValue() OneDashboardPageWidgetLogTableInitialSorting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLogTableList
 ```
@@ -74151,7 +74151,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLogTableNrqlQueryList
 ```
@@ -74311,7 +74311,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLogTableNrqlQueryOutputReference
 ```
@@ -74629,7 +74629,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableNullValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLogTableNullValuesList
 ```
@@ -74789,7 +74789,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableNullValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLogTableNullValuesOutputReference
 ```
@@ -75127,7 +75127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableNullValuesSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLogTableNullValuesSeriesOverridesList
 ```
@@ -75287,7 +75287,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableNullValuesSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLogTableNullValuesSeriesOverridesOutputReference
 ```
@@ -75612,7 +75612,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLogTableOutputReference
 ```
@@ -76475,7 +76475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLogTableUnitsList
 ```
@@ -76635,7 +76635,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLogTableUnitsOutputReference
 ```
@@ -76973,7 +76973,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableUnitsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetLogTableUnitsSeriesOverridesList
 ```
@@ -77133,7 +77133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference
 ```
@@ -77458,7 +77458,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownChartStylesGradientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownChartStylesGradientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetMarkdownChartStylesGradientOutputReference
 ```
@@ -77729,7 +77729,7 @@ func InternalValue() OneDashboardPageWidgetMarkdownChartStylesGradient
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownChartStylesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownChartStylesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetMarkdownChartStylesOutputReference
 ```
@@ -78049,7 +78049,7 @@ func InternalValue() OneDashboardPageWidgetMarkdownChartStyles
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownColorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetMarkdownColorsList
 ```
@@ -78209,7 +78209,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownColorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetMarkdownColorsOutputReference
 ```
@@ -78547,7 +78547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownColorsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetMarkdownColorsSeriesOverridesList
 ```
@@ -78707,7 +78707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference
 ```
@@ -79032,7 +79032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownDataFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownDataFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetMarkdownDataFormatList
 ```
@@ -79192,7 +79192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownDataFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownDataFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetMarkdownDataFormatOutputReference
 ```
@@ -79561,7 +79561,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownInitialSortingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetMarkdownInitialSortingOutputReference
 ```
@@ -79854,7 +79854,7 @@ func InternalValue() OneDashboardPageWidgetMarkdownInitialSorting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetMarkdownList
 ```
@@ -80014,7 +80014,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownNullValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetMarkdownNullValuesList
 ```
@@ -80174,7 +80174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownNullValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetMarkdownNullValuesOutputReference
 ```
@@ -80512,7 +80512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownNullValuesSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesList
 ```
@@ -80672,7 +80672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputReference
 ```
@@ -80997,7 +80997,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetMarkdownOutputReference
 ```
@@ -81847,7 +81847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetMarkdownUnitsList
 ```
@@ -82007,7 +82007,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetMarkdownUnitsOutputReference
 ```
@@ -82345,7 +82345,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownUnitsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetMarkdownUnitsSeriesOverridesList
 ```
@@ -82505,7 +82505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference
 ```
@@ -82830,7 +82830,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieChartStylesGradientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieChartStylesGradientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetPieChartStylesGradientOutputReference
 ```
@@ -83101,7 +83101,7 @@ func InternalValue() OneDashboardPageWidgetPieChartStylesGradient
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieChartStylesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieChartStylesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetPieChartStylesOutputReference
 ```
@@ -83421,7 +83421,7 @@ func InternalValue() OneDashboardPageWidgetPieChartStyles
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieColorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetPieColorsList
 ```
@@ -83581,7 +83581,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieColorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetPieColorsOutputReference
 ```
@@ -83919,7 +83919,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieColorsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetPieColorsSeriesOverridesList
 ```
@@ -84079,7 +84079,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieColorsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetPieColorsSeriesOverridesOutputReference
 ```
@@ -84404,7 +84404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieDataFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieDataFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetPieDataFormatList
 ```
@@ -84564,7 +84564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieDataFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieDataFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetPieDataFormatOutputReference
 ```
@@ -84933,7 +84933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieInitialSortingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetPieInitialSortingOutputReference
 ```
@@ -85226,7 +85226,7 @@ func InternalValue() OneDashboardPageWidgetPieInitialSorting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetPieList
 ```
@@ -85386,7 +85386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetPieNrqlQueryList
 ```
@@ -85546,7 +85546,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetPieNrqlQueryOutputReference
 ```
@@ -85864,7 +85864,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieNullValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetPieNullValuesList
 ```
@@ -86024,7 +86024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieNullValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetPieNullValuesOutputReference
 ```
@@ -86362,7 +86362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieNullValuesSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetPieNullValuesSeriesOverridesList
 ```
@@ -86522,7 +86522,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference
 ```
@@ -86847,7 +86847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetPieOutputReference
 ```
@@ -87768,7 +87768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetPieUnitsList
 ```
@@ -87928,7 +87928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetPieUnitsOutputReference
 ```
@@ -88266,7 +88266,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieUnitsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetPieUnitsSeriesOverridesList
 ```
@@ -88426,7 +88426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference
 ```
@@ -88751,7 +88751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarChartStylesGradientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarChartStylesGradientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetStackedBarChartStylesGradientOutputReference
 ```
@@ -89022,7 +89022,7 @@ func InternalValue() OneDashboardPageWidgetStackedBarChartStylesGradient
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarChartStylesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarChartStylesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetStackedBarChartStylesOutputReference
 ```
@@ -89342,7 +89342,7 @@ func InternalValue() OneDashboardPageWidgetStackedBarChartStyles
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarColorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetStackedBarColorsList
 ```
@@ -89502,7 +89502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarColorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetStackedBarColorsOutputReference
 ```
@@ -89840,7 +89840,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarColorsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetStackedBarColorsSeriesOverridesList
 ```
@@ -90000,7 +90000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReference
 ```
@@ -90325,7 +90325,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarDataFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarDataFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetStackedBarDataFormatList
 ```
@@ -90485,7 +90485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarDataFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarDataFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetStackedBarDataFormatOutputReference
 ```
@@ -90854,7 +90854,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarInitialSortingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetStackedBarInitialSortingOutputReference
 ```
@@ -91147,7 +91147,7 @@ func InternalValue() OneDashboardPageWidgetStackedBarInitialSorting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetStackedBarList
 ```
@@ -91307,7 +91307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetStackedBarNrqlQueryList
 ```
@@ -91467,7 +91467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetStackedBarNrqlQueryOutputReference
 ```
@@ -91785,7 +91785,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarNullValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetStackedBarNullValuesList
 ```
@@ -91945,7 +91945,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarNullValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetStackedBarNullValuesOutputReference
 ```
@@ -92283,7 +92283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarNullValuesSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesList
 ```
@@ -92443,7 +92443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputReference
 ```
@@ -92768,7 +92768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetStackedBarOutputReference
 ```
@@ -93673,7 +93673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarTooltipOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarTooltipOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetStackedBarTooltipOutputReference
 ```
@@ -93944,7 +93944,7 @@ func InternalValue() OneDashboardPageWidgetStackedBarTooltip
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetStackedBarUnitsList
 ```
@@ -94104,7 +94104,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetStackedBarUnitsOutputReference
 ```
@@ -94442,7 +94442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarUnitsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetStackedBarUnitsSeriesOverridesList
 ```
@@ -94602,7 +94602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetStackedBarUnitsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetStackedBarUnitsSeriesOverridesOutputReference
 ```
@@ -94927,7 +94927,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableChartStylesGradientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableChartStylesGradientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetTableChartStylesGradientOutputReference
 ```
@@ -95198,7 +95198,7 @@ func InternalValue() OneDashboardPageWidgetTableChartStylesGradient
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableChartStylesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableChartStylesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetTableChartStylesOutputReference
 ```
@@ -95518,7 +95518,7 @@ func InternalValue() OneDashboardPageWidgetTableChartStyles
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableColorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetTableColorsList
 ```
@@ -95678,7 +95678,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableColorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetTableColorsOutputReference
 ```
@@ -96016,7 +96016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableColorsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetTableColorsSeriesOverridesList
 ```
@@ -96176,7 +96176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableColorsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetTableColorsSeriesOverridesOutputReference
 ```
@@ -96501,7 +96501,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableDataFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableDataFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetTableDataFormatList
 ```
@@ -96661,7 +96661,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableDataFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableDataFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetTableDataFormatOutputReference
 ```
@@ -97030,7 +97030,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableInitialSortingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardPageWidgetTableInitialSortingOutputReference
 ```
@@ -97323,7 +97323,7 @@ func InternalValue() OneDashboardPageWidgetTableInitialSorting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetTableList
 ```
@@ -97483,7 +97483,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetTableNrqlQueryList
 ```
@@ -97643,7 +97643,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetTableNrqlQueryOutputReference
 ```
@@ -97961,7 +97961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableNullValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetTableNullValuesList
 ```
@@ -98121,7 +98121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableNullValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetTableNullValuesOutputReference
 ```
@@ -98459,7 +98459,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableNullValuesSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetTableNullValuesSeriesOverridesList
 ```
@@ -98619,7 +98619,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableNullValuesSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetTableNullValuesSeriesOverridesOutputReference
 ```
@@ -98944,7 +98944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetTableOutputReference
 ```
@@ -99907,7 +99907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableThresholdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetTableThresholdList
 ```
@@ -100067,7 +100067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetTableThresholdOutputReference
 ```
@@ -100450,7 +100450,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetTableUnitsList
 ```
@@ -100610,7 +100610,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetTableUnitsOutputReference
 ```
@@ -100948,7 +100948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableUnitsSeriesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetTableUnitsSeriesOverridesList
 ```
@@ -101108,7 +101108,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardPageWidgetTableUnitsSeriesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardPageWidgetTableUnitsSeriesOverridesOutputReference
 ```
@@ -101433,7 +101433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardVariableItemList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardVariableItemList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardVariableItemList
 ```
@@ -101593,7 +101593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardVariableItemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardVariableItemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardVariableItemOutputReference
 ```
@@ -101911,7 +101911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardVariableList
 ```
@@ -102071,7 +102071,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardVariableNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardVariableNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OneDashboardVariableNrqlQueryOutputReference
 ```
@@ -102371,7 +102371,7 @@ func InternalValue() OneDashboardVariableNrqlQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardVariableOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardVariableOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardVariableOptionsList
 ```
@@ -102531,7 +102531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardVariableOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardVariableOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardVariableOptionsOutputReference
 ```
@@ -102885,7 +102885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.oneDashboard.OneDashboardVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/onedashboard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/onedashboard"
 
 onedashboard.NewOneDashboardVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardVariableOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.group.Group.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/group"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/group"
 
 group.NewGroup(scope Construct, id *string, config GroupConfig) Group
 ```
@@ -414,7 +414,7 @@ func ResetUserIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.group.Group.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/group"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/group"
 
 group.Group_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.group.Group.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/group"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/group"
 
 group.Group_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ group.Group_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.group.Group.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/group"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/group"
 
 group.Group_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ group.Group_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.group.Group.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/group"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/group"
 
 group.Group_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.group.GroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/group"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/group"
 
 &group.GroupConfig {
 	Connection: interface{},
