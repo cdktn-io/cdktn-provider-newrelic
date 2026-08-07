@@ -4,7 +4,7 @@
 
 ### PipelineCloudRule <a name="PipelineCloudRule" id="@cdktn/provider-newrelic.pipelineCloudRule.PipelineCloudRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/pipeline_cloud_rule newrelic_pipeline_cloud_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/pipeline_cloud_rule newrelic_pipeline_cloud_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pipelineCloudRule.PipelineCloudRule.Initializer"></a>
 
@@ -339,7 +339,7 @@ private void MoveFromId(string Id)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-newrelic.pipelineCloudRule.PipelineCloudRule.moveFromId.parameter.id"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the PipelineCloudRule to impor
 
 The id of the existing PipelineCloudRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/pipeline_cloud_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/pipeline_cloud_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ new PipelineCloudRuleConfig {
 | <code><a href="#@cdktn/provider-newrelic.pipelineCloudRule.PipelineCloudRuleConfig.property.nrql">Nrql</a></code> | <code>string</code> | The NRQL query that defines which data will be processed by this pipeline cloud rule. |
 | <code><a href="#@cdktn/provider-newrelic.pipelineCloudRule.PipelineCloudRuleConfig.property.accountId">AccountId</a></code> | <code>double</code> | The account ID where the Pipeline Cloud rule will be created. |
 | <code><a href="#@cdktn/provider-newrelic.pipelineCloudRule.PipelineCloudRuleConfig.property.description">Description</a></code> | <code>string</code> | Provides additional information about the rule. |
-| <code><a href="#@cdktn/provider-newrelic.pipelineCloudRule.PipelineCloudRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/pipeline_cloud_rule#id PipelineCloudRule#id}. |
+| <code><a href="#@cdktn/provider-newrelic.pipelineCloudRule.PipelineCloudRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/pipeline_cloud_rule#id PipelineCloudRule#id}. |
 
 ---
 
@@ -937,7 +937,7 @@ public string Name { get; set; }
 
 The name of the rule. This must be unique within an account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/pipeline_cloud_rule#name PipelineCloudRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/pipeline_cloud_rule#name PipelineCloudRule#name}
 
 ---
 
@@ -951,7 +951,7 @@ public string Nrql { get; set; }
 
 The NRQL query that defines which data will be processed by this pipeline cloud rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/pipeline_cloud_rule#nrql PipelineCloudRule#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/pipeline_cloud_rule#nrql PipelineCloudRule#nrql}
 
 ---
 
@@ -965,7 +965,7 @@ public double AccountId { get; set; }
 
 The account ID where the Pipeline Cloud rule will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/pipeline_cloud_rule#account_id PipelineCloudRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/pipeline_cloud_rule#account_id PipelineCloudRule#account_id}
 
 ---
 
@@ -979,7 +979,7 @@ public string Description { get; set; }
 
 Provides additional information about the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/pipeline_cloud_rule#description PipelineCloudRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/pipeline_cloud_rule#description PipelineCloudRule#description}
 
 ---
 
@@ -991,7 +991,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/pipeline_cloud_rule#id PipelineCloudRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/pipeline_cloud_rule#id PipelineCloudRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
