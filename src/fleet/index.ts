@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet
+// https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/fleet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface FleetConfig extends cdktn.TerraformMetaArguments {
   /**
   * The description of the fleet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet#description Fleet#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/fleet#description Fleet#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet#id Fleet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/fleet#id Fleet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +28,37 @@ export interface FleetConfig extends cdktn.TerraformMetaArguments {
   /**
   * The type of entities this fleet will manage. Allowed values: HOST, KUBERNETESCLUSTER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet#managed_entity_type Fleet#managed_entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/fleet#managed_entity_type Fleet#managed_entity_type}
   */
   readonly managedEntityType: string;
   /**
   * The name of the fleet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet#name Fleet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/fleet#name Fleet#name}
   */
   readonly name: string;
   /**
   * The operating system type. Required for HOST fleets. Allowed values: LINUX, WINDOWS. Must not be set for KUBERNETESCLUSTER fleets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet#operating_system Fleet#operating_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/fleet#operating_system Fleet#operating_system}
   */
   readonly operatingSystem?: string;
   /**
   * The organization ID. If not provided, it will be auto-fetched from the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet#organization_id Fleet#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/fleet#organization_id Fleet#organization_id}
   */
   readonly organizationId?: string;
   /**
   * Tags for the fleet in format 'key:value1,value2'. Each tag can have multiple values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet#tags Fleet#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/fleet#tags Fleet#tags}
   */
   readonly tags?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet newrelic_fleet}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/fleet newrelic_fleet}
 */
 export class Fleet extends cdktn.TerraformResource {
 
@@ -74,7 +74,7 @@ export class Fleet extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Fleet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Fleet to import
-  * @param importFromId The id of the existing Fleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Fleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/fleet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Fleet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -86,7 +86,7 @@ export class Fleet extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.0/docs/resources/fleet newrelic_fleet} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/fleet newrelic_fleet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class Fleet extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_fleet',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.96.0',
+        providerVersion: '3.96.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
