@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicfleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicfleetmembers"
 
 datanewrelicfleetmembers.NewDataNewrelicFleetMembers(scope Construct, id *string, config DataNewrelicFleetMembersConfig) DataNewrelicFleetMembers
 ```
@@ -312,7 +312,7 @@ func ResetRing()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembers.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicfleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicfleetmembers"
 
 datanewrelicfleetmembers.DataNewrelicFleetMembers_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicfleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicfleetmembers"
 
 datanewrelicfleetmembers.DataNewrelicFleetMembers_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datanewrelicfleetmembers.DataNewrelicFleetMembers_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicfleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicfleetmembers"
 
 datanewrelicfleetmembers.DataNewrelicFleetMembers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datanewrelicfleetmembers.DataNewrelicFleetMembers_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicfleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicfleetmembers"
 
 datanewrelicfleetmembers.DataNewrelicFleetMembers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicfleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicfleetmembers"
 
 &datanewrelicfleetmembers.DataNewrelicFleetMembersConfig {
 	Connection: interface{},
@@ -807,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembersMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicfleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicfleetmembers"
 
 &datanewrelicfleetmembers.DataNewrelicFleetMembersMembers {
 
@@ -822,7 +822,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelic
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembersMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicfleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicfleetmembers"
 
 datanewrelicfleetmembers.NewDataNewrelicFleetMembersMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNewrelicFleetMembersMembersList
 ```
@@ -971,7 +971,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicFleetMembers.DataNewrelicFleetMembersMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/datanewrelicfleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicfleetmembers"
 
 datanewrelicfleetmembers.NewDataNewrelicFleetMembersMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNewrelicFleetMembersMembersOutputReference
 ```

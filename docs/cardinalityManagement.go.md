@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cardinalitymanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cardinalitymanagement"
 
 cardinalitymanagement.NewCardinalityManagement(scope Construct, id *string, config CardinalityManagementConfig) CardinalityManagement
 ```
@@ -434,7 +434,7 @@ func ResetMetric()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagement.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cardinalitymanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cardinalitymanagement"
 
 cardinalitymanagement.CardinalityManagement_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cardinalitymanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cardinalitymanagement"
 
 cardinalitymanagement.CardinalityManagement_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ cardinalitymanagement.CardinalityManagement_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cardinalitymanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cardinalitymanagement"
 
 cardinalitymanagement.CardinalityManagement_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ cardinalitymanagement.CardinalityManagement_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cardinalitymanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cardinalitymanagement"
 
 cardinalitymanagement.CardinalityManagement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cardinalitymanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cardinalitymanagement"
 
 &cardinalitymanagement.CardinalityManagementConfig {
 	Connection: interface{},
@@ -982,7 +982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagementMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cardinalitymanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cardinalitymanagement"
 
 &cardinalitymanagement.CardinalityManagementMetric {
 	CardinalityLimit: *f64,
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagementMetricList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cardinalitymanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cardinalitymanagement"
 
 cardinalitymanagement.NewCardinalityManagementMetricList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CardinalityManagementMetricList
 ```
@@ -1194,7 +1194,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagementMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v15/cardinalitymanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cardinalitymanagement"
 
 cardinalitymanagement.NewCardinalityManagementMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CardinalityManagementMetricOutputReference
 ```
