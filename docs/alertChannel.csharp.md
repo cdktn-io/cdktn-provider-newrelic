@@ -863,7 +863,7 @@ new AlertChannelConfig {
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.name">Name</a></code> | <code>string</code> | (Required) The name of the channel. |
-| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.type">Type</a></code> | <code>string</code> | (Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie). |
+| <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.type">Type</a></code> | <code>string</code> | (Required) The type of channel. One of: (opsgenie, pagerduty, slack, user, victorops, webhook, email). |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.accountId">AccountId</a></code> | <code>double</code> | The New Relic account ID where you want to create alert channels. |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.config">Config</a></code> | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfigA">AlertChannelConfigA</a></code> | config block. |
 | <code><a href="#@cdktn/provider-newrelic.alertChannel.AlertChannelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/alert_channel#id AlertChannel#id}. |
@@ -962,7 +962,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-(Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie).
+(Required) The type of channel. One of: (opsgenie, pagerduty, slack, user, victorops, webhook, email).
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/alert_channel#type AlertChannel#type}
 
