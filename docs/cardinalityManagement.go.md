@@ -4,7 +4,7 @@
 
 ### CardinalityManagement <a name="CardinalityManagement" id="@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/cardinality_management newrelic_cardinality_management}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/cardinality_management newrelic_cardinality_management}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagement.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the CardinalityManagement to i
 
 The id of the existing CardinalityManagement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/cardinality_management#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/cardinality_management#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -841,7 +841,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cardinalitym
 | <code><a href="#@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagementConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagementConfig.property.mode">Mode</a></code> | <code>*string</code> | The override mode. |
 | <code><a href="#@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagementConfig.property.cardinalityLimit">CardinalityLimit</a></code> | <code>*f64</code> | The account-wide cardinality limit — the maximum number of unique dimension-value combinations allowed per metric per day. |
-| <code><a href="#@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagementConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/cardinality_management#id CardinalityManagement#id}. |
+| <code><a href="#@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagementConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/cardinality_management#id CardinalityManagement#id}. |
 | <code><a href="#@cdktn/provider-newrelic.cardinalityManagement.CardinalityManagementConfig.property.metric">Metric</a></code> | <code>interface{}</code> | metric block. |
 
 ---
@@ -928,7 +928,7 @@ The override mode.
 
 Use `DEFAULT` to set a single account-wide limit that applies to all metrics, or `PER_METRIC` to set individual limits for one or more named metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/cardinality_management#mode CardinalityManagement#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/cardinality_management#mode CardinalityManagement#mode}
 
 ---
 
@@ -944,7 +944,7 @@ The account-wide cardinality limit — the maximum number of unique dimension-va
 
 Required when `mode` is `DEFAULT`; must not be set when `mode` is `PER_METRIC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/cardinality_management#cardinality_limit CardinalityManagement#cardinality_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/cardinality_management#cardinality_limit CardinalityManagement#cardinality_limit}
 
 ---
 
@@ -956,7 +956,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/cardinality_management#id CardinalityManagement#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/cardinality_management#id CardinalityManagement#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -973,7 +973,7 @@ Metric interface{}
 
 metric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/cardinality_management#metric CardinalityManagement#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/cardinality_management#metric CardinalityManagement#metric}
 
 ---
 
@@ -1009,7 +1009,7 @@ CardinalityLimit *f64
 
 The maximum number of unique dimension-value combinations allowed per day for this metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/cardinality_management#cardinality_limit CardinalityManagement#cardinality_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/cardinality_management#cardinality_limit CardinalityManagement#cardinality_limit}
 
 ---
 
@@ -1023,7 +1023,7 @@ Name *string
 
 The full name of the metric (e.g. `http.server.duration`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/cardinality_management#name CardinalityManagement#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/cardinality_management#name CardinalityManagement#name}
 
 ---
 

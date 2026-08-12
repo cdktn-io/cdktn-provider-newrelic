@@ -4,7 +4,7 @@
 
 ### AwsConnection <a name="AwsConnection" id="@cdktn/provider-newrelic.awsConnection.AwsConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection newrelic_aws_connection}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection newrelic_aws_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.awsConnection.AwsConnection.Initializer"></a>
 
@@ -51,7 +51,7 @@ AwsConnection.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnection.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of the AWS connection. |
 | <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnection.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Flag to indicate if the connection is enabled. True by default. |
 | <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnection.Initializer.parameter.externalId">externalId</a></code> | <code>java.lang.String</code> | Optional field representing an identifier managed by the consumer. |
-| <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#id AwsConnection#id}. |
+| <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#id AwsConnection#id}. |
 | <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnection.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Default region for this connection. |
 | <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnection.Initializer.parameter.scopeId">scopeId</a></code> | <code>java.lang.String</code> | The scope ID (account ID or organization ID) for the AWS connection. |
 | <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnection.Initializer.parameter.scopeType">scopeType</a></code> | <code>java.lang.String</code> | The scope type for the AWS connection. Valid values are ACCOUNT and ORGANIZATION. |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#credential AwsConnection#credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#credential AwsConnection#credential}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The name of the AWS connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#name AwsConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#name AwsConnection#name}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The account ID where the AWS connection will be created. Used when scope_type is ACCOUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#account_id AwsConnection#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#account_id AwsConnection#account_id}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The description of the AWS connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#description AwsConnection#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#description AwsConnection#description}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Flag to indicate if the connection is enabled. True by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#enabled AwsConnection#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#enabled AwsConnection#enabled}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Optional field representing an identifier managed by the consumer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#external_id AwsConnection#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#external_id AwsConnection#external_id}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#id AwsConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#id AwsConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -197,7 +197,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Default region for this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#region AwsConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#region AwsConnection#region}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The scope ID (account ID or organization ID) for the AWS connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#scope_id AwsConnection#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#scope_id AwsConnection#scope_id}
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The scope type for the AWS connection. Valid values are ACCOUNT and ORGANIZATION.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#scope_type AwsConnection#scope_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#scope_type AwsConnection#scope_type}
 
 ---
 
@@ -227,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#settings AwsConnection#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#settings AwsConnection#settings}
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#tag AwsConnection#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#tag AwsConnection#tag}
 
 ---
 
@@ -795,7 +795,7 @@ The construct id used in the generated config for the AwsConnection to import.
 
 The id of the existing AwsConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1301,7 +1301,7 @@ AwsConnectionConfig.builder()
 | <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnectionConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of the AWS connection. |
 | <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnectionConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Flag to indicate if the connection is enabled. True by default. |
 | <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnectionConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Optional field representing an identifier managed by the consumer. |
-| <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#id AwsConnection#id}. |
+| <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#id AwsConnection#id}. |
 | <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnectionConfig.property.region">region</a></code> | <code>java.lang.String</code> | Default region for this connection. |
 | <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnectionConfig.property.scopeId">scopeId</a></code> | <code>java.lang.String</code> | The scope ID (account ID or organization ID) for the AWS connection. |
 | <code><a href="#@cdktn/provider-newrelic.awsConnection.AwsConnectionConfig.property.scopeType">scopeType</a></code> | <code>java.lang.String</code> | The scope type for the AWS connection. Valid values are ACCOUNT and ORGANIZATION. |
@@ -1390,7 +1390,7 @@ public AwsConnectionCredential getCredential();
 
 credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#credential AwsConnection#credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#credential AwsConnection#credential}
 
 ---
 
@@ -1404,7 +1404,7 @@ public java.lang.String getName();
 
 The name of the AWS connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#name AwsConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#name AwsConnection#name}
 
 ---
 
@@ -1418,7 +1418,7 @@ public java.lang.Number getAccountId();
 
 The account ID where the AWS connection will be created. Used when scope_type is ACCOUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#account_id AwsConnection#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#account_id AwsConnection#account_id}
 
 ---
 
@@ -1432,7 +1432,7 @@ public java.lang.String getDescription();
 
 The description of the AWS connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#description AwsConnection#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#description AwsConnection#description}
 
 ---
 
@@ -1446,7 +1446,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Flag to indicate if the connection is enabled. True by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#enabled AwsConnection#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#enabled AwsConnection#enabled}
 
 ---
 
@@ -1460,7 +1460,7 @@ public java.lang.String getExternalId();
 
 Optional field representing an identifier managed by the consumer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#external_id AwsConnection#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#external_id AwsConnection#external_id}
 
 ---
 
@@ -1472,7 +1472,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#id AwsConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#id AwsConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1489,7 +1489,7 @@ public java.lang.String getRegion();
 
 Default region for this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#region AwsConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#region AwsConnection#region}
 
 ---
 
@@ -1503,7 +1503,7 @@ public java.lang.String getScopeId();
 
 The scope ID (account ID or organization ID) for the AWS connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#scope_id AwsConnection#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#scope_id AwsConnection#scope_id}
 
 ---
 
@@ -1517,7 +1517,7 @@ public java.lang.String getScopeType();
 
 The scope type for the AWS connection. Valid values are ACCOUNT and ORGANIZATION.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#scope_type AwsConnection#scope_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#scope_type AwsConnection#scope_type}
 
 ---
 
@@ -1531,7 +1531,7 @@ public IResolvable|java.util.List<AwsConnectionSettings> getSettings();
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#settings AwsConnection#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#settings AwsConnection#settings}
 
 ---
 
@@ -1545,7 +1545,7 @@ public IResolvable|java.util.List<AwsConnectionTag> getTag();
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#tag AwsConnection#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#tag AwsConnection#tag}
 
 ---
 
@@ -1579,7 +1579,7 @@ public AwsConnectionCredentialAssumeRole getAssumeRole();
 
 assume_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#assume_role AwsConnection#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#assume_role AwsConnection#assume_role}
 
 ---
 
@@ -1615,7 +1615,7 @@ public java.lang.String getRoleArn();
 
 ARN of the IAM role New Relic should assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#role_arn AwsConnection#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#role_arn AwsConnection#role_arn}
 
 ---
 
@@ -1629,7 +1629,7 @@ public java.lang.String getExternalId();
 
 External ID supplied by New Relic during AssumeRole.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#external_id AwsConnection#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#external_id AwsConnection#external_id}
 
 ---
 
@@ -1665,7 +1665,7 @@ public java.lang.String getKey();
 
 The key or name of the setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#key AwsConnection#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#key AwsConnection#key}
 
 ---
 
@@ -1679,7 +1679,7 @@ public java.lang.String getValue();
 
 The value of the setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#value AwsConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#value AwsConnection#value}
 
 ---
 
@@ -1715,7 +1715,7 @@ public java.lang.String getKey();
 
 The tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#key AwsConnection#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#key AwsConnection#key}
 
 ---
 
@@ -1729,7 +1729,7 @@ public java.util.List<java.lang.String> getValues();
 
 The tag values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.1/docs/resources/aws_connection#values AwsConnection#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/aws_connection#values AwsConnection#values}
 
 ---
 
