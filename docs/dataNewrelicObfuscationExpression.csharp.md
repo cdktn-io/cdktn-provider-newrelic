@@ -4,7 +4,7 @@
 
 ### DataNewrelicObfuscationExpression <a name="DataNewrelicObfuscationExpression" id="@cdktn/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/obfuscation_expression newrelic_obfuscation_expression}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/obfuscation_expression newrelic_obfuscation_expression}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataNewrelicObfuscationExp
 
 The id of the existing DataNewrelicObfuscationExpression that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/obfuscation_expression#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/obfuscation_expression#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -674,7 +674,7 @@ new DataNewrelicObfuscationExpressionConfig {
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpressionConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpressionConfig.property.name">Name</a></code> | <code>string</code> | Name of expression. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpressionConfig.property.accountId">AccountId</a></code> | <code>double</code> | The account id associated with the obfuscation expression. |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpressionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/obfuscation_expression#id DataNewrelicObfuscationExpression#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpressionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/obfuscation_expression#id DataNewrelicObfuscationExpression#id}. |
 
 ---
 
@@ -758,7 +758,7 @@ public string Name { get; set; }
 
 Name of expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/obfuscation_expression#name DataNewrelicObfuscationExpression#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/obfuscation_expression#name DataNewrelicObfuscationExpression#name}
 
 ---
 
@@ -772,7 +772,7 @@ public double AccountId { get; set; }
 
 The account id associated with the obfuscation expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/obfuscation_expression#account_id DataNewrelicObfuscationExpression#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/obfuscation_expression#account_id DataNewrelicObfuscationExpression#account_id}
 
 ---
 
@@ -784,7 +784,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/obfuscation_expression#id DataNewrelicObfuscationExpression#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/obfuscation_expression#id DataNewrelicObfuscationExpression#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
