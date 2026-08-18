@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/notification_destination
+// https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/notification_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataNewrelicNotificationDestinationConfig extends cdktn.Terrafo
   /**
   * The account ID under which the particular destination belong to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
   */
   readonly accountId?: number;
   /**
   * The exact name of the destination. Uses an exact match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/notification_destination#exact_name DataNewrelicNotificationDestination#exact_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/notification_destination#exact_name DataNewrelicNotificationDestination#exact_name}
   */
   readonly exactName?: string;
   /**
   * The ID of the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,19 +36,19 @@ export interface DataNewrelicNotificationDestinationConfig extends cdktn.Terrafo
   /**
   * The name of the destination. Uses a contains match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
   */
   readonly name?: string;
   /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/notification_destination#scope DataNewrelicNotificationDestination#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/notification_destination#scope DataNewrelicNotificationDestination#scope}
   */
   readonly scope?: DataNewrelicNotificationDestinationScope;
   /**
   * secure_url block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/notification_destination#secure_url DataNewrelicNotificationDestination#secure_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/notification_destination#secure_url DataNewrelicNotificationDestination#secure_url}
   */
   readonly secureUrl?: DataNewrelicNotificationDestinationSecureUrl[] | cdktn.IResolvable;
 }
@@ -146,7 +146,7 @@ export interface DataNewrelicNotificationDestinationScope {
   /**
   * The ID of the Scope (Organization UUID for ORGANIZATION scope, Account ID for ACCOUNT scope)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ export interface DataNewrelicNotificationDestinationScope {
   /**
   * (Required) The scope type of the destination. One of: (ACCOUNT, ORGANIZATION).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/notification_destination#type DataNewrelicNotificationDestination#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/notification_destination#type DataNewrelicNotificationDestination#type}
   */
   readonly type: string;
 }
@@ -262,7 +262,7 @@ export class DataNewrelicNotificationDestinationScopeOutputReference extends cdk
 }
 export interface DataNewrelicNotificationDestinationSecureUrl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}
   */
   readonly prefix: string;
 }
@@ -375,7 +375,7 @@ export class DataNewrelicNotificationDestinationSecureUrlList extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/notification_destination newrelic_notification_destination}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/notification_destination newrelic_notification_destination}
 */
 export class DataNewrelicNotificationDestination extends cdktn.TerraformDataSource {
 
@@ -391,7 +391,7 @@ export class DataNewrelicNotificationDestination extends cdktn.TerraformDataSour
   * Generates CDKTN code for importing a DataNewrelicNotificationDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicNotificationDestination to import
-  * @param importFromId The id of the existing DataNewrelicNotificationDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/notification_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicNotificationDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/notification_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicNotificationDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -403,7 +403,7 @@ export class DataNewrelicNotificationDestination extends cdktn.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/data-sources/notification_destination newrelic_notification_destination} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/data-sources/notification_destination newrelic_notification_destination} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -414,7 +414,7 @@ export class DataNewrelicNotificationDestination extends cdktn.TerraformDataSour
       terraformResourceType: 'newrelic_notification_destination',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.96.2',
+        providerVersion: '3.96.3',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

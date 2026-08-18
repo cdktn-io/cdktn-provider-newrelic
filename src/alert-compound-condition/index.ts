@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition
+// https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface AlertCompoundConditionConfig extends cdktn.TerraformMetaArgumen
   /**
   * The New Relic account ID for managing your compound alert conditions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#account_id AlertCompoundCondition#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#account_id AlertCompoundCondition#account_id}
   */
   readonly accountId?: number;
   /**
   * BETA PREVIEW: the `description` field is in limited release and only enabled for preview on a per-account basis. The custom violation description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#description AlertCompoundCondition#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#description AlertCompoundCondition#description}
   */
   readonly description?: string;
   /**
   * Whether or not to enable the alert condition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#enabled AlertCompoundCondition#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#enabled AlertCompoundCondition#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * How the compound condition will take into account the component conditions' facets during evaluation. Valid values: 'FACETS_IGNORED' (default) - facets are not taken into consideration when determining when the compound alert condition activates; 'FACETS_MATCH' - the compound alert condition will activate only when shared facets have matching values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#facet_matching_behavior AlertCompoundCondition#facet_matching_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#facet_matching_behavior AlertCompoundCondition#facet_matching_behavior}
   */
   readonly facetMatchingBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#id AlertCompoundCondition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#id AlertCompoundCondition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,49 +46,49 @@ export interface AlertCompoundConditionConfig extends cdktn.TerraformMetaArgumen
   /**
   * The title of the compound alert condition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#name AlertCompoundCondition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#name AlertCompoundCondition#name}
   */
   readonly name: string;
   /**
   * The ID of the policy where this condition should be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#policy_id AlertCompoundCondition#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#policy_id AlertCompoundCondition#policy_id}
   */
   readonly policyId: number;
   /**
   * Runbook URL to display in notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#runbook_url AlertCompoundCondition#runbook_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#runbook_url AlertCompoundCondition#runbook_url}
   */
   readonly runbookUrl?: string;
   /**
   * The duration, in seconds, that the trigger expression must be true before the compound alert condition will activate. Between 30-86400 seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#threshold_duration AlertCompoundCondition#threshold_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#threshold_duration AlertCompoundCondition#threshold_duration}
   */
   readonly thresholdDuration?: number;
   /**
   * BETA PREVIEW: the `title_template` field is in limited release and only enabled for preview on a per-account basis. This field allows you to create a custom title to be used when incidents are opened by the condition. Setting this field will override the default title. Must be Handlebars format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#title_template AlertCompoundCondition#title_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#title_template AlertCompoundCondition#title_template}
   */
   readonly titleTemplate?: string;
   /**
   * Expression that defines how component condition evaluations are combined. Valid operators are 'AND', 'OR', 'NOT'. For more complex expressions, use parentheses. Simple example: 'A AND B'. Complex example: 'A AND (B OR C) AND NOT D'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#trigger_expression AlertCompoundCondition#trigger_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#trigger_expression AlertCompoundCondition#trigger_expression}
   */
   readonly triggerExpression: string;
   /**
   * component_conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#component_conditions AlertCompoundCondition#component_conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#component_conditions AlertCompoundCondition#component_conditions}
   */
   readonly componentConditions: AlertCompoundConditionComponentConditions[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#timeouts AlertCompoundCondition#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#timeouts AlertCompoundCondition#timeouts}
   */
   readonly timeouts?: AlertCompoundConditionTimeouts;
 }
@@ -96,13 +96,13 @@ export interface AlertCompoundConditionComponentConditions {
   /**
   * The identifier that will be used in the compound alert condition's trigger_expression (e.g., 'A', 'B', 'C').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#alias AlertCompoundCondition#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#alias AlertCompoundCondition#alias}
   */
   readonly alias: string;
   /**
   * The ID of the existing alert condition to use as a component.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#id AlertCompoundCondition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#id AlertCompoundCondition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -244,7 +244,7 @@ export class AlertCompoundConditionComponentConditionsList extends cdktn.Complex
 }
 export interface AlertCompoundConditionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#create AlertCompoundCondition#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#create AlertCompoundCondition#create}
   */
   readonly create?: string;
 }
@@ -338,7 +338,7 @@ export class AlertCompoundConditionTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition newrelic_alert_compound_condition}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition newrelic_alert_compound_condition}
 */
 export class AlertCompoundCondition extends cdktn.TerraformResource {
 
@@ -354,7 +354,7 @@ export class AlertCompoundCondition extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AlertCompoundCondition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlertCompoundCondition to import
-  * @param importFromId The id of the existing AlertCompoundCondition that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AlertCompoundCondition that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlertCompoundCondition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -366,7 +366,7 @@ export class AlertCompoundCondition extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/alert_compound_condition newrelic_alert_compound_condition} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/alert_compound_condition newrelic_alert_compound_condition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -377,7 +377,7 @@ export class AlertCompoundCondition extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_alert_compound_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.96.2',
+        providerVersion: '3.96.3',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
