@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/fleet_configuration
+// https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/fleet_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface FleetConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The type of agent this configuration is for. Allowed values: NRInfra, NRDOT, FluentBit, NRPrometheusAgent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/fleet_configuration#agent_type FleetConfiguration#agent_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/fleet_configuration#agent_type FleetConfiguration#agent_type}
   */
   readonly agentType: string;
   /**
   * The configuration content (YAML or JSON). Use file() to load from a file. Each change to this field creates a new immutable version on the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/fleet_configuration#configuration_content FleetConfiguration#configuration_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/fleet_configuration#configuration_content FleetConfiguration#configuration_content}
   */
   readonly configurationContent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/fleet_configuration#id FleetConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/fleet_configuration#id FleetConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +34,31 @@ export interface FleetConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The type of entities this configuration manages. Allowed values: HOST, KUBERNETESCLUSTER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/fleet_configuration#managed_entity_type FleetConfiguration#managed_entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/fleet_configuration#managed_entity_type FleetConfiguration#managed_entity_type}
   */
   readonly managedEntityType: string;
   /**
   * The name of the configuration. Changing this forces resource recreation because the API does not support renaming.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/fleet_configuration#name FleetConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/fleet_configuration#name FleetConfiguration#name}
   */
   readonly name: string;
   /**
   * The operating system this configuration targets. Required for HOST configurations. Allowed values: LINUX, WINDOWS. Must not be set for KUBERNETESCLUSTER configurations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/fleet_configuration#operating_system FleetConfiguration#operating_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/fleet_configuration#operating_system FleetConfiguration#operating_system}
   */
   readonly operatingSystem?: string;
   /**
   * The organization ID. Auto-fetched from the account if not provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/fleet_configuration#organization_id FleetConfiguration#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/fleet_configuration#organization_id FleetConfiguration#organization_id}
   */
   readonly organizationId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/fleet_configuration newrelic_fleet_configuration}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/fleet_configuration newrelic_fleet_configuration}
 */
 export class FleetConfiguration extends cdktn.TerraformResource {
 
@@ -74,7 +74,7 @@ export class FleetConfiguration extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FleetConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FleetConfiguration to import
-  * @param importFromId The id of the existing FleetConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/fleet_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FleetConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/fleet_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FleetConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -86,7 +86,7 @@ export class FleetConfiguration extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.2/docs/resources/fleet_configuration newrelic_fleet_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.3/docs/resources/fleet_configuration newrelic_fleet_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class FleetConfiguration extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_fleet_configuration',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.96.2',
+        providerVersion: '3.96.3',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
