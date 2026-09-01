@@ -4,7 +4,7 @@
 
 ### NewrelicProvider <a name="NewrelicProvider" id="@cdktn/provider-newrelic.provider.NewrelicProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs newrelic}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs newrelic}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer"></a>
 
@@ -33,20 +33,20 @@ NewrelicProvider.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#account_id NewrelicProvider#account_id}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.apiKey">apiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#api_key NewrelicProvider#api_key}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.adminApiKey">adminApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#admin_api_key NewrelicProvider#admin_api_key}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#account_id NewrelicProvider#account_id}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.apiKey">apiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#api_key NewrelicProvider#api_key}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.adminApiKey">adminApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#admin_api_key NewrelicProvider#admin_api_key}. |
 | <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.apiUrl">apiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#api_url NewrelicProvider#api_url}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.cacertFile">cacertFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#cacert_file NewrelicProvider#cacert_file}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.infrastructureApiUrl">infrastructureApiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insecureSkipVerify">insecureSkipVerify</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insightsInsertKey">insightsInsertKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insights_insert_key NewrelicProvider#insights_insert_key}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insightsInsertUrl">insightsInsertUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insights_insert_url NewrelicProvider#insights_insert_url}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insightsQueryUrl">insightsQueryUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insights_query_url NewrelicProvider#insights_query_url}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.nerdgraphApiUrl">nerdgraphApiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.apiUrl">apiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#api_url NewrelicProvider#api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.cacertFile">cacertFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#cacert_file NewrelicProvider#cacert_file}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.infrastructureApiUrl">infrastructureApiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insecureSkipVerify">insecureSkipVerify</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insightsInsertKey">insightsInsertKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insights_insert_key NewrelicProvider#insights_insert_key}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insightsInsertUrl">insightsInsertUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insights_insert_url NewrelicProvider#insights_insert_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insightsQueryUrl">insightsQueryUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insights_query_url NewrelicProvider#insights_query_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.nerdgraphApiUrl">nerdgraphApiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}. |
 | <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | The data center for which your New Relic account is configured. Only one region per provider block is permitted. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.syntheticsApiUrl">syntheticsApiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.syntheticsApiUrl">syntheticsApiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}. |
 
 ---
 
@@ -72,7 +72,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#account_id NewrelicProvider#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#account_id NewrelicProvider#account_id}.
 
 ---
 
@@ -80,7 +80,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#api_key NewrelicProvider#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#api_key NewrelicProvider#api_key}.
 
 ---
 
@@ -88,7 +88,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#admin_api_key NewrelicProvider#admin_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#admin_api_key NewrelicProvider#admin_api_key}.
 
 ---
 
@@ -98,7 +98,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#alias NewrelicProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#alias NewrelicProvider#alias}
 
 ---
 
@@ -106,7 +106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#api_url NewrelicProvider#api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#api_url NewrelicProvider#api_url}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#cacert_file NewrelicProvider#cacert_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#cacert_file NewrelicProvider#cacert_file}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insights_insert_key NewrelicProvider#insights_insert_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insights_insert_key NewrelicProvider#insights_insert_key}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insights_insert_url NewrelicProvider#insights_insert_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insights_insert_url NewrelicProvider#insights_insert_url}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insights_query_url NewrelicProvider#insights_query_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insights_query_url NewrelicProvider#insights_query_url}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}.
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The data center for which your New Relic account is configured. Only one region per provider block is permitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#region NewrelicProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#region NewrelicProvider#region}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}.
 
 ---
 
@@ -477,7 +477,7 @@ The construct id used in the generated config for the NewrelicProvider to import
 
 The id of the existing NewrelicProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -943,20 +943,20 @@ NewrelicProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#account_id NewrelicProvider#account_id}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#api_key NewrelicProvider#api_key}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.adminApiKey">adminApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#admin_api_key NewrelicProvider#admin_api_key}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#account_id NewrelicProvider#account_id}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#api_key NewrelicProvider#api_key}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.adminApiKey">adminApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#admin_api_key NewrelicProvider#admin_api_key}. |
 | <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.apiUrl">apiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#api_url NewrelicProvider#api_url}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.cacertFile">cacertFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#cacert_file NewrelicProvider#cacert_file}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.infrastructureApiUrl">infrastructureApiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify">insecureSkipVerify</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertKey">insightsInsertKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insights_insert_key NewrelicProvider#insights_insert_key}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertUrl">insightsInsertUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insights_insert_url NewrelicProvider#insights_insert_url}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsQueryUrl">insightsQueryUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insights_query_url NewrelicProvider#insights_query_url}. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.nerdgraphApiUrl">nerdgraphApiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.apiUrl">apiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#api_url NewrelicProvider#api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.cacertFile">cacertFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#cacert_file NewrelicProvider#cacert_file}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.infrastructureApiUrl">infrastructureApiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify">insecureSkipVerify</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertKey">insightsInsertKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insights_insert_key NewrelicProvider#insights_insert_key}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertUrl">insightsInsertUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insights_insert_url NewrelicProvider#insights_insert_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.insightsQueryUrl">insightsQueryUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insights_query_url NewrelicProvider#insights_query_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.nerdgraphApiUrl">nerdgraphApiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}. |
 | <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.region">region</a></code> | <code>java.lang.String</code> | The data center for which your New Relic account is configured. Only one region per provider block is permitted. |
-| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.syntheticsApiUrl">syntheticsApiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}. |
+| <code><a href="#@cdktn/provider-newrelic.provider.NewrelicProviderConfig.property.syntheticsApiUrl">syntheticsApiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}. |
 
 ---
 
@@ -968,7 +968,7 @@ public java.lang.Number getAccountId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#account_id NewrelicProvider#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#account_id NewrelicProvider#account_id}.
 
 ---
 
@@ -980,7 +980,7 @@ public java.lang.String getApiKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#api_key NewrelicProvider#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#api_key NewrelicProvider#api_key}.
 
 ---
 
@@ -992,7 +992,7 @@ public java.lang.String getAdminApiKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#admin_api_key NewrelicProvider#admin_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#admin_api_key NewrelicProvider#admin_api_key}.
 
 ---
 
@@ -1006,7 +1006,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#alias NewrelicProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#alias NewrelicProvider#alias}
 
 ---
 
@@ -1018,7 +1018,7 @@ public java.lang.String getApiUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#api_url NewrelicProvider#api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#api_url NewrelicProvider#api_url}.
 
 ---
 
@@ -1030,7 +1030,7 @@ public java.lang.String getCacertFile();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#cacert_file NewrelicProvider#cacert_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#cacert_file NewrelicProvider#cacert_file}.
 
 ---
 
@@ -1042,7 +1042,7 @@ public java.lang.String getInfrastructureApiUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}.
 
 ---
 
@@ -1054,7 +1054,7 @@ public java.lang.Boolean|IResolvable getInsecureSkipVerify();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}.
 
 ---
 
@@ -1066,7 +1066,7 @@ public java.lang.String getInsightsInsertKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insights_insert_key NewrelicProvider#insights_insert_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insights_insert_key NewrelicProvider#insights_insert_key}.
 
 ---
 
@@ -1078,7 +1078,7 @@ public java.lang.String getInsightsInsertUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insights_insert_url NewrelicProvider#insights_insert_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insights_insert_url NewrelicProvider#insights_insert_url}.
 
 ---
 
@@ -1090,7 +1090,7 @@ public java.lang.String getInsightsQueryUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#insights_query_url NewrelicProvider#insights_query_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#insights_query_url NewrelicProvider#insights_query_url}.
 
 ---
 
@@ -1102,7 +1102,7 @@ public java.lang.String getNerdgraphApiUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}.
 
 ---
 
@@ -1116,7 +1116,7 @@ public java.lang.String getRegion();
 
 The data center for which your New Relic account is configured. Only one region per provider block is permitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#region NewrelicProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#region NewrelicProvider#region}
 
 ---
 
@@ -1128,7 +1128,7 @@ public java.lang.String getSyntheticsApiUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}.
 
 ---
 
