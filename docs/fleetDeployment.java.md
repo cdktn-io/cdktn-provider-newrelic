@@ -4,7 +4,7 @@
 
 ### FleetDeployment <a name="FleetDeployment" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment newrelic_fleet_deployment}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment newrelic_fleet_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.Initializer"></a>
 
@@ -44,7 +44,7 @@ FleetDeployment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the deployment. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.Initializer.parameter.agent">agent</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgent">FleetDeploymentAgent</a>></code> | agent block. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A description of the deployment. |
-| <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#id FleetDeployment#id}. |
+| <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#id FleetDeployment#id}. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.Initializer.parameter.organizationId">organizationId</a></code> | <code>java.lang.String</code> | The organization ID. Auto-fetched from the account if not provided. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeployment.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags for the deployment in format 'key:value1,value2'. |
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The GUID of the fleet this deployment belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#fleet_id FleetDeployment#fleet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#fleet_id FleetDeployment#fleet_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The name of the deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#name FleetDeployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#name FleetDeployment#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#agent FleetDeployment#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#agent FleetDeployment#agent}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 A description of the deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#description FleetDeployment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#description FleetDeployment#description}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#id FleetDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#id FleetDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The organization ID. Auto-fetched from the account if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#organization_id FleetDeployment#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#organization_id FleetDeployment#organization_id}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Tags for the deployment in format 'key:value1,value2'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#tags FleetDeployment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#tags FleetDeployment#tags}
 
 ---
 
@@ -674,7 +674,7 @@ The construct id used in the generated config for the FleetDeployment to import.
 
 The id of the existing FleetDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1079,7 +1079,7 @@ public java.lang.String getAgentType();
 
 The agent type. Allowed values: NRInfra, NRDOT, FluentBit, NRPrometheusAgent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#agent_type FleetDeployment#agent_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#agent_type FleetDeployment#agent_type}
 
 ---
 
@@ -1093,7 +1093,7 @@ public java.lang.String getConfigurationVersionId();
 
 Configuration version entity GUID to associate with this agent in the deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#configuration_version_id FleetDeployment#configuration_version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#configuration_version_id FleetDeployment#configuration_version_id}
 
 ---
 
@@ -1107,7 +1107,7 @@ public java.lang.String getVersion();
 
 The agent version to deploy (e.g. "1.58.0").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#version FleetDeployment#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#version FleetDeployment#version}
 
 ---
 
@@ -1151,7 +1151,7 @@ FleetDeploymentConfig.builder()
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the deployment. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.agent">agent</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentAgent">FleetDeploymentAgent</a>></code> | agent block. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.description">description</a></code> | <code>java.lang.String</code> | A description of the deployment. |
-| <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#id FleetDeployment#id}. |
+| <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#id FleetDeployment#id}. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.organizationId">organizationId</a></code> | <code>java.lang.String</code> | The organization ID. Auto-fetched from the account if not provided. |
 | <code><a href="#@cdktn/provider-newrelic.fleetDeployment.FleetDeploymentConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags for the deployment in format 'key:value1,value2'. |
 
@@ -1237,7 +1237,7 @@ public java.lang.String getFleetId();
 
 The GUID of the fleet this deployment belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#fleet_id FleetDeployment#fleet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#fleet_id FleetDeployment#fleet_id}
 
 ---
 
@@ -1251,7 +1251,7 @@ public java.lang.String getName();
 
 The name of the deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#name FleetDeployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#name FleetDeployment#name}
 
 ---
 
@@ -1265,7 +1265,7 @@ public IResolvable|java.util.List<FleetDeploymentAgent> getAgent();
 
 agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#agent FleetDeployment#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#agent FleetDeployment#agent}
 
 ---
 
@@ -1279,7 +1279,7 @@ public java.lang.String getDescription();
 
 A description of the deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#description FleetDeployment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#description FleetDeployment#description}
 
 ---
 
@@ -1291,7 +1291,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#id FleetDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#id FleetDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1308,7 +1308,7 @@ public java.lang.String getOrganizationId();
 
 The organization ID. Auto-fetched from the account if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#organization_id FleetDeployment#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#organization_id FleetDeployment#organization_id}
 
 ---
 
@@ -1322,7 +1322,7 @@ public java.util.List<java.lang.String> getTags();
 
 Tags for the deployment in format 'key:value1,value2'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.96.4/docs/resources/fleet_deployment#tags FleetDeployment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/fleet_deployment#tags FleetDeployment#tags}
 
 ---
 
