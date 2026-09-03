@@ -4,7 +4,7 @@
 
 ### CloudAwsEuSovereignLinkAccount <a name="CloudAwsEuSovereignLinkAccount" id="@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/cloud_aws_eu_sovereign_link_account newrelic_cloud_aws_eu_sovereign_link_account}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/cloud_aws_eu_sovereign_link_account newrelic_cloud_aws_eu_sovereign_link_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccount.Initializer"></a>
 
@@ -41,7 +41,7 @@ CloudAwsEuSovereignLinkAccount.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccount.Initializer.parameter.arn">arn</a></code> | <code>java.lang.String</code> | The ARN of the IAM role. |
 | <code><a href="#@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccount.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the AWS EU Sovereign account in New Relic. |
 | <code><a href="#@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccount.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The ID of the account in New Relic. |
-| <code><a href="#@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/cloud_aws_eu_sovereign_link_account#id CloudAwsEuSovereignLinkAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/cloud_aws_eu_sovereign_link_account#id CloudAwsEuSovereignLinkAccount#id}. |
 | <code><a href="#@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccount.Initializer.parameter.metricCollectionMode">metricCollectionMode</a></code> | <code>java.lang.String</code> | How metrics are collected. PULL or PUSH. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The ARN of the IAM role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/cloud_aws_eu_sovereign_link_account#arn CloudAwsEuSovereignLinkAccount#arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/cloud_aws_eu_sovereign_link_account#arn CloudAwsEuSovereignLinkAccount#arn}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The name of the AWS EU Sovereign account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/cloud_aws_eu_sovereign_link_account#name CloudAwsEuSovereignLinkAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/cloud_aws_eu_sovereign_link_account#name CloudAwsEuSovereignLinkAccount#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/cloud_aws_eu_sovereign_link_account#account_id CloudAwsEuSovereignLinkAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/cloud_aws_eu_sovereign_link_account#account_id CloudAwsEuSovereignLinkAccount#account_id}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/cloud_aws_eu_sovereign_link_account#id CloudAwsEuSovereignLinkAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/cloud_aws_eu_sovereign_link_account#id CloudAwsEuSovereignLinkAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 How metrics are collected. PULL or PUSH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/cloud_aws_eu_sovereign_link_account#metric_collection_mode CloudAwsEuSovereignLinkAccount#metric_collection_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/cloud_aws_eu_sovereign_link_account#metric_collection_mode CloudAwsEuSovereignLinkAccount#metric_collection_mode}
 
 ---
 
@@ -623,7 +623,7 @@ The construct id used in the generated config for the CloudAwsEuSovereignLinkAcc
 
 The id of the existing CloudAwsEuSovereignLinkAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/cloud_aws_eu_sovereign_link_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/cloud_aws_eu_sovereign_link_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -965,7 +965,7 @@ CloudAwsEuSovereignLinkAccountConfig.builder()
 | <code><a href="#@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccountConfig.property.arn">arn</a></code> | <code>java.lang.String</code> | The ARN of the IAM role. |
 | <code><a href="#@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccountConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the AWS EU Sovereign account in New Relic. |
 | <code><a href="#@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccountConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The ID of the account in New Relic. |
-| <code><a href="#@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/cloud_aws_eu_sovereign_link_account#id CloudAwsEuSovereignLinkAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/cloud_aws_eu_sovereign_link_account#id CloudAwsEuSovereignLinkAccount#id}. |
 | <code><a href="#@cdktn/provider-newrelic.cloudAwsEuSovereignLinkAccount.CloudAwsEuSovereignLinkAccountConfig.property.metricCollectionMode">metricCollectionMode</a></code> | <code>java.lang.String</code> | How metrics are collected. PULL or PUSH. |
 
 ---
@@ -1050,7 +1050,7 @@ public java.lang.String getArn();
 
 The ARN of the IAM role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/cloud_aws_eu_sovereign_link_account#arn CloudAwsEuSovereignLinkAccount#arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/cloud_aws_eu_sovereign_link_account#arn CloudAwsEuSovereignLinkAccount#arn}
 
 ---
 
@@ -1064,7 +1064,7 @@ public java.lang.String getName();
 
 The name of the AWS EU Sovereign account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/cloud_aws_eu_sovereign_link_account#name CloudAwsEuSovereignLinkAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/cloud_aws_eu_sovereign_link_account#name CloudAwsEuSovereignLinkAccount#name}
 
 ---
 
@@ -1078,7 +1078,7 @@ public java.lang.Number getAccountId();
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/cloud_aws_eu_sovereign_link_account#account_id CloudAwsEuSovereignLinkAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/cloud_aws_eu_sovereign_link_account#account_id CloudAwsEuSovereignLinkAccount#account_id}
 
 ---
 
@@ -1090,7 +1090,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/cloud_aws_eu_sovereign_link_account#id CloudAwsEuSovereignLinkAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/cloud_aws_eu_sovereign_link_account#id CloudAwsEuSovereignLinkAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1107,7 +1107,7 @@ public java.lang.String getMetricCollectionMode();
 
 How metrics are collected. PULL or PUSH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/cloud_aws_eu_sovereign_link_account#metric_collection_mode CloudAwsEuSovereignLinkAccount#metric_collection_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/cloud_aws_eu_sovereign_link_account#metric_collection_mode CloudAwsEuSovereignLinkAccount#metric_collection_mode}
 
 ---
 
