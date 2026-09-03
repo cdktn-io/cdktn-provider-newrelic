@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/metric_pruning_rule
+// https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/metric_pruning_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface MetricPruningRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account ID in which the pruning rule is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/metric_pruning_rule#account_id MetricPruningRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/metric_pruning_rule#account_id MetricPruningRule#account_id}
   */
   readonly accountId?: number;
   /**
   * A human-readable description of the pruning rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/metric_pruning_rule#description MetricPruningRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/metric_pruning_rule#description MetricPruningRule#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/metric_pruning_rule#id MetricPruningRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/metric_pruning_rule#id MetricPruningRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +34,13 @@ export interface MetricPruningRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The NRQL query that identifies the metric attributes to prune. Must select specific attributes from Metric (e.g. `SELECT collector.name FROM Metric WHERE metricName = 'my.metric'`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/metric_pruning_rule#nrql MetricPruningRule#nrql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/metric_pruning_rule#nrql MetricPruningRule#nrql}
   */
   readonly nrql: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/metric_pruning_rule newrelic_metric_pruning_rule}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/metric_pruning_rule newrelic_metric_pruning_rule}
 */
 export class MetricPruningRule extends cdktn.TerraformResource {
 
@@ -56,7 +56,7 @@ export class MetricPruningRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MetricPruningRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MetricPruningRule to import
-  * @param importFromId The id of the existing MetricPruningRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/metric_pruning_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MetricPruningRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/metric_pruning_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MetricPruningRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -68,7 +68,7 @@ export class MetricPruningRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.0/docs/resources/metric_pruning_rule newrelic_metric_pruning_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.97.2/docs/resources/metric_pruning_rule newrelic_metric_pruning_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class MetricPruningRule extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_metric_pruning_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.97.0',
+        providerVersion: '3.97.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
