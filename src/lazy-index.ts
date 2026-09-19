@@ -44,6 +44,7 @@ Object.defineProperty(exports, 'keyTransaction', { get: function () { return req
 Object.defineProperty(exports, 'logParsingRule', { get: function () { return require('./log-parsing-rule'); } });
 Object.defineProperty(exports, 'metricPruningRule', { get: function () { return require('./metric-pruning-rule'); } });
 Object.defineProperty(exports, 'monitorDowntime', { get: function () { return require('./monitor-downtime'); } });
+Object.defineProperty(exports, 'notebook', { get: function () { return require('./notebook'); } });
 Object.defineProperty(exports, 'notificationChannel', { get: function () { return require('./notification-channel'); } });
 Object.defineProperty(exports, 'notificationDestination', { get: function () { return require('./notification-destination'); } });
 Object.defineProperty(exports, 'nrqlAlertCondition', { get: function () { return require('./nrql-alert-condition'); } });
@@ -80,6 +81,7 @@ Object.defineProperty(exports, 'dataNewrelicFleetConfiguration', { get: function
 Object.defineProperty(exports, 'dataNewrelicFleetMembers', { get: function () { return require('./data-newrelic-fleet-members'); } });
 Object.defineProperty(exports, 'dataNewrelicGroup', { get: function () { return require('./data-newrelic-group'); } });
 Object.defineProperty(exports, 'dataNewrelicKeyTransaction', { get: function () { return require('./data-newrelic-key-transaction'); } });
+Object.defineProperty(exports, 'dataNewrelicNotebook', { get: function () { return require('./data-newrelic-notebook'); } });
 Object.defineProperty(exports, 'dataNewrelicNotificationDestination', { get: function () { return require('./data-newrelic-notification-destination'); } });
 Object.defineProperty(exports, 'dataNewrelicObfuscationExpression', { get: function () { return require('./data-newrelic-obfuscation-expression'); } });
 Object.defineProperty(exports, 'dataNewrelicServiceLevelAlertHelper', { get: function () { return require('./data-newrelic-service-level-alert-helper'); } });
