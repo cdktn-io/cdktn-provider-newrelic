@@ -44,6 +44,7 @@ export * as keyTransaction from './key-transaction/index';
 export * as logParsingRule from './log-parsing-rule/index';
 export * as metricPruningRule from './metric-pruning-rule/index';
 export * as monitorDowntime from './monitor-downtime/index';
+export * as notebook from './notebook/index';
 export * as notificationChannel from './notification-channel/index';
 export * as notificationDestination from './notification-destination/index';
 export * as nrqlAlertCondition from './nrql-alert-condition/index';
@@ -80,6 +81,7 @@ export * as dataNewrelicFleetConfiguration from './data-newrelic-fleet-configura
 export * as dataNewrelicFleetMembers from './data-newrelic-fleet-members/index';
 export * as dataNewrelicGroup from './data-newrelic-group/index';
 export * as dataNewrelicKeyTransaction from './data-newrelic-key-transaction/index';
+export * as dataNewrelicNotebook from './data-newrelic-notebook/index';
 export * as dataNewrelicNotificationDestination from './data-newrelic-notification-destination/index';
 export * as dataNewrelicObfuscationExpression from './data-newrelic-obfuscation-expression/index';
 export * as dataNewrelicServiceLevelAlertHelper from './data-newrelic-service-level-alert-helper/index';
