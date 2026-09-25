@@ -54,6 +54,7 @@ Object.defineProperty(exports, 'obfuscationRule', { get: function () { return re
 Object.defineProperty(exports, 'oneDashboard', { get: function () { return require('./one-dashboard'); } });
 Object.defineProperty(exports, 'oneDashboardJson', { get: function () { return require('./one-dashboard-json'); } });
 Object.defineProperty(exports, 'oneDashboardRaw', { get: function () { return require('./one-dashboard-raw'); } });
+Object.defineProperty(exports, 'pathpointFlow', { get: function () { return require('./pathpoint-flow'); } });
 Object.defineProperty(exports, 'pipelineCloudRule', { get: function () { return require('./pipeline-cloud-rule'); } });
 Object.defineProperty(exports, 'serviceLevel', { get: function () { return require('./service-level'); } });
 Object.defineProperty(exports, 'syntheticsAlertCondition', { get: function () { return require('./synthetics-alert-condition'); } });
