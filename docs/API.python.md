@@ -74,6 +74,7 @@ The following submodules are available:
 - [oneDashboard](./oneDashboard.python.md)
 - [oneDashboardJson](./oneDashboardJson.python.md)
 - [oneDashboardRaw](./oneDashboardRaw.python.md)
+- [pathpointFlow](./pathpointFlow.python.md)
 - [pipelineCloudRule](./pipelineCloudRule.python.md)
 - [provider](./provider.python.md)
 - [serviceLevel](./serviceLevel.python.md)
