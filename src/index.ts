@@ -54,6 +54,7 @@ export * as obfuscationRule from './obfuscation-rule/index';
 export * as oneDashboard from './one-dashboard/index';
 export * as oneDashboardJson from './one-dashboard-json/index';
 export * as oneDashboardRaw from './one-dashboard-raw/index';
+export * as pathpointFlow from './pathpoint-flow/index';
 export * as pipelineCloudRule from './pipeline-cloud-rule/index';
 export * as serviceLevel from './service-level/index';
 export * as syntheticsAlertCondition from './synthetics-alert-condition/index';

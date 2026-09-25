@@ -74,6 +74,7 @@ The following submodules are available:
 - [oneDashboard](./oneDashboard.java.md)
 - [oneDashboardJson](./oneDashboardJson.java.md)
 - [oneDashboardRaw](./oneDashboardRaw.java.md)
+- [pathpointFlow](./pathpointFlow.java.md)
 - [pipelineCloudRule](./pipelineCloudRule.java.md)
 - [provider](./provider.java.md)
 - [serviceLevel](./serviceLevel.java.md)
