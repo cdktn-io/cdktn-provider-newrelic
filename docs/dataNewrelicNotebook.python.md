@@ -4,7 +4,7 @@
 
 ### DataNewrelicNotebook <a name="DataNewrelicNotebook" id="@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/data-sources/notebook newrelic_notebook}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/data-sources/notebook newrelic_notebook}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebook.Initializer"></a>
 
@@ -40,7 +40,7 @@ dataNewrelicNotebook.DataNewrelicNotebook(
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebook.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebook.Initializer.parameter.guid">guid</a></code> | <code>str</code> | The unique entity identifier (GUID) of the notebook. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebook.Initializer.parameter.fetchContent">fetch_content</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, the full notebook body is fetched from the Blob Storage API and stored in the `content` attribute. |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebook.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/data-sources/notebook#id DataNewrelicNotebook#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebook.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/data-sources/notebook#id DataNewrelicNotebook#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The unique entity identifier (GUID) of the notebook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/data-sources/notebook#guid DataNewrelicNotebook#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/data-sources/notebook#guid DataNewrelicNotebook#guid}
 
 ---
 
@@ -122,7 +122,7 @@ When true, the full notebook body is fetched from the Blob Storage API and store
 
 When false (default), only NerdGraph metadata (title, organization_id, blob_id) is retrieved, which is faster and avoids an extra API call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/data-sources/notebook#fetch_content DataNewrelicNotebook#fetch_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/data-sources/notebook#fetch_content DataNewrelicNotebook#fetch_content}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/data-sources/notebook#id DataNewrelicNotebook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/data-sources/notebook#id DataNewrelicNotebook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -530,7 +530,7 @@ The construct id used in the generated config for the DataNewrelicNotebook to im
 
 The id of the existing DataNewrelicNotebook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/data-sources/notebook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/data-sources/notebook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -847,7 +847,7 @@ dataNewrelicNotebook.DataNewrelicNotebookConfig(
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebookConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebookConfig.property.guid">guid</a></code> | <code>str</code> | The unique entity identifier (GUID) of the notebook. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebookConfig.property.fetchContent">fetch_content</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, the full notebook body is fetched from the Blob Storage API and stored in the `content` attribute. |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebookConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/data-sources/notebook#id DataNewrelicNotebook#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebookConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/data-sources/notebook#id DataNewrelicNotebook#id}. |
 
 ---
 
@@ -931,7 +931,7 @@ guid: str
 
 The unique entity identifier (GUID) of the notebook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/data-sources/notebook#guid DataNewrelicNotebook#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/data-sources/notebook#guid DataNewrelicNotebook#guid}
 
 ---
 
@@ -947,7 +947,7 @@ When true, the full notebook body is fetched from the Blob Storage API and store
 
 When false (default), only NerdGraph metadata (title, organization_id, blob_id) is retrieved, which is faster and avoids an extra API call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/data-sources/notebook#fetch_content DataNewrelicNotebook#fetch_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/data-sources/notebook#fetch_content DataNewrelicNotebook#fetch_content}
 
 ---
 
@@ -959,7 +959,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/data-sources/notebook#id DataNewrelicNotebook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/data-sources/notebook#id DataNewrelicNotebook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

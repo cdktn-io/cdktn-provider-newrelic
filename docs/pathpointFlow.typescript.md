@@ -4,7 +4,7 @@
 
 ### PathpointFlow <a name="PathpointFlow" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow newrelic_pathpoint_flow}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow newrelic_pathpoint_flow}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlow.Initializer"></a>
 
@@ -571,7 +571,7 @@ The construct id used in the generated config for the PathpointFlow to import.
 
 The id of the existing PathpointFlow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1012,7 +1012,7 @@ const pathpointFlowConfig: pathpointFlow.PathpointFlowConfig = { ... }
 | <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.category">category</a></code> | <code>string</code> | Optional category used to group flows (e.g. Marketing, Checkout). |
 | <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.description">description</a></code> | <code>string</code> | Optional description of the flow. |
 | <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.healthRollup">healthRollup</a></code> | <code>string</code> | Health rollup strategy: ALERT_CONDITIONS or AUTOMATIC_ROLL_UP. |
-| <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#id PathpointFlow#id}. |
+| <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#id PathpointFlow#id}. |
 | <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.kpis">kpis</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowKpis">PathpointFlowKpis</a>[]</code> | kpis block. |
 | <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.refreshInterval">refreshInterval</a></code> | <code>string</code> | How often health statuses refresh: ONE_MINUTE, FIVE_MINUTES, TEN_MINUTES, FIFTEEN_MINUTES, THIRTY_MINUTES. |
 | <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.stages">stages</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStages">PathpointFlowStages</a>[]</code> | stages block. |
@@ -1099,7 +1099,7 @@ public readonly name: string;
 
 Display name of the Pathpoint flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#name PathpointFlow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#name PathpointFlow#name}
 
 ---
 
@@ -1113,7 +1113,7 @@ public readonly accountId: number;
 
 The New Relic account ID that owns this Pathpoint flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#account_id PathpointFlow#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#account_id PathpointFlow#account_id}
 
 ---
 
@@ -1127,7 +1127,7 @@ public readonly category: string;
 
 Optional category used to group flows (e.g. Marketing, Checkout).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#category PathpointFlow#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#category PathpointFlow#category}
 
 ---
 
@@ -1141,7 +1141,7 @@ public readonly description: string;
 
 Optional description of the flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#description PathpointFlow#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#description PathpointFlow#description}
 
 ---
 
@@ -1155,7 +1155,7 @@ public readonly healthRollup: string;
 
 Health rollup strategy: ALERT_CONDITIONS or AUTOMATIC_ROLL_UP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#health_rollup PathpointFlow#health_rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#health_rollup PathpointFlow#health_rollup}
 
 ---
 
@@ -1167,7 +1167,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#id PathpointFlow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#id PathpointFlow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1184,7 +1184,7 @@ public readonly kpis: IResolvable | PathpointFlowKpis[];
 
 kpis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#kpis PathpointFlow#kpis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#kpis PathpointFlow#kpis}
 
 ---
 
@@ -1198,7 +1198,7 @@ public readonly refreshInterval: string;
 
 How often health statuses refresh: ONE_MINUTE, FIVE_MINUTES, TEN_MINUTES, FIFTEEN_MINUTES, THIRTY_MINUTES.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#refresh_interval PathpointFlow#refresh_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#refresh_interval PathpointFlow#refresh_interval}
 
 ---
 
@@ -1212,7 +1212,7 @@ public readonly stages: IResolvable | PathpointFlowStages[];
 
 stages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#stages PathpointFlow#stages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#stages PathpointFlow#stages}
 
 ---
 
@@ -1248,7 +1248,7 @@ public readonly name: string;
 
 Display name of the KPI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#name PathpointFlow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#name PathpointFlow#name}
 
 ---
 
@@ -1262,7 +1262,7 @@ public readonly query: PathpointFlowKpisQuery;
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#query PathpointFlow#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#query PathpointFlow#query}
 
 ---
 
@@ -1276,7 +1276,7 @@ public readonly accountId: number;
 
 Account ID this KPI belongs to. Defaults to the flow's account_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#account_id PathpointFlow#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#account_id PathpointFlow#account_id}
 
 ---
 
@@ -1290,7 +1290,7 @@ public readonly category: string;
 
 Optional category to group KPIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#category PathpointFlow#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#category PathpointFlow#category}
 
 ---
 
@@ -1304,7 +1304,7 @@ public readonly description: string;
 
 Optional description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#description PathpointFlow#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#description PathpointFlow#description}
 
 ---
 
@@ -1339,7 +1339,7 @@ public readonly from: string;
 
 Data source to query from (e.g., Transaction, Metric, Log).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#from PathpointFlow#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#from PathpointFlow#from}
 
 ---
 
@@ -1353,7 +1353,7 @@ public readonly select: PathpointFlowKpisQuerySelect;
 
 select block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#select PathpointFlow#select}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#select PathpointFlow#select}
 
 ---
 
@@ -1367,7 +1367,7 @@ public readonly timeWindow: PathpointFlowKpisQueryTimeWindow;
 
 time_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#time_window PathpointFlow#time_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#time_window PathpointFlow#time_window}
 
 ---
 
@@ -1381,7 +1381,7 @@ public readonly where: string;
 
 Optional WHERE clause to filter data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#where PathpointFlow#where}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#where PathpointFlow#where}
 
 ---
 
@@ -1416,7 +1416,7 @@ public readonly aggregationType: string;
 
 Aggregation function: AVERAGE, COUNT, HISTOGRAM, MAX, MIN, PERCENTILE, SUM, UNIQUE_COUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#aggregation_type PathpointFlow#aggregation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#aggregation_type PathpointFlow#aggregation_type}
 
 ---
 
@@ -1430,7 +1430,7 @@ public readonly alias: string;
 
 Optional alias for the aggregated value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#alias PathpointFlow#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#alias PathpointFlow#alias}
 
 ---
 
@@ -1444,7 +1444,7 @@ public readonly attribute: string;
 
 Attribute name to aggregate. Required for all functions except COUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#attribute PathpointFlow#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#attribute PathpointFlow#attribute}
 
 ---
 
@@ -1458,7 +1458,7 @@ public readonly threshold: number;
 
 Threshold used in the selected function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#threshold PathpointFlow#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#threshold PathpointFlow#threshold}
 
 ---
 
@@ -1491,7 +1491,7 @@ public readonly customRange: string;
 
 Raw NRQL time fragment, e.g. 'SINCE 3 days ago COMPARE WITH 1 day ago'. Mutually exclusive with relative_range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#custom_range PathpointFlow#custom_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#custom_range PathpointFlow#custom_range}
 
 ---
 
@@ -1505,7 +1505,7 @@ public readonly relativeRange: PathpointFlowKpisQueryTimeWindowRelativeRange;
 
 relative_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#relative_range PathpointFlow#relative_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#relative_range PathpointFlow#relative_range}
 
 ---
 
@@ -1538,7 +1538,7 @@ public readonly since: string;
 
 How far back the KPI is evaluated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#since PathpointFlow#since}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#since PathpointFlow#since}
 
 ---
 
@@ -1552,7 +1552,7 @@ public readonly compareAgainst: string;
 
 The earlier window to compare against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#compare_against PathpointFlow#compare_against}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#compare_against PathpointFlow#compare_against}
 
 ---
 
@@ -1590,7 +1590,7 @@ public readonly name: string;
 
 Display name of the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#name PathpointFlow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#name PathpointFlow#name}
 
 ---
 
@@ -1604,7 +1604,7 @@ public readonly healthRollup: string;
 
 Health rollup strategy: ALERT_CONDITIONS or AUTOMATIC_ROLL_UP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#health_rollup PathpointFlow#health_rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#health_rollup PathpointFlow#health_rollup}
 
 ---
 
@@ -1618,7 +1618,7 @@ public readonly isExcluded: boolean | IResolvable;
 
 When true, this stage is excluded from flow health calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
 
 ---
 
@@ -1632,7 +1632,7 @@ public readonly levels: IResolvable | PathpointFlowStagesLevels[];
 
 levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#levels PathpointFlow#levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#levels PathpointFlow#levels}
 
 ---
 
@@ -1646,7 +1646,7 @@ public readonly link: string;
 
 Optional URL to an external resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#link PathpointFlow#link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#link PathpointFlow#link}
 
 ---
 
@@ -1660,7 +1660,7 @@ public readonly related: PathpointFlowStagesRelated;
 
 related block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#related PathpointFlow#related}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#related PathpointFlow#related}
 
 ---
 
@@ -1674,7 +1674,7 @@ public readonly stageKpis: IResolvable | PathpointFlowStagesStageKpis[];
 
 stage_kpis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#stage_kpis PathpointFlow#stage_kpis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#stage_kpis PathpointFlow#stage_kpis}
 
 ---
 
@@ -1706,7 +1706,7 @@ public readonly steps: IResolvable | PathpointFlowStagesLevelsSteps[];
 
 steps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#steps PathpointFlow#steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#steps PathpointFlow#steps}
 
 ---
 
@@ -1744,7 +1744,7 @@ public readonly name: string;
 
 Display name of the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#name PathpointFlow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#name PathpointFlow#name}
 
 ---
 
@@ -1758,7 +1758,7 @@ public readonly config: PathpointFlowStagesLevelsStepsConfig;
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#config PathpointFlow#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#config PathpointFlow#config}
 
 ---
 
@@ -1772,7 +1772,7 @@ public readonly entitySearchQuery: PathpointFlowStagesLevelsStepsEntitySearchQue
 
 entity_search_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#entity_search_query PathpointFlow#entity_search_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#entity_search_query PathpointFlow#entity_search_query}
 
 ---
 
@@ -1786,7 +1786,7 @@ public readonly isExcluded: boolean | IResolvable;
 
 When true, this step is excluded from level health calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
 
 ---
 
@@ -1800,7 +1800,7 @@ public readonly link: string;
 
 Optional URL to an external resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#link PathpointFlow#link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#link PathpointFlow#link}
 
 ---
 
@@ -1814,7 +1814,7 @@ public readonly scopedAccounts: number[];
 
 Account IDs whose data is scoped to this step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#scoped_accounts PathpointFlow#scoped_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#scoped_accounts PathpointFlow#scoped_accounts}
 
 ---
 
@@ -1828,7 +1828,7 @@ public readonly signals: IResolvable | PathpointFlowStagesLevelsStepsSignals[];
 
 signals block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#signals PathpointFlow#signals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#signals PathpointFlow#signals}
 
 ---
 
@@ -1862,7 +1862,7 @@ public readonly healthRollup: string;
 
 How step health is rolled up: BEST_STATUS_WINS or WORST_STATUS_WINS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#health_rollup PathpointFlow#health_rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#health_rollup PathpointFlow#health_rollup}
 
 ---
 
@@ -1876,7 +1876,7 @@ public readonly thresholdType: string;
 
 Whether threshold is FIXED or PERCENTAGE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#threshold_type PathpointFlow#threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#threshold_type PathpointFlow#threshold_type}
 
 ---
 
@@ -1890,7 +1890,7 @@ public readonly thresholdValue: number;
 
 Numeric threshold value for step health evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#threshold_value PathpointFlow#threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#threshold_value PathpointFlow#threshold_value}
 
 ---
 
@@ -1923,7 +1923,7 @@ public readonly query: string;
 
 Filter query for signals, e.g. domain='NR1' AND type='APPLICATION'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#query PathpointFlow#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#query PathpointFlow#query}
 
 ---
 
@@ -1937,7 +1937,7 @@ public readonly isExcluded: boolean | IResolvable;
 
 When true, this query is excluded from health calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
 
 ---
 
@@ -1972,7 +1972,7 @@ public readonly guid: string;
 
 Entity GUID of the signal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#guid PathpointFlow#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#guid PathpointFlow#guid}
 
 ---
 
@@ -1986,7 +1986,7 @@ public readonly isExcluded: boolean | IResolvable;
 
 When true, this signal is excluded from step health calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
 
 ---
 
@@ -2000,7 +2000,7 @@ public readonly name: string;
 
 Display name of the signal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#name PathpointFlow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#name PathpointFlow#name}
 
 ---
 
@@ -2014,7 +2014,7 @@ public readonly type: string;
 
 Whether this GUID belongs to an entity or an alert condition: ENTITY or ALERT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#type PathpointFlow#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#type PathpointFlow#type}
 
 ---
 
@@ -2047,7 +2047,7 @@ public readonly source: boolean | IResolvable;
 
 When true, this stage acts as a source to other stages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#source PathpointFlow#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#source PathpointFlow#source}
 
 ---
 
@@ -2061,7 +2061,7 @@ public readonly target: boolean | IResolvable;
 
 When true, this stage acts as a target to other stages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#target PathpointFlow#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#target PathpointFlow#target}
 
 ---
 
@@ -2097,7 +2097,7 @@ public readonly name: string;
 
 Display name of the KPI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#name PathpointFlow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#name PathpointFlow#name}
 
 ---
 
@@ -2111,7 +2111,7 @@ public readonly query: PathpointFlowStagesStageKpisQuery;
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#query PathpointFlow#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#query PathpointFlow#query}
 
 ---
 
@@ -2125,7 +2125,7 @@ public readonly accountId: number;
 
 Account ID this KPI belongs to. Defaults to the flow's account_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#account_id PathpointFlow#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#account_id PathpointFlow#account_id}
 
 ---
 
@@ -2139,7 +2139,7 @@ public readonly category: string;
 
 Optional category to group KPIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#category PathpointFlow#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#category PathpointFlow#category}
 
 ---
 
@@ -2153,7 +2153,7 @@ public readonly description: string;
 
 Optional description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#description PathpointFlow#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#description PathpointFlow#description}
 
 ---
 
@@ -2188,7 +2188,7 @@ public readonly from: string;
 
 Data source to query from (e.g., Transaction, Metric, Log).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#from PathpointFlow#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#from PathpointFlow#from}
 
 ---
 
@@ -2202,7 +2202,7 @@ public readonly select: PathpointFlowStagesStageKpisQuerySelect;
 
 select block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#select PathpointFlow#select}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#select PathpointFlow#select}
 
 ---
 
@@ -2216,7 +2216,7 @@ public readonly timeWindow: PathpointFlowStagesStageKpisQueryTimeWindow;
 
 time_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#time_window PathpointFlow#time_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#time_window PathpointFlow#time_window}
 
 ---
 
@@ -2230,7 +2230,7 @@ public readonly where: string;
 
 Optional WHERE clause to filter data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#where PathpointFlow#where}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#where PathpointFlow#where}
 
 ---
 
@@ -2265,7 +2265,7 @@ public readonly aggregationType: string;
 
 Aggregation function: AVERAGE, COUNT, HISTOGRAM, MAX, MIN, PERCENTILE, SUM, UNIQUE_COUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#aggregation_type PathpointFlow#aggregation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#aggregation_type PathpointFlow#aggregation_type}
 
 ---
 
@@ -2279,7 +2279,7 @@ public readonly alias: string;
 
 Optional alias for the aggregated value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#alias PathpointFlow#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#alias PathpointFlow#alias}
 
 ---
 
@@ -2293,7 +2293,7 @@ public readonly attribute: string;
 
 Attribute name to aggregate. Required for all functions except COUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#attribute PathpointFlow#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#attribute PathpointFlow#attribute}
 
 ---
 
@@ -2307,7 +2307,7 @@ public readonly threshold: number;
 
 Threshold used in the selected function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#threshold PathpointFlow#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#threshold PathpointFlow#threshold}
 
 ---
 
@@ -2340,7 +2340,7 @@ public readonly customRange: string;
 
 Raw NRQL time fragment, e.g. 'SINCE 3 days ago COMPARE WITH 1 day ago'. Mutually exclusive with relative_range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#custom_range PathpointFlow#custom_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#custom_range PathpointFlow#custom_range}
 
 ---
 
@@ -2354,7 +2354,7 @@ public readonly relativeRange: PathpointFlowStagesStageKpisQueryTimeWindowRelati
 
 relative_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#relative_range PathpointFlow#relative_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#relative_range PathpointFlow#relative_range}
 
 ---
 
@@ -2387,7 +2387,7 @@ public readonly since: string;
 
 How far back the KPI is evaluated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#since PathpointFlow#since}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#since PathpointFlow#since}
 
 ---
 
@@ -2401,7 +2401,7 @@ public readonly compareAgainst: string;
 
 The earlier window to compare against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/pathpoint_flow#compare_against PathpointFlow#compare_against}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/pathpoint_flow#compare_against PathpointFlow#compare_against}
 
 ---
 
