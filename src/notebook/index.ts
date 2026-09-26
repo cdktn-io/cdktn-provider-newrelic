@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook
+// https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface NotebookConfig extends cdktn.TerraformMetaArguments {
   /**
   * The notebook body as a JSON string. Accepts a raw JSON string, a file() reference, or a jsonencode({...}) expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#content Notebook#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#content Notebook#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#id Notebook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#id Notebook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,27 +28,27 @@ export interface NotebookConfig extends cdktn.TerraformMetaArguments {
   /**
   * The title of the notebook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#title Notebook#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#title Notebook#title}
   */
   readonly title: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#timeouts Notebook#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#timeouts Notebook#timeouts}
   */
   readonly timeouts?: NotebookTimeouts;
 }
 export interface NotebookTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#create Notebook#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#create Notebook#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#delete Notebook#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#delete Notebook#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#update Notebook#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#update Notebook#update}
   */
   readonly update?: string;
 }
@@ -200,7 +200,7 @@ export class NotebookTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook newrelic_notebook}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook newrelic_notebook}
 */
 export class Notebook extends cdktn.TerraformResource {
 
@@ -216,7 +216,7 @@ export class Notebook extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Notebook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Notebook to import
-  * @param importFromId The id of the existing Notebook that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Notebook that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Notebook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -228,7 +228,7 @@ export class Notebook extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook newrelic_notebook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook newrelic_notebook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -239,7 +239,7 @@ export class Notebook extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_notebook',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.99.1',
+        providerVersion: '3.99.3',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### Notebook <a name="Notebook" id="@cdktn/provider-newrelic.notebook.Notebook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook newrelic_notebook}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook newrelic_notebook}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.notebook.Notebook.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the Notebook to import.
 
 The id of the existing Notebook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -867,7 +867,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/notebook"
 | <code><a href="#@cdktn/provider-newrelic.notebook.NotebookConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.notebook.NotebookConfig.property.content">Content</a></code> | <code>*string</code> | The notebook body as a JSON string. Accepts a raw JSON string, a file() reference, or a jsonencode({...}) expression. |
 | <code><a href="#@cdktn/provider-newrelic.notebook.NotebookConfig.property.title">Title</a></code> | <code>*string</code> | The title of the notebook. |
-| <code><a href="#@cdktn/provider-newrelic.notebook.NotebookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#id Notebook#id}. |
+| <code><a href="#@cdktn/provider-newrelic.notebook.NotebookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#id Notebook#id}. |
 | <code><a href="#@cdktn/provider-newrelic.notebook.NotebookConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-newrelic.notebook.NotebookTimeouts">NotebookTimeouts</a></code> | timeouts block. |
 
 ---
@@ -952,7 +952,7 @@ Content *string
 
 The notebook body as a JSON string. Accepts a raw JSON string, a file() reference, or a jsonencode({...}) expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#content Notebook#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#content Notebook#content}
 
 ---
 
@@ -966,7 +966,7 @@ Title *string
 
 The title of the notebook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#title Notebook#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#title Notebook#title}
 
 ---
 
@@ -978,7 +978,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#id Notebook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#id Notebook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -995,7 +995,7 @@ Timeouts NotebookTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#timeouts Notebook#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#timeouts Notebook#timeouts}
 
 ---
 
@@ -1017,9 +1017,9 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/notebook"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.notebook.NotebookTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#create Notebook#create}. |
-| <code><a href="#@cdktn/provider-newrelic.notebook.NotebookTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#delete Notebook#delete}. |
-| <code><a href="#@cdktn/provider-newrelic.notebook.NotebookTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#update Notebook#update}. |
+| <code><a href="#@cdktn/provider-newrelic.notebook.NotebookTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#create Notebook#create}. |
+| <code><a href="#@cdktn/provider-newrelic.notebook.NotebookTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#delete Notebook#delete}. |
+| <code><a href="#@cdktn/provider-newrelic.notebook.NotebookTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#update Notebook#update}. |
 
 ---
 
@@ -1031,7 +1031,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#create Notebook#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#create Notebook#create}.
 
 ---
 
@@ -1043,7 +1043,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#delete Notebook#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#delete Notebook#delete}.
 
 ---
 
@@ -1055,7 +1055,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.1/docs/resources/notebook#update Notebook#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/notebook#update Notebook#update}.
 
 ---
 
