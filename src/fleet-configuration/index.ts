@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/fleet_configuration
+// https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/fleet_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,50 +15,62 @@ export interface FleetConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The type of agent this configuration is for. Allowed values: NRInfra, NRDOT, FluentBit, NRPrometheusAgent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/fleet_configuration#agent_type FleetConfiguration#agent_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/fleet_configuration#agent_type FleetConfiguration#agent_type}
   */
   readonly agentType: string;
   /**
   * The configuration content (YAML or JSON). Use file() to load from a file. Each change to this field creates a new immutable version on the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/fleet_configuration#configuration_content FleetConfiguration#configuration_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/fleet_configuration#configuration_content FleetConfiguration#configuration_content}
   */
   readonly configurationContent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/fleet_configuration#id FleetConfiguration#id}
+  * The configuration type. Currently only "AgentConfig" is supported, and it is the default - a fleet configuration can no longer be created with a null configuration type through this field. Use legacy_config = true instead to create a legacy configuration. This is an interim restriction pending further product guidance and may change. Cannot be changed after creation.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/fleet_configuration#configuration_type FleetConfiguration#configuration_type}
+  */
+  readonly configurationType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/fleet_configuration#id FleetConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * Set to true to create a legacy configuration with no configuration type (null), instead of the default "AgentConfig". Mutually exclusive with configuration_type. Cannot be changed after creation.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/fleet_configuration#legacy_config FleetConfiguration#legacy_config}
+  */
+  readonly legacyConfig?: boolean | cdktn.IResolvable;
+  /**
   * The type of entities this configuration manages. Allowed values: HOST, KUBERNETESCLUSTER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/fleet_configuration#managed_entity_type FleetConfiguration#managed_entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/fleet_configuration#managed_entity_type FleetConfiguration#managed_entity_type}
   */
   readonly managedEntityType: string;
   /**
   * The name of the configuration. Changing this forces resource recreation because the API does not support renaming.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/fleet_configuration#name FleetConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/fleet_configuration#name FleetConfiguration#name}
   */
   readonly name: string;
   /**
   * The operating system this configuration targets. Required for HOST configurations. Allowed values: LINUX, WINDOWS. Must not be set for KUBERNETESCLUSTER configurations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/fleet_configuration#operating_system FleetConfiguration#operating_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/fleet_configuration#operating_system FleetConfiguration#operating_system}
   */
   readonly operatingSystem?: string;
   /**
   * The organization ID. Auto-fetched from the account if not provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/fleet_configuration#organization_id FleetConfiguration#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/fleet_configuration#organization_id FleetConfiguration#organization_id}
   */
   readonly organizationId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/fleet_configuration newrelic_fleet_configuration}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/fleet_configuration newrelic_fleet_configuration}
 */
 export class FleetConfiguration extends cdktn.TerraformResource {
 
@@ -74,7 +86,7 @@ export class FleetConfiguration extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FleetConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FleetConfiguration to import
-  * @param importFromId The id of the existing FleetConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/fleet_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FleetConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/fleet_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FleetConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -86,7 +98,7 @@ export class FleetConfiguration extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.99.3/docs/resources/fleet_configuration newrelic_fleet_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/fleet_configuration newrelic_fleet_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +109,7 @@ export class FleetConfiguration extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_fleet_configuration',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.99.3',
+        providerVersion: '3.100.3',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -110,7 +122,9 @@ export class FleetConfiguration extends cdktn.TerraformResource {
     });
     this._agentType = config.agentType;
     this._configurationContent = config.configurationContent;
+    this._configurationType = config.configurationType;
     this._id = config.id;
+    this._legacyConfig = config.legacyConfig;
     this._managedEntityType = config.managedEntityType;
     this._name = config.name;
     this._operatingSystem = config.operatingSystem;
@@ -152,6 +166,22 @@ export class FleetConfiguration extends cdktn.TerraformResource {
     return this.getStringAttribute('configuration_id');
   }
 
+  // configuration_type - computed: true, optional: true, required: false
+  private _configurationType?: string; 
+  public get configurationType() {
+    return this.getStringAttribute('configuration_type');
+  }
+  public set configurationType(value: string) {
+    this._configurationType = value;
+  }
+  public resetConfigurationType() {
+    this._configurationType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configurationTypeInput() {
+    return this._configurationType;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -176,6 +206,22 @@ export class FleetConfiguration extends cdktn.TerraformResource {
   // latest_version_number - computed: true, optional: false, required: false
   public get latestVersionNumber() {
     return this.getNumberAttribute('latest_version_number');
+  }
+
+  // legacy_config - computed: false, optional: true, required: false
+  private _legacyConfig?: boolean | cdktn.IResolvable; 
+  public get legacyConfig() {
+    return this.getBooleanAttribute('legacy_config');
+  }
+  public set legacyConfig(value: boolean | cdktn.IResolvable) {
+    this._legacyConfig = value;
+  }
+  public resetLegacyConfig() {
+    this._legacyConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get legacyConfigInput() {
+    return this._legacyConfig;
   }
 
   // managed_entity_type - computed: false, optional: false, required: true
@@ -254,7 +300,9 @@ export class FleetConfiguration extends cdktn.TerraformResource {
     return {
       agent_type: cdktn.stringToTerraform(this._agentType),
       configuration_content: cdktn.stringToTerraform(this._configurationContent),
+      configuration_type: cdktn.stringToTerraform(this._configurationType),
       id: cdktn.stringToTerraform(this._id),
+      legacy_config: cdktn.booleanToTerraform(this._legacyConfig),
       managed_entity_type: cdktn.stringToTerraform(this._managedEntityType),
       name: cdktn.stringToTerraform(this._name),
       operating_system: cdktn.stringToTerraform(this._operatingSystem),
@@ -276,11 +324,23 @@ export class FleetConfiguration extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      configuration_type: {
+        value: cdktn.stringToHclTerraform(this._configurationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      legacy_config: {
+        value: cdktn.booleanToHclTerraform(this._legacyConfig),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       managed_entity_type: {
         value: cdktn.stringToHclTerraform(this._managedEntityType),
