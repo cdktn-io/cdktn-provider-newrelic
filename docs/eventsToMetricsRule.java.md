@@ -4,7 +4,7 @@
 
 ### EventsToMetricsRule <a name="EventsToMetricsRule" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule newrelic_events_to_metrics_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule newrelic_events_to_metrics_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.Initializer"></a>
 
@@ -44,7 +44,7 @@ EventsToMetricsRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | Account with the event and where the metrics will be put. |
 | <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Provides additional information about the rule. |
 | <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | True means this rule is enabled. False means the rule is currently not creating metrics. |
-| <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#id EventsToMetricsRule#id}. |
+| <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#id EventsToMetricsRule#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the rule. This must be unique within an account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#name EventsToMetricsRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#name EventsToMetricsRule#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Explains how to create metrics from events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#nrql EventsToMetricsRule#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#nrql EventsToMetricsRule#nrql}
 
 ---
 
@@ -136,7 +136,7 @@ Account with the event and where the metrics will be put.
 
 Defaults to the account ID specified in the provider configuration if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#account_id EventsToMetricsRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#account_id EventsToMetricsRule#account_id}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Provides additional information about the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#description EventsToMetricsRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#description EventsToMetricsRule#description}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 True means this rule is enabled. False means the rule is currently not creating metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#enabled EventsToMetricsRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#enabled EventsToMetricsRule#enabled}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#id EventsToMetricsRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#id EventsToMetricsRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -644,7 +644,7 @@ The construct id used in the generated config for the EventsToMetricsRule to imp
 
 The id of the existing EventsToMetricsRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1022,7 +1022,7 @@ EventsToMetricsRuleConfig.builder()
 | <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRuleConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | Account with the event and where the metrics will be put. |
 | <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Provides additional information about the rule. |
 | <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRuleConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | True means this rule is enabled. False means the rule is currently not creating metrics. |
-| <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#id EventsToMetricsRule#id}. |
+| <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#id EventsToMetricsRule#id}. |
 
 ---
 
@@ -1106,7 +1106,7 @@ public java.lang.String getName();
 
 The name of the rule. This must be unique within an account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#name EventsToMetricsRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#name EventsToMetricsRule#name}
 
 ---
 
@@ -1120,7 +1120,7 @@ public java.lang.String getNrql();
 
 Explains how to create metrics from events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#nrql EventsToMetricsRule#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#nrql EventsToMetricsRule#nrql}
 
 ---
 
@@ -1136,7 +1136,7 @@ Account with the event and where the metrics will be put.
 
 Defaults to the account ID specified in the provider configuration if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#account_id EventsToMetricsRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#account_id EventsToMetricsRule#account_id}
 
 ---
 
@@ -1150,7 +1150,7 @@ public java.lang.String getDescription();
 
 Provides additional information about the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#description EventsToMetricsRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#description EventsToMetricsRule#description}
 
 ---
 
@@ -1164,7 +1164,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 True means this rule is enabled. False means the rule is currently not creating metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#enabled EventsToMetricsRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#enabled EventsToMetricsRule#enabled}
 
 ---
 
@@ -1176,7 +1176,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/events_to_metrics_rule#id EventsToMetricsRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/events_to_metrics_rule#id EventsToMetricsRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations
+// https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface CloudGcpDmIntegrationsConfig extends cdktn.TerraformMetaArgumen
   /**
   * The New Relic account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#account_id CloudGcpDmIntegrations#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#account_id CloudGcpDmIntegrations#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#id CloudGcpDmIntegrations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#id CloudGcpDmIntegrations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,217 +28,217 @@ export interface CloudGcpDmIntegrationsConfig extends cdktn.TerraformMetaArgumen
   /**
   * The ID of the GCP Dimensional Metrics linked account (from newrelic_cloud_gcp_link_account with use_workload_identity_federation = true).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#linked_account_id CloudGcpDmIntegrations#linked_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#linked_account_id CloudGcpDmIntegrations#linked_account_id}
   */
   readonly linkedAccountId: number;
   /**
   * ai_platform block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#ai_platform CloudGcpDmIntegrations#ai_platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#ai_platform CloudGcpDmIntegrations#ai_platform}
   */
   readonly aiPlatform?: CloudGcpDmIntegrationsAiPlatform;
   /**
   * alloy_db block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#alloy_db CloudGcpDmIntegrations#alloy_db}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#alloy_db CloudGcpDmIntegrations#alloy_db}
   */
   readonly alloyDb?: CloudGcpDmIntegrationsAlloyDb;
   /**
   * api_gateway block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#api_gateway CloudGcpDmIntegrations#api_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#api_gateway CloudGcpDmIntegrations#api_gateway}
   */
   readonly apiGateway?: CloudGcpDmIntegrationsApiGateway;
   /**
   * app_engine block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#app_engine CloudGcpDmIntegrations#app_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#app_engine CloudGcpDmIntegrations#app_engine}
   */
   readonly appEngine?: CloudGcpDmIntegrationsAppEngine;
   /**
   * big_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#big_query CloudGcpDmIntegrations#big_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#big_query CloudGcpDmIntegrations#big_query}
   */
   readonly bigQuery?: CloudGcpDmIntegrationsBigQuery;
   /**
   * big_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#big_table CloudGcpDmIntegrations#big_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#big_table CloudGcpDmIntegrations#big_table}
   */
   readonly bigTable?: CloudGcpDmIntegrationsBigTable;
   /**
   * composer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#composer CloudGcpDmIntegrations#composer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#composer CloudGcpDmIntegrations#composer}
   */
   readonly composer?: CloudGcpDmIntegrationsComposer;
   /**
   * data_flow block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#data_flow CloudGcpDmIntegrations#data_flow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#data_flow CloudGcpDmIntegrations#data_flow}
   */
   readonly dataFlow?: CloudGcpDmIntegrationsDataFlow;
   /**
   * data_proc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#data_proc CloudGcpDmIntegrations#data_proc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#data_proc CloudGcpDmIntegrations#data_proc}
   */
   readonly dataProc?: CloudGcpDmIntegrationsDataProc;
   /**
   * data_store block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#data_store CloudGcpDmIntegrations#data_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#data_store CloudGcpDmIntegrations#data_store}
   */
   readonly dataStore?: CloudGcpDmIntegrationsDataStore;
   /**
   * edge_container block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#edge_container CloudGcpDmIntegrations#edge_container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#edge_container CloudGcpDmIntegrations#edge_container}
   */
   readonly edgeContainer?: CloudGcpDmIntegrationsEdgeContainer;
   /**
   * firebase_app_hosting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#firebase_app_hosting CloudGcpDmIntegrations#firebase_app_hosting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#firebase_app_hosting CloudGcpDmIntegrations#firebase_app_hosting}
   */
   readonly firebaseAppHosting?: CloudGcpDmIntegrationsFirebaseAppHosting;
   /**
   * firebase_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#firebase_auth CloudGcpDmIntegrations#firebase_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#firebase_auth CloudGcpDmIntegrations#firebase_auth}
   */
   readonly firebaseAuth?: CloudGcpDmIntegrationsFirebaseAuth;
   /**
   * firebase_database block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#firebase_database CloudGcpDmIntegrations#firebase_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#firebase_database CloudGcpDmIntegrations#firebase_database}
   */
   readonly firebaseDatabase?: CloudGcpDmIntegrationsFirebaseDatabase;
   /**
   * firebase_hosting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#firebase_hosting CloudGcpDmIntegrations#firebase_hosting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#firebase_hosting CloudGcpDmIntegrations#firebase_hosting}
   */
   readonly firebaseHosting?: CloudGcpDmIntegrationsFirebaseHosting;
   /**
   * firebase_storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#firebase_storage CloudGcpDmIntegrations#firebase_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#firebase_storage CloudGcpDmIntegrations#firebase_storage}
   */
   readonly firebaseStorage?: CloudGcpDmIntegrationsFirebaseStorage;
   /**
   * firebase_vertex_ai block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#firebase_vertex_ai CloudGcpDmIntegrations#firebase_vertex_ai}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#firebase_vertex_ai CloudGcpDmIntegrations#firebase_vertex_ai}
   */
   readonly firebaseVertexAi?: CloudGcpDmIntegrationsFirebaseVertexAi;
   /**
   * firestore block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#firestore CloudGcpDmIntegrations#firestore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#firestore CloudGcpDmIntegrations#firestore}
   */
   readonly firestore?: CloudGcpDmIntegrationsFirestore;
   /**
   * functions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#functions CloudGcpDmIntegrations#functions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#functions CloudGcpDmIntegrations#functions}
   */
   readonly functions?: CloudGcpDmIntegrationsFunctions;
   /**
   * interconnect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#interconnect CloudGcpDmIntegrations#interconnect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#interconnect CloudGcpDmIntegrations#interconnect}
   */
   readonly interconnect?: CloudGcpDmIntegrationsInterconnect;
   /**
   * istio block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#istio CloudGcpDmIntegrations#istio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#istio CloudGcpDmIntegrations#istio}
   */
   readonly istio?: CloudGcpDmIntegrationsIstio;
   /**
   * kubernetes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#kubernetes CloudGcpDmIntegrations#kubernetes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#kubernetes CloudGcpDmIntegrations#kubernetes}
   */
   readonly kubernetes?: CloudGcpDmIntegrationsKubernetes;
   /**
   * load_balancing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#load_balancing CloudGcpDmIntegrations#load_balancing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#load_balancing CloudGcpDmIntegrations#load_balancing}
   */
   readonly loadBalancing?: CloudGcpDmIntegrationsLoadBalancing;
   /**
   * managed_kafka block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#managed_kafka CloudGcpDmIntegrations#managed_kafka}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#managed_kafka CloudGcpDmIntegrations#managed_kafka}
   */
   readonly managedKafka?: CloudGcpDmIntegrationsManagedKafka;
   /**
   * mem_cache block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#mem_cache CloudGcpDmIntegrations#mem_cache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#mem_cache CloudGcpDmIntegrations#mem_cache}
   */
   readonly memCache?: CloudGcpDmIntegrationsMemCache;
   /**
   * memory_store block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#memory_store CloudGcpDmIntegrations#memory_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#memory_store CloudGcpDmIntegrations#memory_store}
   */
   readonly memoryStore?: CloudGcpDmIntegrationsMemoryStore;
   /**
   * pub_sub block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#pub_sub CloudGcpDmIntegrations#pub_sub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#pub_sub CloudGcpDmIntegrations#pub_sub}
   */
   readonly pubSub?: CloudGcpDmIntegrationsPubSub;
   /**
   * redis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#redis CloudGcpDmIntegrations#redis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#redis CloudGcpDmIntegrations#redis}
   */
   readonly redis?: CloudGcpDmIntegrationsRedis;
   /**
   * router block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#router CloudGcpDmIntegrations#router}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#router CloudGcpDmIntegrations#router}
   */
   readonly router?: CloudGcpDmIntegrationsRouter;
   /**
   * run block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#run CloudGcpDmIntegrations#run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#run CloudGcpDmIntegrations#run}
   */
   readonly run?: CloudGcpDmIntegrationsRun;
   /**
   * spanner block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#spanner CloudGcpDmIntegrations#spanner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#spanner CloudGcpDmIntegrations#spanner}
   */
   readonly spanner?: CloudGcpDmIntegrationsSpanner;
   /**
   * sql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#sql CloudGcpDmIntegrations#sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#sql CloudGcpDmIntegrations#sql}
   */
   readonly sql?: CloudGcpDmIntegrationsSql;
   /**
   * storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#storage CloudGcpDmIntegrations#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#storage CloudGcpDmIntegrations#storage}
   */
   readonly storage?: CloudGcpDmIntegrationsStorage;
   /**
   * virtual_machines block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#virtual_machines CloudGcpDmIntegrations#virtual_machines}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#virtual_machines CloudGcpDmIntegrations#virtual_machines}
   */
   readonly virtualMachines?: CloudGcpDmIntegrationsVirtualMachines;
   /**
   * vpc_access block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#vpc_access CloudGcpDmIntegrations#vpc_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#vpc_access CloudGcpDmIntegrations#vpc_access}
   */
   readonly vpcAccess?: CloudGcpDmIntegrationsVpcAccess;
 }
@@ -246,7 +246,7 @@ export interface CloudGcpDmIntegrationsAiPlatform {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -332,7 +332,7 @@ export interface CloudGcpDmIntegrationsAlloyDb {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -418,7 +418,7 @@ export interface CloudGcpDmIntegrationsApiGateway {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -504,7 +504,7 @@ export interface CloudGcpDmIntegrationsAppEngine {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -590,7 +590,7 @@ export interface CloudGcpDmIntegrationsBigQuery {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -676,7 +676,7 @@ export interface CloudGcpDmIntegrationsBigTable {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -762,7 +762,7 @@ export interface CloudGcpDmIntegrationsComposer {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -848,7 +848,7 @@ export interface CloudGcpDmIntegrationsDataFlow {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -934,7 +934,7 @@ export interface CloudGcpDmIntegrationsDataProc {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -1020,7 +1020,7 @@ export interface CloudGcpDmIntegrationsDataStore {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -1106,7 +1106,7 @@ export interface CloudGcpDmIntegrationsEdgeContainer {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -1192,7 +1192,7 @@ export interface CloudGcpDmIntegrationsFirebaseAppHosting {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -1278,7 +1278,7 @@ export interface CloudGcpDmIntegrationsFirebaseAuth {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -1364,7 +1364,7 @@ export interface CloudGcpDmIntegrationsFirebaseDatabase {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -1450,7 +1450,7 @@ export interface CloudGcpDmIntegrationsFirebaseHosting {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -1536,7 +1536,7 @@ export interface CloudGcpDmIntegrationsFirebaseStorage {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -1622,7 +1622,7 @@ export interface CloudGcpDmIntegrationsFirebaseVertexAi {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -1708,7 +1708,7 @@ export interface CloudGcpDmIntegrationsFirestore {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -1794,7 +1794,7 @@ export interface CloudGcpDmIntegrationsFunctions {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -1880,7 +1880,7 @@ export interface CloudGcpDmIntegrationsInterconnect {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -1966,7 +1966,7 @@ export interface CloudGcpDmIntegrationsIstio {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -2052,7 +2052,7 @@ export interface CloudGcpDmIntegrationsKubernetes {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -2138,7 +2138,7 @@ export interface CloudGcpDmIntegrationsLoadBalancing {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -2224,7 +2224,7 @@ export interface CloudGcpDmIntegrationsManagedKafka {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -2310,7 +2310,7 @@ export interface CloudGcpDmIntegrationsMemCache {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -2396,7 +2396,7 @@ export interface CloudGcpDmIntegrationsMemoryStore {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -2482,7 +2482,7 @@ export interface CloudGcpDmIntegrationsPubSub {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -2568,7 +2568,7 @@ export interface CloudGcpDmIntegrationsRedis {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -2654,7 +2654,7 @@ export interface CloudGcpDmIntegrationsRouter {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -2740,7 +2740,7 @@ export interface CloudGcpDmIntegrationsRun {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -2826,7 +2826,7 @@ export interface CloudGcpDmIntegrationsSpanner {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -2912,7 +2912,7 @@ export interface CloudGcpDmIntegrationsSql {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -2998,7 +2998,7 @@ export interface CloudGcpDmIntegrationsStorage {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -3084,7 +3084,7 @@ export interface CloudGcpDmIntegrationsVirtualMachines {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -3170,7 +3170,7 @@ export interface CloudGcpDmIntegrationsVpcAccess {
   /**
   * The data polling interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
   */
   readonly metricsPollingInterval?: number;
 }
@@ -3254,7 +3254,7 @@ export class CloudGcpDmIntegrationsVpcAccessOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations newrelic_cloud_gcp_dm_integrations}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations newrelic_cloud_gcp_dm_integrations}
 */
 export class CloudGcpDmIntegrations extends cdktn.TerraformResource {
 
@@ -3270,7 +3270,7 @@ export class CloudGcpDmIntegrations extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CloudGcpDmIntegrations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudGcpDmIntegrations to import
-  * @param importFromId The id of the existing CloudGcpDmIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudGcpDmIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudGcpDmIntegrations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3282,7 +3282,7 @@ export class CloudGcpDmIntegrations extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.3/docs/resources/cloud_gcp_dm_integrations newrelic_cloud_gcp_dm_integrations} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.100.4/docs/resources/cloud_gcp_dm_integrations newrelic_cloud_gcp_dm_integrations} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3293,7 +3293,7 @@ export class CloudGcpDmIntegrations extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_cloud_gcp_dm_integrations',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.100.3',
+        providerVersion: '3.100.4',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
