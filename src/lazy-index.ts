@@ -56,6 +56,8 @@ Object.defineProperty(exports, 'oneDashboardJson', { get: function () { return r
 Object.defineProperty(exports, 'oneDashboardRaw', { get: function () { return require('./one-dashboard-raw'); } });
 Object.defineProperty(exports, 'pathpointFlow', { get: function () { return require('./pathpoint-flow'); } });
 Object.defineProperty(exports, 'pipelineCloudRule', { get: function () { return require('./pipeline-cloud-rule'); } });
+Object.defineProperty(exports, 'scorecard', { get: function () { return require('./scorecard'); } });
+Object.defineProperty(exports, 'scorecardRule', { get: function () { return require('./scorecard-rule'); } });
 Object.defineProperty(exports, 'serviceLevel', { get: function () { return require('./service-level'); } });
 Object.defineProperty(exports, 'syntheticsAlertCondition', { get: function () { return require('./synthetics-alert-condition'); } });
 Object.defineProperty(exports, 'syntheticsBrokenLinksMonitor', { get: function () { return require('./synthetics-broken-links-monitor'); } });
@@ -66,6 +68,8 @@ Object.defineProperty(exports, 'syntheticsPrivateLocation', { get: function () {
 Object.defineProperty(exports, 'syntheticsScriptMonitor', { get: function () { return require('./synthetics-script-monitor'); } });
 Object.defineProperty(exports, 'syntheticsSecureCredential', { get: function () { return require('./synthetics-secure-credential'); } });
 Object.defineProperty(exports, 'syntheticsStepMonitor', { get: function () { return require('./synthetics-step-monitor'); } });
+Object.defineProperty(exports, 'team', { get: function () { return require('./team'); } });
+Object.defineProperty(exports, 'teamsOrganizationSettings', { get: function () { return require('./teams-organization-settings'); } });
 Object.defineProperty(exports, 'user', { get: function () { return require('./user'); } });
 Object.defineProperty(exports, 'workflow', { get: function () { return require('./workflow'); } });
 Object.defineProperty(exports, 'workflowAutomation', { get: function () { return require('./workflow-automation'); } });
@@ -88,6 +92,7 @@ Object.defineProperty(exports, 'dataNewrelicObfuscationExpression', { get: funct
 Object.defineProperty(exports, 'dataNewrelicServiceLevelAlertHelper', { get: function () { return require('./data-newrelic-service-level-alert-helper'); } });
 Object.defineProperty(exports, 'dataNewrelicSyntheticsPrivateLocation', { get: function () { return require('./data-newrelic-synthetics-private-location'); } });
 Object.defineProperty(exports, 'dataNewrelicSyntheticsSecureCredential', { get: function () { return require('./data-newrelic-synthetics-secure-credential'); } });
+Object.defineProperty(exports, 'dataNewrelicTeamsHierarchyLevels', { get: function () { return require('./data-newrelic-teams-hierarchy-levels'); } });
 Object.defineProperty(exports, 'dataNewrelicTestGrokPattern', { get: function () { return require('./data-newrelic-test-grok-pattern'); } });
 Object.defineProperty(exports, 'dataNewrelicUser', { get: function () { return require('./data-newrelic-user'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });

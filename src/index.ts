@@ -56,6 +56,8 @@ export * as oneDashboardJson from './one-dashboard-json/index';
 export * as oneDashboardRaw from './one-dashboard-raw/index';
 export * as pathpointFlow from './pathpoint-flow/index';
 export * as pipelineCloudRule from './pipeline-cloud-rule/index';
+export * as scorecard from './scorecard/index';
+export * as scorecardRule from './scorecard-rule/index';
 export * as serviceLevel from './service-level/index';
 export * as syntheticsAlertCondition from './synthetics-alert-condition/index';
 export * as syntheticsBrokenLinksMonitor from './synthetics-broken-links-monitor/index';
@@ -66,6 +68,8 @@ export * as syntheticsPrivateLocation from './synthetics-private-location/index'
 export * as syntheticsScriptMonitor from './synthetics-script-monitor/index';
 export * as syntheticsSecureCredential from './synthetics-secure-credential/index';
 export * as syntheticsStepMonitor from './synthetics-step-monitor/index';
+export * as team from './team/index';
+export * as teamsOrganizationSettings from './teams-organization-settings/index';
 export * as user from './user/index';
 export * as workflow from './workflow/index';
 export * as workflowAutomation from './workflow-automation/index';
@@ -88,6 +92,7 @@ export * as dataNewrelicObfuscationExpression from './data-newrelic-obfuscation-
 export * as dataNewrelicServiceLevelAlertHelper from './data-newrelic-service-level-alert-helper/index';
 export * as dataNewrelicSyntheticsPrivateLocation from './data-newrelic-synthetics-private-location/index';
 export * as dataNewrelicSyntheticsSecureCredential from './data-newrelic-synthetics-secure-credential/index';
+export * as dataNewrelicTeamsHierarchyLevels from './data-newrelic-teams-hierarchy-levels/index';
 export * as dataNewrelicTestGrokPattern from './data-newrelic-test-grok-pattern/index';
 export * as dataNewrelicUser from './data-newrelic-user/index';
 export * as provider from './provider/index';
