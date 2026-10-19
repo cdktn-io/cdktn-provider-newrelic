@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule
+// https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface ScorecardRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * A description of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#description ScorecardRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#description ScorecardRule#description}
   */
   readonly description?: string;
   /**
   * Whether this rule is active. Set to false to pause evaluation without deleting the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#enabled ScorecardRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#enabled ScorecardRule#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#id ScorecardRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#id ScorecardRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,43 +34,43 @@ export interface ScorecardRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Relative weight of this rule's contribution to the overall scorecard score. Must be a non-negative integer. Omit for equal weighting across all rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#impact_weight ScorecardRule#impact_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#impact_weight ScorecardRule#impact_weight}
   */
   readonly impactWeight?: number;
   /**
   * The name of the scorecard rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#name ScorecardRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#name ScorecardRule#name}
   */
   readonly name: string;
   /**
   * The progress level ID from the parent scorecard this rule maps to (e.g. 'red'). Must match a progress_levels.id defined on the scorecard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#progress_level ScorecardRule#progress_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#progress_level ScorecardRule#progress_level}
   */
   readonly progressLevel?: string;
   /**
   * Evaluation frequency in minutes. Must be one of: 60 (hourly), 360 (6h), 720 (12h), 1440 (daily). Omit to use the API default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#run_interval ScorecardRule#run_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#run_interval ScorecardRule#run_interval}
   */
   readonly runInterval?: number;
   /**
   * nrql_engine block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#nrql_engine ScorecardRule#nrql_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#nrql_engine ScorecardRule#nrql_engine}
   */
   readonly nrqlEngine: ScorecardRuleNrqlEngine;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#tags ScorecardRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#tags ScorecardRule#tags}
   */
   readonly tags?: ScorecardRuleTags[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#timeouts ScorecardRule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#timeouts ScorecardRule#timeouts}
   */
   readonly timeouts?: ScorecardRuleTimeouts;
 }
@@ -78,19 +78,19 @@ export interface ScorecardRuleNrqlEngine {
   /**
   * Account IDs where this rule runs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#accounts ScorecardRule#accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#accounts ScorecardRule#accounts}
   */
   readonly accounts: number[];
   /**
   * Additional account IDs to join with the query accounts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#join_accounts ScorecardRule#join_accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#join_accounts ScorecardRule#join_accounts}
   */
   readonly joinAccounts?: number[];
   /**
   * The NRQL query. Must be FACET-ed and alias the result as 'score'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#query ScorecardRule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#query ScorecardRule#query}
   */
   readonly query: string;
 }
@@ -228,13 +228,13 @@ export interface ScorecardRuleTags {
   /**
   * The tag key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#key ScorecardRule#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#key ScorecardRule#key}
   */
   readonly key: string;
   /**
   * The tag values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#values ScorecardRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#values ScorecardRule#values}
   */
   readonly values: string[];
 }
@@ -373,11 +373,11 @@ export class ScorecardRuleTagsList extends cdktn.ComplexList {
 }
 export interface ScorecardRuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#create ScorecardRule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#create ScorecardRule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#update ScorecardRule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#update ScorecardRule#update}
   */
   readonly update?: string;
 }
@@ -500,7 +500,7 @@ export class ScorecardRuleTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule newrelic_scorecard_rule}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule newrelic_scorecard_rule}
 */
 export class ScorecardRule extends cdktn.TerraformResource {
 
@@ -516,7 +516,7 @@ export class ScorecardRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ScorecardRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ScorecardRule to import
-  * @param importFromId The id of the existing ScorecardRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ScorecardRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ScorecardRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -528,7 +528,7 @@ export class ScorecardRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule newrelic_scorecard_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule newrelic_scorecard_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -539,7 +539,7 @@ export class ScorecardRule extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_scorecard_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.101.0',
+        providerVersion: '3.101.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### FederatedLogsPartition <a name="FederatedLogsPartition" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition newrelic_federated_logs_partition}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition newrelic_federated_logs_partition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartition.Initializer"></a>
 
@@ -570,7 +570,7 @@ The construct id used in the generated config for the FederatedLogsPartition to 
 
 The id of the existing FederatedLogsPartition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1075,7 +1075,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlog
 | <code><a href="#@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionConfig.property.dataRetentionPolicy">DataRetentionPolicy</a></code> | <code><a href="#@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionDataRetentionPolicy">FederatedLogsPartitionDataRetentionPolicy</a></code> | data_retention_policy block. |
 | <code><a href="#@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionConfig.property.description">Description</a></code> | <code>*string</code> | The description of the partition. |
 | <code><a href="#@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionConfig.property.forwarderConfiguration">ForwarderConfiguration</a></code> | <code><a href="#@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionForwarderConfiguration">FederatedLogsPartitionForwarderConfiguration</a></code> | forwarder_configuration block. |
-| <code><a href="#@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#id FederatedLogsPartition#id}. |
+| <code><a href="#@cdktn/provider-newrelic.federatedLogsPartition.FederatedLogsPartitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#id FederatedLogsPartition#id}. |
 
 ---
 
@@ -1159,7 +1159,7 @@ Name *string
 
 The name of the partition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#name FederatedLogsPartition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#name FederatedLogsPartition#name}
 
 ---
 
@@ -1173,7 +1173,7 @@ SetupId *string
 
 The ID of the federated log setup this partition belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#setup_id FederatedLogsPartition#setup_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#setup_id FederatedLogsPartition#setup_id}
 
 ---
 
@@ -1187,7 +1187,7 @@ Storage FederatedLogsPartitionStorage
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#storage FederatedLogsPartition#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#storage FederatedLogsPartition#storage}
 
 ---
 
@@ -1203,7 +1203,7 @@ The New Relic account ID where the federated logs partition will live.
 
 Defaults to the provider's account_id. Changing this after creation is rejected by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#account_id FederatedLogsPartition#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#account_id FederatedLogsPartition#account_id}
 
 ---
 
@@ -1217,7 +1217,7 @@ Active interface{}
 
 Whether the partition is active. When false, log routing to this partition is turned off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#active FederatedLogsPartition#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#active FederatedLogsPartition#active}
 
 ---
 
@@ -1231,7 +1231,7 @@ DataRetentionPolicy FederatedLogsPartitionDataRetentionPolicy
 
 data_retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#data_retention_policy FederatedLogsPartition#data_retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#data_retention_policy FederatedLogsPartition#data_retention_policy}
 
 ---
 
@@ -1245,7 +1245,7 @@ Description *string
 
 The description of the partition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#description FederatedLogsPartition#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#description FederatedLogsPartition#description}
 
 ---
 
@@ -1259,7 +1259,7 @@ ForwarderConfiguration FederatedLogsPartitionForwarderConfiguration
 
 forwarder_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#forwarder_configuration FederatedLogsPartition#forwarder_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#forwarder_configuration FederatedLogsPartition#forwarder_configuration}
 
 ---
 
@@ -1271,7 +1271,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#id FederatedLogsPartition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#id FederatedLogsPartition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1310,7 +1310,7 @@ Duration *f64
 
 The duration value for retention.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#duration FederatedLogsPartition#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#duration FederatedLogsPartition#duration}
 
 ---
 
@@ -1324,7 +1324,7 @@ Unit *string
 
 The time unit for the retention duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#unit FederatedLogsPartition#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#unit FederatedLogsPartition#unit}
 
 ---
 
@@ -1360,7 +1360,7 @@ Type *string
 
 The type of forwarder. Must match the parent setup's forwarder type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#type FederatedLogsPartition#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#type FederatedLogsPartition#type}
 
 ---
 
@@ -1374,7 +1374,7 @@ PipelineControl FederatedLogsPartitionForwarderConfigurationPipelineControl
 
 pipeline_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#pipeline_control FederatedLogsPartition#pipeline_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#pipeline_control FederatedLogsPartition#pipeline_control}
 
 ---
 
@@ -1408,7 +1408,7 @@ PartitionRule FederatedLogsPartitionForwarderConfigurationPipelineControlPartiti
 
 partition_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#partition_rule FederatedLogsPartition#partition_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#partition_rule FederatedLogsPartition#partition_rule}
 
 ---
 
@@ -1442,7 +1442,7 @@ Expression *string
 
 OTTL expression for routing logs to this partition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#expression FederatedLogsPartition#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#expression FederatedLogsPartition#expression}
 
 ---
 
@@ -1530,7 +1530,7 @@ DataLocationUri *string
 
 The URI location of the partition in object storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#data_location_uri FederatedLogsPartition#data_location_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#data_location_uri FederatedLogsPartition#data_location_uri}
 
 ---
 
@@ -1544,7 +1544,7 @@ Table *string
 
 The table name associated with the partition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/federated_logs_partition#table FederatedLogsPartition#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_partition#table FederatedLogsPartition#table}
 
 ---
 
