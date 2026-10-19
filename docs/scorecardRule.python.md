@@ -4,7 +4,7 @@
 
 ### ScorecardRule <a name="ScorecardRule" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule newrelic_scorecard_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule newrelic_scorecard_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRule.Initializer"></a>
 
@@ -49,7 +49,7 @@ scorecardRule.ScorecardRule(
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRule.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the scorecard rule. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRule.Initializer.parameter.nrqlEngine">nrql_engine</a></code> | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleNrqlEngine">ScorecardRuleNrqlEngine</a></code> | nrql_engine block. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRule.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of the rule. |
-| <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#id ScorecardRule#id}. |
+| <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#id ScorecardRule#id}. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRule.Initializer.parameter.impactWeight">impact_weight</a></code> | <code>typing.Union[int, float]</code> | Relative weight of this rule's contribution to the overall scorecard score. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRule.Initializer.parameter.progressLevel">progress_level</a></code> | <code>str</code> | The progress level ID from the parent scorecard this rule maps to (e.g. 'red'). Must match a progress_levels.id defined on the scorecard. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRule.Initializer.parameter.runInterval">run_interval</a></code> | <code>typing.Union[int, float]</code> | Evaluation frequency in minutes. |
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Whether this rule is active. Set to false to pause evaluation without deleting the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#enabled ScorecardRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#enabled ScorecardRule#enabled}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The name of the scorecard rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#name ScorecardRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#name ScorecardRule#name}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 nrql_engine block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#nrql_engine ScorecardRule#nrql_engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#nrql_engine ScorecardRule#nrql_engine}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 A description of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#description ScorecardRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#description ScorecardRule#description}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#id ScorecardRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#id ScorecardRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -177,7 +177,7 @@ Relative weight of this rule's contribution to the overall scorecard score.
 
 Must be a non-negative integer. Omit for equal weighting across all rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#impact_weight ScorecardRule#impact_weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#impact_weight ScorecardRule#impact_weight}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The progress level ID from the parent scorecard this rule maps to (e.g. 'red'). Must match a progress_levels.id defined on the scorecard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#progress_level ScorecardRule#progress_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#progress_level ScorecardRule#progress_level}
 
 ---
 
@@ -199,7 +199,7 @@ Evaluation frequency in minutes.
 
 Must be one of: 60 (hourly), 360 (6h), 720 (12h), 1440 (daily). Omit to use the API default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#run_interval ScorecardRule#run_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#run_interval ScorecardRule#run_interval}
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#tags ScorecardRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#tags ScorecardRule#tags}
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#timeouts ScorecardRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#timeouts ScorecardRule#timeouts}
 
 ---
 
@@ -628,7 +628,7 @@ def put_nrql_engine(
 
 Account IDs where this rule runs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#accounts ScorecardRule#accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#accounts ScorecardRule#accounts}
 
 ---
 
@@ -638,7 +638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The NRQL query. Must be FACET-ed and alias the result as 'score'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#query ScorecardRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#query ScorecardRule#query}
 
 ---
 
@@ -648,7 +648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Additional account IDs to join with the query accounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#join_accounts ScorecardRule#join_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#join_accounts ScorecardRule#join_accounts}
 
 ---
 
@@ -679,7 +679,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#create ScorecardRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#create ScorecardRule#create}.
 
 ---
 
@@ -687,7 +687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#update ScorecardRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#update ScorecardRule#update}.
 
 ---
 
@@ -847,7 +847,7 @@ The construct id used in the generated config for the ScorecardRule to import.
 
 The id of the existing ScorecardRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1316,7 +1316,7 @@ scorecardRule.ScorecardRuleConfig(
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.name">name</a></code> | <code>str</code> | The name of the scorecard rule. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.nrqlEngine">nrql_engine</a></code> | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleNrqlEngine">ScorecardRuleNrqlEngine</a></code> | nrql_engine block. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.description">description</a></code> | <code>str</code> | A description of the rule. |
-| <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#id ScorecardRule#id}. |
+| <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#id ScorecardRule#id}. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.impactWeight">impact_weight</a></code> | <code>typing.Union[int, float]</code> | Relative weight of this rule's contribution to the overall scorecard score. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.progressLevel">progress_level</a></code> | <code>str</code> | The progress level ID from the parent scorecard this rule maps to (e.g. 'red'). Must match a progress_levels.id defined on the scorecard. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.runInterval">run_interval</a></code> | <code>typing.Union[int, float]</code> | Evaluation frequency in minutes. |
@@ -1405,7 +1405,7 @@ enabled: bool | IResolvable
 
 Whether this rule is active. Set to false to pause evaluation without deleting the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#enabled ScorecardRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#enabled ScorecardRule#enabled}
 
 ---
 
@@ -1419,7 +1419,7 @@ name: str
 
 The name of the scorecard rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#name ScorecardRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#name ScorecardRule#name}
 
 ---
 
@@ -1433,7 +1433,7 @@ nrql_engine: ScorecardRuleNrqlEngine
 
 nrql_engine block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#nrql_engine ScorecardRule#nrql_engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#nrql_engine ScorecardRule#nrql_engine}
 
 ---
 
@@ -1447,7 +1447,7 @@ description: str
 
 A description of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#description ScorecardRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#description ScorecardRule#description}
 
 ---
 
@@ -1459,7 +1459,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#id ScorecardRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#id ScorecardRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1478,7 +1478,7 @@ Relative weight of this rule's contribution to the overall scorecard score.
 
 Must be a non-negative integer. Omit for equal weighting across all rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#impact_weight ScorecardRule#impact_weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#impact_weight ScorecardRule#impact_weight}
 
 ---
 
@@ -1492,7 +1492,7 @@ progress_level: str
 
 The progress level ID from the parent scorecard this rule maps to (e.g. 'red'). Must match a progress_levels.id defined on the scorecard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#progress_level ScorecardRule#progress_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#progress_level ScorecardRule#progress_level}
 
 ---
 
@@ -1508,7 +1508,7 @@ Evaluation frequency in minutes.
 
 Must be one of: 60 (hourly), 360 (6h), 720 (12h), 1440 (daily). Omit to use the API default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#run_interval ScorecardRule#run_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#run_interval ScorecardRule#run_interval}
 
 ---
 
@@ -1522,7 +1522,7 @@ tags: IResolvable | typing.List[ScorecardRuleTags]
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#tags ScorecardRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#tags ScorecardRule#tags}
 
 ---
 
@@ -1536,7 +1536,7 @@ timeouts: ScorecardRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#timeouts ScorecardRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#timeouts ScorecardRule#timeouts}
 
 ---
 
@@ -1574,7 +1574,7 @@ accounts: typing.List[typing.Union[int, float]]
 
 Account IDs where this rule runs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#accounts ScorecardRule#accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#accounts ScorecardRule#accounts}
 
 ---
 
@@ -1588,7 +1588,7 @@ query: str
 
 The NRQL query. Must be FACET-ed and alias the result as 'score'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#query ScorecardRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#query ScorecardRule#query}
 
 ---
 
@@ -1602,7 +1602,7 @@ join_accounts: typing.List[typing.Union[int, float]]
 
 Additional account IDs to join with the query accounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#join_accounts ScorecardRule#join_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#join_accounts ScorecardRule#join_accounts}
 
 ---
 
@@ -1638,7 +1638,7 @@ key: str
 
 The tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#key ScorecardRule#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#key ScorecardRule#key}
 
 ---
 
@@ -1652,7 +1652,7 @@ values: typing.List[str]
 
 The tag values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#values ScorecardRule#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#values ScorecardRule#values}
 
 ---
 
@@ -1673,8 +1673,8 @@ scorecardRule.ScorecardRuleTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#create ScorecardRule#create}. |
-| <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#update ScorecardRule#update}. |
+| <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#create ScorecardRule#create}. |
+| <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#update ScorecardRule#update}. |
 
 ---
 
@@ -1686,7 +1686,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#create ScorecardRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#create ScorecardRule#create}.
 
 ---
 
@@ -1698,7 +1698,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.0/docs/resources/scorecard_rule#update ScorecardRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#update ScorecardRule#update}.
 
 ---
 
