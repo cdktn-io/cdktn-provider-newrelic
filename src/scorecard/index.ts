@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard
+// https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ScorecardConfig extends cdktn.TerraformMetaArguments {
   /**
   * A description of the scorecard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#description Scorecard#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#description Scorecard#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#id Scorecard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#id Scorecard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +28,31 @@ export interface ScorecardConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the scorecard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#name Scorecard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#name Scorecard#name}
   */
   readonly name: string;
   /**
   * Set of newrelic_scorecard_rule GUIDs to attach to this scorecard. Rules must exist before being attached. Removing a GUID detaches the rule without deleting it — rules are standalone entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#rule_ids Scorecard#rule_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#rule_ids Scorecard#rule_ids}
   */
   readonly ruleIds?: string[];
   /**
   * progress_levels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#progress_levels Scorecard#progress_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#progress_levels Scorecard#progress_levels}
   */
   readonly progressLevels?: ScorecardProgressLevels[] | cdktn.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#tags Scorecard#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#tags Scorecard#tags}
   */
   readonly tags?: ScorecardTags[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#timeouts Scorecard#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#timeouts Scorecard#timeouts}
   */
   readonly timeouts?: ScorecardTimeouts;
 }
@@ -60,19 +60,19 @@ export interface ScorecardProgressLevels {
   /**
   * Description of what this level means.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#description Scorecard#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#description Scorecard#description}
   */
   readonly description?: string;
   /**
   * Hex colour for this level, e.g. '#FF0000'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#hex_color_code Scorecard#hex_color_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#hex_color_code Scorecard#hex_color_code}
   */
   readonly hexColorCode?: string;
   /**
   * A unique identifier for this level (e.g. 'red', 'green').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#id Scorecard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#id Scorecard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -81,7 +81,7 @@ export interface ScorecardProgressLevels {
   /**
   * Display name of the level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#name Scorecard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#name Scorecard#name}
   */
   readonly name: string;
 }
@@ -280,13 +280,13 @@ export interface ScorecardTags {
   /**
   * The tag key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#key Scorecard#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#key Scorecard#key}
   */
   readonly key: string;
   /**
   * The tag values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#values Scorecard#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#values Scorecard#values}
   */
   readonly values: string[];
 }
@@ -425,7 +425,7 @@ export class ScorecardTagsList extends cdktn.ComplexList {
 }
 export interface ScorecardTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#create Scorecard#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#create Scorecard#create}
   */
   readonly create?: string;
 }
@@ -519,7 +519,7 @@ export class ScorecardTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard newrelic_scorecard}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard newrelic_scorecard}
 */
 export class Scorecard extends cdktn.TerraformResource {
 
@@ -535,7 +535,7 @@ export class Scorecard extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Scorecard resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Scorecard to import
-  * @param importFromId The id of the existing Scorecard that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Scorecard that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Scorecard to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -547,7 +547,7 @@ export class Scorecard extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard newrelic_scorecard} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard newrelic_scorecard} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -558,7 +558,7 @@ export class Scorecard extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_scorecard',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.101.1',
+        providerVersion: '3.101.6',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
