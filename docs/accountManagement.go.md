@@ -4,12 +4,12 @@
 
 ### AccountManagement <a name="AccountManagement" id="@cdktn/provider-newrelic.accountManagement.AccountManagement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/account_management newrelic_account_management}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/account_management newrelic_account_management}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.accountManagement.AccountManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/accountmanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/accountmanagement"
 
 accountmanagement.NewAccountManagement(scope Construct, id *string, config AccountManagementConfig) AccountManagement
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.accountManagement.AccountManagement.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/accountmanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/accountmanagement"
 
 accountmanagement.AccountManagement_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.accountManagement.AccountManagement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/accountmanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/accountmanagement"
 
 accountmanagement.AccountManagement_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ accountmanagement.AccountManagement_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.accountManagement.AccountManagement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/accountmanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/accountmanagement"
 
 accountmanagement.AccountManagement_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ accountmanagement.AccountManagement_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.accountManagement.AccountManagement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/accountmanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/accountmanagement"
 
 accountmanagement.AccountManagement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the AccountManagement to impor
 
 The id of the existing AccountManagement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/account_management#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/account_management#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.accountManagement.AccountManagementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/accountmanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/accountmanagement"
 
 &accountmanagement.AccountManagementConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/accountmanag
 	Name: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.accountManagement.AccountManagementTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.accountManagement.AccountManagementTimeouts,
 }
 ```
 
@@ -851,7 +851,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/accountmanag
 | <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementConfig.property.name">Name</a></code> | <code>*string</code> | Name of the account to be created. |
-| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/account_management#id AccountManagement#id}. |
+| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/account_management#id AccountManagement#id}. |
 | <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementConfig.property.region">Region</a></code> | <code>*string</code> | DEPRECATED. The `region` argument is no longer meaningful and has no effect on where the account is created. |
 | <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts">AccountManagementTimeouts</a></code> | timeouts block. |
 
@@ -937,7 +937,7 @@ Name *string
 
 Name of the account to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/account_management#name AccountManagement#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/account_management#name AccountManagement#name}
 
 ---
 
@@ -949,7 +949,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/account_management#id AccountManagement#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/account_management#id AccountManagement#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -966,7 +966,7 @@ Region *string
 
 DEPRECATED. The `region` argument is no longer meaningful and has no effect on where the account is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/account_management#region AccountManagement#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/account_management#region AccountManagement#region}
 
 ---
 
@@ -980,7 +980,7 @@ Timeouts AccountManagementTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/account_management#timeouts AccountManagement#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/account_management#timeouts AccountManagement#timeouts}
 
 ---
 
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/accountmanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/accountmanagement"
 
 &accountmanagement.AccountManagementTimeouts {
 	Create: *string,
@@ -1002,9 +1002,9 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/accountmanag
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/account_management#create AccountManagement#create}. |
-| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/account_management#read AccountManagement#read}. |
-| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/account_management#update AccountManagement#update}. |
+| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/account_management#create AccountManagement#create}. |
+| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/account_management#read AccountManagement#read}. |
+| <code><a href="#@cdktn/provider-newrelic.accountManagement.AccountManagementTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/account_management#update AccountManagement#update}. |
 
 ---
 
@@ -1016,7 +1016,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/account_management#create AccountManagement#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/account_management#create AccountManagement#create}.
 
 ---
 
@@ -1028,7 +1028,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/account_management#read AccountManagement#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/account_management#read AccountManagement#read}.
 
 ---
 
@@ -1040,7 +1040,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/account_management#update AccountManagement#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/account_management#update AccountManagement#update}.
 
 ---
 
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/accountmanagement"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/accountmanagement"
 
 accountmanagement.NewAccountManagementTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountManagementTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### Scorecard <a name="Scorecard" id="@cdktn/provider-newrelic.scorecard.Scorecard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard newrelic_scorecard}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard newrelic_scorecard}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.scorecard.Scorecard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecard"
 
 scorecard.NewScorecard(scope Construct, id *string, config ScorecardConfig) Scorecard
 ```
@@ -481,7 +481,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.scorecard.Scorecard.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecard"
 
 scorecard.Scorecard_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.scorecard.Scorecard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecard"
 
 scorecard.Scorecard_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ scorecard.Scorecard_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.scorecard.Scorecard.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecard"
 
 scorecard.Scorecard_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ scorecard.Scorecard_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.scorecard.Scorecard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecard"
 
 scorecard.Scorecard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -570,7 +570,7 @@ The construct id used in the generated config for the Scorecard to import.
 
 The id of the existing Scorecard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.scorecard.ScorecardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecard"
 
 &scorecard.ScorecardConfig {
 	Connection: interface{},
@@ -962,7 +962,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
 	ProgressLevels: interface{},
 	RuleIds: *[]*string,
 	Tags: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.scorecard.ScorecardTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.scorecard.ScorecardTimeouts,
 }
 ```
 
@@ -979,7 +979,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
 | <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.name">Name</a></code> | <code>*string</code> | The name of the scorecard. |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.description">Description</a></code> | <code>*string</code> | A description of the scorecard. |
-| <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#id Scorecard#id}. |
+| <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#id Scorecard#id}. |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.progressLevels">ProgressLevels</a></code> | <code>interface{}</code> | progress_levels block. |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.ruleIds">RuleIds</a></code> | <code>*[]*string</code> | Set of newrelic_scorecard_rule GUIDs to attach to this scorecard. |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.tags">Tags</a></code> | <code>interface{}</code> | tags block. |
@@ -1067,7 +1067,7 @@ Name *string
 
 The name of the scorecard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#name Scorecard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#name Scorecard#name}
 
 ---
 
@@ -1081,7 +1081,7 @@ Description *string
 
 A description of the scorecard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#description Scorecard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#description Scorecard#description}
 
 ---
 
@@ -1093,7 +1093,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#id Scorecard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#id Scorecard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1110,7 +1110,7 @@ ProgressLevels interface{}
 
 progress_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#progress_levels Scorecard#progress_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#progress_levels Scorecard#progress_levels}
 
 ---
 
@@ -1126,7 +1126,7 @@ Set of newrelic_scorecard_rule GUIDs to attach to this scorecard.
 
 Rules must exist before being attached. Removing a GUID detaches the rule without deleting it — rules are standalone entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#rule_ids Scorecard#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#rule_ids Scorecard#rule_ids}
 
 ---
 
@@ -1140,7 +1140,7 @@ Tags interface{}
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#tags Scorecard#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#tags Scorecard#tags}
 
 ---
 
@@ -1154,7 +1154,7 @@ Timeouts ScorecardTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#timeouts Scorecard#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#timeouts Scorecard#timeouts}
 
 ---
 
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.scorecard.ScorecardProgressLevels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecard"
 
 &scorecard.ScorecardProgressLevels {
 	Id: *string,
@@ -1194,7 +1194,7 @@ Id *string
 
 A unique identifier for this level (e.g. 'red', 'green').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#id Scorecard#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#id Scorecard#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1211,7 +1211,7 @@ Name *string
 
 Display name of the level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#name Scorecard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#name Scorecard#name}
 
 ---
 
@@ -1225,7 +1225,7 @@ Description *string
 
 Description of what this level means.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#description Scorecard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#description Scorecard#description}
 
 ---
 
@@ -1239,7 +1239,7 @@ HexColorCode *string
 
 Hex colour for this level, e.g. '#FF0000'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#hex_color_code Scorecard#hex_color_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#hex_color_code Scorecard#hex_color_code}
 
 ---
 
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.scorecard.ScorecardTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecard"
 
 &scorecard.ScorecardTags {
 	Key: *string,
@@ -1275,7 +1275,7 @@ Key *string
 
 The tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#key Scorecard#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#key Scorecard#key}
 
 ---
 
@@ -1289,7 +1289,7 @@ Values *[]*string
 
 The tag values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#values Scorecard#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#values Scorecard#values}
 
 ---
 
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.scorecard.ScorecardTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecard"
 
 &scorecard.ScorecardTimeouts {
 	Create: *string,
@@ -1309,7 +1309,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#create Scorecard#create}. |
+| <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#create Scorecard#create}. |
 
 ---
 
@@ -1321,7 +1321,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard#create Scorecard#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#create Scorecard#create}.
 
 ---
 
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.scorecard.ScorecardProgressLevelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecard"
 
 scorecard.NewScorecardProgressLevelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScorecardProgressLevelsList
 ```
@@ -1492,7 +1492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.scorecard.ScorecardProgressLevelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecard"
 
 scorecard.NewScorecardProgressLevelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ScorecardProgressLevelsOutputReference
 ```
@@ -1861,7 +1861,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.scorecard.ScorecardTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecard"
 
 scorecard.NewScorecardTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScorecardTagsList
 ```
@@ -2021,7 +2021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.scorecard.ScorecardTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecard"
 
 scorecard.NewScorecardTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ScorecardTagsOutputReference
 ```
@@ -2332,7 +2332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.scorecard.ScorecardTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecard"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecard"
 
 scorecard.NewScorecardTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ScorecardTimeoutsOutputReference
 ```

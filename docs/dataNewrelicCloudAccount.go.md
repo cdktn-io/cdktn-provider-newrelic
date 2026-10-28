@@ -4,12 +4,12 @@
 
 ### DataNewrelicCloudAccount <a name="DataNewrelicCloudAccount" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/cloud_account newrelic_cloud_account}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/cloud_account newrelic_cloud_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewreliccloudaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewreliccloudaccount"
 
 datanewreliccloudaccount.NewDataNewrelicCloudAccount(scope Construct, id *string, config DataNewrelicCloudAccountConfig) DataNewrelicCloudAccount
 ```
@@ -319,7 +319,7 @@ func ResetIsDimensionalMetrics()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewreliccloudaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewreliccloudaccount"
 
 datanewreliccloudaccount.DataNewrelicCloudAccount_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewreliccloudaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewreliccloudaccount"
 
 datanewreliccloudaccount.DataNewrelicCloudAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datanewreliccloudaccount.DataNewrelicCloudAccount_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewreliccloudaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewreliccloudaccount"
 
 datanewreliccloudaccount.DataNewrelicCloudAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datanewreliccloudaccount.DataNewrelicCloudAccount_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewreliccloudaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewreliccloudaccount"
 
 datanewreliccloudaccount.DataNewrelicCloudAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataNewrelicCloudAccount t
 
 The id of the existing DataNewrelicCloudAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/cloud_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/cloud_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewreliccloudaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewreliccloudaccount"
 
 &datanewreliccloudaccount.DataNewrelicCloudAccountConfig {
 	Connection: interface{},
@@ -728,7 +728,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelic
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.cloudProvider">CloudProvider</a></code> | <code>*string</code> | The cloud provider of the account, e.g. aws, gcp, azure. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.name">Name</a></code> | <code>*string</code> | The name of the cloud account. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The ID of the New Relic account. |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.isDimensionalMetrics">IsDimensionalMetrics</a></code> | <code>interface{}</code> | Set to true when looking up a GCP Dimensional Metrics linked account (cloud_provider must be "gcp"). |
 
 ---
@@ -813,7 +813,7 @@ CloudProvider *string
 
 The cloud provider of the account, e.g. aws, gcp, azure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/cloud_account#cloud_provider DataNewrelicCloudAccount#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/cloud_account#cloud_provider DataNewrelicCloudAccount#cloud_provider}
 
 ---
 
@@ -827,7 +827,7 @@ Name *string
 
 The name of the cloud account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/cloud_account#name DataNewrelicCloudAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/cloud_account#name DataNewrelicCloudAccount#name}
 
 ---
 
@@ -841,7 +841,7 @@ AccountId *f64
 
 The ID of the New Relic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/cloud_account#account_id DataNewrelicCloudAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/cloud_account#account_id DataNewrelicCloudAccount#account_id}
 
 ---
 
@@ -853,7 +853,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -870,7 +870,7 @@ IsDimensionalMetrics interface{}
 
 Set to true when looking up a GCP Dimensional Metrics linked account (cloud_provider must be "gcp").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/cloud_account#is_dimensional_metrics DataNewrelicCloudAccount#is_dimensional_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/cloud_account#is_dimensional_metrics DataNewrelicCloudAccount#is_dimensional_metrics}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### Team <a name="Team" id="@cdktn/provider-newrelic.team.Team"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team newrelic_team}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team newrelic_team}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.team.Team.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/team"
 
 team.NewTeam(scope Construct, id *string, config TeamConfig) Team
 ```
@@ -516,7 +516,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.team.Team.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/team"
 
 team.Team_IsConstruct(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.team.Team.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/team"
 
 team.Team_IsTerraformElement(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ team.Team_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.team.Team.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/team"
 
 team.Team_IsTerraformResource(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ team.Team_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.team.Team.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/team"
 
 team.Team_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ The construct id used in the generated config for the Team to import.
 
 The id of the existing Team that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1113,7 +1113,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.team.TeamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/team"
 
 &team.TeamConfig {
 	Connection: interface{},
@@ -1134,7 +1134,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
 	ParentId: *string,
 	Resources: interface{},
 	Tags: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.team.TeamTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.team.TeamTimeouts,
 }
 ```
 
@@ -1154,7 +1154,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
 | <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.description">Description</a></code> | <code>*string</code> | A free-text description of the team. |
 | <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.entities">Entities</a></code> | <code>*[]*string</code> | Set of entity GUIDs that this team owns. Added to the team's auto-created ownership collection. |
 | <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.entityManagementMode">EntityManagementMode</a></code> | <code>*string</code> | Controls how Terraform manages this team's entity ownership collection. |
-| <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#id Team#id}. |
+| <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#id Team#id}. |
 | <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.managers">Managers</a></code> | <code>*[]*f64</code> | Set of New Relic user IDs (integers) to designate as team managers. Each ID must also appear in members. |
 | <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.members">Members</a></code> | <code>*[]*f64</code> | Set of New Relic user IDs (integers) to add as members of this team. |
 | <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.parentId">ParentId</a></code> | <code>*string</code> | Entity management GUID of the parent team. Cannot be set to the team's own GUID. |
@@ -1244,7 +1244,7 @@ Name *string
 
 The name of the team. Must be unique within the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#name Team#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#name Team#name}
 
 ---
 
@@ -1258,7 +1258,7 @@ Aliases *[]*string
 
 Additional searchable names for the team. Each alias must be unique within the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#aliases Team#aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#aliases Team#aliases}
 
 ---
 
@@ -1272,7 +1272,7 @@ Description *string
 
 A free-text description of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#description Team#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#description Team#description}
 
 ---
 
@@ -1286,7 +1286,7 @@ Entities *[]*string
 
 Set of entity GUIDs that this team owns. Added to the team's auto-created ownership collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#entities Team#entities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#entities Team#entities}
 
 ---
 
@@ -1303,7 +1303,7 @@ Controls how Terraform manages this team's entity ownership collection.
 • `managed` (default): Terraform tracks the entities declared in the entities block and ensures     they remain in the collection. Drift surfaces only when a declared entity goes missing.     External additions are silently ignored.
 • `unmanaged`: Terraform does not control entity ownership. The ownership collection is left     entirely to tag-based discovery and/or manual UI management. No drift or warnings     are shown for entities, and the `entities` attribute cannot be set in this mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#entity_management_mode Team#entity_management_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#entity_management_mode Team#entity_management_mode}
 
 ---
 
@@ -1315,7 +1315,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#id Team#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#id Team#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1332,7 +1332,7 @@ Managers *[]*f64
 
 Set of New Relic user IDs (integers) to designate as team managers. Each ID must also appear in members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#managers Team#managers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#managers Team#managers}
 
 ---
 
@@ -1348,7 +1348,7 @@ Set of New Relic user IDs (integers) to add as members of this team.
 
 Managers must be a subset of members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#members Team#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#members Team#members}
 
 ---
 
@@ -1362,7 +1362,7 @@ ParentId *string
 
 Entity management GUID of the parent team. Cannot be set to the team's own GUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#parent_id Team#parent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#parent_id Team#parent_id}
 
 ---
 
@@ -1376,7 +1376,7 @@ Resources interface{}
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#resources Team#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#resources Team#resources}
 
 ---
 
@@ -1390,7 +1390,7 @@ Tags interface{}
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#tags Team#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#tags Team#tags}
 
 ---
 
@@ -1404,7 +1404,7 @@ Timeouts TeamTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#timeouts Team#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#timeouts Team#timeouts}
 
 ---
 
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.team.TeamResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/team"
 
 &team.TeamResources {
 	Content: *string,
@@ -1442,7 +1442,7 @@ Content *string
 
 The URL or contact address for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#content Team#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#content Team#content}
 
 ---
 
@@ -1456,7 +1456,7 @@ Type *string
 
 Resource category. Valid values are defined in TeamResourceTypeValues() in the go-client and stay in sync with the API automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#type Team#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#type Team#type}
 
 ---
 
@@ -1470,7 +1470,7 @@ Title *string
 
 A short label shown in the UI for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#title Team#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#title Team#title}
 
 ---
 
@@ -1479,7 +1479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.team.TeamTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/team"
 
 &team.TeamTags {
 	Key: *string,
@@ -1506,7 +1506,7 @@ Key *string
 
 The tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#key Team#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#key Team#key}
 
 ---
 
@@ -1520,7 +1520,7 @@ Values *[]*string
 
 The tag values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#values Team#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#values Team#values}
 
 ---
 
@@ -1529,7 +1529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.team.TeamTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/team"
 
 &team.TeamTimeouts {
 	Create: *string,
@@ -1542,9 +1542,9 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.team.TeamTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#create Team#create}. |
-| <code><a href="#@cdktn/provider-newrelic.team.TeamTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#delete Team#delete}. |
-| <code><a href="#@cdktn/provider-newrelic.team.TeamTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#update Team#update}. |
+| <code><a href="#@cdktn/provider-newrelic.team.TeamTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#create Team#create}. |
+| <code><a href="#@cdktn/provider-newrelic.team.TeamTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#delete Team#delete}. |
+| <code><a href="#@cdktn/provider-newrelic.team.TeamTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#update Team#update}. |
 
 ---
 
@@ -1556,7 +1556,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#create Team#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#create Team#create}.
 
 ---
 
@@ -1568,7 +1568,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#delete Team#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#delete Team#delete}.
 
 ---
 
@@ -1580,7 +1580,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/team#update Team#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#update Team#update}.
 
 ---
 
@@ -1591,7 +1591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.team.TeamResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/team"
 
 team.NewTeamResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamResourcesList
 ```
@@ -1751,7 +1751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.team.TeamResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/team"
 
 team.NewTeamResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamResourcesOutputReference
 ```
@@ -2091,7 +2091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.team.TeamTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/team"
 
 team.NewTeamTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamTagsList
 ```
@@ -2251,7 +2251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.team.TeamTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/team"
 
 team.NewTeamTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamTagsOutputReference
 ```
@@ -2562,7 +2562,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.team.TeamTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/team"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/team"
 
 team.NewTeamTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### EventsToMetricsRule <a name="EventsToMetricsRule" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/events_to_metrics_rule newrelic_events_to_metrics_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/events_to_metrics_rule newrelic_events_to_metrics_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/eventstometricsrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/eventstometricsrule"
 
 eventstometricsrule.NewEventsToMetricsRule(scope Construct, id *string, config EventsToMetricsRuleConfig) EventsToMetricsRule
 ```
@@ -428,7 +428,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/eventstometricsrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/eventstometricsrule"
 
 eventstometricsrule.EventsToMetricsRule_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/eventstometricsrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/eventstometricsrule"
 
 eventstometricsrule.EventsToMetricsRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ eventstometricsrule.EventsToMetricsRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/eventstometricsrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/eventstometricsrule"
 
 eventstometricsrule.EventsToMetricsRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ eventstometricsrule.EventsToMetricsRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/eventstometricsrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/eventstometricsrule"
 
 eventstometricsrule.EventsToMetricsRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -517,7 +517,7 @@ The construct id used in the generated config for the EventsToMetricsRule to imp
 
 The id of the existing EventsToMetricsRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/events_to_metrics_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/events_to_metrics_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/eventstometricsrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/eventstometricsrule"
 
 &eventstometricsrule.EventsToMetricsRuleConfig {
 	Connection: interface{},
@@ -895,7 +895,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/eventstometr
 | <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRuleConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | Account with the event and where the metrics will be put. |
 | <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRuleConfig.property.description">Description</a></code> | <code>*string</code> | Provides additional information about the rule. |
 | <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRuleConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | True means this rule is enabled. False means the rule is currently not creating metrics. |
-| <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/events_to_metrics_rule#id EventsToMetricsRule#id}. |
+| <code><a href="#@cdktn/provider-newrelic.eventsToMetricsRule.EventsToMetricsRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/events_to_metrics_rule#id EventsToMetricsRule#id}. |
 
 ---
 
@@ -979,7 +979,7 @@ Name *string
 
 The name of the rule. This must be unique within an account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/events_to_metrics_rule#name EventsToMetricsRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/events_to_metrics_rule#name EventsToMetricsRule#name}
 
 ---
 
@@ -993,7 +993,7 @@ Nrql *string
 
 Explains how to create metrics from events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/events_to_metrics_rule#nrql EventsToMetricsRule#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/events_to_metrics_rule#nrql EventsToMetricsRule#nrql}
 
 ---
 
@@ -1009,7 +1009,7 @@ Account with the event and where the metrics will be put.
 
 Defaults to the account ID specified in the provider configuration if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/events_to_metrics_rule#account_id EventsToMetricsRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/events_to_metrics_rule#account_id EventsToMetricsRule#account_id}
 
 ---
 
@@ -1023,7 +1023,7 @@ Description *string
 
 Provides additional information about the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/events_to_metrics_rule#description EventsToMetricsRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/events_to_metrics_rule#description EventsToMetricsRule#description}
 
 ---
 
@@ -1037,7 +1037,7 @@ Enabled interface{}
 
 True means this rule is enabled. False means the rule is currently not creating metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/events_to_metrics_rule#enabled EventsToMetricsRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/events_to_metrics_rule#enabled EventsToMetricsRule#enabled}
 
 ---
 
@@ -1049,7 +1049,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/events_to_metrics_rule#id EventsToMetricsRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/events_to_metrics_rule#id EventsToMetricsRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

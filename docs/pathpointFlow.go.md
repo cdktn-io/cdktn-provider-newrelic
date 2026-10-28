@@ -4,12 +4,12 @@
 
 ### PathpointFlow <a name="PathpointFlow" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow newrelic_pathpoint_flow}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow newrelic_pathpoint_flow}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlow(scope Construct, id *string, config PathpointFlowConfig) PathpointFlow
 ```
@@ -482,7 +482,7 @@ func ResetStages()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlow.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.PathpointFlow_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.PathpointFlow_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ pathpointflow.PathpointFlow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.PathpointFlow_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ pathpointflow.PathpointFlow_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.PathpointFlow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -571,7 +571,7 @@ The construct id used in the generated config for the PathpointFlow to import.
 
 The id of the existing PathpointFlow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -991,7 +991,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowConfig {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflo
 | <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.category">Category</a></code> | <code>*string</code> | Optional category used to group flows (e.g. Marketing, Checkout). |
 | <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.description">Description</a></code> | <code>*string</code> | Optional description of the flow. |
 | <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.healthRollup">HealthRollup</a></code> | <code>*string</code> | Health rollup strategy: ALERT_CONDITIONS or AUTOMATIC_ROLL_UP. |
-| <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#id PathpointFlow#id}. |
+| <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#id PathpointFlow#id}. |
 | <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.kpis">Kpis</a></code> | <code>interface{}</code> | kpis block. |
 | <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.refreshInterval">RefreshInterval</a></code> | <code>*string</code> | How often health statuses refresh: ONE_MINUTE, FIVE_MINUTES, TEN_MINUTES, FIFTEEN_MINUTES, THIRTY_MINUTES. |
 | <code><a href="#@cdktn/provider-newrelic.pathpointFlow.PathpointFlowConfig.property.stages">Stages</a></code> | <code>interface{}</code> | stages block. |
@@ -1116,7 +1116,7 @@ Name *string
 
 Display name of the Pathpoint flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#name PathpointFlow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#name PathpointFlow#name}
 
 ---
 
@@ -1130,7 +1130,7 @@ AccountId *f64
 
 The New Relic account ID that owns this Pathpoint flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#account_id PathpointFlow#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#account_id PathpointFlow#account_id}
 
 ---
 
@@ -1144,7 +1144,7 @@ Category *string
 
 Optional category used to group flows (e.g. Marketing, Checkout).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#category PathpointFlow#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#category PathpointFlow#category}
 
 ---
 
@@ -1158,7 +1158,7 @@ Description *string
 
 Optional description of the flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#description PathpointFlow#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#description PathpointFlow#description}
 
 ---
 
@@ -1172,7 +1172,7 @@ HealthRollup *string
 
 Health rollup strategy: ALERT_CONDITIONS or AUTOMATIC_ROLL_UP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#health_rollup PathpointFlow#health_rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#health_rollup PathpointFlow#health_rollup}
 
 ---
 
@@ -1184,7 +1184,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#id PathpointFlow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#id PathpointFlow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1201,7 +1201,7 @@ Kpis interface{}
 
 kpis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#kpis PathpointFlow#kpis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#kpis PathpointFlow#kpis}
 
 ---
 
@@ -1215,7 +1215,7 @@ RefreshInterval *string
 
 How often health statuses refresh: ONE_MINUTE, FIVE_MINUTES, TEN_MINUTES, FIFTEEN_MINUTES, THIRTY_MINUTES.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#refresh_interval PathpointFlow#refresh_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#refresh_interval PathpointFlow#refresh_interval}
 
 ---
 
@@ -1229,7 +1229,7 @@ Stages interface{}
 
 stages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#stages PathpointFlow#stages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#stages PathpointFlow#stages}
 
 ---
 
@@ -1238,11 +1238,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowKpis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowKpis {
 	Name: *string,
-	Query: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.pathpointFlow.PathpointFlowKpisQuery,
+	Query: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.pathpointFlow.PathpointFlowKpisQuery,
 	AccountId: *f64,
 	Category: *string,
 	Description: *string,
@@ -1271,7 +1271,7 @@ Name *string
 
 Display name of the KPI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#name PathpointFlow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#name PathpointFlow#name}
 
 ---
 
@@ -1285,7 +1285,7 @@ Query PathpointFlowKpisQuery
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#query PathpointFlow#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#query PathpointFlow#query}
 
 ---
 
@@ -1299,7 +1299,7 @@ AccountId *f64
 
 Account ID this KPI belongs to. Defaults to the flow's account_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#account_id PathpointFlow#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#account_id PathpointFlow#account_id}
 
 ---
 
@@ -1313,7 +1313,7 @@ Category *string
 
 Optional category to group KPIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#category PathpointFlow#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#category PathpointFlow#category}
 
 ---
 
@@ -1327,7 +1327,7 @@ Description *string
 
 Optional description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#description PathpointFlow#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#description PathpointFlow#description}
 
 ---
 
@@ -1336,12 +1336,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowKpisQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowKpisQuery {
 	From: *string,
-	Select: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.pathpointFlow.PathpointFlowKpisQuerySelect,
-	TimeWindow: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.pathpointFlow.PathpointFlowKpisQueryTimeWindow,
+	Select: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.pathpointFlow.PathpointFlowKpisQuerySelect,
+	TimeWindow: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.pathpointFlow.PathpointFlowKpisQueryTimeWindow,
 	Where: *string,
 }
 ```
@@ -1367,7 +1367,7 @@ From *string
 
 Data source to query from (e.g., Transaction, Metric, Log).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#from PathpointFlow#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#from PathpointFlow#from}
 
 ---
 
@@ -1381,7 +1381,7 @@ Select PathpointFlowKpisQuerySelect
 
 select block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#select PathpointFlow#select}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#select PathpointFlow#select}
 
 ---
 
@@ -1395,7 +1395,7 @@ TimeWindow PathpointFlowKpisQueryTimeWindow
 
 time_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#time_window PathpointFlow#time_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#time_window PathpointFlow#time_window}
 
 ---
 
@@ -1409,7 +1409,7 @@ Where *string
 
 Optional WHERE clause to filter data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#where PathpointFlow#where}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#where PathpointFlow#where}
 
 ---
 
@@ -1418,7 +1418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowKpisQuerySelect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowKpisQuerySelect {
 	AggregationType: *string,
@@ -1449,7 +1449,7 @@ AggregationType *string
 
 Aggregation function: AVERAGE, COUNT, HISTOGRAM, MAX, MIN, PERCENTILE, SUM, UNIQUE_COUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#aggregation_type PathpointFlow#aggregation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#aggregation_type PathpointFlow#aggregation_type}
 
 ---
 
@@ -1463,7 +1463,7 @@ Alias *string
 
 Optional alias for the aggregated value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#alias PathpointFlow#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#alias PathpointFlow#alias}
 
 ---
 
@@ -1477,7 +1477,7 @@ Attribute *string
 
 Attribute name to aggregate. Required for all functions except COUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#attribute PathpointFlow#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#attribute PathpointFlow#attribute}
 
 ---
 
@@ -1491,7 +1491,7 @@ Threshold *f64
 
 Threshold used in the selected function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#threshold PathpointFlow#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#threshold PathpointFlow#threshold}
 
 ---
 
@@ -1500,11 +1500,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowKpisQueryTimeWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowKpisQueryTimeWindow {
 	CustomRange: *string,
-	RelativeRange: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.pathpointFlow.PathpointFlowKpisQueryTimeWindowRelativeRange,
+	RelativeRange: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.pathpointFlow.PathpointFlowKpisQueryTimeWindowRelativeRange,
 }
 ```
 
@@ -1527,7 +1527,7 @@ CustomRange *string
 
 Raw NRQL time fragment, e.g. 'SINCE 3 days ago COMPARE WITH 1 day ago'. Mutually exclusive with relative_range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#custom_range PathpointFlow#custom_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#custom_range PathpointFlow#custom_range}
 
 ---
 
@@ -1541,7 +1541,7 @@ RelativeRange PathpointFlowKpisQueryTimeWindowRelativeRange
 
 relative_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#relative_range PathpointFlow#relative_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#relative_range PathpointFlow#relative_range}
 
 ---
 
@@ -1550,7 +1550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowKpisQueryTimeWindowRelativeRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowKpisQueryTimeWindowRelativeRange {
 	Since: *string,
@@ -1577,7 +1577,7 @@ Since *string
 
 How far back the KPI is evaluated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#since PathpointFlow#since}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#since PathpointFlow#since}
 
 ---
 
@@ -1591,7 +1591,7 @@ CompareAgainst *string
 
 The earlier window to compare against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#compare_against PathpointFlow#compare_against}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#compare_against PathpointFlow#compare_against}
 
 ---
 
@@ -1600,7 +1600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowStages {
 	Name: *string,
@@ -1608,7 +1608,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflo
 	IsExcluded: interface{},
 	Levels: interface{},
 	Link: *string,
-	Related: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.pathpointFlow.PathpointFlowStagesRelated,
+	Related: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.pathpointFlow.PathpointFlowStagesRelated,
 	StageKpis: interface{},
 }
 ```
@@ -1637,7 +1637,7 @@ Name *string
 
 Display name of the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#name PathpointFlow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#name PathpointFlow#name}
 
 ---
 
@@ -1651,7 +1651,7 @@ HealthRollup *string
 
 Health rollup strategy: ALERT_CONDITIONS or AUTOMATIC_ROLL_UP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#health_rollup PathpointFlow#health_rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#health_rollup PathpointFlow#health_rollup}
 
 ---
 
@@ -1665,7 +1665,7 @@ IsExcluded interface{}
 
 When true, this stage is excluded from flow health calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
 
 ---
 
@@ -1679,7 +1679,7 @@ Levels interface{}
 
 levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#levels PathpointFlow#levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#levels PathpointFlow#levels}
 
 ---
 
@@ -1693,7 +1693,7 @@ Link *string
 
 Optional URL to an external resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#link PathpointFlow#link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#link PathpointFlow#link}
 
 ---
 
@@ -1707,7 +1707,7 @@ Related PathpointFlowStagesRelated
 
 related block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#related PathpointFlow#related}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#related PathpointFlow#related}
 
 ---
 
@@ -1721,7 +1721,7 @@ StageKpis interface{}
 
 stage_kpis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#stage_kpis PathpointFlow#stage_kpis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#stage_kpis PathpointFlow#stage_kpis}
 
 ---
 
@@ -1730,7 +1730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesLevels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowStagesLevels {
 	Steps: interface{},
@@ -1755,7 +1755,7 @@ Steps interface{}
 
 steps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#steps PathpointFlow#steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#steps PathpointFlow#steps}
 
 ---
 
@@ -1764,12 +1764,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesLevelsSteps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowStagesLevelsSteps {
 	Name: *string,
-	Config: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.pathpointFlow.PathpointFlowStagesLevelsStepsConfig,
-	EntitySearchQuery: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.pathpointFlow.PathpointFlowStagesLevelsStepsEntitySearchQuery,
+	Config: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.pathpointFlow.PathpointFlowStagesLevelsStepsConfig,
+	EntitySearchQuery: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.pathpointFlow.PathpointFlowStagesLevelsStepsEntitySearchQuery,
 	IsExcluded: interface{},
 	Link: *string,
 	ScopedAccounts: *[]*f64,
@@ -1801,7 +1801,7 @@ Name *string
 
 Display name of the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#name PathpointFlow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#name PathpointFlow#name}
 
 ---
 
@@ -1815,7 +1815,7 @@ Config PathpointFlowStagesLevelsStepsConfig
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#config PathpointFlow#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#config PathpointFlow#config}
 
 ---
 
@@ -1829,7 +1829,7 @@ EntitySearchQuery PathpointFlowStagesLevelsStepsEntitySearchQuery
 
 entity_search_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#entity_search_query PathpointFlow#entity_search_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#entity_search_query PathpointFlow#entity_search_query}
 
 ---
 
@@ -1843,7 +1843,7 @@ IsExcluded interface{}
 
 When true, this step is excluded from level health calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
 
 ---
 
@@ -1857,7 +1857,7 @@ Link *string
 
 Optional URL to an external resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#link PathpointFlow#link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#link PathpointFlow#link}
 
 ---
 
@@ -1871,7 +1871,7 @@ ScopedAccounts *[]*f64
 
 Account IDs whose data is scoped to this step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#scoped_accounts PathpointFlow#scoped_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#scoped_accounts PathpointFlow#scoped_accounts}
 
 ---
 
@@ -1885,7 +1885,7 @@ Signals interface{}
 
 signals block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#signals PathpointFlow#signals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#signals PathpointFlow#signals}
 
 ---
 
@@ -1894,7 +1894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesLevelsStepsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowStagesLevelsStepsConfig {
 	HealthRollup: *string,
@@ -1923,7 +1923,7 @@ HealthRollup *string
 
 How step health is rolled up: BEST_STATUS_WINS or WORST_STATUS_WINS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#health_rollup PathpointFlow#health_rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#health_rollup PathpointFlow#health_rollup}
 
 ---
 
@@ -1937,7 +1937,7 @@ ThresholdType *string
 
 Whether threshold is FIXED or PERCENTAGE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#threshold_type PathpointFlow#threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#threshold_type PathpointFlow#threshold_type}
 
 ---
 
@@ -1951,7 +1951,7 @@ ThresholdValue *f64
 
 Numeric threshold value for step health evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#threshold_value PathpointFlow#threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#threshold_value PathpointFlow#threshold_value}
 
 ---
 
@@ -1960,7 +1960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesLevelsStepsEntitySearchQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowStagesLevelsStepsEntitySearchQuery {
 	Query: *string,
@@ -1987,7 +1987,7 @@ Query *string
 
 Filter query for signals, e.g. domain='NR1' AND type='APPLICATION'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#query PathpointFlow#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#query PathpointFlow#query}
 
 ---
 
@@ -2001,7 +2001,7 @@ IsExcluded interface{}
 
 When true, this query is excluded from health calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
 
 ---
 
@@ -2010,7 +2010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesLevelsStepsSignals.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowStagesLevelsStepsSignals {
 	Guid: *string,
@@ -2041,7 +2041,7 @@ Guid *string
 
 Entity GUID of the signal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#guid PathpointFlow#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#guid PathpointFlow#guid}
 
 ---
 
@@ -2055,7 +2055,7 @@ IsExcluded interface{}
 
 When true, this signal is excluded from step health calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#is_excluded PathpointFlow#is_excluded}
 
 ---
 
@@ -2069,7 +2069,7 @@ Name *string
 
 Display name of the signal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#name PathpointFlow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#name PathpointFlow#name}
 
 ---
 
@@ -2083,7 +2083,7 @@ Type *string
 
 Whether this GUID belongs to an entity or an alert condition: ENTITY or ALERT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#type PathpointFlow#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#type PathpointFlow#type}
 
 ---
 
@@ -2092,7 +2092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesRelated.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowStagesRelated {
 	Source: interface{},
@@ -2119,7 +2119,7 @@ Source interface{}
 
 When true, this stage acts as a source to other stages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#source PathpointFlow#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#source PathpointFlow#source}
 
 ---
 
@@ -2133,7 +2133,7 @@ Target interface{}
 
 When true, this stage acts as a target to other stages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#target PathpointFlow#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#target PathpointFlow#target}
 
 ---
 
@@ -2142,11 +2142,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesStageKpis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowStagesStageKpis {
 	Name: *string,
-	Query: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.pathpointFlow.PathpointFlowStagesStageKpisQuery,
+	Query: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.pathpointFlow.PathpointFlowStagesStageKpisQuery,
 	AccountId: *f64,
 	Category: *string,
 	Description: *string,
@@ -2175,7 +2175,7 @@ Name *string
 
 Display name of the KPI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#name PathpointFlow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#name PathpointFlow#name}
 
 ---
 
@@ -2189,7 +2189,7 @@ Query PathpointFlowStagesStageKpisQuery
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#query PathpointFlow#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#query PathpointFlow#query}
 
 ---
 
@@ -2203,7 +2203,7 @@ AccountId *f64
 
 Account ID this KPI belongs to. Defaults to the flow's account_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#account_id PathpointFlow#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#account_id PathpointFlow#account_id}
 
 ---
 
@@ -2217,7 +2217,7 @@ Category *string
 
 Optional category to group KPIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#category PathpointFlow#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#category PathpointFlow#category}
 
 ---
 
@@ -2231,7 +2231,7 @@ Description *string
 
 Optional description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#description PathpointFlow#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#description PathpointFlow#description}
 
 ---
 
@@ -2240,12 +2240,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesStageKpisQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowStagesStageKpisQuery {
 	From: *string,
-	Select: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.pathpointFlow.PathpointFlowStagesStageKpisQuerySelect,
-	TimeWindow: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.pathpointFlow.PathpointFlowStagesStageKpisQueryTimeWindow,
+	Select: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.pathpointFlow.PathpointFlowStagesStageKpisQuerySelect,
+	TimeWindow: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.pathpointFlow.PathpointFlowStagesStageKpisQueryTimeWindow,
 	Where: *string,
 }
 ```
@@ -2271,7 +2271,7 @@ From *string
 
 Data source to query from (e.g., Transaction, Metric, Log).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#from PathpointFlow#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#from PathpointFlow#from}
 
 ---
 
@@ -2285,7 +2285,7 @@ Select PathpointFlowStagesStageKpisQuerySelect
 
 select block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#select PathpointFlow#select}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#select PathpointFlow#select}
 
 ---
 
@@ -2299,7 +2299,7 @@ TimeWindow PathpointFlowStagesStageKpisQueryTimeWindow
 
 time_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#time_window PathpointFlow#time_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#time_window PathpointFlow#time_window}
 
 ---
 
@@ -2313,7 +2313,7 @@ Where *string
 
 Optional WHERE clause to filter data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#where PathpointFlow#where}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#where PathpointFlow#where}
 
 ---
 
@@ -2322,7 +2322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesStageKpisQuerySelect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowStagesStageKpisQuerySelect {
 	AggregationType: *string,
@@ -2353,7 +2353,7 @@ AggregationType *string
 
 Aggregation function: AVERAGE, COUNT, HISTOGRAM, MAX, MIN, PERCENTILE, SUM, UNIQUE_COUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#aggregation_type PathpointFlow#aggregation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#aggregation_type PathpointFlow#aggregation_type}
 
 ---
 
@@ -2367,7 +2367,7 @@ Alias *string
 
 Optional alias for the aggregated value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#alias PathpointFlow#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#alias PathpointFlow#alias}
 
 ---
 
@@ -2381,7 +2381,7 @@ Attribute *string
 
 Attribute name to aggregate. Required for all functions except COUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#attribute PathpointFlow#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#attribute PathpointFlow#attribute}
 
 ---
 
@@ -2395,7 +2395,7 @@ Threshold *f64
 
 Threshold used in the selected function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#threshold PathpointFlow#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#threshold PathpointFlow#threshold}
 
 ---
 
@@ -2404,11 +2404,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesStageKpisQueryTimeWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowStagesStageKpisQueryTimeWindow {
 	CustomRange: *string,
-	RelativeRange: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.pathpointFlow.PathpointFlowStagesStageKpisQueryTimeWindowRelativeRange,
+	RelativeRange: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.pathpointFlow.PathpointFlowStagesStageKpisQueryTimeWindowRelativeRange,
 }
 ```
 
@@ -2431,7 +2431,7 @@ CustomRange *string
 
 Raw NRQL time fragment, e.g. 'SINCE 3 days ago COMPARE WITH 1 day ago'. Mutually exclusive with relative_range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#custom_range PathpointFlow#custom_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#custom_range PathpointFlow#custom_range}
 
 ---
 
@@ -2445,7 +2445,7 @@ RelativeRange PathpointFlowStagesStageKpisQueryTimeWindowRelativeRange
 
 relative_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#relative_range PathpointFlow#relative_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#relative_range PathpointFlow#relative_range}
 
 ---
 
@@ -2454,7 +2454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesStageKpisQueryTimeWindowRelativeRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 &pathpointflow.PathpointFlowStagesStageKpisQueryTimeWindowRelativeRange {
 	Since: *string,
@@ -2481,7 +2481,7 @@ Since *string
 
 How far back the KPI is evaluated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#since PathpointFlow#since}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#since PathpointFlow#since}
 
 ---
 
@@ -2495,7 +2495,7 @@ CompareAgainst *string
 
 The earlier window to compare against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/pathpoint_flow#compare_against PathpointFlow#compare_against}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/pathpoint_flow#compare_against PathpointFlow#compare_against}
 
 ---
 
@@ -2506,7 +2506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowKpisList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowKpisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PathpointFlowKpisList
 ```
@@ -2666,7 +2666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowKpisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowKpisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PathpointFlowKpisOutputReference
 ```
@@ -3099,7 +3099,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowKpisQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowKpisQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PathpointFlowKpisQueryOutputReference
 ```
@@ -3476,7 +3476,7 @@ func InternalValue() PathpointFlowKpisQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowKpisQuerySelectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowKpisQuerySelectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PathpointFlowKpisQuerySelectOutputReference
 ```
@@ -3834,7 +3834,7 @@ func InternalValue() PathpointFlowKpisQuerySelect
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowKpisQueryTimeWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowKpisQueryTimeWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PathpointFlowKpisQueryTimeWindowOutputReference
 ```
@@ -4154,7 +4154,7 @@ func InternalValue() PathpointFlowKpisQueryTimeWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowKpisQueryTimeWindowRelativeRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowKpisQueryTimeWindowRelativeRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PathpointFlowKpisQueryTimeWindowRelativeRangeOutputReference
 ```
@@ -4454,7 +4454,7 @@ func InternalValue() PathpointFlowKpisQueryTimeWindowRelativeRange
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesLevelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesLevelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PathpointFlowStagesLevelsList
 ```
@@ -4614,7 +4614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesLevelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesLevelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PathpointFlowStagesLevelsOutputReference
 ```
@@ -4934,7 +4934,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesLevelsStepsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesLevelsStepsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PathpointFlowStagesLevelsStepsConfigOutputReference
 ```
@@ -5270,7 +5270,7 @@ func InternalValue() PathpointFlowStagesLevelsStepsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesLevelsStepsEntitySearchQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesLevelsStepsEntitySearchQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PathpointFlowStagesLevelsStepsEntitySearchQueryOutputReference
 ```
@@ -5570,7 +5570,7 @@ func InternalValue() PathpointFlowStagesLevelsStepsEntitySearchQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesLevelsStepsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesLevelsStepsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PathpointFlowStagesLevelsStepsList
 ```
@@ -5730,7 +5730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesLevelsStepsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesLevelsStepsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PathpointFlowStagesLevelsStepsOutputReference
 ```
@@ -6243,7 +6243,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesLevelsStepsSignalsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesLevelsStepsSignalsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PathpointFlowStagesLevelsStepsSignalsList
 ```
@@ -6403,7 +6403,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesLevelsStepsSignalsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesLevelsStepsSignalsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PathpointFlowStagesLevelsStepsSignalsOutputReference
 ```
@@ -6779,7 +6779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PathpointFlowStagesList
 ```
@@ -6939,7 +6939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PathpointFlowStagesOutputReference
 ```
@@ -7452,7 +7452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesRelatedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesRelatedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PathpointFlowStagesRelatedOutputReference
 ```
@@ -7759,7 +7759,7 @@ func InternalValue() PathpointFlowStagesRelated
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesStageKpisList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesStageKpisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PathpointFlowStagesStageKpisList
 ```
@@ -7919,7 +7919,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesStageKpisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesStageKpisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PathpointFlowStagesStageKpisOutputReference
 ```
@@ -8352,7 +8352,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesStageKpisQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesStageKpisQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PathpointFlowStagesStageKpisQueryOutputReference
 ```
@@ -8729,7 +8729,7 @@ func InternalValue() PathpointFlowStagesStageKpisQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesStageKpisQuerySelectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesStageKpisQuerySelectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PathpointFlowStagesStageKpisQuerySelectOutputReference
 ```
@@ -9087,7 +9087,7 @@ func InternalValue() PathpointFlowStagesStageKpisQuerySelect
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesStageKpisQueryTimeWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesStageKpisQueryTimeWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PathpointFlowStagesStageKpisQueryTimeWindowOutputReference
 ```
@@ -9407,7 +9407,7 @@ func InternalValue() PathpointFlowStagesStageKpisQueryTimeWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.pathpointFlow.PathpointFlowStagesStageKpisQueryTimeWindowRelativeRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/pathpointflow"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/pathpointflow"
 
 pathpointflow.NewPathpointFlowStagesStageKpisQueryTimeWindowRelativeRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PathpointFlowStagesStageKpisQueryTimeWindowRelativeRangeOutputReference
 ```

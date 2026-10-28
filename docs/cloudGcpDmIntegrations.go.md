@@ -4,12 +4,12 @@
 
 ### CloudGcpDmIntegrations <a name="CloudGcpDmIntegrations" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations newrelic_cloud_gcp_dm_integrations}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations newrelic_cloud_gcp_dm_integrations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrations(scope Construct, id *string, config CloudGcpDmIntegrationsConfig) CloudGcpDmIntegrations
 ```
@@ -1114,7 +1114,7 @@ func ResetVpcAccess()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.CloudGcpDmIntegrations_IsConstruct(x interface{}) *bool
 ```
@@ -1146,7 +1146,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.CloudGcpDmIntegrations_IsTerraformElement(x interface{}) *bool
 ```
@@ -1160,7 +1160,7 @@ cloudgcpdmintegrations.CloudGcpDmIntegrations_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrations.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.CloudGcpDmIntegrations_IsTerraformResource(x interface{}) *bool
 ```
@@ -1174,7 +1174,7 @@ cloudgcpdmintegrations.CloudGcpDmIntegrations_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.CloudGcpDmIntegrations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1203,7 +1203,7 @@ The construct id used in the generated config for the CloudGcpDmIntegrations to 
 
 The id of the existing CloudGcpDmIntegrations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2239,7 +2239,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsAiPlatform.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsAiPlatform {
 	MetricsPollingInterval: *f64,
@@ -2264,7 +2264,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2273,7 +2273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsAlloyDb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsAlloyDb {
 	MetricsPollingInterval: *f64,
@@ -2298,7 +2298,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2307,7 +2307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsApiGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsApiGateway {
 	MetricsPollingInterval: *f64,
@@ -2332,7 +2332,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2341,7 +2341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsAppEngine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsAppEngine {
 	MetricsPollingInterval: *f64,
@@ -2366,7 +2366,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2375,7 +2375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsBigQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsBigQuery {
 	MetricsPollingInterval: *f64,
@@ -2400,7 +2400,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2409,7 +2409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsBigTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsBigTable {
 	MetricsPollingInterval: *f64,
@@ -2434,7 +2434,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2443,7 +2443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsComposer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsComposer {
 	MetricsPollingInterval: *f64,
@@ -2468,7 +2468,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2477,7 +2477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsConfig {
 	Connection: interface{},
@@ -2489,42 +2489,42 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmin
 	Provisioners: *[]interface{},
 	LinkedAccountId: *f64,
 	AccountId: *f64,
-	AiPlatform: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsAiPlatform,
-	AlloyDb: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsAlloyDb,
-	ApiGateway: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsApiGateway,
-	AppEngine: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsAppEngine,
-	BigQuery: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsBigQuery,
-	BigTable: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsBigTable,
-	Composer: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsComposer,
-	DataFlow: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsDataFlow,
-	DataProc: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsDataProc,
-	DataStore: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsDataStore,
-	EdgeContainer: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsEdgeContainer,
-	FirebaseAppHosting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseAppHosting,
-	FirebaseAuth: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseAuth,
-	FirebaseDatabase: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseDatabase,
-	FirebaseHosting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseHosting,
-	FirebaseStorage: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseStorage,
-	FirebaseVertexAi: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseVertexAi,
-	Firestore: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirestore,
-	Functions: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFunctions,
+	AiPlatform: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsAiPlatform,
+	AlloyDb: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsAlloyDb,
+	ApiGateway: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsApiGateway,
+	AppEngine: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsAppEngine,
+	BigQuery: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsBigQuery,
+	BigTable: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsBigTable,
+	Composer: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsComposer,
+	DataFlow: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsDataFlow,
+	DataProc: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsDataProc,
+	DataStore: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsDataStore,
+	EdgeContainer: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsEdgeContainer,
+	FirebaseAppHosting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseAppHosting,
+	FirebaseAuth: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseAuth,
+	FirebaseDatabase: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseDatabase,
+	FirebaseHosting: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseHosting,
+	FirebaseStorage: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseStorage,
+	FirebaseVertexAi: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseVertexAi,
+	Firestore: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirestore,
+	Functions: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFunctions,
 	Id: *string,
-	Interconnect: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsInterconnect,
-	Istio: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsIstio,
-	Kubernetes: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsKubernetes,
-	LoadBalancing: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsLoadBalancing,
-	ManagedKafka: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsManagedKafka,
-	MemCache: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsMemCache,
-	MemoryStore: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsMemoryStore,
-	PubSub: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsPubSub,
-	Redis: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsRedis,
-	Router: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsRouter,
-	Run: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsRun,
-	Spanner: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsSpanner,
-	Sql: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsSql,
-	Storage: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsStorage,
-	VirtualMachines: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsVirtualMachines,
-	VpcAccess: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.cloudGcpDmIntegrations.CloudGcpDmIntegrationsVpcAccess,
+	Interconnect: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsInterconnect,
+	Istio: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsIstio,
+	Kubernetes: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsKubernetes,
+	LoadBalancing: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsLoadBalancing,
+	ManagedKafka: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsManagedKafka,
+	MemCache: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsMemCache,
+	MemoryStore: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsMemoryStore,
+	PubSub: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsPubSub,
+	Redis: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsRedis,
+	Router: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsRouter,
+	Run: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsRun,
+	Spanner: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsSpanner,
+	Sql: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsSql,
+	Storage: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsStorage,
+	VirtualMachines: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsVirtualMachines,
+	VpcAccess: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.cloudGcpDmIntegrations.CloudGcpDmIntegrationsVpcAccess,
 }
 ```
 
@@ -2560,7 +2560,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmin
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsConfig.property.firebaseVertexAi">FirebaseVertexAi</a></code> | <code><a href="#@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseVertexAi">CloudGcpDmIntegrationsFirebaseVertexAi</a></code> | firebase_vertex_ai block. |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsConfig.property.firestore">Firestore</a></code> | <code><a href="#@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirestore">CloudGcpDmIntegrationsFirestore</a></code> | firestore block. |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsConfig.property.functions">Functions</a></code> | <code><a href="#@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFunctions">CloudGcpDmIntegrationsFunctions</a></code> | functions block. |
-| <code><a href="#@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#id CloudGcpDmIntegrations#id}. |
+| <code><a href="#@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#id CloudGcpDmIntegrations#id}. |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsConfig.property.interconnect">Interconnect</a></code> | <code><a href="#@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsInterconnect">CloudGcpDmIntegrationsInterconnect</a></code> | interconnect block. |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsConfig.property.istio">Istio</a></code> | <code><a href="#@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsIstio">CloudGcpDmIntegrationsIstio</a></code> | istio block. |
 | <code><a href="#@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsConfig.property.kubernetes">Kubernetes</a></code> | <code><a href="#@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsKubernetes">CloudGcpDmIntegrationsKubernetes</a></code> | kubernetes block. |
@@ -2660,7 +2660,7 @@ LinkedAccountId *f64
 
 The ID of the GCP Dimensional Metrics linked account (from newrelic_cloud_gcp_link_account with use_workload_identity_federation = true).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#linked_account_id CloudGcpDmIntegrations#linked_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#linked_account_id CloudGcpDmIntegrations#linked_account_id}
 
 ---
 
@@ -2674,7 +2674,7 @@ AccountId *f64
 
 The New Relic account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#account_id CloudGcpDmIntegrations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#account_id CloudGcpDmIntegrations#account_id}
 
 ---
 
@@ -2688,7 +2688,7 @@ AiPlatform CloudGcpDmIntegrationsAiPlatform
 
 ai_platform block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#ai_platform CloudGcpDmIntegrations#ai_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#ai_platform CloudGcpDmIntegrations#ai_platform}
 
 ---
 
@@ -2702,7 +2702,7 @@ AlloyDb CloudGcpDmIntegrationsAlloyDb
 
 alloy_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#alloy_db CloudGcpDmIntegrations#alloy_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#alloy_db CloudGcpDmIntegrations#alloy_db}
 
 ---
 
@@ -2716,7 +2716,7 @@ ApiGateway CloudGcpDmIntegrationsApiGateway
 
 api_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#api_gateway CloudGcpDmIntegrations#api_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#api_gateway CloudGcpDmIntegrations#api_gateway}
 
 ---
 
@@ -2730,7 +2730,7 @@ AppEngine CloudGcpDmIntegrationsAppEngine
 
 app_engine block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#app_engine CloudGcpDmIntegrations#app_engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#app_engine CloudGcpDmIntegrations#app_engine}
 
 ---
 
@@ -2744,7 +2744,7 @@ BigQuery CloudGcpDmIntegrationsBigQuery
 
 big_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#big_query CloudGcpDmIntegrations#big_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#big_query CloudGcpDmIntegrations#big_query}
 
 ---
 
@@ -2758,7 +2758,7 @@ BigTable CloudGcpDmIntegrationsBigTable
 
 big_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#big_table CloudGcpDmIntegrations#big_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#big_table CloudGcpDmIntegrations#big_table}
 
 ---
 
@@ -2772,7 +2772,7 @@ Composer CloudGcpDmIntegrationsComposer
 
 composer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#composer CloudGcpDmIntegrations#composer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#composer CloudGcpDmIntegrations#composer}
 
 ---
 
@@ -2786,7 +2786,7 @@ DataFlow CloudGcpDmIntegrationsDataFlow
 
 data_flow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#data_flow CloudGcpDmIntegrations#data_flow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#data_flow CloudGcpDmIntegrations#data_flow}
 
 ---
 
@@ -2800,7 +2800,7 @@ DataProc CloudGcpDmIntegrationsDataProc
 
 data_proc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#data_proc CloudGcpDmIntegrations#data_proc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#data_proc CloudGcpDmIntegrations#data_proc}
 
 ---
 
@@ -2814,7 +2814,7 @@ DataStore CloudGcpDmIntegrationsDataStore
 
 data_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#data_store CloudGcpDmIntegrations#data_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#data_store CloudGcpDmIntegrations#data_store}
 
 ---
 
@@ -2828,7 +2828,7 @@ EdgeContainer CloudGcpDmIntegrationsEdgeContainer
 
 edge_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#edge_container CloudGcpDmIntegrations#edge_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#edge_container CloudGcpDmIntegrations#edge_container}
 
 ---
 
@@ -2842,7 +2842,7 @@ FirebaseAppHosting CloudGcpDmIntegrationsFirebaseAppHosting
 
 firebase_app_hosting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#firebase_app_hosting CloudGcpDmIntegrations#firebase_app_hosting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#firebase_app_hosting CloudGcpDmIntegrations#firebase_app_hosting}
 
 ---
 
@@ -2856,7 +2856,7 @@ FirebaseAuth CloudGcpDmIntegrationsFirebaseAuth
 
 firebase_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#firebase_auth CloudGcpDmIntegrations#firebase_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#firebase_auth CloudGcpDmIntegrations#firebase_auth}
 
 ---
 
@@ -2870,7 +2870,7 @@ FirebaseDatabase CloudGcpDmIntegrationsFirebaseDatabase
 
 firebase_database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#firebase_database CloudGcpDmIntegrations#firebase_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#firebase_database CloudGcpDmIntegrations#firebase_database}
 
 ---
 
@@ -2884,7 +2884,7 @@ FirebaseHosting CloudGcpDmIntegrationsFirebaseHosting
 
 firebase_hosting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#firebase_hosting CloudGcpDmIntegrations#firebase_hosting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#firebase_hosting CloudGcpDmIntegrations#firebase_hosting}
 
 ---
 
@@ -2898,7 +2898,7 @@ FirebaseStorage CloudGcpDmIntegrationsFirebaseStorage
 
 firebase_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#firebase_storage CloudGcpDmIntegrations#firebase_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#firebase_storage CloudGcpDmIntegrations#firebase_storage}
 
 ---
 
@@ -2912,7 +2912,7 @@ FirebaseVertexAi CloudGcpDmIntegrationsFirebaseVertexAi
 
 firebase_vertex_ai block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#firebase_vertex_ai CloudGcpDmIntegrations#firebase_vertex_ai}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#firebase_vertex_ai CloudGcpDmIntegrations#firebase_vertex_ai}
 
 ---
 
@@ -2926,7 +2926,7 @@ Firestore CloudGcpDmIntegrationsFirestore
 
 firestore block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#firestore CloudGcpDmIntegrations#firestore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#firestore CloudGcpDmIntegrations#firestore}
 
 ---
 
@@ -2940,7 +2940,7 @@ Functions CloudGcpDmIntegrationsFunctions
 
 functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#functions CloudGcpDmIntegrations#functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#functions CloudGcpDmIntegrations#functions}
 
 ---
 
@@ -2952,7 +2952,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#id CloudGcpDmIntegrations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#id CloudGcpDmIntegrations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2969,7 +2969,7 @@ Interconnect CloudGcpDmIntegrationsInterconnect
 
 interconnect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#interconnect CloudGcpDmIntegrations#interconnect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#interconnect CloudGcpDmIntegrations#interconnect}
 
 ---
 
@@ -2983,7 +2983,7 @@ Istio CloudGcpDmIntegrationsIstio
 
 istio block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#istio CloudGcpDmIntegrations#istio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#istio CloudGcpDmIntegrations#istio}
 
 ---
 
@@ -2997,7 +2997,7 @@ Kubernetes CloudGcpDmIntegrationsKubernetes
 
 kubernetes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#kubernetes CloudGcpDmIntegrations#kubernetes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#kubernetes CloudGcpDmIntegrations#kubernetes}
 
 ---
 
@@ -3011,7 +3011,7 @@ LoadBalancing CloudGcpDmIntegrationsLoadBalancing
 
 load_balancing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#load_balancing CloudGcpDmIntegrations#load_balancing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#load_balancing CloudGcpDmIntegrations#load_balancing}
 
 ---
 
@@ -3025,7 +3025,7 @@ ManagedKafka CloudGcpDmIntegrationsManagedKafka
 
 managed_kafka block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#managed_kafka CloudGcpDmIntegrations#managed_kafka}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#managed_kafka CloudGcpDmIntegrations#managed_kafka}
 
 ---
 
@@ -3039,7 +3039,7 @@ MemCache CloudGcpDmIntegrationsMemCache
 
 mem_cache block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#mem_cache CloudGcpDmIntegrations#mem_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#mem_cache CloudGcpDmIntegrations#mem_cache}
 
 ---
 
@@ -3053,7 +3053,7 @@ MemoryStore CloudGcpDmIntegrationsMemoryStore
 
 memory_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#memory_store CloudGcpDmIntegrations#memory_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#memory_store CloudGcpDmIntegrations#memory_store}
 
 ---
 
@@ -3067,7 +3067,7 @@ PubSub CloudGcpDmIntegrationsPubSub
 
 pub_sub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#pub_sub CloudGcpDmIntegrations#pub_sub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#pub_sub CloudGcpDmIntegrations#pub_sub}
 
 ---
 
@@ -3081,7 +3081,7 @@ Redis CloudGcpDmIntegrationsRedis
 
 redis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#redis CloudGcpDmIntegrations#redis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#redis CloudGcpDmIntegrations#redis}
 
 ---
 
@@ -3095,7 +3095,7 @@ Router CloudGcpDmIntegrationsRouter
 
 router block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#router CloudGcpDmIntegrations#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#router CloudGcpDmIntegrations#router}
 
 ---
 
@@ -3109,7 +3109,7 @@ Run CloudGcpDmIntegrationsRun
 
 run block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#run CloudGcpDmIntegrations#run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#run CloudGcpDmIntegrations#run}
 
 ---
 
@@ -3123,7 +3123,7 @@ Spanner CloudGcpDmIntegrationsSpanner
 
 spanner block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#spanner CloudGcpDmIntegrations#spanner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#spanner CloudGcpDmIntegrations#spanner}
 
 ---
 
@@ -3137,7 +3137,7 @@ Sql CloudGcpDmIntegrationsSql
 
 sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#sql CloudGcpDmIntegrations#sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#sql CloudGcpDmIntegrations#sql}
 
 ---
 
@@ -3151,7 +3151,7 @@ Storage CloudGcpDmIntegrationsStorage
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#storage CloudGcpDmIntegrations#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#storage CloudGcpDmIntegrations#storage}
 
 ---
 
@@ -3165,7 +3165,7 @@ VirtualMachines CloudGcpDmIntegrationsVirtualMachines
 
 virtual_machines block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#virtual_machines CloudGcpDmIntegrations#virtual_machines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#virtual_machines CloudGcpDmIntegrations#virtual_machines}
 
 ---
 
@@ -3179,7 +3179,7 @@ VpcAccess CloudGcpDmIntegrationsVpcAccess
 
 vpc_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#vpc_access CloudGcpDmIntegrations#vpc_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#vpc_access CloudGcpDmIntegrations#vpc_access}
 
 ---
 
@@ -3188,7 +3188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsDataFlow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsDataFlow {
 	MetricsPollingInterval: *f64,
@@ -3213,7 +3213,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3222,7 +3222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsDataProc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsDataProc {
 	MetricsPollingInterval: *f64,
@@ -3247,7 +3247,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3256,7 +3256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsDataStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsDataStore {
 	MetricsPollingInterval: *f64,
@@ -3281,7 +3281,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3290,7 +3290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsEdgeContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsEdgeContainer {
 	MetricsPollingInterval: *f64,
@@ -3315,7 +3315,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3324,7 +3324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseAppHosting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsFirebaseAppHosting {
 	MetricsPollingInterval: *f64,
@@ -3349,7 +3349,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3358,7 +3358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsFirebaseAuth {
 	MetricsPollingInterval: *f64,
@@ -3383,7 +3383,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3392,7 +3392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsFirebaseDatabase {
 	MetricsPollingInterval: *f64,
@@ -3417,7 +3417,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3426,7 +3426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseHosting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsFirebaseHosting {
 	MetricsPollingInterval: *f64,
@@ -3451,7 +3451,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3460,7 +3460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsFirebaseStorage {
 	MetricsPollingInterval: *f64,
@@ -3485,7 +3485,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3494,7 +3494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseVertexAi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsFirebaseVertexAi {
 	MetricsPollingInterval: *f64,
@@ -3519,7 +3519,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3528,7 +3528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirestore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsFirestore {
 	MetricsPollingInterval: *f64,
@@ -3553,7 +3553,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3562,7 +3562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsFunctions {
 	MetricsPollingInterval: *f64,
@@ -3587,7 +3587,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3596,7 +3596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsInterconnect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsInterconnect {
 	MetricsPollingInterval: *f64,
@@ -3621,7 +3621,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3630,7 +3630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsIstio.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsIstio {
 	MetricsPollingInterval: *f64,
@@ -3655,7 +3655,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3664,7 +3664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsKubernetes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsKubernetes {
 	MetricsPollingInterval: *f64,
@@ -3689,7 +3689,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3698,7 +3698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsLoadBalancing.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsLoadBalancing {
 	MetricsPollingInterval: *f64,
@@ -3723,7 +3723,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3732,7 +3732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsManagedKafka.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsManagedKafka {
 	MetricsPollingInterval: *f64,
@@ -3757,7 +3757,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3766,7 +3766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsMemCache.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsMemCache {
 	MetricsPollingInterval: *f64,
@@ -3791,7 +3791,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3800,7 +3800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsMemoryStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsMemoryStore {
 	MetricsPollingInterval: *f64,
@@ -3825,7 +3825,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3834,7 +3834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsPubSub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsPubSub {
 	MetricsPollingInterval: *f64,
@@ -3859,7 +3859,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3868,7 +3868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsRedis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsRedis {
 	MetricsPollingInterval: *f64,
@@ -3893,7 +3893,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3902,7 +3902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsRouter {
 	MetricsPollingInterval: *f64,
@@ -3927,7 +3927,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3936,7 +3936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsRun.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsRun {
 	MetricsPollingInterval: *f64,
@@ -3961,7 +3961,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3970,7 +3970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsSpanner.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsSpanner {
 	MetricsPollingInterval: *f64,
@@ -3995,7 +3995,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4004,7 +4004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsSql.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsSql {
 	MetricsPollingInterval: *f64,
@@ -4029,7 +4029,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4038,7 +4038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsStorage {
 	MetricsPollingInterval: *f64,
@@ -4063,7 +4063,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4072,7 +4072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsVirtualMachines.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsVirtualMachines {
 	MetricsPollingInterval: *f64,
@@ -4097,7 +4097,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4106,7 +4106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsVpcAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 &cloudgcpdmintegrations.CloudGcpDmIntegrationsVpcAccess {
 	MetricsPollingInterval: *f64,
@@ -4131,7 +4131,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_gcp_dm_integrations#metrics_polling_interval CloudGcpDmIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4142,7 +4142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsAiPlatformOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsAiPlatformOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsAiPlatformOutputReference
 ```
@@ -4420,7 +4420,7 @@ func InternalValue() CloudGcpDmIntegrationsAiPlatform
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsAlloyDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsAlloyDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsAlloyDbOutputReference
 ```
@@ -4698,7 +4698,7 @@ func InternalValue() CloudGcpDmIntegrationsAlloyDb
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsApiGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsApiGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsApiGatewayOutputReference
 ```
@@ -4976,7 +4976,7 @@ func InternalValue() CloudGcpDmIntegrationsApiGateway
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsAppEngineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsAppEngineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsAppEngineOutputReference
 ```
@@ -5254,7 +5254,7 @@ func InternalValue() CloudGcpDmIntegrationsAppEngine
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsBigQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsBigQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsBigQueryOutputReference
 ```
@@ -5532,7 +5532,7 @@ func InternalValue() CloudGcpDmIntegrationsBigQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsBigTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsBigTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsBigTableOutputReference
 ```
@@ -5810,7 +5810,7 @@ func InternalValue() CloudGcpDmIntegrationsBigTable
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsComposerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsComposerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsComposerOutputReference
 ```
@@ -6088,7 +6088,7 @@ func InternalValue() CloudGcpDmIntegrationsComposer
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsDataFlowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsDataFlowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsDataFlowOutputReference
 ```
@@ -6366,7 +6366,7 @@ func InternalValue() CloudGcpDmIntegrationsDataFlow
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsDataProcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsDataProcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsDataProcOutputReference
 ```
@@ -6644,7 +6644,7 @@ func InternalValue() CloudGcpDmIntegrationsDataProc
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsDataStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsDataStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsDataStoreOutputReference
 ```
@@ -6922,7 +6922,7 @@ func InternalValue() CloudGcpDmIntegrationsDataStore
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsEdgeContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsEdgeContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsEdgeContainerOutputReference
 ```
@@ -7200,7 +7200,7 @@ func InternalValue() CloudGcpDmIntegrationsEdgeContainer
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseAppHostingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsFirebaseAppHostingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsFirebaseAppHostingOutputReference
 ```
@@ -7478,7 +7478,7 @@ func InternalValue() CloudGcpDmIntegrationsFirebaseAppHosting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsFirebaseAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsFirebaseAuthOutputReference
 ```
@@ -7756,7 +7756,7 @@ func InternalValue() CloudGcpDmIntegrationsFirebaseAuth
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsFirebaseDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsFirebaseDatabaseOutputReference
 ```
@@ -8034,7 +8034,7 @@ func InternalValue() CloudGcpDmIntegrationsFirebaseDatabase
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseHostingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsFirebaseHostingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsFirebaseHostingOutputReference
 ```
@@ -8312,7 +8312,7 @@ func InternalValue() CloudGcpDmIntegrationsFirebaseHosting
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsFirebaseStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsFirebaseStorageOutputReference
 ```
@@ -8590,7 +8590,7 @@ func InternalValue() CloudGcpDmIntegrationsFirebaseStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirebaseVertexAiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsFirebaseVertexAiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsFirebaseVertexAiOutputReference
 ```
@@ -8868,7 +8868,7 @@ func InternalValue() CloudGcpDmIntegrationsFirebaseVertexAi
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFirestoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsFirestoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsFirestoreOutputReference
 ```
@@ -9146,7 +9146,7 @@ func InternalValue() CloudGcpDmIntegrationsFirestore
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsFunctionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsFunctionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsFunctionsOutputReference
 ```
@@ -9424,7 +9424,7 @@ func InternalValue() CloudGcpDmIntegrationsFunctions
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsInterconnectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsInterconnectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsInterconnectOutputReference
 ```
@@ -9702,7 +9702,7 @@ func InternalValue() CloudGcpDmIntegrationsInterconnect
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsIstioOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsIstioOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsIstioOutputReference
 ```
@@ -9980,7 +9980,7 @@ func InternalValue() CloudGcpDmIntegrationsIstio
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsKubernetesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsKubernetesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsKubernetesOutputReference
 ```
@@ -10258,7 +10258,7 @@ func InternalValue() CloudGcpDmIntegrationsKubernetes
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsLoadBalancingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsLoadBalancingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsLoadBalancingOutputReference
 ```
@@ -10536,7 +10536,7 @@ func InternalValue() CloudGcpDmIntegrationsLoadBalancing
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsManagedKafkaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsManagedKafkaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsManagedKafkaOutputReference
 ```
@@ -10814,7 +10814,7 @@ func InternalValue() CloudGcpDmIntegrationsManagedKafka
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsMemCacheOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsMemCacheOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsMemCacheOutputReference
 ```
@@ -11092,7 +11092,7 @@ func InternalValue() CloudGcpDmIntegrationsMemCache
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsMemoryStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsMemoryStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsMemoryStoreOutputReference
 ```
@@ -11370,7 +11370,7 @@ func InternalValue() CloudGcpDmIntegrationsMemoryStore
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsPubSubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsPubSubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsPubSubOutputReference
 ```
@@ -11648,7 +11648,7 @@ func InternalValue() CloudGcpDmIntegrationsPubSub
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsRedisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsRedisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsRedisOutputReference
 ```
@@ -11926,7 +11926,7 @@ func InternalValue() CloudGcpDmIntegrationsRedis
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsRouterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsRouterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsRouterOutputReference
 ```
@@ -12204,7 +12204,7 @@ func InternalValue() CloudGcpDmIntegrationsRouter
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsRunOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsRunOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsRunOutputReference
 ```
@@ -12482,7 +12482,7 @@ func InternalValue() CloudGcpDmIntegrationsRun
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsSpannerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsSpannerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsSpannerOutputReference
 ```
@@ -12760,7 +12760,7 @@ func InternalValue() CloudGcpDmIntegrationsSpanner
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsSqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsSqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsSqlOutputReference
 ```
@@ -13038,7 +13038,7 @@ func InternalValue() CloudGcpDmIntegrationsSql
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsStorageOutputReference
 ```
@@ -13316,7 +13316,7 @@ func InternalValue() CloudGcpDmIntegrationsStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsVirtualMachinesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsVirtualMachinesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsVirtualMachinesOutputReference
 ```
@@ -13594,7 +13594,7 @@ func InternalValue() CloudGcpDmIntegrationsVirtualMachines
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudGcpDmIntegrations.CloudGcpDmIntegrationsVpcAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudgcpdmintegrations"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudgcpdmintegrations"
 
 cloudgcpdmintegrations.NewCloudGcpDmIntegrationsVpcAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudGcpDmIntegrationsVpcAccessOutputReference
 ```
