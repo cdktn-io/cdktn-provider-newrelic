@@ -4,12 +4,12 @@
 
 ### ScorecardRule <a name="ScorecardRule" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule newrelic_scorecard_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule newrelic_scorecard_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecardrule"
 
 scorecardrule.NewScorecardRule(scope Construct, id *string, config ScorecardRuleConfig) ScorecardRule
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecardrule"
 
 scorecardrule.ScorecardRule_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecardrule"
 
 scorecardrule.ScorecardRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ scorecardrule.ScorecardRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecardrule"
 
 scorecardrule.ScorecardRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ scorecardrule.ScorecardRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecardrule"
 
 scorecardrule.ScorecardRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -577,7 +577,7 @@ The construct id used in the generated config for the ScorecardRule to import.
 
 The id of the existing ScorecardRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1008,7 +1008,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecardrule"
 
 &scorecardrule.ScorecardRuleConfig {
 	Connection: interface{},
@@ -1020,14 +1020,14 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrul
 	Provisioners: *[]interface{},
 	Enabled: interface{},
 	Name: *string,
-	NrqlEngine: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.scorecardRule.ScorecardRuleNrqlEngine,
+	NrqlEngine: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.scorecardRule.ScorecardRuleNrqlEngine,
 	Description: *string,
 	Id: *string,
 	ImpactWeight: *f64,
 	ProgressLevel: *string,
 	RunInterval: *f64,
 	Tags: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.scorecardRule.ScorecardRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.scorecardRule.ScorecardRuleTimeouts,
 }
 ```
 
@@ -1046,7 +1046,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrul
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.name">Name</a></code> | <code>*string</code> | The name of the scorecard rule. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.nrqlEngine">NrqlEngine</a></code> | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleNrqlEngine">ScorecardRuleNrqlEngine</a></code> | nrql_engine block. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.description">Description</a></code> | <code>*string</code> | A description of the rule. |
-| <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#id ScorecardRule#id}. |
+| <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#id ScorecardRule#id}. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.impactWeight">ImpactWeight</a></code> | <code>*f64</code> | Relative weight of this rule's contribution to the overall scorecard score. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.progressLevel">ProgressLevel</a></code> | <code>*string</code> | The progress level ID from the parent scorecard this rule maps to (e.g. 'red'). Must match a progress_levels.id defined on the scorecard. |
 | <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleConfig.property.runInterval">RunInterval</a></code> | <code>*f64</code> | Evaluation frequency in minutes. |
@@ -1135,7 +1135,7 @@ Enabled interface{}
 
 Whether this rule is active. Set to false to pause evaluation without deleting the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#enabled ScorecardRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#enabled ScorecardRule#enabled}
 
 ---
 
@@ -1149,7 +1149,7 @@ Name *string
 
 The name of the scorecard rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#name ScorecardRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#name ScorecardRule#name}
 
 ---
 
@@ -1163,7 +1163,7 @@ NrqlEngine ScorecardRuleNrqlEngine
 
 nrql_engine block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#nrql_engine ScorecardRule#nrql_engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#nrql_engine ScorecardRule#nrql_engine}
 
 ---
 
@@ -1177,7 +1177,7 @@ Description *string
 
 A description of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#description ScorecardRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#description ScorecardRule#description}
 
 ---
 
@@ -1189,7 +1189,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#id ScorecardRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#id ScorecardRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1208,7 +1208,7 @@ Relative weight of this rule's contribution to the overall scorecard score.
 
 Must be a non-negative integer. Omit for equal weighting across all rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#impact_weight ScorecardRule#impact_weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#impact_weight ScorecardRule#impact_weight}
 
 ---
 
@@ -1222,7 +1222,7 @@ ProgressLevel *string
 
 The progress level ID from the parent scorecard this rule maps to (e.g. 'red'). Must match a progress_levels.id defined on the scorecard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#progress_level ScorecardRule#progress_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#progress_level ScorecardRule#progress_level}
 
 ---
 
@@ -1238,7 +1238,7 @@ Evaluation frequency in minutes.
 
 Must be one of: 60 (hourly), 360 (6h), 720 (12h), 1440 (daily). Omit to use the API default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#run_interval ScorecardRule#run_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#run_interval ScorecardRule#run_interval}
 
 ---
 
@@ -1252,7 +1252,7 @@ Tags interface{}
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#tags ScorecardRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#tags ScorecardRule#tags}
 
 ---
 
@@ -1266,7 +1266,7 @@ Timeouts ScorecardRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#timeouts ScorecardRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#timeouts ScorecardRule#timeouts}
 
 ---
 
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRuleNrqlEngine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecardrule"
 
 &scorecardrule.ScorecardRuleNrqlEngine {
 	Accounts: *[]*f64,
@@ -1304,7 +1304,7 @@ Accounts *[]*f64
 
 Account IDs where this rule runs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#accounts ScorecardRule#accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#accounts ScorecardRule#accounts}
 
 ---
 
@@ -1318,7 +1318,7 @@ Query *string
 
 The NRQL query. Must be FACET-ed and alias the result as 'score'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#query ScorecardRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#query ScorecardRule#query}
 
 ---
 
@@ -1332,7 +1332,7 @@ JoinAccounts *[]*f64
 
 Additional account IDs to join with the query accounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#join_accounts ScorecardRule#join_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#join_accounts ScorecardRule#join_accounts}
 
 ---
 
@@ -1341,7 +1341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRuleTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecardrule"
 
 &scorecardrule.ScorecardRuleTags {
 	Key: *string,
@@ -1368,7 +1368,7 @@ Key *string
 
 The tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#key ScorecardRule#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#key ScorecardRule#key}
 
 ---
 
@@ -1382,7 +1382,7 @@ Values *[]*string
 
 The tag values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#values ScorecardRule#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#values ScorecardRule#values}
 
 ---
 
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecardrule"
 
 &scorecardrule.ScorecardRuleTimeouts {
 	Create: *string,
@@ -1403,8 +1403,8 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrul
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#create ScorecardRule#create}. |
-| <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#update ScorecardRule#update}. |
+| <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#create ScorecardRule#create}. |
+| <code><a href="#@cdktn/provider-newrelic.scorecardRule.ScorecardRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#update ScorecardRule#update}. |
 
 ---
 
@@ -1416,7 +1416,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#create ScorecardRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#create ScorecardRule#create}.
 
 ---
 
@@ -1428,7 +1428,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/scorecard_rule#update ScorecardRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard_rule#update ScorecardRule#update}.
 
 ---
 
@@ -1439,7 +1439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRuleNrqlEngineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecardrule"
 
 scorecardrule.NewScorecardRuleNrqlEngineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ScorecardRuleNrqlEngineOutputReference
 ```
@@ -1761,7 +1761,7 @@ func InternalValue() ScorecardRuleNrqlEngine
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRuleTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecardrule"
 
 scorecardrule.NewScorecardRuleTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScorecardRuleTagsList
 ```
@@ -1921,7 +1921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRuleTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecardrule"
 
 scorecardrule.NewScorecardRuleTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ScorecardRuleTagsOutputReference
 ```
@@ -2232,7 +2232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.scorecardRule.ScorecardRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/scorecardrule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/scorecardrule"
 
 scorecardrule.NewScorecardRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ScorecardRuleTimeoutsOutputReference
 ```

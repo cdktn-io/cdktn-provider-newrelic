@@ -4,12 +4,12 @@
 
 ### DataNewrelicUser <a name="DataNewrelicUser" id="@cdktn/provider-newrelic.dataNewrelicUser.DataNewrelicUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/user newrelic_user}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/user newrelic_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicUser.DataNewrelicUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicuser"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicuser"
 
 datanewrelicuser.NewDataNewrelicUser(scope Construct, id *string, config DataNewrelicUserConfig) DataNewrelicUser
 ```
@@ -312,7 +312,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.dataNewrelicUser.DataNewrelicUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicuser"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicuser"
 
 datanewrelicuser.DataNewrelicUser_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.dataNewrelicUser.DataNewrelicUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicuser"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicuser"
 
 datanewrelicuser.DataNewrelicUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datanewrelicuser.DataNewrelicUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-newrelic.dataNewrelicUser.DataNewrelicUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicuser"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicuser"
 
 datanewrelicuser.DataNewrelicUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datanewrelicuser.DataNewrelicUser_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.dataNewrelicUser.DataNewrelicUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicuser"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicuser"
 
 datanewrelicuser.DataNewrelicUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataNewrelicUser to import
 
 The id of the existing DataNewrelicUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicUser.DataNewrelicUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicuser"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicuser"
 
 &datanewrelicuser.DataNewrelicUserConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ AuthenticationDomainId *string
 
 The ID of the Authentication Domain the user being queried would belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/user#authentication_domain_id DataNewrelicUser#authentication_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/user#authentication_domain_id DataNewrelicUser#authentication_domain_id}
 
 ---
 
@@ -783,7 +783,7 @@ EmailId *string
 
 The email ID of the user to be queried.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/user#email_id DataNewrelicUser#email_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/user#email_id DataNewrelicUser#email_id}
 
 ---
 
@@ -797,7 +797,7 @@ Name *string
 
 The name of the user to be queried.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/user#name DataNewrelicUser#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/user#name DataNewrelicUser#name}
 
 ---
 

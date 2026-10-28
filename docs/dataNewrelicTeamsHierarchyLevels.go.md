@@ -4,12 +4,12 @@
 
 ### DataNewrelicTeamsHierarchyLevels <a name="DataNewrelicTeamsHierarchyLevels" id="@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevels"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/teams_hierarchy_levels newrelic_teams_hierarchy_levels}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/teams_hierarchy_levels newrelic_teams_hierarchy_levels}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicteamshierarchylevels"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicteamshierarchylevels"
 
 datanewrelicteamshierarchylevels.NewDataNewrelicTeamsHierarchyLevels(scope Construct, id *string, config DataNewrelicTeamsHierarchyLevelsConfig) DataNewrelicTeamsHierarchyLevels
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevels.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicteamshierarchylevels"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicteamshierarchylevels"
 
 datanewrelicteamshierarchylevels.DataNewrelicTeamsHierarchyLevels_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevels.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicteamshierarchylevels"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicteamshierarchylevels"
 
 datanewrelicteamshierarchylevels.DataNewrelicTeamsHierarchyLevels_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datanewrelicteamshierarchylevels.DataNewrelicTeamsHierarchyLevels_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevels.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicteamshierarchylevels"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicteamshierarchylevels"
 
 datanewrelicteamshierarchylevels.DataNewrelicTeamsHierarchyLevels_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datanewrelicteamshierarchylevels.DataNewrelicTeamsHierarchyLevels_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevels.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicteamshierarchylevels"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicteamshierarchylevels"
 
 datanewrelicteamshierarchylevels.DataNewrelicTeamsHierarchyLevels_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataNewrelicTeamsHierarchy
 
 The id of the existing DataNewrelicTeamsHierarchyLevels that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/teams_hierarchy_levels#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/teams_hierarchy_levels#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevelsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicteamshierarchylevels"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicteamshierarchylevels"
 
 &datanewrelicteamshierarchylevels.DataNewrelicTeamsHierarchyLevelsConfig {
 	Connection: interface{},
@@ -630,7 +630,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelic
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevelsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevelsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevelsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevelsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/teams_hierarchy_levels#id DataNewrelicTeamsHierarchyLevels#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevelsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/teams_hierarchy_levels#id DataNewrelicTeamsHierarchyLevels#id}. |
 
 ---
 
@@ -712,7 +712,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/teams_hierarchy_levels#id DataNewrelicTeamsHierarchyLevels#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/teams_hierarchy_levels#id DataNewrelicTeamsHierarchyLevels#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -724,7 +724,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevelsLevels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicteamshierarchylevels"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicteamshierarchylevels"
 
 &datanewrelicteamshierarchylevels.DataNewrelicTeamsHierarchyLevelsLevels {
 
@@ -739,7 +739,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelic
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevelsLevelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicteamshierarchylevels"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicteamshierarchylevels"
 
 datanewrelicteamshierarchylevels.NewDataNewrelicTeamsHierarchyLevelsLevelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNewrelicTeamsHierarchyLevelsLevelsList
 ```
@@ -888,7 +888,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicTeamsHierarchyLevels.DataNewrelicTeamsHierarchyLevelsLevelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicteamshierarchylevels"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicteamshierarchylevels"
 
 datanewrelicteamshierarchylevels.NewDataNewrelicTeamsHierarchyLevelsLevelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNewrelicTeamsHierarchyLevelsLevelsOutputReference
 ```

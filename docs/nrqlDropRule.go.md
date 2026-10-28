@@ -4,12 +4,12 @@
 
 ### NrqlDropRule <a name="NrqlDropRule" id="@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/nrqldroprule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/nrqldroprule"
 
 nrqldroprule.NewNrqlDropRule(scope Construct, id *string, config NrqlDropRuleConfig) NrqlDropRule
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/nrqldroprule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/nrqldroprule"
 
 nrqldroprule.NrqlDropRule_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/nrqldroprule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/nrqldroprule"
 
 nrqldroprule.NrqlDropRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ nrqldroprule.NrqlDropRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/nrqldroprule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/nrqldroprule"
 
 nrqldroprule.NrqlDropRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ nrqldroprule.NrqlDropRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/nrqldroprule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/nrqldroprule"
 
 nrqldroprule.NrqlDropRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the NrqlDropRule to import.
 
 The id of the existing NrqlDropRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/nrql_drop_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/nrql_drop_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/nrqldroprule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/nrqldroprule"
 
 &nrqldroprule.NrqlDropRuleConfig {
 	Connection: interface{},
@@ -899,7 +899,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/nrqldroprule
 	AccountId: *f64,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.nrqlDropRule.NrqlDropRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.nrqlDropRule.NrqlDropRuleTimeouts,
 }
 ```
 
@@ -918,7 +918,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/nrqldroprule
 | <code><a href="#@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRuleConfig.property.nrql">Nrql</a></code> | <code>*string</code> | Explains which data to apply the drop rule to. |
 | <code><a href="#@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRuleConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | Account with the NRQL drop rule will be put. |
 | <code><a href="#@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRuleConfig.property.description">Description</a></code> | <code>*string</code> | Provides additional information about the rule. |
-| <code><a href="#@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/nrql_drop_rule#id NrqlDropRule#id}. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/nrql_drop_rule#id NrqlDropRule#id}. |
 | <code><a href="#@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRuleTimeouts">NrqlDropRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1003,7 +1003,7 @@ Action *string
 
 The drop rule action (drop_data, drop_attributes, or drop_attributes_from_metric_aggregates).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/nrql_drop_rule#action NrqlDropRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/nrql_drop_rule#action NrqlDropRule#action}
 
 ---
 
@@ -1017,7 +1017,7 @@ Nrql *string
 
 Explains which data to apply the drop rule to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/nrql_drop_rule#nrql NrqlDropRule#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/nrql_drop_rule#nrql NrqlDropRule#nrql}
 
 ---
 
@@ -1031,7 +1031,7 @@ AccountId *f64
 
 Account with the NRQL drop rule will be put.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/nrql_drop_rule#account_id NrqlDropRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/nrql_drop_rule#account_id NrqlDropRule#account_id}
 
 ---
 
@@ -1045,7 +1045,7 @@ Description *string
 
 Provides additional information about the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/nrql_drop_rule#description NrqlDropRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/nrql_drop_rule#description NrqlDropRule#description}
 
 ---
 
@@ -1057,7 +1057,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/nrql_drop_rule#id NrqlDropRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/nrql_drop_rule#id NrqlDropRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1074,7 +1074,7 @@ Timeouts NrqlDropRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/nrql_drop_rule#timeouts NrqlDropRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/nrql_drop_rule#timeouts NrqlDropRule#timeouts}
 
 ---
 
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/nrqldroprule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/nrqldroprule"
 
 &nrqldroprule.NrqlDropRuleTimeouts {
 	Read: *string,
@@ -1094,7 +1094,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/nrqldroprule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRuleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/nrql_drop_rule#read NrqlDropRule#read}. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRuleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/nrql_drop_rule#read NrqlDropRule#read}. |
 
 ---
 
@@ -1106,7 +1106,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/nrql_drop_rule#read NrqlDropRule#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/nrql_drop_rule#read NrqlDropRule#read}.
 
 ---
 
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlDropRule.NrqlDropRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/nrqldroprule"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/nrqldroprule"
 
 nrqldroprule.NewNrqlDropRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NrqlDropRuleTimeoutsOutputReference
 ```

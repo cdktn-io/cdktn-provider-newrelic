@@ -4,12 +4,12 @@
 
 ### DataNewrelicAuthenticationDomain <a name="DataNewrelicAuthenticationDomain" id="@cdktn/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/authentication_domain newrelic_authentication_domain}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/authentication_domain newrelic_authentication_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicauthenticationdomain"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicauthenticationdomain"
 
 datanewrelicauthenticationdomain.NewDataNewrelicAuthenticationDomain(scope Construct, id *string, config DataNewrelicAuthenticationDomainConfig) DataNewrelicAuthenticationDomain
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicauthenticationdomain"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicauthenticationdomain"
 
 datanewrelicauthenticationdomain.DataNewrelicAuthenticationDomain_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicauthenticationdomain"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicauthenticationdomain"
 
 datanewrelicauthenticationdomain.DataNewrelicAuthenticationDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datanewrelicauthenticationdomain.DataNewrelicAuthenticationDomain_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomain.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicauthenticationdomain"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicauthenticationdomain"
 
 datanewrelicauthenticationdomain.DataNewrelicAuthenticationDomain_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datanewrelicauthenticationdomain.DataNewrelicAuthenticationDomain_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicauthenticationdomain"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicauthenticationdomain"
 
 datanewrelicauthenticationdomain.DataNewrelicAuthenticationDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataNewrelicAuthentication
 
 The id of the existing DataNewrelicAuthenticationDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/authentication_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/authentication_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicauthenticationdomain"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicauthenticationdomain"
 
 &datanewrelicauthenticationdomain.DataNewrelicAuthenticationDomainConfig {
 	Connection: interface{},
@@ -707,7 +707,7 @@ Name *string
 
 The name of the authentication domain to be queried.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/authentication_domain#name DataNewrelicAuthenticationDomain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/authentication_domain#name DataNewrelicAuthenticationDomain#name}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataNewrelicNotebook <a name="DataNewrelicNotebook" id="@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/notebook newrelic_notebook}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/notebook newrelic_notebook}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicnotebook"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicnotebook"
 
 datanewrelicnotebook.NewDataNewrelicNotebook(scope Construct, id *string, config DataNewrelicNotebookConfig) DataNewrelicNotebook
 ```
@@ -312,7 +312,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebook.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicnotebook"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicnotebook"
 
 datanewrelicnotebook.DataNewrelicNotebook_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicnotebook"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicnotebook"
 
 datanewrelicnotebook.DataNewrelicNotebook_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datanewrelicnotebook.DataNewrelicNotebook_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebook.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicnotebook"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicnotebook"
 
 datanewrelicnotebook.DataNewrelicNotebook_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datanewrelicnotebook.DataNewrelicNotebook_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicnotebook"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicnotebook"
 
 datanewrelicnotebook.DataNewrelicNotebook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataNewrelicNotebook to im
 
 The id of the existing DataNewrelicNotebook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/notebook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/notebook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelicnotebook"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/datanewrelicnotebook"
 
 &datanewrelicnotebook.DataNewrelicNotebookConfig {
 	Connection: interface{},
@@ -718,7 +718,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/datanewrelic
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebookConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebookConfig.property.guid">Guid</a></code> | <code>*string</code> | The unique entity identifier (GUID) of the notebook. |
 | <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebookConfig.property.fetchContent">FetchContent</a></code> | <code>interface{}</code> | When true, the full notebook body is fetched from the Blob Storage API and stored in the `content` attribute. |
-| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/notebook#id DataNewrelicNotebook#id}. |
+| <code><a href="#@cdktn/provider-newrelic.dataNewrelicNotebook.DataNewrelicNotebookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/notebook#id DataNewrelicNotebook#id}. |
 
 ---
 
@@ -802,7 +802,7 @@ Guid *string
 
 The unique entity identifier (GUID) of the notebook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/notebook#guid DataNewrelicNotebook#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/notebook#guid DataNewrelicNotebook#guid}
 
 ---
 
@@ -818,7 +818,7 @@ When true, the full notebook body is fetched from the Blob Storage API and store
 
 When false (default), only NerdGraph metadata (title, organization_id, blob_id) is retrieved, which is faster and avoids an extra API call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/notebook#fetch_content DataNewrelicNotebook#fetch_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/notebook#fetch_content DataNewrelicNotebook#fetch_content}
 
 ---
 
@@ -830,7 +830,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/data-sources/notebook#id DataNewrelicNotebook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/data-sources/notebook#id DataNewrelicNotebook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

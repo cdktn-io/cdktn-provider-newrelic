@@ -4,12 +4,12 @@
 
 ### FederatedLogsSetup <a name="FederatedLogsSetup" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup newrelic_federated_logs_setup}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup newrelic_federated_logs_setup}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetup(scope Construct, id *string, config FederatedLogsSetupConfig) FederatedLogsSetup
 ```
@@ -474,7 +474,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.FederatedLogsSetup_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.FederatedLogsSetup_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ federatedlogssetup.FederatedLogsSetup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.FederatedLogsSetup_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ federatedlogssetup.FederatedLogsSetup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.FederatedLogsSetup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -563,7 +563,7 @@ The construct id used in the generated config for the FederatedLogsSetup to impo
 
 The id of the existing FederatedLogsSetup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1005,7 +1005,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 &federatedlogssetup.FederatedLogsSetupConfig {
 	Connection: interface{},
@@ -1015,13 +1015,13 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlog
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	DefaultPartition: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.federatedLogsSetup.FederatedLogsSetupDefaultPartition,
+	DefaultPartition: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.federatedLogsSetup.FederatedLogsSetupDefaultPartition,
 	Name: *string,
-	Storage: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.federatedLogsSetup.FederatedLogsSetupStorage,
+	Storage: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.federatedLogsSetup.FederatedLogsSetupStorage,
 	AccountId: *f64,
 	Active: interface{},
 	Description: *string,
-	Forwarder: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.federatedLogsSetup.FederatedLogsSetupForwarder,
+	Forwarder: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.federatedLogsSetup.FederatedLogsSetupForwarder,
 	Id: *string,
 }
 ```
@@ -1044,7 +1044,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlog
 | <code><a href="#@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupConfig.property.active">Active</a></code> | <code>interface{}</code> | Whether the setup is active. When false, log routing to this setup is turned off. |
 | <code><a href="#@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupConfig.property.description">Description</a></code> | <code>*string</code> | The description of the federated log setup. |
 | <code><a href="#@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupConfig.property.forwarder">Forwarder</a></code> | <code><a href="#@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupForwarder">FederatedLogsSetupForwarder</a></code> | forwarder block. |
-| <code><a href="#@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#id FederatedLogsSetup#id}. |
+| <code><a href="#@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#id FederatedLogsSetup#id}. |
 
 ---
 
@@ -1128,7 +1128,7 @@ DefaultPartition FederatedLogsSetupDefaultPartition
 
 default_partition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#default_partition FederatedLogsSetup#default_partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#default_partition FederatedLogsSetup#default_partition}
 
 ---
 
@@ -1142,7 +1142,7 @@ Name *string
 
 The name of the federated log setup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#name FederatedLogsSetup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#name FederatedLogsSetup#name}
 
 ---
 
@@ -1156,7 +1156,7 @@ Storage FederatedLogsSetupStorage
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#storage FederatedLogsSetup#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#storage FederatedLogsSetup#storage}
 
 ---
 
@@ -1172,7 +1172,7 @@ The New Relic account ID where the federated logs setup will live.
 
 Defaults to the provider's account_id. Changing this after creation is rejected by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#account_id FederatedLogsSetup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#account_id FederatedLogsSetup#account_id}
 
 ---
 
@@ -1186,7 +1186,7 @@ Active interface{}
 
 Whether the setup is active. When false, log routing to this setup is turned off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#active FederatedLogsSetup#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#active FederatedLogsSetup#active}
 
 ---
 
@@ -1200,7 +1200,7 @@ Description *string
 
 The description of the federated log setup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#description FederatedLogsSetup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#description FederatedLogsSetup#description}
 
 ---
 
@@ -1214,7 +1214,7 @@ Forwarder FederatedLogsSetupForwarder
 
 forwarder block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#forwarder FederatedLogsSetup#forwarder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#forwarder FederatedLogsSetup#forwarder}
 
 ---
 
@@ -1226,7 +1226,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#id FederatedLogsSetup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#id FederatedLogsSetup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1238,11 +1238,11 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupDefaultPartition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 &federatedlogssetup.FederatedLogsSetupDefaultPartition {
-	Storage: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.federatedLogsSetup.FederatedLogsSetupDefaultPartitionStorage,
-	DataRetentionPolicy: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.federatedLogsSetup.FederatedLogsSetupDefaultPartitionDataRetentionPolicy,
+	Storage: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.federatedLogsSetup.FederatedLogsSetupDefaultPartitionStorage,
+	DataRetentionPolicy: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.federatedLogsSetup.FederatedLogsSetupDefaultPartitionDataRetentionPolicy,
 }
 ```
 
@@ -1265,7 +1265,7 @@ Storage FederatedLogsSetupDefaultPartitionStorage
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#storage FederatedLogsSetup#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#storage FederatedLogsSetup#storage}
 
 ---
 
@@ -1279,7 +1279,7 @@ DataRetentionPolicy FederatedLogsSetupDefaultPartitionDataRetentionPolicy
 
 data_retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#data_retention_policy FederatedLogsSetup#data_retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#data_retention_policy FederatedLogsSetup#data_retention_policy}
 
 ---
 
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupDefaultPartitionDataRetentionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 &federatedlogssetup.FederatedLogsSetupDefaultPartitionDataRetentionPolicy {
 	Duration: *f64,
@@ -1315,7 +1315,7 @@ Duration *f64
 
 The duration value for retention.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#duration FederatedLogsSetup#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#duration FederatedLogsSetup#duration}
 
 ---
 
@@ -1329,7 +1329,7 @@ Unit *string
 
 The time unit for the retention duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#unit FederatedLogsSetup#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#unit FederatedLogsSetup#unit}
 
 ---
 
@@ -1338,7 +1338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupDefaultPartitionStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 &federatedlogssetup.FederatedLogsSetupDefaultPartitionStorage {
 	DataLocationUri: *string,
@@ -1365,7 +1365,7 @@ DataLocationUri *string
 
 The URI location of the partition in object storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#data_location_uri FederatedLogsSetup#data_location_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#data_location_uri FederatedLogsSetup#data_location_uri}
 
 ---
 
@@ -1379,7 +1379,7 @@ Table *string
 
 The table name associated with the default partition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#table FederatedLogsSetup#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#table FederatedLogsSetup#table}
 
 ---
 
@@ -1388,11 +1388,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupForwarder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 &federatedlogssetup.FederatedLogsSetupForwarder {
 	Type: *string,
-	PipelineControl: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.federatedLogsSetup.FederatedLogsSetupForwarderPipelineControl,
+	PipelineControl: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.federatedLogsSetup.FederatedLogsSetupForwarderPipelineControl,
 }
 ```
 
@@ -1415,7 +1415,7 @@ Type *string
 
 The type of forwarder. Currently only PIPELINE_CONTROL is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#type FederatedLogsSetup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#type FederatedLogsSetup#type}
 
 ---
 
@@ -1429,7 +1429,7 @@ PipelineControl FederatedLogsSetupForwarderPipelineControl
 
 pipeline_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#pipeline_control FederatedLogsSetup#pipeline_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#pipeline_control FederatedLogsSetup#pipeline_control}
 
 ---
 
@@ -1438,11 +1438,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupForwarderPipelineControl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 &federatedlogssetup.FederatedLogsSetupForwarderPipelineControl {
 	FleetId: *string,
-	RoutingRule: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.federatedLogsSetup.FederatedLogsSetupForwarderPipelineControlRoutingRule,
+	RoutingRule: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.federatedLogsSetup.FederatedLogsSetupForwarderPipelineControlRoutingRule,
 }
 ```
 
@@ -1465,7 +1465,7 @@ FleetId *string
 
 The fleet entity GUID used for deploying the pipeline configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#fleet_id FederatedLogsSetup#fleet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#fleet_id FederatedLogsSetup#fleet_id}
 
 ---
 
@@ -1479,7 +1479,7 @@ RoutingRule FederatedLogsSetupForwarderPipelineControlRoutingRule
 
 routing_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#routing_rule FederatedLogsSetup#routing_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#routing_rule FederatedLogsSetup#routing_rule}
 
 ---
 
@@ -1488,7 +1488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupForwarderPipelineControlRoutingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 &federatedlogssetup.FederatedLogsSetupForwarderPipelineControlRoutingRule {
 	Expression: *string,
@@ -1513,7 +1513,7 @@ Expression *string
 
 OTTL expression for routing logs to this setup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#expression FederatedLogsSetup#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#expression FederatedLogsSetup#expression}
 
 ---
 
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 &federatedlogssetup.FederatedLogsSetupHealthCheck {
 
@@ -1535,7 +1535,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupHealthCheckEnd2EndDataFlow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 &federatedlogssetup.FederatedLogsSetupHealthCheckEnd2EndDataFlow {
 
@@ -1548,7 +1548,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupHealthCheckQueryConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 &federatedlogssetup.FederatedLogsSetupHealthCheckQueryConnection {
 
@@ -1561,7 +1561,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupLifecycleStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 &federatedlogssetup.FederatedLogsSetupLifecycleStatus {
 
@@ -1574,10 +1574,10 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 &federatedlogssetup.FederatedLogsSetupStorage {
-	CloudProviderConfiguration: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16.federatedLogsSetup.FederatedLogsSetupStorageCloudProviderConfiguration,
+	CloudProviderConfiguration: github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17.federatedLogsSetup.FederatedLogsSetupStorageCloudProviderConfiguration,
 	Database: *string,
 	DataIngestConnectionId: *string,
 	DataLocationBucket: *string,
@@ -1607,7 +1607,7 @@ CloudProviderConfiguration FederatedLogsSetupStorageCloudProviderConfiguration
 
 cloud_provider_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#cloud_provider_configuration FederatedLogsSetup#cloud_provider_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#cloud_provider_configuration FederatedLogsSetup#cloud_provider_configuration}
 
 ---
 
@@ -1621,7 +1621,7 @@ Database *string
 
 The database name associated with the federated log setup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#database FederatedLogsSetup#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#database FederatedLogsSetup#database}
 
 ---
 
@@ -1635,7 +1635,7 @@ DataIngestConnectionId *string
 
 The connection manager entity GUID used for writing data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#data_ingest_connection_id FederatedLogsSetup#data_ingest_connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#data_ingest_connection_id FederatedLogsSetup#data_ingest_connection_id}
 
 ---
 
@@ -1649,7 +1649,7 @@ DataLocationBucket *string
 
 The object storage bucket where log data is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#data_location_bucket FederatedLogsSetup#data_location_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#data_location_bucket FederatedLogsSetup#data_location_bucket}
 
 ---
 
@@ -1663,7 +1663,7 @@ QueryConnectionId *string
 
 The connection manager entity GUID used by query workers for reading data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#query_connection_id FederatedLogsSetup#query_connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#query_connection_id FederatedLogsSetup#query_connection_id}
 
 ---
 
@@ -1672,7 +1672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupStorageCloudProviderConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 &federatedlogssetup.FederatedLogsSetupStorageCloudProviderConfiguration {
 	Provider: *string,
@@ -1699,7 +1699,7 @@ Provider *string
 
 The cloud provider. Currently only AWS is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#provider FederatedLogsSetup#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#provider FederatedLogsSetup#provider}
 
 ---
 
@@ -1713,7 +1713,7 @@ Region *string
 
 The cloud provider region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/federated_logs_setup#region FederatedLogsSetup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/federated_logs_setup#region FederatedLogsSetup#region}
 
 ---
 
@@ -1724,7 +1724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupDefaultPartitionDataRetentionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupDefaultPartitionDataRetentionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedLogsSetupDefaultPartitionDataRetentionPolicyOutputReference
 ```
@@ -2017,7 +2017,7 @@ func InternalValue() FederatedLogsSetupDefaultPartitionDataRetentionPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupDefaultPartitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupDefaultPartitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedLogsSetupDefaultPartitionOutputReference
 ```
@@ -2343,7 +2343,7 @@ func InternalValue() FederatedLogsSetupDefaultPartition
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupDefaultPartitionStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupDefaultPartitionStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedLogsSetupDefaultPartitionStorageOutputReference
 ```
@@ -2636,7 +2636,7 @@ func InternalValue() FederatedLogsSetupDefaultPartitionStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupForwarderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupForwarderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedLogsSetupForwarderOutputReference
 ```
@@ -2949,7 +2949,7 @@ func InternalValue() FederatedLogsSetupForwarder
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupForwarderPipelineControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupForwarderPipelineControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedLogsSetupForwarderPipelineControlOutputReference
 ```
@@ -3262,7 +3262,7 @@ func InternalValue() FederatedLogsSetupForwarderPipelineControl
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupForwarderPipelineControlRoutingRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupForwarderPipelineControlRoutingRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedLogsSetupForwarderPipelineControlRoutingRuleOutputReference
 ```
@@ -3533,7 +3533,7 @@ func InternalValue() FederatedLogsSetupForwarderPipelineControlRoutingRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupHealthCheckEnd2EndDataFlowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupHealthCheckEnd2EndDataFlowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedLogsSetupHealthCheckEnd2EndDataFlowList
 ```
@@ -3682,7 +3682,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupHealthCheckEnd2EndDataFlowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupHealthCheckEnd2EndDataFlowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedLogsSetupHealthCheckEnd2EndDataFlowOutputReference
 ```
@@ -3982,7 +3982,7 @@ func InternalValue() FederatedLogsSetupHealthCheckEnd2EndDataFlow
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedLogsSetupHealthCheckList
 ```
@@ -4131,7 +4131,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedLogsSetupHealthCheckOutputReference
 ```
@@ -4431,7 +4431,7 @@ func InternalValue() FederatedLogsSetupHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupHealthCheckQueryConnectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupHealthCheckQueryConnectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedLogsSetupHealthCheckQueryConnectionList
 ```
@@ -4580,7 +4580,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupHealthCheckQueryConnectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupHealthCheckQueryConnectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedLogsSetupHealthCheckQueryConnectionOutputReference
 ```
@@ -4880,7 +4880,7 @@ func InternalValue() FederatedLogsSetupHealthCheckQueryConnection
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupLifecycleStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupLifecycleStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedLogsSetupLifecycleStatusList
 ```
@@ -5029,7 +5029,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupLifecycleStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupLifecycleStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedLogsSetupLifecycleStatusOutputReference
 ```
@@ -5329,7 +5329,7 @@ func InternalValue() FederatedLogsSetupLifecycleStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupStorageCloudProviderConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupStorageCloudProviderConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedLogsSetupStorageCloudProviderConfigurationOutputReference
 ```
@@ -5622,7 +5622,7 @@ func InternalValue() FederatedLogsSetupStorageCloudProviderConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.federatedLogsSetup.FederatedLogsSetupStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/federatedlogssetup"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/federatedlogssetup"
 
 federatedlogssetup.NewFederatedLogsSetupStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedLogsSetupStorageOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### FleetMembers <a name="FleetMembers" id="@cdktn/provider-newrelic.fleetMembers.FleetMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/fleet_members newrelic_fleet_members}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/fleet_members newrelic_fleet_members}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.fleetMembers.FleetMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/fleetmembers"
 
 fleetmembers.NewFleetMembers(scope Construct, id *string, config FleetMembersConfig) FleetMembers
 ```
@@ -420,7 +420,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.fleetMembers.FleetMembers.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/fleetmembers"
 
 fleetmembers.FleetMembers_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.fleetMembers.FleetMembers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/fleetmembers"
 
 fleetmembers.FleetMembers_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ fleetmembers.FleetMembers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.fleetMembers.FleetMembers.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/fleetmembers"
 
 fleetmembers.FleetMembers_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ fleetmembers.FleetMembers_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.fleetMembers.FleetMembers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/fleetmembers"
 
 fleetmembers.FleetMembers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the FleetMembers to import.
 
 The id of the existing FleetMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/fleet_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/fleet_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -775,7 +775,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.fleetMembers.FleetMembersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/fleetmembers"
 
 &fleetmembers.FleetMembersConfig {
 	Connection: interface{},
@@ -804,7 +804,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetmembers
 | <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembersConfig.property.fleetId">FleetId</a></code> | <code>*string</code> | The GUID of the fleet to manage entity assignments for. |
 | <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembersConfig.property.ring">Ring</a></code> | <code>interface{}</code> | ring block. |
-| <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/fleet_members#id FleetMembers#id}. |
+| <code><a href="#@cdktn/provider-newrelic.fleetMembers.FleetMembersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/fleet_members#id FleetMembers#id}. |
 
 ---
 
@@ -888,7 +888,7 @@ FleetId *string
 
 The GUID of the fleet to manage entity assignments for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/fleet_members#fleet_id FleetMembers#fleet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/fleet_members#fleet_id FleetMembers#fleet_id}
 
 ---
 
@@ -902,7 +902,7 @@ Ring interface{}
 
 ring block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/fleet_members#ring FleetMembers#ring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/fleet_members#ring FleetMembers#ring}
 
 ---
 
@@ -914,7 +914,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/fleet_members#id FleetMembers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/fleet_members#id FleetMembers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -926,7 +926,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.fleetMembers.FleetMembersRing.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/fleetmembers"
 
 &fleetmembers.FleetMembersRing {
 	EntityIds: *[]*string,
@@ -955,7 +955,7 @@ Ordered list of entity GUIDs to assign to this ring.
 
 Only the entities listed here are tracked by Terraform; any other entities already in the ring through other means are not affected. Removing a GUID from this list will remove that entity from the fleet ring on the next apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/fleet_members#entity_ids FleetMembers#entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/fleet_members#entity_ids FleetMembers#entity_ids}
 
 ---
 
@@ -969,7 +969,7 @@ Name *string
 
 The name of the ring as configured on the fleet (e.g. "default", "canary").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/fleet_members#name FleetMembers#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/fleet_members#name FleetMembers#name}
 
 ---
 
@@ -980,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.fleetMembers.FleetMembersRingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/fleetmembers"
 
 fleetmembers.NewFleetMembersRingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FleetMembersRingList
 ```
@@ -1140,7 +1140,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.fleetMembers.FleetMembersRingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/fleetmembers"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/fleetmembers"
 
 fleetmembers.NewFleetMembersRingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FleetMembersRingOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### AlertPolicy <a name="AlertPolicy" id="@cdktn/provider-newrelic.alertPolicy.AlertPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/alert_policy newrelic_alert_policy}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/alert_policy newrelic_alert_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.alertPolicy.AlertPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/alertpolicy"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/alertpolicy"
 
 alertpolicy.NewAlertPolicy(scope Construct, id *string, config AlertPolicyConfig) AlertPolicy
 ```
@@ -428,7 +428,7 @@ func ResetIncidentPreference()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.alertPolicy.AlertPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/alertpolicy"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/alertpolicy"
 
 alertpolicy.AlertPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.alertPolicy.AlertPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/alertpolicy"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/alertpolicy"
 
 alertpolicy.AlertPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ alertpolicy.AlertPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.alertPolicy.AlertPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/alertpolicy"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/alertpolicy"
 
 alertpolicy.AlertPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ alertpolicy.AlertPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.alertPolicy.AlertPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/alertpolicy"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/alertpolicy"
 
 alertpolicy.AlertPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -517,7 +517,7 @@ The construct id used in the generated config for the AlertPolicy to import.
 
 The id of the existing AlertPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/alert_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/alert_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.alertPolicy.AlertPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/alertpolicy"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/alertpolicy"
 
 &alertpolicy.AlertPolicyConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/alertpolicy"
 | <code><a href="#@cdktn/provider-newrelic.alertPolicy.AlertPolicyConfig.property.name">Name</a></code> | <code>*string</code> | The name of the policy. |
 | <code><a href="#@cdktn/provider-newrelic.alertPolicy.AlertPolicyConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The New Relic account ID to operate on. |
 | <code><a href="#@cdktn/provider-newrelic.alertPolicy.AlertPolicyConfig.property.channelIds">ChannelIds</a></code> | <code>*[]*f64</code> | An array of channel IDs (integers) to assign to the policy. |
-| <code><a href="#@cdktn/provider-newrelic.alertPolicy.AlertPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/alert_policy#id AlertPolicy#id}. |
+| <code><a href="#@cdktn/provider-newrelic.alertPolicy.AlertPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/alert_policy#id AlertPolicy#id}. |
 | <code><a href="#@cdktn/provider-newrelic.alertPolicy.AlertPolicyConfig.property.incidentPreference">IncidentPreference</a></code> | <code>*string</code> | The rollup strategy for the policy. Options include: PER_POLICY, PER_CONDITION, or PER_CONDITION_AND_TARGET. The default is PER_POLICY. |
 
 ---
@@ -955,7 +955,7 @@ Name *string
 
 The name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/alert_policy#name AlertPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/alert_policy#name AlertPolicy#name}
 
 ---
 
@@ -969,7 +969,7 @@ AccountId *f64
 
 The New Relic account ID to operate on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/alert_policy#account_id AlertPolicy#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/alert_policy#account_id AlertPolicy#account_id}
 
 ---
 
@@ -985,7 +985,7 @@ An array of channel IDs (integers) to assign to the policy.
 
 Adding or removing channel IDs from this array will result in a new alert policy resource being created and the old one being destroyed. Also note that channel IDs cannot be imported via terraform import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/alert_policy#channel_ids AlertPolicy#channel_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/alert_policy#channel_ids AlertPolicy#channel_ids}
 
 ---
 
@@ -997,7 +997,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/alert_policy#id AlertPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/alert_policy#id AlertPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1014,7 +1014,7 @@ IncidentPreference *string
 
 The rollup strategy for the policy. Options include: PER_POLICY, PER_CONDITION, or PER_CONDITION_AND_TARGET. The default is PER_POLICY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/alert_policy#incident_preference AlertPolicy#incident_preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/alert_policy#incident_preference AlertPolicy#incident_preference}
 
 ---
 

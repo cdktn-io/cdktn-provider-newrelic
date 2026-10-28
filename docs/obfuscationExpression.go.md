@@ -4,12 +4,12 @@
 
 ### ObfuscationExpression <a name="ObfuscationExpression" id="@cdktn/provider-newrelic.obfuscationExpression.ObfuscationExpression"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/obfuscation_expression newrelic_obfuscation_expression}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/obfuscation_expression newrelic_obfuscation_expression}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.obfuscationExpression.ObfuscationExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/obfuscationexpression"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/obfuscationexpression"
 
 obfuscationexpression.NewObfuscationExpression(scope Construct, id *string, config ObfuscationExpressionConfig) ObfuscationExpression
 ```
@@ -421,7 +421,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.obfuscationExpression.ObfuscationExpression.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/obfuscationexpression"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/obfuscationexpression"
 
 obfuscationexpression.ObfuscationExpression_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.obfuscationExpression.ObfuscationExpression.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/obfuscationexpression"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/obfuscationexpression"
 
 obfuscationexpression.ObfuscationExpression_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ obfuscationexpression.ObfuscationExpression_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.obfuscationExpression.ObfuscationExpression.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/obfuscationexpression"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/obfuscationexpression"
 
 obfuscationexpression.ObfuscationExpression_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ obfuscationexpression.ObfuscationExpression_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.obfuscationExpression.ObfuscationExpression.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/obfuscationexpression"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/obfuscationexpression"
 
 obfuscationexpression.ObfuscationExpression_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the ObfuscationExpression to i
 
 The id of the existing ObfuscationExpression that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/obfuscation_expression#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/obfuscation_expression#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.obfuscationExpression.ObfuscationExpressionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/obfuscationexpression"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/obfuscationexpression"
 
 &obfuscationexpression.ObfuscationExpressionConfig {
 	Connection: interface{},
@@ -853,7 +853,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/obfuscatione
 | <code><a href="#@cdktn/provider-newrelic.obfuscationExpression.ObfuscationExpressionConfig.property.regex">Regex</a></code> | <code>*string</code> | Regex of expression. |
 | <code><a href="#@cdktn/provider-newrelic.obfuscationExpression.ObfuscationExpressionConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The account id associated with the obfuscation expression. |
 | <code><a href="#@cdktn/provider-newrelic.obfuscationExpression.ObfuscationExpressionConfig.property.description">Description</a></code> | <code>*string</code> | Description of expression. |
-| <code><a href="#@cdktn/provider-newrelic.obfuscationExpression.ObfuscationExpressionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/obfuscation_expression#id ObfuscationExpression#id}. |
+| <code><a href="#@cdktn/provider-newrelic.obfuscationExpression.ObfuscationExpressionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/obfuscation_expression#id ObfuscationExpression#id}. |
 
 ---
 
@@ -937,7 +937,7 @@ Name *string
 
 Name of expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/obfuscation_expression#name ObfuscationExpression#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/obfuscation_expression#name ObfuscationExpression#name}
 
 ---
 
@@ -951,7 +951,7 @@ Regex *string
 
 Regex of expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/obfuscation_expression#regex ObfuscationExpression#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/obfuscation_expression#regex ObfuscationExpression#regex}
 
 ---
 
@@ -965,7 +965,7 @@ AccountId *f64
 
 The account id associated with the obfuscation expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/obfuscation_expression#account_id ObfuscationExpression#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/obfuscation_expression#account_id ObfuscationExpression#account_id}
 
 ---
 
@@ -979,7 +979,7 @@ Description *string
 
 Description of expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/obfuscation_expression#description ObfuscationExpression#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/obfuscation_expression#description ObfuscationExpression#description}
 
 ---
 
@@ -991,7 +991,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/obfuscation_expression#id ObfuscationExpression#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/obfuscation_expression#id ObfuscationExpression#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

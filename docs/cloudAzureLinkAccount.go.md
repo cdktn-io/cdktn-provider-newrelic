@@ -4,12 +4,12 @@
 
 ### CloudAzureLinkAccount <a name="CloudAzureLinkAccount" id="@cdktn/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudazurelinkaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudazurelinkaccount"
 
 cloudazurelinkaccount.NewCloudAzureLinkAccount(scope Construct, id *string, config CloudAzureLinkAccountConfig) CloudAzureLinkAccount
 ```
@@ -414,7 +414,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudazurelinkaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudazurelinkaccount"
 
 cloudazurelinkaccount.CloudAzureLinkAccount_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudazurelinkaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudazurelinkaccount"
 
 cloudazurelinkaccount.CloudAzureLinkAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ cloudazurelinkaccount.CloudAzureLinkAccount_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudazurelinkaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudazurelinkaccount"
 
 cloudazurelinkaccount.CloudAzureLinkAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ cloudazurelinkaccount.CloudAzureLinkAccount_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudazurelinkaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudazurelinkaccount"
 
 cloudazurelinkaccount.CloudAzureLinkAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the CloudAzureLinkAccount to i
 
 The id of the existing CloudAzureLinkAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_azure_link_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_azure_link_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudazurelinkaccount"
+import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/cloudazurelinkaccount"
 
 &cloudazurelinkaccount.CloudAzureLinkAccountConfig {
 	Connection: interface{},
@@ -894,7 +894,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16/cloudazureli
 | <code><a href="#@cdktn/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccountConfig.property.subscriptionId">SubscriptionId</a></code> | <code>*string</code> | Subscription ID for the Azure account. |
 | <code><a href="#@cdktn/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccountConfig.property.tenantId">TenantId</a></code> | <code>*string</code> | Tenant ID for the Azure account. |
 | <code><a href="#@cdktn/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccountConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The New Relic account ID where you want to link the Azure account. |
-| <code><a href="#@cdktn/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_azure_link_account#id CloudAzureLinkAccount#id}. |
+| <code><a href="#@cdktn/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_azure_link_account#id CloudAzureLinkAccount#id}. |
 
 ---
 
@@ -978,7 +978,7 @@ ApplicationId *string
 
 Application ID for Azure account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_azure_link_account#application_id CloudAzureLinkAccount#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_azure_link_account#application_id CloudAzureLinkAccount#application_id}
 
 ---
 
@@ -992,7 +992,7 @@ ClientSecret *string
 
 Value of the client secret from Azure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_azure_link_account#client_secret CloudAzureLinkAccount#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_azure_link_account#client_secret CloudAzureLinkAccount#client_secret}
 
 ---
 
@@ -1006,7 +1006,7 @@ Name *string
 
 Name of the linked account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_azure_link_account#name CloudAzureLinkAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_azure_link_account#name CloudAzureLinkAccount#name}
 
 ---
 
@@ -1020,7 +1020,7 @@ SubscriptionId *string
 
 Subscription ID for the Azure account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_azure_link_account#subscription_id CloudAzureLinkAccount#subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_azure_link_account#subscription_id CloudAzureLinkAccount#subscription_id}
 
 ---
 
@@ -1034,7 +1034,7 @@ TenantId *string
 
 Tenant ID for the Azure account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_azure_link_account#tenant_id CloudAzureLinkAccount#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_azure_link_account#tenant_id CloudAzureLinkAccount#tenant_id}
 
 ---
 
@@ -1048,7 +1048,7 @@ AccountId *f64
 
 The New Relic account ID where you want to link the Azure account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_azure_link_account#account_id CloudAzureLinkAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_azure_link_account#account_id CloudAzureLinkAccount#account_id}
 
 ---
 
@@ -1060,7 +1060,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.1/docs/resources/cloud_azure_link_account#id CloudAzureLinkAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/cloud_azure_link_account#id CloudAzureLinkAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
