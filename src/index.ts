@@ -49,6 +49,7 @@ export * as notificationChannel from './notification-channel/index';
 export * as notificationDestination from './notification-destination/index';
 export * as nrqlAlertCondition from './nrql-alert-condition/index';
 export * as nrqlDropRule from './nrql-drop-rule/index';
+export * as nrqlMacro from './nrql-macro/index';
 export * as obfuscationExpression from './obfuscation-expression/index';
 export * as obfuscationRule from './obfuscation-rule/index';
 export * as oneDashboard from './one-dashboard/index';

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team
+// https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface TeamConfig extends cdktn.TerraformMetaArguments {
   /**
   * Additional searchable names for the team. Each alias must be unique within the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#aliases Team#aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#aliases Team#aliases}
   */
   readonly aliases?: string[];
   /**
   * A free-text description of the team.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#description Team#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#description Team#description}
   */
   readonly description?: string;
   /**
   * Set of entity GUIDs that this team owns. Added to the team's auto-created ownership collection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#entities Team#entities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#entities Team#entities}
   */
   readonly entities?: string[];
   /**
@@ -36,11 +36,11 @@ export interface TeamConfig extends cdktn.TerraformMetaArguments {
   *   • `managed` (default): Terraform tracks the entities declared in the entities block and ensures     they remain in the collection. Drift surfaces only when a declared entity goes missing.     External additions are silently ignored.
   *   • `unmanaged`: Terraform does not control entity ownership. The ownership collection is left     entirely to tag-based discovery and/or manual UI management. No drift or warnings     are shown for entities, and the `entities` attribute cannot be set in this mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#entity_management_mode Team#entity_management_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#entity_management_mode Team#entity_management_mode}
   */
   readonly entityManagementMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#id Team#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#id Team#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -49,43 +49,43 @@ export interface TeamConfig extends cdktn.TerraformMetaArguments {
   /**
   * Set of New Relic user IDs (integers) to designate as team managers. Each ID must also appear in members.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#managers Team#managers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#managers Team#managers}
   */
   readonly managers?: number[];
   /**
   * Set of New Relic user IDs (integers) to add as members of this team. Managers must be a subset of members.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#members Team#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#members Team#members}
   */
   readonly members?: number[];
   /**
   * The name of the team. Must be unique within the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#name Team#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#name Team#name}
   */
   readonly name: string;
   /**
   * Entity management GUID of the parent team. Cannot be set to the team's own GUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#parent_id Team#parent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#parent_id Team#parent_id}
   */
   readonly parentId?: string;
   /**
   * resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#resources Team#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#resources Team#resources}
   */
   readonly resources?: TeamResources[] | cdktn.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#tags Team#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#tags Team#tags}
   */
   readonly tags?: TeamTags[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#timeouts Team#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#timeouts Team#timeouts}
   */
   readonly timeouts?: TeamTimeouts;
 }
@@ -93,19 +93,19 @@ export interface TeamResources {
   /**
   * The URL or contact address for this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#content Team#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#content Team#content}
   */
   readonly content: string;
   /**
   * A short label shown in the UI for this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#title Team#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#title Team#title}
   */
   readonly title?: string;
   /**
   * Resource category. Valid values are defined in TeamResourceTypeValues() in the go-client and stay in sync with the API automatically.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#type Team#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#type Team#type}
   */
   readonly type: string;
 }
@@ -275,13 +275,13 @@ export interface TeamTags {
   /**
   * The tag key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#key Team#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#key Team#key}
   */
   readonly key: string;
   /**
   * The tag values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#values Team#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#values Team#values}
   */
   readonly values: string[];
 }
@@ -420,15 +420,15 @@ export class TeamTagsList extends cdktn.ComplexList {
 }
 export interface TeamTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#create Team#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#create Team#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#delete Team#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#delete Team#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#update Team#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#update Team#update}
   */
   readonly update?: string;
 }
@@ -580,7 +580,7 @@ export class TeamTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team newrelic_team}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team newrelic_team}
 */
 export class Team extends cdktn.TerraformResource {
 
@@ -596,7 +596,7 @@ export class Team extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Team resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Team to import
-  * @param importFromId The id of the existing Team that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Team that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Team to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -608,7 +608,7 @@ export class Team extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team newrelic_team} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team newrelic_team} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -619,7 +619,7 @@ export class Team extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_team',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.101.6',
+        providerVersion: '3.101.10',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

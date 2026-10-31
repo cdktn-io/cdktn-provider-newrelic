@@ -70,6 +70,7 @@ The following submodules are available:
 - [notificationDestination](./notificationDestination.java.md)
 - [nrqlAlertCondition](./nrqlAlertCondition.java.md)
 - [nrqlDropRule](./nrqlDropRule.java.md)
+- [nrqlMacro](./nrqlMacro.java.md)
 - [obfuscationExpression](./obfuscationExpression.java.md)
 - [obfuscationRule](./obfuscationRule.java.md)
 - [oneDashboard](./oneDashboard.java.md)

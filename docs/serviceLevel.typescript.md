@@ -4,7 +4,7 @@
 
 ### ServiceLevel <a name="ServiceLevel" id="@cdktn/provider-newrelic.serviceLevel.ServiceLevel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level newrelic_service_level}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level newrelic_service_level}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.serviceLevel.ServiceLevel.Initializer"></a>
 
@@ -529,7 +529,7 @@ The construct id used in the generated config for the ServiceLevel to import.
 
 The id of the existing ServiceLevel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -900,11 +900,11 @@ const serviceLevelConfig: serviceLevel.ServiceLevelConfig = { ... }
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelConfig.property.events">events</a></code> | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEvents">ServiceLevelEvents</a></code> | events block. |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelConfig.property.guid">guid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#guid ServiceLevel#guid}. |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#name ServiceLevel#name}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelConfig.property.guid">guid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#guid ServiceLevel#guid}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#name ServiceLevel#name}. |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelConfig.property.objective">objective</a></code> | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelObjective">ServiceLevelObjective</a></code> | objective block. |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#description ServiceLevel#description}. |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#id ServiceLevel#id}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#description ServiceLevel#description}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#id ServiceLevel#id}. |
 
 ---
 
@@ -988,7 +988,7 @@ public readonly events: ServiceLevelEvents;
 
 events block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#events ServiceLevel#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#events ServiceLevel#events}
 
 ---
 
@@ -1000,7 +1000,7 @@ public readonly guid: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#guid ServiceLevel#guid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#guid ServiceLevel#guid}.
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#name ServiceLevel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#name ServiceLevel#name}.
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly objective: ServiceLevelObjective;
 
 objective block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#objective ServiceLevel#objective}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#objective ServiceLevel#objective}
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#description ServiceLevel#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#description ServiceLevel#description}.
 
 ---
 
@@ -1050,7 +1050,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#id ServiceLevel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#id ServiceLevel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1071,9 +1071,10 @@ const serviceLevelEvents: serviceLevel.ServiceLevelEvents = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEvents.property.accountId">accountId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#account_id ServiceLevel#account_id}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEvents.property.accountId">accountId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#account_id ServiceLevel#account_id}. |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEvents.property.validEvents">validEvents</a></code> | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsValidEvents">ServiceLevelEventsValidEvents</a></code> | valid_events block. |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEvents.property.badEvents">badEvents</a></code> | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsBadEvents">ServiceLevelEventsBadEvents</a></code> | bad_events block. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEvents.property.facets">facets</a></code> | <code>string[]</code> | The list of NRQL FACET attributes to group results by. |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEvents.property.goodEvents">goodEvents</a></code> | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEvents">ServiceLevelEventsGoodEvents</a></code> | good_events block. |
 
 ---
@@ -1086,7 +1087,7 @@ public readonly accountId: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#account_id ServiceLevel#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#account_id ServiceLevel#account_id}.
 
 ---
 
@@ -1100,7 +1101,7 @@ public readonly validEvents: ServiceLevelEventsValidEvents;
 
 valid_events block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#valid_events ServiceLevel#valid_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#valid_events ServiceLevel#valid_events}
 
 ---
 
@@ -1114,7 +1115,23 @@ public readonly badEvents: ServiceLevelEventsBadEvents;
 
 bad_events block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#bad_events ServiceLevel#bad_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#bad_events ServiceLevel#bad_events}
+
+---
+
+##### `facets`<sup>Optional</sup> <a name="facets" id="@cdktn/provider-newrelic.serviceLevel.ServiceLevelEvents.property.facets"></a>
+
+```typescript
+public readonly facets: string[];
+```
+
+- *Type:* string[]
+
+The list of NRQL FACET attributes to group results by.
+
+These facets are applied to all event queries (valid, good or bad events). A maximum of 2 facets can be specified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#facets ServiceLevel#facets}
 
 ---
 
@@ -1128,7 +1145,7 @@ public readonly goodEvents: ServiceLevelEventsGoodEvents;
 
 good_events block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#good_events ServiceLevel#good_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#good_events ServiceLevel#good_events}
 
 ---
 
@@ -1146,9 +1163,9 @@ const serviceLevelEventsBadEvents: serviceLevel.ServiceLevelEventsBadEvents = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsBadEvents.property.from">from</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#from ServiceLevel#from}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsBadEvents.property.from">from</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#from ServiceLevel#from}. |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsBadEvents.property.select">select</a></code> | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect">ServiceLevelEventsBadEventsSelect</a></code> | select block. |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsBadEvents.property.where">where</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#where ServiceLevel#where}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsBadEvents.property.where">where</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#where ServiceLevel#where}. |
 
 ---
 
@@ -1160,7 +1177,7 @@ public readonly from: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#from ServiceLevel#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#from ServiceLevel#from}.
 
 ---
 
@@ -1174,7 +1191,7 @@ public readonly select: ServiceLevelEventsBadEventsSelect;
 
 select block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#select ServiceLevel#select}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#select ServiceLevel#select}
 
 ---
 
@@ -1186,7 +1203,7 @@ public readonly where: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#where ServiceLevel#where}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#where ServiceLevel#where}.
 
 ---
 
@@ -1204,8 +1221,8 @@ const serviceLevelEventsBadEventsSelect: serviceLevel.ServiceLevelEventsBadEvent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.function">function</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#function ServiceLevel#function}. |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.attribute">attribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#attribute ServiceLevel#attribute}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.function">function</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#function ServiceLevel#function}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.attribute">attribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#attribute ServiceLevel#attribute}. |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.threshold">threshold</a></code> | <code>number</code> | The event threshold to use in the SELECT clause. |
 
 ---
@@ -1218,7 +1235,7 @@ public readonly function: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#function ServiceLevel#function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#function ServiceLevel#function}.
 
 ---
 
@@ -1230,7 +1247,7 @@ public readonly attribute: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#attribute ServiceLevel#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#attribute ServiceLevel#attribute}.
 
 ---
 
@@ -1244,7 +1261,7 @@ public readonly threshold: number;
 
 The event threshold to use in the SELECT clause.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#threshold ServiceLevel#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#threshold ServiceLevel#threshold}
 
 ---
 
@@ -1262,9 +1279,9 @@ const serviceLevelEventsGoodEvents: serviceLevel.ServiceLevelEventsGoodEvents = 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEvents.property.from">from</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#from ServiceLevel#from}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEvents.property.from">from</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#from ServiceLevel#from}. |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEvents.property.select">select</a></code> | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect">ServiceLevelEventsGoodEventsSelect</a></code> | select block. |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEvents.property.where">where</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#where ServiceLevel#where}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEvents.property.where">where</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#where ServiceLevel#where}. |
 
 ---
 
@@ -1276,7 +1293,7 @@ public readonly from: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#from ServiceLevel#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#from ServiceLevel#from}.
 
 ---
 
@@ -1290,7 +1307,7 @@ public readonly select: ServiceLevelEventsGoodEventsSelect;
 
 select block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#select ServiceLevel#select}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#select ServiceLevel#select}
 
 ---
 
@@ -1302,7 +1319,7 @@ public readonly where: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#where ServiceLevel#where}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#where ServiceLevel#where}.
 
 ---
 
@@ -1320,8 +1337,8 @@ const serviceLevelEventsGoodEventsSelect: serviceLevel.ServiceLevelEventsGoodEve
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.function">function</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#function ServiceLevel#function}. |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.attribute">attribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#attribute ServiceLevel#attribute}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.function">function</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#function ServiceLevel#function}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.attribute">attribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#attribute ServiceLevel#attribute}. |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.threshold">threshold</a></code> | <code>number</code> | The event threshold to use in the SELECT clause. |
 
 ---
@@ -1334,7 +1351,7 @@ public readonly function: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#function ServiceLevel#function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#function ServiceLevel#function}.
 
 ---
 
@@ -1346,7 +1363,7 @@ public readonly attribute: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#attribute ServiceLevel#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#attribute ServiceLevel#attribute}.
 
 ---
 
@@ -1360,7 +1377,7 @@ public readonly threshold: number;
 
 The event threshold to use in the SELECT clause.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#threshold ServiceLevel#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#threshold ServiceLevel#threshold}
 
 ---
 
@@ -1378,9 +1395,9 @@ const serviceLevelEventsValidEvents: serviceLevel.ServiceLevelEventsValidEvents 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsValidEvents.property.from">from</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#from ServiceLevel#from}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsValidEvents.property.from">from</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#from ServiceLevel#from}. |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsValidEvents.property.select">select</a></code> | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect">ServiceLevelEventsValidEventsSelect</a></code> | select block. |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsValidEvents.property.where">where</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#where ServiceLevel#where}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsValidEvents.property.where">where</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#where ServiceLevel#where}. |
 
 ---
 
@@ -1392,7 +1409,7 @@ public readonly from: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#from ServiceLevel#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#from ServiceLevel#from}.
 
 ---
 
@@ -1406,7 +1423,7 @@ public readonly select: ServiceLevelEventsValidEventsSelect;
 
 select block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#select ServiceLevel#select}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#select ServiceLevel#select}
 
 ---
 
@@ -1418,7 +1435,7 @@ public readonly where: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#where ServiceLevel#where}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#where ServiceLevel#where}.
 
 ---
 
@@ -1436,8 +1453,8 @@ const serviceLevelEventsValidEventsSelect: serviceLevel.ServiceLevelEventsValidE
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.function">function</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#function ServiceLevel#function}. |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.attribute">attribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#attribute ServiceLevel#attribute}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.function">function</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#function ServiceLevel#function}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.attribute">attribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#attribute ServiceLevel#attribute}. |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.threshold">threshold</a></code> | <code>number</code> | The event threshold to use in the SELECT clause. |
 
 ---
@@ -1450,7 +1467,7 @@ public readonly function: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#function ServiceLevel#function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#function ServiceLevel#function}.
 
 ---
 
@@ -1462,7 +1479,7 @@ public readonly attribute: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#attribute ServiceLevel#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#attribute ServiceLevel#attribute}.
 
 ---
 
@@ -1476,7 +1493,7 @@ public readonly threshold: number;
 
 The event threshold to use in the SELECT clause.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#threshold ServiceLevel#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#threshold ServiceLevel#threshold}
 
 ---
 
@@ -1494,10 +1511,10 @@ const serviceLevelObjective: serviceLevel.ServiceLevelObjective = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelObjective.property.target">target</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#target ServiceLevel#target}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelObjective.property.target">target</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#target ServiceLevel#target}. |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelObjective.property.timeWindow">timeWindow</a></code> | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelObjectiveTimeWindow">ServiceLevelObjectiveTimeWindow</a></code> | time_window block. |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelObjective.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#description ServiceLevel#description}. |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelObjective.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#name ServiceLevel#name}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelObjective.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#description ServiceLevel#description}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelObjective.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#name ServiceLevel#name}. |
 
 ---
 
@@ -1509,7 +1526,7 @@ public readonly target: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#target ServiceLevel#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#target ServiceLevel#target}.
 
 ---
 
@@ -1523,7 +1540,7 @@ public readonly timeWindow: ServiceLevelObjectiveTimeWindow;
 
 time_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#time_window ServiceLevel#time_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#time_window ServiceLevel#time_window}
 
 ---
 
@@ -1535,7 +1552,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#description ServiceLevel#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#description ServiceLevel#description}.
 
 ---
 
@@ -1547,7 +1564,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#name ServiceLevel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#name ServiceLevel#name}.
 
 ---
 
@@ -1579,7 +1596,7 @@ public readonly rolling: ServiceLevelObjectiveTimeWindowRolling;
 
 rolling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#rolling ServiceLevel#rolling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#rolling ServiceLevel#rolling}
 
 ---
 
@@ -1597,8 +1614,8 @@ const serviceLevelObjectiveTimeWindowRolling: serviceLevel.ServiceLevelObjective
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelObjectiveTimeWindowRolling.property.count">count</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#count ServiceLevel#count}. |
-| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelObjectiveTimeWindowRolling.property.unit">unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#unit ServiceLevel#unit}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelObjectiveTimeWindowRolling.property.count">count</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#count ServiceLevel#count}. |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelObjectiveTimeWindowRolling.property.unit">unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#unit ServiceLevel#unit}. |
 
 ---
 
@@ -1610,7 +1627,7 @@ public readonly count: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#count ServiceLevel#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#count ServiceLevel#count}.
 
 ---
 
@@ -1622,7 +1639,7 @@ public readonly unit: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/service_level#unit ServiceLevel#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/service_level#unit ServiceLevel#unit}.
 
 ---
 
@@ -3024,6 +3041,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.putGoodEvents">putGoodEvents</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.putValidEvents">putValidEvents</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.resetBadEvents">resetBadEvents</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.resetFacets">resetFacets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.resetGoodEvents">resetGoodEvents</a></code> | *No description.* |
 
 ---
@@ -3220,6 +3238,12 @@ public putValidEvents(value: ServiceLevelEventsValidEvents): void
 public resetBadEvents(): void
 ```
 
+##### `resetFacets` <a name="resetFacets" id="@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.resetFacets"></a>
+
+```typescript
+public resetFacets(): void
+```
+
 ##### `resetGoodEvents` <a name="resetGoodEvents" id="@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.resetGoodEvents"></a>
 
 ```typescript
@@ -3238,9 +3262,11 @@ public resetGoodEvents(): void
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.property.validEvents">validEvents</a></code> | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsOutputReference">ServiceLevelEventsValidEventsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.property.accountIdInput">accountIdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.property.badEventsInput">badEventsInput</a></code> | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsBadEvents">ServiceLevelEventsBadEvents</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.property.facetsInput">facetsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.property.goodEventsInput">goodEventsInput</a></code> | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEvents">ServiceLevelEventsGoodEvents</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.property.validEventsInput">validEventsInput</a></code> | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsValidEvents">ServiceLevelEventsValidEvents</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.property.accountId">accountId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.property.facets">facets</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-newrelic.serviceLevel.ServiceLevelEvents">ServiceLevelEvents</a></code> | *No description.* |
 
 ---
@@ -3319,6 +3345,16 @@ public readonly badEventsInput: ServiceLevelEventsBadEvents;
 
 ---
 
+##### `facetsInput`<sup>Optional</sup> <a name="facetsInput" id="@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.property.facetsInput"></a>
+
+```typescript
+public readonly facetsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `goodEventsInput`<sup>Optional</sup> <a name="goodEventsInput" id="@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.property.goodEventsInput"></a>
 
 ```typescript
@@ -3346,6 +3382,16 @@ public readonly accountId: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `facets`<sup>Required</sup> <a name="facets" id="@cdktn/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.property.facets"></a>
+
+```typescript
+public readonly facets: string[];
+```
+
+- *Type:* string[]
 
 ---
 

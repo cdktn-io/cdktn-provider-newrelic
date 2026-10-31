@@ -70,6 +70,7 @@ The following submodules are available:
 - [notificationDestination](./notificationDestination.go.md)
 - [nrqlAlertCondition](./nrqlAlertCondition.go.md)
 - [nrqlDropRule](./nrqlDropRule.go.md)
+- [nrqlMacro](./nrqlMacro.go.md)
 - [obfuscationExpression](./obfuscationExpression.go.md)
 - [obfuscationRule](./obfuscationRule.go.md)
 - [oneDashboard](./oneDashboard.go.md)

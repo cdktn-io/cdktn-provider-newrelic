@@ -70,6 +70,7 @@ The following submodules are available:
 - [notificationDestination](./notificationDestination.typescript.md)
 - [nrqlAlertCondition](./nrqlAlertCondition.typescript.md)
 - [nrqlDropRule](./nrqlDropRule.typescript.md)
+- [nrqlMacro](./nrqlMacro.typescript.md)
 - [obfuscationExpression](./obfuscationExpression.typescript.md)
 - [obfuscationRule](./obfuscationRule.typescript.md)
 - [oneDashboard](./oneDashboard.typescript.md)

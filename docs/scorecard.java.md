@@ -4,7 +4,7 @@
 
 ### Scorecard <a name="Scorecard" id="@cdktn/provider-newrelic.scorecard.Scorecard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard newrelic_scorecard}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard newrelic_scorecard}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.scorecard.Scorecard.Initializer"></a>
 
@@ -42,7 +42,7 @@ Scorecard.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-newrelic.scorecard.Scorecard.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.Scorecard.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the scorecard. |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.Scorecard.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A description of the scorecard. |
-| <code><a href="#@cdktn/provider-newrelic.scorecard.Scorecard.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#id Scorecard#id}. |
+| <code><a href="#@cdktn/provider-newrelic.scorecard.Scorecard.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#id Scorecard#id}. |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.Scorecard.Initializer.parameter.progressLevels">progressLevels</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-newrelic.scorecard.ScorecardProgressLevels">ScorecardProgressLevels</a>></code> | progress_levels block. |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.Scorecard.Initializer.parameter.ruleIds">ruleIds</a></code> | <code>java.util.List<java.lang.String></code> | Set of newrelic_scorecard_rule GUIDs to attach to this scorecard. |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.Scorecard.Initializer.parameter.tags">tags</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-newrelic.scorecard.ScorecardTags">ScorecardTags</a>></code> | tags block. |
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the scorecard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#name Scorecard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#name Scorecard#name}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 A description of the scorecard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#description Scorecard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#description Scorecard#description}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#id Scorecard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#id Scorecard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 progress_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#progress_levels Scorecard#progress_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#progress_levels Scorecard#progress_levels}
 
 ---
 
@@ -159,7 +159,7 @@ Set of newrelic_scorecard_rule GUIDs to attach to this scorecard.
 
 Rules must exist before being attached. Removing a GUID detaches the rule without deleting it — rules are standalone entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#rule_ids Scorecard#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#rule_ids Scorecard#rule_ids}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#tags Scorecard#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#tags Scorecard#tags}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#timeouts Scorecard#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#timeouts Scorecard#timeouts}
 
 ---
 
@@ -709,7 +709,7 @@ The construct id used in the generated config for the Scorecard to import.
 
 The id of the existing Scorecard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1118,7 +1118,7 @@ ScorecardConfig.builder()
 | <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the scorecard. |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.description">description</a></code> | <code>java.lang.String</code> | A description of the scorecard. |
-| <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#id Scorecard#id}. |
+| <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#id Scorecard#id}. |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.progressLevels">progressLevels</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-newrelic.scorecard.ScorecardProgressLevels">ScorecardProgressLevels</a>></code> | progress_levels block. |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.ruleIds">ruleIds</a></code> | <code>java.util.List<java.lang.String></code> | Set of newrelic_scorecard_rule GUIDs to attach to this scorecard. |
 | <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardConfig.property.tags">tags</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-newrelic.scorecard.ScorecardTags">ScorecardTags</a>></code> | tags block. |
@@ -1206,7 +1206,7 @@ public java.lang.String getName();
 
 The name of the scorecard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#name Scorecard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#name Scorecard#name}
 
 ---
 
@@ -1220,7 +1220,7 @@ public java.lang.String getDescription();
 
 A description of the scorecard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#description Scorecard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#description Scorecard#description}
 
 ---
 
@@ -1232,7 +1232,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#id Scorecard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#id Scorecard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1249,7 +1249,7 @@ public IResolvable|java.util.List<ScorecardProgressLevels> getProgressLevels();
 
 progress_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#progress_levels Scorecard#progress_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#progress_levels Scorecard#progress_levels}
 
 ---
 
@@ -1265,7 +1265,7 @@ Set of newrelic_scorecard_rule GUIDs to attach to this scorecard.
 
 Rules must exist before being attached. Removing a GUID detaches the rule without deleting it — rules are standalone entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#rule_ids Scorecard#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#rule_ids Scorecard#rule_ids}
 
 ---
 
@@ -1279,7 +1279,7 @@ public IResolvable|java.util.List<ScorecardTags> getTags();
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#tags Scorecard#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#tags Scorecard#tags}
 
 ---
 
@@ -1293,7 +1293,7 @@ public ScorecardTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#timeouts Scorecard#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#timeouts Scorecard#timeouts}
 
 ---
 
@@ -1333,7 +1333,7 @@ public java.lang.String getId();
 
 A unique identifier for this level (e.g. 'red', 'green').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#id Scorecard#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#id Scorecard#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1350,7 +1350,7 @@ public java.lang.String getName();
 
 Display name of the level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#name Scorecard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#name Scorecard#name}
 
 ---
 
@@ -1364,7 +1364,7 @@ public java.lang.String getDescription();
 
 Description of what this level means.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#description Scorecard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#description Scorecard#description}
 
 ---
 
@@ -1378,7 +1378,7 @@ public java.lang.String getHexColorCode();
 
 Hex colour for this level, e.g. '#FF0000'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#hex_color_code Scorecard#hex_color_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#hex_color_code Scorecard#hex_color_code}
 
 ---
 
@@ -1414,7 +1414,7 @@ public java.lang.String getKey();
 
 The tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#key Scorecard#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#key Scorecard#key}
 
 ---
 
@@ -1428,7 +1428,7 @@ public java.util.List<java.lang.String> getValues();
 
 The tag values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#values Scorecard#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#values Scorecard#values}
 
 ---
 
@@ -1448,7 +1448,7 @@ ScorecardTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#create Scorecard#create}. |
+| <code><a href="#@cdktn/provider-newrelic.scorecard.ScorecardTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#create Scorecard#create}. |
 
 ---
 
@@ -1460,7 +1460,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/scorecard#create Scorecard#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/scorecard#create Scorecard#create}.
 
 ---
 

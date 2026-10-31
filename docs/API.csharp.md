@@ -70,6 +70,7 @@ The following submodules are available:
 - [notificationDestination](./notificationDestination.csharp.md)
 - [nrqlAlertCondition](./nrqlAlertCondition.csharp.md)
 - [nrqlDropRule](./nrqlDropRule.csharp.md)
+- [nrqlMacro](./nrqlMacro.csharp.md)
 - [obfuscationExpression](./obfuscationExpression.csharp.md)
 - [obfuscationRule](./obfuscationRule.csharp.md)
 - [oneDashboard](./oneDashboard.csharp.md)

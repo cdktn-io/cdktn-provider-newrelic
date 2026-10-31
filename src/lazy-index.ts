@@ -49,6 +49,7 @@ Object.defineProperty(exports, 'notificationChannel', { get: function () { retur
 Object.defineProperty(exports, 'notificationDestination', { get: function () { return require('./notification-destination'); } });
 Object.defineProperty(exports, 'nrqlAlertCondition', { get: function () { return require('./nrql-alert-condition'); } });
 Object.defineProperty(exports, 'nrqlDropRule', { get: function () { return require('./nrql-drop-rule'); } });
+Object.defineProperty(exports, 'nrqlMacro', { get: function () { return require('./nrql-macro'); } });
 Object.defineProperty(exports, 'obfuscationExpression', { get: function () { return require('./obfuscation-expression'); } });
 Object.defineProperty(exports, 'obfuscationRule', { get: function () { return require('./obfuscation-rule'); } });
 Object.defineProperty(exports, 'oneDashboard', { get: function () { return require('./one-dashboard'); } });

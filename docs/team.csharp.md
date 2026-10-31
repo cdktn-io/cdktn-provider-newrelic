@@ -4,7 +4,7 @@
 
 ### Team <a name="Team" id="@cdktn/provider-newrelic.team.Team"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team newrelic_team}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team newrelic_team}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.team.Team.Initializer"></a>
 
@@ -605,7 +605,7 @@ The construct id used in the generated config for the Team to import.
 
 The id of the existing Team that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1154,7 +1154,7 @@ new TeamConfig {
 | <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.description">Description</a></code> | <code>string</code> | A free-text description of the team. |
 | <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.entities">Entities</a></code> | <code>string[]</code> | Set of entity GUIDs that this team owns. Added to the team's auto-created ownership collection. |
 | <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.entityManagementMode">EntityManagementMode</a></code> | <code>string</code> | Controls how Terraform manages this team's entity ownership collection. |
-| <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#id Team#id}. |
+| <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#id Team#id}. |
 | <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.managers">Managers</a></code> | <code>double[]</code> | Set of New Relic user IDs (integers) to designate as team managers. Each ID must also appear in members. |
 | <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.members">Members</a></code> | <code>double[]</code> | Set of New Relic user IDs (integers) to add as members of this team. |
 | <code><a href="#@cdktn/provider-newrelic.team.TeamConfig.property.parentId">ParentId</a></code> | <code>string</code> | Entity management GUID of the parent team. Cannot be set to the team's own GUID. |
@@ -1244,7 +1244,7 @@ public string Name { get; set; }
 
 The name of the team. Must be unique within the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#name Team#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#name Team#name}
 
 ---
 
@@ -1258,7 +1258,7 @@ public string[] Aliases { get; set; }
 
 Additional searchable names for the team. Each alias must be unique within the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#aliases Team#aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#aliases Team#aliases}
 
 ---
 
@@ -1272,7 +1272,7 @@ public string Description { get; set; }
 
 A free-text description of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#description Team#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#description Team#description}
 
 ---
 
@@ -1286,7 +1286,7 @@ public string[] Entities { get; set; }
 
 Set of entity GUIDs that this team owns. Added to the team's auto-created ownership collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#entities Team#entities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#entities Team#entities}
 
 ---
 
@@ -1303,7 +1303,7 @@ Controls how Terraform manages this team's entity ownership collection.
 • `managed` (default): Terraform tracks the entities declared in the entities block and ensures     they remain in the collection. Drift surfaces only when a declared entity goes missing.     External additions are silently ignored.
 • `unmanaged`: Terraform does not control entity ownership. The ownership collection is left     entirely to tag-based discovery and/or manual UI management. No drift or warnings     are shown for entities, and the `entities` attribute cannot be set in this mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#entity_management_mode Team#entity_management_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#entity_management_mode Team#entity_management_mode}
 
 ---
 
@@ -1315,7 +1315,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#id Team#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#id Team#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1332,7 +1332,7 @@ public double[] Managers { get; set; }
 
 Set of New Relic user IDs (integers) to designate as team managers. Each ID must also appear in members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#managers Team#managers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#managers Team#managers}
 
 ---
 
@@ -1348,7 +1348,7 @@ Set of New Relic user IDs (integers) to add as members of this team.
 
 Managers must be a subset of members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#members Team#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#members Team#members}
 
 ---
 
@@ -1362,7 +1362,7 @@ public string ParentId { get; set; }
 
 Entity management GUID of the parent team. Cannot be set to the team's own GUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#parent_id Team#parent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#parent_id Team#parent_id}
 
 ---
 
@@ -1376,7 +1376,7 @@ public IResolvable|TeamResources[] Resources { get; set; }
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#resources Team#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#resources Team#resources}
 
 ---
 
@@ -1390,7 +1390,7 @@ public IResolvable|TeamTags[] Tags { get; set; }
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#tags Team#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#tags Team#tags}
 
 ---
 
@@ -1404,7 +1404,7 @@ public TeamTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#timeouts Team#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#timeouts Team#timeouts}
 
 ---
 
@@ -1442,7 +1442,7 @@ public string Content { get; set; }
 
 The URL or contact address for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#content Team#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#content Team#content}
 
 ---
 
@@ -1456,7 +1456,7 @@ public string Type { get; set; }
 
 Resource category. Valid values are defined in TeamResourceTypeValues() in the go-client and stay in sync with the API automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#type Team#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#type Team#type}
 
 ---
 
@@ -1470,7 +1470,7 @@ public string Title { get; set; }
 
 A short label shown in the UI for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#title Team#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#title Team#title}
 
 ---
 
@@ -1506,7 +1506,7 @@ public string Key { get; set; }
 
 The tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#key Team#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#key Team#key}
 
 ---
 
@@ -1520,7 +1520,7 @@ public string[] Values { get; set; }
 
 The tag values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#values Team#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#values Team#values}
 
 ---
 
@@ -1542,9 +1542,9 @@ new TeamTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-newrelic.team.TeamTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#create Team#create}. |
-| <code><a href="#@cdktn/provider-newrelic.team.TeamTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#delete Team#delete}. |
-| <code><a href="#@cdktn/provider-newrelic.team.TeamTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#update Team#update}. |
+| <code><a href="#@cdktn/provider-newrelic.team.TeamTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#create Team#create}. |
+| <code><a href="#@cdktn/provider-newrelic.team.TeamTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#delete Team#delete}. |
+| <code><a href="#@cdktn/provider-newrelic.team.TeamTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#update Team#update}. |
 
 ---
 
@@ -1556,7 +1556,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#create Team#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#create Team#create}.
 
 ---
 
@@ -1568,7 +1568,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#delete Team#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#delete Team#delete}.
 
 ---
 
@@ -1580,7 +1580,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/team#update Team#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/team#update Team#update}.
 
 ---
 
