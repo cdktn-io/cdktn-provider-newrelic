@@ -70,6 +70,7 @@ The following submodules are available:
 - [notificationDestination](./notificationDestination.python.md)
 - [nrqlAlertCondition](./nrqlAlertCondition.python.md)
 - [nrqlDropRule](./nrqlDropRule.python.md)
+- [nrqlMacro](./nrqlMacro.python.md)
 - [obfuscationExpression](./obfuscationExpression.python.md)
 - [obfuscationRule](./obfuscationRule.python.md)
 - [oneDashboard](./oneDashboard.python.md)

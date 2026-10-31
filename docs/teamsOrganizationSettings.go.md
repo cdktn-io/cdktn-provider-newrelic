@@ -4,7 +4,7 @@
 
 ### TeamsOrganizationSettings <a name="TeamsOrganizationSettings" id="@cdktn/provider-newrelic.teamsOrganizationSettings.TeamsOrganizationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/teams_organization_settings newrelic_teams_organization_settings}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/teams_organization_settings newrelic_teams_organization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.teamsOrganizationSettings.TeamsOrganizationSettings.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the TeamsOrganizationSettings 
 
 The id of the existing TeamsOrganizationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/teams_organization_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/teams_organization_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -922,7 +922,7 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/teamsorganiz
 | <code><a href="#@cdktn/provider-newrelic.teamsOrganizationSettings.TeamsOrganizationSettingsConfig.property.discoveryEnabled">DiscoveryEnabled</a></code> | <code>interface{}</code> | Whether tag-based entity discovery is enabled. When true, entities with a matching tag are automatically assigned to teams. |
 | <code><a href="#@cdktn/provider-newrelic.teamsOrganizationSettings.TeamsOrganizationSettingsConfig.property.discoveryTagKeys">DiscoveryTagKeys</a></code> | <code>*[]*string</code> | Tag keys used for entity discovery (e.g. ["team"]). Entities with these tags are auto-assigned to the team whose name or alias matches the tag value. Must contain at least one key when declared. |
 | <code><a href="#@cdktn/provider-newrelic.teamsOrganizationSettings.TeamsOrganizationSettingsConfig.property.hierarchyLevels">HierarchyLevels</a></code> | <code>interface{}</code> | hierarchy_levels block. |
-| <code><a href="#@cdktn/provider-newrelic.teamsOrganizationSettings.TeamsOrganizationSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/teams_organization_settings#id TeamsOrganizationSettings#id}. |
+| <code><a href="#@cdktn/provider-newrelic.teamsOrganizationSettings.TeamsOrganizationSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/teams_organization_settings#id TeamsOrganizationSettings#id}. |
 | <code><a href="#@cdktn/provider-newrelic.teamsOrganizationSettings.TeamsOrganizationSettingsConfig.property.syncGroupRules">SyncGroupRules</a></code> | <code><a href="#@cdktn/provider-newrelic.teamsOrganizationSettings.TeamsOrganizationSettingsSyncGroupRules">TeamsOrganizationSettingsSyncGroupRules</a></code> | sync_group_rules block. |
 | <code><a href="#@cdktn/provider-newrelic.teamsOrganizationSettings.TeamsOrganizationSettingsConfig.property.syncGroupsEnabled">SyncGroupsEnabled</a></code> | <code>interface{}</code> | Whether automatic team creation from IdP groups is enabled. |
 
@@ -1008,7 +1008,7 @@ DiscoveryEnabled interface{}
 
 Whether tag-based entity discovery is enabled. When true, entities with a matching tag are automatically assigned to teams.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/teams_organization_settings#discovery_enabled TeamsOrganizationSettings#discovery_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/teams_organization_settings#discovery_enabled TeamsOrganizationSettings#discovery_enabled}
 
 ---
 
@@ -1022,7 +1022,7 @@ DiscoveryTagKeys *[]*string
 
 Tag keys used for entity discovery (e.g. ["team"]). Entities with these tags are auto-assigned to the team whose name or alias matches the tag value. Must contain at least one key when declared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/teams_organization_settings#discovery_tag_keys TeamsOrganizationSettings#discovery_tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/teams_organization_settings#discovery_tag_keys TeamsOrganizationSettings#discovery_tag_keys}
 
 ---
 
@@ -1036,7 +1036,7 @@ HierarchyLevels interface{}
 
 hierarchy_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/teams_organization_settings#hierarchy_levels TeamsOrganizationSettings#hierarchy_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/teams_organization_settings#hierarchy_levels TeamsOrganizationSettings#hierarchy_levels}
 
 ---
 
@@ -1048,7 +1048,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/teams_organization_settings#id TeamsOrganizationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/teams_organization_settings#id TeamsOrganizationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1065,7 +1065,7 @@ SyncGroupRules TeamsOrganizationSettingsSyncGroupRules
 
 sync_group_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/teams_organization_settings#sync_group_rules TeamsOrganizationSettings#sync_group_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/teams_organization_settings#sync_group_rules TeamsOrganizationSettings#sync_group_rules}
 
 ---
 
@@ -1079,7 +1079,7 @@ SyncGroupsEnabled interface{}
 
 Whether automatic team creation from IdP groups is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/teams_organization_settings#sync_groups_enabled TeamsOrganizationSettings#sync_groups_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/teams_organization_settings#sync_groups_enabled TeamsOrganizationSettings#sync_groups_enabled}
 
 ---
 
@@ -1115,7 +1115,7 @@ Id *string
 
 GUID of the hierarchy level entity. Obtain from the newrelic_teams_hierarchy_levels data source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/teams_organization_settings#id TeamsOrganizationSettings#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/teams_organization_settings#id TeamsOrganizationSettings#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1132,7 +1132,7 @@ Name *string
 
 Display name of this hierarchy level (e.g. 'Division', 'Squad'). Renaming here updates the entity in the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/teams_organization_settings#name TeamsOrganizationSettings#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/teams_organization_settings#name TeamsOrganizationSettings#name}
 
 ---
 
@@ -1166,7 +1166,7 @@ Conditions interface{}
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/teams_organization_settings#conditions TeamsOrganizationSettings#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/teams_organization_settings#conditions TeamsOrganizationSettings#conditions}
 
 ---
 
@@ -1202,7 +1202,7 @@ Type *string
 
 Match type: STARTS_WITH, ENDS_WITH, or CONTAINS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/teams_organization_settings#type TeamsOrganizationSettings#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/teams_organization_settings#type TeamsOrganizationSettings#type}
 
 ---
 
@@ -1216,7 +1216,7 @@ Value *string
 
 The string to match against the group name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.6/docs/resources/teams_organization_settings#value TeamsOrganizationSettings#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/teams_organization_settings#value TeamsOrganizationSettings#value}
 
 ---
 
