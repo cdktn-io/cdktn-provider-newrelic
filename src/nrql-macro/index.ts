@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro
+// https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface NrqlMacroConfig extends cdktn.TerraformMetaArguments {
   /**
   * The NRQL fragment this macro expands to wherever `$name` appears in a query. Changes to this field take effect immediately across every dashboard widget, alert condition, and query that references the macro.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#expression NrqlMacro#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#expression NrqlMacro#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#id NrqlMacro#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#id NrqlMacro#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface NrqlMacroConfig extends cdktn.TerraformMetaArguments {
   /**
   * A unique name for the macro within your organization. Once created, the name cannot be changed — it is the identifier used to reference the macro as `$name` in NRQL queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#name NrqlMacro#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#name NrqlMacro#name}
   */
   readonly name: string;
   /**
   * The number of positional parameters the expression accepts, expressed as bare `$1`, `$2`, ... tokens. Required when the expression contains any positional parameters; defaults to `0` for expressions that do not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#parameter_count NrqlMacro#parameter_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#parameter_count NrqlMacro#parameter_count}
   */
   readonly parameterCount?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro newrelic_nrql_macro}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro newrelic_nrql_macro}
 */
 export class NrqlMacro extends cdktn.TerraformResource {
 
@@ -56,7 +56,7 @@ export class NrqlMacro extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NrqlMacro resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NrqlMacro to import
-  * @param importFromId The id of the existing NrqlMacro that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NrqlMacro that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NrqlMacro to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -68,7 +68,7 @@ export class NrqlMacro extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro newrelic_nrql_macro} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro newrelic_nrql_macro} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class NrqlMacro extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_nrql_macro',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.101.10',
+        providerVersion: '3.101.12',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

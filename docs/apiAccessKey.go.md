@@ -4,7 +4,7 @@
 
 ### ApiAccessKey <a name="ApiAccessKey" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key newrelic_api_access_key}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key newrelic_api_access_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.Initializer"></a>
 
@@ -75,10 +75,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.resetAccountId">ResetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.resetEnabled">ResetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.resetIngestType">ResetIngestType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.resetNotes">ResetNotes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.resetOwningTeamIds">ResetOwningTeamIds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.resetUserId">ResetUserId</a></code> | *No description.* |
 
 ---
@@ -398,6 +400,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetAccountId()
 ```
 
+##### `ResetEnabled` <a name="ResetEnabled" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.resetEnabled"></a>
+
+```go
+func ResetEnabled()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.resetId"></a>
 
 ```go
@@ -420,6 +428,12 @@ func ResetName()
 
 ```go
 func ResetNotes()
+```
+
+##### `ResetOwningTeamIds` <a name="ResetOwningTeamIds" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.resetOwningTeamIds"></a>
+
+```go
+func ResetOwningTeamIds()
 ```
 
 ##### `ResetUserId` <a name="ResetUserId" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.resetUserId"></a>
@@ -531,7 +545,7 @@ The construct id used in the generated config for the ApiAccessKey to import.
 
 The id of the existing ApiAccessKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -563,18 +577,22 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.key">Key</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.accountIdInput">AccountIdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.ingestTypeInput">IngestTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.keyTypeInput">KeyTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.notesInput">NotesInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.owningTeamIdsInput">OwningTeamIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.userIdInput">UserIdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.accountId">AccountId</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.ingestType">IngestType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.keyType">KeyType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.notes">Notes</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.owningTeamIds">OwningTeamIds</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.userId">UserId</a></code> | <code>*f64</code> | *No description.* |
 
 ---
@@ -741,6 +759,16 @@ func AccountIdInput() *f64
 
 ---
 
+##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.enabledInput"></a>
+
+```go
+func EnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.idInput"></a>
 
 ```go
@@ -791,6 +819,16 @@ func NotesInput() *string
 
 ---
 
+##### `OwningTeamIdsInput`<sup>Optional</sup> <a name="OwningTeamIdsInput" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.owningTeamIdsInput"></a>
+
+```go
+func OwningTeamIdsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `UserIdInput`<sup>Optional</sup> <a name="UserIdInput" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.userIdInput"></a>
 
 ```go
@@ -808,6 +846,16 @@ func AccountId() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.enabled"></a>
+
+```go
+func Enabled() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -861,6 +909,16 @@ func Notes() *string
 
 ---
 
+##### `OwningTeamIds`<sup>Required</sup> <a name="OwningTeamIds" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.owningTeamIds"></a>
+
+```go
+func OwningTeamIds() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `UserId`<sup>Required</sup> <a name="UserId" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKey.property.userId"></a>
 
 ```go
@@ -908,10 +966,12 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/apiaccesskey
 	Provisioners: *[]interface{},
 	KeyType: *string,
 	AccountId: *f64,
+	Enabled: interface{},
 	Id: *string,
 	IngestType: *string,
 	Name: *string,
 	Notes: *string,
+	OwningTeamIds: *[]*string,
 	UserId: *f64,
 }
 ```
@@ -927,13 +987,15 @@ import "github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v17/apiaccesskey
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.keyType">KeyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#key_type ApiAccessKey#key_type}. |
-| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#account_id ApiAccessKey#account_id}. |
-| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#id ApiAccessKey#id}. |
-| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.ingestType">IngestType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#ingest_type ApiAccessKey#ingest_type}. |
-| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#name ApiAccessKey#name}. |
-| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.notes">Notes</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#notes ApiAccessKey#notes}. |
-| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.userId">UserId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#user_id ApiAccessKey#user_id}. |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.keyType">KeyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#key_type ApiAccessKey#key_type}. |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#account_id ApiAccessKey#account_id}. |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#enabled ApiAccessKey#enabled}. |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#id ApiAccessKey#id}. |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.ingestType">IngestType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#ingest_type ApiAccessKey#ingest_type}. |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#name ApiAccessKey#name}. |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.notes">Notes</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#notes ApiAccessKey#notes}. |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.owningTeamIds">OwningTeamIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#owning_team_ids ApiAccessKey#owning_team_ids}. |
+| <code><a href="#@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.userId">UserId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#user_id ApiAccessKey#user_id}. |
 
 ---
 
@@ -1015,7 +1077,7 @@ KeyType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#key_type ApiAccessKey#key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#key_type ApiAccessKey#key_type}.
 
 ---
 
@@ -1027,7 +1089,19 @@ AccountId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#account_id ApiAccessKey#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#account_id ApiAccessKey#account_id}.
+
+---
+
+##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.enabled"></a>
+
+```go
+Enabled interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#enabled ApiAccessKey#enabled}.
 
 ---
 
@@ -1039,7 +1113,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#id ApiAccessKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#id ApiAccessKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1054,7 +1128,7 @@ IngestType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#ingest_type ApiAccessKey#ingest_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#ingest_type ApiAccessKey#ingest_type}.
 
 ---
 
@@ -1066,7 +1140,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#name ApiAccessKey#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#name ApiAccessKey#name}.
 
 ---
 
@@ -1078,7 +1152,19 @@ Notes *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#notes ApiAccessKey#notes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#notes ApiAccessKey#notes}.
+
+---
+
+##### `OwningTeamIds`<sup>Optional</sup> <a name="OwningTeamIds" id="@cdktn/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.property.owningTeamIds"></a>
+
+```go
+OwningTeamIds *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#owning_team_ids ApiAccessKey#owning_team_ids}.
 
 ---
 
@@ -1090,7 +1176,7 @@ UserId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/api_access_key#user_id ApiAccessKey#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/api_access_key#user_id ApiAccessKey#user_id}.
 
 ---
 
