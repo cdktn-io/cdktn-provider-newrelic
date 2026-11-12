@@ -4,7 +4,7 @@
 
 ### NrqlMacro <a name="NrqlMacro" id="@cdktn/provider-newrelic.nrqlMacro.NrqlMacro"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro newrelic_nrql_macro}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro newrelic_nrql_macro}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.nrqlMacro.NrqlMacro.Initializer"></a>
 
@@ -39,7 +39,7 @@ NrqlMacro.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-newrelic.nrqlMacro.NrqlMacro.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.nrqlMacro.NrqlMacro.Initializer.parameter.expression">expression</a></code> | <code>java.lang.String</code> | The NRQL fragment this macro expands to wherever `$name` appears in a query. |
 | <code><a href="#@cdktn/provider-newrelic.nrqlMacro.NrqlMacro.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | A unique name for the macro within your organization. |
-| <code><a href="#@cdktn/provider-newrelic.nrqlMacro.NrqlMacro.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#id NrqlMacro#id}. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlMacro.NrqlMacro.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#id NrqlMacro#id}. |
 | <code><a href="#@cdktn/provider-newrelic.nrqlMacro.NrqlMacro.Initializer.parameter.parameterCount">parameterCount</a></code> | <code>java.lang.Number</code> | The number of positional parameters the expression accepts, expressed as bare `$1`, `$2`, ... tokens. Required when the expression contains any positional parameters; defaults to `0` for expressions that do not. |
 
 ---
@@ -112,7 +112,7 @@ The NRQL fragment this macro expands to wherever `$name` appears in a query.
 
 Changes to this field take effect immediately across every dashboard widget, alert condition, and query that references the macro.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#expression NrqlMacro#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#expression NrqlMacro#expression}
 
 ---
 
@@ -124,7 +124,7 @@ A unique name for the macro within your organization.
 
 Once created, the name cannot be changed — it is the identifier used to reference the macro as `$name` in NRQL queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#name NrqlMacro#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#name NrqlMacro#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#id NrqlMacro#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#id NrqlMacro#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The number of positional parameters the expression accepts, expressed as bare `$1`, `$2`, ... tokens. Required when the expression contains any positional parameters; defaults to `0` for expressions that do not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#parameter_count NrqlMacro#parameter_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#parameter_count NrqlMacro#parameter_count}
 
 ---
 
@@ -608,7 +608,7 @@ The construct id used in the generated config for the NrqlMacro to import.
 
 The id of the existing NrqlMacro that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -937,7 +937,7 @@ NrqlMacroConfig.builder()
 | <code><a href="#@cdktn/provider-newrelic.nrqlMacro.NrqlMacroConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-newrelic.nrqlMacro.NrqlMacroConfig.property.expression">expression</a></code> | <code>java.lang.String</code> | The NRQL fragment this macro expands to wherever `$name` appears in a query. |
 | <code><a href="#@cdktn/provider-newrelic.nrqlMacro.NrqlMacroConfig.property.name">name</a></code> | <code>java.lang.String</code> | A unique name for the macro within your organization. |
-| <code><a href="#@cdktn/provider-newrelic.nrqlMacro.NrqlMacroConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#id NrqlMacro#id}. |
+| <code><a href="#@cdktn/provider-newrelic.nrqlMacro.NrqlMacroConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#id NrqlMacro#id}. |
 | <code><a href="#@cdktn/provider-newrelic.nrqlMacro.NrqlMacroConfig.property.parameterCount">parameterCount</a></code> | <code>java.lang.Number</code> | The number of positional parameters the expression accepts, expressed as bare `$1`, `$2`, ... tokens. Required when the expression contains any positional parameters; defaults to `0` for expressions that do not. |
 
 ---
@@ -1024,7 +1024,7 @@ The NRQL fragment this macro expands to wherever `$name` appears in a query.
 
 Changes to this field take effect immediately across every dashboard widget, alert condition, and query that references the macro.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#expression NrqlMacro#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#expression NrqlMacro#expression}
 
 ---
 
@@ -1040,7 +1040,7 @@ A unique name for the macro within your organization.
 
 Once created, the name cannot be changed — it is the identifier used to reference the macro as `$name` in NRQL queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#name NrqlMacro#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#name NrqlMacro#name}
 
 ---
 
@@ -1052,7 +1052,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#id NrqlMacro#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#id NrqlMacro#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1069,7 +1069,7 @@ public java.lang.Number getParameterCount();
 
 The number of positional parameters the expression accepts, expressed as bare `$1`, `$2`, ... tokens. Required when the expression contains any positional parameters; defaults to `0` for expressions that do not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.10/docs/resources/nrql_macro#parameter_count NrqlMacro#parameter_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.101.12/docs/resources/nrql_macro#parameter_count NrqlMacro#parameter_count}
 
 ---
 
