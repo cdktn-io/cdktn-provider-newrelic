@@ -42,6 +42,7 @@ export * as infraAlertCondition from './infra-alert-condition/index';
 export * as insightsEvent from './insights-event/index';
 export * as keyTransaction from './key-transaction/index';
 export * as logParsingRule from './log-parsing-rule/index';
+export * as maintenanceWindow from './maintenance-window/index';
 export * as metricPruningRule from './metric-pruning-rule/index';
 export * as monitorDowntime from './monitor-downtime/index';
 export * as notebook from './notebook/index';
