@@ -63,6 +63,7 @@ The following submodules are available:
 - [insightsEvent](./insightsEvent.typescript.md)
 - [keyTransaction](./keyTransaction.typescript.md)
 - [logParsingRule](./logParsingRule.typescript.md)
+- [maintenanceWindow](./maintenanceWindow.typescript.md)
 - [metricPruningRule](./metricPruningRule.typescript.md)
 - [monitorDowntime](./monitorDowntime.typescript.md)
 - [notebook](./notebook.typescript.md)

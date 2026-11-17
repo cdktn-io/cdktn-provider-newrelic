@@ -63,6 +63,7 @@ The following submodules are available:
 - [insightsEvent](./insightsEvent.go.md)
 - [keyTransaction](./keyTransaction.go.md)
 - [logParsingRule](./logParsingRule.go.md)
+- [maintenanceWindow](./maintenanceWindow.go.md)
 - [metricPruningRule](./metricPruningRule.go.md)
 - [monitorDowntime](./monitorDowntime.go.md)
 - [notebook](./notebook.go.md)

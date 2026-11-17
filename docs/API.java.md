@@ -63,6 +63,7 @@ The following submodules are available:
 - [insightsEvent](./insightsEvent.java.md)
 - [keyTransaction](./keyTransaction.java.md)
 - [logParsingRule](./logParsingRule.java.md)
+- [maintenanceWindow](./maintenanceWindow.java.md)
 - [metricPruningRule](./metricPruningRule.java.md)
 - [monitorDowntime](./monitorDowntime.java.md)
 - [notebook](./notebook.java.md)
