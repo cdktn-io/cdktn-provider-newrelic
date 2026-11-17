@@ -42,6 +42,7 @@ Object.defineProperty(exports, 'infraAlertCondition', { get: function () { retur
 Object.defineProperty(exports, 'insightsEvent', { get: function () { return require('./insights-event'); } });
 Object.defineProperty(exports, 'keyTransaction', { get: function () { return require('./key-transaction'); } });
 Object.defineProperty(exports, 'logParsingRule', { get: function () { return require('./log-parsing-rule'); } });
+Object.defineProperty(exports, 'maintenanceWindow', { get: function () { return require('./maintenance-window'); } });
 Object.defineProperty(exports, 'metricPruningRule', { get: function () { return require('./metric-pruning-rule'); } });
 Object.defineProperty(exports, 'monitorDowntime', { get: function () { return require('./monitor-downtime'); } });
 Object.defineProperty(exports, 'notebook', { get: function () { return require('./notebook'); } });

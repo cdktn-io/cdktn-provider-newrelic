@@ -63,6 +63,7 @@ The following submodules are available:
 - [insightsEvent](./insightsEvent.csharp.md)
 - [keyTransaction](./keyTransaction.csharp.md)
 - [logParsingRule](./logParsingRule.csharp.md)
+- [maintenanceWindow](./maintenanceWindow.csharp.md)
 - [metricPruningRule](./metricPruningRule.csharp.md)
 - [monitorDowntime](./monitorDowntime.csharp.md)
 - [notebook](./notebook.csharp.md)

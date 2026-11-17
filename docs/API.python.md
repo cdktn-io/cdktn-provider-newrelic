@@ -63,6 +63,7 @@ The following submodules are available:
 - [insightsEvent](./insightsEvent.python.md)
 - [keyTransaction](./keyTransaction.python.md)
 - [logParsingRule](./logParsingRule.python.md)
+- [maintenanceWindow](./maintenanceWindow.python.md)
 - [metricPruningRule](./metricPruningRule.python.md)
 - [monitorDowntime](./monitorDowntime.python.md)
 - [notebook](./notebook.python.md)
