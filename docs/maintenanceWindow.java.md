@@ -4,7 +4,7 @@
 
 ### MaintenanceWindow <a name="MaintenanceWindow" id="@cdktn/provider-newrelic.maintenanceWindow.MaintenanceWindow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window newrelic_maintenance_window}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window newrelic_maintenance_window}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-newrelic.maintenanceWindow.MaintenanceWindow.Initializer"></a>
 
@@ -51,7 +51,7 @@ MaintenanceWindow.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-newrelic.maintenanceWindow.MaintenanceWindow.Initializer.parameter.startTime">startTime</a></code> | <code>java.lang.String</code> | The start time of the maintenance window, as an ISO 8601 date-time without a time zone (e.g. 2026-11-05T21:00:00). |
 | <code><a href="#@cdktn/provider-newrelic.maintenanceWindow.MaintenanceWindow.Initializer.parameter.timezone">timezone</a></code> | <code>java.lang.String</code> | The timezone in which the maintenance window is scheduled (e.g. America/Los_Angeles). |
 | <code><a href="#@cdktn/provider-newrelic.maintenanceWindow.MaintenanceWindow.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of the maintenance window. |
-| <code><a href="#@cdktn/provider-newrelic.maintenanceWindow.MaintenanceWindow.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#id MaintenanceWindow#id}. |
+| <code><a href="#@cdktn/provider-newrelic.maintenanceWindow.MaintenanceWindow.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#id MaintenanceWindow#id}. |
 | <code><a href="#@cdktn/provider-newrelic.maintenanceWindow.MaintenanceWindow.Initializer.parameter.rrule">rrule</a></code> | <code>java.lang.String</code> | The recurrence rule of the maintenance window, in RRULE format, for recurring maintenance windows. |
 
 ---
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The list of entity IDs affected by the maintenance window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#affected_entities MaintenanceWindow#affected_entities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#affected_entities MaintenanceWindow#affected_entities}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The type of the entities affected by the maintenance window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#affected_entity_type MaintenanceWindow#affected_entity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#affected_entity_type MaintenanceWindow#affected_entity_type}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The duration of the maintenance window, in ISO 8601 duration format (e.g. PT1H for one hour). Capped at 24 hours when `rrule` is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#duration MaintenanceWindow#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#duration MaintenanceWindow#duration}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The name of the maintenance window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#name MaintenanceWindow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#name MaintenanceWindow#name}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#scope MaintenanceWindow#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#scope MaintenanceWindow#scope}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The start time of the maintenance window, as an ISO 8601 date-time without a time zone (e.g. 2026-11-05T21:00:00).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#start_time MaintenanceWindow#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#start_time MaintenanceWindow#start_time}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The timezone in which the maintenance window is scheduled (e.g. America/Los_Angeles).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#timezone MaintenanceWindow#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#timezone MaintenanceWindow#timezone}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The description of the maintenance window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#description MaintenanceWindow#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#description MaintenanceWindow#description}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#id MaintenanceWindow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#id MaintenanceWindow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -213,7 +213,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The recurrence rule of the maintenance window, in RRULE format, for recurring maintenance windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#rrule MaintenanceWindow#rrule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#rrule MaintenanceWindow#rrule}
 
 ---
 
@@ -696,7 +696,7 @@ The construct id used in the generated config for the MaintenanceWindow to impor
 
 The id of the existing MaintenanceWindow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1158,7 +1158,7 @@ MaintenanceWindowConfig.builder()
 | <code><a href="#@cdktn/provider-newrelic.maintenanceWindow.MaintenanceWindowConfig.property.startTime">startTime</a></code> | <code>java.lang.String</code> | The start time of the maintenance window, as an ISO 8601 date-time without a time zone (e.g. 2026-11-05T21:00:00). |
 | <code><a href="#@cdktn/provider-newrelic.maintenanceWindow.MaintenanceWindowConfig.property.timezone">timezone</a></code> | <code>java.lang.String</code> | The timezone in which the maintenance window is scheduled (e.g. America/Los_Angeles). |
 | <code><a href="#@cdktn/provider-newrelic.maintenanceWindow.MaintenanceWindowConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of the maintenance window. |
-| <code><a href="#@cdktn/provider-newrelic.maintenanceWindow.MaintenanceWindowConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#id MaintenanceWindow#id}. |
+| <code><a href="#@cdktn/provider-newrelic.maintenanceWindow.MaintenanceWindowConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#id MaintenanceWindow#id}. |
 | <code><a href="#@cdktn/provider-newrelic.maintenanceWindow.MaintenanceWindowConfig.property.rrule">rrule</a></code> | <code>java.lang.String</code> | The recurrence rule of the maintenance window, in RRULE format, for recurring maintenance windows. |
 
 ---
@@ -1243,7 +1243,7 @@ public java.util.List<java.lang.String> getAffectedEntities();
 
 The list of entity IDs affected by the maintenance window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#affected_entities MaintenanceWindow#affected_entities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#affected_entities MaintenanceWindow#affected_entities}
 
 ---
 
@@ -1257,7 +1257,7 @@ public java.lang.String getAffectedEntityType();
 
 The type of the entities affected by the maintenance window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#affected_entity_type MaintenanceWindow#affected_entity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#affected_entity_type MaintenanceWindow#affected_entity_type}
 
 ---
 
@@ -1271,7 +1271,7 @@ public java.lang.String getDuration();
 
 The duration of the maintenance window, in ISO 8601 duration format (e.g. PT1H for one hour). Capped at 24 hours when `rrule` is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#duration MaintenanceWindow#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#duration MaintenanceWindow#duration}
 
 ---
 
@@ -1285,7 +1285,7 @@ public java.lang.String getName();
 
 The name of the maintenance window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#name MaintenanceWindow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#name MaintenanceWindow#name}
 
 ---
 
@@ -1299,7 +1299,7 @@ public MaintenanceWindowScope getScope();
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#scope MaintenanceWindow#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#scope MaintenanceWindow#scope}
 
 ---
 
@@ -1313,7 +1313,7 @@ public java.lang.String getStartTime();
 
 The start time of the maintenance window, as an ISO 8601 date-time without a time zone (e.g. 2026-11-05T21:00:00).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#start_time MaintenanceWindow#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#start_time MaintenanceWindow#start_time}
 
 ---
 
@@ -1327,7 +1327,7 @@ public java.lang.String getTimezone();
 
 The timezone in which the maintenance window is scheduled (e.g. America/Los_Angeles).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#timezone MaintenanceWindow#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#timezone MaintenanceWindow#timezone}
 
 ---
 
@@ -1341,7 +1341,7 @@ public java.lang.String getDescription();
 
 The description of the maintenance window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#description MaintenanceWindow#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#description MaintenanceWindow#description}
 
 ---
 
@@ -1353,7 +1353,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#id MaintenanceWindow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#id MaintenanceWindow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1370,7 +1370,7 @@ public java.lang.String getRrule();
 
 The recurrence rule of the maintenance window, in RRULE format, for recurring maintenance windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#rrule MaintenanceWindow#rrule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#rrule MaintenanceWindow#rrule}
 
 ---
 
@@ -1406,7 +1406,7 @@ public java.lang.String getId();
 
 The unique identifier of the object within the given scope (e.g. an account ID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#id MaintenanceWindow#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#id MaintenanceWindow#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1423,7 +1423,7 @@ public java.lang.String getType();
 
 The kind of scope `id` refers to. Valid values are `ACCOUNT` and `ORGANIZATION`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.0/docs/resources/maintenance_window#type MaintenanceWindow#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/maintenance_window#type MaintenanceWindow#type}
 
 ---
 
