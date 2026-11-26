@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection
+// https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface AwsConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account ID where the AWS connection will be created. Used when scope_type is ACCOUNT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#account_id AwsConnection#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#account_id AwsConnection#account_id}
   */
   readonly accountId?: number;
   /**
   * The description of the AWS connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#description AwsConnection#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#description AwsConnection#description}
   */
   readonly description?: string;
   /**
   * Flag to indicate if the connection is enabled. True by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#enabled AwsConnection#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#enabled AwsConnection#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Optional field representing an identifier managed by the consumer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#external_id AwsConnection#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#external_id AwsConnection#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#id AwsConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#id AwsConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,57 +46,51 @@ export interface AwsConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the AWS connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#name AwsConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#name AwsConnection#name}
   */
   readonly name: string;
   /**
   * Default region for this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#region AwsConnection#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#region AwsConnection#region}
   */
   readonly region?: string;
   /**
   * The scope ID (account ID or organization ID) for the AWS connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#scope_id AwsConnection#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#scope_id AwsConnection#scope_id}
   */
   readonly scopeId?: string;
   /**
   * The scope type for the AWS connection. Valid values are ACCOUNT and ORGANIZATION.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#scope_type AwsConnection#scope_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#scope_type AwsConnection#scope_type}
   */
   readonly scopeType?: string;
   /**
   * credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#credential AwsConnection#credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#credential AwsConnection#credential}
   */
   readonly credential: AwsConnectionCredential;
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#settings AwsConnection#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#settings AwsConnection#settings}
   */
   readonly settings?: AwsConnectionSettings[] | cdktn.IResolvable;
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#tag AwsConnection#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#tag AwsConnection#tag}
   */
   readonly tag?: AwsConnectionTag[] | cdktn.IResolvable;
 }
 export interface AwsConnectionCredentialAssumeRole {
   /**
-  * External ID supplied by New Relic during AssumeRole.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#external_id AwsConnection#external_id}
-  */
-  readonly externalId?: string;
-  /**
   * ARN of the IAM role New Relic should assume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#role_arn AwsConnection#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#role_arn AwsConnection#role_arn}
   */
   readonly roleArn: string;
 }
@@ -107,7 +101,6 @@ export function awsConnectionCredentialAssumeRoleToTerraform(struct?: AwsConnect
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    external_id: cdktn.stringToTerraform(struct!.externalId),
     role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
@@ -119,12 +112,6 @@ export function awsConnectionCredentialAssumeRoleToHclTerraform(struct?: AwsConn
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    external_id: {
-      value: cdktn.stringToHclTerraform(struct!.externalId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
     role_arn: {
       value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
@@ -151,10 +138,6 @@ export class AwsConnectionCredentialAssumeRoleOutputReference extends cdktn.Comp
   public get internalValue(): AwsConnectionCredentialAssumeRole | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._externalId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.externalId = this._externalId;
-    }
     if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
@@ -165,30 +148,17 @@ export class AwsConnectionCredentialAssumeRoleOutputReference extends cdktn.Comp
   public set internalValue(value: AwsConnectionCredentialAssumeRole | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._externalId = undefined;
       this._roleArn = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._externalId = value.externalId;
       this._roleArn = value.roleArn;
     }
   }
 
-  // external_id - computed: false, optional: true, required: false
-  private _externalId?: string; 
+  // external_id - computed: true, optional: false, required: false
   public get externalId() {
     return this.getStringAttribute('external_id');
-  }
-  public set externalId(value: string) {
-    this._externalId = value;
-  }
-  public resetExternalId() {
-    this._externalId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get externalIdInput() {
-    return this._externalId;
   }
 
   // role_arn - computed: false, optional: false, required: true
@@ -208,7 +178,7 @@ export interface AwsConnectionCredential {
   /**
   * assume_role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#assume_role AwsConnection#assume_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#assume_role AwsConnection#assume_role}
   */
   readonly assumeRole: AwsConnectionCredentialAssumeRole;
 }
@@ -291,13 +261,13 @@ export interface AwsConnectionSettings {
   /**
   * The key or name of the setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#key AwsConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#key AwsConnection#key}
   */
   readonly key: string;
   /**
   * The value of the setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#value AwsConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#value AwsConnection#value}
   */
   readonly value: string;
 }
@@ -438,13 +408,13 @@ export interface AwsConnectionTag {
   /**
   * The tag key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#key AwsConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#key AwsConnection#key}
   */
   readonly key: string;
   /**
   * The tag values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#values AwsConnection#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#values AwsConnection#values}
   */
   readonly values: string[];
 }
@@ -583,7 +553,7 @@ export class AwsConnectionTagList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection newrelic_aws_connection}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection newrelic_aws_connection}
 */
 export class AwsConnection extends cdktn.TerraformResource {
 
@@ -599,7 +569,7 @@ export class AwsConnection extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AwsConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsConnection to import
-  * @param importFromId The id of the existing AwsConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AwsConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -611,7 +581,7 @@ export class AwsConnection extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.1/docs/resources/aws_connection newrelic_aws_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.102.2/docs/resources/aws_connection newrelic_aws_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -622,7 +592,7 @@ export class AwsConnection extends cdktn.TerraformResource {
       terraformResourceType: 'newrelic_aws_connection',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.102.1',
+        providerVersion: '3.102.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
